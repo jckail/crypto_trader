@@ -47,8 +47,8 @@
       <file leaf-file-name="notes.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pre_alpha_product/notes.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="28" column="49" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state relative-caret-position="154">
+              <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -799,12 +799,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513742406815</updated>
-      <workItem from="1513742411613" duration="4561000" />
+      <workItem from="1513742411613" duration="4612000" />
     </task>
+    <task id="LOCAL-00001" summary="This is  an early push with creation of pre_alpha directory and a few basic calls, nothing here yet, just a push before I create a branch">
+      <created>1513809962949</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1513809962949</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4561000" />
+    <option name="totallyTimeSpent" value="4612000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -845,6 +853,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="This is  an early push with creation of pre_alpha directory and a few basic calls, nothing here yet, just a push before I create a branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="This is  an early push with creation of pre_alpha directory and a few basic calls, nothing here yet, just a push before I create a branch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -909,8 +921,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pre_alpha_product/notes.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="28" column="49" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="154">
+          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
           <folding />
         </state>
       </provider>
