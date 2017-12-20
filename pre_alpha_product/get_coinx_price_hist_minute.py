@@ -1,3 +1,12 @@
+
+""""
+author jkail
+prealpha
+calls cryptocompareapi gets history by minute to get history for longer period change
+"histominute"  to histohour or "histoday"
+
+"""
+
 import requests
 import json
 import pandas as p
@@ -43,6 +52,6 @@ for x in coin_types:
 df = p.concat(frames)
 df['time'] = p.to_datetime(df['time'],unit='s') #converts to human from utcE GMT ******
 
-df.to_csv('test.csv',encoding='utf-8', index = False)
+#df.to_csv('test.csv',encoding='utf-8', index = False)
 print df
 #print data_extract
