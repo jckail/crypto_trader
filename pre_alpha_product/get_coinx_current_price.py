@@ -38,9 +38,9 @@ while run_count < 10:
 
         data = response.json()
 
+
         #test_df = p.DataFrame(data)
 
-        print type(data)
         test_df = p.DataFrame.from_dict(data,orient='index', dtype=None)
         a1 = test_df
         test_df = p.DataFrame.transpose(test_df)

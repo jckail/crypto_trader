@@ -2,11 +2,16 @@ Base logic
 get data automate decisons
 diversify accross exchanges, coins, capital (usd to btc btc to eth etc... )
 
+computer a does coins 1 - 50
+computer b does coins 51 - 100
+computer c does coins 101 - 149
+etc ( distri
 
 get all coins avalible info: https://www.cryptocompare.com/api/data/coinlist/
 
 features
 (feature > x user approval) etc.
+
 
 *determine frequency per api call
 *determine buy sell logix
@@ -41,3 +46,10 @@ general coin information
         --> prompt when new crypto avalible
 
 
+
+#### The big picture?
+thousands of diffrent coins,
+
+create "aggresive penny stock etfs kinda deal"
+display correlation accross many cryptos
+give access into mining/ buying said coins if avalible?
