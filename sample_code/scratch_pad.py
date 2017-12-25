@@ -1,53 +1,41 @@
-import requests
-import pandas as p
-import datetime as dt
+import json, requests
+import pandas as pd
+from datetime import datetime, timedelta
+import dateutil.parser
+import time
+import numpy as np
 
-
-symbol_list = ['007', '1337', '1CR', '1ST', '2015', '2BACCO', '2GIVE', '32BIT', '365', '3DES', 'BTC']
-#symbol_list = ['365', '3DES', 'BTC']
-frames = []
-relative_value = "BTC,ETH,USD,EUR"
+exchange = 'CCCAGG'
+tsym = 'USD'
+fsym = 'BTC'
 loop_count = 0
-error_coins =[]
+frames = []
 
-while loop_count < 10:
+
+while loop_count < 3:
     loop_count += 1
-    print loop_count
-    for symbol in symbol_list:
+    currentTS = str(int(time.time()))
+    print currentTS
+    allData = []
+    for i in range(1,7):
+        url = 'https://min-api.cryptocompare.com/data/histominute?fsym='+fsym+'&tsym='+ tsym +'&limit=2000&aggregate=1&e='+ exchange +'&toTs=' + currentTS
+        print(url)
+        resp = requests.get(url=url)
+        data = json.loads(resp.text)
+        dataSorted = sorted(data['Data'], key=lambda k: int(k['time']))
+        allData += dataSorted
+        currentTS = str(dataSorted[0]['time'])
+        df = pd.DataFrame(allData)
+        frames.append(df)
 
-        url = "https://min-api.cryptocompare.com/data/price"
-
-        querystring = {"fsym":symbol,"tsyms":relative_value}
-
-        headers = {
-            'cache-control': "no-cache",
-            'postman-token': "b2062bbb-798d-c41a-5b81-f906bc696e6b"
-        }
-
-        response = requests.request("GET", url, headers=headers, params=querystring)
-        data = response.json()
-
-
-        keys = data.keys()
-        #print keys
-
-        if  "Response" not in keys:
-            #print  symbol
-            test_df = p.DataFrame.from_dict(data,orient='index', dtype=None)
-            a1 = test_df
-            test_df = p.DataFrame.transpose(test_df)
-            test_df = test_df.assign (coin = symbol,timestamp_api_call = dt.datetime.now() )
-            #print test_df
-            frames.append(test_df)
-
-        else:
-            response = data["Response"]
-            print response + ': '+symbol
-            error_coins.append(symbol)
+    #pair = 'BTC' + tsym
+    #df.columns = formatHeader(df, pair)
+    #return df
 
 
-
-
-df = p.concat(frames)
+df = pd.concat(frames)
+df = df.drop_duplicates()
+df = df.sort(columns=['time'], ascending=[1])
+df['time'] = pd.to_datetime(df['time'],unit='s')
+df.to_csv(fsym+ tsym + '_minute.csv')
 print df
-print 'Error list: '+str(error_coins)

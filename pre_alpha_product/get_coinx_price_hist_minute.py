@@ -15,17 +15,17 @@ from pandas.io.json import json_normalize
 
 print '------------------ ------- -----  ---------'
 
-coin_types = ["PYN"]
+coin_types = ["BTC"]
 
 currency_conversion = "USD"
 
 frames = []
-limit = "1"
+limit = "2000"
 
 for x in coin_types:
     url = "https://min-api.cryptocompare.com/data/histominute"
-
-    querystring = {"fsym":x,"tsym":currency_conversion,"limit":limit,"aggregate":"3","e":"CCCAGG"}
+    'https://min-api.cryptocompare.com/data/histominute?fsym=BTC&tsym='+ tsym +'&limit=2000&aggregate=1&e='+ exchange +'&toTs=' + currentTS
+    #querystring = {"fsym":x,"tsym":currency_conversion,"limit":limit,"aggregate":"3","e":"CCCAGG"}
 
     headers = {
         'cache-control': "no-cache",

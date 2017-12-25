@@ -32,13 +32,14 @@ response = requests.request("GET", url, headers=headers)
 #print(response.text)
 #print type(response)
 data = response.json()
+print(response.text)
 print type(data)
 print data
 
-
+"""
 for key in data.keys():
     print(key)
-
+"""
 data_extract = data["Data"]
 
 df = p.DataFrame.from_dict(data_extract,orient='index', dtype=None)
@@ -53,8 +54,8 @@ symbol_list = df["Symbol"].tolist()
 output_list = []
 for symbol in symbol_list:
     output_list.append(symbol)
-    print symbol
+    #print symbol
 
-print output_list
+#print output_list
 #print coin_list
 #print df

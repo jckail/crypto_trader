@@ -24,7 +24,7 @@ from itertools import izip
 
 ###config
 start_time = dt.datetime.now()
-symbol_list_restriction = 0  # set to zero if there if its all tickers
+symbol_list_restriction = 10  # set to zero if there if its all tickers
 loop_restriction = 1
 frames = []
 relative_value = "USD,EUR,BTC,ETH"
@@ -34,7 +34,7 @@ success_coins = []
 requested_symbols =[]
 data_source = "cryptocompare"
 loop_delay = 10
-i_know_flag = 1
+
 
 ###apiconfig
 url = "https://min-api.cryptocompare.com/data/all/coinlist"
@@ -97,39 +97,37 @@ else:
     print "Fetching info for: "+ symbol_list_str
 
 
-
-
 while loop_count < loop_restriction:
     loop_count += 1
     print "Loop Count: "+str(loop_count)+" Start: "+str(dt.datetime.now())
 
     for symbol in symbol_list:
-        print symbol
+        #print symbol
 
         if symbol not in error_coins:
-            url = "https://min-api.cryptocompare.com/data/price"
+            url = "https://min-api.cryptocompare.com/data/pricemultifull"
 
-            querystring = {"fsym":symbol,"tsyms":relative_value}
+            querystring = {"fsyms":symbol,"tsyms":relative_value}
 
             headers = {
                 'cache-control': "no-cache",
-                'postman-token': "b2062bbb-798d-c41a-5b81-f906bc696e6b"
+                'postman-token': "f3d54076-038b-9e2d-1ff3-593ae13aabbf"
             }
 
             response = requests.request("GET", url, headers=headers, params=querystring)
-            #print(response.text)
-            data = response.json() #big error was on raw_decode somehow api was passing non json back or unconvertable?
 
-
-
+            data = response.json()
             keys = data.keys()
-            #print keys
+            data = data
+            #print(response.text)
+
+
 
             if  "Response" not in keys:
                 #print "Sucess:"+  symbol
                 if symbol not in success_coins:
                     success_coins.append(symbol)
-                test_df = p.DataFrame.from_dict(data,orient='index', dtype=None)
+                test_df = p.DataFrame.from_dict(data['RAW'][symbol],orient='Columns', dtype=None)
                 a1 = test_df
                 test_df = p.DataFrame.transpose(test_df)
                 test_df = test_df.assign (coin = symbol,coin_units = 1, timestamp_api_call = dt.datetime.now(),loop = loop_count,computer_name = 'JordanManual',data_source = data_source ) ##replace with ec2ip/region
@@ -160,7 +158,7 @@ for x in ["'",'u']:
         error_coins_str = error_coins_str.replace(x,'')
 
 
-df.to_csv('coin_price.csv',encoding='utf-8', index = False)
+df.to_csv('coin_price_details.csv',encoding='utf-8', index = False)
 ###Completion information INFORMATION###
 print "---Completed!---"
 print "Started: "+str(start_time)
