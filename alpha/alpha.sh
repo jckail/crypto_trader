@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for org in Y
-do
-./CtiRunner.py --org $org --skip-audit-build 'N' --skip-opa-build 'Y'
-done
+#for org in Y #input many facilites
+#do # execute per loop? pass per loop?
+./alpha_runner.py --run 'Y'
+#done #for for loop

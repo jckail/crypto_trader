@@ -1,138 +1,91 @@
-__author__ = 'pbhandari'
+
+import requests
+import pandas as p
+import datetime as dt
+import os
+
+concerned_coins = '+DES,BTC,BREAK,4jlkasjdflkasjdf,LTC'
+
+def func_get_coin_list():
 
 
-import traceback
+    print "Running func_get_coin_list"
+    source = "cryptocompare"
+    url = "https://min-api.cryptocompare.com/data/all/coinlist"
+
+    headers = {
+        'cache-control': "no-cache",
+        'postman-token': "a1299df4-9db1-44cc-376e-0357176b776f"
+    }
+
+    response = requests.request("GET", url, headers=headers)
+    data = response.json()
 
 
+    df = p.DataFrame.from_dict(data["Data"],orient='index', dtype=None)
 
-class InterestingMRNs(object):
+    df = df.assign (timestamp_api_call = dt.datetime.now(),source = source )
 
-    def __init__(self):
-        print 'a'
+    df.to_csv('coinlist_info.csv',encoding='utf-8', index = False)
 
-
-    def create_cti_interesting_mrns(self):
-
-
-        try:
-
-            print'create_cti_interesting_mrns'
-
-        except:
-
-            print "exception encountered.."
+    return df
 
 
-    def insert_into_cti_interesting_mrns(self):
+gcl_output = func_get_coin_list()
+symbol_list = gcl_output["Symbol"].tolist()
+"""lst1 = "'"+','.join(symbol_list[:2])+',BTC'"'" ## good list to queryable string+
+print lst1"""
 
-        """
-        We are interested charges that meet the following conditions
-            1. The MRN has been viewed by the customer before
-            2. All the missing_master lines that have been posted after the first view date of the MRN
-                (Realize that the first view date could be years before the actual charge we are talking about. This is a rough
-                swag of the charges that we are interested in evaluating)
+def validate_price_info(df_gcl_output):
+    symbol_list = gcl_output["Symbol"].tolist()
+    has_pricing =[]
+    cwd = os.getcwd()
+    count = 0
+    total_symbols = len(symbol_list)
+    print
+    print "Started: "+str(dt.datetime.now())
 
-        :return:
-        """
+    for symbol in symbol_list[:2]:
+        count += 1
+        url = "https://min-api.cryptocompare.com/data/pricemultifull"
 
-        sql = """
-                        insert into cti_interesting_mrns
-                          (organization_name,
-                             mrn,
-                             mcj_id,
-                             mcj_service_date,
-                             description                    ,
-                             status                         )
-                          select distinct mcj.organization_name
-                            , mcj.mrn
-                            , mcj.id mcj_id
-                            , mcj.service_date service_date
-                            , mcj.description
-                            , mcj.status
-                          from missing_charges_jess mcj
-                            join audit a1 on (mcj.id = a1.missingchargeid)
-                            join users u on (a1.username = u.username
-                                                            and a1.username not in ('a_falco', 'threatx' )
-                                                            and (u.staff is FALSE
-                                                                 or ((a1.type = 'HOSPITALEXPORT' or a1.type = 'POEXPORT'
-                                                                 or (a1.type = 'CHARGE' ))
-                                                                     and u.staff is true))
-                                                             )
-                           where mcj.organization_name = %(org_name)s
-                      """
+        querystring = {"fsyms":symbol,"tsyms":'USD',"e":"CCCAGG"}
 
-        try:
-            print "Executing insert_into_cti_interesting_mrns"
-            cur = self.conn.cursor()
-            query = cur.mogrify(sql, {'org_name':self.org_name})
-            logging.info(query)
-            cur.execute(query)
-            inserted_accts = cur.rowcount
-            print "Insert " + str(inserted_accts) + " Instances "
+        headers = {
+            'cache-control': "no-cache",
+            'postman-token': "f3d54076-038b-9e2d-1ff3-593ae13aabbf"
+        }
+        #add try loop here with response 200 (success)
+        response = requests.request("GET", url, headers=headers, params=querystring)
+        data = response.json()
 
-        except:
-            print "exception encountered.. insert_into_cti_interesting_mrns"
-            logging.error(traceback.format_exc())
-            exit(1)
-        self.conn.commit()
+        if 'RAW' in data.keys():
+            has_pricing.append({'symbol':str(symbol), 'has_pricing':1})
 
-    def analyze_table(self):
-        """
+        else:
+            has_pricing.append({'symbol':str(symbol),'has_pricing':0})
+        print str(count)+' / '+str(total_symbols)
 
-        :return:
-        """
-        sql = "analyze cti_interesting_mrns"
+    df_has_pricing = p.DataFrame(has_pricing)
+    df_has_pricing.to_csv(cwd+'/data/has_pricing.csv',encoding='utf-8', index = False)
+    print cwd+'/data/has_pricing.csv'
+    print "Ended: "+str(dt.datetime.now())
 
-        try:
-            curs = self.conn.cursor()
-            curs.execute(sql)
+    """
+    [{'points': 50, 'time': '5:00', 'year': 2010}, 
+{'points': 25, 'time': '6:00', 'month': "february"}, 
+{'points':90, 'time': '9:00', 'month': 'january'}, 
+{'points_h1':20, 'month': 'june'}]
+    
+    
+    
+    df_has_pricing.to_csv('has_pricing.csv',encoding='utf-8', index = False)
+    print df_has_pricing
 
-        except:
-            logging.error("analyze cti_interesting_mrns...")
-            logging.error(traceback.format_exc())
-            exit(1)
+    df_no_pricing = p.DataFrame({'no_pricing':no_pricing})
+    print df_no_pricing
+"""
+validate_price_info(gcl_output)
 
 
-    def teardown(self):
-        """
-
-        :return:
-        """
-
-        sql = "delete from acustream.cti_interesting_mrns where organization_name = %(org_name)s"
-
-        try:
-            print "Reseting cti_interesting_mrns"
-            cur = self.conn.cursor()
-            query = cur.mogrify(sql, {'org_name':self.org_name})
-            logging.info(query)
-            cur.execute(query)
-            inserted_accts = cur.rowcount
-            print "Deleted " + str(inserted_accts) + " Instances "
-
-        except:
-            logging.error(traceback.format_exc())
-            exit(1)
-
-        self.conn.commit()
-
-
-    def main(self):
-        """
-
-        :return:
-        """
-        print "Start create_cti_interesting_mrns"
-        imrn = InterestingMRNs(self.org_name, self.params, self.conn, self.trans_post_date)
-        imrn.create_cti_interesting_mrns()
-        imrn.teardown()
-        imrn.insert_into_cti_interesting_mrns()
-        imrn.analyze_table()
-        print "create_cti_interesting_mrns Completed"
-
-if __name__ == '__main__':
-
-
-    print 'test'
-    mrn = InterestingMRNs()
-    mrn.main()
+#print symbol_list

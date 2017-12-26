@@ -5,7 +5,7 @@ __author__ = 'jkail'
 import requests
 import pandas as p
 import datetime as dt
-
+import os
 
 class GetCoinLists(object):
 
@@ -14,12 +14,13 @@ class GetCoinLists(object):
 
         :return:
         """
-        print 'ii'
+
         #self.df = self.func_get_coin_list()
         #exit()
 
     def func_get_coin_list(self):
-        print "called function!!"
+        cwd = os.getcwd()
+        print "Running func_get_coin_list"
         source = "cryptocompare"
         url = "https://min-api.cryptocompare.com/data/all/coinlist"
 
@@ -36,8 +37,8 @@ class GetCoinLists(object):
 
         df = df.assign (timestamp_api_call = dt.datetime.now(),source = source )
 
-        df.to_csv('coinlist_info.csv',encoding='utf-8', index = False)
-        #print df
+        df.to_csv(cwd+'/data/coinlist_info.csv',encoding='utf-8', index = False)
+
         return df
 
     def main(self):
@@ -45,10 +46,17 @@ class GetCoinLists(object):
 
         :return:
         """
-        gcl = GetCoinLists()
-        df = gcl.func_get_coin_list()
-        #print df
+        print 'begin: GetCoinLists.main'
+        try:
+            gcl = GetCoinLists()
+            df = gcl.func_get_coin_list()
+
+        except:
+            print 'Error: GetCoinLists.main'
+
+        print 'end: GetCoinLists.main'
         return df
+
 if __name__ == '__main__':
     """
 
@@ -56,8 +64,7 @@ if __name__ == '__main__':
     """
     test = 'a'
     runner = GetCoinLists()
-    print runner
-    print 'class done '
+
     runner.main()
-    print 'end'
+
 

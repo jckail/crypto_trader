@@ -34,3 +34,5 @@ def get_get_details_for_symbols(symbols):
     df = p.concat(frames)
     print df
     #return df
+
+get_get_details_for_symbols(hardcoded_symbols)

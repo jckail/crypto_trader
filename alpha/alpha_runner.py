@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 import argparse
 import buildcoinlist
+import haspricing
 import pandas
+
+
 
 class alpha_runner(object):
     """
@@ -11,11 +14,13 @@ class alpha_runner(object):
     def __init__(self):
         self.args = self.get_args()
         self.run = self.args.run
+        self.focus_symbols =  ['BTC','BCH','LTC','ETH']
+
 
         if self.run == 'Y':
-            print'hey you envoked this'
+            print'evoked'
         else:
-            print 'foff asdfasdf'
+            print 'invalid args'
 
         #self.org_params = json.load(open("config/cti_config.dict"))
 
@@ -32,14 +37,17 @@ class alpha_runner(object):
 
         if 1 == 1:
             try:
-
-                print 'try trigger'
+                #get list of coins
                 coin_df = buildcoinlist.GetCoinLists()
-                output = coin_df.main()
-                print output
+                gcl_output = coin_df.main()
+
+                #ask if price info exists (update has price csv)
+                hpc = haspricing.HasPricingCheck(gcl_output,self.focus_symbols)
+                hpc.main()
+
 
             except:
-                print "not going into envoiking function "
+                print "ERROR: validate_coin_get_price"
 
     def main(self):
         self.validate_coin_get_price()
