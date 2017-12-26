@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20dbcae3-0635-4cf0-b324-dfd711d592a7" name="Default" comment="created alpha_runner&#10;&#10;added in haspricing.py into runner correctly instanciated classes etc.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/alpha/haspricing.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/alpha/alpha_only_FS.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/alpha.sh" afterPath="$PROJECT_DIR$/alpha/alpha.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/alpha_runner.py" afterPath="$PROJECT_DIR$/alpha/alpha_runner.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/buildcoinlist.py" afterPath="$PROJECT_DIR$/alpha/buildcoinlist.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/coinlist_info.csv" afterPath="$PROJECT_DIR$/alpha/coinlist_info.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/get_current_details_for_symbols.py" afterPath="$PROJECT_DIR$/alpha/get_current_details_for_symbols.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coinlist_info.csv" afterPath="$PROJECT_DIR$/coinlist_info.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lit_crypto.iml" afterPath="$PROJECT_DIR$/lit_crypto.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_code/scratch_pad.py" afterPath="$PROJECT_DIR$/sample_code/scratch_pad.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_code/scratch_pad2.py" afterPath="$PROJECT_DIR$/sample_code/scratch_pad2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/data/coinlist_info.csv" afterPath="$PROJECT_DIR$/alpha/data/coinlist_info.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/data/has_pricing.csv" afterPath="$PROJECT_DIR$/alpha/data/has_pricing.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/haspricing.py" afterPath="$PROJECT_DIR$/alpha/haspricing.py" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,8 +54,8 @@
             <file leaf-file-name="haspricing.py" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/alpha/haspricing.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="364">
-                    <caret line="42" column="44" lean-forward="true" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+                  <state relative-caret-position="286">
+                    <caret line="20" column="58" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="58" />
                     <folding>
                       <element signature="e#45#60#0" expanded="true" />
                     </folding>
@@ -77,8 +73,8 @@
       <file leaf-file-name="buildcoinlist.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/alpha/buildcoinlist.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="45" />
               <folding>
                 <element signature="e#45#60#0" expanded="true" />
               </folding>
@@ -86,11 +82,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="alpha.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/alpha/alpha.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="51" lean-forward="false" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alpha_only_FS.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/alpha/alpha_only_FS.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="51" lean-forward="false" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="alpha_runner.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alpha/alpha_runner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="401">
+              <caret line="41" column="99" lean-forward="true" selection-start-line="41" selection-start-column="99" selection-end-line="41" selection-end-column="99" />
               <folding>
                 <element signature="e#22#37#0" expanded="true" />
               </folding>
@@ -211,13 +227,14 @@
         <option value="$PROJECT_DIR$/alpha/get_coin_list.py" />
         <option value="$PROJECT_DIR$/sample_code/class test.py" />
         <option value="$PROJECT_DIR$/alpha/test.py" />
-        <option value="$PROJECT_DIR$/alpha/alpha.sh" />
         <option value="$PROJECT_DIR$/alpha/get_current_details_for_symbols.py" />
         <option value="$PROJECT_DIR$/pre_alpha_product/accidental_auto_refresh_of_loop_important.py" />
         <option value="$PROJECT_DIR$/sample_code/scratch_pad.py" />
         <option value="$PROJECT_DIR$/sample_code/scratch_pad2.py" />
         <option value="$PROJECT_DIR$/alpha/buildcoinlist.py" />
         <option value="$PROJECT_DIR$/alpha/haspricing.py" />
+        <option value="$PROJECT_DIR$/alpha/alpha_only_FS.sh" />
+        <option value="$PROJECT_DIR$/alpha/alpha.sh" />
         <option value="$PROJECT_DIR$/alpha/alpha_runner.py" />
       </list>
     </option>
@@ -297,6 +314,9 @@
     <property name="last_opened_file_path" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/alpha" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/alpha" />
     </key>
@@ -1036,7 +1056,7 @@
       <workItem from="1514223718304" duration="24000" />
       <workItem from="1514224953321" duration="16601000" />
       <workItem from="1514303617831" duration="7000" />
-      <workItem from="1514303629803" duration="15025000" />
+      <workItem from="1514303629803" duration="16396000" />
     </task>
     <task id="LOCAL-00001" summary="This is  an early push with creation of pre_alpha directory and a few basic calls, nothing here yet, just a push before I create a branch">
       <created>1513809962949</created>
@@ -1070,7 +1090,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69027000" />
+    <option name="totallyTimeSpent" value="70398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-180" width="1920" height="1080" extended-state="0" />
@@ -1164,16 +1184,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sample_code/scratch_pad.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sample_code/scratch_pad2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1437,14 +1447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/alpha/alpha.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pre_alpha_product/get_coin_price_with_refresh.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -1521,8 +1523,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/alpha/buildcoinlist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="45" />
           <folding>
             <element signature="e#45#60#0" expanded="true" />
           </folding>
@@ -1531,18 +1533,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/alpha/haspricing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="42" column="44" lean-forward="true" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+        <state relative-caret-position="286">
+          <caret line="20" column="58" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="58" />
           <folding>
             <element signature="e#45#60#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/alpha/alpha_only_FS.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="51" lean-forward="false" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alpha/alpha.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="51" lean-forward="false" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/alpha/alpha_runner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="401">
+          <caret line="41" column="99" lean-forward="true" selection-start-line="41" selection-start-column="99" selection-end-line="41" selection-end-column="99" />
           <folding>
             <element signature="e#22#37#0" expanded="true" />
           </folding>

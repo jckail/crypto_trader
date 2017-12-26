@@ -7,16 +7,12 @@ import pandas as p
 import datetime as dt
 import os
 
+
 class GetCoinLists(object):
 
-    def __init__(self):
-        """
-
-        :return:
-        """
-
-        #self.df = self.func_get_coin_list()
-        #exit()
+    def __init__(self, runfocus_symbols_only, focus_symbols):
+        self.runfocus_symbols_only = runfocus_symbols_only
+        self.focus_symbols = focus_symbols
 
     def func_get_coin_list(self):
         cwd = os.getcwd()
@@ -48,7 +44,7 @@ class GetCoinLists(object):
         """
         print 'begin: GetCoinLists.main'
         try:
-            gcl = GetCoinLists()
+            gcl = GetCoinLists(self.runfocus_symbols_only,self.focus_symbols)
             df = gcl.func_get_coin_list()
 
         except:
@@ -57,12 +53,12 @@ class GetCoinLists(object):
         print 'end: GetCoinLists.main'
         return df
 
+
 if __name__ == '__main__':
     """
 
     :return:
     """
-    test = 'a'
     runner = GetCoinLists()
 
     runner.main()

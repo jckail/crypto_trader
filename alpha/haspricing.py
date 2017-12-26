@@ -7,23 +7,25 @@ import pandas as p
 import datetime as dt
 import os
 
-class HasPricingCheck(object):
-    """
 
-    :return:
-    """
-    def __init__(self,gcl_output, focus_symbols):
+class HasPricingCheck(object):
+
+    def __init__(self,gcl_output, runfocus_symbols_only, focus_symbols):
         self.gcl_output = gcl_output
         self.focus_symbols = focus_symbols
-
+        self.runfocus_symbols_only = runfocus_symbols_only
 
     def validate_price_info(self):
         df_gcl_output = self.gcl_output
         focus_symbols = self.focus_symbols
-        x = 10
-        symbol_list = df_gcl_output["Symbol"].tolist()
+        runfocus_symbols_only = self.runfocus_symbols_only
 
-        symbol_list = symbol_list[:x] + focus_symbols
+        if runfocus_symbols_only == 'Y':
+            symbol_list = focus_symbols
+        else:
+            x = 10
+            symbol_list = df_gcl_output["Symbol"].tolist()
+            symbol_list = symbol_list[:x] + focus_symbols
 
         print symbol_list
         has_pricing =[]
@@ -51,20 +53,17 @@ class HasPricingCheck(object):
     
             else:
                 has_pricing.append({'symbol':str(symbol),'has_pricing':0})
-            print str(count)+' / '+str(total_symbols)
+            print symbol+': '+str(count)+' / '+str(total_symbols)
     
         df_has_pricing = p.DataFrame(has_pricing)
         df_has_pricing.to_csv(cwd+'/data/has_pricing.csv',encoding='utf-8', index = False)
         print "Ended: "+str(dt.datetime.now())
 
     def main(self):
-        """
 
-        :return:
-        """
         print 'run main'
         print 'begin: HasPricingCheck.main'
-        hpc = HasPricingCheck(self.gcl_output,self.focus_symbols)
+        hpc = HasPricingCheck(self.gcl_output, self.runfocus_symbols_only, self.focus_symbols)
         try:
             hpc.validate_price_info()
 
@@ -72,6 +71,7 @@ class HasPricingCheck(object):
             print 'error validate_price_info failed'
 
         print 'end: HasPricingCheck.main'
+
 
 if __name__ == '__main__':
     runner = HasPricingCheck()
