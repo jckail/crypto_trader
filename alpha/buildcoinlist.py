@@ -8,14 +8,15 @@ import datetime as dt
 
 
 class GetCoinLists(object):
-    """
 
-    :return:
-    """
-    def __init__(self,test):
+    def __init__(self):
+        """
 
-        self.test = test
-        self.dataframe = self.func_get_coin_list.df
+        :return:
+        """
+        print 'ii'
+        #self.df = self.func_get_coin_list()
+        #exit()
 
     def func_get_coin_list(self):
         print "called function!!"
@@ -36,7 +37,7 @@ class GetCoinLists(object):
         df = df.assign (timestamp_api_call = dt.datetime.now(),source = source )
 
         df.to_csv('coinlist_info.csv',encoding='utf-8', index = False)
-
+        #print df
         return df
 
     def main(self):
@@ -44,7 +45,9 @@ class GetCoinLists(object):
 
         :return:
         """
-        df = self.func_get_coin_list()
+        gcl = GetCoinLists()
+        df = gcl.func_get_coin_list()
+        #print df
         return df
 if __name__ == '__main__':
     """
@@ -52,7 +55,8 @@ if __name__ == '__main__':
     :return:
     """
     test = 'a'
-    runner = GetCoinLists(test)
+    runner = GetCoinLists()
+    print runner
     print 'class done '
     runner.main()
     print 'end'
