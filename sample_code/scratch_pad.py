@@ -1,41 +1,138 @@
-import json, requests
-import pandas as pd
-from datetime import datetime, timedelta
-import dateutil.parser
-import time
-import numpy as np
-
-exchange = 'CCCAGG'
-tsym = 'USD'
-fsym = 'BTC'
-loop_count = 0
-frames = []
+__author__ = 'pbhandari'
 
 
-while loop_count < 3:
-    loop_count += 1
-    currentTS = str(int(time.time()))
-    print currentTS
-    allData = []
-    for i in range(1,7):
-        url = 'https://min-api.cryptocompare.com/data/histominute?fsym='+fsym+'&tsym='+ tsym +'&limit=2000&aggregate=1&e='+ exchange +'&toTs=' + currentTS
-        print(url)
-        resp = requests.get(url=url)
-        data = json.loads(resp.text)
-        dataSorted = sorted(data['Data'], key=lambda k: int(k['time']))
-        allData += dataSorted
-        currentTS = str(dataSorted[0]['time'])
-        df = pd.DataFrame(allData)
-        frames.append(df)
-
-    #pair = 'BTC' + tsym
-    #df.columns = formatHeader(df, pair)
-    #return df
+import traceback
 
 
-df = pd.concat(frames)
-df = df.drop_duplicates()
-df = df.sort(columns=['time'], ascending=[1])
-df['time'] = pd.to_datetime(df['time'],unit='s')
-df.to_csv(fsym+ tsym + '_minute.csv')
-print df
+
+class InterestingMRNs(object):
+
+    def __init__(self):
+        print 'a'
+
+
+    def create_cti_interesting_mrns(self):
+
+
+        try:
+
+            print'create_cti_interesting_mrns'
+
+        except:
+
+            print "exception encountered.."
+
+
+    def insert_into_cti_interesting_mrns(self):
+
+        """
+        We are interested charges that meet the following conditions
+            1. The MRN has been viewed by the customer before
+            2. All the missing_master lines that have been posted after the first view date of the MRN
+                (Realize that the first view date could be years before the actual charge we are talking about. This is a rough
+                swag of the charges that we are interested in evaluating)
+
+        :return:
+        """
+
+        sql = """
+                        insert into cti_interesting_mrns
+                          (organization_name,
+                             mrn,
+                             mcj_id,
+                             mcj_service_date,
+                             description                    ,
+                             status                         )
+                          select distinct mcj.organization_name
+                            , mcj.mrn
+                            , mcj.id mcj_id
+                            , mcj.service_date service_date
+                            , mcj.description
+                            , mcj.status
+                          from missing_charges_jess mcj
+                            join audit a1 on (mcj.id = a1.missingchargeid)
+                            join users u on (a1.username = u.username
+                                                            and a1.username not in ('a_falco', 'threatx' )
+                                                            and (u.staff is FALSE
+                                                                 or ((a1.type = 'HOSPITALEXPORT' or a1.type = 'POEXPORT'
+                                                                 or (a1.type = 'CHARGE' ))
+                                                                     and u.staff is true))
+                                                             )
+                           where mcj.organization_name = %(org_name)s
+                      """
+
+        try:
+            print "Executing insert_into_cti_interesting_mrns"
+            cur = self.conn.cursor()
+            query = cur.mogrify(sql, {'org_name':self.org_name})
+            logging.info(query)
+            cur.execute(query)
+            inserted_accts = cur.rowcount
+            print "Insert " + str(inserted_accts) + " Instances "
+
+        except:
+            print "exception encountered.. insert_into_cti_interesting_mrns"
+            logging.error(traceback.format_exc())
+            exit(1)
+        self.conn.commit()
+
+    def analyze_table(self):
+        """
+
+        :return:
+        """
+        sql = "analyze cti_interesting_mrns"
+
+        try:
+            curs = self.conn.cursor()
+            curs.execute(sql)
+
+        except:
+            logging.error("analyze cti_interesting_mrns...")
+            logging.error(traceback.format_exc())
+            exit(1)
+
+
+    def teardown(self):
+        """
+
+        :return:
+        """
+
+        sql = "delete from acustream.cti_interesting_mrns where organization_name = %(org_name)s"
+
+        try:
+            print "Reseting cti_interesting_mrns"
+            cur = self.conn.cursor()
+            query = cur.mogrify(sql, {'org_name':self.org_name})
+            logging.info(query)
+            cur.execute(query)
+            inserted_accts = cur.rowcount
+            print "Deleted " + str(inserted_accts) + " Instances "
+
+        except:
+            logging.error(traceback.format_exc())
+            exit(1)
+
+        self.conn.commit()
+
+
+    def main(self):
+        """
+
+        :return:
+        """
+        print "Start create_cti_interesting_mrns"
+        imrn = InterestingMRNs(self.org_name, self.params, self.conn, self.trans_post_date)
+        imrn.create_cti_interesting_mrns()
+        imrn.teardown()
+        imrn.insert_into_cti_interesting_mrns()
+        imrn.analyze_table()
+        print "create_cti_interesting_mrns Completed"
+
+if __name__ == '__main__':
+
+
+    print 'test'
+    mrn = InterestingMRNs()
+    mrn.main()
