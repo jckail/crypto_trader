@@ -23,9 +23,9 @@ class HasPricingCheck(object):
         if runfocus_symbols_only == 'Y':
             symbol_list = focus_symbols
         else:
-            x = 10
+            #x = 100
             symbol_list = df_gcl_output["Symbol"].tolist()
-            symbol_list = symbol_list[:x] + focus_symbols
+            #symbol_list = symbol_list[:x] + focus_symbols
 
         print symbol_list
         has_pricing =[]
@@ -57,6 +57,7 @@ class HasPricingCheck(object):
     
         df_has_pricing = p.DataFrame(has_pricing)
         df_has_pricing.to_csv(cwd+'/data/has_pricing.csv',encoding='utf-8', index = False)
+
         print "Ended: "+str(dt.datetime.now())
 
     def main(self):
