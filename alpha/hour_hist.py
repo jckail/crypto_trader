@@ -12,14 +12,14 @@ import datetime as dt
 import os
 
 
-class GetMinuteHist(object):
+class GetHourHist(object):
 
     def __init__(self,symbols, runfocus_symbols_only, focus_symbols):
         self.symbols = symbols
         self.focus_symbols = focus_symbols
         self.runfocus_symbols_only = runfocus_symbols_only
 
-    def get_minute_hist(self):
+    def get_hour_hist(self):
         runfocus_symbols_only = self.runfocus_symbols_only
         focus_symbols = self.focus_symbols
         symbols = self.symbols
@@ -47,7 +47,7 @@ class GetMinuteHist(object):
                 frames = []
                 for exchange in exchanges:
 
-                    url = 'https://min-api.cryptocompare.com/data/histominute?fsym=' \
+                    url = 'https://min-api.cryptocompare.com/data/histohour?fsym=' \
                           +symbol+'&tsym='+ tsym +'&limit='+url_limit+'&aggregate=1&e='+\
                           exchange +'&toTs=' + currentts
                     resp = requests.get(url=url)
@@ -63,7 +63,7 @@ class GetMinuteHist(object):
                     else:
                         print 'Invalid: '+currentts+'   '+exchange+'  '+symbol
 
-                my_file = cwd+'/data/minute_data/'+symbol+'_minute.csv'
+                my_file = cwd+'/data/hour_data/'+symbol+'_hour.csv'
 
                 if os.path.isfile(my_file):
                     df_resident = p.DataFrame.from_csv(my_file)
@@ -78,27 +78,27 @@ class GetMinuteHist(object):
                 df = df.reset_index(drop=True)
 
                 if not df.empty:
-                    df.to_csv(cwd+'/data/minute_data/'+symbol+'_minute.csv', index_label='Id')
-                    print 'Updated: '+cwd+'/data/minute_data/'+symbol+'_minute.csv'
+                    df.to_csv(cwd+'/data/hour_data/'+symbol+'_hour.csv', index_label='Id')
+                    print 'Updated: '+cwd+'/data/hour_data/'+symbol+'_hour.csv'
                 else:
                     print'No minhist for: '+symbol
 
     def main(self):
 
         print 'run main'
-        print 'begin: GetMinuteHist.main'
-        hpc = GetMinuteHist(self.symbols, self.runfocus_symbols_only, self.focus_symbols)
+        print 'begin: GetHourHist.main'
+        hpc = GetHourHist(self.symbols, self.runfocus_symbols_only, self.focus_symbols)
         try:
-            hpc.get_minute_hist()
+            hpc.get_hour_hist()
 
         except:
-            print 'error get_minute_hist failed'
+            print 'error get_hour_hist failed'
 
-        print 'end: GetMinuteHist.main'
+        print 'end: GetHourHist.main'
 
 
 if __name__ == '__main__':
-    runner = GetMinuteHist()
+    runner = GetHourHist()
     runner.main()
 
 

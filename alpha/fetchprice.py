@@ -44,11 +44,21 @@ class GetDtlPrice(object):
                 test_df = test_df.assign (coin = key, coin_units = 1, timestamp_api_call = dt.datetime.now(),computer_name = 'JordanManual') ##replace with ec2ip/region
                 frames.append(test_df)
 
-        df_resident = p.DataFrame.from_csv(cwd+'/data/current_dtl_price.csv')
-        frames.append(df_resident)
+        my_file = cwd+'/data/current_dtl_price.csv'
+
+        if os.path.isfile(my_file):
+            df_resident = p.DataFrame.from_csv(my_file)
+            print 'appending new data price dtl '
+            frames.append(df_resident)
+        else:
+            print 'no new data to append'
+
         df = p.concat(frames)
-        df = df.drop_duplicates()
-        df.to_csv(cwd+'/data/current_dtl_price.csv',encoding='utf-8', index = False)
+        df = df.sort_values('LASTUPDATE')
+        df = df.drop_duplicates(['FROMSYMBOL','LASTUPDATE','LASTMARKET'], keep='last')
+        df = df.sort_values('LASTUPDATE')
+        df = df.reset_index(drop=True)
+        df.to_csv(cwd+'/data/current_dtl_price.csv',encoding='utf-8', index_label='Id')
         return df
 
     def main(self):

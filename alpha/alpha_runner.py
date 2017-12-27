@@ -1,11 +1,14 @@
 #!/usr/bin/env python
+#mods
 import argparse
+import pandas as p
+import os
+#classes
 import buildcoinlist
 import haspricing
 import fetchprice
 import minute_hist
-import pandas as p
-import os
+import hour_hist
 
 #add arg focus symbols only
 
@@ -75,8 +78,10 @@ class alpha_runner(object):
                     fp = fetchprice.GetDtlPrice(ls_has)
                     a = fp.main()
                     # a = current price changes
-                    mh = minute_hist.GetMinuteHist(ls_has, self.runfocus_symbols_only, self.focus_symbols)
-                    mh.main()
+                    #mh = minute_hist.GetMinuteHist(ls_has, self.runfocus_symbols_only, self.focus_symbols)
+                    #mh.main()
+                    #hh = hour_hist.GetHourHist(ls_has, self.runfocus_symbols_only, self.focus_symbols)
+                    #hh.main()
 
                 except:
                     print 'error on processing dtl, hist'
