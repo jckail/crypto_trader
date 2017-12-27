@@ -16,14 +16,14 @@ class GetDtlPrice(object):
     def get_get_details_for_symbols(self):
         symbols = self.symbols
         frames = []
-
+        cwd = os.getcwd()
         xsymbols = [symbols[x:x+50] for x in xrange(0, len(symbols), 50)]
-        print xsymbols
+        #print xsymbols
 
         for symbols in xsymbols:
 
             api_call_symbols = ','.join(symbols)
-            print api_call_symbols
+            #print api_call_symbols
 
             url = "https://min-api.cryptocompare.com/data/pricemultifull"
 
@@ -36,7 +36,7 @@ class GetDtlPrice(object):
 
             response = requests.request("GET", url, headers=headers, params=querystring)
             data = response.json()
-            print data
+            #print data
 
             for key in data['RAW'].keys():
                 test_df = p.DataFrame.from_dict(data['RAW'][key],orient='Columns', dtype=None)
@@ -44,10 +44,11 @@ class GetDtlPrice(object):
                 test_df = test_df.assign (coin = key, coin_units = 1, timestamp_api_call = dt.datetime.now(),computer_name = 'JordanManual') ##replace with ec2ip/region
                 frames.append(test_df)
 
+        df_resident = p.DataFrame.from_csv(cwd+'/data/current_dtl_price.csv')
+        frames.append(df_resident)
         df = p.concat(frames)
-        cwd = os.getcwd()
+        df = df.drop_duplicates()
         df.to_csv(cwd+'/data/current_dtl_price.csv',encoding='utf-8', index = False)
-        print df
         return df
 
     def main(self):

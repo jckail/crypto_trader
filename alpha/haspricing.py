@@ -10,24 +10,21 @@ import os
 
 class HasPricingCheck(object):
 
-    def __init__(self,gcl_output, runfocus_symbols_only, focus_symbols):
-        self.gcl_output = gcl_output
+    def __init__(self,symbol_list, runfocus_symbols_only, focus_symbols):
+        self.symbol_list = symbol_list
         self.focus_symbols = focus_symbols
         self.runfocus_symbols_only = runfocus_symbols_only
 
     def validate_price_info(self):
-        df_gcl_output = self.gcl_output
+        symbol_list = self.symbol_list
         focus_symbols = self.focus_symbols
         runfocus_symbols_only = self.runfocus_symbols_only
 
         if runfocus_symbols_only == 'Y':
             symbol_list = focus_symbols
-        else:
-            #x = 100
-            symbol_list = df_gcl_output["Symbol"].tolist()
-            #symbol_list = symbol_list[:x] + focus_symbols
+        elif runfocus_symbols_only == 'N':
+            symbol_list = symbol_list
 
-        print symbol_list
         has_pricing =[]
         cwd = os.getcwd()
         count = 0
@@ -54,9 +51,15 @@ class HasPricingCheck(object):
             else:
                 has_pricing.append({'symbol':str(symbol),'has_pricing':0})
             print symbol+': '+str(count)+' / '+str(total_symbols)
-    
+
+        frames = []
+        df_resident = p.DataFrame.from_csv(cwd+'/data/has_pricing.csv')
+        frames.append(df_resident)
         df_has_pricing = p.DataFrame(has_pricing)
-        df_has_pricing.to_csv(cwd+'/data/has_pricing.csv',encoding='utf-8', index = False)
+        frames.append(df_has_pricing)
+        df = p.concat(frames)
+        df = df.drop_duplicates()
+        df.to_csv(cwd+'/data/has_pricing.csv',encoding='utf-8', index = False)
 
         print "Ended: "+str(dt.datetime.now())
 
@@ -64,7 +67,7 @@ class HasPricingCheck(object):
 
         print 'run main'
         print 'begin: HasPricingCheck.main'
-        hpc = HasPricingCheck(self.gcl_output, self.runfocus_symbols_only, self.focus_symbols)
+        hpc = HasPricingCheck(self.symbol_list, self.runfocus_symbols_only, self.focus_symbols)
         try:
             hpc.validate_price_info()
 

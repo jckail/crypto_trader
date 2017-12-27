@@ -1,60 +1,67 @@
 import json, requests
-import pandas as pd
+import pandas as p
 from datetime import datetime, timedelta
 import dateutil.parser
 import time
 import numpy as np
 import datetime as dt
-"""
-exchanges =[ 'CCCAGG','Cryptsy', 'BTCChina', 'Bitstamp', 'BTER', 'OKCoin',
-             'Coinbase', 'Poloniex', 'Cexio', 'BTCE', 'BitTrex', 'Kraken', 'Bitfinex']
+import os
+
+cwd = os.getcwd()
+print cwd
+exchanges =[ 'CCCAGG','Cryptsy', 'BTCChina', 'Bitstamp', 'BTER', 'OKCoin','Coinbase', 'Poloniex', 'Cexio', 'BTCE', 'BitTrex', 'Kraken', 'Bitfinex']
+#exchanges = ['CCCAGG','Coinbase', 'Bitfinex']
 exchange = 'CCCAGG'
 tsym = 'USD'
 
+symbols = ['007', '1337', '1CR', '1ST', '2015', '2BACCO', '2GIVE', '32BIT', '365', 'BTC', 'BCH', 'LTC', 'ETH']
 
-fsym = 'BTC'
-loop_count = 0
-frames = []
-iteration = 2
+
 url_limit = '2000'
 
+runfocus_symbols_only = 'Y'
+focus_symbols = ['BTC','BCH','LTC','ETH']
 
-while loop_count < 2:
-    loop_count += 1
-    for exchange in exchanges:
-        currentTS = str(int(time.time()))
-        print currentTS+'   '+exchange
-        allData = []
-        for i in range(1,iteration):
+f
+if runfocus_symbols_only == 'Y':
+    print"Pulling for only focus_symbols:"+str(focus_symbols)
+    symbols = focus_symbols
+
+else:
+    print 'processing: '+str(len(symbols))+' symbols'
+    symbols = symbols
+
+xsymbols = [symbols[x:x+5] for x in xrange(0, len(symbols), 5)]
+print xsymbols
+
+for symbols in xsymbols:
+    print symbols
+    for symbol in symbols:
+        frames = []
+        for exchange in exchanges:
+            currentTS = str(int(time.time()))
+
+            allData = []
             url = 'https://min-api.cryptocompare.com/data/histominute?fsym=' \
-                  +fsym+'&tsym='+ tsym +'&limit='+url_limit+'&aggregate=1&e='+ \
+                  +symbol+'&tsym='+ tsym +'&limit='+url_limit+'&aggregate=1&e='+ \
                   exchange +'&toTs=' + currentTS
-            #print(url)
             resp = requests.get(url=url)
             data = json.loads(resp.text)
-            keys = data.keys()
-            #print keys
+
             if  data["Data"] != []:
+                print 'Sucess: '+currentTS+'   '+exchange+'  '+symbol
                 dataSorted = sorted(data['Data'], key=lambda k: int(k['time']))
                 allData += dataSorted
                 currentTS = str(dataSorted[0]['time'])
-                df = pd.DataFrame(allData)
-                df = df.assign(coin = fsym,coin_units = 1, timestamp_api_call = dt.datetime.now(),computer_name = 'JordanManual',exchange = exchange )
+                df = p.DataFrame(allData)
+                df = df.assign(coin = symbol, coin_units = 1, timestamp_api_call = dt.datetime.now(),computer_name = 'JordanManual',exchange = exchange )
                 frames.append(df)
 
             else:
-                #print 'damn'
-                print data['Message']
-
-print frames
-
-df = pd.concat(frames)
-df = df.drop_duplicates()
-df.to_csv(fsym+ tsym + '_minute.csv')
-print df
-
-"""
-currentTS = str(int(time.time()))
-print currentTS
-
-print'https://min-api.cryptocompare.com/data/histominute?fsym=BTC&tsym=USD&limit=2000&aggregate=1&e=CCCAGG&toTs=' + currentTS
+                print 'Invalid: '+currentTS+'   '+exchange+'  '+symbol
+        df_resident = p.DataFrame.from_csv(cwd+'/data/minute_data/'+symbol+'_minute.csv')
+        frames.append(df_resident)
+        df = p.concat(frames)
+        df = df.drop_duplicates()
+        df.to_csv(cwd+'/data/minute_data/'+symbol+'_minute.csv')
+        print 'Updated: '+cwd+'/data/minute_data/'+symbol+'_minute.csv'

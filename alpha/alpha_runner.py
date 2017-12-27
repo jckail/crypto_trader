@@ -3,6 +3,7 @@ import argparse
 import buildcoinlist
 import haspricing
 import fetchprice
+import minute_hist
 import pandas as p
 import os
 
@@ -43,38 +44,42 @@ class alpha_runner(object):
         if self.run == 'Y':
             print "Begin validate_coin_get_price"
             try:
-                if self.runfocus_symbols_only == 'N':
-                    #get list of coins
-                    coin_df = buildcoinlist.GetCoinLists(self.runfocus_symbols_only,self.focus_symbols)
-                    gcl_output = coin_df.main()
+                try:
+                    if self.runfocus_symbols_only == 'N':
+                        #get list of coins
+                        coin_df = buildcoinlist.GetCoinLists(self.runfocus_symbols_only,self.focus_symbols)
+                        gcl_output = coin_df.main()
+                        symbol_list = gcl_output["Symbol"].tolist()
 
-                    if self.runisprice == 'Y':
-                    #ask if price info exists (update has price csv)
-                        hpc = haspricing.HasPricingCheck(gcl_output,self.runfocus_symbols_only,self.focus_symbols)
-                        hpc.main()
-                        print 'Saved Pricing: '+self.cwd+'/data/has_pricing.csv'
-                        df = p.DataFrame.from_csv(self.cwd+'/data/has_pricing.csv')
-                        df_has = df.query('has_pricing == 1')
-                        ls_has = df_has["symbol"].tolist()
+                        if self.runisprice == 'Y':
+                        #ask if price info exists (update has price csv)
+                            hpc = haspricing.HasPricingCheck(symbol_list,self.runfocus_symbols_only,self.focus_symbols)
+                            hpc.main()
+                            print 'Saved Pricing: '+self.cwd+'/data/has_pricing.csv'
+                            df = p.DataFrame.from_csv(self.cwd+'/data/has_pricing.csv')
+                            df_has = df.query('has_pricing == 1')
+                            ls_has = df_has["symbol"].tolist()
 
-                    else:
-                        df = p.DataFrame.from_csv(self.cwd+'/data/has_pricing.csv')
-                        df_has = df.query('has_pricing == 1')
-                        ls_has = df_has["symbol"].tolist()
+                        elif self.runisprice == 'N' and os.path.isfile(self.cwd+'/data/has_pricing.csv') == True:
 
-                    print '****'
+                            df = p.DataFrame.from_csv(self.cwd+'/data/has_pricing.csv')
+                            df_has = df.query('has_pricing == 1')
+                            ls_has = df_has["symbol"].tolist()
+
+                    elif self.runfocus_symbols_only == 'Y':
+                        ls_has = self.focus_symbols
+                except:
+                    print 'error getting symbol_list'
+
+                try:
                     fp = fetchprice.GetDtlPrice(ls_has)
                     a = fp.main()
-                    print a
+                    # a = current price changes
+                    mh = minute_hist.GetMinuteHist(ls_has, self.runfocus_symbols_only, self.focus_symbols)
+                    mh.main()
 
-
-                if self.runfocus_symbols_only == 'Y' and len(self.focus_symbols) > 1:
-                    fp = fetchprice.GetDtlPrice(self.focus_symbols)
-                    a = fp.main()
-                    print a
-
-
-
+                except:
+                    print 'error on processing dtl, hist'
 
 
                 #askcurrentprice from has price/ if focus_symbols passed
@@ -89,8 +94,9 @@ class alpha_runner(object):
 
 
     def main(self):
+        print '----------------------------BEGIN----------------------------'
         self.validate_coin_get_price()
-        print 'fin'
+        print '----------------------------END----------------------------'
 
 
 if __name__ == '__main__':
