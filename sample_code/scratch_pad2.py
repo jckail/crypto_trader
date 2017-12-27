@@ -1,48 +1,215 @@
 import requests
 import pandas as p
 import datetime as dt
-from itertools import izip
+import os
 
-hardcoded_symbols = '3DES,BTC,BREAK,4jlkasj dflkasjdf,LTC'
-#symbols = ['007', '1337', '1CR', '1ST', '2015', '2BACCO', '2GIVE', '32BIT', '365', 'BTC', 'BCH', 'LTC', 'ETH']
-symbols = ['007']
+#symbol =  "'LTC'"
+symbols = ['BTC','BCH','LTC','ETH']
+source = 'cryptocompare'
+cwd = os.getcwd()
 
-def get_get_details_for_symbols(symbols):
+for symbol in symbols:
     frames = []
+    raw_symbol = symbol
+    symbol = "'"+symbol+"'" #must add for df query
+    df_get_id = p.DataFrame.from_csv('/Users/jkail/Documents/GitHub/lit_crypto/alpha/data/coinlist_info.csv')
+    a = df_get_id.query("Symbol == "+symbol)
+    b = a["Id"].tolist()
+    symbol_id = b[0]
 
-    xsymbols = [symbols[x:x+50] for x in xrange(0, len(symbols), 50)]
-    print xsymbols
 
-    for symbols in xsymbols:
+    url = "https://www.cryptocompare.com/api/data/socialstats/"
 
-        api_call_symbols = "'"+','.join(symbols)+"'"
-        print api_call_symbols
+    querystring = {"id":symbol_id}
 
-        url = "https://min-api.cryptocompare.com/data/pricemultifull"
+    headers = {
+        'cache-control': "no-cache",
+        'postman-token': "557b5e23-a352-f2d3-938d-fe17d490eee9"
+    }
 
-        querystring = {"fsyms":api_call_symbols,"tsyms":'USD',"e":"CCCAGG"}
-        #querystring = {"fsyms":symbol,"tsyms":relative_value,"e":"CCCAGG"}
+    response = requests.request("GET", url, headers=headers, params=querystring)
+    data = response.json()
+    sub_data = data["Data"]
+    keys = sub_data.keys()
 
-        headers = {
-            'cache-control': "no-cache",
-            'postman-token': "f3d54076-038b-9e2d-1ff3-593ae13aabbf"
-        }
+    print 'data_keys: ' + str(keys)
+    for key in keys:
+        frames =[]
+        ############################################################################################################################################################
+        if key == 'CodeRepository':
+            code_repository = sub_data[key]
+            keys = code_repository.keys()
+            sub = code_repository['List']
+            df = p.DataFrame(sub)
+            df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+            frames.append(df)
 
-        #add try loop here with response 200 (success)
-        response = requests.request("GET", url, headers=headers, params=querystring)
-        data = response.json()
-        print data
+            my_file = cwd+'/data/social/%s.csv' % key
 
-        for key in data['RAW'].keys():
-            #print key+'here'
-            test_df = p.DataFrame.from_dict(data['RAW'][key],orient='Columns', dtype=None)
-            test_df = p.DataFrame.transpose(test_df)
-            test_df = test_df.assign (coin = key, coin_units = 1, timestamp_api_call = dt.datetime.now(),computer_name = 'JordanManual') ##replace with ec2ip/region
-            frames.append(test_df)
+            if os.path.isfile(my_file):
+                df_resident = p.DataFrame.from_csv(my_file)
+                print 'appending new'+str(key)+' data: '+symbol
+                frames.append(df_resident)
+            else:
+                print ''
 
-    df = p.concat(frames)
-    print df
+            df = p.concat(frames)
+            df = df.drop_duplicates(['closed_issues','closed_pull_issues','language','last_update','subscribers','stars','symbol'], keep='last')
+            df = df.sort_values('symbol')
+            df = df.reset_index(drop=True)
 
-    #return df
+            if not df.empty:
+                df.to_csv(my_file, index_label='Id')
+                print 'Updated: '+str(my_file)
+            else:
+                print 'No '+str(key)+' data: '+symbol
+                ############################################################################################################################################################
+        elif key == 'Reddit':
+            sub = sub_data[key]
+            df = p.DataFrame.from_dict(sub,orient='index', dtype=None)
+            df = p.DataFrame.transpose(df)
+            df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+            frames.append(df)
 
-get_get_details_for_symbols(symbols)
+            my_file = cwd+'/data/social/%s.csv' % key
+
+            if os.path.isfile(my_file):
+                df_resident = p.DataFrame.from_csv(my_file)
+                print 'appending new'+str(key)+' data: '+symbol
+                frames.append(df_resident)
+            else:
+                print ''
+
+            df = p.concat(frames)
+            df = df.drop_duplicates(['name','comments_per_hour','posts_per_day','Points','subscribers','symbol'], keep='last')
+            df = df.sort_values('symbol')
+            df = df.reset_index(drop=True)
+
+            if not df.empty:
+                df.to_csv(my_file, index_label='Id')
+                print 'Updated: '+str(my_file)
+            else:
+                print 'No '+str(key)+' data: '+symbol
+
+                ############################################################################################################################################################
+        elif key == 'Twitter':
+            sub = sub_data[key]
+            df = p.DataFrame.from_dict(sub,orient='index', dtype=None)
+            df = p.DataFrame.transpose(df)
+            df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+            frames.append(df)
+
+            my_file = cwd+'/data/social/%s.csv' % key
+
+            if os.path.isfile(my_file):
+                df_resident = p.DataFrame.from_csv(my_file)
+                print 'appending new'+str(key)+' data: '+symbol
+                frames.append(df_resident)
+            else:
+                print ''
+
+            df = p.concat(frames)
+            df = df.drop_duplicates(['account_creation','name','Points','followers','statuses','symbol'],  keep='last')
+            df = df.sort_values('symbol')
+            df = df.reset_index(drop=True)
+
+            if not df.empty:
+                df.to_csv(my_file, index_label='Id')
+                print 'Updated: '+str(my_file)
+            else:
+                print 'No '+str(key)+' data: '+symbol
+
+                ############################################################################################################################################################
+        elif key == 'Facebook':
+            sub = sub_data[key]
+            df = p.DataFrame.from_dict(sub,orient='index', dtype=None)
+            df = p.DataFrame.transpose(df)
+            df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+            frames.append(df)
+
+            my_file = cwd+'/data/social/%s.csv' % key
+
+            if os.path.isfile(my_file):
+                df_resident = p.DataFrame.from_csv(my_file)
+                print 'appending new'+str(key)+' data: '+symbol
+                frames.append(df_resident)
+            else:
+                print ''
+
+            df = p.concat(frames)
+            df = df.drop_duplicates(['name','talking_about','Points','likes','symbol'],  keep='last')
+            df = df.sort_values('symbol')
+            df = df.reset_index(drop=True)
+
+            if not df.empty:
+                df.to_csv(my_file, index_label='Id')
+                print 'Updated: '+str(my_file)
+            else:
+                print 'No '+str(key)+' data: '+symbol
+
+                ############################################################################################################################################################
+
+        elif key == 'CryptoCompare':
+            sub = sub_data[key]
+            a = sub.pop('CryptopianFollowers', None)
+            a = sub.pop('SimilarItems', None)
+            a = sub.pop('PageViewsSplit', None)
+            del a
+            df = p.DataFrame.from_dict(sub,orient='index', dtype=None)
+            df = p.DataFrame.transpose(df)
+            df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+            frames.append(df)
+            my_file = cwd+'/data/social/%s.csv' % key
+
+            if os.path.isfile(my_file):
+                df_resident = p.DataFrame.from_csv(my_file)
+                print 'appending new'+str(key)+' data: '+symbol
+                frames.append(df_resident)
+            else:
+                print ''
+
+            df = p.concat(frames)
+            df = df.drop_duplicates(['PageViews','Posts','Comments','Points','Followers','symbol'],  keep='last')
+            df = df.sort_values('symbol')
+            df = df.reset_index(drop=True)
+
+            if not df.empty:
+                df.to_csv(my_file, index_label='Id')
+                print 'Updated: '+str(my_file)
+            else:
+                print 'No '+str(key)+' data: '+symbol
+
+                ############################################################################################################################################################
+        elif key == 'General':
+            sub = sub_data[key]
+            df = p.DataFrame.from_dict(sub,orient='index', dtype=None)
+            df = p.DataFrame.transpose(df)
+            df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+            frames.append(df)
+
+            my_file = cwd+'/data/social/%s.csv' % key
+
+            if os.path.isfile(my_file):
+                df_resident = p.DataFrame.from_csv(my_file)
+                print 'appending new'+str(key)+' data: '+symbol
+                frames.append(df_resident)
+            else:
+                print ''
+
+            df = p.concat(frames)
+            df = df.drop_duplicates(['CoinName','Points','Type','Points','symbol'],  keep='last')
+            df = df.sort_values('symbol')
+            df = df.reset_index(drop=True)
+
+            if not df.empty:
+                df.to_csv(my_file, index_label='Id')
+                print 'Updated: '+str(my_file)
+            else:
+                print 'No '+str(key)+' data: '+symbol
+
+
+
+
+
+
+

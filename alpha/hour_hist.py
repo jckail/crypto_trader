@@ -85,7 +85,7 @@ class GetHourHist(object):
 
     def main(self):
 
-        print 'run main'
+
         print 'begin: GetHourHist.main'
         hpc = GetHourHist(self.symbols, self.runfocus_symbols_only, self.focus_symbols)
         try:

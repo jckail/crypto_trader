@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20dbcae3-0635-4cf0-b324-dfd711d592a7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample_code/failure_example.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/alpha/day_hist.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/alpha/social.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample_code/scratch_pad3.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BCH_minute.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BTCUSD_minute.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BTC_minute.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ETH_minute.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LTC_minute.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alpha/coinlist_info.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/coin_info.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/coin_price.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/coin_price_details.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/coin_price_full_run.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/coinlist_info.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/has_pricing.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/multi_minute.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test.csv" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/alpha_runner.py" afterPath="$PROJECT_DIR$/alpha/alpha_runner.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/buildcoinlist.py" afterPath="$PROJECT_DIR$/alpha/buildcoinlist.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/data/coinlist_info.csv" afterPath="$PROJECT_DIR$/alpha/data/coinlist_info.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/data/current_dtl_price.csv" afterPath="$PROJECT_DIR$/alpha/data/current_dtl_price.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/data/hour_data/BCH_hour.csv" afterPath="$PROJECT_DIR$/alpha/data/hour_data/BCH_hour.csv" />
@@ -13,6 +33,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/data/minute_data/BTC_minute.csv" afterPath="$PROJECT_DIR$/alpha/data/minute_data/BTC_minute.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/data/minute_data/ETH_minute.csv" afterPath="$PROJECT_DIR$/alpha/data/minute_data/ETH_minute.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/data/minute_data/LTC_minute.csv" afterPath="$PROJECT_DIR$/alpha/data/minute_data/LTC_minute.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/hour_hist.py" afterPath="$PROJECT_DIR$/alpha/hour_hist.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/minute_hist.py" afterPath="$PROJECT_DIR$/alpha/minute_hist.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_code/scratch_pad.py" afterPath="$PROJECT_DIR$/sample_code/scratch_pad.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_code/scratch_pad2.py" afterPath="$PROJECT_DIR$/sample_code/scratch_pad2.py" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,19 +48,62 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/lit_crypto$scratch_pad2.coverage" NAME="scratch_pad2 Coverage Results" MODIFIED="1514316965661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sample_code" />
-    <SUITE FILE_PATH="coverage/lit_crypto$scratch_pad.coverage" NAME="scratch_pad Coverage Results" MODIFIED="1514322666712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sample_code" />
+    <SUITE FILE_PATH="coverage/lit_crypto$scratch_pad.coverage" NAME="scratch_pad Coverage Results" MODIFIED="1514412415050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sample_code" />
     <SUITE FILE_PATH="coverage/lit_crypto$haspricing.coverage" NAME="haspricing Coverage Results" MODIFIED="1514314980099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alpha" />
     <SUITE FILE_PATH="coverage/lit_crypto$test.coverage" NAME="test Coverage Results" MODIFIED="1514268237463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alpha" />
+    <SUITE FILE_PATH="coverage/lit_crypto$social.coverage" NAME="social Coverage Results" MODIFIED="1514415153822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alpha" />
     <SUITE FILE_PATH="coverage/lit_crypto$class_test.coverage" NAME="class test Coverage Results" MODIFIED="1514261014652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sample_code" />
     <SUITE FILE_PATH="coverage/lit_crypto$buildcoinlist.coverage" NAME="buildcoinlist Coverage Results" MODIFIED="1514315509223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alpha" />
   </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="scratch_pad2.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/sample_code/scratch_pad2.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="3225">
+                    <caret line="215" column="0" lean-forward="false" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
+                    <folding>
+                      <element signature="e#0#15#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="scratch_pad.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/sample_code/scratch_pad.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="90">
+                    <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="35" />
+                    <folding>
+                      <element signature="e#0#15#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="alpha_runner.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="alpha_runner.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alpha/alpha_runner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="68" column="45" lean-forward="false" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
+            <state relative-caret-position="351">
+              <caret line="85" column="29" lean-forward="true" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
               <folding>
                 <element signature="e#28#43#0" expanded="true" />
               </folding>
@@ -44,11 +111,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alpha_only_FS.sh" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/alpha/alpha_only_FS.sh">
+      <file leaf-file-name="scratch_pad3.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample_code/scratch_pad3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="600">
+              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="67" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hour_hist.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/alpha/hour_hist.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buildcoinlist.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/alpha/buildcoinlist.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="538">
+              <caret line="46" column="10" lean-forward="false" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fetchprice.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/alpha/fetchprice.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="10" column="26" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="social.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/alpha/social.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="218" column="19" lean-forward="true" selection-start-line="218" selection-start-column="19" selection-end-line="218" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -66,20 +175,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tsym</find>
-      <find>data_source</find>
-      <find>a1</find>
-      <find>skip_audit_build</find>
-      <find>args.org</find>
-      <find>cticti</find>
-      <find>relative_value</find>
-      <find>get_coin_listget_coin_list</find>
-      <find>CtiRunner</find>
-      <find>alpha_runner</find>
-      <find>MyInteger</find>
-      <find>GetCoinLists</find>
-      <find>args</find>
-      <find>coin</find>
       <find>replace</find>
       <find>func_get_coin_list</find>
       <find>test</find>
@@ -96,6 +191,20 @@
       <find>alldata</find>
       <find>currentTS</find>
       <find>GetDtlPrice</find>
+      <find>GetdayHist</find>
+      <find>run main</find>
+      <find>query</find>
+      <find>min</find>
+      <find>type</find>
+      <find>cwd</find>
+      <find>frames</find>
+      <find>transp</find>
+      <find>data_keys</find>
+      <find>trans</find>
+      <find>source</find>
+      <find>{</find>
+      <find>split</find>
+      <find>get_get_details_for_symbols</find>
     </findStrings>
     <replaceStrings>
       <replace>input_symbols</replace>
@@ -105,6 +214,9 @@
       <replace>GetHourHist</replace>
       <replace>hour</replace>
       <replace>p.</replace>
+      <replace>print 'No '+str(key)+' data: '+symbol</replace>
+      <replace>GetDayHist</replace>
+      <replace>get_socials</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -144,16 +256,19 @@
         <option value="$PROJECT_DIR$/alpha/test.py" />
         <option value="$PROJECT_DIR$/alpha/get_current_details_for_symbols.py" />
         <option value="$PROJECT_DIR$/pre_alpha_product/accidental_auto_refresh_of_loop_important.py" />
-        <option value="$PROJECT_DIR$/sample_code/scratch_pad2.py" />
         <option value="$PROJECT_DIR$/alpha/alpha.sh" />
-        <option value="$PROJECT_DIR$/sample_code/scratch_pad.py" />
         <option value="$PROJECT_DIR$/alpha/haspricing.py" />
-        <option value="$PROJECT_DIR$/alpha/hour_hist.py" />
-        <option value="$PROJECT_DIR$/alpha/minute_hist.py" />
-        <option value="$PROJECT_DIR$/alpha/buildcoinlist.py" />
         <option value="$PROJECT_DIR$/alpha/fetchprice.py" />
-        <option value="$PROJECT_DIR$/alpha/alpha_runner.py" />
         <option value="$PROJECT_DIR$/alpha/alpha_only_FS.sh" />
+        <option value="$PROJECT_DIR$/alpha/hour_hist.py" />
+        <option value="$PROJECT_DIR$/alpha/day_hist.py" />
+        <option value="$PROJECT_DIR$/alpha/buildcoinlist.py" />
+        <option value="$PROJECT_DIR$/alpha/minute_hist.py" />
+        <option value="$PROJECT_DIR$/sample_code/scratch_pad3.py" />
+        <option value="$PROJECT_DIR$/sample_code/scratch_pad2.py" />
+        <option value="$PROJECT_DIR$/sample_code/scratch_pad.py" />
+        <option value="$PROJECT_DIR$/alpha/social.py" />
+        <option value="$PROJECT_DIR$/alpha/alpha_runner.py" />
       </list>
     </option>
   </component>
@@ -170,8 +285,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="x" value="1440" />
+    <option name="y" value="-180" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -189,6 +306,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -210,7 +328,7 @@
             <path>
               <item name="lit_crypto" type="b2602c69:ProjectViewProjectNode" />
               <item name="lit_crypto" type="462c0819:PsiDirectoryNode" />
-              <item name="pre_alpha_product" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lit_crypto" type="b2602c69:ProjectViewProjectNode" />
@@ -221,7 +339,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
@@ -233,13 +350,15 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/alpha/data" />
       <recent name="$PROJECT_DIR$/alpha" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sample_code" />
       <recent name="$PROJECT_DIR$/alpha" />
     </key>
   </component>
@@ -255,7 +374,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.scratch_pad">
+  <component name="RunManager" selected="Python.social">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -915,7 +1034,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="social" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -928,7 +1047,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="lit_crypto" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/alpha/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/alpha/social.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -937,18 +1056,18 @@
       <item index="0" class="java.lang.String" itemvalue="Node.js.js_test.js" />
       <item index="1" class="java.lang.String" itemvalue="Python.py3.6" />
       <item index="2" class="java.lang.String" itemvalue="Python.buildcoinlist" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test" />
-      <item index="4" class="java.lang.String" itemvalue="Python.scratch_pad2" />
-      <item index="5" class="java.lang.String" itemvalue="Python.haspricing" />
-      <item index="6" class="java.lang.String" itemvalue="Python.scratch_pad" />
+      <item index="3" class="java.lang.String" itemvalue="Python.scratch_pad2" />
+      <item index="4" class="java.lang.String" itemvalue="Python.haspricing" />
+      <item index="5" class="java.lang.String" itemvalue="Python.scratch_pad" />
+      <item index="6" class="java.lang.String" itemvalue="Python.social" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.scratch_pad" />
-        <item index="1" class="java.lang.String" itemvalue="Python.scratch_pad2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.buildcoinlist" />
-        <item index="3" class="java.lang.String" itemvalue="Python.haspricing" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test" />
+        <item index="0" class="java.lang.String" itemvalue="Python.social" />
+        <item index="1" class="java.lang.String" itemvalue="Python.scratch_pad" />
+        <item index="2" class="java.lang.String" itemvalue="Python.scratch_pad2" />
+        <item index="3" class="java.lang.String" itemvalue="Python.buildcoinlist" />
+        <item index="4" class="java.lang.String" itemvalue="Python.haspricing" />
       </list>
     </recent_temporary>
   </component>
@@ -978,7 +1097,9 @@
       <workItem from="1514223718304" duration="24000" />
       <workItem from="1514224953321" duration="16601000" />
       <workItem from="1514303617831" duration="7000" />
-      <workItem from="1514303629803" duration="37415000" />
+      <workItem from="1514303629803" duration="38000000" />
+      <workItem from="1514387842174" duration="498000" />
+      <workItem from="1514400622587" duration="13924000" />
     </task>
     <task id="LOCAL-00001" summary="This is  an early push with creation of pre_alpha directory and a few basic calls, nothing here yet, just a push before I create a branch">
       <created>1513809962949</created>
@@ -1019,25 +1140,23 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91417000" />
+    <option name="totallyTimeSpent" value="106424000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="1440" y="-180" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27932286" sideWeight="0.49030694" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27904668" sideWeight="0.49030694" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27753934" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21086262" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1053,9 +1172,11 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1116,34 +1237,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sample_code/streaming_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="28" column="40" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pre_alpha_product/get_list_get_multiful_price.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1830">
-          <caret line="125" column="12" lean-forward="false" selection-start-line="125" selection-start-column="12" selection-end-line="125" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample_code/scratch_pad2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sample_code/scratch_pad.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1172,9 +1269,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1210,9 +1304,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1306,7 +1397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1314,9 +1404,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#38#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1324,7 +1411,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="74" lean-forward="false" selection-start-line="3" selection-start-column="74" selection-end-line="3" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1332,23 +1418,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
           <caret line="154" column="53" lean-forward="false" selection-start-line="154" selection-start-column="46" selection-end-line="154" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pre_alpha_product/accidental_auto_refresh_of_loop_important.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_alpha_product/accidental_auto_refresh_of_loop_important.py" />
     <entry file="file://$PROJECT_DIR$/pre_alpha_product/get_minute_price_many_exchanges.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1356,7 +1433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="519">
           <caret line="165" column="37" lean-forward="false" selection-start-line="165" selection-start-column="37" selection-end-line="165" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1364,7 +1440,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-58">
           <caret line="81" column="4" lean-forward="true" selection-start-line="81" selection-start-column="4" selection-end-line="83" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1372,7 +1447,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="45" column="30" lean-forward="false" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1380,41 +1454,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="34" column="54" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/alpha/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="54" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alpha/detailed_price_fetch_append.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alpha/get_current_details_for_symbols.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/alpha/test.py" />
+    <entry file="file://$PROJECT_DIR$/alpha/detailed_price_fetch_append.py" />
+    <entry file="file://$PROJECT_DIR$/alpha/get_current_details_for_symbols.py" />
     <entry file="file://$PROJECT_DIR$/alpha/haspricing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="54" column="19" lean-forward="false" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
           <folding>
-            <element signature="e#45#60#0" expanded="true" />
+            <element signature="e#45#60#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alpha/coinlist_info.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alpha/alpha_only_FS.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alpha/day_hist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="76" column="16" lean-forward="true" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1426,85 +1501,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/alpha/coinlist_info.csv">
+    <entry file="file://$PROJECT_DIR$/alpha/minute_hist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="262">
+          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/alpha/hour_hist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="80" column="71" lean-forward="false" selection-start-line="80" selection-start-column="71" selection-end-line="80" selection-end-column="89" />
+        <state relative-caret-position="356">
+          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alpha/minute_hist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="58" column="32" lean-forward="false" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
-          <folding>
-            <element signature="e#45#66#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/alpha/buildcoinlist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-          <folding>
-            <element signature="e#45#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample_code/scratch_pad.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="57" column="14" lean-forward="false" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alpha/fetchprice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="42" column="47" lean-forward="false" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+        <state relative-caret-position="538">
+          <caret line="46" column="10" lean-forward="false" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sample_code/scratch_pad2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+        <state relative-caret-position="3225">
+          <caret line="215" column="0" lean-forward="false" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/alpha/alpha_runner.py">
+    <entry file="file://$PROJECT_DIR$/alpha/fetchprice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="68" column="45" lean-forward="false" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
+        <state relative-caret-position="105">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample_code/scratch_pad3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="67" selection-end-column="53" />
           <folding>
-            <element signature="e#28#43#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/alpha/alpha_only_FS.sh">
+    <entry file="file://$PROJECT_DIR$/sample_code/scratch_pad.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alpha/social.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="218" column="19" lean-forward="true" selection-start-line="218" selection-start-column="19" selection-end-line="218" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alpha/alpha_runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="85" column="29" lean-forward="true" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
+          <folding>
+            <element signature="e#28#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

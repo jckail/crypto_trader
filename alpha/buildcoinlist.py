@@ -32,7 +32,8 @@ class GetCoinLists(object):
         df = p.DataFrame.from_dict(data["Data"],orient='index', dtype=None)
 
         df = df.assign (timestamp_api_call = dt.datetime.now(),source = source )
-
+        df = df.reset_index(drop=True)
+        df = df.sort_values('Id')
         df.to_csv(cwd+'/data/coinlist_info.csv',encoding='utf-8', index_label='Id')
 
         return df

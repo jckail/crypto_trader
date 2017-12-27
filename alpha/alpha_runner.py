@@ -9,6 +9,8 @@ import haspricing
 import fetchprice
 import minute_hist
 import hour_hist
+import day_hist
+import social
 
 #add arg focus symbols only
 
@@ -82,6 +84,11 @@ class alpha_runner(object):
                     mh.main()
                     hh = hour_hist.GetHourHist(ls_has, self.runfocus_symbols_only, self.focus_symbols)
                     hh.main()
+                    dh = day_hist.GetDayHist(ls_has, self.runfocus_symbols_only, self.focus_symbols)
+                    dh.main()
+                    gsd = social.GetSocialData(ls_has)
+                    gsd.main()
+
 
                 except:
                     print 'error on processing dtl, hist'

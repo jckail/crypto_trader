@@ -1,0 +1,5 @@
+Id,CoinName,Points,Type,Name,socialsource,source,symbol,symbol_id,timestamp_api_call
+0,Bitcoin Cash / BCC,592637,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 15:53:42.480660
+1,Bitcoin,3794025,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 15:53:42.219554
+2,Ethereum,2903222,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 15:53:43.033758
+3,Litecoin,1388153,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 15:53:42.755001
