@@ -6,30 +6,79 @@ import threading
 import urllib2
 import time
 
-start = time.time()
-symbols = ['ETH']
 
-df_get_id = p.DataFrame.from_csv('/Users/jkail/Documents/GitHub/lit_crypto/alpha/data/coinlist_info.csv')
-b = df_get_id["Symbol"].tolist()
-symbols = b
-print symbols
+class GetDayHist(object):
 
-
-def fetch_url(symbol):
-    url = "https://min-api.cryptocompare.com/data/pricemultifull"
-    querystring = {"fsyms":symbol,"tsyms":'USD',"e":"CCCAGG"}
-    headers = {
-        'cache-control': "no-cache",
-        'postman-token': "f3d54076-038b-9e2d-1ff3-593ae13aabbf"
-    }
-    response = requests.request("GET", url, headers=headers, params=querystring)
-    print response
-    print "'%s\' fetched in %ss" % (url, (time.time() - start))
+    def __init__(self, symbol_list, exchanges):
+        self.symbol_list = symbol_list
+        self.exchanges = exchanges
 
 
-threads = [threading.Thread(target=fetch_url, args=(symbol,)) for symbol in symbols]
-for thread in threads:
-    thread.start()
+    def get_day_hist(self,symbol):
+        currentts = str(int(time.time()))
+        cwd = os.getcwd()
+        frames = []
+        for exchange in self.exchanges:
+            url = "https://min-api.cryptocompare.com/data/histoday"
 
-for thread in threads:
-    thread.join()
+            querystring = {"fsym":symbol,"tsym":"USD","limit":"2000","aggregate":"3","e":exchange,"toTs":currentts}
+
+            headers = {
+                'cache-control': "no-cache",
+                'postman-token': "e00df90c-b8b6-cb28-54ff-88c19b883e0a"
+            }
+
+            response = requests.request("GET", url, headers=headers, params=querystring)
+            data = response.json()
+
+            if data["Data"] :
+                df = p.DataFrame(data["Data"])
+                df = df.assign(symbol = symbol, coin_units = 1, timestamp_api_call = dt.datetime.now(),computer_name = 'JordanManual',exchange = exchange )
+                frames.append(df)
+                my_file = cwd+'/data/day_data/'+symbol+'_day.csv'
+                if os.path.isfile(my_file):
+                    df_resident = p.DataFrame.from_csv(my_file)
+                    frames.append(df_resident)
+                else:
+                    pass
+                df = p.concat(frames)
+                if not df.empty:
+                    df = df.drop_duplicates(['time','exchange','coin'], keep='last')
+                    df = df.sort_values('time')
+                    df = df.reset_index(drop=True)
+                    df.to_csv(my_file, index_label='Id') #need to add this
+                    print 'Updated trade pair: '+str(my_file)
+                else:
+                    pass
+
+            else:
+                pass #print 'Invalid: '+currentts+'   '+exchange+'  '+symbol
+
+
+
+    def main(self):
+
+
+        gmt = GetDayHist(self.symbol_list,self.exchanges)
+
+        threads = [threading.Thread(target=gmt.get_day_hist, args=(symbol,)) for symbol in self.symbol_list]
+        for thread in threads:
+            thread.start()
+
+        for thread in threads:
+            thread.join()
+
+
+
+
+
+
+if __name__ == '__main__':
+    """df_get_id = p.DataFrame.from_csv('/Users/jkail/Documents/GitHub/lit_crypto/alpha/data/coinlist_info.csv')
+    b = df_get_id["Symbol"].tolist()
+    symbols = b[:50]
+    #print symbols
+    exchanges = ['CCCAGG','Coinbase', 'Bitfinex']
+    """
+    runner = GetDayHist()
+    runner.main()

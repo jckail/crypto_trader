@@ -5,59 +5,59 @@ Id,Points,account_creation,favourites,followers,following,link,lists,name,social
 3,29745,1489446147.0,409.0,27270.0,102.0,https://twitter.com/attentiontoken,495.0,BasicAttentionToken,Twitter,cryptocompare,258.0,BAT,107672,2017-12-27 21:22:54.177087
 4,0,,,,,,,,Twitter,cryptocompare,,BCH,202330,2017-12-27 15:53:42.454636
 5,3796,1482744780.0,101.0,3541.0,793.0,https://twitter.com/boscoinio,51.0,BOScoin,Twitter,cryptocompare,123.0,BOS,116384,2017-12-27 21:23:01.636485
-6,617560,1313643968.0,77.0,591592.0,105.0,https://twitter.com/bitcoin,5190.0,Bitcoin,Twitter,cryptocompare,18989.0,BTC,1182,2017-12-27 16:42:15.177925
-7,618479,1313643968.0,77.0,592481.0,105.0,https://twitter.com/bitcoin,5196.0,Bitcoin,Twitter,cryptocompare,18989.0,BTC,1182,2017-12-27 20:42:45.407335
-8,615594,1313643968.0,77.0,589686.0,105.0,https://twitter.com/bitcoin,5178.0,Bitcoin,Twitter,cryptocompare,18989.0,BTC,1182,2017-12-27 15:53:42.204734
-9,618121,1313643968.0,77.0,592093.0,105.0,https://twitter.com/bitcoin,5202.0,Bitcoin,Twitter,cryptocompare,18989.0,BTC,1182,2017-12-27 18:13:45.609687
+6,618479,1313643968.0,77.0,592481.0,105.0,https://twitter.com/bitcoin,5196.0,Bitcoin,Twitter,cryptocompare,18989.0,BTC,1182,2017-12-27 20:42:45.407335
+7,618121,1313643968.0,77.0,592093.0,105.0,https://twitter.com/bitcoin,5202.0,Bitcoin,Twitter,cryptocompare,18989.0,BTC,1182,2017-12-27 18:13:45.609687
+8,617560,1313643968.0,77.0,591592.0,105.0,https://twitter.com/bitcoin,5190.0,Bitcoin,Twitter,cryptocompare,18989.0,BTC,1182,2017-12-27 16:42:15.177925
+9,615594,1313643968.0,77.0,589686.0,105.0,https://twitter.com/bitcoin,5178.0,Bitcoin,Twitter,cryptocompare,18989.0,BTC,1182,2017-12-27 15:53:42.204734
 10,8055,1476699865.0,782.0,7310.0,204.0,https://twitter.com/cofound_it,149.0,Cofound.it,Twitter,cryptocompare,697.0,CFI,136984,2017-12-27 21:23:31.707466
 11,0,,,,,,,,Twitter,cryptocompare,,CLV,13074,2017-12-27 21:23:19.051154
 12,99,1424946644.0,23.0,79.0,26.0,https://twitter.com/PayConX13,4.0,PayCon,Twitter,cryptocompare,55.0,CON,12985,2017-12-27 21:23:15.372422
-13,42885,1451954432,705,40065,1019,https://twitter.com/civickey,564,Civic,Twitter,cryptocompare,517,CVC,139467,2017-12-27 23:18:59.985461
+13,42885,1451954432,705,40065,1019,https://twitter.com/civickey,564,Civic,Twitter,cryptocompare,517,CVC,139467,2017-12-28 00:03:15.532198
 14,42885,1451954432.0,705.0,40065.0,1019.0,https://twitter.com/civickey,564.0,Civic,Twitter,cryptocompare,517.0,CVC,139467,2017-12-27 21:23:35.032418
-15,183,1435896799.0,2.0,168.0,62.0,https://twitter.com/diggitsquad,3.0,DIGGITS,Twitter,cryptocompare,9.0,DIGS,12192,2017-12-27 23:18:30.794064
+15,183,1435896799.0,2.0,168.0,62.0,https://twitter.com/diggitsquad,3.0,DIGGITS,Twitter,cryptocompare,9.0,DIGS,12192,2017-12-28 00:02:44.409629
 16,0,,,,,,,,Twitter,cryptocompare,,DUX,105206,2017-12-27 21:22:51.408108
-17,1978,1488980035.0,59.0,1798.0,111.0,https://twitter.com/dualitychain,36.0,Duality Solutions,Twitter,cryptocompare,103.0,DYN,131111,2017-12-27 23:18:48.311094
-18,3107,1490892241.0,478.0,2852.0,127.0,https://twitter.com/Equi_Trader,51.0,EquiTrader,Twitter,cryptocompare,145.0,EQT,105263,2017-12-27 23:18:16.971264
-19,14123,1286313360.0,2266.0,12648.0,4462.0,https://twitter.com/EspersCoin,294.0,Espers Coin,Twitter,cryptocompare,5466.0,ESP,130951,2017-12-27 23:18:46.299141
-20,282412,1390763724.0,2243.0,261411.0,0.0,https://twitter.com/ethereumproject,4200.0,Ethereum,Twitter,cryptocompare,1890.0,ETH,7605,2017-12-27 18:13:48.592465
+17,1978,1488980035.0,59.0,1798.0,111.0,https://twitter.com/dualitychain,36.0,Duality Solutions,Twitter,cryptocompare,103.0,DYN,131111,2017-12-28 00:03:03.148015
+18,3107,1490892241.0,478.0,2852.0,127.0,https://twitter.com/Equi_Trader,51.0,EquiTrader,Twitter,cryptocompare,145.0,EQT,105263,2017-12-28 00:01:11.023637
+19,14123,1286313360.0,2266.0,12648.0,4462.0,https://twitter.com/EspersCoin,294.0,Espers Coin,Twitter,cryptocompare,5466.0,ESP,130951,2017-12-28 00:03:00.994313
+20,282555,1390763724.0,2243.0,261534.0,0.0,https://twitter.com/ethereumproject,4204.0,Ethereum,Twitter,cryptocompare,1890.0,ETH,7605,2017-12-27 23:00:20.134527
 21,282239,1390763724.0,2243.0,261233.0,0.0,https://twitter.com/ethereumproject,4201.0,Ethereum,Twitter,cryptocompare,1890.0,ETH,7605,2017-12-27 16:42:17.193104
-22,282555,1390763724.0,2243.0,261534.0,0.0,https://twitter.com/ethereumproject,4204.0,Ethereum,Twitter,cryptocompare,1890.0,ETH,7605,2017-12-27 23:00:20.134527
-23,281549,1390763724.0,2243.0,260543.0,0.0,https://twitter.com/ethereumproject,4201.0,Ethereum,Twitter,cryptocompare,1890.0,ETH,7605,2017-12-27 15:53:43.002197
-24,22442,1439128076.0,3671.0,20826.0,1779.0,https://twitter.com/ExpanseOfficial,323.0,Expanse,Twitter,cryptocompare,1587.0,EXP,12194,2017-12-27 23:18:31.408362
+22,281549,1390763724.0,2243.0,260543.0,0.0,https://twitter.com/ethereumproject,4201.0,Ethereum,Twitter,cryptocompare,1890.0,ETH,7605,2017-12-27 15:53:43.002197
+23,282412,1390763724.0,2243.0,261411.0,0.0,https://twitter.com/ethereumproject,4200.0,Ethereum,Twitter,cryptocompare,1890.0,ETH,7605,2017-12-27 18:13:48.592465
+24,22442,1439128076.0,3671.0,20826.0,1779.0,https://twitter.com/ExpanseOfficial,323.0,Expanse,Twitter,cryptocompare,1587.0,EXP,12194,2017-12-28 00:02:44.824246
 25,0,,,,,,,,Twitter,cryptocompare,,F16,108099,2017-12-27 21:22:55.067641
-26,16,1445295358.0,1.0,6.0,1.0,https://twitter.com/factomproject,2.0,Factom,Twitter,cryptocompare,2.0,FCT,13280,2017-12-27 23:18:51.624600
-27,3944,1430600805.0,909.0,3497.0,3253.0,https://twitter.com/GCRWorldwide,89.0,GCR Worldwide,Twitter,cryptocompare,2064.0,GCR,12217,2017-12-27 23:18:32.425481
+26,16,1445295358.0,1.0,6.0,1.0,https://twitter.com/factomproject,2.0,Factom,Twitter,cryptocompare,2.0,FCT,13280,2017-12-28 00:03:06.746345
+27,3944,1430600805.0,909.0,3497.0,3253.0,https://twitter.com/GCRWorldwide,89.0,GCR Worldwide,Twitter,cryptocompare,2064.0,GCR,12217,2017-12-28 00:02:46.125101
 28,57127,1396516018.0,5711.0,55975.0,203.0,https://twitter.com/GroestlcoinTeam,230.0,Groestlcoin (GRS),Twitter,cryptocompare,2316.0,GRS,13070,2017-12-27 21:23:17.358283
 29,4,1496113438.0,5.0,4.0,1.0,https://twitter.com/HamsterMint,0.0,Mr Hamster,Twitter,cryptocompare,4.0,HAMS,112363,2017-12-27 21:22:56.063070
 30,8660,1474139361.0,533.0,8354.0,4794.0,https://twitter.com/insanecoin,61.0,Insane,Twitter,cryptocompare,1095.0,INSN,105284,2017-12-27 21:22:53.250122
-31,23529,1445236475.0,22.0,21204.0,0.0,https://twitter.com/iotatoken,465.0,IOTA,Twitter,cryptocompare,429.0,IOT,127356,2017-12-27 23:18:35.404384
-32,5125,1442949239.0,875.0,4119.0,550.0,https://twitter.com/LykkeCity,201.0,Lykke,Twitter,cryptocompare,1075.0,LKK,130939,2017-12-27 23:18:45.231371
+31,23529,1445236475.0,22.0,21204.0,0.0,https://twitter.com/iotatoken,465.0,IOTA,Twitter,cryptocompare,429.0,IOT,127356,2017-12-28 00:02:49.318735
+32,5125,1442949239.0,875.0,4119.0,550.0,https://twitter.com/LykkeCity,201.0,Lykke,Twitter,cryptocompare,1075.0,LKK,130939,2017-12-28 00:02:59.765301
 33,278089,1317839450.0,245.0,268004.0,22.0,https://twitter.com/litecoin,2017.0,litecoin,Twitter,cryptocompare,622.0,LTC,3808,2017-12-27 15:53:42.728017
 34,280199,1317839450.0,245.0,270049.0,22.0,https://twitter.com/litecoin,2030.0,litecoin,Twitter,cryptocompare,622.0,LTC,3808,2017-12-27 23:04:28.128006
 35,279521,1317839450.0,246.0,269426.0,22.0,https://twitter.com/litecoin,2019.0,litecoin,Twitter,cryptocompare,622.0,LTC,3808,2017-12-27 16:42:16.676197
 36,279915,1317839450.0,245.0,269775.0,22.0,https://twitter.com/litecoin,2028.0,litecoin,Twitter,cryptocompare,622.0,LTC,3808,2017-12-27 18:13:47.668852
-37,732,1422042416.0,17.0,672.0,1309.0,https://twitter.com/LyraBar,12.0,Lyrabar,Twitter,cryptocompare,218.0,LYB,13281,2017-12-27 23:18:52.747452
-38,60,1439718779.0,0.0,50.0,0.0,https://twitter.com/SatoshiMadness,2.0,SatoshiMadness,Twitter,cryptocompare,0.0,MAD,131079,2017-12-27 23:18:47.382365
-39,192,1440033047.0,12.0,162.0,46.0,https://twitter.com/mapcoinofficial,6.0,map coin official,Twitter,cryptocompare,64.0,MAPC,12223,2017-12-27 23:18:33.558812
+37,732,1422042416.0,17.0,672.0,1309.0,https://twitter.com/LyraBar,12.0,Lyrabar,Twitter,cryptocompare,218.0,LYB,13281,2017-12-28 00:03:07.754837
+38,60,1439718779.0,0.0,50.0,0.0,https://twitter.com/SatoshiMadness,2.0,SatoshiMadness,Twitter,cryptocompare,0.0,MAD,131079,2017-12-28 00:03:02.220785
+39,192,1440033047.0,12.0,162.0,46.0,https://twitter.com/mapcoinofficial,6.0,map coin official,Twitter,cryptocompare,64.0,MAPC,12223,2017-12-28 00:02:47.089723
 40,0,,,,,,,,Twitter,cryptocompare,,MAT*,108094,2017-12-27 21:22:54.605036
 41,0,,,,,,,,Twitter,cryptocompare,,MCAP,131154,2017-12-27 21:23:24.249964
-42,759,1400779879.0,23.0,679.0,2086.0,https://twitter.com/she9888,16.0,ymcoin.com,Twitter,cryptocompare,400.0,MI,12225,2017-12-27 23:18:34.485441
+42,759,1400779879.0,23.0,679.0,2086.0,https://twitter.com/she9888,16.0,ymcoin.com,Twitter,cryptocompare,400.0,MI,12225,2017-12-28 00:02:48.209030
 43,0,,,,,,,,Twitter,cryptocompare,,MYST,136190,2017-12-27 21:23:27.660260
 44,0,,,,,,,,Twitter,cryptocompare,,NEF,112405,2017-12-27 21:22:57.863479
-45,65604,1386938868.0,756.0,61010.0,296.0,https://twitter.com/nxtcommunity,918.0,Nxt,Twitter,cryptocompare,4165.0,NXT,1183,2017-12-27 23:18:30.180066
-46,15613,1446871213.0,819.0,14072.0,1201.0,https://twitter.com/Patientory,308.0,Patientory,Twitter,cryptocompare,1228.0,PTOY,129035,2017-12-27 23:18:38.471107
+45,65604,1386938868.0,756.0,61010.0,296.0,https://twitter.com/nxtcommunity,918.0,Nxt,Twitter,cryptocompare,4165.0,NXT,1183,2017-12-28 00:02:43.793715
+46,15613,1446871213.0,819.0,14072.0,1201.0,https://twitter.com/Patientory,308.0,Patientory,Twitter,cryptocompare,1228.0,PTOY,129035,2017-12-28 00:02:52.699409
 47,0,,,,,,,,Twitter,cryptocompare,,QRL,127667,2017-12-27 21:23:11.540784
-48,38651,1473134868.0,54.0,36121.0,734.0,https://twitter.com/QtumOfficial,506.0,QtumOfficial,Twitter,cryptocompare,565.0,QTUM,112392,2017-12-27 23:18:23.520844
+48,38651,1473134868.0,54.0,36121.0,734.0,https://twitter.com/QtumOfficial,506.0,QtumOfficial,Twitter,cryptocompare,565.0,QTUM,112392,2017-12-28 00:02:38.263271
 49,0,,,,,,,,Twitter,cryptocompare,,QWARK,116425,2017-12-27 21:23:02.784892
-50,936,1401565253.0,41.0,801.0,17.0,https://twitter.com/NebulousLabs,27.0,Nebulous,Twitter,cryptocompare,53.0,SC,13072,2017-12-27 23:18:44.005011
-51,1978,1488980035.0,59.0,1798.0,111.0,https://twitter.com/dualitychain,36.0,Duality Solutions,Twitter,cryptocompare,103.0,SEQ,131112,2017-12-27 23:18:49.535277
+50,936,1401565253.0,41.0,801.0,17.0,https://twitter.com/NebulousLabs,27.0,Nebulous,Twitter,cryptocompare,53.0,SC,13072,2017-12-28 00:02:57.727175
+51,1978,1488980035.0,59.0,1798.0,111.0,https://twitter.com/dualitychain,36.0,Duality Solutions,Twitter,cryptocompare,103.0,SEQ,131112,2017-12-28 00:03:04.682982
 52,0,,,,,,,,Twitter,cryptocompare,,SKY,136269,2017-12-27 21:23:31.248799
-53,11441,1483950038.0,57.0,10586.0,39.0,https://twitter.com/sonmdevelopment,171.0,SONM,Twitter,cryptocompare,149.0,SNM,136244,2017-12-27 23:18:55.987280
-54,39631,1473535349.0,1100.0,36611.0,243.0,https://twitter.com/ethstatus,604.0,Status,Twitter,cryptocompare,546.0,SNT,137013,2017-12-27 23:18:58.257102
+53,11441,1483950038.0,57.0,10586.0,39.0,https://twitter.com/sonmdevelopment,171.0,SONM,Twitter,cryptocompare,149.0,SNM,136244,2017-12-28 00:03:10.830595
+54,39631,1473535349.0,1100.0,36611.0,243.0,https://twitter.com/ethstatus,604.0,Status,Twitter,cryptocompare,546.0,SNT,137013,2017-12-28 00:03:13.977000
 55,0,,,,,,,,Twitter,cryptocompare,,SUB*,100944,2017-12-27 21:22:49.568297
-56,2669,1439311705.0,650.0,2178.0,340.0,https://twitter.com/Transfer_dev,97.0,Transfer Dev,Twitter,cryptocompare,6127.0,TX,13045,2017-12-27 23:18:41.858920
+56,2669,1439311705.0,650.0,2178.0,340.0,https://twitter.com/Transfer_dev,97.0,Transfer Dev,Twitter,cryptocompare,6127.0,TX,13045,2017-12-28 00:02:55.775882
 57,0,,,,,,,,Twitter,cryptocompare,,USC,100954,2017-12-27 21:22:50.488106
-58,23707,1226863845.0,73.0,20523.0,590.0,https://twitter.com/ReggieMiddleton,634.0,ReggieMiddleton,Twitter,cryptocompare,14329.0,VERI,136211,2017-12-27 23:18:54.651845
+58,23707,1226863845.0,73.0,20523.0,590.0,https://twitter.com/ReggieMiddleton,634.0,ReggieMiddleton,Twitter,cryptocompare,14329.0,VERI,136211,2017-12-28 00:03:09.906370
 59,0,,,,,,,,Twitter,cryptocompare,,XPS,105220,2017-12-27 21:22:51.964536
 60,6085,1497197619.0,475.0,5665.0,924.0,https://twitter.com/ZenCashOfficial,84.0,ZenCashOfficial,Twitter,cryptocompare,494.0,ZEN,116180,2017-12-27 21:23:00.258495
 61,6361,1481880990.0,85.0,6001.0,27.0,https://twitter.com/ZrCoin,72.0,ZrCoin,Twitter,cryptocompare,339.0,ZRC,129604,2017-12-27 21:23:14.147353

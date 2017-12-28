@@ -5,96 +5,103 @@ Id,CoinName,Points,Type,Name,socialsource,source,symbol,symbol_id,timestamp_api_
 3,Basic Attention Token,68799,Webpagecoinp,BAT,General,cryptocompare,BAT,107672,2017-12-27 23:18:18.835450
 4,Basic Attention Token,68774,Webpagecoinp,BAT,General,cryptocompare,BAT,107672,2017-12-27 21:22:54.205584
 5,Bitcoin Cash / BCC,593467,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 22:52:10.744666
-6,Bitcoin Cash / BCC,592912,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 18:13:46.747963
-7,Bitcoin Cash / BCC,593322,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 22:03:23.007603
-8,Bitcoin Cash / BCC,593237,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 21:39:11.409236
-9,Bitcoin Cash / BCC,593057,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 19:39:01.934059
-10,Bitcoin Cash / BCC,592637,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 15:53:42.480660
-11,Bitcoin Cash / BCC,592897,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 18:32:28.363370
-12,Bitcoin Cash / BCC,592772,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 16:42:16.202332
-13,Bitcoin Cash / BCC,593162,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 20:42:46.350587
-14,Bitcoin Cash / BCC,593007,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 19:14:50.561245
+6,Bitcoin Cash / BCC,593057,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 19:39:01.934059
+7,Bitcoin Cash / BCC,593237,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 21:39:11.409236
+8,Bitcoin Cash / BCC,592772,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 16:42:16.202332
+9,Bitcoin Cash / BCC,592912,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 18:13:46.747963
+10,Bitcoin Cash / BCC,593162,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 20:42:46.350587
+11,Bitcoin Cash / BCC,592637,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 15:53:42.480660
+12,Bitcoin Cash / BCC,593007,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 19:14:50.561245
+13,Bitcoin Cash / BCC,592897,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 18:32:28.363370
+14,Bitcoin Cash / BCC,593322,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 22:03:23.007603
 15,BOScoin,10433,Webpagecoinp,BOS,General,cryptocompare,BOS,116384,2017-12-27 21:23:01.669710
 16,Bitcoin,3794955,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 16:42:15.208186
 17,Bitcoin,3814105,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 21:23:03.671866
-18,Bitcoin,3796029,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 19:38:08.849828
-19,Bitcoin,3794025,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 15:53:42.219554
-20,Bitcoin,3814295,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 21:39:10.499276
-21,Bitcoin,3814526,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 22:03:22.571584
-22,Bitcoin,3796499,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 19:14:50.157151
-23,Bitcoin,3815196,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 22:52:10.288914
-24,Bitcoin,3813500,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 20:42:45.442514
+18,Bitcoin,3796499,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 19:14:50.157151
+19,Bitcoin,3814526,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 22:03:22.571584
+20,Bitcoin,3794025,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 15:53:42.219554
+21,Bitcoin,3814295,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 21:39:10.499276
+22,Bitcoin,3816652,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-28 00:02:43.211349
+23,Bitcoin,3796029,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 19:38:08.849828
+24,Bitcoin,3815811,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 23:18:29.285543
 25,Bitcoin,3795738,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 18:13:45.636756
-26,Bitcoin,3796058,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 18:32:27.377091
-27,Bitcoin,3815811,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 23:18:29.285543
-28,Cofound.it,13329,Webpagecoinp,CFI,General,cryptocompare,CFI,136984,2017-12-27 21:23:31.735613
-29,Cofound.it,13354,Webpagecoinp,CFI,General,cryptocompare,CFI,136984,2017-12-27 23:18:57.853851
-30,CleverCoin,50,Webpagecoinp,CLV,General,cryptocompare,CLV,13074,2017-12-27 21:23:19.075223
-31,Paycon,417,Webpagecoinp,CON_,General,cryptocompare,CON,12985,2017-12-27 21:23:15.402952
-32,Civic,96398,Webpagecoinp,CVC,General,cryptocompare,CVC,139467,2017-12-27 21:23:35.063259
-33,Civic,96448,Webpagecoinp,CVC,General,cryptocompare,CVC,139467,2017-12-27 23:19:00.013146
-34,Diggits,399,Webpagecoinp,DIGS,General,cryptocompare,DIGS,12192,2017-12-27 21:23:04.582596
-35,DuxCoin,125,Webpagecoinp,DUX,General,cryptocompare,DUX,105206,2017-12-27 21:22:51.436416
-36,Dynamic,2972,Webpagecoinp,DYN,General,cryptocompare,DYN,131111,2017-12-27 21:23:22.433934
-37,EquiTrader,4852,Webpagecoinp,EQT,General,cryptocompare,EQT,105263,2017-12-27 21:22:52.664243
-38,Espers,16684,Webpagecoinp,ESP,General,cryptocompare,ESP,130951,2017-12-27 21:23:20.830910
-39,Ethereum,2911079,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 21:39:12.948492
-40,Ethereum,2907286,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 18:32:30.197499
-41,Ethereum,2911334,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 22:52:12.250176
-42,Ethereum,2907667,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 19:39:03.629761
-43,Ethereum,2911174,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 22:03:23.993093
-44,Ethereum,2907571,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 19:14:52.615147
-45,Ethereum,2903222,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 15:53:43.033758
-46,Ethereum,2910574,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 20:42:48.190417
-47,Ethereum,2907211,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 18:13:48.620108
-48,Ethereum,2907246,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 16:42:17.256811
-49,Expanse,37295,Webpagecoinp,EXP,General,cryptocompare,EXP,12194,2017-12-27 21:23:05.278693
-50,F16Coin,400,Webpagecoinp,F16,General,cryptocompare,F16,108099,2017-12-27 21:22:55.095183
-51,Factoids,60808,Webpagecoinp,FCT,General,cryptocompare,FCT,13280,2017-12-27 21:23:25.431944
-52,Global Currency Reserve,8542,Webpagecoinp,GCR,General,cryptocompare,GCR,12217,2017-12-27 21:23:06.377197
-53,Groestlcoin ,73414,Webpagecoinp,GRS,General,cryptocompare,GRS,13070,2017-12-27 21:23:17.388190
-54,HamsterCoin,354,Webpagecoinp,HAMS,General,cryptocompare,HAMS,112363,2017-12-27 21:22:56.088960
-55,Insane Coin,9737,Webpagecoinp,INSN,General,cryptocompare,INSN,105284,2017-12-27 21:22:53.275302
-56,IOTA,806101,Webpagecoinp,IOT,General,cryptocompare,IOT,127356,2017-12-27 21:23:10.186348
-57,IOTA,806566,Webpagecoinp,IOT,General,cryptocompare,IOT,127356,2017-12-27 23:18:35.431082
-58,Lykke,8405,Webpagecoinp,LKK,General,cryptocompare,LKK,130939,2017-12-27 21:23:19.700221
-59,Litecoin,1400563,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 22:52:11.809085
-60,Litecoin,1389846,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 16:42:16.725605
-61,Litecoin,1388153,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 15:53:42.755001
-62,Litecoin,1392203,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 19:14:51.690567
-63,Litecoin,1399862,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 20:42:47.278086
-64,Litecoin,1400187,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 21:39:11.844364
-65,Litecoin,1392023,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 18:13:47.696469
+26,Bitcoin,3813500,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 20:42:45.442514
+27,Bitcoin,3796058,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 18:32:27.377091
+28,Bitcoin,3815196,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 22:52:10.288914
+29,Cofound.it,13329,Webpagecoinp,CFI,General,cryptocompare,CFI,136984,2017-12-27 21:23:31.735613
+30,Cofound.it,13354,Webpagecoinp,CFI,General,cryptocompare,CFI,136984,2017-12-27 23:18:57.853851
+31,CleverCoin,50,Webpagecoinp,CLV,General,cryptocompare,CLV,13074,2017-12-27 21:23:19.075223
+32,Paycon,417,Webpagecoinp,CON_,General,cryptocompare,CON,12985,2017-12-27 21:23:15.402952
+33,Civic,96398,Webpagecoinp,CVC,General,cryptocompare,CVC,139467,2017-12-27 21:23:35.063259
+34,Civic,96448,Webpagecoinp,CVC,General,cryptocompare,CVC,139467,2017-12-27 23:19:00.013146
+35,Diggits,399,Webpagecoinp,DIGS,General,cryptocompare,DIGS,12192,2017-12-27 21:23:04.582596
+36,DuxCoin,125,Webpagecoinp,DUX,General,cryptocompare,DUX,105206,2017-12-27 21:22:51.436416
+37,Dynamic,2972,Webpagecoinp,DYN,General,cryptocompare,DYN,131111,2017-12-27 21:23:22.433934
+38,EquiTrader,4852,Webpagecoinp,EQT,General,cryptocompare,EQT,105263,2017-12-27 21:22:52.664243
+39,Espers,16684,Webpagecoinp,ESP,General,cryptocompare,ESP,130951,2017-12-27 21:23:20.830910
+40,Ethereum,2911334,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 22:52:12.250176
+41,Ethereum,2903222,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 15:53:43.033758
+42,Ethereum,2907246,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 16:42:17.256811
+43,Ethereum,2907211,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 18:13:48.620108
+44,Ethereum,2911079,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 21:39:12.948492
+45,Ethereum,2911174,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 22:03:23.993093
+46,Ethereum,2907286,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 18:32:30.197499
+47,Ethereum,2907571,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 19:14:52.615147
+48,Ethereum,2907667,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 19:39:03.629761
+49,Ethereum,2910574,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 20:42:48.190417
+50,Expanse,37295,Webpagecoinp,EXP,General,cryptocompare,EXP,12194,2017-12-27 21:23:05.278693
+51,F16Coin,400,Webpagecoinp,F16,General,cryptocompare,F16,108099,2017-12-27 21:22:55.095183
+52,Factoids,60808,Webpagecoinp,FCT,General,cryptocompare,FCT,13280,2017-12-27 21:23:25.431944
+53,Factoids,60783,Webpagecoinp,FCT,General,cryptocompare,FCT,13280,2017-12-28 00:03:06.773676
+54,Global Currency Reserve,8542,Webpagecoinp,GCR,General,cryptocompare,GCR,12217,2017-12-27 21:23:06.377197
+55,Groestlcoin ,73414,Webpagecoinp,GRS,General,cryptocompare,GRS,13070,2017-12-27 21:23:17.388190
+56,HamsterCoin,354,Webpagecoinp,HAMS,General,cryptocompare,HAMS,112363,2017-12-27 21:22:56.088960
+57,Insane Coin,9737,Webpagecoinp,INSN,General,cryptocompare,INSN,105284,2017-12-27 21:22:53.275302
+58,IOTA,806101,Webpagecoinp,IOT,General,cryptocompare,IOT,127356,2017-12-27 21:23:10.186348
+59,IOTA,806566,Webpagecoinp,IOT,General,cryptocompare,IOT,127356,2017-12-27 23:18:35.431082
+60,IOTA,806641,Webpagecoinp,IOT,General,cryptocompare,IOT,127356,2017-12-28 00:02:49.344707
+61,Lykke,8405,Webpagecoinp,LKK,General,cryptocompare,LKK,130939,2017-12-27 21:23:19.700221
+62,Litecoin,1400187,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 21:39:11.844364
+63,Litecoin,1392023,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 18:13:47.696469
+64,Litecoin,1392093,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 18:32:28.759639
+65,Litecoin,1392328,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 19:39:02.784555
 66,Litecoin,1400268,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 22:03:23.562105
-67,Litecoin,1392328,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 19:39:02.784555
-68,Litecoin,1392093,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 18:32:28.759639
-69,LyraBar,821,Webpagecoinp,LYB,General,cryptocompare,LYB,13281,2017-12-27 21:23:26.467244
-70,SatoshiMadness,658,Webpagecoinp,MAD,General,cryptocompare,MAD,131079,2017-12-27 21:23:21.863136
-71,MapCoin,373,Webpagecoinp,MAPC,General,cryptocompare,MAPC,12223,2017-12-27 21:23:07.585977
-72,Manet Coin,160,Webpagecoinp,MAT*,General,cryptocompare,MAT*,108094,2017-12-27 21:22:54.650924
-73,MCAP,7727,Webpagecoinp,MCAP,General,cryptocompare,MCAP,131154,2017-12-27 21:23:24.278371
-74,XiaoMiCoin,1443,Webpagecoinp,MI,General,cryptocompare,MI,12225,2017-12-27 21:23:09.259968
-75,Mysterium,5691,Webpagecoinp,MYST,General,cryptocompare,MYST,136190,2017-12-27 21:23:27.698272
-76,NefariousCoin,127,Webpagecoinp,NEF,General,cryptocompare,NEF,112405,2017-12-27 21:22:57.889582
-77,Nxt,216846,Webpagecoinp,NXT,General,cryptocompare,NXT,1183,2017-12-27 21:23:04.098860
-78,Nxt,217316,Webpagecoinp,NXT,General,cryptocompare,NXT,1183,2017-12-27 23:18:30.208138
-79,Patientory,28221,Webpagecoinp,PTOY,General,cryptocompare,PTOY,129035,2017-12-27 21:23:13.254909
-80,Patientory,28246,Webpagecoinp,PTOY,General,cryptocompare,PTOY,129035,2017-12-27 23:18:38.495599
-81,Quantum Resistant Ledger,6183,Webpagecoinp,QRL,General,cryptocompare,QRL,127667,2017-12-27 21:23:11.571481
-82,QTUM,77009,Webpagecoinp,QTUM,General,cryptocompare,QTUM,112392,2017-12-27 21:22:57.284582
-83,QTUM,77034,Webpagecoinp,QTUM,General,cryptocompare,QTUM,112392,2017-12-27 23:18:23.546682
-84,Qwark,1810,Webpagecoinp,QWARK,General,cryptocompare,QWARK,116425,2017-12-27 21:23:02.818063
-85,Siacoin,155074,Webpagecoinp,SC,General,cryptocompare,SC,13072,2017-12-27 21:23:18.232964
-86,Siacoin,155224,Webpagecoinp,SC,General,cryptocompare,SC,13072,2017-12-27 23:18:44.031380
-87,Sequence,2512,Webpagecoinp,SEQ,General,cryptocompare,SEQ,131112,2017-12-27 21:23:23.386782
-88,Skycoin,2110,Webpagecoinp,SKY,General,cryptocompare,SKY,136269,2017-12-27 21:23:31.277655
-89,SONM,26259,Webpagecoinp,SNM,General,cryptocompare,SNM,136244,2017-12-27 21:23:30.138628
-90,Status Network Token,70774,Webpagecoinp,SNT,General,cryptocompare,SNT,137013,2017-12-27 21:23:32.916268
-91,Status Network Token,70824,Webpagecoinp,SNT,General,cryptocompare,SNT,137013,2017-12-27 23:18:58.286809
-92,Subscriptio,553,Webpagecoinp,SUB*,General,cryptocompare,SUB*,100944,2017-12-27 21:22:49.597521
-93,Transfer,4126,Webpagecoinp,TX,General,cryptocompare,TX,13045,2017-12-27 21:23:16.315273
-94,Ultimate Secure Cash,575,Webpagecoinp,USC,General,cryptocompare,USC,100954,2017-12-27 21:22:50.512970
-95,Veritaseum,41132,Webpagecoinp,VERI,General,cryptocompare,VERI,136211,2017-12-27 21:23:28.920102
-96,PoisonIvyCoin,346,Webpagecoinp,XPS,General,cryptocompare,XPS,105220,2017-12-27 21:22:51.987721
-97,ZenCash,21568,Webpagecoinp,ZEN,General,cryptocompare,ZEN,116180,2017-12-27 21:23:00.287923
-98,ZrCoin,10785,Webpagecoinp,ZRC,General,cryptocompare,ZRC,129604,2017-12-27 21:23:14.175570
+67,Litecoin,1400563,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 22:52:11.809085
+68,Litecoin,1388153,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 15:53:42.755001
+69,Litecoin,1392203,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 19:14:51.690567
+70,Litecoin,1399862,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 20:42:47.278086
+71,Litecoin,1389846,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 16:42:16.725605
+72,LyraBar,821,Webpagecoinp,LYB,General,cryptocompare,LYB,13281,2017-12-27 21:23:26.467244
+73,SatoshiMadness,658,Webpagecoinp,MAD,General,cryptocompare,MAD,131079,2017-12-27 21:23:21.863136
+74,MapCoin,373,Webpagecoinp,MAPC,General,cryptocompare,MAPC,12223,2017-12-27 21:23:07.585977
+75,Manet Coin,160,Webpagecoinp,MAT*,General,cryptocompare,MAT*,108094,2017-12-27 21:22:54.650924
+76,MCAP,7727,Webpagecoinp,MCAP,General,cryptocompare,MCAP,131154,2017-12-27 21:23:24.278371
+77,XiaoMiCoin,1443,Webpagecoinp,MI,General,cryptocompare,MI,12225,2017-12-27 21:23:09.259968
+78,Mysterium,5691,Webpagecoinp,MYST,General,cryptocompare,MYST,136190,2017-12-27 21:23:27.698272
+79,NefariousCoin,127,Webpagecoinp,NEF,General,cryptocompare,NEF,112405,2017-12-27 21:22:57.889582
+80,Nxt,217316,Webpagecoinp,NXT,General,cryptocompare,NXT,1183,2017-12-27 23:18:30.208138
+81,Nxt,217496,Webpagecoinp,NXT,General,cryptocompare,NXT,1183,2017-12-28 00:02:43.822592
+82,Nxt,216846,Webpagecoinp,NXT,General,cryptocompare,NXT,1183,2017-12-27 21:23:04.098860
+83,Patientory,28246,Webpagecoinp,PTOY,General,cryptocompare,PTOY,129035,2017-12-27 23:18:38.495599
+84,Patientory,28221,Webpagecoinp,PTOY,General,cryptocompare,PTOY,129035,2017-12-27 21:23:13.254909
+85,Quantum Resistant Ledger,6183,Webpagecoinp,QRL,General,cryptocompare,QRL,127667,2017-12-27 21:23:11.571481
+86,QTUM,77009,Webpagecoinp,QTUM,General,cryptocompare,QTUM,112392,2017-12-27 21:22:57.284582
+87,QTUM,77034,Webpagecoinp,QTUM,General,cryptocompare,QTUM,112392,2017-12-27 23:18:23.546682
+88,Qwark,1810,Webpagecoinp,QWARK,General,cryptocompare,QWARK,116425,2017-12-27 21:23:02.818063
+89,Siacoin,155299,Webpagecoinp,SC,General,cryptocompare,SC,13072,2017-12-28 00:02:57.752036
+90,Siacoin,155224,Webpagecoinp,SC,General,cryptocompare,SC,13072,2017-12-27 23:18:44.031380
+91,Siacoin,155074,Webpagecoinp,SC,General,cryptocompare,SC,13072,2017-12-27 21:23:18.232964
+92,Sequence,2512,Webpagecoinp,SEQ,General,cryptocompare,SEQ,131112,2017-12-27 21:23:23.386782
+93,Skycoin,2110,Webpagecoinp,SKY,General,cryptocompare,SKY,136269,2017-12-27 21:23:31.277655
+94,SONM,26259,Webpagecoinp,SNM,General,cryptocompare,SNM,136244,2017-12-27 21:23:30.138628
+95,Status Network Token,70774,Webpagecoinp,SNT,General,cryptocompare,SNT,137013,2017-12-27 21:23:32.916268
+96,Status Network Token,70849,Webpagecoinp,SNT,General,cryptocompare,SNT,137013,2017-12-28 00:03:14.005580
+97,Status Network Token,70824,Webpagecoinp,SNT,General,cryptocompare,SNT,137013,2017-12-27 23:18:58.286809
+98,Subscriptio,553,Webpagecoinp,SUB*,General,cryptocompare,SUB*,100944,2017-12-27 21:22:49.597521
+99,Transfer,4126,Webpagecoinp,TX,General,cryptocompare,TX,13045,2017-12-27 21:23:16.315273
+100,Ultimate Secure Cash,575,Webpagecoinp,USC,General,cryptocompare,USC,100954,2017-12-27 21:22:50.512970
+101,Veritaseum,41132,Webpagecoinp,VERI,General,cryptocompare,VERI,136211,2017-12-27 21:23:28.920102
+102,PoisonIvyCoin,346,Webpagecoinp,XPS,General,cryptocompare,XPS,105220,2017-12-27 21:22:51.987721
+103,ZenCash,21568,Webpagecoinp,ZEN,General,cryptocompare,ZEN,116180,2017-12-27 21:23:00.287923
+104,ZenCash,21593,Webpagecoinp,ZEN,General,cryptocompare,ZEN,116180,2017-12-28 00:02:40.127403
+105,ZrCoin,10785,Webpagecoinp,ZRC,General,cryptocompare,ZRC,129604,2017-12-27 21:23:14.175570

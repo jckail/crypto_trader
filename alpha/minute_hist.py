@@ -1,104 +1,84 @@
-#!/usr/bin/env python
-
-__author__ = 'jkail'
-
-import json, requests
+import requests
 import pandas as p
-from datetime import datetime, timedelta
-import dateutil.parser
-import time
-import numpy as np
 import datetime as dt
 import os
+import threading
+import urllib2
+import time
 
 
 class GetMinuteHist(object):
 
-    def __init__(self,symbols, runfocus_symbols_only, focus_symbols):
-        self.symbols = symbols
-        self.focus_symbols = focus_symbols
-        self.runfocus_symbols_only = runfocus_symbols_only
+    def __init__(self, symbol_list, exchanges):
+        self.symbol_list = symbol_list
+        self.exchanges = exchanges
 
-    def get_minute_hist(self):
-        runfocus_symbols_only = self.runfocus_symbols_only
-        focus_symbols = self.focus_symbols
-        symbols = self.symbols
-        cwd = os.getcwd()
-        #exchanges =[ 'CCCAGG','Cryptsy', 'BTCChina', 'Bitstamp', 'BTER', 'OKCoin','Coinbase', 'Poloniex', 'Cexio', 'BTCE', 'BitTrex', 'Kraken', 'Bitfinex']
-        exchanges = ['CCCAGG','Coinbase', 'Bitfinex']
+
+    def get_minute_hist(self,symbol):
         currentts = str(int(time.time()))
-        url_limit = '2000'
-        tsym = 'USD'
+        cwd = os.getcwd()
+        frames = []
+        for exchange in self.exchanges:
+            url = "https://min-api.cryptocompare.com/data/histominute"
 
-        if runfocus_symbols_only == 'Y':
-            print"Pulling for only focus_symbols:"+str(focus_symbols)
-            symbols = focus_symbols
+            querystring = {"fsym":symbol,"tsym":"USD","limit":"2000","aggregate":"3","e":exchange,"toTs":currentts}
 
-        else:
-            print 'processing: '+str(len(symbols))+' symbols'
-            symbols = symbols
+            headers = {
+                'cache-control': "no-cache",
+                'postman-token': "e00df90c-b8b6-cb28-54ff-88c19b883e0a"
+            }
 
-        xsymbols = [symbols[x:x+5] for x in xrange(0, len(symbols), 5)]
+            response = requests.request("GET", url, headers=headers, params=querystring)
+            data = response.json()
 
-
-        for symbols in xsymbols:
-
-            for symbol in symbols:
-                frames = []
-                for exchange in exchanges:
-
-                    url = 'https://min-api.cryptocompare.com/data/histominute?fsym=' \
-                          +symbol+'&tsym='+ tsym +'&limit='+url_limit+'&aggregate=1&e='+\
-                          exchange +'&toTs=' + currentts
-                    resp = requests.get(url=url)
-                    data = json.loads(resp.text)
-
-                    if  data["Data"] != []:
-                        print 'Sucess: '+currentts+'   '+exchange+'  '+symbol
-                        datasorted = sorted(data['Data'], key=lambda k: int(k['time']))
-                        df = p.DataFrame(datasorted)
-                        df = df.assign(coin = symbol, coin_units = 1, timestamp_api_call = dt.datetime.now(),computer_name = 'JordanManual',exchange = exchange )
-                        frames.append(df)
-
-                    else:
-                        print 'Invalid: '+currentts+'   '+exchange+'  '+symbol
-
+            if data["Data"] :
+                df = p.DataFrame(data["Data"])
+                df = df.assign(symbol = symbol, coin_units = 1, timestamp_api_call = dt.datetime.now(),computer_name = 'JordanManual',exchange = exchange )
+                frames.append(df)
                 my_file = cwd+'/data/minute_data/'+symbol+'_minute.csv'
-
                 if os.path.isfile(my_file):
                     df_resident = p.DataFrame.from_csv(my_file)
-                    print 'appending new data: '+symbol
                     frames.append(df_resident)
                 else:
-                    print 'no new data to append: '+symbol
-
+                    pass
                 df = p.concat(frames)
-                df = df.drop_duplicates(['time','exchange','coin'], keep='last')
-                df = df.sort_values('time')
-                df = df.reset_index(drop=True)
-
                 if not df.empty:
-                    df.to_csv(cwd+'/data/minute_data/'+symbol+'_minute.csv', index_label='Id')
-                    print 'Updated: '+cwd+'/data/minute_data/'+symbol+'_minute.csv'
+                    df = df.drop_duplicates(['time','exchange','coin'], keep='last')
+                    df = df.sort_values('time')
+                    df = df.reset_index(drop=True)
+                    df.to_csv(my_file, index_label='Id') #need to add this
+                    #print 'Updated trade pair: '+str(my_file)
                 else:
-                    print'No minhist for: '+symbol
+                    pass
+
+            else:
+                pass #print 'Invalid: '+currentts+'   '+exchange+'  '+symbol
+
+
 
     def main(self):
 
 
-        print 'begin: GetMinuteHist.main'
-        hpc = GetMinuteHist(self.symbols, self.runfocus_symbols_only, self.focus_symbols)
-        try:
-            hpc.get_minute_hist()
+        gmt = GetMinuteHist(self.symbol_list,self.exchanges)
 
-        except:
-            print 'error get_minute_hist failed'
+        threads = [threading.Thread(target=gmt.get_minute_hist, args=(symbol,)) for symbol in self.symbol_list]
+        for thread in threads:
+            thread.start()
 
-        print 'end: GetMinuteHist.main'
+        for thread in threads:
+            thread.join()
+
+
+
+
 
 
 if __name__ == '__main__':
+    """df_get_id = p.DataFrame.from_csv('/Users/jkail/Documents/GitHub/lit_crypto/alpha/data/coinlist_info.csv')
+    b = df_get_id["Symbol"].tolist()
+    symbols = b[:50]
+    #print symbols
+    exchanges = ['CCCAGG','Coinbase', 'Bitfinex']
+    """
     runner = GetMinuteHist()
     runner.main()
-
-

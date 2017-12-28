@@ -4,80 +4,81 @@ __author__ = 'jkail'
 
 import requests
 import pandas as p
-import datetime as dt
 import os
+import threading
 
 
 class HasPricingCheck(object):
 
-    def __init__(self,symbol_list, runfocus_symbols_only, focus_symbols):
+    def __init__(self, symbol_list, y):
         self.symbol_list = symbol_list
-        self.focus_symbols = focus_symbols
-        self.runfocus_symbols_only = runfocus_symbols_only
+        self.has_pricing = y
 
-    def validate_price_info(self):
-        symbol_list = self.symbol_list
-        focus_symbols = self.focus_symbols
-        runfocus_symbols_only = self.runfocus_symbols_only
+    def validate_price_info(self, symbol):
 
-        if runfocus_symbols_only == 'Y':
-            symbol_list = focus_symbols
-        elif runfocus_symbols_only == 'N':
-            symbol_list = symbol_list
+        url = "https://min-api.cryptocompare.com/data/pricemultifull"
 
-        has_pricing =[]
-        cwd = os.getcwd()
-        count = 0
-        total_symbols = len(symbol_list)
-        print
-        print "Started: "+str(dt.datetime.now())
-    
-        for symbol in symbol_list:
-            count += 1
-            url = "https://min-api.cryptocompare.com/data/pricemultifull"
-    
-            querystring = {"fsyms":symbol,"tsyms":'USD',"e":"CCCAGG"}
-    
-            headers = {
-                'cache-control': "no-cache",
-                'postman-token': "f3d54076-038b-9e2d-1ff3-593ae13aabbf"
-            }
-            response = requests.request("GET", url, headers=headers, params=querystring)
-            data = response.json()
-    
-            if 'RAW' in data.keys():
-                has_pricing.append({'symbol':str(symbol), 'has_pricing':1})
-    
-            else:
-                has_pricing.append({'symbol':str(symbol),'has_pricing':0})
-            print symbol+': '+str(count)+' / '+str(total_symbols)
+        querystring = {"fsyms":symbol,"tsyms":'USD',"e":"CCCAGG"}
 
-        frames = []
-        df_resident = p.DataFrame.from_csv(cwd+'/data/has_pricing.csv')
-        frames.append(df_resident)
-        df_has_pricing = p.DataFrame(has_pricing)
-        frames.append(df_has_pricing)
-        df = p.concat(frames)
-        df = df.drop_duplicates()
-        df.to_csv(cwd+'/data/has_pricing.csv',encoding='utf-8', index = False)
+        headers = {
+            'cache-control': "no-cache",
+            'postman-token': "f3d54076-038b-9e2d-1ff3-593ae13aabbf"
+        }
+        response = requests.request("GET", url, headers=headers, params=querystring)
+        data = response.json()
 
-        print "Ended: "+str(dt.datetime.now())
+        if 'RAW' in data.keys():
+            self.has_pricing.append({'symbol':str(symbol), 'has_pricing':1})
 
+        else:
+            self.has_pricing.append({'symbol':str(symbol),'has_pricing':0})
+
+        #print len(self.has_pricing)
     def main(self):
-
+        cwd = os.getcwd()
         print 'run main'
         print 'begin: HasPricingCheck.main'
-        hpc = HasPricingCheck(self.symbol_list, self.runfocus_symbols_only, self.focus_symbols)
-        try:
-            hpc.validate_price_info()
 
-        except:
-            print 'error validate_price_info failed'
+        hpc = HasPricingCheck(self.symbol_list,self.has_pricing)
 
-        print 'end: HasPricingCheck.main'
+        threads = [threading.Thread(target=hpc.validate_price_info, args=(symbol,)) for symbol in self.symbol_list]
+
+        for thread in threads:
+            thread.start()
+
+        for thread in threads:
+            thread.join()
+
+        frames = []
+        df = p.DataFrame(self.has_pricing)
+        frames.append(df)
+
+        my_file = cwd+'/data/has_pricing.csv'
+
+        if os.path.isfile(my_file):
+            df_resident = p.DataFrame.from_csv(my_file)
+            frames.append(df_resident)
+        else:
+            pass
+
+        if not df.empty:
+            df = p.concat(frames)
+            df = df.sort_values('symbol')
+            df = df.drop_duplicates(['symbol'], keep='last')
+            df = df.reset_index(drop=True)
+            df.to_csv(my_file, index_label='Id') #need to add this
+            #print 'Updated trade pair: '+str(my_file)
+        else:
+            pass
+
+
 
 
 if __name__ == '__main__':
+    #df_get_id = p.DataFrame.from_csv('/Users/jkail/Documents/GitHub/lit_crypto/alpha/data/coinlist_info.csv')
+    #b = df_get_id["Symbol"].tolist()
+    #symbols = b
+    #has_pricing = []
     runner = HasPricingCheck()
     runner.main()
 

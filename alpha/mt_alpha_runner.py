@@ -35,8 +35,8 @@ class AlphaRunner(object):
         self.runisprice = self.args.runisprice
         self.cwd = os.getcwd()
         self.focus_symbols = ['BTC','BCH','LTC','ETH']
-        self.exchanges = ['Bitfinex','Bitstamp','coinone','Coinbase']
-
+        self.exchanges = ['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
+        self.chunksize = 100
 
         #self.org_params = json.load(open("config/cti_config.dict"))
 
@@ -66,14 +66,18 @@ class AlphaRunner(object):
                         gcl_output = coin_df.main()
                         symbol_list = gcl_output["Symbol"].tolist()
 
-                        symbol_list = symbol_list[:50] # for testing
+                        #symbol_list = symbol_list # for testing
 
                         if self.runisprice == 'Y':
                         #ask if price info exists (update has price csv)
                         ### add [:50] ### to symbol_list for testing
-                            hpc = haspricing.HasPricingCheck(symbol_list,self.runfocus_symbols_only,self.focus_symbols)
-                            hpc.main()
-                            print 'Saved Pricing: '+self.cwd+'/data/has_pricing.csv'
+                            xsymbols = [symbol_list[x:x+self.chunksize] for x in xrange(0, len(symbol_list), self.chunksize)]
+                            for symbol_list in xsymbols:
+                                    has_pricing = []
+                                    hpc = haspricing.HasPricingCheck(symbol_list,has_pricing)
+                                    hpc.main()
+
+
                             df = p.DataFrame.from_csv(self.cwd+'/data/has_pricing.csv')
                             df_has = df.query('has_pricing == 1')
                             ls_has = df_has["symbol"].tolist()
@@ -90,59 +94,40 @@ class AlphaRunner(object):
                     print 'error getting symbol_list'
 
                 try:
-                    ls_has1 = ls_has
-                    ls_has2 = ls_has
-                    ls_has3 = ls_has
-                    ls_has4 = ls_has
-                    ls_has5 = ls_has
-                    ls_has6 = ls_has
+                    x = len(ls_has)
+                    print 'Evaluating: '+str(x)
 
-                    md = miningdata.GetMineData()
-                    #md.main()
-                    t1 = threading.Thread(target=md.main())
+                    #helps limit threads open etc
+                    xsymbols = [ls_has[x:x+self.chunksize] for x in xrange(0, len(ls_has), self.chunksize)]
+                    for ls_has in xsymbols:
+                        md = miningdata.GetMineData()
+                        #md.main()
 
-                    tp = tradepair.GetTradePair(ls_has1)
-                    #tp.main()
-                    t2 = threading.Thread(target=tp.main())
 
-                    fp = fetchprice.GetDtlPrice(ls_has2)
-                    #fp.main()
-                    t3 = threading.Thread(target=fp.main())
+                        tp = tradepair.GetTradePair(ls_has)
+                        #tp.main()
 
-                    mh = minute_hist.GetMinuteHist(ls_has3, self.runfocus_symbols_only, self.focus_symbols)
-                    mh.main()
-                    t4 = threading.Thread(target=fp.main())
 
-                    hh = hour_hist.GetHourHist(ls_has4, self.runfocus_symbols_only, self.focus_symbols)
-                    hh.main()
-                    t5 = threading.Thread(target=fp.main())
+                        fp = fetchprice.GetDtlPrice(ls_has)
+                        #fp.main()
 
-                    dh = day_hist.GetDayHist(ls_has5, self.runfocus_symbols_only, self.focus_symbols)
-                    dh.main()
-                    t6 = threading.Thread(target=fp.main())
+                        mh = minute_hist.GetMinuteHist(ls_has,self.exchanges)
+                        mh.main()
 
-                    gsd = social.GetSocialData(ls_has6)
-                    gsd.main()
-                    t7 = threading.Thread(target=fp.main())
+                        hh = hour_hist.GetHourHist(ls_has,self.exchanges)
+                        hh.main()
 
-                    t1.start()
-                    t2.start()
-                    t3.start()
-                    t4.start()
-                    t5.start()
-                    t6.start()
-                    t7.start()
-                    t1.join()
-                    t2.join()
-                    t3.join()
-                    t4.join()
-                    t5.join()
-                    t6.join()
-                    t7.join()
+                        dh = day_hist.GetDayHist(ls_has,self.exchanges)
+                        dh.main()
 
-                    # non 0:00:35.364493
-                    #multithread  0:00:21.039896
-                    #full run mutli thread
+                        gsd = social.GetSocialData(ls_has)
+                        #gsd.main()
+
+
+
+                        # non 0:00:35.364493
+                        #multithread  0:00:21.039896
+                        #full run mutli thread
 
 
                 except ValueError:
