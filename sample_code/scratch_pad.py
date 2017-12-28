@@ -1,11 +1,21 @@
-import requests
-import json
+import threading
+import urllib2
+import time
 
-url = 'https://min-api.cryptocompare.com/data/histohour?fsym=' \
-      +'ETH'+'&tsym='+ 'USD' +'&limit='+'2'+'&aggregate=1&e='+ \
-      'CCCAGG'
-resp = requests.get(url=url)
-data = json.loads(resp.text)
+start = time.time()
+urls = ["http://www.google.com", "http://www.apple.com", "http://www.microsoft.com", "http://www.amazon.com", "http://www.facebook.com"]
 
-if data["Data"]:
-    print 'x'
+def fetch_url(url):
+    urlHandler = urllib2.urlopen(url)
+    html = urlHandler.read()
+    print "'%s\' fetched in %ss" % (url, (time.time() - start))
+
+threads = [threading.Thread(target=fetch_url, args=(url,)) for url in urls]
+for thread in threads:
+    thread.start()
+
+for thread in threads:
+    thread.join()
+
+print "Elapsed Time: %s" % (time.time() - start)
+

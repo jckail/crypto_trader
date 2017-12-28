@@ -1,12 +1,59 @@
 Id,Points,is_closed,likes,link,name,socialsource,source,symbol,symbol_id,talking_about,timestamp_api_call
 0,36730,False,22930.0,https://www.facebook.com/Ab-Chain-Ads-in-BlockChain-897158380440217/,Ab-Chain - Ads in BlockChain,Facebook,cryptocompare,ABC,303943,1380.0,2017-12-27 19:46:19.803845
-1,0,,,,,Facebook,cryptocompare,BCH,202330,,2017-12-27 15:53:42.493824
-2,39003,False,36233.0,https://www.facebook.com/bitcoins/,Bitcoin P2P Cryptocurrency,Facebook,cryptocompare,BTC,1182,277.0,2017-12-27 20:42:45.457822
-3,39001,False,36231.0,https://www.facebook.com/bitcoins/,Bitcoin P2P Cryptocurrency,Facebook,cryptocompare,BTC,1182,277.0,2017-12-27 18:13:45.649174
-4,39011,False,36231.0,https://www.facebook.com/bitcoins/,Bitcoin P2P Cryptocurrency,Facebook,cryptocompare,BTC,1182,278.0,2017-12-27 16:42:15.222133
-5,39002,False,36222.0,https://www.facebook.com/bitcoins/,Bitcoin P2P Cryptocurrency,Facebook,cryptocompare,BTC,1182,278.0,2017-12-27 15:53:42.227148
-6,158112,False,114962.0,https://www.facebook.com/ethereumproject/,Ethereum,Facebook,cryptocompare,ETH,7605,4315.0,2017-12-27 20:42:48.204410
-7,158072,False,114922.0,https://www.facebook.com/ethereumproject/,Ethereum,Facebook,cryptocompare,ETH,7605,4315.0,2017-12-27 18:13:48.630650
-8,156295,False,114875.0,https://www.facebook.com/ethereumproject/,Ethereum,Facebook,cryptocompare,ETH,7605,4142.0,2017-12-27 16:42:17.289163
-9,156542,False,114662.0,https://www.facebook.com/ethereumproject/,Ethereum,Facebook,cryptocompare,ETH,7605,4188.0,2017-12-27 15:53:43.044922
-10,8235,False,7865.0,https://www.facebook.com/litecoincommunity/,Litecoin,Facebook,cryptocompare,LTC,3808,37.0,2017-12-27 15:53:42.766207
+1,0,,,,,Facebook,cryptocompare,ADL,127738,,2017-12-27 21:23:12.338421
+2,0,,,,,Facebook,cryptocompare,AVT,138642,,2017-12-27 21:23:34.152390
+3,0,,,,,Facebook,cryptocompare,BAT,107672,,2017-12-27 21:22:54.217738
+4,0,,,,,Facebook,cryptocompare,BCH,202330,,2017-12-27 15:53:42.493824
+5,3466,False,3366.0,https://www.facebook.com/boscoinio/,BOScoin,Facebook,cryptocompare,BOS,116384,10.0,2017-12-27 21:23:01.685472
+6,39002,False,36222.0,https://www.facebook.com/bitcoins/,Bitcoin P2P Cryptocurrency,Facebook,cryptocompare,BTC,1182,278.0,2017-12-27 15:53:42.227148
+7,39001,False,36231.0,https://www.facebook.com/bitcoins/,Bitcoin P2P Cryptocurrency,Facebook,cryptocompare,BTC,1182,277.0,2017-12-27 18:13:45.649174
+8,39011,False,36231.0,https://www.facebook.com/bitcoins/,Bitcoin P2P Cryptocurrency,Facebook,cryptocompare,BTC,1182,278.0,2017-12-27 16:42:15.222133
+9,39003,False,36233.0,https://www.facebook.com/bitcoins/,Bitcoin P2P Cryptocurrency,Facebook,cryptocompare,BTC,1182,277.0,2017-12-27 20:42:45.457822
+10,0,,,,,Facebook,cryptocompare,CFI,136984,,2017-12-27 21:23:31.750554
+11,0,,,,,Facebook,cryptocompare,CLV,13074,,2017-12-27 21:23:19.086006
+12,32,False,22.0,https://www.facebook.com/PayConX13/,Paycon,Facebook,cryptocompare,CON,12985,1.0,2017-12-27 21:23:15.417777
+13,2445,False,2005.0,https://www.facebook.com/civictechnologiesinc/,Civic,Facebook,cryptocompare,CVC,139467,44.0,2017-12-27 21:23:35.077859
+14,3,False,3.0,https://www.facebook.com/diggits.co/,Diggits,Facebook,cryptocompare,DIGS,12192,0.0,2017-12-27 21:23:04.597261
+15,0,,,,,Facebook,cryptocompare,DUX,105206,,2017-12-27 21:22:51.447179
+16,0,,,,,Facebook,cryptocompare,DYN,131111,,2017-12-27 21:23:22.445087
+17,0,,,,,Facebook,cryptocompare,EQT,105263,,2017-12-27 21:22:52.677983
+18,419,False,319.0,https://www.facebook.com/EspersCoin/,Espers Coin,Facebook,cryptocompare,ESP,130951,10.0,2017-12-27 21:23:20.842958
+19,158112,False,114962.0,https://www.facebook.com/ethereumproject/,Ethereum,Facebook,cryptocompare,ETH,7605,4315.0,2017-12-27 20:42:48.204410
+20,156542,False,114662.0,https://www.facebook.com/ethereumproject/,Ethereum,Facebook,cryptocompare,ETH,7605,4188.0,2017-12-27 15:53:43.044922
+21,156295,False,114875.0,https://www.facebook.com/ethereumproject/,Ethereum,Facebook,cryptocompare,ETH,7605,4142.0,2017-12-27 16:42:17.289163
+22,158072,False,114922.0,https://www.facebook.com/ethereumproject/,Ethereum,Facebook,cryptocompare,ETH,7605,4315.0,2017-12-27 18:13:48.630650
+23,1583,False,1563.0,https://www.facebook.com/expanse.official/,expanse,Facebook,cryptocompare,EXP,12194,2.0,2017-12-27 21:23:05.293489
+24,0,,,,,Facebook,cryptocompare,F16,108099,,2017-12-27 21:22:55.109623
+25,5723,False,4773.0,https://www.facebook.com/FactomProject/,Factom,Facebook,cryptocompare,FCT,13280,95.0,2017-12-27 21:23:25.445536
+26,911,False,861.0,https://www.facebook.com/GCRWorldwide/,Global Currency Reserve WorldWide,Facebook,cryptocompare,GCR,12217,5.0,2017-12-27 21:23:06.392206
+27,0,,,,,Facebook,cryptocompare,GRS,13070,,2017-12-27 21:23:17.401297
+28,0,,,,,Facebook,cryptocompare,HAMS,112363,,2017-12-27 21:22:56.099550
+29,0,,,,,Facebook,cryptocompare,INSN,105284,,2017-12-27 21:22:53.287826
+30,0,,,,,Facebook,cryptocompare,IOT,127356,,2017-12-27 21:23:10.200312
+31,0,,,,,Facebook,cryptocompare,LKK,130939,,2017-12-27 21:23:19.714208
+32,8235,False,7865.0,https://www.facebook.com/litecoincommunity/,Litecoin,Facebook,cryptocompare,LTC,3808,37.0,2017-12-27 15:53:42.766207
+33,0,,,,,Facebook,cryptocompare,LYB,13281,,2017-12-27 21:23:26.478494
+34,0,,,,,Facebook,cryptocompare,MAD,131079,,2017-12-27 21:23:21.881367
+35,0,,,,,Facebook,cryptocompare,MAPC,12223,,2017-12-27 21:23:07.599362
+36,0,,,,,Facebook,cryptocompare,MAT*,108094,,2017-12-27 21:22:54.661572
+37,0,,,,,Facebook,cryptocompare,MCAP,131154,,2017-12-27 21:23:24.292052
+38,0,,,,,Facebook,cryptocompare,MI,12225,,2017-12-27 21:23:09.273188
+39,0,,,,,Facebook,cryptocompare,MYST,136190,,2017-12-27 21:23:27.732146
+40,0,,,,,Facebook,cryptocompare,NEF,112405,,2017-12-27 21:22:57.901626
+41,27689,False,20589.0,https://www.facebook.com/NxtBlockchain/,Nxt Blockchain,Facebook,cryptocompare,NXT,1183,710.0,2017-12-27 21:23:04.111527
+42,2390,False,1990.0,https://www.facebook.com/patientory/,Patientory,Facebook,cryptocompare,PTOY,129035,40.0,2017-12-27 21:23:13.266425
+43,0,,,,,Facebook,cryptocompare,QRL,127667,,2017-12-27 21:23:11.584421
+44,0,,,,,Facebook,cryptocompare,QTUM,112392,,2017-12-27 21:22:57.298679
+45,0,,,,,Facebook,cryptocompare,QWARK,116425,,2017-12-27 21:23:02.832592
+46,1518,False,1138.0,https://www.facebook.com/nebulouslabs/,Nebulous,Facebook,cryptocompare,SC,13072,38.0,2017-12-27 21:23:18.246801
+47,0,,,,,Facebook,cryptocompare,SEQ,131112,,2017-12-27 21:23:23.398039
+48,0,,,,,Facebook,cryptocompare,SKY,136269,,2017-12-27 21:23:31.290802
+49,0,,,,,Facebook,cryptocompare,SNM,136244,,2017-12-27 21:23:30.148944
+50,5944,False,5114.0,https://www.facebook.com/ethstatus/,Status.im,Facebook,cryptocompare,SNT,137013,83.0,2017-12-27 21:23:32.929533
+51,0,,,,,Facebook,cryptocompare,SUB*,100944,,2017-12-27 21:22:49.607960
+52,0,,,,,Facebook,cryptocompare,TX,13045,,2017-12-27 21:23:16.326002
+53,0,,,,,Facebook,cryptocompare,USC,100954,,2017-12-27 21:22:50.523342
+54,4424,False,4104.0,https://www.facebook.com/reggiemiddletonfintech/,"Reggie Middleton on Finance, Technology,  Fitness & Family",Facebook,cryptocompare,VERI,136211,32.0,2017-12-27 21:23:28.932081
+55,0,,,,,Facebook,cryptocompare,XPS,105220,,2017-12-27 21:22:51.997785
+56,0,,,,,Facebook,cryptocompare,ZEN,116180,,2017-12-27 21:23:00.300326
+57,2974,False,2294.0,https://www.facebook.com/zrcoin/,ZrCoin,Facebook,cryptocompare,ZRC,129604,68.0,2017-12-27 21:23:14.186381

@@ -15,8 +15,10 @@ class GetSocialData(object):
 
     def get_socials(self):
         symbols = self.symbols
-        print symbols
+        symbol_count = 0
+        len_symbols = len(symbols)
         for symbol in symbols:
+            symbol_count += 1
             ls_social_update =[]
             source = 'cryptocompare'
             cwd = os.getcwd()
@@ -25,8 +27,8 @@ class GetSocialData(object):
             df_get_id = p.DataFrame.from_csv('/Users/jkail/Documents/GitHub/lit_crypto/alpha/data/coinlist_info.csv')
             a = df_get_id.query("Symbol == "+symbol)
             b = a["Id"].tolist()
-
             if len(b) > 0:
+
                 symbol_id = b[0]
                 url = "https://www.cryptocompare.com/api/data/socialstats/"
     
@@ -216,11 +218,12 @@ class GetSocialData(object):
                             else:
                                 print 'No '+str(key)+' data: '+symbol
                         a = ' '.join(ls_social_update)
-                    print str(symbol)+' Updated: '+a
+                    print str(symbol)+' Updated: '+a+' '+str(symbol_count)+'/'+str(len_symbols)
                 else:
-                    print 'No Social Data'+str(symbol)
+                    print 'No Social Data'+str(symbol)+' '+str(symbol_count)+'/'+str(len_symbols)
             else:
-                print 'Invald coin'+str(symbol)
+                print 'Invald coin'+str(symbol)+' '+str(symbol_count)+'/'+str(len_symbols)
+
     def main(self):
         """
 
@@ -231,22 +234,19 @@ class GetSocialData(object):
             gsd = GetSocialData(self.symbols)
             gsd.get_socials()
 
-
-
         except ValueError:
             print 'Error: GetSocialData.main'
-
-
         print 'end: GetSocialData.main'
 
 
 if __name__ == '__main__':
-    symbols = ['BTC','BCH','LTC','ETH']
+    test_symbols = ['BTC','BCH','LTC','ETH']
+
     """
 
     :return:
     """
-    runner = GetSocialData(['BTC', 'BCH', 'LTC', 'ETH']) #pass symbols to run test in place
+    runner = GetSocialData() #pass symbols to run test in place
     runner.main()
 
 

@@ -32,6 +32,7 @@ class AlphaRunner(object):
 
         self.cwd = os.getcwd()
         self.focus_symbols = ['BTC','BCH','LTC','ETH']
+        self.exchanges = ['Bitfinex','Bitstamp','coinone','Coinbase']
 
 
         #self.org_params = json.load(open("config/cti_config.dict"))
@@ -62,6 +63,7 @@ class AlphaRunner(object):
 
                         if self.runisprice == 'Y':
                         #ask if price info exists (update has price csv)
+                        ### add [:50] ### to symbol_list for testing
                             hpc = haspricing.HasPricingCheck(symbol_list,self.runfocus_symbols_only,self.focus_symbols)
                             hpc.main()
                             print 'Saved Pricing: '+self.cwd+'/data/has_pricing.csv'
@@ -77,25 +79,23 @@ class AlphaRunner(object):
 
                     elif self.runfocus_symbols_only == 'Y':
                         ls_has = self.focus_symbols
-                except:
+                except ValueError:
                     print 'error getting symbol_list'
 
                 try:
 
-                    """
-                md = miningdata.GetMineData()
-                md.main()
-                tp = tradepair.GetTradePair(ls_has)
-                tp.main()
-                fp = fetchprice.GetDtlPrice(ls_has)
-                a = fp.main()
-                mh = minute_hist.GetMinuteHist(ls_has, self.runfocus_symbols_only, self.focus_symbols)
-                mh.main()
-                hh = hour_hist.GetHourHist(ls_has, self.runfocus_symbols_only, self.focus_symbols)
-                hh.main()
-                dh = day_hist.GetDayHist(ls_has, self.runfocus_symbols_only, self.focus_symbols)
-                dh.main()
-                """
+                    md = miningdata.GetMineData()
+                    md.main()
+                    tp = tradepair.GetTradePair(ls_has)
+                    tp.main()
+                    fp = fetchprice.GetDtlPrice(ls_has)
+                    a = fp.main()
+                    mh = minute_hist.GetMinuteHist(ls_has, self.runfocus_symbols_only, self.focus_symbols)
+                    mh.main()
+                    hh = hour_hist.GetHourHist(ls_has, self.runfocus_symbols_only, self.focus_symbols)
+                    hh.main()
+                    dh = day_hist.GetDayHist(ls_has, self.runfocus_symbols_only, self.focus_symbols)
+                    dh.main()
                     gsd = social.GetSocialData(ls_has)
                     gsd.main()
 
@@ -105,7 +105,7 @@ class AlphaRunner(object):
 
                 #askcurrentprice from has price/ if focus_symbols passed
 
-            except:
+            except ValueError:
                 print "ERROR: validate_coin_get_price"
 
         else:

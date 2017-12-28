@@ -43,7 +43,7 @@ class GetDtlPrice(object):
                 test_df = p.DataFrame.transpose(test_df)
                 test_df = test_df.assign (coin = key, coin_units = 1, timestamp_api_call = dt.datetime.now(),computer_name = 'JordanManual') ##replace with ec2ip/region
                 frames.append(test_df)
-
+                #print test_df
         my_file = cwd+'/data/current_dtl_price.csv'
 
         if os.path.isfile(my_file):
@@ -59,7 +59,7 @@ class GetDtlPrice(object):
         df = df.sort_values('LASTUPDATE')
         df = df.reset_index(drop=True)
         df.to_csv(cwd+'/data/current_dtl_price.csv',encoding='utf-8', index_label='Id')
-        return df
+        #return df
 
     def main(self):
         """
@@ -69,8 +69,8 @@ class GetDtlPrice(object):
         print 'begin: GetDtlPrice.main'
         try:
             gdl = GetDtlPrice(self.symbols)
-            df = gdl.get_get_details_for_symbols()
-            return df
+            gdl.get_get_details_for_symbols()
+            #return df df =
 
         except:
             print 'Error: GetDtlPrice.main'
@@ -83,7 +83,7 @@ if __name__ == '__main__':
 
     :return:
     """
-    runner = GetDtlPrice()
+    runner = GetDtlPrice(['BTC','BCH','LTC','ETH'])
     runner.main()
 
 
