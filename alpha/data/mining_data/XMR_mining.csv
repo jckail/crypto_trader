@@ -1,2 +1,2 @@
-Id,TotalCoinsMined,BlockReward,DifficultyAdjustment,BlockRewardReduction,Symbol,BlockNumber,NetHashesPerSecond,BlockTime,PreviousTotalCoinsMined,PriceUSD,key,source,timestamp_api_call
-0,15529226.64163565,5.718633379159,2 blocks,-,XMR,1473850,487738060.9,120,0.0,374.4,XMR,cryptocompare,2017-12-27 18:26:03.227938
+Id,BlockNumber,BlockReward,BlockRewardReduction,BlockTime,DifficultyAdjustment,Id,Id.1,Id.1.1,Id.1.1.1,Id.1.1.1.1,NetHashesPerSecond,PreviousTotalCoinsMined,PriceUSD,Symbol,TotalCoinsMined,key,source,timestamp_api_call
+0,1473850,5.718633379159,-,120,2 blocks,0.0,0.0,0.0,0.0,0.0,487738060.9,0.0,374.4,XMR,15529226.64163565,XMR,cryptocompare,2017-12-27 18:26:03.227938

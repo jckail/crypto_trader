@@ -55,7 +55,7 @@ class GetTradePair(object):
                 df = df.reset_index(drop=True)
                 my_file = my_file.replace('python/','')
                 df.to_csv(my_file, index_label='Id') #need to add this
-                print 'Updated trade pair: '+str(my_file)
+                #print 'Updated trade pair: '+str(my_file)
             else:
                 pass
         for x in append_list:
@@ -71,10 +71,6 @@ class GetTradePair(object):
         try:
             gtp = GetTradePair(self.symbols)
             gtp.trading_partners()
-
-
-
-
 
         except:
             print 'Error: GetTradePair.main'

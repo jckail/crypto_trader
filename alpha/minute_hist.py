@@ -50,7 +50,7 @@ class GetMinuteHist(object):
                         df = df.drop_duplicates(['time','exchange','coin'], keep='last')
                         df = df.sort_values('time')
                         df = df.reset_index(drop=True)
-                        df.to_csv(my_file, index_label='Id') #need to add this
+                        df.to_csv(my_file, index_label='Sequence') #need to add this
                         #print 'Updated trade pair: '+str(my_file)
                     else:
                         pass

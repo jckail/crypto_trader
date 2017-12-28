@@ -8,6 +8,12 @@ import time
 # classes
 import buildcoinlist
 import day_hist
+import test
+import threading
+#add arg focus symbols only
+import datetime as dt
+
+
 import fetchprice
 import haspricing
 import hour_hist
@@ -15,10 +21,10 @@ import minute_hist
 import social
 import miningdata
 import tradepair
-import test
-import threading
-#add arg focus symbols only
-import datetime as dt
+import mtfetchprice
+
+
+
 
 
 class AlphaRunner(object):
@@ -35,7 +41,8 @@ class AlphaRunner(object):
         self.cwd = os.getcwd()
         self.focus_symbols = ['BTC','BCH','LTC','ETH']
         self.exchanges = ['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
-        self.chunksize = 200  #~~thread limit
+        #self.exchanges = ['Coinbase']
+        self.chunksize = 150  #~~#thread limit
         #self.org_params = json.load(open("config/cti_config.dict"))
 
     def get_args(self):
@@ -71,9 +78,9 @@ class AlphaRunner(object):
                             ls_has = df_has["symbol"].tolist()
 
                         elif self.runisprice == 'N' and os.path.isfile(self.cwd+'/data/has_pricing.csv') == True:
-                            df = p.read_csv(self.cwd+'/data/has_pricing.csv')
-                            df_has = df.query('has_pricing == 1')
-                            ls_has = df_has["symbol"].tolist()
+                            df = p.read_csv(self.cwd+'/data/coinlist_info.csv')
+                            #df_has = df.query('has_pricing == 1')
+                            ls_has = df["Symbol"].tolist()
 
                         else:
                             has_pricing = []
@@ -90,37 +97,63 @@ class AlphaRunner(object):
 
                 try:
                     x = len(ls_has)
-                    #ls_has = ls_has[:100]
+                    #ls_has = ls_has[:200]
                     print '--------------------------------------------------------------------------'
                     print 'Evaluating: '+str(x)
                     print '--------------------------------------------------------------------------'
-                    #helps limit threads open etc
+                    #helps limit #threads open etc
+
                     md = miningdata.GetMineData()
-                    #md.main()
+                    md.main()
+                    #thread1 = #threading.Thread(target=md.main(), args=())
 
-
+                    print'--------------------------------------------------------------------------'
+                    mfp = mtfetchprice.GetDtlPrice(ls_has,self.chunksize,self.exchanges) #chunk size not used here just broken up into 50 strings due to api list constraint
+                    mfp.main()
+                    #thread2 = #threading.Thread(target=mfp.main(), args=())
+                    print'--------------------------------------------------------------------------'
 
                     tp = tradepair.GetTradePair(ls_has)
                     #tp.main()
-
-                    fp = fetchprice.GetDtlPrice(ls_has)
-                    #fp.main()
+                    ##thread3 = #threading.Thread(target=tp.main(), args=())
+                    print'--------------------------------------------------------------------------'
 
                     mh = minute_hist.GetMinuteHist(ls_has,self.exchanges,self.chunksize)
                     mh.main()
+                    #thread4 = #threading.Thread(target=mh.main(), args=())
 
-                    hh = hour_hist.GetHourHist(ls_has,self.exchanges)
-                    #hh.main()
+                    hh = hour_hist.GetHourHist(ls_has,self.exchanges,self.chunksize)
+                    hh.main()
+                    #thread5 = #threading.Thread(target=hh.main(), args=())
 
-                    dh = day_hist.GetDayHist(ls_has,self.exchanges)
-                    #dh.main()
+                    dh = day_hist.GetDayHist(ls_has,self.exchanges,self.chunksize)
+                    dh.main()
+                    #thread6 = #threading.Thread(target=dh.main(), args=())
+                    print'--------------------------------------------------------------------------'
 
                     gsd = social.GetSocialData(ls_has)
                     #gsd.main()
+                    ##thread7 = #threading.Thread(target=mfp.main(), args=())
+
+
+                    #thread1.start()
+                    #thread2.start()
+                    ##thread3.start()
+                    #thread4.start()
+                    #thread5.start()
+                    #thread6.start()
+
+                    #thread1.join()
+                    #thread2.join()
+                    ##thread3.join()
+                    #thread4.join()
+                    #thread5.join()
+                    #thread6.join()
+                    ##thread7.start()
 
                         # non 0:00:35.364493
-                        #multithread  0:00:21.039896
-                        #full run mutli thread
+                        #multi#thread  0:00:21.039896
+                        #full run mutli #thread
 
                 except ValueError:
                     print 'error on processing dtl, hist'

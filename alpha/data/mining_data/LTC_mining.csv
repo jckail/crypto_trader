@@ -1,2 +1,2 @@
-Id,TotalCoinsMined,BlockReward,DifficultyAdjustment,BlockRewardReduction,Symbol,BlockNumber,NetHashesPerSecond,BlockTime,PreviousTotalCoinsMined,PriceUSD,key,source,timestamp_api_call
-0,54501208.15313706,25.0,2016 blocks,50%,LTC,1340125,102345307298840.2,150,54501083.15313708,263.95,LTC,cryptocompare,2017-12-27 18:26:03.211258
+Id,BlockNumber,BlockReward,BlockRewardReduction,BlockTime,DifficultyAdjustment,Id,Id.1,Id.1.1,Id.1.1.1,Id.1.1.1.1,NetHashesPerSecond,PreviousTotalCoinsMined,PriceUSD,Symbol,TotalCoinsMined,key,source,timestamp_api_call
+0,1340125,25.0,50%,150,2016 blocks,0.0,0.0,0.0,0.0,0.0,102345307298840.2,54501083.15313708,263.95,LTC,54501208.15313706,LTC,cryptocompare,2017-12-27 18:26:03.211258

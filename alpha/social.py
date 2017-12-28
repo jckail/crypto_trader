@@ -24,7 +24,7 @@ class GetSocialData(object):
             cwd = os.getcwd()
             raw_symbol = symbol
             symbol = "'"+symbol+"'" #must add for df query
-            df_get_id = p.DataFrame.from_csv('/Users/jkail/Documents/GitHub/lit_crypto/alpha/data/coinlist_info.csv')
+            df_get_id = p.read_csv('/Users/jkail/Documents/GitHub/lit_crypto/alpha/data/coinlist_info.csv')
             a = df_get_id.query("Symbol == "+symbol)
             b = a["Id"].tolist()
             if len(b) > 0:
@@ -59,7 +59,7 @@ class GetSocialData(object):
                             my_file = cwd+'/data/social/%s.csv' % key
                             ls_social_update.append(key)
                             if os.path.isfile(my_file):
-                                df_resident = p.DataFrame.from_csv(my_file)
+                                df_resident = p.read_csv(my_file)
                                 frames.append(df_resident)
                             else:
                                 pass
@@ -85,7 +85,7 @@ class GetSocialData(object):
                             my_file = cwd+'/data/social/%s.csv' % key
                             ls_social_update.append(key)
                             if os.path.isfile(my_file):
-                                df_resident = p.DataFrame.from_csv(my_file)
+                                df_resident = p.read_csv(my_file)
                                 #print 'appending new'+str(key)+' data: '+symbol
                                 frames.append(df_resident)
                             else:
@@ -113,7 +113,7 @@ class GetSocialData(object):
                             my_file = cwd+'/data/social/%s.csv' % key
                             ls_social_update.append(key)
                             if os.path.isfile(my_file):
-                                df_resident = p.DataFrame.from_csv(my_file)
+                                df_resident = p.read_csv(my_file)
                                 #print 'appending new'+str(key)+' data: '+symbol
                                 frames.append(df_resident)
                             else:
@@ -141,7 +141,7 @@ class GetSocialData(object):
                             my_file = cwd+'/data/social/%s.csv' % key
                             ls_social_update.append(key)
                             if os.path.isfile(my_file):
-                                df_resident = p.DataFrame.from_csv(my_file)
+                                df_resident = p.read_csv(my_file)
                                 #print 'appending new'+str(key)+' data: '+symbol
                                 frames.append(df_resident)
                             else:
@@ -173,7 +173,7 @@ class GetSocialData(object):
                             my_file = cwd+'/data/social/%s.csv' % key
                             ls_social_update.append(key)
                             if os.path.isfile(my_file):
-                                df_resident = p.DataFrame.from_csv(my_file)
+                                df_resident = p.read_csv(my_file)
                                 #print 'appending new'+str(key)+' data: '+symbol
                                 frames.append(df_resident)
                             else:
@@ -201,7 +201,7 @@ class GetSocialData(object):
                             my_file = cwd+'/data/social/%s.csv' % key
                             ls_social_update.append(key)
                             if os.path.isfile(my_file):
-                                df_resident = p.DataFrame.from_csv(my_file)
+                                df_resident = p.read_csv(my_file)
                                 #print 'appending new'+str(key)+' data: '+symbol
                                 frames.append(df_resident)
                             else:

@@ -46,7 +46,7 @@ class GetMineData(object):
                 my_file = cwd+'/data/mining_data/%s_mining.csv' % key
 
                 if os.path.isfile(my_file):
-                    df_resident = p.DataFrame.from_csv(my_file)
+                    df_resident = p.read_csv(my_file)
                     frames.append(df_resident)
                 else:
                     print ''
@@ -59,8 +59,8 @@ class GetMineData(object):
                 #print df
                 if not df.empty:
                     #print my_file
-                    df.to_csv(my_file, index_label='Id')
-                    print 'Updated: '+str(my_file)
+                    df.to_csv(my_file, index_label='Sequence')
+                    pass #print 'Updated: '+str(my_file)
                 else:
                     print 'No '+str(key)+' data: '+key
         else:
@@ -88,7 +88,7 @@ class GetMineData(object):
             my_file = cwd+'/data/mining_data/mining_equipment.csv'
 
             if os.path.isfile(my_file):
-                df_resident = p.DataFrame.from_csv(my_file)
+                df_resident = p.read_csv(my_file)
                 frames.append(df_resident)
             else:
                 print ''
@@ -100,7 +100,7 @@ class GetMineData(object):
 
             if not df.empty:
                 df.to_csv(my_file,index_label='Sequence',  encoding= 'utf-8' ) #need to add this
-                print 'Updated: '+str(my_file)
+                pass #print 'Updated: '+str(my_file)
             else:
                 print 'No data: '
         else:
