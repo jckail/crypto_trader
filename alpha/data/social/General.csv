@@ -1,5 +1,30 @@
 Id,CoinName,Points,Type,Name,socialsource,source,symbol,symbol_id,timestamp_api_call
-0,Bitcoin Cash / BCC,592637,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 15:53:42.480660
-1,Bitcoin,3794025,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 15:53:42.219554
-2,Ethereum,2903222,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 15:53:43.033758
-3,Litecoin,1388153,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 15:53:42.755001
+0,AB-Chain,38704,Webpagecoinp,ABC,General,cryptocompare,ABC,303943,2017-12-27 19:46:19.791802
+1,Bitcoin Cash / BCC,592637,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 15:53:42.480660
+2,Bitcoin Cash / BCC,593162,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 20:42:46.350587
+3,Bitcoin Cash / BCC,593057,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 19:39:01.934059
+4,Bitcoin Cash / BCC,593007,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 19:14:50.561245
+5,Bitcoin Cash / BCC,592897,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 18:32:28.363370
+6,Bitcoin Cash / BCC,592912,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 18:13:46.747963
+7,Bitcoin Cash / BCC,592772,Webpagecoinp,BCH,General,cryptocompare,BCH,202330,2017-12-27 16:42:16.202332
+8,Bitcoin,3794955,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 16:42:15.208186
+9,Bitcoin,3796058,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 18:32:27.377091
+10,Bitcoin,3813500,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 20:42:45.442514
+11,Bitcoin,3796029,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 19:38:08.849828
+12,Bitcoin,3794025,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 15:53:42.219554
+13,Bitcoin,3795738,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 18:13:45.636756
+14,Bitcoin,3796499,Webpagecoinp,BTC,General,cryptocompare,BTC,1182,2017-12-27 19:14:50.157151
+15,Ethereum,2907246,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 16:42:17.256811
+16,Ethereum,2903222,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 15:53:43.033758
+17,Ethereum,2907667,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 19:39:03.629761
+18,Ethereum,2910574,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 20:42:48.190417
+19,Ethereum,2907286,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 18:32:30.197499
+20,Ethereum,2907211,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 18:13:48.620108
+21,Ethereum,2907571,Webpagecoinp,ETH,General,cryptocompare,ETH,7605,2017-12-27 19:14:52.615147
+22,Litecoin,1392023,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 18:13:47.696469
+23,Litecoin,1392203,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 19:14:51.690567
+24,Litecoin,1392093,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 18:32:28.759639
+25,Litecoin,1389846,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 16:42:16.725605
+26,Litecoin,1392328,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 19:39:02.784555
+27,Litecoin,1399862,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 20:42:47.278086
+28,Litecoin,1388153,Webpagecoinp,LTC,General,cryptocompare,LTC,3808,2017-12-27 15:53:42.755001

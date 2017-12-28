@@ -1,0 +1,2 @@
+Id,TotalCoinsMined,BlockReward,DifficultyAdjustment,BlockRewardReduction,Symbol,BlockNumber,NetHashesPerSecond,BlockTime,PreviousTotalCoinsMined,PriceUSD,key,source,timestamp_api_call
+0,7750682.12326408,3.6029519103467456,DGW,50%,DASH,785847,3302637859919954.0,122,7750678.52031217,1134.78,DASH,cryptocompare,2017-12-27 17:59:57.842057

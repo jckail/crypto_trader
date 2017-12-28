@@ -1,6 +1,16 @@
 Id,Points,account_creation,favourites,followers,following,link,lists,name,socialsource,source,statuses,symbol,symbol_id,timestamp_api_call
-0,0,,,,,,,,Twitter,cryptocompare,,BCH,202330,2017-12-27 15:53:42.454636
-1,615594,1313643968.0,77.0,589686.0,105.0,https://twitter.com/bitcoin,5178.0,Bitcoin,Twitter,cryptocompare,18989.0,BTC,1182,2017-12-27 15:53:42.204734
-2,281549,1390763724,2243,260543,0,https://twitter.com/ethereumproject,4201,Ethereum,Twitter,cryptocompare,1890,ETH,7605,2017-12-27 15:55:32.982164
-3,281549,1390763724.0,2243.0,260543.0,0.0,https://twitter.com/ethereumproject,4201.0,Ethereum,Twitter,cryptocompare,1890.0,ETH,7605,2017-12-27 15:53:43.002197
-4,278089,1317839450.0,245.0,268004.0,22.0,https://twitter.com/litecoin,2017.0,litecoin,Twitter,cryptocompare,622.0,LTC,3808,2017-12-27 15:53:42.728017
+0,1349,1504716056.0,5.0,1329.0,64.0,https://twitter.com/AB_CHAIN,4.0,AB-CHAIN,Twitter,cryptocompare,63.0,ABC,303943,2017-12-27 19:46:19.757318
+1,0,,,,,,,,Twitter,cryptocompare,,BCH,202330,2017-12-27 15:53:42.454636
+2,618479,1313643968.0,77.0,592481.0,105.0,https://twitter.com/bitcoin,5196.0,Bitcoin,Twitter,cryptocompare,18989.0,BTC,1182,2017-12-27 20:42:45.407335
+3,618121,1313643968.0,77.0,592093.0,105.0,https://twitter.com/bitcoin,5202.0,Bitcoin,Twitter,cryptocompare,18989.0,BTC,1182,2017-12-27 18:13:45.609687
+4,617560,1313643968.0,77.0,591592.0,105.0,https://twitter.com/bitcoin,5190.0,Bitcoin,Twitter,cryptocompare,18989.0,BTC,1182,2017-12-27 16:42:15.177925
+5,615594,1313643968.0,77.0,589686.0,105.0,https://twitter.com/bitcoin,5178.0,Bitcoin,Twitter,cryptocompare,18989.0,BTC,1182,2017-12-27 15:53:42.204734
+6,282555,1390763724,2243,261534,0,https://twitter.com/ethereumproject,4204,Ethereum,Twitter,cryptocompare,1890,ETH,7605,2017-12-27 20:50:28.069262
+7,282555,1390763724.0,2243.0,261534.0,0.0,https://twitter.com/ethereumproject,4204.0,Ethereum,Twitter,cryptocompare,1890.0,ETH,7605,2017-12-27 20:42:48.166573
+8,282412,1390763724.0,2243.0,261411.0,0.0,https://twitter.com/ethereumproject,4200.0,Ethereum,Twitter,cryptocompare,1890.0,ETH,7605,2017-12-27 18:13:48.592465
+9,282239,1390763724.0,2243.0,261233.0,0.0,https://twitter.com/ethereumproject,4201.0,Ethereum,Twitter,cryptocompare,1890.0,ETH,7605,2017-12-27 16:42:17.193104
+10,281549,1390763724.0,2243.0,260543.0,0.0,https://twitter.com/ethereumproject,4201.0,Ethereum,Twitter,cryptocompare,1890.0,ETH,7605,2017-12-27 15:53:43.002197
+11,280199,1317839450.0,245.0,270049.0,22.0,https://twitter.com/litecoin,2030.0,litecoin,Twitter,cryptocompare,622.0,LTC,3808,2017-12-27 20:42:47.251857
+12,279915,1317839450.0,245.0,269775.0,22.0,https://twitter.com/litecoin,2028.0,litecoin,Twitter,cryptocompare,622.0,LTC,3808,2017-12-27 18:13:47.668852
+13,279521,1317839450.0,246.0,269426.0,22.0,https://twitter.com/litecoin,2019.0,litecoin,Twitter,cryptocompare,622.0,LTC,3808,2017-12-27 16:42:16.676197
+14,278089,1317839450.0,245.0,268004.0,22.0,https://twitter.com/litecoin,2017.0,litecoin,Twitter,cryptocompare,622.0,LTC,3808,2017-12-27 15:53:42.728017

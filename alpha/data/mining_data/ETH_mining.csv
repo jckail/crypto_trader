@@ -1,0 +1,2 @@
+Id,TotalCoinsMined,BlockReward,DifficultyAdjustment,BlockRewardReduction,Symbol,BlockNumber,NetHashesPerSecond,BlockTime,PreviousTotalCoinsMined,PriceUSD,key,source,timestamp_api_call
+0,96610280.1866,3.0,Per 1 Block,,ETH,4809310,137341162887007.5,15,0.0,740.21,ETH,cryptocompare,2017-12-27 18:26:03.222291

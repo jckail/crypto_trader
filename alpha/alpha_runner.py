@@ -1,21 +1,25 @@
 #!/usr/bin/env python
 #mods
 import argparse
-import pandas as p
 import os
-#classes
+
+import pandas as p
+
+# classes
 import buildcoinlist
-import haspricing
-import fetchprice
-import minute_hist
-import hour_hist
 import day_hist
+import fetchprice
+import haspricing
+import hour_hist
+import minute_hist
 import social
+import miningdata
+import tradepair
 
 #add arg focus symbols only
 
 
-class alpha_runner(object):
+class AlphaRunner(object):
     """
     This is the main runner
     """
@@ -77,33 +81,35 @@ class alpha_runner(object):
                     print 'error getting symbol_list'
 
                 try:
-                    fp = fetchprice.GetDtlPrice(ls_has)
-                    a = fp.main()
-                    # a = current price changes
-                    mh = minute_hist.GetMinuteHist(ls_has, self.runfocus_symbols_only, self.focus_symbols)
-                    mh.main()
-                    hh = hour_hist.GetHourHist(ls_has, self.runfocus_symbols_only, self.focus_symbols)
-                    hh.main()
-                    dh = day_hist.GetDayHist(ls_has, self.runfocus_symbols_only, self.focus_symbols)
-                    dh.main()
+
+                    """
+                md = miningdata.GetMineData()
+                md.main()
+                tp = tradepair.GetTradePair(ls_has)
+                tp.main()
+                fp = fetchprice.GetDtlPrice(ls_has)
+                a = fp.main()
+                mh = minute_hist.GetMinuteHist(ls_has, self.runfocus_symbols_only, self.focus_symbols)
+                mh.main()
+                hh = hour_hist.GetHourHist(ls_has, self.runfocus_symbols_only, self.focus_symbols)
+                hh.main()
+                dh = day_hist.GetDayHist(ls_has, self.runfocus_symbols_only, self.focus_symbols)
+                dh.main()
+                """
                     gsd = social.GetSocialData(ls_has)
                     gsd.main()
 
-
-                except:
+                except ValueError:
                     print 'error on processing dtl, hist'
 
 
                 #askcurrentprice from has price/ if focus_symbols passed
-
 
             except:
                 print "ERROR: validate_coin_get_price"
 
         else:
             print 'invalid args'
-
-
 
     def main(self):
         print '----------------------------BEGIN----------------------------'
@@ -112,5 +118,5 @@ class alpha_runner(object):
 
 
 if __name__ == '__main__':
-    ar = alpha_runner()
+    ar = AlphaRunner()
     ar.main()

@@ -1,6 +1,16 @@
 Id,Points,active_users,comments_per_day,comments_per_hour,community_creation,link,name,posts_per_day,posts_per_hour,socialsource,source,subscribers,symbol,symbol_id,timestamp_api_call
-0,0,,,,,,,,,Reddit,cryptocompare,,BCH,202330,2017-12-27 15:53:42.422944
-1,685109,17447.0,16394.69,683.11,1284042626.0,https://www.reddit.com/r/bitcoin/,Bitcoin,319.96,13.33,Reddit,cryptocompare,599979.0,BTC,1182,2017-12-27 15:53:42.186193
-2,244854,5152,516.87,21.54,1387037735,https://www.reddit.com/r/ethereum/,ethereum,37.25,1.55,Reddit,cryptocompare,228365,ETH,7605,2017-12-27 15:55:32.952921
-3,244854,5152.0,516.87,21.54,1387037735.0,https://www.reddit.com/r/ethereum/,ethereum,37.25,1.55,Reddit,cryptocompare,228365.0,ETH,7605,2017-12-27 15:53:42.968834
-4,170530,4268.0,915.93,38.16,1318615591.0,https://www.reddit.com/r/litecoin/,litecoin,26.82,1.12,Reddit,cryptocompare,155895.0,LTC,3808,2017-12-27 15:53:42.694814
+0,0,,,,,,,,,Reddit,cryptocompare,,ABC,303943,2017-12-27 19:46:19.716813
+1,0,,,,,,,,,Reddit,cryptocompare,,BCH,202330,2017-12-27 15:53:42.422944
+2,697809,20941.0,16394.69,683.11,1284042626.0,https://www.reddit.com/r/bitcoin/,Bitcoin,319.96,13.33,Reddit,cryptocompare,602197.0,BTC,1182,2017-12-27 20:42:45.369664
+3,688325,17907.0,16394.69,683.11,1284042626.0,https://www.reddit.com/r/bitcoin/,Bitcoin,319.96,13.33,Reddit,cryptocompare,601815.0,BTC,1182,2017-12-27 18:13:45.577789
+4,687457,17738.0,16394.69,683.11,1284042626.0,https://www.reddit.com/r/bitcoin/,Bitcoin,319.96,13.33,Reddit,cryptocompare,601454.0,BTC,1182,2017-12-27 16:42:15.131265
+5,685109,17447.0,16394.69,683.11,1284042626.0,https://www.reddit.com/r/bitcoin/,Bitcoin,319.96,13.33,Reddit,cryptocompare,599979.0,BTC,1182,2017-12-27 15:53:42.186193
+6,247851,5719,516.87,21.54,1387037735,https://www.reddit.com/r/ethereum/,ethereum,37.25,1.55,Reddit,cryptocompare,229661,ETH,7605,2017-12-27 20:50:28.036284
+7,247851,5719.0,516.87,21.54,1387037735.0,https://www.reddit.com/r/ethereum/,ethereum,37.25,1.55,Reddit,cryptocompare,229661.0,ETH,7605,2017-12-27 20:42:48.136793
+8,245636,5040.0,516.87,21.54,1387037735.0,https://www.reddit.com/r/ethereum/,ethereum,37.25,1.55,Reddit,cryptocompare,229483.0,ETH,7605,2017-12-27 18:13:48.558926
+9,248033,5906.0,516.87,21.54,1387037735.0,https://www.reddit.com/r/ethereum/,ethereum,37.25,1.55,Reddit,cryptocompare,229282.0,ETH,7605,2017-12-27 16:42:17.114917
+10,244854,5152.0,516.87,21.54,1387037735.0,https://www.reddit.com/r/ethereum/,ethereum,37.25,1.55,Reddit,cryptocompare,228365.0,ETH,7605,2017-12-27 15:53:42.968834
+11,178609,6718.0,915.93,38.16,1318615591.0,https://www.reddit.com/r/litecoin/,litecoin,26.82,1.12,Reddit,cryptocompare,156624.0,LTC,3808,2017-12-27 20:42:47.217661
+12,172011,4574.0,915.93,38.16,1318615591.0,https://www.reddit.com/r/litecoin/,litecoin,26.82,1.12,Reddit,cryptocompare,156458.0,LTC,3808,2017-12-27 18:13:47.637367
+13,170600,4145.0,915.93,38.16,1318615591.0,https://www.reddit.com/r/litecoin/,litecoin,26.82,1.12,Reddit,cryptocompare,156334.0,LTC,3808,2017-12-27 16:42:16.604576
+14,170530,4268.0,915.93,38.16,1318615591.0,https://www.reddit.com/r/litecoin/,litecoin,26.82,1.12,Reddit,cryptocompare,155895.0,LTC,3808,2017-12-27 15:53:42.694814

@@ -53,7 +53,7 @@ class GetHourHist(object):
                     resp = requests.get(url=url)
                     data = json.loads(resp.text)
 
-                    if  data["Data"] != []:
+                    if data["Data"]:
                         print 'Sucess: '+currentts+'   '+exchange+'  '+symbol
                         datasorted = sorted(data['Data'], key=lambda k: int(k['time']))
                         df = p.DataFrame(datasorted)
