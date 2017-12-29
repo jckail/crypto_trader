@@ -6,6 +6,8 @@ import requests
 import pandas as p
 import datetime as dt
 import os
+from tqdm import tqdm
+from time import sleep
 
 
 class GetCoinLists(object):
@@ -43,7 +45,10 @@ class GetCoinLists(object):
 
         :return:
         """
+        #y = [1]
+        #for x in tqdm(y, desc='get_price_details_for_symbols'):
         print 'begin: GetCoinLists.main'
+        #x += 1
         try:
             gcl = GetCoinLists(self.runfocus_symbols_only,self.focus_symbols)
             df = gcl.func_get_coin_list()

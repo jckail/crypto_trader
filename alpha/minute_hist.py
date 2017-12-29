@@ -5,6 +5,7 @@ import os
 import threading
 import urllib2
 import time
+from time import sleep
 from tqdm import tqdm
 
 
@@ -16,7 +17,7 @@ class GetMinuteHist(object):
         self.chunksize = chunksize
 
 
-    def get_minute_hist(self,symbol):
+    def get_minute_hist(self,symbol,error_symbols):
         currentts = str(int(time.time()))
         cwd = os.getcwd()
         frames = []
@@ -29,41 +30,43 @@ class GetMinuteHist(object):
                 'cache-control': "no-cache",
                 'postman-token': "e00df90c-b8b6-cb28-54ff-88c19b883e0a"
             }
-        try:
-            response = requests.request("GET", url, headers=headers, params=querystring)
+            try:
+                response = requests.request("GET", url, headers=headers, params=querystring)
 
-            if response.status_code == 200:
-                data = response.json()
+                if response.status_code == 200:
+                    data = response.json()
 
-                if data["Data"] != [] and data["Response"] == "Success":
-                    df = p.DataFrame(data["Data"])
-                    df = df.assign(symbol = symbol, coin_units = 1, timestamp_api_call = dt.datetime.now(),computer_name = 'JordanManual',exchange = exchange )
-                    frames.append(df)
-                    my_file = cwd+'/data/minute_data/'+symbol+'_minute.csv'
-                    if os.path.isfile(my_file):
-                        df_resident = p.read_csv(my_file)
-                        frames.append(df_resident)
+                    if data["Data"] != [] and data["Response"] == "Success":
+                        df = p.DataFrame(data["Data"])
+                        df = df.assign(symbol = symbol, coin_units = 1, timestamp_api_call = dt.datetime.now(),computer_name = 'JordanManual',exchange = exchange )
+                        frames.append(df)
+                        my_file = cwd+'/data/minute_data/'+symbol+'_minute.csv'
+                        if os.path.isfile(my_file):
+                            df_resident = p.read_csv(my_file)
+                            frames.append(df_resident)
+                        else:
+                            pass
+                        df = p.concat(frames)
+                        if not df.empty:
+                            df = df.drop_duplicates(['time','exchange','coin'], keep='last')
+                            df = df.sort_values('time')
+                            df = df.reset_index(drop=True)
+                            df.to_csv(my_file, index = False) #need to add this
+                            #print 'Updated trade pair: '+str(my_file)
+                        else:
+                            pass
+
                     else:
                         pass
-                    df = p.concat(frames)
-                    if not df.empty:
-                        df = df.drop_duplicates(['time','exchange','coin'], keep='last')
-                        df = df.sort_values('time')
-                        df = df.reset_index(drop=True)
-                        df.to_csv(my_file, index_label='Sequence') #need to add this
-                        #print 'Updated trade pair: '+str(my_file)
-                    else:
-                        pass
-
                 else:
                     pass
-            else:
-                pass
-        except requests.exceptions.RequestException as e:  # This is the correct syntax
-            print e
+            except:  # This is the correct syntax
+                error_symbols.append(symbol)
+                #.append(symbol)
+                sleep(0.2)
 
     def main(self):
-
+        error_symbols = []
         gmt = GetMinuteHist(self.symbol_list,self.exchanges,self.chunksize)
 
         xsymbols = [self.symbol_list[x:x+self.chunksize] for x in xrange(0, len(self.symbol_list), self.chunksize )]
@@ -72,25 +75,37 @@ class GetMinuteHist(object):
 
         for  symbol_list in tqdm(xsymbols,desc='get_minute_hist'):
 
-            threads = [threading.Thread(target=gmt.get_minute_hist, args=(symbol,)) for symbol in symbol_list]
+            threads = [threading.Thread(target=gmt.get_minute_hist, args=(symbol,error_symbols,)) for symbol in symbol_list]
 
             for thread in threads:
                 thread.start()
 
-            for thread in tqdm(threads,desc='Closed Threads'):
+            #for thread in tqdm(threads,desc='Closed Threads'):
+            for thread in threads:
                 thread.join()
+
+            if len(error_symbols) > 0:
+                xsymbols.append(error_symbols)
+                print 'appending: errors: '+ str(error_symbols)
+                error_symbols = []
+            else:
+                pass
 
 
 
 
 if __name__ == '__main__':
-    """df_get_id = p.read_csv('/Users/jkail/Documents/GitHub/lit_crypto/alpha/data/coinlist_info.csv')
-    b = df_get_id["Symbol"].tolist()
-    symbols = b[:50]
-    #print symbols
-    exchanges = ['CCCAGG','Coinbase', 'Bitfinex']
-    """
+    #exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
+    #cwd = os.getcwd()
+    #df = p.read_csv(cwd+'/data/coinlist_info.csv')
+    #ls_has = df["Symbol"].tolist()
+    #ls_has = ls_has[:100]
     runner = GetMinuteHist()
+    #start_time = dt.datetime.now()
     print '--------------------------------------------------------------------------'
     runner.main()
     print '--------------------------------------------------------------------------'
+   # x =  dt.datetime.now() - start_time
+    #print 'Completion time: '+str(x)
+
+#7 seconds 100 records

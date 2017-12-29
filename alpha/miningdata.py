@@ -6,6 +6,9 @@ import requests
 import pandas as p
 import datetime as dt
 import os
+import threading
+from tqdm import tqdm
+from time import sleep
 
 
 class GetMineData(object):
@@ -31,7 +34,7 @@ class GetMineData(object):
         if data["CoinData"]:
             keys = data['CoinData'].keys()
 
-            for key in keys:
+            for key in tqdm(keys,desc='coin_miner_data'):
                 frames = []
                 #print key
                 sub =  data['CoinData'][key]
@@ -49,7 +52,7 @@ class GetMineData(object):
                     df_resident = p.read_csv(my_file)
                     frames.append(df_resident)
                 else:
-                    print ''
+                    pass
                 #print df
                 df = p.concat(frames)
                 df = df.drop_duplicates(['CoinName','Points','Type','Points','key'],  keep='last')
@@ -59,7 +62,7 @@ class GetMineData(object):
                 #print df
                 if not df.empty:
                     #print my_file
-                    df.to_csv(my_file, index_label='Sequence')
+                    df.to_csv(my_file, index = False)
                     pass #print 'Updated: '+str(my_file)
                 else:
                     print 'No '+str(key)+' data: '+key
@@ -74,7 +77,7 @@ class GetMineData(object):
             keys = data['MiningData'].keys()
             frames = []
 
-            for key in keys:
+            for key in tqdm(keys,desc='miner_data'):
                 #print '----------'
                 #print key
                 sub =  data['MiningData'][key]
@@ -91,7 +94,7 @@ class GetMineData(object):
                 df_resident = p.read_csv(my_file)
                 frames.append(df_resident)
             else:
-                print ''
+                pass
 
             df = p.concat(frames)
             df = df.drop_duplicates(['Company','Cost','CurrenciesAvailable','HashesPerSecond','Name'],  keep='last')
@@ -99,7 +102,7 @@ class GetMineData(object):
             df = df.reset_index(drop=True)
 
             if not df.empty:
-                df.to_csv(my_file,index_label='Sequence',  encoding= 'utf-8' ) #need to add this
+                df.to_csv(my_file, index = False ) #need to add this
                 pass #print 'Updated: '+str(my_file)
             else:
                 print 'No data: '

@@ -21,7 +21,7 @@ import minute_hist
 import social
 import miningdata
 import tradepair
-import mtfetchprice
+import fetchprice
 
 
 
@@ -42,7 +42,7 @@ class AlphaRunner(object):
         self.focus_symbols = ['BTC','BCH','LTC','ETH']
         self.exchanges = ['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
         #self.exchanges = ['Coinbase']
-        self.chunksize = 150  #~~#thread limit
+        self.chunksize = 199  #~~#thread limit
         #self.org_params = json.load(open("config/cti_config.dict"))
 
     def get_args(self):
@@ -97,7 +97,7 @@ class AlphaRunner(object):
 
                 try:
                     x = len(ls_has)
-                    #ls_has = ls_has[:200]
+                    ls_has = ls_has[:200]
                     print '--------------------------------------------------------------------------'
                     print 'Evaluating: '+str(x)
                     print '--------------------------------------------------------------------------'
@@ -108,7 +108,7 @@ class AlphaRunner(object):
                     #thread1 = #threading.Thread(target=md.main(), args=())
 
                     print'--------------------------------------------------------------------------'
-                    mfp = mtfetchprice.GetDtlPrice(ls_has,self.chunksize,self.exchanges) #chunk size not used here just broken up into 50 strings due to api list constraint
+                    mfp = fetchprice.GetDtlPrice(ls_has, self.exchanges, self.chunksize) #chunk size not used here just broken up into 50 strings due to api list constraint
                     mfp.main()
                     #thread2 = #threading.Thread(target=mfp.main(), args=())
                     print'--------------------------------------------------------------------------'
