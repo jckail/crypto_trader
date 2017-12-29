@@ -16,7 +16,6 @@ class GetHourHist(object):
         self.exchanges = exchanges
         self.chunksize = chunksize
 
-
     def get_hour_hist(self,symbol,error_symbols):
         currentts = str(int(time.time()))
         cwd = os.getcwd()
@@ -60,11 +59,20 @@ class GetHourHist(object):
                         pass
                 else:
                     pass
-            except Exception as e:
-                print(e)
+            except requests.exceptions.RequestException as e:
+                #print(e)
                 error_symbols.append(symbol)
                 #.append(symbol)
                 sleep(0.2)
+                #print 'request error'
+                pass
+            except OverflowError:
+                print 'OverflowError: '+str(symbol)
+                pass
+            except Exception as e:
+                #print(e)
+                #print 'exception'
+                pass
 
     def main(self):
         error_symbols = []
@@ -74,7 +82,7 @@ class GetHourHist(object):
 
         print 'Begin: get_hour_hist'
 
-        for  symbol_list in tqdm(xsymbols,desc='get_hour_hist'):
+        for symbol_list in tqdm(xsymbols,desc='get_hour_hist'):
 
             threads = [threading.Thread(target=gmt.get_hour_hist, args=(symbol,error_symbols,)) for symbol in symbol_list]
 
@@ -85,23 +93,24 @@ class GetHourHist(object):
             for thread in threads:
                 thread.join()
 
-            if len(error_symbols) > 0:
-                xsymbols.append(error_symbols)
-                print 'appending: errors: '+ str(error_symbols)
-                error_symbols = []
-            else:
-                pass
+                if len(error_symbols) > 0:
+                    xsymbols.append(error_symbols)
+                    #print 'appending: errors: '+ str(error_symbols)
+                    error_symbols = []
+                else:
+                    pass
+        print 'DONE'
 
 
 
 
 if __name__ == '__main__':
-    #exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
+    exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
     #cwd = os.getcwd()
     #df = p.read_csv(cwd+'/data/coinlist_info.csv')
     #ls_has = df["Symbol"].tolist()
     #ls_has = ls_has[:100]
-    runner = GetHourHist()
+    runner = GetHourHist(['SMT'],exchanges, 50 )
     #start_time = dt.datetime.now()
     print '--------------------------------------------------------------------------'
     runner.main()

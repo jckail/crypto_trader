@@ -66,6 +66,7 @@ class GetMineData(object):
                         pass #print 'Updated: '+str(my_file)
                     else:
                         print 'No '+str(key)+' data: '+key
+                print 'DONE'
             else:
                 print 'No coin_miner_data'
         except ValueError:
@@ -110,6 +111,7 @@ class GetMineData(object):
                     pass #print 'Updated: '+str(my_file)
                 else:
                     print 'No data: '
+                print 'DONE'
             else:
                 print 'no miner_data'
         except Exception as e:
@@ -129,7 +131,7 @@ class GetMineData(object):
         except Exception as e:
             print(e)
 
-        print 'end: GetMineData.main'
+        #print 'end: GetMineData.main'
 
 
 if __name__ == '__main__':

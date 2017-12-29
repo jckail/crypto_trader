@@ -1,15 +1,6 @@
-import requests
+def retry_if_io_error(exception):
+    """Return True if we should retry (in this case when it's an IOError), False otherwise"""
+    x = isinstance(exception, requests.exceptions.RequestException)
+    print x
 
-url = "https://min-api.cryptocompare.com/data/histominute"
-
-querystring = {"e":"Coinbase","fsym":"CCRB","toTs":"1514482833","limit":"2000","tsym":"USD","aggregate":"3"}
-
-headers = {
-    'cache-control': "no-cache",
-    'postman-token': "57fcfe29-47e3-5b29-986d-34444dd1c71c"
-}
-
-response = requests.request("GET", url, headers=headers, params=querystring)
-
-print response.status_code
-print(response.text)
+retry_if_io_error(requests.exceptions.RequestException)

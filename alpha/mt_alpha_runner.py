@@ -1,19 +1,21 @@
 #!/usr/bin/env python
+
 #mods
 import argparse
 import os
 import pandas as p
 from multiprocessing import Pool, TimeoutError
 import time
-# classes
-import buildcoinlist
-import day_hist
-import test
 import threading
 #add arg focus symbols only
 import datetime as dt
 
 
+# classes
+import buildcoinlist
+import day_hist
+import test
+import setup
 import fetchprice
 import haspricing
 import hour_hist
@@ -22,9 +24,6 @@ import social
 import miningdata
 import tradepair
 import fetchprice
-
-
-
 
 
 class AlphaRunner(object):
@@ -40,6 +39,7 @@ class AlphaRunner(object):
         self.runisprice = self.args.runisprice
         self.cwd = os.getcwd()
         self.focus_symbols = ['BTC','BCH','LTC','ETH']
+        # FULL LIST exchanges = ['Cryptsy', 'BTCChina', 'Bitstamp', 'BTER', 'OKCoin', 'Coinbase', 'Poloniex', 'Cexio', 'BTCE', 'BitTrex', 'Kraken', 'Bitfinex', 'Yacuna', 'LocalBitcoins', 'Yunbi', 'itBit', 'HitBTC', 'btcXchange', 'BTC38', 'Coinfloor', 'Huobi', 'CCCAGG', 'LakeBTC', 'ANXBTC', 'Bit2C', 'Coinsetter', 'CCEX', 'Coinse', 'MonetaGo', 'Gatecoin', 'Gemini', 'CCEDK', 'Cryptopia', 'Exmo', 'Yobit', 'Korbit', 'BitBay', 'BTCMarkets', 'Coincheck', 'QuadrigaCX', 'BitSquare', 'Vaultoro', 'MercadoBitcoin', 'Bitso', 'Unocoin', 'BTCXIndia', 'Paymium', 'TheRockTrading', 'bitFlyer', 'Quoine', 'Luno', 'EtherDelta', 'bitFlyerFX', 'TuxExchange', 'CryptoX', 'Liqui', 'MtGox', 'BitMarket', 'LiveCoin', 'Coinone', 'Tidex', 'Bleutrade', 'EthexIndia', 'Bithumb', 'CHBTC', 'ViaBTC', 'Jubi', 'Zaif', 'Novaexchange', 'WavesDEX', 'Binance', 'Lykke', 'Remitano', 'Coinroom', 'Abucoins', 'BXinth', 'Gateio', 'HuobiPro', 'OKEX']
         self.exchanges = ['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
         #self.exchanges = ['Coinbase']
         self.chunksize = 199  #~~#thread limit
@@ -57,10 +57,10 @@ class AlphaRunner(object):
         print '------'+str(args)
         return args
 
-    def validate_coin_get_price(self):
+    def alpha_runner(self):
         print 'Chunk size: '+str(self.chunksize)
         if self.run == 'Y':
-            print "Begin validate_coin_get_price"
+            print "Begin alpha_runner"
             try:
                 try:
                     if self.runfocus_symbols_only == 'N':
@@ -98,9 +98,10 @@ class AlphaRunner(object):
 
                 try:
                     x = len(ls_has)
-                    ls_has = ls_has
+                    #ls_has = ls_has[:5]
+                    #ls_has.append('SMT')
                     print '--------------------------------------------------------------------------'
-                    print 'Evaluating: '+str(x)
+                    print 'Evaluating: '+str(x)+' Coins'
                     print '--------------------------------------------------------------------------'
                     #helps limit #threads open etc
 
@@ -163,18 +164,18 @@ class AlphaRunner(object):
 
             except Exception as e:
                 print(e)
-                print "ERROR: validate_coin_get_price"
+                print "ERROR: alpha_runner"
 
         else:
             print 'invalid args'
 
     def main(self):
         start_time = dt.datetime.now()
-
+        setup.setup_alpha()
         print '----------------------------BEGIN----------------------------'
-        self.validate_coin_get_price()
+        self.alpha_runner()
         print '----------------------------END----------------------------'
-        x =  dt.datetime.now() - start_time
+        x = dt.datetime.now() - start_time
         print 'Completion time: '+str(x)
 
 

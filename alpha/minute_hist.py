@@ -60,10 +60,15 @@ class GetMinuteHist(object):
                         pass
                 else:
                     pass
-            except Exception as e:
-                print(e)  # This is the correct syntax
+            except requests.exceptions.RequestException as e:
                 error_symbols.append(symbol)
                 sleep(0.2)
+                pass
+            except OverflowError:
+                print 'OverflowError: '+str(symbol)
+                pass
+            except Exception as e:
+                pass
 
     def main(self):
         error_symbols = []
@@ -73,7 +78,7 @@ class GetMinuteHist(object):
 
         print 'Begin: get_minute_hist'
 
-        for  symbol_list in tqdm(xsymbols,desc='get_minute_hist'):
+        for symbol_list in tqdm(xsymbols,desc='get_minute_hist'):
 
             threads = [threading.Thread(target=gmt.get_minute_hist, args=(symbol,error_symbols,)) for symbol in symbol_list]
 
@@ -84,12 +89,14 @@ class GetMinuteHist(object):
             for thread in threads:
                 thread.join()
 
-            if len(error_symbols) > 0:
-                xsymbols.append(error_symbols)
-                print 'appending: errors: '+ str(error_symbols)
-                error_symbols = []
-            else:
-                pass
+                if len(error_symbols) > 0:
+                    xsymbols.append(error_symbols)
+                    #print 'appending: errors: '+ str(error_symbols)
+                    error_symbols = []
+                else:
+                    pass
+        print 'DONE'
+
 
 
 

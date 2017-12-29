@@ -10,6 +10,7 @@ import threading
 from tqdm import tqdm
 from time import sleep
 
+
 class GetDtlPrice(object):
 
     def __init__(self, symbol_list, exchanges, chunksize):
@@ -47,11 +48,20 @@ class GetDtlPrice(object):
                         pass
                 else:
                     pass
-            except Exception as e:
-                print(e) # This is the correct syntax
+            except requests.exceptions.RequestException as e:
+                #print(e)
                 error_symbols.append(symbol)
                 #.append(symbol)
                 sleep(0.2)
+                #print 'request error'
+                pass
+            except OverflowError:
+                print 'OverflowError: '+str(symbol)
+                pass
+            except Exception as e:
+                #print(e)
+                #print 'exception'
+                pass
 
 
     def main(self):
@@ -79,13 +89,12 @@ class GetDtlPrice(object):
                 for thread in threads:
                     thread.join()
 
-                if len(error_symbols) > 0:
-                    xsymbols.append(error_symbols)
-                    print 'appending: errors: '+ str(error_symbols)
-                    error_symbols = []
-                else:
-                    pass
-
+                    if len(error_symbols) > 0:
+                        xsymbols.append(error_symbols)
+                        #print 'appending: errors: '+ str(error_symbols)
+                        error_symbols = []
+                    else:
+                        pass
 
             my_file = cwd+'/data/current_dtl_price.csv'
             if os.path.isfile(my_file):
@@ -95,9 +104,7 @@ class GetDtlPrice(object):
             else:
                 pass
 
-
             df = p.concat(frames)
-
 
             if not df.empty:
                 df = df.drop_duplicates(['FROMSYMBOL','LASTUPDATE','LASTMARKET','MARKET'], keep='last')
@@ -106,6 +113,8 @@ class GetDtlPrice(object):
                 df.to_csv(my_file, index = False) #need to add this
             else:
                 pass
+            print 'DONE'
+
         except Exception as e:
             print(e)
             print 'Error: GetDtlPrice.main'

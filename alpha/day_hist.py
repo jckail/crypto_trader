@@ -60,11 +60,20 @@ class GetDayHist(object):
                         pass
                 else:
                     pass
-            except Exception as e:
-                print(e)
+            except requests.exceptions.RequestException as e:
+                #print(e)
                 error_symbols.append(symbol)
                 #.append(symbol)
                 sleep(0.2)
+                #print 'request error'
+                pass
+            except OverflowError:
+                print 'OverflowError: '+str(symbol)
+                pass
+            except Exception as e:
+                #print(e)
+                #print 'exception'
+                pass
 
     def main(self):
         error_symbols = []
@@ -85,14 +94,13 @@ class GetDayHist(object):
             for thread in threads:
                 thread.join()
 
-            if len(error_symbols) > 0:
-                xsymbols.append(error_symbols)
-                print 'appending: errors: '+ str(error_symbols)
-                error_symbols = []
-            else:
-                pass
-
-
+                if len(error_symbols) > 0:
+                    xsymbols.append(error_symbols)
+                    #print 'appending: errors: '+ str(error_symbols)
+                    error_symbols = []
+                else:
+                    pass
+        print 'DONE'
 
 
 if __name__ == '__main__':
