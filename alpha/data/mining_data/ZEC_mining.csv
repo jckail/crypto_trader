@@ -1,0 +1,2 @@
+TotalCoinsMined,BlockReward,DifficultyAdjustment,BlockRewardReduction,Symbol,BlockNumber,NetHashesPerSecond,BlockTime,PreviousTotalCoinsMined,PriceUSD,key,source,timestamp_api_call
+2935893.75,10.0,,,ZEC,244871,371341839.0,150,0.0,476.6,ZEC,cryptocompare,2017-12-28 16:11:31.977374

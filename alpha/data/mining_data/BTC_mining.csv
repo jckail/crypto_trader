@@ -1,0 +1,2 @@
+TotalCoinsMined,BlockReward,DifficultyAdjustment,BlockRewardReduction,Symbol,BlockNumber,NetHashesPerSecond,BlockTime,PreviousTotalCoinsMined,PriceUSD,key,source,timestamp_api_call
+16768412.0,12.5,2016 blocks,50%,BTC,501475,13408415859.577105,600,0.0,14177.54,BTC,cryptocompare,2017-12-28 16:11:31.992189
