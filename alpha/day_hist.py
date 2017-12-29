@@ -11,15 +11,15 @@ from tqdm import tqdm
 
 class GetDayHist(object):
 
-    def __init__(self, symbol_list, exchanges, chunksize):
+    def __init__(self, symbol_list, exchanges, chunksize, cwd):
         self.symbol_list = symbol_list
         self.exchanges = exchanges
         self.chunksize = chunksize
-
+        self.cwd = cwd
 
     def get_day_hist(self,symbol,error_symbols):
         currentts = str(int(time.time()))
-        cwd = os.getcwd()
+
         frames = []
         for exchange in self.exchanges:
             url = "https://min-api.cryptocompare.com/data/histoday"
@@ -40,7 +40,7 @@ class GetDayHist(object):
                         df = p.DataFrame(data["Data"])
                         df = df.assign(symbol = symbol, coin_units = 1, timestamp_api_call = dt.datetime.now(),computer_name = 'JordanManual',exchange = exchange )
                         frames.append(df)
-                        my_file = cwd+'/data/day_data/'+symbol+'_day.csv'
+                        my_file = self.cwd+'/data/day_data/'+symbol+'_day.csv'
                         if os.path.isfile(my_file):
                             df_resident = p.read_csv(my_file)
                             frames.append(df_resident)
@@ -61,29 +61,24 @@ class GetDayHist(object):
                 else:
                     pass
             except requests.exceptions.RequestException as e:
-                #print(e)
                 error_symbols.append(symbol)
-                #.append(symbol)
                 sleep(0.2)
-                #print 'request error'
                 pass
             except OverflowError:
                 print 'OverflowError: '+str(symbol)
                 pass
             except Exception as e:
-                #print(e)
-                #print 'exception'
                 pass
 
     def main(self):
         error_symbols = []
-        gmt = GetDayHist(self.symbol_list,self.exchanges,self.chunksize)
+        gmt = GetDayHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
 
         xsymbols = [self.symbol_list[x:x+self.chunksize] for x in xrange(0, len(self.symbol_list), self.chunksize )]
 
         print 'Begin: get_day_hist'
 
-        for  symbol_list in tqdm(xsymbols,desc='get_day_hist'):
+        for symbol_list in tqdm(xsymbols,desc='get_day_hist'):
 
             threads = [threading.Thread(target=gmt.get_day_hist, args=(symbol,error_symbols,)) for symbol in symbol_list]
 
@@ -103,10 +98,13 @@ class GetDayHist(object):
         print 'DONE'
 
 
+
+
+
 if __name__ == '__main__':
     #exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
-    #cwd = os.getcwd()
-    #df = p.read_csv(cwd+'/data/coinlist_info.csv')
+    #
+    #df = p.read_csv(self.cwd+'/data/coinlist_info.csv')
     #ls_has = df["Symbol"].tolist()
     #ls_has = ls_has[:100]
     runner = GetDayHist()

@@ -65,30 +65,10 @@ class AlphaRunner(object):
                 try:
                     if self.runfocus_symbols_only == 'N':
                         #get list of coins
-                        coin_df = buildcoinlist.GetCoinLists(self.runfocus_symbols_only,self.focus_symbols)
+                        coin_df = buildcoinlist.GetCoinLists(self.runfocus_symbols_only,self.focus_symbols,self.cwd)
                         gcl_output = coin_df.main()
-                        symbol_list = gcl_output["Symbol"].tolist()
-                        #symbol_list = symbol_list # for testing
-                        if self.runisprice == 'Y':
-                            has_pricing = []
-                            hpc = haspricing.HasPricingCheck(symbol_list,has_pricing,self.chunksize)
-                            hpc.main()
-                            df = p.read_csv(self.cwd+'/data/has_pricing.csv')
-                            df_has = df.query('has_pricing == 1')
-                            ls_has = df_has["symbol"].tolist()
-
-                        elif self.runisprice == 'N' and os.path.isfile(self.cwd+'/data/has_pricing.csv') == True:
-                            df = p.read_csv(self.cwd+'/data/coinlist_info.csv')
-                            #df_has = df.query('has_pricing == 1')
-                            ls_has = df["Symbol"].tolist()
-
-                        else:
-                            has_pricing = []
-                            hpc = haspricing.HasPricingCheck(symbol_list,has_pricing,self.chunksize)
-                            hpc.main()
-                            df = p.read_csv(self.cwd+'/data/has_pricing.csv')
-                            df_has = df.query('has_pricing == 1')
-                            ls_has = df_has["symbol"].tolist()
+                        df = p.read_csv(self.cwd+'/data/coinlist_info.csv')
+                        ls_has = df["Symbol"].tolist()
 
                     elif self.runfocus_symbols_only == 'Y':
                         ls_has = self.focus_symbols
@@ -105,35 +85,35 @@ class AlphaRunner(object):
                     print '--------------------------------------------------------------------------'
                     #helps limit #threads open etc
 
-                    md = miningdata.GetMineData()
+                    md = miningdata.GetMineData(self.cwd)
                     md.main()
                     #thread1 = #threading.Thread(target=md.main(), args=())
 
                     print'--------------------------------------------------------------------------'
-                    mfp = fetchprice.GetDtlPrice(ls_has, self.exchanges, self.chunksize) #chunk size not used here just broken up into 50 strings due to api list constraint
+                    mfp = fetchprice.GetDtlPrice(ls_has, self.exchanges, self.chunksize,self.cwd) #chunk size not used here just broken up into 50 strings due to api list constraint
                     mfp.main()
                     #thread2 = #threading.Thread(target=mfp.main(), args=())
                     print'--------------------------------------------------------------------------'
 
-                    tp = tradepair.GetTradePair(ls_has)
+                    #tp = tradepair.GetTradePair(ls_has,self.cwd)
                     #tp.main()
                     ##thread3 = #threading.Thread(target=tp.main(), args=())
                     print'--------------------------------------------------------------------------'
 
-                    mh = minute_hist.GetMinuteHist(ls_has,self.exchanges,self.chunksize)
+                    mh = minute_hist.GetMinuteHist(ls_has,self.exchanges,self.chunksize,self.cwd)
                     mh.main()
                     #thread4 = #threading.Thread(target=mh.main(), args=())
 
-                    hh = hour_hist.GetHourHist(ls_has,self.exchanges,self.chunksize)
+                    hh = hour_hist.GetHourHist(ls_has,self.exchanges,self.chunksize,self.cwd)
                     hh.main()
                     #thread5 = #threading.Thread(target=hh.main(), args=())
 
-                    dh = day_hist.GetDayHist(ls_has,self.exchanges,self.chunksize)
+                    dh = day_hist.GetDayHist(ls_has,self.exchanges,self.chunksize,self.cwd)
                     dh.main()
                     #thread6 = #threading.Thread(target=dh.main(), args=())
                     print'--------------------------------------------------------------------------'
 
-                    gsd = social.GetSocialData(ls_has)
+                    #gsd = social.GetSocialData(ls_has,self.cwd)
                     #gsd.main()
                     ##thread7 = #threading.Thread(target=mfp.main(), args=())
 

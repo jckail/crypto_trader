@@ -13,8 +13,8 @@ from time import sleep
 
 class GetMineData(object):
 
-    def __init__(self):
-
+    def __init__(self,cwd):
+        self.cwd = cwd
         url = "https://www.cryptocompare.com/api/data/miningequipment/"
         headers = {
             'cache-control': "no-cache",
@@ -22,13 +22,14 @@ class GetMineData(object):
         }
         response = requests.request("GET", url, headers=headers)
         data = response.json()
+
         self.data = data
-        #print data
+
 
     def coin_miner_data(self):
         try:
             data = self.data
-            cwd = os.getcwd()
+            
             source = 'cryptocompare'
 
             if data["CoinData"]:
@@ -46,7 +47,7 @@ class GetMineData(object):
                     df = df.assign (timestamp_api_call = dt.datetime.now(),source = source,key = key )
                     frames.append(df)
 
-                    my_file = cwd+'/data/mining_data/%s_mining.csv' % key
+                    my_file = self.cwd+'/data/mining_data/%s_mining.csv' % key
 
                     if os.path.isfile(my_file):
                         df_resident = p.read_csv(my_file)
@@ -76,7 +77,7 @@ class GetMineData(object):
     def miner_data(self):
         try:
             data = self.data
-            cwd = os.getcwd()
+            
             source = 'cryptocompare'
             if data["MiningData"]:
                 keys = data['MiningData'].keys()
@@ -93,7 +94,7 @@ class GetMineData(object):
                     df = df.assign (timestamp_api_call = dt.datetime.now(),source = source,key = key )
                     frames.append(df)
 
-                my_file = cwd+'/data/mining_data/mining_equipment.csv'
+                my_file = self.cwd+'/data/mining_data/mining_equipment.csv'
 
                 if os.path.isfile(my_file):
                     df_resident = p.read_csv(my_file)
@@ -124,7 +125,7 @@ class GetMineData(object):
         """
         print 'begin: GetMineData.main'
         try:
-            gmd = GetMineData()
+            gmd = GetMineData(self.cwd)
             gmd.coin_miner_data()
             gmd.miner_data()
 

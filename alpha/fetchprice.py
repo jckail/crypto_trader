@@ -13,10 +13,11 @@ from time import sleep
 
 class GetDtlPrice(object):
 
-    def __init__(self, symbol_list, exchanges, chunksize):
+    def __init__(self, symbol_list, exchanges, chunksize,cwd):
         self.symbol_list = symbol_list
         self.chunksize = chunksize
         self.exchanges = exchanges
+        self.cwd = cwd
 
     def get_price_details_for_symbols(self,symbol,frames,error_symbols):
         for exchange in self.exchanges:
@@ -73,9 +74,8 @@ class GetDtlPrice(object):
         error_symbols = []
         print 'begin: GetDtlPrice.main'
         try:
-
-            cwd = os.getcwd()
-            gdl = GetDtlPrice(self.symbol_list,self.exchanges,self.chunksize)
+            
+            gdl = GetDtlPrice(self.symbol_list, self.exchanges, self.chunksize, self.cwd)
 
             xsymbols = [self.symbol_list[x:x+self.chunksize] for x in xrange(0, len(self.symbol_list), self.chunksize )]
             for  symbol_list in tqdm(xsymbols,desc='get_price_details_for_symbols'):
@@ -96,7 +96,7 @@ class GetDtlPrice(object):
                     else:
                         pass
 
-            my_file = cwd+'/data/current_dtl_price.csv'
+            my_file = self.cwd+'/data/current_dtl_price.csv'
             if os.path.isfile(my_file):
                 df_resident = p.read_csv(my_file)
                 frames.append(df_resident)
@@ -128,8 +128,8 @@ if __name__ == '__main__':
     :return:
     """
     #exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
-    #cwd = os.getcwd()
-    #df = p.read_csv(cwd+'/data/coinlist_info.csv')
+    #
+    #df = p.read_csv(self.cwd+'/data/coinlist_info.csv')
     #ls_has = df["Symbol"].tolist()
     #ls_has = ls_has
     #ls_has = ['BTC','BCH','LTC','ETH']

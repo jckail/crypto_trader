@@ -12,12 +12,13 @@ from time import sleep
 
 class GetCoinLists(object):
 
-    def __init__(self, runfocus_symbols_only, focus_symbols):
+    def __init__(self, runfocus_symbols_only, focus_symbols,cwd):
         self.runfocus_symbols_only = runfocus_symbols_only
         self.focus_symbols = focus_symbols
+        self.cwd = cwd
 
     def func_get_coin_list(self):
-        cwd = os.getcwd()
+
         print "Running func_get_coin_list"
         source = "cryptocompare"
         url = "https://min-api.cryptocompare.com/data/all/coinlist"
@@ -36,7 +37,7 @@ class GetCoinLists(object):
         df = df.assign (timestamp_api_call = dt.datetime.now(),source = source )
         df = df.reset_index(drop=True)
         df = df.sort_values('Id')
-        df.to_csv(cwd+'/data/coinlist_info.csv',encoding='utf-8', index_label='sequence')
+        df.to_csv(self.cwd+'/data/coinlist_info.csv',encoding='utf-8', index_label='sequence')
 
         return df
 
@@ -50,7 +51,7 @@ class GetCoinLists(object):
         print 'begin: GetCoinLists.main'
         #x += 1
         try:
-            gcl = GetCoinLists(self.runfocus_symbols_only,self.focus_symbols)
+            gcl = GetCoinLists(self.runfocus_symbols_only,self.focus_symbols,self.cwd)
             df = gcl.func_get_coin_list()
 
         except:

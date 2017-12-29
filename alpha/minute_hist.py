@@ -11,15 +11,15 @@ from tqdm import tqdm
 
 class GetMinuteHist(object):
 
-    def __init__(self, symbol_list, exchanges, chunksize):
+    def __init__(self, symbol_list, exchanges, chunksize, cwd):
         self.symbol_list = symbol_list
         self.exchanges = exchanges
         self.chunksize = chunksize
-
+        self.cwd = cwd
 
     def get_minute_hist(self,symbol,error_symbols):
         currentts = str(int(time.time()))
-        cwd = os.getcwd()
+        
         frames = []
         for exchange in self.exchanges:
             url = "https://min-api.cryptocompare.com/data/histominute"
@@ -40,7 +40,7 @@ class GetMinuteHist(object):
                         df = p.DataFrame(data["Data"])
                         df = df.assign(symbol = symbol, coin_units = 1, timestamp_api_call = dt.datetime.now(),computer_name = 'JordanManual',exchange = exchange )
                         frames.append(df)
-                        my_file = cwd+'/data/minute_data/'+symbol+'_minute.csv'
+                        my_file = self.cwd+'/data/minute_data/'+symbol+'_minute.csv'
                         if os.path.isfile(my_file):
                             df_resident = p.read_csv(my_file)
                             frames.append(df_resident)
@@ -72,7 +72,7 @@ class GetMinuteHist(object):
 
     def main(self):
         error_symbols = []
-        gmt = GetMinuteHist(self.symbol_list,self.exchanges,self.chunksize)
+        gmt = GetMinuteHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
 
         xsymbols = [self.symbol_list[x:x+self.chunksize] for x in xrange(0, len(self.symbol_list), self.chunksize )]
 
@@ -103,8 +103,8 @@ class GetMinuteHist(object):
 
 if __name__ == '__main__':
     #exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
-    #cwd = os.getcwd()
-    #df = p.read_csv(cwd+'/data/coinlist_info.csv')
+    #
+    #df = p.read_csv(self.cwd+'/data/coinlist_info.csv')
     #ls_has = df["Symbol"].tolist()
     #ls_has = ls_has[:100]
     runner = GetMinuteHist()
