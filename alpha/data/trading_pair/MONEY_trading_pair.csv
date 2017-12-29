@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,MONEY,BTC,293651.516966,0.00293651516966,1,JordanManual,cryptocompare,MONEY,2017-12-29 00:03:01.804713
+CCCAGG,MONEY,USD,43000.0,6.9,1,JordanManual,cryptocompare,MONEY,2017-12-29 00:03:01.804713
+CCCAGG,MONEY,RUR,19904.9114281,100.225525697,1,JordanManual,cryptocompare,MONEY,2017-12-29 00:03:01.804713
+CCCAGG,MONEY,DOGE,1723.92460523,34.4784921046,1,JordanManual,cryptocompare,MONEY,2017-12-29 00:03:01.804713

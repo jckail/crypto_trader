@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,FAIR,BTC,60287.3428837,4.30491083,1,JordanManual,cryptocompare,FAIR,2017-12-29 00:03:25.030828

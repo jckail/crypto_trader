@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,MSP,BTC,6000187.13981,104.837536,1,JordanManual,cryptocompare,MSP,2017-12-29 00:02:47.509234
+CCCAGG,MSP,ETH,216706.289401,76.6470081688,1,JordanManual,cryptocompare,MSP,2017-12-29 00:02:47.509234
+CCCAGG,MSP,LTC,75868.8216125,78.62247419,1,JordanManual,cryptocompare,MSP,2017-12-29 00:02:47.509234
+CCCAGG,MSP,DOGE,1996.28362657,59791.1459545,1,JordanManual,cryptocompare,MSP,2017-12-29 00:02:47.509234

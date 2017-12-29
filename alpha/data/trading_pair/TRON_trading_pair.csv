@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,TRON,ETH,676.76089471,2.30034268621,1,JordanManual,cryptocompare,TRON,2017-12-29 00:03:25.083288
+CCCAGG,TRON,BTC,492.49670517,0.127147103765,1,JordanManual,cryptocompare,TRON,2017-12-29 00:03:25.083288
+CCCAGG,TRON,RUR,262.4282074,60529.0558253,1,JordanManual,cryptocompare,TRON,2017-12-29 00:03:25.083288
+CCCAGG,TRON,USD,41.79363187,364.548096733,1,JordanManual,cryptocompare,TRON,2017-12-29 00:03:25.083288
+CCCAGG,TRON,DOGE,0.72625187,148.881633357,1,JordanManual,cryptocompare,TRON,2017-12-29 00:03:25.083288

@@ -4,15 +4,17 @@
 import argparse
 import os
 import pandas as p
-from multiprocessing import Pool, TimeoutError
+#from multiprocessing import Pool, TimeoutError
 import time
 import threading
 #add arg focus symbols only
 import datetime as dt
+import multiprocessing
+
 
 
 # classes
-import buildcoinlist
+import coinlist
 import day_hist
 import test
 import setup
@@ -39,6 +41,7 @@ class AlphaRunner(object):
         self.runisprice = self.args.runisprice
         self.cwd = os.getcwd()
         self.focus_symbols = ['BTC','BCH','LTC','ETH']
+        self.symbol_list = []
         # FULL LIST exchanges = ['Cryptsy', 'BTCChina', 'Bitstamp', 'BTER', 'OKCoin', 'Coinbase', 'Poloniex', 'Cexio', 'BTCE', 'BitTrex', 'Kraken', 'Bitfinex', 'Yacuna', 'LocalBitcoins', 'Yunbi', 'itBit', 'HitBTC', 'btcXchange', 'BTC38', 'Coinfloor', 'Huobi', 'CCCAGG', 'LakeBTC', 'ANXBTC', 'Bit2C', 'Coinsetter', 'CCEX', 'Coinse', 'MonetaGo', 'Gatecoin', 'Gemini', 'CCEDK', 'Cryptopia', 'Exmo', 'Yobit', 'Korbit', 'BitBay', 'BTCMarkets', 'Coincheck', 'QuadrigaCX', 'BitSquare', 'Vaultoro', 'MercadoBitcoin', 'Bitso', 'Unocoin', 'BTCXIndia', 'Paymium', 'TheRockTrading', 'bitFlyer', 'Quoine', 'Luno', 'EtherDelta', 'bitFlyerFX', 'TuxExchange', 'CryptoX', 'Liqui', 'MtGox', 'BitMarket', 'LiveCoin', 'Coinone', 'Tidex', 'Bleutrade', 'EthexIndia', 'Bithumb', 'CHBTC', 'ViaBTC', 'Jubi', 'Zaif', 'Novaexchange', 'WavesDEX', 'Binance', 'Lykke', 'Remitano', 'Coinroom', 'Abucoins', 'BXinth', 'Gateio', 'HuobiPro', 'OKEX']
         self.exchanges = ['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
         #self.exchanges = ['Coinbase']
@@ -64,22 +67,21 @@ class AlphaRunner(object):
             try:
                 try:
                     if self.runfocus_symbols_only == 'N':
-                        #get list of coins
-                        coin_df = buildcoinlist.GetCoinLists(self.runfocus_symbols_only,self.focus_symbols,self.cwd)
-                        gcl_output = coin_df.main()
+                        cl = coinlist.GetCoinLists(self.cwd)
+                        cl.main()
                         df = p.read_csv(self.cwd+'/data/coinlist_info.csv')
-                        ls_has = df["Symbol"].tolist()
+                        self.symbol_list = df["Symbol"].tolist()
 
                     elif self.runfocus_symbols_only == 'Y':
-                        ls_has = self.focus_symbols
+                         self.symbol_list = self.focus_symbols
                 except Exception as e:
                     print(e)
-                    print 'error getting symbol_list'
+                    print 'error getting self.symbol_list'
 
                 try:
-                    x = len(ls_has)
-                    #ls_has = ls_has[:5]
-                    #ls_has.append('SMT')
+                    x = len(self.symbol_list)
+                    #self.symbol_list = self.symbol_list[:5]
+                    #self.symbol_list.append('SMT')
                     print '--------------------------------------------------------------------------'
                     print 'Evaluating: '+str(x)+' Coins'
                     print '--------------------------------------------------------------------------'
@@ -87,55 +89,40 @@ class AlphaRunner(object):
 
                     md = miningdata.GetMineData(self.cwd)
                     md.main()
-                    #thread1 = #threading.Thread(target=md.main(), args=())
+                    #thread1 = threading.Thread(target=md.main(), args=())
 
                     print'--------------------------------------------------------------------------'
-                    mfp = fetchprice.GetDtlPrice(ls_has, self.exchanges, self.chunksize,self.cwd) #chunk size not used here just broken up into 50 strings due to api list constraint
+                    mfp = fetchprice.GetDtlPrice(self.symbol_list, self.exchanges, self.chunksize,self.cwd) #chunk size not used here just broken up into 50 strings due to api list constraint
                     mfp.main()
-                    #thread2 = #threading.Thread(target=mfp.main(), args=())
+                    #thread2 = threading.Thread(target=mfp.main(), args=())
                     print'--------------------------------------------------------------------------'
 
-                    #tp = tradepair.GetTradePair(ls_has,self.cwd)
-                    #tp.main()
-                    ##thread3 = #threading.Thread(target=tp.main(), args=())
-                    print'--------------------------------------------------------------------------'
+                    tp = tradepair.GetTradePair(self.symbol_list,self.chunksize,self.cwd)
+                    tp.main()
+                    #thread3 = threading.Thread(target=tp.main(), args=())
+                    print'--------------------------------------------------------------------------xxx'
 
-                    mh = minute_hist.GetMinuteHist(ls_has,self.exchanges,self.chunksize,self.cwd)
+
+                    mh = minute_hist.GetMinuteHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
                     mh.main()
-                    #thread4 = #threading.Thread(target=mh.main(), args=())
-
-                    hh = hour_hist.GetHourHist(ls_has,self.exchanges,self.chunksize,self.cwd)
+                    # thread4 = threading.Thread(target=mh.main(), args=())
+                    #
+                    hh = hour_hist.GetHourHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
                     hh.main()
-                    #thread5 = #threading.Thread(target=hh.main(), args=())
-
-                    dh = day_hist.GetDayHist(ls_has,self.exchanges,self.chunksize,self.cwd)
+                    # thread5 = threading.Thread(target=hh.main(), args=())
+                    #
+                    dh = day_hist.GetDayHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
                     dh.main()
-                    #thread6 = #threading.Thread(target=dh.main(), args=())
+                    # thread6 = threading.Thread(target=dh.main(), args=())
                     print'--------------------------------------------------------------------------'
 
-                    #gsd = social.GetSocialData(ls_has,self.cwd)
-                    #gsd.main()
-                    ##thread7 = #threading.Thread(target=mfp.main(), args=())
+                    gsd = social.GetSocialData(self.symbol_list,self.cwd)
+                    gsd.main()
 
-
-                    #thread1.start()
-                    #thread2.start()
-                    ##thread3.start()
-                    #thread4.start()
-                    #thread5.start()
-                    #thread6.start()
-
-                    #thread1.join()
-                    #thread2.join()
-                    ##thread3.join()
-                    #thread4.join()
-                    #thread5.join()
-                    #thread6.join()
-                    ##thread7.start()
 
                         # non 0:00:35.364493
                         #multi#thread  0:00:21.039896
-                        #full run mutli #thread
+                        #full run mutli #threadCompletion time: 0:16:40.115999
 
                 except Exception as e:
                     print(e)
@@ -165,9 +152,3 @@ if __name__ == '__main__':
     ar = AlphaRunner()
 
     ar.main()
-
-
-
-
-
-

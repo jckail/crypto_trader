@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,FIST,BTC,55875.1879115,0.0020540191491,1,JordanManual,cryptocompare,FIST,2017-12-29 00:03:01.223340
+CCCAGG,FIST,USD,23530.918141,112.946734744,1,JordanManual,cryptocompare,FIST,2017-12-29 00:03:01.223340
+CCCAGG,FIST,RUR,7747.38711379,1462.169909,1,JordanManual,cryptocompare,FIST,2017-12-29 00:03:01.223340
+CCCAGG,FIST,DOGE,4779.92476174,1040.00346413,1,JordanManual,cryptocompare,FIST,2017-12-29 00:03:01.223340

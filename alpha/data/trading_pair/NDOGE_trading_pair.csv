@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,NDOGE,BTC,540.54054054,0.0002,1,JordanManual,cryptocompare,NDOGE,2017-12-29 00:03:15.985410
+CCCAGG,NDOGE,USD,450.16425787,3.90647832083,1,JordanManual,cryptocompare,NDOGE,2017-12-29 00:03:15.985410
+CCCAGG,NDOGE,RUR,19.85025545,7.21297481721,1,JordanManual,cryptocompare,NDOGE,2017-12-29 00:03:15.985410
+CCCAGG,NDOGE,DOGE,14.0,11.9,1,JordanManual,cryptocompare,NDOGE,2017-12-29 00:03:15.985410

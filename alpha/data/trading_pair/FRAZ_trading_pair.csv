@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,FRAZ,BTC,20997.122616,0.00146066735696,1,JordanManual,cryptocompare,FRAZ,2017-12-29 00:02:51.474783

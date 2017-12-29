@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ZET,BTC,670256.815891,0.508058872103,1,JordanManual,cryptocompare,ZET,2017-12-29 00:03:15.342867
+CCCAGG,ZET,LTC,7794.53788936,0.48139862,1,JordanManual,cryptocompare,ZET,2017-12-29 00:03:15.342867
+CCCAGG,ZET,DOGE,6433.91781373,9238.79707479,1,JordanManual,cryptocompare,ZET,2017-12-29 00:03:15.342867
+CCCAGG,ZET,ETH,1004.77631579,0.0260031603947,1,JordanManual,cryptocompare,ZET,2017-12-29 00:03:15.342867
+CCCAGG,ZET,USD,24.90020114,0.420763349862,1,JordanManual,cryptocompare,ZET,2017-12-29 00:03:15.342867

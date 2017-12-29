@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ASTRO,ETH,29170.3008,139.817797677,1,JordanManual,cryptocompare,ASTRO,2017-12-29 00:03:12.087158

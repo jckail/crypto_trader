@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,NETKO,BTC,20119.9840642,0.413315400942,1,JordanManual,cryptocompare,NETKO,2017-12-29 00:03:27.175843
+CCCAGG,NETKO,LTC,2925.1133764,3.66742985,1,JordanManual,cryptocompare,NETKO,2017-12-29 00:03:27.175843
+CCCAGG,NETKO,DOGE,181.6619243,6718.6314237,1,JordanManual,cryptocompare,NETKO,2017-12-29 00:03:27.175843

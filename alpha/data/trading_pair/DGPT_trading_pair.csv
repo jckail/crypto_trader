@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,DGPT,BTC,3136.41617979,0.35308374,1,JordanManual,cryptocompare,DGPT,2017-12-29 00:02:47.916060
+CCCAGG,DGPT,ETH,1427.854,2.8841500394,1,JordanManual,cryptocompare,DGPT,2017-12-29 00:02:47.916060
+CCCAGG,DGPT,DOGE,4.32769088,952.25102795,1,JordanManual,cryptocompare,DGPT,2017-12-29 00:02:47.916060
+CCCAGG,DGPT,LTC,1.8087402,0.01263356,1,JordanManual,cryptocompare,DGPT,2017-12-29 00:02:47.916060

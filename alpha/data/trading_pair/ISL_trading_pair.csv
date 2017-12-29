@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ISL,BTC,60.78950837,0.0004699028997,1,JordanManual,cryptocompare,ISL,2017-12-29 00:03:28.478779
+CCCAGG,ISL,DOGE,27.88822356,27.9023087862,1,JordanManual,cryptocompare,ISL,2017-12-29 00:03:28.478779
+CCCAGG,ISL,USD,10.00000004,2.000000008,1,JordanManual,cryptocompare,ISL,2017-12-29 00:03:28.478779
+CCCAGG,ISL,RUR,4.19780649,21.8705718129,1,JordanManual,cryptocompare,ISL,2017-12-29 00:03:28.478779

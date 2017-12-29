@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SAND,BTC,91071.9380439,0.02872556,1,JordanManual,cryptocompare,SAND,2017-12-29 00:02:46.306581
+CCCAGG,SAND,LTC,8176.53418552,0.13343975,1,JordanManual,cryptocompare,SAND,2017-12-29 00:02:46.306581
+CCCAGG,SAND,DOGE,188.31954555,100.83270041,1,JordanManual,cryptocompare,SAND,2017-12-29 00:02:46.306581

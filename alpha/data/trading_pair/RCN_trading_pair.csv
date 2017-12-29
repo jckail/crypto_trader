@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,RCN,BTC,101494242.96,2818.17775168,1,JordanManual,cryptocompare,RCN,2017-12-29 00:02:58.271528
+CCCAGG,RCN,ETH,5051593.55323,2849.38699173,1,JordanManual,cryptocompare,RCN,2017-12-29 00:02:58.271528
+CCCAGG,RCN,BNB,383639.81,16216.3847369,1,JordanManual,cryptocompare,RCN,2017-12-29 00:02:58.271528
+CCCAGG,RCN,USDT,345937.0813,136801.603971,1,JordanManual,cryptocompare,RCN,2017-12-29 00:02:58.271528

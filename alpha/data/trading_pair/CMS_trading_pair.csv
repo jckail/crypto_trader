@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,CMS,BTC,6628.76345201,0.992630907023,1,JordanManual,cryptocompare,CMS,2017-12-29 00:03:12.632442
+CCCAGG,CMS,ETH,790.53007663,2.2698087391,1,JordanManual,cryptocompare,CMS,2017-12-29 00:03:12.632442
+CCCAGG,CMS,USD,31.96304037,78.7604316606,1,JordanManual,cryptocompare,CMS,2017-12-29 00:03:12.632442
+CCCAGG,CMS,RUR,1.60803745,169.846148337,1,JordanManual,cryptocompare,CMS,2017-12-29 00:03:12.632442

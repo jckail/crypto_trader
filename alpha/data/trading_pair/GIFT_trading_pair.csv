@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,GIFT,WAVES,416.28122108,0.00041628122108,1,JordanManual,cryptocompare,GIFT,2017-12-29 00:03:12.809363
+CCCAGG,GIFT,RUR,400.46594023,44.1269269667,1,JordanManual,cryptocompare,GIFT,2017-12-29 00:03:12.809363
+CCCAGG,GIFT,USD,100.0,1.0,1,JordanManual,cryptocompare,GIFT,2017-12-29 00:03:12.809363
+CCCAGG,GIFT,DOGE,20.0,38.0,1,JordanManual,cryptocompare,GIFT,2017-12-29 00:03:12.809363

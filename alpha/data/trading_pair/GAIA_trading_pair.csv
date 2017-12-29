@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,GAIA,BTC,25681.5714616,0.0698426,1,JordanManual,cryptocompare,GAIA,2017-12-29 00:03:27.313505
+CCCAGG,GAIA,LTC,8683.99299461,1.085798,1,JordanManual,cryptocompare,GAIA,2017-12-29 00:03:27.313505
+CCCAGG,GAIA,DOGE,2674.53666313,10297.594562,1,JordanManual,cryptocompare,GAIA,2017-12-29 00:03:27.313505

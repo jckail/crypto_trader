@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,TAAS,BTC,41442.9916707,17.5205892723,1,JordanManual,cryptocompare,TAAS,2017-12-29 00:03:29.622848
+CCCAGG,TAAS,USDT,37431.5435497,222573.982036,1,JordanManual,cryptocompare,TAAS,2017-12-29 00:03:29.622848
+CCCAGG,TAAS,ETH,1199.795,10.183447195,1,JordanManual,cryptocompare,TAAS,2017-12-29 00:03:29.622848

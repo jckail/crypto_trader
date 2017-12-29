@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,NKT,USD,2,0.7,1,JordanManual,cryptocompare,NKT,2017-12-29 00:03:25.104734

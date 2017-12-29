@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,WGO,WAVES,32097.3542676,615.308561709,1,JordanManual,cryptocompare,WGO,2017-12-29 00:03:29.481821
+CCCAGG,WGO,BTC,24440.5556385,0.424911096841,1,JordanManual,cryptocompare,WGO,2017-12-29 00:03:29.481821
+CCCAGG,WGO,RUR,2.01423968,45.2136127645,1,JordanManual,cryptocompare,WGO,2017-12-29 00:03:29.481821

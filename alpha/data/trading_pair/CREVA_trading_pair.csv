@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,CREVA,BTC,5795866.3432,0.246274495998,1,JordanManual,cryptocompare,CREVA,2017-12-29 00:03:29.916913
+CCCAGG,CREVA,RUR,1210365.27629,30443.5356976,1,JordanManual,cryptocompare,CREVA,2017-12-29 00:03:29.916913
+CCCAGG,CREVA,USD,61562.9415548,33.3958218261,1,JordanManual,cryptocompare,CREVA,2017-12-29 00:03:29.916913

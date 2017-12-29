@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,VIB,BTC,19442692.0566,571.597634404,1,JordanManual,cryptocompare,VIB,2017-12-29 00:02:47.574869
+CCCAGG,VIB,ETH,2365321.62818,1381.16484913,1,JordanManual,cryptocompare,VIB,2017-12-29 00:02:47.574869
+CCCAGG,VIB,USD,2306370.0,935568.961,1,JordanManual,cryptocompare,VIB,2017-12-29 00:02:47.574869

@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PAYP,ETH,7974678.93985,0.569255750731,1,JordanManual,cryptocompare,PAYP,2017-12-29 00:03:12.024262
+CCCAGG,PAYP,DOGE,1166804.77849,13828.0711281,1,JordanManual,cryptocompare,PAYP,2017-12-29 00:03:12.024262
+CCCAGG,PAYP,USD,921091.897619,60.5358500106,1,JordanManual,cryptocompare,PAYP,2017-12-29 00:03:12.024262
+CCCAGG,PAYP,WAVES,16191.57695,0.07114293858,1,JordanManual,cryptocompare,PAYP,2017-12-29 00:03:12.024262
+CCCAGG,PAYP,RUR,5200.0,30.419948,1,JordanManual,cryptocompare,PAYP,2017-12-29 00:03:12.024262

@@ -1,0 +1,7 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BTX,BTC,11301.6353756,13.03158146,1,JordanManual,cryptocompare,BTX,2017-12-29 00:02:47.471963
+CCCAGG,BTX,LTC,664.6256501,45.06961827,1,JordanManual,cryptocompare,BTX,2017-12-29 00:02:47.471963
+CCCAGG,BTX,USDT,194.14154062,3319.0652403,1,JordanManual,cryptocompare,BTX,2017-12-29 00:02:47.471963
+CCCAGG,BTX,USD,74.87,1188.6267,1,JordanManual,cryptocompare,BTX,2017-12-29 00:02:47.471963
+CCCAGG,BTX,DOGE,47.71805657,105618.397598,1,JordanManual,cryptocompare,BTX,2017-12-29 00:02:47.471963
+CCCAGG,BTX,NZDT,1.99302192,55.40852363,1,JordanManual,cryptocompare,BTX,2017-12-29 00:02:47.471963

@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PNK,RUR,915.4351807,120.836828275,1,JordanManual,cryptocompare,PNK,2017-12-29 00:02:56.914690
+CCCAGG,PNK,BTC,900.09698959,0.000274030066773,1,JordanManual,cryptocompare,PNK,2017-12-29 00:02:56.914690
+CCCAGG,PNK,USD,133.33777793,1.17045701521,1,JordanManual,cryptocompare,PNK,2017-12-29 00:02:56.914690

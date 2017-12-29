@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,TKR,ETH,50770.0000023,5.82680000027,1,JordanManual,cryptocompare,TKR,2017-12-29 00:03:10.971075

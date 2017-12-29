@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,YBC,BTC,0.00178709,0.000266274515685,1,JordanManual,cryptocompare,YBC,2017-12-29 00:03:10.856672

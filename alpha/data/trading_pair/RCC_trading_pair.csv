@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,RCC,ETH,15567.1225953,3.62180242605,1,JordanManual,cryptocompare,RCC,2017-12-29 00:02:47.240757

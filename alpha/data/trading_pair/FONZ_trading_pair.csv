@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,FONZ,BTC,140387.89438,0.01580507,1,JordanManual,cryptocompare,FONZ,2017-12-29 00:02:58.351191
+CCCAGG,FONZ,LTC,34989.5425815,0.19696321,1,JordanManual,cryptocompare,FONZ,2017-12-29 00:02:58.351191
+CCCAGG,FONZ,DOGE,11908.8639449,2546.27596887,1,JordanManual,cryptocompare,FONZ,2017-12-29 00:02:58.351191
+CCCAGG,FONZ,RUR,3000.0,1200.0,1,JordanManual,cryptocompare,FONZ,2017-12-29 00:02:58.351191

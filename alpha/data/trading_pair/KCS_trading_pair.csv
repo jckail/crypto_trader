@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,KCS,BTC,1093038.3596,202.915658977,1,JordanManual,cryptocompare,KCS,2017-12-29 00:03:05.978431
+CCCAGG,KCS,ETH,579710.86521,2177.51780205,1,JordanManual,cryptocompare,KCS,2017-12-29 00:03:05.978431
+CCCAGG,KCS,USDT,85938.9432,228413.447536,1,JordanManual,cryptocompare,KCS,2017-12-29 00:03:05.978431

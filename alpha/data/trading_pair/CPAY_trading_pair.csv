@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,CPAY,ETH,1633046,626.93599,1,JordanManual,cryptocompare,CPAY,2017-12-29 00:03:00.875249

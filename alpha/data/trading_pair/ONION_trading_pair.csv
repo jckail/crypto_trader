@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ONION,BTC,157349.701078,72.86224197,1,JordanManual,cryptocompare,ONION,2017-12-29 00:02:47.549564
+CCCAGG,ONION,LTC,30514.8029239,791.5123255,1,JordanManual,cryptocompare,ONION,2017-12-29 00:02:47.549564
+CCCAGG,ONION,DOGE,787.38822353,639243.765693,1,JordanManual,cryptocompare,ONION,2017-12-29 00:02:47.549564

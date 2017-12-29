@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ACID,RUR,117101.743437,576.728875665,1,JordanManual,cryptocompare,ACID,2017-12-29 00:03:12.716476
+CCCAGG,ACID,DOGE,43744.7018223,250.959463288,1,JordanManual,cryptocompare,ACID,2017-12-29 00:03:12.716476
+CCCAGG,ACID,WAVES,382.40299401,0.00071201497005,1,JordanManual,cryptocompare,ACID,2017-12-29 00:03:12.716476

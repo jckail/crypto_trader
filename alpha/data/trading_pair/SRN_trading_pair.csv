@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SRN,ETH,476024.190835,497.22520708,1,JordanManual,cryptocompare,SRN,2017-12-29 00:03:11.451987
+CCCAGG,SRN,BTC,429425.408797,22.7441332073,1,JordanManual,cryptocompare,SRN,2017-12-29 00:03:11.451987
+CCCAGG,SRN,USDT,174527.821392,127015.009252,1,JordanManual,cryptocompare,SRN,2017-12-29 00:03:11.451987

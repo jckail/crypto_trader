@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,JANE,DOGE,252298.807023,2419.65083706,1,JordanManual,cryptocompare,JANE,2017-12-29 00:03:15.867446
+CCCAGG,JANE,WAVES,51822.9587678,0.046662414288,1,JordanManual,cryptocompare,JANE,2017-12-29 00:03:15.867446
+CCCAGG,JANE,ETH,14782.5680001,0.000295651360001,1,JordanManual,cryptocompare,JANE,2017-12-29 00:03:15.867446
+CCCAGG,JANE,RUR,11600.0,12.100333,1,JordanManual,cryptocompare,JANE,2017-12-29 00:03:15.867446

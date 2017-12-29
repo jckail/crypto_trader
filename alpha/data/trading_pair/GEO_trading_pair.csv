@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,GEO,BTC,80224.5755567,13.5403850092,1,JordanManual,cryptocompare,GEO,2017-12-29 00:03:12.559083
+CCCAGG,GEO,USD,5.20183376,12.5715806736,1,JordanManual,cryptocompare,GEO,2017-12-29 00:03:12.559083
+CCCAGG,GEO,RUR,1.20308069,179.25902281,1,JordanManual,cryptocompare,GEO,2017-12-29 00:03:12.559083
+CCCAGG,GEO,DOGE,0.14433028,46.89274504,1,JordanManual,cryptocompare,GEO,2017-12-29 00:03:12.559083
+CCCAGG,GEO,WAVES,0.00065896,0.000609999324717,1,JordanManual,cryptocompare,GEO,2017-12-29 00:03:12.559083

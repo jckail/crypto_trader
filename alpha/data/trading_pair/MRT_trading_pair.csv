@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,MRT,WAVES,273311.82,7182.19404437,1,JordanManual,cryptocompare,MRT,2017-12-29 00:03:30.656129
+CCCAGG,MRT,WEUR,56039.0736931,12456.8195468,1,JordanManual,cryptocompare,MRT,2017-12-29 00:03:30.656129
+CCCAGG,MRT,BTC,50082.28,1.0088326873,1,JordanManual,cryptocompare,MRT,2017-12-29 00:03:30.656129
+CCCAGG,MRT,USD,2000.0,500.0,1,JordanManual,cryptocompare,MRT,2017-12-29 00:03:30.656129
+CCCAGG,MRT,EUR,1994.0,359.92,1,JordanManual,cryptocompare,MRT,2017-12-29 00:03:30.656129

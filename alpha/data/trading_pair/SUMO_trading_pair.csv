@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SUMO,BTC,236936.262068,92.6499377735,1,JordanManual,cryptocompare,SUMO,2017-12-29 00:02:57.458571
+CCCAGG,SUMO,LTC,14854.4696344,367.40769181,1,JordanManual,cryptocompare,SUMO,2017-12-29 00:02:57.458571
+CCCAGG,SUMO,DOGE,1534.05061034,1043767.24434,1,JordanManual,cryptocompare,SUMO,2017-12-29 00:02:57.458571
+CCCAGG,SUMO,ETH,168.9261993,1.6485910295,1,JordanManual,cryptocompare,SUMO,2017-12-29 00:02:57.458571

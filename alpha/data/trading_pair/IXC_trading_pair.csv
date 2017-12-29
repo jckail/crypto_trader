@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,IXC,BTC,7647.85923091,0.107789975,1,JordanManual,cryptocompare,IXC,2017-12-29 00:03:19.450774
+CCCAGG,IXC,DOGE,174.08019111,5982.55930919,1,JordanManual,cryptocompare,IXC,2017-12-29 00:03:19.450774
+CCCAGG,IXC,USD,7.50000272,3.000001088,1,JordanManual,cryptocompare,IXC,2017-12-29 00:03:19.450774

@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ZSC,ETH,5385855.40202,215.852454361,1,JordanManual,cryptocompare,ZSC,2017-12-29 00:03:05.741619
+CCCAGG,ZSC,USDT,2985740.2223,86174.0400589,1,JordanManual,cryptocompare,ZSC,2017-12-29 00:03:05.741619
+CCCAGG,ZSC,BTC,89900.0,0.19018,1,JordanManual,cryptocompare,ZSC,2017-12-29 00:03:05.741619
+CCCAGG,ZSC,USD,73700.0,2180.808,1,JordanManual,cryptocompare,ZSC,2017-12-29 00:03:05.741619

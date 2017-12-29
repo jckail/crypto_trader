@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PKT,ETH,8741.21909581,10.0217965935,1,JordanManual,cryptocompare,PKT,2017-12-29 00:03:01.635828

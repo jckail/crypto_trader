@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,WRT,BTC,8120.28835031,0.00129924613605,1,JordanManual,cryptocompare,WRT,2017-12-29 00:02:57.077052
+CCCAGG,WRT,RUR,1516.45580078,224.24840912,1,JordanManual,cryptocompare,WRT,2017-12-29 00:02:57.077052
+CCCAGG,WRT,USD,564.02996671,1.53250680608,1,JordanManual,cryptocompare,WRT,2017-12-29 00:02:57.077052

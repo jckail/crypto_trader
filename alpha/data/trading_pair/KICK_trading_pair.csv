@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,KICK,BTC,1697098.31099,5.9790072625,1,JordanManual,cryptocompare,KICK,2017-12-29 00:02:47.753386
+CCCAGG,KICK,ETH,1530643.3937,108.276060512,1,JordanManual,cryptocompare,KICK,2017-12-29 00:02:47.753386
+CCCAGG,KICK,USDT,292534.3,14246.834619,1,JordanManual,cryptocompare,KICK,2017-12-29 00:02:47.753386
+CCCAGG,KICK,RUR,2072.5765458,7071.78971025,1,JordanManual,cryptocompare,KICK,2017-12-29 00:02:47.753386
+CCCAGG,KICK,USD,98.30266202,5.66017656935,1,JordanManual,cryptocompare,KICK,2017-12-29 00:02:47.753386

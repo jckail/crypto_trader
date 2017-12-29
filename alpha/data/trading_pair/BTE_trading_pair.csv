@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BTE,ETH,14.99999,0.013579985,1,JordanManual,cryptocompare,BTE,2017-12-29 00:03:15.672387

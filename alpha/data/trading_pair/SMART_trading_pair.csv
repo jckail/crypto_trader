@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SMART,BTC,3398323.12541,82.37820115,1,JordanManual,cryptocompare,SMART,2017-12-29 00:02:47.914332
+CCCAGG,SMART,LTC,252309.064592,371.9843779,1,JordanManual,cryptocompare,SMART,2017-12-29 00:02:47.914332
+CCCAGG,SMART,USD,101200.0,46527.345,1,JordanManual,cryptocompare,SMART,2017-12-29 00:02:47.914332
+CCCAGG,SMART,ETH,79604.0,64.3002427036,1,JordanManual,cryptocompare,SMART,2017-12-29 00:02:47.914332
+CCCAGG,SMART,DOGE,19511.7037301,870706.145872,1,JordanManual,cryptocompare,SMART,2017-12-29 00:02:47.914332

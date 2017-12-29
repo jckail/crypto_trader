@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PASL,BTC,39900.18724,0.45777363,1,JordanManual,cryptocompare,PASL,2017-12-29 00:03:23.968836
+CCCAGG,PASL,LTC,644.09912874,0.41585016,1,JordanManual,cryptocompare,PASL,2017-12-29 00:03:23.968836
+CCCAGG,PASL,DOGE,43.10539129,841.16361428,1,JordanManual,cryptocompare,PASL,2017-12-29 00:03:23.968836

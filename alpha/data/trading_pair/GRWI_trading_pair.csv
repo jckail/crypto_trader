@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,GRWI,BTC,23901.1580969,1.95088277,1,JordanManual,cryptocompare,GRWI,2017-12-29 00:02:48.556518
+CCCAGG,GRWI,LTC,183.49645024,1.01001608,1,JordanManual,cryptocompare,GRWI,2017-12-29 00:02:48.556518
+CCCAGG,GRWI,DOGE,107.37632756,13754.7829774,1,JordanManual,cryptocompare,GRWI,2017-12-29 00:02:48.556518

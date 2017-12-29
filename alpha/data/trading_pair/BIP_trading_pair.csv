@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BIP,BTC,50640.2901429,0.19624116,1,JordanManual,cryptocompare,BIP,2017-12-29 00:03:00.473515
+CCCAGG,BIP,DOGE,2850.23252565,18027.0086699,1,JordanManual,cryptocompare,BIP,2017-12-29 00:03:00.473515
+CCCAGG,BIP,LTC,59.04870521,0.0131218,1,JordanManual,cryptocompare,BIP,2017-12-29 00:03:00.473515

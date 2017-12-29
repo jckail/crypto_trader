@@ -1,0 +1,3 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,XAUR,BTC,1888808.56684,19.1325594006,1,JordanManual,cryptocompare,XAUR,2017-12-29 00:02:51.880950
+CCCAGG,XAUR,ETH,21652.07,4.31803133,1,JordanManual,cryptocompare,XAUR,2017-12-29 00:02:51.880950

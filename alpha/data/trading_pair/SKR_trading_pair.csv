@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SKR,BTC,146987.076882,0.0493177,1,JordanManual,cryptocompare,SKR,2017-12-29 00:03:12.705
+CCCAGG,SKR,LTC,8271.52609783,0.19836058,1,JordanManual,cryptocompare,SKR,2017-12-29 00:03:12.705
+CCCAGG,SKR,DOGE,6968.98718265,5036.97553585,1,JordanManual,cryptocompare,SKR,2017-12-29 00:03:12.705

@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,CWXT,BTC,86940.599055,0.0054380948385,1,JordanManual,cryptocompare,CWXT,2017-12-29 00:03:15.288433
+CCCAGG,CWXT,USD,100.0,0.2,1,JordanManual,cryptocompare,CWXT,2017-12-29 00:03:15.288433
+CCCAGG,CWXT,RUR,59.7633136,3.585798816,1,JordanManual,cryptocompare,CWXT,2017-12-29 00:03:15.288433
+CCCAGG,CWXT,WAVES,1.66779667,0.000800408977866,1,JordanManual,cryptocompare,CWXT,2017-12-29 00:03:15.288433

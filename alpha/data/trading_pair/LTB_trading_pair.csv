@@ -1,0 +1,3 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,LTB,BTC,1864.43207523,0.07298022,1,JordanManual,cryptocompare,LTB,2017-12-29 00:03:19.545787
+CCCAGG,LTB,DOGE,9.04584395,836.08589302,1,JordanManual,cryptocompare,LTB,2017-12-29 00:03:19.545787

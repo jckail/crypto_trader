@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BXT,BTC,411.41032174,0.0326461886728,1,JordanManual,cryptocompare,BXT,2017-12-29 00:02:50.534644

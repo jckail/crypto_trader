@@ -1,5 +1,2 @@
-Id,exchange,fromSymbol,toSymbol,volume24h,volume24hTo,source,timestamp_api_call
-0,CCCAGG,DYN,BTC,985017.411653,428.8777472,cryptocompare,2017-12-27 23:54:09.682783
-1,CCCAGG,DYN,BTC,980324.576229,426.86677135,cryptocompare,2017-12-27 23:09:28.805220
-2,CCCAGG,DYN,BTC,1046373.53206,449.75589862,cryptocompare,2017-12-27 21:29:21.953478
-3,CCCAGG,DYN,BTC,1033981.86274,444.41101778,cryptocompare,2017-12-27 21:01:33.703947
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,DYN,BTC,213519.192618,94.84945187,1,JordanManual,cryptocompare,DYN,2017-12-29 00:02:45.801291

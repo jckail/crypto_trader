@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,POT,BTC,37900943.9069,986.128377597,1,JordanManual,cryptocompare,POT,2017-12-29 00:03:19.654276
+CCCAGG,POT,LTC,54126.7214168,89.47958402,1,JordanManual,cryptocompare,POT,2017-12-29 00:03:19.654276
+CCCAGG,POT,DOGE,13617.8161955,672829.021353,1,JordanManual,cryptocompare,POT,2017-12-29 00:03:19.654276
+CCCAGG,POT,ETH,12.49519225,0.00524660627385,1,JordanManual,cryptocompare,POT,2017-12-29 00:03:19.654276

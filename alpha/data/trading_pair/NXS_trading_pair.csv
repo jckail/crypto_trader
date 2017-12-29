@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,NXS,BTC,476978.991746,112.47527069,1,JordanManual,cryptocompare,NXS,2017-12-29 00:03:27.513398
+CCCAGG,NXS,LTC,1637.9320216,22.45964816,1,JordanManual,cryptocompare,NXS,2017-12-29 00:03:27.513398
+CCCAGG,NXS,DOGE,74.26707253,32743.8519498,1,JordanManual,cryptocompare,NXS,2017-12-29 00:03:27.513398

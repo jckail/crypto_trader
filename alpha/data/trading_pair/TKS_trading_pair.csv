@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,TKS,BTC,24865.0926102,7.92756522,1,JordanManual,cryptocompare,TKS,2017-12-29 00:03:09.896271

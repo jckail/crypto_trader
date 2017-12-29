@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,MOON,BTC,1168196822.31,13.7196160297,1,JordanManual,cryptocompare,MOON,2017-12-29 00:03:15.247376
+CCCAGG,MOON,DOGE,343485469.691,6749990.38237,1,JordanManual,cryptocompare,MOON,2017-12-29 00:03:15.247376
+CCCAGG,MOON,ETH,290421183.856,74.8126511612,1,JordanManual,cryptocompare,MOON,2017-12-29 00:03:15.247376

@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PIRL,BTC,139988.098765,14.52700193,1,JordanManual,cryptocompare,PIRL,2017-12-29 00:03:01.849417
+CCCAGG,PIRL,LTC,7321.49182774,45.90583524,1,JordanManual,cryptocompare,PIRL,2017-12-29 00:03:01.849417
+CCCAGG,PIRL,DOGE,1369.18867143,251598.985867,1,JordanManual,cryptocompare,PIRL,2017-12-29 00:03:01.849417

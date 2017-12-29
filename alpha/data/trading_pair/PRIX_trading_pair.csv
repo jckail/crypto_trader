@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PRIX,ETH,4582.73235294,20.1188969943,1,JordanManual,cryptocompare,PRIX,2017-12-29 00:02:51.812517

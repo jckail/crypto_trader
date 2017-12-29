@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,QSP,BTC,38056672.8609,462.796596448,1,JordanManual,cryptocompare,QSP,2017-12-29 00:03:12.729892
+CCCAGG,QSP,ETH,9731288.23602,2347.74219891,1,JordanManual,cryptocompare,QSP,2017-12-29 00:03:12.729892
+CCCAGG,QSP,BNB,1350928.02,25164.4964521,1,JordanManual,cryptocompare,QSP,2017-12-29 00:03:12.729892

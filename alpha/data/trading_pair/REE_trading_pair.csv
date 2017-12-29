@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,REE,USD,2418241.91453,142.012095726,1,JordanManual,cryptocompare,REE,2017-12-29 00:02:52.647467
+CCCAGG,REE,BTC,1085567.37872,0.0108556737872,1,JordanManual,cryptocompare,REE,2017-12-29 00:02:52.647467
+CCCAGG,REE,ETH,734000.360061,0.0587200288049,1,JordanManual,cryptocompare,REE,2017-12-29 00:02:52.647467

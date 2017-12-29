@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SAK,BTC,137104.526586,0.04270771,1,JordanManual,cryptocompare,SAK,2017-12-29 00:02:53.560437
+CCCAGG,SAK,LTC,8478.93599925,0.16830688,1,JordanManual,cryptocompare,SAK,2017-12-29 00:02:53.560437
+CCCAGG,SAK,DOGE,1126.6529033,746.74759482,1,JordanManual,cryptocompare,SAK,2017-12-29 00:02:53.560437

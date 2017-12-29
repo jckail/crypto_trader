@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PTA,BTC,50037.1273391,0.0636413400561,1,JordanManual,cryptocompare,PTA,2017-12-29 00:03:12.730515
+CCCAGG,PTA,DOGE,23.33340103,155.55619264,1,JordanManual,cryptocompare,PTA,2017-12-29 00:03:12.730515
+CCCAGG,PTA,USD,10.00000009,1.000000009,1,JordanManual,cryptocompare,PTA,2017-12-29 00:03:12.730515

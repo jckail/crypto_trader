@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,HIRE,BTC,1080.41228659,0.00214055489016,1,JordanManual,cryptocompare,HIRE,2017-12-29 00:02:47.312282
+CCCAGG,HIRE,RUR,212.00000002,273.000006005,1,JordanManual,cryptocompare,HIRE,2017-12-29 00:02:47.312282
+CCCAGG,HIRE,USD,21.05265219,0.210505579248,1,JordanManual,cryptocompare,HIRE,2017-12-29 00:02:47.312282

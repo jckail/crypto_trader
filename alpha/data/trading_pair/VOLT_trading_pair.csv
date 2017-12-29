@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,VOLT,BTC,1332218.45271,0.121843324246,1,JordanManual,cryptocompare,VOLT,2017-12-29 00:03:25.582907
+CCCAGG,VOLT,USD,30145.5515609,28.2776690875,1,JordanManual,cryptocompare,VOLT,2017-12-29 00:03:25.582907
+CCCAGG,VOLT,DOGE,15804.6460645,2207.50348061,1,JordanManual,cryptocompare,VOLT,2017-12-29 00:03:25.582907
+CCCAGG,VOLT,RUR,133.18656012,14.2479133092,1,JordanManual,cryptocompare,VOLT,2017-12-29 00:03:25.582907

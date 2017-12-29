@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ORLY,BTC,76649.9024694,0.00746771068332,1,JordanManual,cryptocompare,ORLY,2017-12-29 00:02:51.491512
+CCCAGG,ORLY,USD,61937.7532129,30.9799068842,1,JordanManual,cryptocompare,ORLY,2017-12-29 00:02:51.491512
+CCCAGG,ORLY,DOGE,8000.16078266,1397.91602697,1,JordanManual,cryptocompare,ORLY,2017-12-29 00:02:51.491512
+CCCAGG,ORLY,RUR,147.07356175,4.41221420618,1,JordanManual,cryptocompare,ORLY,2017-12-29 00:02:51.491512

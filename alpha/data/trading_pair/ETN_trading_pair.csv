@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ETN,BTC,56070702.8964,321.7072825,1,JordanManual,cryptocompare,ETN,2017-12-29 00:03:10.757571
+CCCAGG,ETN,LTC,8116151.76835,2752.05064059,1,JordanManual,cryptocompare,ETN,2017-12-29 00:03:10.757571
+CCCAGG,ETN,USDT,3079735.6219,250195.154623,1,JordanManual,cryptocompare,ETN,2017-12-29 00:03:10.757571
+CCCAGG,ETN,DOGE,1346398.52122,13733438.183,1,JordanManual,cryptocompare,ETN,2017-12-29 00:03:10.757571
+CCCAGG,ETN,NZDT,152573.215199,21027.7236271,1,JordanManual,cryptocompare,ETN,2017-12-29 00:03:10.757571

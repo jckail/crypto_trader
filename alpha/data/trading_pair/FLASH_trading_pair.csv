@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,FLASH,BTC,25176746.179,21.50954174,1,JordanManual,cryptocompare,FLASH,2017-12-29 00:03:07.130810
+CCCAGG,FLASH,LTC,1933137.63145,97.41563607,1,JordanManual,cryptocompare,FLASH,2017-12-29 00:03:07.130810
+CCCAGG,FLASH,DOGE,249559.269268,426766.696924,1,JordanManual,cryptocompare,FLASH,2017-12-29 00:03:07.130810

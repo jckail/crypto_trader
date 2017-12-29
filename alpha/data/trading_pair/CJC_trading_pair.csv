@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,CJC,BTC,657351.697512,0.0238949006449,1,JordanManual,cryptocompare,CJC,2017-12-29 00:03:25.441759
+CCCAGG,CJC,RUR,7399.75833332,262.204028696,1,JordanManual,cryptocompare,CJC,2017-12-29 00:03:25.441759
+CCCAGG,CJC,DOGE,4784.00714329,384.804651196,1,JordanManual,cryptocompare,CJC,2017-12-29 00:03:25.441759
+CCCAGG,CJC,USD,737.0,0.81061893,1,JordanManual,cryptocompare,CJC,2017-12-29 00:03:25.441759

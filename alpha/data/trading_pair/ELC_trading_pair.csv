@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ELC,BTC,1365.07525295,0.0213944680234,1,JordanManual,cryptocompare,ELC,2017-12-29 00:03:16.245046
+CCCAGG,ELC,DOGE,41.85669361,1291.70675132,1,JordanManual,cryptocompare,ELC,2017-12-29 00:03:16.245046
+CCCAGG,ELC,RUR,1.78679856,34.064599827,1,JordanManual,cryptocompare,ELC,2017-12-29 00:03:16.245046

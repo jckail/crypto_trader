@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ZOI,BTC,818480.149353,64.53305482,1,JordanManual,cryptocompare,ZOI,2017-12-29 00:03:26.083113
+CCCAGG,ZOI,LTC,23666.9679705,120.96038877,1,JordanManual,cryptocompare,ZOI,2017-12-29 00:03:26.083113
+CCCAGG,ZOI,DOGE,8789.68406463,1126775.20208,1,JordanManual,cryptocompare,ZOI,2017-12-29 00:03:26.083113

@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ENRG,BTC,1476184.42382,19.13966373,1,JordanManual,cryptocompare,ENRG,2017-12-29 00:03:17.187101

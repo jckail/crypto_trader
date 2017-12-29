@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,VTA,BTC,200000,0.002,1,JordanManual,cryptocompare,VTA,2017-12-29 00:02:48.757578

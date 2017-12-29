@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,NTO,BTC,303200,0.22939,1,JordanManual,cryptocompare,NTO,2017-12-29 00:03:00.499409

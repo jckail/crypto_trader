@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,MARX,BTC,2723605.55969,0.852567043719,1,JordanManual,cryptocompare,MARX,2017-12-29 00:03:16.275775
+CCCAGG,MARX,LTC,374127.545097,6.85323158,1,JordanManual,cryptocompare,MARX,2017-12-29 00:03:16.275775
+CCCAGG,MARX,DOGE,107294.559312,61271.0157547,1,JordanManual,cryptocompare,MARX,2017-12-29 00:03:16.275775
+CCCAGG,MARX,RUR,230.0,219.5707877,1,JordanManual,cryptocompare,MARX,2017-12-29 00:03:16.275775

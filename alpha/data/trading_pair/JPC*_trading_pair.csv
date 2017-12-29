@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,JPC*,BTC,257.51533539,0.00143508736442,1,JordanManual,cryptocompare,JPC*,2017-12-29 00:03:11.105068

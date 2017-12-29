@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,WILD,ETH,51606.447056,24.0965418918,1,JordanManual,cryptocompare,WILD,2017-12-29 00:03:02.685750
+CCCAGG,WILD,BTC,2233.77215329,0.04761069,1,JordanManual,cryptocompare,WILD,2017-12-29 00:03:02.685750
+CCCAGG,WILD,DOGE,7.45963806,395.70199173,1,JordanManual,cryptocompare,WILD,2017-12-29 00:03:02.685750

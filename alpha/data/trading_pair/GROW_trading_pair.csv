@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,GROW,BTC,450.1158174,0.00256566015918,1,JordanManual,cryptocompare,GROW,2017-12-29 00:02:48.870709

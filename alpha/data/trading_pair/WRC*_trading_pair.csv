@@ -1,0 +1,3 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,WRC*,BTC,6932.37965977,0.01399645,1,JordanManual,cryptocompare,WRC*,2017-12-29 00:03:29.667561
+CCCAGG,WRC*,DOGE,10.0,70.0,1,JordanManual,cryptocompare,WRC*,2017-12-29 00:03:29.667561

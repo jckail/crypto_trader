@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,VRC,BTC,5075767.32062,395.108459596,1,JordanManual,cryptocompare,VRC,2017-12-29 00:03:20.826304
+CCCAGG,VRC,ETH,889.89521963,1.65517440671,1,JordanManual,cryptocompare,VRC,2017-12-29 00:03:20.826304
+CCCAGG,VRC,LTC,767.13242394,3.02830776,1,JordanManual,cryptocompare,VRC,2017-12-29 00:03:20.826304
+CCCAGG,VRC,DOGE,214.62513916,29749.3164832,1,JordanManual,cryptocompare,VRC,2017-12-29 00:03:20.826304

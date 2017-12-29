@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ELIX,ETH,6929.22297615,4.59625522801,1,JordanManual,cryptocompare,ELIX,2017-12-29 00:02:57.794674

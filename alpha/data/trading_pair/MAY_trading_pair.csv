@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,MAY,BTC,84288.7376539,0.0333033174598,1,JordanManual,cryptocompare,MAY,2017-12-29 00:03:01.708063
+CCCAGG,MAY,USD,965.21121345,3.67901902858,1,JordanManual,cryptocompare,MAY,2017-12-29 00:03:01.708063
+CCCAGG,MAY,ETH,390.625,0.01,1,JordanManual,cryptocompare,MAY,2017-12-29 00:03:01.708063
+CCCAGG,MAY,RUR,153.85645155,53.4107953293,1,JordanManual,cryptocompare,MAY,2017-12-29 00:03:01.708063
+CCCAGG,MAY,DOGE,125.26631972,43.843211902,1,JordanManual,cryptocompare,MAY,2017-12-29 00:03:01.708063

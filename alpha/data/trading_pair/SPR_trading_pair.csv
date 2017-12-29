@@ -1,0 +1,7 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SPR,BTC,1322448.23931,80.6511130467,1,JordanManual,cryptocompare,SPR,2017-12-29 00:03:10.941783
+CCCAGG,SPR,LTC,319.85977749,1.7405467,1,JordanManual,cryptocompare,SPR,2017-12-29 00:03:10.941783
+CCCAGG,SPR,RUR,65.25924348,5987.9174414,1,JordanManual,cryptocompare,SPR,2017-12-29 00:03:10.941783
+CCCAGG,SPR,DOGE,10.69618844,1087.26291919,1,JordanManual,cryptocompare,SPR,2017-12-29 00:03:10.941783
+CCCAGG,SPR,USD,1.24046785,0.868327495,1,JordanManual,cryptocompare,SPR,2017-12-29 00:03:10.941783
+CCCAGG,SPR,WAVES,0.007,0.00028000021,1,JordanManual,cryptocompare,SPR,2017-12-29 00:03:10.941783

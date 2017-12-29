@@ -1,0 +1,7 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ADC,BTC,2284130.69454,0.653709304813,1,JordanManual,cryptocompare,ADC,2017-12-29 00:03:29.329942
+CCCAGG,ADC,DOGE,137952.82329,80804.46813,1,JordanManual,cryptocompare,ADC,2017-12-29 00:03:29.329942
+CCCAGG,ADC,LTC,13891.4213904,0.24892769,1,JordanManual,cryptocompare,ADC,2017-12-29 00:03:29.329942
+CCCAGG,ADC,ETH,10000.0,0.1472,1,JordanManual,cryptocompare,ADC,2017-12-29 00:03:29.329942
+CCCAGG,ADC,USD,845.37597468,4.2268798734,1,JordanManual,cryptocompare,ADC,2017-12-29 00:03:29.329942
+CCCAGG,ADC,RUR,54.91042436,8.9355641831,1,JordanManual,cryptocompare,ADC,2017-12-29 00:03:29.329942

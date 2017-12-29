@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SKIN,BTC,663255.025195,0.71464683,1,JordanManual,cryptocompare,SKIN,2017-12-29 00:02:47.319644
+CCCAGG,SKIN,LTC,38200.0,3.15544614,1,JordanManual,cryptocompare,SKIN,2017-12-29 00:02:47.319644
+CCCAGG,SKIN,ETH,13010.575376,0.233855768332,1,JordanManual,cryptocompare,SKIN,2017-12-29 00:02:47.319644
+CCCAGG,SKIN,DOGE,263.84004761,496.71099814,1,JordanManual,cryptocompare,SKIN,2017-12-29 00:02:47.319644

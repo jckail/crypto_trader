@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,DAXX,BTC,2837181.44597,0.4143645,1,JordanManual,cryptocompare,DAXX,2017-12-29 00:03:19.271304
+CCCAGG,DAXX,DOGE,254676.344464,68946.4622847,1,JordanManual,cryptocompare,DAXX,2017-12-29 00:03:19.271304
+CCCAGG,DAXX,LTC,84234.7934288,0.75234704,1,JordanManual,cryptocompare,DAXX,2017-12-29 00:03:19.271304

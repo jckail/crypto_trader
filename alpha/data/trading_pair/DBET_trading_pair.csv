@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,DBET,BTC,282697.680077,5.14435933,1,JordanManual,cryptocompare,DBET,2017-12-29 00:03:12.054651
+CCCAGG,DBET,ETH,43029.1057632,10.7542112824,1,JordanManual,cryptocompare,DBET,2017-12-29 00:03:12.054651
+CCCAGG,DBET,LTC,5744.57963831,6.32664235,1,JordanManual,cryptocompare,DBET,2017-12-29 00:03:12.054651
+CCCAGG,DBET,DOGE,253.8123724,8582.03435174,1,JordanManual,cryptocompare,DBET,2017-12-29 00:03:12.054651

@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,LDM,ETH,2432.46331077,0.731622275829,1,JordanManual,cryptocompare,LDM,2017-12-29 00:03:12.292213
+CCCAGG,LDM,USD,2342.53148962,501.916277336,1,JordanManual,cryptocompare,LDM,2017-12-29 00:03:12.292213
+CCCAGG,LDM,BTC,1933.19258368,0.0264679615736,1,JordanManual,cryptocompare,LDM,2017-12-29 00:03:12.292213
+CCCAGG,LDM,RUR,1226.16900389,18820.381775,1,JordanManual,cryptocompare,LDM,2017-12-29 00:03:12.292213

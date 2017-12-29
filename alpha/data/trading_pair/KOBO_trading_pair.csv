@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,KOBO,BTC,37430.1665789,0.131491195653,1,JordanManual,cryptocompare,KOBO,2017-12-29 00:03:10.893481
+CCCAGG,KOBO,LTC,3225.92893108,0.74819696,1,JordanManual,cryptocompare,KOBO,2017-12-29 00:03:10.893481
+CCCAGG,KOBO,DOGE,42.47546322,389.413759418,1,JordanManual,cryptocompare,KOBO,2017-12-29 00:03:10.893481
+CCCAGG,KOBO,USD,5.17167074,0.262764850004,1,JordanManual,cryptocompare,KOBO,2017-12-29 00:03:10.893481
+CCCAGG,KOBO,RUR,0.90000008,0.6390000658,1,JordanManual,cryptocompare,KOBO,2017-12-29 00:03:10.893481

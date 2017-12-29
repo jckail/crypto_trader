@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,TRIA,ETH,759.756,24.04534535,1,JordanManual,cryptocompare,TRIA,2017-12-29 00:03:11.971612

@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BOMB,DOGE,60050.0,130.8772055,1,JordanManual,cryptocompare,BOMB,2017-12-29 00:03:14.812114
+CCCAGG,BOMB,USD,18789.3592531,1.46908,1,JordanManual,cryptocompare,BOMB,2017-12-29 00:03:14.812114
+CCCAGG,BOMB,BTC,10010.0,0.0001001,1,JordanManual,cryptocompare,BOMB,2017-12-29 00:03:14.812114
+CCCAGG,BOMB,RUR,2108.29544012,3.45266428999,1,JordanManual,cryptocompare,BOMB,2017-12-29 00:03:14.812114
+CCCAGG,BOMB,WAVES,1500.0,0.00164,1,JordanManual,cryptocompare,BOMB,2017-12-29 00:03:14.812114

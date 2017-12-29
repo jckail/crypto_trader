@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SOAR,BTC,474062.715394,1.02428413471,1,JordanManual,cryptocompare,SOAR,2017-12-29 00:03:12.703226

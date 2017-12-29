@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SOIL,BTC,398993.462233,1.02474452,1,JordanManual,cryptocompare,SOIL,2017-12-29 00:02:48.362724
+CCCAGG,SOIL,LTC,18208.8633825,3.1342604,1,JordanManual,cryptocompare,SOIL,2017-12-29 00:02:48.362724
+CCCAGG,SOIL,DOGE,5100.66034235,22243.957077,1,JordanManual,cryptocompare,SOIL,2017-12-29 00:02:48.362724

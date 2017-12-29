@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PRM,BTC,60104.2194447,0.0100819726775,1,JordanManual,cryptocompare,PRM,2017-12-29 00:02:47.603054
+CCCAGG,PRM,ETH,645.61020412,0.000129122040824,1,JordanManual,cryptocompare,PRM,2017-12-29 00:02:47.603054
+CCCAGG,PRM,RUR,90.05221627,10.8062659524,1,JordanManual,cryptocompare,PRM,2017-12-29 00:02:47.603054
+CCCAGG,PRM,DOGE,5.0276164,0.246353304152,1,JordanManual,cryptocompare,PRM,2017-12-29 00:02:47.603054

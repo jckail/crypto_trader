@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,RMS,BTC,20.22246293,0.00032383878266,1,JordanManual,cryptocompare,RMS,2017-12-29 00:02:57.175626

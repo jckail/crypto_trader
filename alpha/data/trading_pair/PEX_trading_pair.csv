@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PEX,BTC,1261.62172776,0.000918461201346,1,JordanManual,cryptocompare,PEX,2017-12-29 00:03:00.200836
+CCCAGG,PEX,DOGE,993.01485909,1340.57010942,1,JordanManual,cryptocompare,PEX,2017-12-29 00:03:00.200836
+CCCAGG,PEX,WAVES,160.37325467,1.32137911909,1,JordanManual,cryptocompare,PEX,2017-12-29 00:03:00.200836
+CCCAGG,PEX,RUR,59.39299909,94.547296191,1,JordanManual,cryptocompare,PEX,2017-12-29 00:03:00.200836
+CCCAGG,PEX,USD,46.52699289,1.44233677959,1,JordanManual,cryptocompare,PEX,2017-12-29 00:03:00.200836

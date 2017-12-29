@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PRG,BTC,48259.8811302,1.8201594401,1,JordanManual,cryptocompare,PRG,2017-12-29 00:02:53.689708
+CCCAGG,PRG,ETH,26922.0584998,20.6560834994,1,JordanManual,cryptocompare,PRG,2017-12-29 00:02:53.689708
+CCCAGG,PRG,USD,23089.9381938,11933.5920114,1,JordanManual,cryptocompare,PRG,2017-12-29 00:02:53.689708

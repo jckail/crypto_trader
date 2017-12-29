@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BUCKS,BTC,704.75568351,0.0776133368634,1,JordanManual,cryptocompare,BUCKS,2017-12-29 00:03:29.858576
+CCCAGG,BUCKS,LTC,31.82703202,0.21565312,1,JordanManual,cryptocompare,BUCKS,2017-12-29 00:03:29.858576
+CCCAGG,BUCKS,DOGE,8.4946371,1837.11017084,1,JordanManual,cryptocompare,BUCKS,2017-12-29 00:03:29.858576

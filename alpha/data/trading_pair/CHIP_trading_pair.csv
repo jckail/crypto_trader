@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,CHIP,RUR,627.58495372,115.68265389,1,JordanManual,cryptocompare,CHIP,2017-12-29 00:03:33.144903
+CCCAGG,CHIP,BTC,607.39860477,0.00015792363724,1,JordanManual,cryptocompare,CHIP,2017-12-29 00:03:33.144903
+CCCAGG,CHIP,WAVES,0.24600005,2.4600005e-05,1,JordanManual,cryptocompare,CHIP,2017-12-29 00:03:33.144903

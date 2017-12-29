@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,CNX,BTC,4586.20891718,1.40588482346,1,JordanManual,cryptocompare,CNX,2017-12-29 00:02:56.746718
+CCCAGG,CNX,ETH,4266.16580457,0.400587790038,1,JordanManual,cryptocompare,CNX,2017-12-29 00:02:56.746718
+CCCAGG,CNX,RUR,14.51053244,4643.3703808,1,JordanManual,cryptocompare,CNX,2017-12-29 00:02:56.746718
+CCCAGG,CNX,USD,0.64739787,3.51752896866,1,JordanManual,cryptocompare,CNX,2017-12-29 00:02:56.746718
+CCCAGG,CNX,WAVES,0.02655959,0.000738364304281,1,JordanManual,cryptocompare,CNX,2017-12-29 00:02:56.746718

@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,CND,BNB,108603016.77,619713.733183,1,JordanManual,cryptocompare,CND,2017-12-29 00:03:00.594235
+CCCAGG,CND,BTC,70196107.712,251.185838761,1,JordanManual,cryptocompare,CND,2017-12-29 00:03:00.594235
+CCCAGG,CND,ETH,22316849.17,1594.08408734,1,JordanManual,cryptocompare,CND,2017-12-29 00:03:00.594235
+CCCAGG,CND,USD,136057.0,6691.8747185,1,JordanManual,cryptocompare,CND,2017-12-29 00:03:00.594235

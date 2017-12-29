@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,EVIL,BTC,90440.8508332,0.106469658195,1,JordanManual,cryptocompare,EVIL,2017-12-29 00:02:52.612495
+CCCAGG,EVIL,DOGE,260.20548811,444.80863947,1,JordanManual,cryptocompare,EVIL,2017-12-29 00:02:52.612495
+CCCAGG,EVIL,RUR,52.44791675,26.223958375,1,JordanManual,cryptocompare,EVIL,2017-12-29 00:02:52.612495
+CCCAGG,EVIL,WAVES,2.90050668,0.000870558074935,1,JordanManual,cryptocompare,EVIL,2017-12-29 00:02:52.612495

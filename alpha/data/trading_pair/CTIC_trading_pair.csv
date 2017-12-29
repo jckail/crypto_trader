@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,CTIC,BTC,22321.8675549,0.0035601649906,1,JordanManual,cryptocompare,CTIC,2017-12-29 00:03:30.735918
+CCCAGG,CTIC,DOGE,10504.6013629,7843.71031139,1,JordanManual,cryptocompare,CTIC,2017-12-29 00:03:30.735918
+CCCAGG,CTIC,RUR,960.56351884,171.757969901,1,JordanManual,cryptocompare,CTIC,2017-12-29 00:03:30.735918

@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,GREXIT,BTC,11845.7924089,0.00567152512633,1,JordanManual,cryptocompare,GREXIT,2017-12-29 00:02:49.224123

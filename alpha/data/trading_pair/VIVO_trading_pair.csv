@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,VIVO,BTC,15098.5172581,4.64057062,1,JordanManual,cryptocompare,VIVO,2017-12-29 00:03:02.711350
+CCCAGG,VIVO,DOGE,264.6611279,138852.571386,1,JordanManual,cryptocompare,VIVO,2017-12-29 00:03:02.711350
+CCCAGG,VIVO,LTC,212.56757095,4.03708887,1,JordanManual,cryptocompare,VIVO,2017-12-29 00:03:02.711350

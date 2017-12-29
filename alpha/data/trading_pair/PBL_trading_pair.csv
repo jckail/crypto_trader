@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PBL,BTC,93662.5777778,3.04955856,1,JordanManual,cryptocompare,PBL,2017-12-29 00:03:12.122699
+CCCAGG,PBL,ETH,30026.2034368,20.7451135737,1,JordanManual,cryptocompare,PBL,2017-12-29 00:03:12.122699
+CCCAGG,PBL,LTC,6241.38933316,12.62902885,1,JordanManual,cryptocompare,PBL,2017-12-29 00:03:12.122699
+CCCAGG,PBL,DOGE,821.33401548,51941.9486186,1,JordanManual,cryptocompare,PBL,2017-12-29 00:03:12.122699

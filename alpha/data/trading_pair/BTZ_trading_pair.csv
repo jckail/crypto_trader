@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BTZ,BTC,3450.43655103,0.00115936403111,1,JordanManual,cryptocompare,BTZ,2017-12-29 00:03:15.196038

@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,OMC,RUR,0.11911493,0.595574655956,1,JordanManual,cryptocompare,OMC,2017-12-29 00:03:25.126494

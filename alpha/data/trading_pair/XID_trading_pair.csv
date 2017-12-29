@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,XID,ETH,391487.241258,143.516700208,1,JordanManual,cryptocompare,XID,2017-12-29 00:02:47.366009
+CCCAGG,XID,USDT,330450.066705,85022.3193538,1,JordanManual,cryptocompare,XID,2017-12-29 00:02:47.366009
+CCCAGG,XID,BTC,175148.08538,3.18892289756,1,JordanManual,cryptocompare,XID,2017-12-29 00:02:47.366009
+CCCAGG,XID,DOGE,0.21761754,21.95608746,1,JordanManual,cryptocompare,XID,2017-12-29 00:02:47.366009

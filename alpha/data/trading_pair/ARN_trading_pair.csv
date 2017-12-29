@@ -1,0 +1,3 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ARN,BTC,1102575.0,59.0147529,1,JordanManual,cryptocompare,ARN,2017-12-29 00:03:00.389130
+CCCAGG,ARN,ETH,242146.254961,260.613713027,1,JordanManual,cryptocompare,ARN,2017-12-29 00:03:00.389130

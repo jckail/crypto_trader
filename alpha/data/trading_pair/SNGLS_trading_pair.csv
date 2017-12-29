@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SNGLS,BTC,7790167.94529,103.092411734,1,JordanManual,cryptocompare,SNGLS,2017-12-29 00:02:51.445228
+CCCAGG,SNGLS,ETH,2098868.82895,556.293689398,1,JordanManual,cryptocompare,SNGLS,2017-12-29 00:02:51.445228
+CCCAGG,SNGLS,USDT,178916.781534,33360.7356975,1,JordanManual,cryptocompare,SNGLS,2017-12-29 00:02:51.445228
+CCCAGG,SNGLS,USD,19.99999999,3.999999998,1,JordanManual,cryptocompare,SNGLS,2017-12-29 00:02:51.445228

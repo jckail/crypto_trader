@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,KTK,RUR,6.98138217,244.419210288,1,JordanManual,cryptocompare,KTK,2017-12-29 00:03:24.847247
+CCCAGG,KTK,BTC,5.38457841,0.000123252999805,1,JordanManual,cryptocompare,KTK,2017-12-29 00:03:24.847247
+CCCAGG,KTK,USD,0.29964079,0.8300049883,1,JordanManual,cryptocompare,KTK,2017-12-29 00:03:24.847247

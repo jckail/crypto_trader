@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,AMS,BTC,259648.46179,0.128973437435,1,JordanManual,cryptocompare,AMS,2017-12-29 00:02:45.729946
+CCCAGG,AMS,USD,9085.31909116,70.5500567743,1,JordanManual,cryptocompare,AMS,2017-12-29 00:02:45.729946
+CCCAGG,AMS,WAVES,69.204712,0.0267894789602,1,JordanManual,cryptocompare,AMS,2017-12-29 00:02:45.729946
+CCCAGG,AMS,RUR,20.00000005,9.00000162109,1,JordanManual,cryptocompare,AMS,2017-12-29 00:02:45.729946

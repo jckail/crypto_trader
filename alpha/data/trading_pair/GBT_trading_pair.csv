@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,GBT,RUR,371.17647057,100.017647092,1,JordanManual,cryptocompare,GBT,2017-12-29 00:02:47.858715

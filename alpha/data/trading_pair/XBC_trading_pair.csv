@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,XBC,BTC,1078.05630406,8.2862621,1,JordanManual,cryptocompare,XBC,2017-12-29 00:03:25.302168
+CCCAGG,XBC,LTC,2.76766786,1.19566393,1,JordanManual,cryptocompare,XBC,2017-12-29 00:03:25.302168
+CCCAGG,XBC,DOGE,0.40333517,5465.74530729,1,JordanManual,cryptocompare,XBC,2017-12-29 00:03:25.302168

@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BTCS,ETH,721919.937331,4.0750557925,1,JordanManual,cryptocompare,BTCS,2017-12-29 00:03:29.650467
+CCCAGG,BTCS,BTC,117512.701977,0.70107335,1,JordanManual,cryptocompare,BTCS,2017-12-29 00:03:29.650467
+CCCAGG,BTCS,DOGE,13302.688643,122810.290668,1,JordanManual,cryptocompare,BTCS,2017-12-29 00:03:29.650467
+CCCAGG,BTCS,LTC,3391.95651164,1.21773506,1,JordanManual,cryptocompare,BTCS,2017-12-29 00:03:29.650467

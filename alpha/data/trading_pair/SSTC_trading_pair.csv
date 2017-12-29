@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SSTC,USD,11761.5545,3.52846635,1,JordanManual,cryptocompare,SSTC,2017-12-29 00:02:48.755034
+CCCAGG,SSTC,RUR,8234.17665852,137.803743034,1,JordanManual,cryptocompare,SSTC,2017-12-29 00:02:48.755034
+CCCAGG,SSTC,ETH,1761.55,0.00070462,1,JordanManual,cryptocompare,SSTC,2017-12-29 00:02:48.755034
+CCCAGG,SSTC,WAVES,5.0,0.000116,1,JordanManual,cryptocompare,SSTC,2017-12-29 00:02:48.755034

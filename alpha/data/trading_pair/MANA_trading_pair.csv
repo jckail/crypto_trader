@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,MANA,BTC,108132661.777,657.272010971,1,JordanManual,cryptocompare,MANA,2017-12-29 00:02:47.853201
+CCCAGG,MANA,ETH,24398484.8935,2972.49145805,1,JordanManual,cryptocompare,MANA,2017-12-29 00:02:47.853201
+CCCAGG,MANA,USDT,1171199.39354,98193.6370639,1,JordanManual,cryptocompare,MANA,2017-12-29 00:02:47.853201
+CCCAGG,MANA,USD,115685.87,10987.3356742,1,JordanManual,cryptocompare,MANA,2017-12-29 00:02:47.853201

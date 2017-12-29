@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BASH,BTC,5505.88695754,0.00127637900567,1,JordanManual,cryptocompare,BASH,2017-12-29 00:03:00.370446
+CCCAGG,BASH,USD,1016.75608332,7.04773311004,1,JordanManual,cryptocompare,BASH,2017-12-29 00:03:00.370446
+CCCAGG,BASH,RUR,88.0,37.04799208,1,JordanManual,cryptocompare,BASH,2017-12-29 00:03:00.370446

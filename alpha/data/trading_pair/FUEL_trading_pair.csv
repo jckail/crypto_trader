@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,FUEL,BTC,83661069.3,915.07024014,1,JordanManual,cryptocompare,FUEL,2017-12-29 00:02:58.205231
+CCCAGG,FUEL,ETH,21317067.0086,4620.93338834,1,JordanManual,cryptocompare,FUEL,2017-12-29 00:02:58.205231
+CCCAGG,FUEL,USD,193583.0,28304.7326,1,JordanManual,cryptocompare,FUEL,2017-12-29 00:02:58.205231

@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SCASH,BTC,2770.50184155,0.00235593855612,1,JordanManual,cryptocompare,SCASH,2017-12-29 00:03:00.577172
+CCCAGG,SCASH,USD,1791.65712813,22.6739717956,1,JordanManual,cryptocompare,SCASH,2017-12-29 00:03:00.577172
+CCCAGG,SCASH,RUR,530.17740833,1118.36213158,1,JordanManual,cryptocompare,SCASH,2017-12-29 00:03:00.577172
+CCCAGG,SCASH,DOGE,28.33223946,172.332239697,1,JordanManual,cryptocompare,SCASH,2017-12-29 00:03:00.577172

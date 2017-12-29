@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BSD,BTC,477998.952245,44.4289311621,1,JordanManual,cryptocompare,BSD,2017-12-29 00:02:50.132341
+CCCAGG,BSD,DOGE,506.99721704,84146.9087422,1,JordanManual,cryptocompare,BSD,2017-12-29 00:02:50.132341
+CCCAGG,BSD,USDT,168.77630561,234.38496561,1,JordanManual,cryptocompare,BSD,2017-12-29 00:02:50.132341

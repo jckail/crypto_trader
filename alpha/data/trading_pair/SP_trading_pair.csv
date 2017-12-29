@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SP,USD,306946.007994,4.97480711047,1,JordanManual,cryptocompare,SP,2017-12-29 00:03:00.295692
+CCCAGG,SP,RUR,34490.8763944,142.208326015,1,JordanManual,cryptocompare,SP,2017-12-29 00:03:00.295692
+CCCAGG,SP,DOGE,5000.21500924,49.9999999999,1,JordanManual,cryptocompare,SP,2017-12-29 00:03:00.295692

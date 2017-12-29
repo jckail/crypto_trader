@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,KRONE,BTC,82143.8781802,0.15839588,1,JordanManual,cryptocompare,KRONE,2017-12-29 00:02:51.710506
+CCCAGG,KRONE,DOGE,27617.3918276,114751.360282,1,JordanManual,cryptocompare,KRONE,2017-12-29 00:02:51.710506
+CCCAGG,KRONE,LTC,5920.7931509,0.60841715,1,JordanManual,cryptocompare,KRONE,2017-12-29 00:02:51.710506

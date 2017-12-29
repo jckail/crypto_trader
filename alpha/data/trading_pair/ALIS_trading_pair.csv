@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ALIS,BTC,155487.89467,6.16056711,1,JordanManual,cryptocompare,ALIS,2017-12-29 00:03:01.495055
+CCCAGG,ALIS,DOGE,923.2819173,76666.3335851,1,JordanManual,cryptocompare,ALIS,2017-12-29 00:03:01.495055
+CCCAGG,ALIS,LTC,647.67838318,1.73385459,1,JordanManual,cryptocompare,ALIS,2017-12-29 00:03:01.495055
+CCCAGG,ALIS,ETH,219.527154888,0.158282152054,1,JordanManual,cryptocompare,ALIS,2017-12-29 00:03:01.495055

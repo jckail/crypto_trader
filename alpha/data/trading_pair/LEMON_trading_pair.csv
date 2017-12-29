@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,LEMON,BTC,1841682.03865,0.83525267,1,JordanManual,cryptocompare,LEMON,2017-12-29 00:02:49.112634
+CCCAGG,LEMON,DOGE,45167.9195203,42055.9602721,1,JordanManual,cryptocompare,LEMON,2017-12-29 00:02:49.112634
+CCCAGG,LEMON,LTC,33159.9828867,1.06091988,1,JordanManual,cryptocompare,LEMON,2017-12-29 00:02:49.112634

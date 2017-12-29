@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ARK,BTC,1479819.39906,688.534535527,1,JordanManual,cryptocompare,ARK,2017-12-29 00:03:01.356257
+CCCAGG,ARK,ETH,58717.69,548.35320279,1,JordanManual,cryptocompare,ARK,2017-12-29 00:03:01.356257
+CCCAGG,ARK,LTC,1620.49187988,44.01917507,1,JordanManual,cryptocompare,ARK,2017-12-29 00:03:01.356257
+CCCAGG,ARK,DOGE,985.48547083,806664.104406,1,JordanManual,cryptocompare,ARK,2017-12-29 00:03:01.356257
+CCCAGG,ARK,USDT,220.4236154,1428.71332062,1,JordanManual,cryptocompare,ARK,2017-12-29 00:03:01.356257

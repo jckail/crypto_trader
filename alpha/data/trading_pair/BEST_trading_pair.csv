@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BEST,BTC,148807.062119,0.0477291406156,1,JordanManual,cryptocompare,BEST,2017-12-29 00:03:26.270840
+CCCAGG,BEST,DOGE,4437.22104772,2259.30155553,1,JordanManual,cryptocompare,BEST,2017-12-29 00:03:26.270840
+CCCAGG,BEST,LTC,827.52047687,0.01547463,1,JordanManual,cryptocompare,BEST,2017-12-29 00:03:26.270840
+CCCAGG,BEST,RUR,61.3496945,29.999999997,1,JordanManual,cryptocompare,BEST,2017-12-29 00:03:26.270840

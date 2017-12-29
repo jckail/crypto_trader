@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,TTC,BTC,22473968.4442,0.726852073857,1,JordanManual,cryptocompare,TTC,2017-12-29 00:03:20.712432
+CCCAGG,TTC,LTC,159110.991908,0.51717272,1,JordanManual,cryptocompare,TTC,2017-12-29 00:03:20.712432
+CCCAGG,TTC,DOGE,119399.103135,9997.92191746,1,JordanManual,cryptocompare,TTC,2017-12-29 00:03:20.712432
+CCCAGG,TTC,RUR,17170.8175109,471.552984154,1,JordanManual,cryptocompare,TTC,2017-12-29 00:03:20.712432
+CCCAGG,TTC,WAVES,4190.25282767,0.00741677022273,1,JordanManual,cryptocompare,TTC,2017-12-29 00:03:20.712432

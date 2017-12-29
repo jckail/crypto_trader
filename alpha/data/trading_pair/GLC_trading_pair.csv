@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,GLC,DOGE,117.12183768,96.4544835864,1,JordanManual,cryptocompare,GLC,2017-12-29 00:03:20.265320
+CCCAGG,GLC,RUR,85.53792896,55.7962289138,1,JordanManual,cryptocompare,GLC,2017-12-29 00:03:20.265320
+CCCAGG,GLC,WAVES,2.64289628,0.0013778545775,1,JordanManual,cryptocompare,GLC,2017-12-29 00:03:20.265320

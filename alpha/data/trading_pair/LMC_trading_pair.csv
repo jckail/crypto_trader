@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,LMC,BTC,9136001.31709,79.05782692,1,JordanManual,cryptocompare,LMC,2017-12-29 00:03:29.610877

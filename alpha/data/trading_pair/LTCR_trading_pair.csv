@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,LTCR,BTC,330494.749607,0.0346064858973,1,JordanManual,cryptocompare,LTCR,2017-12-29 00:03:11.319130
+CCCAGG,LTCR,USD,9423.34408691,17.9922758561,1,JordanManual,cryptocompare,LTCR,2017-12-29 00:03:11.319130
+CCCAGG,LTCR,RUR,1250.71504575,158.403444084,1,JordanManual,cryptocompare,LTCR,2017-12-29 00:03:11.319130
+CCCAGG,LTCR,DOGE,73.81522711,65.4741057084,1,JordanManual,cryptocompare,LTCR,2017-12-29 00:03:11.319130

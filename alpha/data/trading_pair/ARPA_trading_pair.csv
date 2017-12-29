@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ARPA,RUR,102.92531571,406.628389208,1,JordanManual,cryptocompare,ARPA,2017-12-29 00:03:26.334984

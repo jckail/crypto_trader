@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SLS,BTC,47095.3841326,295.80851409,1,JordanManual,cryptocompare,SLS,2017-12-29 00:02:48.482907

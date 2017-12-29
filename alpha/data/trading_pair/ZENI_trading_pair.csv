@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ZENI,BTC,6339823.04084,0.887726713498,1,JordanManual,cryptocompare,ZENI,2017-12-29 00:03:28.445960
+CCCAGG,ZENI,ETH,34032.982393,0.114308097483,1,JordanManual,cryptocompare,ZENI,2017-12-29 00:03:28.445960
+CCCAGG,ZENI,RUR,4216.20348442,565.286301754,1,JordanManual,cryptocompare,ZENI,2017-12-29 00:03:28.445960
+CCCAGG,ZENI,USD,2008.86245037,5.70335958795,1,JordanManual,cryptocompare,ZENI,2017-12-29 00:03:28.445960

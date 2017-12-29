@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,RUST,BTC,325.76410845,0.000719999999978,1,JordanManual,cryptocompare,RUST,2017-12-29 00:02:51.859203

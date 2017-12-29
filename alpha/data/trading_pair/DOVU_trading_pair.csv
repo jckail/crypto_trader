@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,DOVU,ETH,138265.984372,32.4637607929,1,JordanManual,cryptocompare,DOVU,2017-12-29 00:03:10.819989

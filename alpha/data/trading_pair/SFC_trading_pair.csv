@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SFC,BTC,167867.320867,0.10727343,1,JordanManual,cryptocompare,SFC,2017-12-29 00:03:15.901375
+CCCAGG,SFC,LTC,2729.42020305,0.11664951,1,JordanManual,cryptocompare,SFC,2017-12-29 00:03:15.901375
+CCCAGG,SFC,DOGE,59.96654863,101.6469053,1,JordanManual,cryptocompare,SFC,2017-12-29 00:03:15.901375

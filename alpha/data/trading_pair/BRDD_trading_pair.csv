@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BRDD,BTC,663.03904296,0.000271846007614,1,JordanManual,cryptocompare,BRDD,2017-12-29 00:03:07.037515
+CCCAGG,BRDD,RUR,475.69548432,272.843216876,1,JordanManual,cryptocompare,BRDD,2017-12-29 00:03:07.037515
+CCCAGG,BRDD,USD,88.0,0.87999868,1,JordanManual,cryptocompare,BRDD,2017-12-29 00:03:07.037515
+CCCAGG,BRDD,ETH,87.57627118,0.00457265254236,1,JordanManual,cryptocompare,BRDD,2017-12-29 00:03:07.037515

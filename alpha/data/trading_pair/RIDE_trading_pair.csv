@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,RIDE,BTC,1159909.34381,0.045169399235,1,JordanManual,cryptocompare,RIDE,2017-12-29 00:03:14.854008
+CCCAGG,RIDE,RUR,212957.190125,8158.08071615,1,JordanManual,cryptocompare,RIDE,2017-12-29 00:03:14.854008
+CCCAGG,RIDE,USD,12101.5640305,8.45338814404,1,JordanManual,cryptocompare,RIDE,2017-12-29 00:03:14.854008
+CCCAGG,RIDE,ETH,2001.63265306,0.00169137959184,1,JordanManual,cryptocompare,RIDE,2017-12-29 00:03:14.854008

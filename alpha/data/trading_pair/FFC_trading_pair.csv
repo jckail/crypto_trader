@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,FFC,LTC,2795042.73033,4.43063847,1,JordanManual,cryptocompare,FFC,2017-12-29 00:03:15.660558
+CCCAGG,FFC,DOGE,1803588.385,90704.4048834,1,JordanManual,cryptocompare,FFC,2017-12-29 00:03:15.660558
+CCCAGG,FFC,RUR,933.97671424,19.6795342848,1,JordanManual,cryptocompare,FFC,2017-12-29 00:03:15.660558
+CCCAGG,FFC,WAVES,234.10934426,0.000664575784103,1,JordanManual,cryptocompare,FFC,2017-12-29 00:03:15.660558

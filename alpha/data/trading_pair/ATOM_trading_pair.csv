@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ATOM,BTC,530189.227525,1.99107018541,1,JordanManual,cryptocompare,ATOM,2017-12-29 00:02:57.026158
+CCCAGG,ATOM,RUR,1295.47781891,5526.4132981,1,JordanManual,cryptocompare,ATOM,2017-12-29 00:02:57.026158
+CCCAGG,ATOM,DOGE,879.78137197,5214.12965973,1,JordanManual,cryptocompare,ATOM,2017-12-29 00:02:57.026158
+CCCAGG,ATOM,USD,4.44327391,0.399893718812,1,JordanManual,cryptocompare,ATOM,2017-12-29 00:02:57.026158
