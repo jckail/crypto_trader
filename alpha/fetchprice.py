@@ -47,7 +47,8 @@ class GetDtlPrice(object):
                         pass
                 else:
                     pass
-            except:  # This is the correct syntax
+            except Exception as e:
+                print(e) # This is the correct syntax
                 error_symbols.append(symbol)
                 #.append(symbol)
                 sleep(0.2)
@@ -105,9 +106,8 @@ class GetDtlPrice(object):
                 df.to_csv(my_file, index = False) #need to add this
             else:
                 pass
-
-
-        except:
+        except Exception as e:
+            print(e)
             print 'Error: GetDtlPrice.main'
 
     print 'end: GetDtlPrice.main'

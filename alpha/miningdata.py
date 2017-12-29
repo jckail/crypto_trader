@@ -26,88 +26,94 @@ class GetMineData(object):
         #print data
 
     def coin_miner_data(self):
+        try:
+            data = self.data
+            cwd = os.getcwd()
+            source = 'cryptocompare'
 
-        data = self.data
-        cwd = os.getcwd()
-        source = 'cryptocompare'
+            if data["CoinData"]:
+                keys = data['CoinData'].keys()
 
-        if data["CoinData"]:
-            keys = data['CoinData'].keys()
+                for key in tqdm(keys,desc='coin_miner_data'):
+                    frames = []
+                    #print key
+                    sub =  data['CoinData'][key]
+                    #print sub
+                    #print '----------'
 
-            for key in tqdm(keys,desc='coin_miner_data'):
+                    df = p.DataFrame.from_dict(sub,orient='Index', dtype=None)
+                    df = p.DataFrame.transpose(df)
+                    df = df.assign (timestamp_api_call = dt.datetime.now(),source = source,key = key )
+                    frames.append(df)
+
+                    my_file = cwd+'/data/mining_data/%s_mining.csv' % key
+
+                    if os.path.isfile(my_file):
+                        df_resident = p.read_csv(my_file)
+                        frames.append(df_resident)
+                    else:
+                        pass
+                    #print df
+                    df = p.concat(frames)
+                    df = df.drop_duplicates(['CoinName','Points','Type','Points','key'],  keep='last')
+                    df = df.sort_values('key')
+                    df = df.reset_index(drop=True)
+                    #print '--------'
+                    #print df
+                    if not df.empty:
+                        #print my_file
+                        df.to_csv(my_file, index = False,  encoding= 'utf-8')
+                        pass #print 'Updated: '+str(my_file)
+                    else:
+                        print 'No '+str(key)+' data: '+key
+            else:
+                print 'No coin_miner_data'
+        except ValueError:
+            print ValueError
+
+
+    def miner_data(self):
+        try:
+            data = self.data
+            cwd = os.getcwd()
+            source = 'cryptocompare'
+            if data["MiningData"]:
+                keys = data['MiningData'].keys()
                 frames = []
-                #print key
-                sub =  data['CoinData'][key]
-                #print sub
-                #print '----------'
 
-                df = p.DataFrame.from_dict(sub,orient='Index', dtype=None)
-                df = p.DataFrame.transpose(df)
-                df = df.assign (timestamp_api_call = dt.datetime.now(),source = source,key = key )
-                frames.append(df)
+                for key in tqdm(keys,desc='miner_data'):
+                    #print '----------'
+                    #print key
+                    sub =  data['MiningData'][key]
+                    #print '----------'
 
-                my_file = cwd+'/data/mining_data/%s_mining.csv' % key
+                    df = p.DataFrame.from_dict(sub,orient='Index', dtype=None)
+                    df = p.DataFrame.transpose(df)
+                    df = df.assign (timestamp_api_call = dt.datetime.now(),source = source,key = key )
+                    frames.append(df)
+
+                my_file = cwd+'/data/mining_data/mining_equipment.csv'
 
                 if os.path.isfile(my_file):
                     df_resident = p.read_csv(my_file)
                     frames.append(df_resident)
                 else:
                     pass
-                #print df
+
                 df = p.concat(frames)
-                df = df.drop_duplicates(['CoinName','Points','Type','Points','key'],  keep='last')
+                df = df.drop_duplicates(['Company','Cost','CurrenciesAvailable','HashesPerSecond','Name'],  keep='last')
                 df = df.sort_values('key')
                 df = df.reset_index(drop=True)
-                #print '--------'
-                #print df
+
                 if not df.empty:
-                    #print my_file
-                    df.to_csv(my_file, index = False)
+                    df.to_csv(my_file, index = False,  encoding= 'utf-8' ) #need to add this
                     pass #print 'Updated: '+str(my_file)
                 else:
-                    print 'No '+str(key)+' data: '+key
-        else:
-            print 'No coin_miner_data'
-
-    def miner_data(self):
-        data = self.data
-        cwd = os.getcwd()
-        source = 'cryptocompare'
-        if data["MiningData"]:
-            keys = data['MiningData'].keys()
-            frames = []
-
-            for key in tqdm(keys,desc='miner_data'):
-                #print '----------'
-                #print key
-                sub =  data['MiningData'][key]
-                #print '----------'
-
-                df = p.DataFrame.from_dict(sub,orient='Index', dtype=None)
-                df = p.DataFrame.transpose(df)
-                df = df.assign (timestamp_api_call = dt.datetime.now(),source = source,key = key )
-                frames.append(df)
-
-            my_file = cwd+'/data/mining_data/mining_equipment.csv'
-
-            if os.path.isfile(my_file):
-                df_resident = p.read_csv(my_file)
-                frames.append(df_resident)
+                    print 'No data: '
             else:
-                pass
-
-            df = p.concat(frames)
-            df = df.drop_duplicates(['Company','Cost','CurrenciesAvailable','HashesPerSecond','Name'],  keep='last')
-            df = df.sort_values('key')
-            df = df.reset_index(drop=True)
-
-            if not df.empty:
-                df.to_csv(my_file, index = False ) #need to add this
-                pass #print 'Updated: '+str(my_file)
-            else:
-                print 'No data: '
-        else:
-            print 'no miner_data'
+                print 'no miner_data'
+        except Exception as e:
+            print(e)
 
     def main(self):
         """
@@ -120,9 +126,8 @@ class GetMineData(object):
             gmd.coin_miner_data()
             gmd.miner_data()
 
-
-        except:
-            print 'Error: GetMineData.main'
+        except Exception as e:
+            print(e)
 
         print 'end: GetMineData.main'
 

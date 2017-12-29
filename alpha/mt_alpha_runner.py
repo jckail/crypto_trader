@@ -92,12 +92,13 @@ class AlphaRunner(object):
 
                     elif self.runfocus_symbols_only == 'Y':
                         ls_has = self.focus_symbols
-                except ValueError:
+                except Exception as e:
+                    print(e)
                     print 'error getting symbol_list'
 
                 try:
                     x = len(ls_has)
-                    ls_has = ls_has[:200]
+                    ls_has = ls_has
                     print '--------------------------------------------------------------------------'
                     print 'Evaluating: '+str(x)
                     print '--------------------------------------------------------------------------'
@@ -155,11 +156,13 @@ class AlphaRunner(object):
                         #multi#thread  0:00:21.039896
                         #full run mutli #thread
 
-                except ValueError:
+                except Exception as e:
+                    print(e)
                     print 'error on processing dtl, hist'
                 #askcurrentprice from has price/ if focus_symbols passed
 
-            except ValueError:
+            except Exception as e:
+                print(e)
                 print "ERROR: validate_coin_get_price"
 
         else:

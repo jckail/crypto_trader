@@ -60,9 +60,9 @@ class GetMinuteHist(object):
                         pass
                 else:
                     pass
-            except:  # This is the correct syntax
+            except Exception as e:
+                print(e)  # This is the correct syntax
                 error_symbols.append(symbol)
-                #.append(symbol)
                 sleep(0.2)
 
     def main(self):

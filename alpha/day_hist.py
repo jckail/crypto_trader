@@ -60,7 +60,8 @@ class GetDayHist(object):
                         pass
                 else:
                     pass
-            except:  # This is the correct syntax
+            except Exception as e:
+                print(e)
                 error_symbols.append(symbol)
                 #.append(symbol)
                 sleep(0.2)
