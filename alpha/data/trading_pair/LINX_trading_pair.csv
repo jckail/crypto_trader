@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,LINX,BTC,356329.58364,3.93946465,1,JordanManual,cryptocompare,LINX,2017-12-29 00:11:02.808261
+CCCAGG,LINX,LTC,3042.1471001,2.17583954,1,JordanManual,cryptocompare,LINX,2017-12-29 00:11:02.808261
+CCCAGG,LINX,DOGE,1883.18021348,35193.1427509,1,JordanManual,cryptocompare,LINX,2017-12-29 00:11:02.808261

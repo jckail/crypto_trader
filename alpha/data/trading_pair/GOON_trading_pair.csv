@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,GOON,RUR,1,0.12109999,1,JordanManual,cryptocompare,GOON,2017-12-29 00:11:02.846622

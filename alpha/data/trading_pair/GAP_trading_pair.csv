@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,GAP,BTC,24913.9945471,0.04011899,1,JordanManual,cryptocompare,GAP,2017-12-29 00:10:59.092740
+CCCAGG,GAP,LTC,219.73671969,0.03296051,1,JordanManual,cryptocompare,GAP,2017-12-29 00:10:59.092740
+CCCAGG,GAP,DOGE,8.26642498,35.92814371,1,JordanManual,cryptocompare,GAP,2017-12-29 00:10:59.092740

@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,AGRS,BTC,298237.002114,59.29730319,1,JordanManual,cryptocompare,AGRS,2017-12-29 00:10:57.164301

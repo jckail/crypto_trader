@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BTPL,BTC,2981.60547588,0.00314673403228,1,JordanManual,cryptocompare,BTPL,2017-12-29 00:10:54.608347

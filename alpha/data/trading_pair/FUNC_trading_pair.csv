@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,FUNC,ETH,5677.62287073,0.547602622331,1,JordanManual,cryptocompare,FUNC,2017-12-29 00:10:55.205112
+CCCAGG,FUNC,USD,688.52434,50.6685061806,1,JordanManual,cryptocompare,FUNC,2017-12-29 00:10:55.205112
+CCCAGG,FUNC,BTC,271.78283497,0.00114314127951,1,JordanManual,cryptocompare,FUNC,2017-12-29 00:10:55.205112

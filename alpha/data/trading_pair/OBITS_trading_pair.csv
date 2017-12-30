@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,OBITS,BTC,1207.21889,0.102614179491,1,JordanManual,cryptocompare,OBITS,2017-12-29 00:10:55.248498

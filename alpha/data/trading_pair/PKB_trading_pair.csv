@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PKB,BTC,505033.640027,51.4897294316,1,JordanManual,cryptocompare,PKB,2017-12-29 00:11:34.498229
+CCCAGG,PKB,DOGE,149.98,12898.2800615,1,JordanManual,cryptocompare,PKB,2017-12-29 00:11:34.498229
+CCCAGG,PKB,USD,2.72771618,4.86412438328,1,JordanManual,cryptocompare,PKB,2017-12-29 00:11:34.498229
+CCCAGG,PKB,RUR,1.94370175,191.143725309,1,JordanManual,cryptocompare,PKB,2017-12-29 00:11:34.498229

@@ -49,7 +49,6 @@ class GetTradePair(object):
                     else:
                         pass
                     df = p.concat(frames)
-                    print 'x'
                     if not df.empty:
                         df = df.drop_duplicates(['exchange','fromSymbol','toSymbol','volume24h','volume24hTo','source','timestamp_api_call'], keep='last')
                         df = df.sort_values('timestamp_api_call')

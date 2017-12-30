@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,TAK,USD,23000.0079066,3.4772015742,1,JordanManual,cryptocompare,TAK,2017-12-29 00:11:24.890758
+CCCAGG,TAK,RUR,899.45913831,1.16751765719,1,JordanManual,cryptocompare,TAK,2017-12-29 00:11:24.890758
+CCCAGG,TAK,WAVES,478.00340002,0.00072178513403,1,JordanManual,cryptocompare,TAK,2017-12-29 00:11:24.890758

@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PLBT,BTC,30874.4409594,10.4931897478,1,JordanManual,cryptocompare,PLBT,2017-12-29 00:10:53.494375
+CCCAGG,PLBT,ETH,68.421912,0.4249155664,1,JordanManual,cryptocompare,PLBT,2017-12-29 00:10:53.494375
+CCCAGG,PLBT,USD,67.69980082,352.259166555,1,JordanManual,cryptocompare,PLBT,2017-12-29 00:10:53.494375

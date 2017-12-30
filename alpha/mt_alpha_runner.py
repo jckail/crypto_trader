@@ -100,7 +100,7 @@ class AlphaRunner(object):
                     tp = tradepair.GetTradePair(self.symbol_list,self.chunksize,self.cwd)
                     tp.main()
                     #thread3 = threading.Thread(target=tp.main(), args=())
-                    print'--------------------------------------------------------------------------xxx'
+                    print'--------------------------------------------------------------------------'
 
 
                     mh = minute_hist.GetMinuteHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
@@ -116,8 +116,8 @@ class AlphaRunner(object):
                     # thread6 = threading.Thread(target=dh.main(), args=())
                     print'--------------------------------------------------------------------------'
 
-                    gsd = social.GetSocialData(self.symbol_list,self.cwd)
-                    gsd.main()
+                    #gsd = social.GetSocialData(self.symbol_list,self.cwd)
+                    #gsd.main()
 
 
                         # non 0:00:35.364493

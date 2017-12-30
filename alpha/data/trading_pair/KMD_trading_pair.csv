@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,KMD,BTC,1103147.58126,669.753543679,1,JordanManual,cryptocompare,KMD,2017-12-29 00:11:02.741925
+CCCAGG,KMD,ETH,29215.82,356.93862701,1,JordanManual,cryptocompare,KMD,2017-12-29 00:11:02.741925
+CCCAGG,KMD,LTC,1009.46215897,34.99659422,1,JordanManual,cryptocompare,KMD,2017-12-29 00:11:02.741925
+CCCAGG,KMD,DOGE,123.74111894,128426.866951,1,JordanManual,cryptocompare,KMD,2017-12-29 00:11:02.741925

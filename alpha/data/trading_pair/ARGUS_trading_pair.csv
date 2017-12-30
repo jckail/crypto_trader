@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ARGUS,BTC,182607.254178,0.300302285928,1,JordanManual,cryptocompare,ARGUS,2017-12-29 00:11:33.540467
+CCCAGG,ARGUS,LTC,7783.42324046,1.19694728,1,JordanManual,cryptocompare,ARGUS,2017-12-29 00:11:33.540467
+CCCAGG,ARGUS,DOGE,2068.41266613,5889.98665971,1,JordanManual,cryptocompare,ARGUS,2017-12-29 00:11:33.540467
+CCCAGG,ARGUS,ETH,1999.99999999,0.00999999999995,1,JordanManual,cryptocompare,ARGUS,2017-12-29 00:11:33.540467
+CCCAGG,ARGUS,RUR,0.12,1.08,1,JordanManual,cryptocompare,ARGUS,2017-12-29 00:11:33.540467

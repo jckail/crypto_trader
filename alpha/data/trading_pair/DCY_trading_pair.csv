@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,DCY,BTC,1477501.03119,0.10438548,1,JordanManual,cryptocompare,DCY,2017-12-29 00:10:57.339992
+CCCAGG,DCY,LTC,202991.697093,0.94667699,1,JordanManual,cryptocompare,DCY,2017-12-29 00:10:57.339992
+CCCAGG,DCY,DOGE,12753.1918141,1580.92758684,1,JordanManual,cryptocompare,DCY,2017-12-29 00:10:57.339992

@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,VOX,BTC,28877238.605,1421.34854978,1,JordanManual,cryptocompare,VOX,2017-12-29 00:10:54.411561

@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,HBT,ETH,130165.530911,88.9666388084,1,JordanManual,cryptocompare,HBT,2017-12-29 00:11:02.761441

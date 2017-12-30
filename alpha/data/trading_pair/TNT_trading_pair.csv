@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,TNT,BTC,7580081.02353,70.4662523965,1,JordanManual,cryptocompare,TNT,2017-12-29 00:10:54.984334
+CCCAGG,TNT,ETH,4177367.74985,776.743324474,1,JordanManual,cryptocompare,TNT,2017-12-29 00:10:54.984334
+CCCAGG,TNT,USDT,1864645.72157,243446.531195,1,JordanManual,cryptocompare,TNT,2017-12-29 00:10:54.984334
+CCCAGG,TNT,USD,98442.3987022,12628.276473,1,JordanManual,cryptocompare,TNT,2017-12-29 00:10:54.984334
+CCCAGG,TNT,RUR,20.06393861,313.799999689,1,JordanManual,cryptocompare,TNT,2017-12-29 00:10:54.984334

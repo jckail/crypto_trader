@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,GGS,ETH,2729.28,0.262910902072,1,JordanManual,cryptocompare,GGS,2017-12-29 00:10:57.241548

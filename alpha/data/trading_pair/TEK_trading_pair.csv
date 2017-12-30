@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,TEK,BTC,20702804.8181,0.212723232313,1,JordanManual,cryptocompare,TEK,2017-12-29 00:11:31.996977
+CCCAGG,TEK,LTC,11216858.1159,6.42039159,1,JordanManual,cryptocompare,TEK,2017-12-29 00:11:31.996977
+CCCAGG,TEK,DOGE,9194151.83995,144389.001036,1,JordanManual,cryptocompare,TEK,2017-12-29 00:11:31.996977
+CCCAGG,TEK,RUR,22426.8438719,444.099350146,1,JordanManual,cryptocompare,TEK,2017-12-29 00:11:31.996977
+CCCAGG,TEK,ETH,2104.16666665,0.000504999999996,1,JordanManual,cryptocompare,TEK,2017-12-29 00:11:31.996977

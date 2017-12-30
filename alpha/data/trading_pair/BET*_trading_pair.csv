@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BET*,ETH,152017.11,16.94227299,1,JordanManual,cryptocompare,BET*,2017-12-29 00:10:53.781836
+CCCAGG,BET*,BTC,27880.9799641,0.0113238044233,1,JordanManual,cryptocompare,BET*,2017-12-29 00:10:53.781836
+CCCAGG,BET*,DOGE,1029.12544402,1824.82555979,1,JordanManual,cryptocompare,BET*,2017-12-29 00:10:53.781836

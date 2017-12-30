@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,JWL,BTC,357.42857142,0.000100079999998,1,JordanManual,cryptocompare,JWL,2017-12-29 00:11:04.441647

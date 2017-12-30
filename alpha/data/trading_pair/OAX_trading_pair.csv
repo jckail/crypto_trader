@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,OAX,BTC,364192.300892,17.7618493683,1,JordanManual,cryptocompare,OAX,2017-12-29 00:10:53.501312
+CCCAGG,OAX,ETH,240940.374939,235.441403389,1,JordanManual,cryptocompare,OAX,2017-12-29 00:10:53.501312
+CCCAGG,OAX,USDT,45032.8782549,30374.1681698,1,JordanManual,cryptocompare,OAX,2017-12-29 00:10:53.501312
+CCCAGG,OAX,USD,990.69,698.153614,1,JordanManual,cryptocompare,OAX,2017-12-29 00:10:53.501312

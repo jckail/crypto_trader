@@ -1,0 +1,7 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,MONA,BTC,230503.597615,168.955610318,1,JordanManual,cryptocompare,MONA,2017-12-29 00:11:28.850106
+CCCAGG,MONA,JPY,159910.0,200752693.3,1,JordanManual,cryptocompare,MONA,2017-12-29 00:11:28.850106
+CCCAGG,MONA,QTUM,315.06,282.486637,1,JordanManual,cryptocompare,MONA,2017-12-29 00:11:28.850106
+CCCAGG,MONA,HSR,69.236,66.258852,1,JordanManual,cryptocompare,MONA,2017-12-29 00:11:28.850106
+CCCAGG,MONA,ETH,11.05888384,0.143781033795,1,JordanManual,cryptocompare,MONA,2017-12-29 00:11:28.850106
+CCCAGG,MONA,DOGE,2.18060636,2002.09528902,1,JordanManual,cryptocompare,MONA,2017-12-29 00:11:28.850106

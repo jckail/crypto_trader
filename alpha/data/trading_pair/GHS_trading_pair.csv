@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,GHS,BTC,36989.2394028,0.482406785882,1,JordanManual,cryptocompare,GHS,2017-12-29 00:11:29.155297
+CCCAGG,GHS,DOGE,28.00543436,22.0402771214,1,JordanManual,cryptocompare,GHS,2017-12-29 00:11:29.155297
+CCCAGG,GHS,RUR,4.00053248,1.2401650688,1,JordanManual,cryptocompare,GHS,2017-12-29 00:11:29.155297

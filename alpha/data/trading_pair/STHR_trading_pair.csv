@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,STHR,RUR,9.90998854,3001.86612193,1,JordanManual,cryptocompare,STHR,2017-12-29 00:10:59.829799
+CCCAGG,STHR,BTC,9.22151914,0.000476752539538,1,JordanManual,cryptocompare,STHR,2017-12-29 00:10:59.829799
+CCCAGG,STHR,DOGE,0.83973285,21.077294661,1,JordanManual,cryptocompare,STHR,2017-12-29 00:10:59.829799
+CCCAGG,STHR,USD,0.83973285,1.6794657,1,JordanManual,cryptocompare,STHR,2017-12-29 00:10:59.829799

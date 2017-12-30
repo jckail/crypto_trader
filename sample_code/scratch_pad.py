@@ -1,78 +1,27 @@
+social_ls = []
+reddit_ls = ['a']
+social_ls.append(reddit_ls)
 
-import time
-import random
+coderepository_ls = []
+social_ls.append(coderepository_ls)
 
-from multiprocessing import Process, Queue, current_process, freeze_support
+twitter_ls = []
+social_ls.append(twitter_ls)
 
-#
-# Function run by worker processes
-#
+cryptocompare_ls = []
+social_ls.append(cryptocompare_ls)
 
-def worker(input, output):
-    for func, args in iter(input.get, 'STOP'):
-        result = calculate(func, args)
-        output.put(result)
+general_ls = []
+social_ls.append(general_ls)
 
-#
-# Function used to calculate result
-#
+facebook_ls = []
+social_ls.append(facebook_ls)
 
-def calculate(func, args):
-    result = func(*args)
-    return '%s says that %s%s = %s' % \
-           (current_process().name, func.__name__, args, result)
+abc = []
 
-#
-# Functions referenced by tasks
-#
+d = {"age":25}
+print d
 
-def mul(a, b):
-    time.sleep(0.5*random.random())
-    return a * b
+social_dict = {"reddit":reddit_ls,"coderepository":coderepository_ls,"twitter":twitter_ls,"cryptocompare":cryptocompare_ls,"general":general_ls,"facebook":facebook_ls}
 
-def plus(a, b):
-    time.sleep(0.5*random.random())
-    return a + b
-
-#
-#
-#
-
-def test():
-    NUMBER_OF_PROCESSES = 4
-    TASKS1 = [(mul, (i, 7)) for i in range(20)]
-    TASKS2 = [(plus, (i, 8)) for i in range(10)]
-
-    # Create queues
-    task_queue = Queue()
-    done_queue = Queue()
-
-    # Submit tasks
-    for task in TASKS1:
-        task_queue.put(task)
-
-    # Start worker processes
-    for i in range(NUMBER_OF_PROCESSES):
-        Process(target=worker, args=(task_queue, done_queue)).start()
-
-    # Get and print results
-    print('Unordered results:')
-    for i in range(len(TASKS1)):
-        print('\t', done_queue.get())
-
-    # Add more tasks using `put()`
-    for task in TASKS2:
-        task_queue.put(task)
-
-    # Get and print some more results
-    for i in range(len(TASKS2)):
-        print('\t', done_queue.get())
-
-    # Tell child processes to stop
-    for i in range(NUMBER_OF_PROCESSES):
-        task_queue.put('STOP')
-
-
-if __name__ == '__main__':
-    freeze_support()
-    test()
+print social_dict

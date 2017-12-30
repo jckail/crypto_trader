@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,FYN,ETH,7622.57434672,37.2038941556,1,JordanManual,cryptocompare,FYN,2017-12-29 00:10:57.213057

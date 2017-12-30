@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,MYB,ETH,11540.66,53.90775416,1,JordanManual,cryptocompare,MYB,2017-12-29 00:10:55.139790
+CCCAGG,MYB,BTC,2454.80650288,0.61851024,1,JordanManual,cryptocompare,MYB,2017-12-29 00:10:55.139790
+CCCAGG,MYB,LTC,215.36078216,3.34342792,1,JordanManual,cryptocompare,MYB,2017-12-29 00:10:55.139790
+CCCAGG,MYB,DOGE,2.55556922,1057.12325159,1,JordanManual,cryptocompare,MYB,2017-12-29 00:10:55.139790

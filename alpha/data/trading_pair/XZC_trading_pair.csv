@@ -1,0 +1,7 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,XZC,BTC,144740.879577,1117.36097656,1,JordanManual,cryptocompare,XZC,2017-12-29 00:11:11.835128
+CCCAGG,XZC,THB,12717.3280911,52983259.0069,1,JordanManual,cryptocompare,XZC,2017-12-29 00:11:11.835128
+CCCAGG,XZC,ETH,2842.12,439.64430132,1,JordanManual,cryptocompare,XZC,2017-12-29 00:11:11.835128
+CCCAGG,XZC,BNB,798.253,9951.00693,1,JordanManual,cryptocompare,XZC,2017-12-29 00:11:11.835128
+CCCAGG,XZC,LTC,17.06302214,8.38668968,1,JordanManual,cryptocompare,XZC,2017-12-29 00:11:11.835128
+CCCAGG,XZC,DOGE,16.46103437,240297.060389,1,JordanManual,cryptocompare,XZC,2017-12-29 00:11:11.835128

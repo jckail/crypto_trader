@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,HDG,ETH,55558.1250614,211.613969845,1,JordanManual,cryptocompare,HDG,2017-12-29 00:11:02.277772
+CCCAGG,HDG,BTC,43.63092819,0.0107086814925,1,JordanManual,cryptocompare,HDG,2017-12-29 00:11:02.277772
+CCCAGG,HDG,USD,1.0322634,6.1935804,1,JordanManual,cryptocompare,HDG,2017-12-29 00:11:02.277772

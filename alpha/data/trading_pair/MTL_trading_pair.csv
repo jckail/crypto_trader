@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,MTL,BTC,896618.615055,456.74536994,1,JordanManual,cryptocompare,MTL,2017-12-29 00:10:57.338903
+CCCAGG,MTL,ETH,25596.3129516,263.27801711,1,JordanManual,cryptocompare,MTL,2017-12-29 00:10:57.338903
+CCCAGG,MTL,LTC,12.2911693,0.38207036,1,JordanManual,cryptocompare,MTL,2017-12-29 00:10:57.338903
+CCCAGG,MTL,DOGE,2.11786535,1945.37511814,1,JordanManual,cryptocompare,MTL,2017-12-29 00:10:57.338903

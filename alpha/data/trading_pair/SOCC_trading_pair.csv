@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SOCC,BTC,16259.902896,0.00678057009208,1,JordanManual,cryptocompare,SOCC,2017-12-29 00:10:54.593972

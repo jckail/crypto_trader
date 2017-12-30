@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,HODL,BTC,19420.7307701,0.00656682917315,1,JordanManual,cryptocompare,HODL,2017-12-29 00:10:53.722522
+CCCAGG,HODL,ETH,38.00695051,0.00536234911207,1,JordanManual,cryptocompare,HODL,2017-12-29 00:10:53.722522
+CCCAGG,HODL,DOGE,31.78392188,13.9849268986,1,JordanManual,cryptocompare,HODL,2017-12-29 00:10:53.722522

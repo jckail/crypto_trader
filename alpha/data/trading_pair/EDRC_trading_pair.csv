@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,EDRC,BTC,5321.86782898,0.0258287823665,1,JordanManual,cryptocompare,EDRC,2017-12-29 00:10:55.207568
+CCCAGG,EDRC,USD,3327.39716645,450.835439604,1,JordanManual,cryptocompare,EDRC,2017-12-29 00:10:55.207568
+CCCAGG,EDRC,DOGE,101.21132792,1290.10255234,1,JordanManual,cryptocompare,EDRC,2017-12-29 00:10:55.207568

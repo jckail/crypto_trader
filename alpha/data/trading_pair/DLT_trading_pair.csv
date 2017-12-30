@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,DLT,BTC,1408215.59715,37.1589064893,1,JordanManual,cryptocompare,DLT,2017-12-29 00:11:00.501990
+CCCAGG,DLT,ETH,503692.288201,266.908515791,1,JordanManual,cryptocompare,DLT,2017-12-29 00:11:00.501990
+CCCAGG,DLT,BNB,100454.63,4387.3329093,1,JordanManual,cryptocompare,DLT,2017-12-29 00:11:00.501990
+CCCAGG,DLT,USD,1.96078958,0.137255329424,1,JordanManual,cryptocompare,DLT,2017-12-29 00:11:00.501990
+CCCAGG,DLT,RUR,1.45223704,71.0184383208,1,JordanManual,cryptocompare,DLT,2017-12-29 00:11:00.501990

@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PCM,BTC,3807.52943106,0.00123727019895,1,JordanManual,cryptocompare,PCM,2017-12-29 00:11:14.911733
+CCCAGG,PCM,RUR,2666.6189867,1066.1400897,1,JordanManual,cryptocompare,PCM,2017-12-29 00:11:14.911733
+CCCAGG,PCM,USD,223.22246912,2.00899998986,1,JordanManual,cryptocompare,PCM,2017-12-29 00:11:14.911733
+CCCAGG,PCM,DOGE,215.6862745,32.5686835279,1,JordanManual,cryptocompare,PCM,2017-12-29 00:11:14.911733
+CCCAGG,PCM,WAVES,3.0,0.00030015,1,JordanManual,cryptocompare,PCM,2017-12-29 00:11:14.911733

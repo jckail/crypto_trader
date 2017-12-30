@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,IOP,BTC,374088.3634,185.97917796,1,JordanManual,cryptocompare,IOP,2017-12-29 00:11:21.516030

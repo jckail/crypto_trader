@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PING,BTC,80934.4806629,3.29005385402,1,JordanManual,cryptocompare,PING,2017-12-29 00:10:56.987208
+CCCAGG,PING,WAVES,3241.98422403,119.369304584,1,JordanManual,cryptocompare,PING,2017-12-29 00:10:56.987208
+CCCAGG,PING,ETH,171.76386651,0.140287907031,1,JordanManual,cryptocompare,PING,2017-12-29 00:10:56.987208
+CCCAGG,PING,RUR,0.01027944,0.424522196111,1,JordanManual,cryptocompare,PING,2017-12-29 00:10:56.987208
+CCCAGG,PING,USD,3.2e-07,2.432e-07,1,JordanManual,cryptocompare,PING,2017-12-29 00:10:56.987208

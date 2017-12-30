@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BAN,BTC,40000.0,0.0008,1,JordanManual,cryptocompare,BAN,2017-12-29 00:11:20.742981
+CCCAGG,BAN,DOGE,4369.28561121,567.907129457,1,JordanManual,cryptocompare,BAN,2017-12-29 00:11:20.742981
+CCCAGG,BAN,USD,2208.42857143,2.19833,1,JordanManual,cryptocompare,BAN,2017-12-29 00:11:20.742981

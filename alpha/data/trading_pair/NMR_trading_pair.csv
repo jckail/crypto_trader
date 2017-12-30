@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,NMR,BTC,75572.3192522,180.75253291,1,JordanManual,cryptocompare,NMR,2017-12-29 00:10:57.198398
+CCCAGG,NMR,ETH,2345.86629942,109.916806963,1,JordanManual,cryptocompare,NMR,2017-12-29 00:10:57.198398
+CCCAGG,NMR,USD,0.03337146,1.40146941897,1,JordanManual,cryptocompare,NMR,2017-12-29 00:10:57.198398
