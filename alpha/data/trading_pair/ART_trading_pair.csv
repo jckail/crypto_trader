@@ -1,3 +1,5 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ART,BTC,7370.0,0.33566,1,JordanManual,cryptocompare,ART,2017-12-31 13:17:55.113509
+CCCAGG,ART,ETH,3959.69836967,3.16735899736,1,JordanManual,cryptocompare,ART,2017-12-31 13:17:55.113509
 CCCAGG,ART,BTC,15160.0,0.65196,1,JordanManual,cryptocompare,ART,2017-12-31 11:54:34.985362
 CCCAGG,ART,ETH,7237.29802609,5.51143074999,1,JordanManual,cryptocompare,ART,2017-12-31 11:54:34.985362

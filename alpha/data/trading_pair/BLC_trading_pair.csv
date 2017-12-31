@@ -1,3 +1,4 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BLC,DOGE,1109.38782571,3614.35114514,1,JordanManual,cryptocompare,BLC,2017-12-31 13:17:57.673124
 CCCAGG,BLC,DOGE,1117.81761733,3644.35114513,1,JordanManual,cryptocompare,BLC,2017-12-31 11:54:46.807126
 CCCAGG,BLC,BTC,1109.38782571,0.00210276,1,JordanManual,cryptocompare,BLC,2017-12-31 11:54:46.807126

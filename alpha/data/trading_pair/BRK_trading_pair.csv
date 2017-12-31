@@ -1,4 +1,5 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BRK,BTC,1255334.40085,47.32019071,1,JordanManual,cryptocompare,BRK,2017-12-31 13:17:58.742409
 CCCAGG,BRK,BTC,1248000.98561,47.05184625,1,JordanManual,cryptocompare,BRK,2017-12-31 12:17:58.714180
 CCCAGG,BRK,BTC,1241716.09447,46.82729765,1,JordanManual,cryptocompare,BRK,2017-12-31 12:11:57.189939
 CCCAGG,BRK,BTC,1240506.93515,46.7847122,1,JordanManual,cryptocompare,BRK,2017-12-31 12:01:57.941695

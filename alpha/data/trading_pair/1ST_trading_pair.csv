@@ -1,3 +1,5 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,1ST,BTC,4042986.99181,276.294383218,1,JordanManual,cryptocompare,1ST,2017-12-31 13:17:53.050042
+CCCAGG,1ST,ETH,80307.2770055,99.0379461237,1,JordanManual,cryptocompare,1ST,2017-12-31 13:17:53.050042
 CCCAGG,1ST,BTC,4044954.27276,276.393759481,1,JordanManual,cryptocompare,1ST,2017-12-31 11:57:08.735057
 CCCAGG,1ST,ETH,80160.4200699,98.8548442537,1,JordanManual,cryptocompare,1ST,2017-12-31 11:57:08.735057

@@ -1,3 +1,5 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,AXIOM,BTC,3014.0,0.00429748,1,JordanManual,cryptocompare,AXIOM,2017-12-31 13:17:55.072166
+CCCAGG,AXIOM,RUR,0.42499764,0.3867478609,1,JordanManual,cryptocompare,AXIOM,2017-12-31 13:17:55.072166
 CCCAGG,AXIOM,BTC,6248.33030605,0.00891042456141,1,JordanManual,cryptocompare,AXIOM,2017-12-31 11:54:49.918484
 CCCAGG,AXIOM,RUR,0.42499764,0.3867478609,1,JordanManual,cryptocompare,AXIOM,2017-12-31 11:54:49.918484

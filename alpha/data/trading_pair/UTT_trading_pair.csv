@@ -1,4 +1,7 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,UTT,ETH,14737.7,29.06818,1,JordanManual,cryptocompare,UTT,2017-12-31 13:17:52.403221
+CCCAGG,UTT,USD,12225.6,22518.7788,1,JordanManual,cryptocompare,UTT,2017-12-31 13:17:52.403221
+CCCAGG,UTT,BTC,10480.3,1.262012,1,JordanManual,cryptocompare,UTT,2017-12-31 13:17:52.403221
 CCCAGG,UTT,ETH,15682.2,30.93407,1,JordanManual,cryptocompare,UTT,2017-12-31 11:57:31.699162
 CCCAGG,UTT,USD,12755.9,23305.7187,1,JordanManual,cryptocompare,UTT,2017-12-31 11:57:31.699162
 CCCAGG,UTT,BTC,11276.5,1.349547,1,JordanManual,cryptocompare,UTT,2017-12-31 11:57:31.699162

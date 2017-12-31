@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <list default="true" id="20dbcae3-0635-4cf0-b324-dfd711d592a7" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/alpha/mtalpha_focus_symbols.sh" />
@@ -4129,6 +4130,11 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/alpha/data/minute_data/ZXT_minute.csv" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/alpha/data/minute_data/ZYD_minute.csv" afterPath="" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/alpha/mtfetchprice.py" afterPath="$PROJECT_DIR$/alpha/fetchprice.py" />
+=======
+<<<<<<< Updated upstream
+    <list default="true" id="20dbcae3-0635-4cf0-b324-dfd711d592a7" name="Default" comment="created alpha_runner&#10;&#10;added in haspricing.py into runner correctly instanciated classes etc.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/alpha/fetchprice.py" />
+>>>>>>> Stashed changes
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/buildcoinlist.py" afterPath="$PROJECT_DIR$/alpha/buildcoinlist.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alpha/data/coinlist_info.csv" afterPath="$PROJECT_DIR$/alpha/data/coinlist_info.csv" />
@@ -4140,7 +4146,11 @@
     </list>
 =======
     <list default="true" id="20dbcae3-0635-4cf0-b324-dfd711d592a7" name="Default" comment="" />
+<<<<<<< Updated upstream
 >>>>>>> master
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -4279,8 +4289,18 @@
       <file leaf-file-name="hour_hist.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/alpha/hour_hist.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="355">
               <caret line="102" column="22" lean-forward="false" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="22" />
+=======
+<<<<<<< Updated upstream
+            <state relative-caret-position="-121">
+              <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+=======
+            <state relative-caret-position="143">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -5298,8 +5318,10 @@
       <workItem from="1514173910886" duration="2475000" />
       <workItem from="1514179348885" duration="5451000" />
       <workItem from="1514223718304" duration="24000" />
+<<<<<<< Updated upstream
       <workItem from="1514224953321" duration="16601000" />
       <workItem from="1514303617831" duration="7000" />
+<<<<<<< Updated upstream
       <workItem from="1514303629803" duration="38000000" />
       <workItem from="1514387842174" duration="498000" />
       <workItem from="1514400622587" duration="14568000" />
@@ -5307,6 +5329,12 @@
       <workItem from="1514450086600" duration="59000" />
       <workItem from="1514450227819" duration="331000" />
       <workItem from="1514473620115" duration="27792000" />
+=======
+      <workItem from="1514303629803" duration="22998000" />
+=======
+      <workItem from="1514224953321" duration="16869000" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="This is  an early push with creation of pre_alpha directory and a few basic calls, nothing here yet, just a push before I create a branch">
       <created>1513809962949</created>
@@ -5351,12 +5379,26 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="165649000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-180" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
+=======
+<<<<<<< Updated upstream
+    <option name="totallyTimeSpent" value="77000000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1440" y="-180" width="1920" height="1080" extended-state="0" />
+=======
+    <option name="totallyTimeSpent" value="54263000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -5783,7 +5825,11 @@
         <state relative-caret-position="218">
           <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <folding>
+<<<<<<< Updated upstream
             <element signature="e#0#15#0" expanded="true" />
+=======
+            <element signature="e#45#60#0" expanded="false" />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
@@ -5800,8 +5846,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/alpha/fetchprice.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="-96">
           <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="52" selection-end-column="26" />
+=======
+<<<<<<< Updated upstream
+        <state relative-caret-position="424">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+=======
+        <state relative-caret-position="143">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
           <folding>
             <element signature="e#45#60#0" expanded="true" />
           </folding>

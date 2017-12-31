@@ -1,3 +1,5 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,CRAB,BTC,1771.66385713,0.000248032939998,1,JordanManual,cryptocompare,CRAB,2017-12-31 13:18:03.115232
+CCCAGG,CRAB,DOGE,1771.66385713,389.766066285,1,JordanManual,cryptocompare,CRAB,2017-12-31 13:18:03.115232
 CCCAGG,CRAB,BTC,1771.66385713,0.000248032939998,1,JordanManual,cryptocompare,CRAB,2017-12-31 11:54:34.486429
 CCCAGG,CRAB,DOGE,1771.66385713,389.766066285,1,JordanManual,cryptocompare,CRAB,2017-12-31 11:54:34.486429

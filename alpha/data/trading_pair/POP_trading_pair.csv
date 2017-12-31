@@ -1,3 +1,5 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,POP,LTC,2466452.867,2.02979604,1,JordanManual,cryptocompare,POP,2017-12-31 13:17:52.796655
+CCCAGG,POP,DOGE,1281318.85551,23166.5220168,1,JordanManual,cryptocompare,POP,2017-12-31 13:17:52.796655
 CCCAGG,POP,LTC,4371952.07558,3.17429341,1,JordanManual,cryptocompare,POP,2017-12-31 11:57:31.776249
 CCCAGG,POP,DOGE,2195336.37088,38665.7208948,1,JordanManual,cryptocompare,POP,2017-12-31 11:57:31.776249

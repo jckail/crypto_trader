@@ -1,0 +1,7 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BBT,ETH,22981.5814,10.1567709182,1,JordanManual,cryptocompare,BBT,2017-12-31 13:17:55.816307
+CCCAGG,BBT,BTC,13283.6374375,0.294015816519,1,JordanManual,cryptocompare,BBT,2017-12-31 13:17:55.816307
+CCCAGG,BBT,USD,543.33769413,157.463856809,1,JordanManual,cryptocompare,BBT,2017-12-31 13:17:55.816307
+CCCAGG,BBT,RUR,212.80741181,5737.39085983,1,JordanManual,cryptocompare,BBT,2017-12-31 13:17:55.816307
+CCCAGG,BBT,DOGE,5.9019303,1173.9341297,1,JordanManual,cryptocompare,BBT,2017-12-31 13:17:55.816307
+CCCAGG,BBT,WAVES,1.0,0.49999999,1,JordanManual,cryptocompare,BBT,2017-12-31 13:17:55.816307

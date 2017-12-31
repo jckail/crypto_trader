@@ -1,3 +1,4 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BLUE,ETH,45331.5260531,26.5367710186,1,JordanManual,cryptocompare,BLUE,2017-12-31 13:17:58.446970
 CCCAGG,BLUE,ETH,39624.5989334,23.3548249901,1,JordanManual,cryptocompare,BLUE,2017-12-31 11:54:37.746037
 CCCAGG,BLUE,WAVES,1.0,0.0099,1,JordanManual,cryptocompare,BLUE,2017-12-31 11:54:37.746037

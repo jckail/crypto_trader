@@ -1,3 +1,5 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,CACH,BTC,1000.0,0.00385853,1,JordanManual,cryptocompare,CACH,2017-12-31 13:17:59.186313
+CCCAGG,CACH,DOGE,3.86600609,34.61274635,1,JordanManual,cryptocompare,CACH,2017-12-31 13:17:59.186313
 CCCAGG,CACH,BTC,1448.63404445,0.00563063,1,JordanManual,cryptocompare,CACH,2017-12-31 11:54:41.747378
 CCCAGG,CACH,DOGE,454.50797286,2301.37568241,1,JordanManual,cryptocompare,CACH,2017-12-31 11:54:41.747378

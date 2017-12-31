@@ -1,5 +1,5 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,CDX,ETH,15832.6212091,3.54364962685,1,JordanManual,cryptocompare,CDX,2017-12-31 11:57:07.341747
-CCCAGG,CDX,BTC,1430.0,0.010797,1,JordanManual,cryptocompare,CDX,2017-12-31 11:57:07.341747
+CCCAGG,CDX,ETH,15732.6212091,3.52464962685,1,JordanManual,cryptocompare,CDX,2017-12-31 13:18:00.089405
+CCCAGG,CDX,BTC,1430.0,0.010797,1,JordanManual,cryptocompare,CDX,2017-12-31 13:18:00.089405
 CCCAGG,CDX,ETH,15832.6212091,3.54364962685,1,JordanManual,cryptocompare,CDX,2017-12-31 11:54:32.646521
 CCCAGG,CDX,BTC,1430.0,0.010797,1,JordanManual,cryptocompare,CDX,2017-12-31 11:54:32.646521

@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BRAT,ETH,11960.5277353,0.0099500056975,1,JordanManual,cryptocompare,BRAT,2017-12-31 13:17:58.798824

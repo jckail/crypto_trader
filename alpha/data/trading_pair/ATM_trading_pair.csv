@@ -1,4 +1,7 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ATM,BTC,2185500.0,2.89018,1,JordanManual,cryptocompare,ATM,2017-12-31 13:17:54.625022
+CCCAGG,ATM,ETH,1673944.26731,42.5679459006,1,JordanManual,cryptocompare,ATM,2017-12-31 13:17:54.625022
+CCCAGG,ATM,USD,190990.0,3250.082,1,JordanManual,cryptocompare,ATM,2017-12-31 13:17:54.625022
 CCCAGG,ATM,BTC,2242900.0,2.96931,1,JordanManual,cryptocompare,ATM,2017-12-31 11:57:08.619663
 CCCAGG,ATM,ETH,1683014.26731,42.7759854006,1,JordanManual,cryptocompare,ATM,2017-12-31 11:57:08.619663
 CCCAGG,ATM,USD,234440.0,4030.777,1,JordanManual,cryptocompare,ATM,2017-12-31 11:57:08.619663

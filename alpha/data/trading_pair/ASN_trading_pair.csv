@@ -1,4 +1,6 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ASN,BTC,948.1,0.000123253,1,JordanManual,cryptocompare,ASN,2017-12-31 13:17:54.930821
+CCCAGG,ASN,USD,833.45878059,2.49912426067,1,JordanManual,cryptocompare,ASN,2017-12-31 13:17:54.930821
 CCCAGG,ASN,BTC,948.1,0.000123253,1,JordanManual,cryptocompare,ASN,2017-12-31 11:54:46.813236
 CCCAGG,ASN,USD,833.45878059,2.49912426067,1,JordanManual,cryptocompare,ASN,2017-12-31 11:54:46.813236
 CCCAGG,ASN,RUR,431.25,43.1293168725,1,JordanManual,cryptocompare,ASN,2017-12-31 11:54:46.813236

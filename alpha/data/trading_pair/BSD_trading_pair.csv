@@ -1,5 +1,5 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BSD,BTC,273763.193729,25.6549992227,1,JordanManual,cryptocompare,BSD,2017-12-31 12:18:00.622303
+CCCAGG,BSD,BTC,267562.999914,25.0425044927,1,JordanManual,cryptocompare,BSD,2017-12-31 13:17:58.512219
 CCCAGG,BSD,BTC,273763.193729,25.6549992227,1,JordanManual,cryptocompare,BSD,2017-12-31 12:14:54.335575
 CCCAGG,BSD,BTC,290716.448393,27.2720170744,1,JordanManual,cryptocompare,BSD,2017-12-31 12:01:59.990784
 CCCAGG,BSD,BTC,290637.448393,27.2646708744,1,JordanManual,cryptocompare,BSD,2017-12-31 11:54:31.544404

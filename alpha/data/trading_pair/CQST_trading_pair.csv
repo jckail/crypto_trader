@@ -1,4 +1,6 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,CQST,BTC,127491.884808,0.02120021,1,JordanManual,cryptocompare,CQST,2017-12-31 13:18:02.661682
+CCCAGG,CQST,DOGE,1726.00801216,554.18657101,1,JordanManual,cryptocompare,CQST,2017-12-31 13:18:02.661682
 CCCAGG,CQST,BTC,211375.019866,0.03769227,1,JordanManual,cryptocompare,CQST,2017-12-31 11:57:22.133749
 CCCAGG,CQST,LTC,24376.2905448,0.29714698,1,JordanManual,cryptocompare,CQST,2017-12-31 11:57:22.133749
 CCCAGG,CQST,DOGE,13420.4172019,4326.70584432,1,JordanManual,cryptocompare,CQST,2017-12-31 11:57:22.133749

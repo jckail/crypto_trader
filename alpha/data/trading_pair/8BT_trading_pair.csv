@@ -1,3 +1,4 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,8BT,USD,157.28,154.8719199,1,JordanManual,cryptocompare,8BT,2017-12-31 13:17:53.834440
 CCCAGG,8BT,USD,160.92,157.0194997,1,JordanManual,cryptocompare,8BT,2017-12-31 12:17:43.327668
 CCCAGG,8BT,USD,175.95,171.7969957,1,JordanManual,cryptocompare,8BT,2017-12-31 11:54:26.352223

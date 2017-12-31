@@ -1,4 +1,7 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,CBD,BTC,113030.595105,0.0111439493389,1,JordanManual,cryptocompare,CBD,2017-12-31 13:17:59.962829
+CCCAGG,CBD,ETH,11402.8169014,0.194304,1,JordanManual,cryptocompare,CBD,2017-12-31 13:17:59.962829
+CCCAGG,CBD,USD,296.40474659,3.00638647071,1,JordanManual,cryptocompare,CBD,2017-12-31 13:17:59.962829
 CCCAGG,CBD,BTC,161600.161834,0.0150295146772,1,JordanManual,cryptocompare,CBD,2017-12-31 11:57:18.430911
 CCCAGG,CBD,ETH,11402.8169014,0.194304,1,JordanManual,cryptocompare,CBD,2017-12-31 11:57:18.430911
 CCCAGG,CBD,DOGE,400.0,600.0,1,JordanManual,cryptocompare,CBD,2017-12-31 11:57:18.430911

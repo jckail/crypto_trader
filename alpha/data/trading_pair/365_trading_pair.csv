@@ -2,3 +2,6 @@ exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,sour
 CCCAGG,365,BTC,30020.0,0.0003002,1,JordanManual,cryptocompare,365,2017-12-31 11:57:19.059411
 CCCAGG,365,RUR,2723.99146273,118.346400272,1,JordanManual,cryptocompare,365,2017-12-31 11:57:19.059411
 CCCAGG,365,USD,700.0,0.489881,1,JordanManual,cryptocompare,365,2017-12-31 11:57:19.059411
+CCCAGG,365,BTC,30020.0,0.0003002,1,JordanManual,cryptocompare,365,2017-12-31 13:17:53.251078
+CCCAGG,365,RUR,2654.89867294,115.344597,1,JordanManual,cryptocompare,365,2017-12-31 13:17:53.251078
+CCCAGG,365,USD,700.0,0.489881,1,JordanManual,cryptocompare,365,2017-12-31 13:17:53.251078

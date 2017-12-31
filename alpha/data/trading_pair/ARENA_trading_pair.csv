@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ARENA,ETH,9832.67659729,0.186820855348,1,JordanManual,cryptocompare,ARENA,2017-12-31 13:17:55.384048
