@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,RIC,BTC,627427.131544,9.50359446,1,JordanManual,cryptocompare,RIC,2017-12-31 03:21:44.042786
+CCCAGG,RIC,BTC,617151.611846,9.3408485,1,JordanManual,cryptocompare,RIC,2017-12-31 03:18:47.012192
+CCCAGG,RIC,BTC,616035.10532,9.32317094,1,JordanManual,cryptocompare,RIC,2017-12-31 03:16:27.318143
+CCCAGG,RIC,BTC,615884.169761,9.32077735,1,JordanManual,cryptocompare,RIC,2017-12-31 03:08:36.756939

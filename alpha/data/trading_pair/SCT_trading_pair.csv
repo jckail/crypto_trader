@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SCT,ETH,31913.7457484,9.4437720243,1,JordanManual,cryptocompare,SCT,2017-12-31 03:15:50.438908
+CCCAGG,SCT,BTC,371.81481481,0.000100389999999,1,JordanManual,cryptocompare,SCT,2017-12-31 03:15:50.438908
+CCCAGG,SCT,RUR,238.7950394,158.7950394,1,JordanManual,cryptocompare,SCT,2017-12-31 03:15:50.438908

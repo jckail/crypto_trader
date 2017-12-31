@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,FUCK,ETH,67362.3722,2.08017303649,1,JordanManual,cryptocompare,FUCK,2017-12-31 03:18:34.879346
+CCCAGG,FUCK,ETH,67362.3722,2.08017303649,1,JordanManual,cryptocompare,FUCK,2017-12-31 03:15:46.778022
+CCCAGG,FUCK,ETH,72592.3722,2.24386680649,1,JordanManual,cryptocompare,FUCK,2017-12-31 00:19:19.271680

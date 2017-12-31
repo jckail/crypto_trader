@@ -1,0 +1,3 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,UET,ETH,9071.95,0.24258519,1,JordanManual,cryptocompare,UET,2017-12-31 00:24:09.153378
+CCCAGG,UET,ETH,9071.95,0.24258519,1,JordanManual,cryptocompare,UET,2017-12-31 00:19:14.362818

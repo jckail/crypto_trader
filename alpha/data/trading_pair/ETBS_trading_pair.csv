@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ETBS,BTC,9283.1,1.618396,1,JordanManual,cryptocompare,ETBS,2017-12-31 03:08:22.041390
+CCCAGG,ETBS,ETH,135.633299079,0.411898203266,1,JordanManual,cryptocompare,ETBS,2017-12-31 03:08:22.041390
+CCCAGG,ETBS,BTC,12496.4,2.125038,1,JordanManual,cryptocompare,ETBS,2017-12-31 00:24:07.462434
+CCCAGG,ETBS,ETH,849.151392987,2.58974886621,1,JordanManual,cryptocompare,ETBS,2017-12-31 00:24:07.462434

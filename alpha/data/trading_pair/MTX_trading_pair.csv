@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,MTX,ETH,3111.31822749,1.65133950057,1,JordanManual,cryptocompare,MTX,2017-12-31 00:19:19.990766

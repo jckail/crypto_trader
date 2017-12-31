@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,808,LTC,25697218.3052,13.18041405,1,JordanManual,cryptocompare,808,2017-12-31 03:15:46.135273
+CCCAGG,808,DOGE,15275115.9206,212264.631764,1,JordanManual,cryptocompare,808,2017-12-31 03:15:46.135273
+CCCAGG,808,LTC,25697218.3052,13.18041405,1,JordanManual,cryptocompare,808,2017-12-31 03:18:35.660909
+CCCAGG,808,DOGE,15275115.9206,212264.631764,1,JordanManual,cryptocompare,808,2017-12-31 03:18:35.660909

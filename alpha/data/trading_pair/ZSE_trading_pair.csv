@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ZSE,BTC,41824.9324112,0.16348644,1,JordanManual,cryptocompare,ZSE,2017-12-31 03:18:59.011202
+CCCAGG,ZSE,DOGE,2170.09899905,14438.0308586,1,JordanManual,cryptocompare,ZSE,2017-12-31 03:18:59.011202
+CCCAGG,ZSE,LTC,705.20428402,0.22746595,1,JordanManual,cryptocompare,ZSE,2017-12-31 03:18:59.011202

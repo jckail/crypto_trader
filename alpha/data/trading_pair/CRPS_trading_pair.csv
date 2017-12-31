@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,CRPS,RUR,0.0001,3.4496,1,JordanManual,cryptocompare,CRPS,2017-12-31 00:19:29.333728

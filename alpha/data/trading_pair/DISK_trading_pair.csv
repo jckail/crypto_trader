@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,DISK,BTC,2508.59530938,0.00020068762475,1,JordanManual,cryptocompare,DISK,2017-12-31 03:21:29.938682
+CCCAGG,DISK,USD,790.0,3.90063,1,JordanManual,cryptocompare,DISK,2017-12-31 03:21:29.938682
+CCCAGG,DISK,BTC,2508.59530938,0.00020068762475,1,JordanManual,cryptocompare,DISK,2017-12-31 03:15:42.636020
+CCCAGG,DISK,USD,790.0,3.90063,1,JordanManual,cryptocompare,DISK,2017-12-31 03:15:42.636020

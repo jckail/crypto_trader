@@ -1,0 +1,3 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SND,ETH,177,0.222133739989,1,JordanManual,cryptocompare,SND,2017-12-31 03:18:38.730849
+CCCAGG,SND,ETH,177,0.222133739989,1,JordanManual,cryptocompare,SND,2017-12-31 03:15:51.487219

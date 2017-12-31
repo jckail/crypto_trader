@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,HBN,BTC,15793.4244879,0.01730263,1,JordanManual,cryptocompare,HBN,2017-12-31 03:21:46.596283
+CCCAGG,HBN,BTC,15793.4244879,0.01730263,1,JordanManual,cryptocompare,HBN,2017-12-31 03:16:31.270339
+CCCAGG,HBN,BTC,17493.2158144,0.0191724,1,JordanManual,cryptocompare,HBN,2017-12-31 00:19:32.016349
+CCCAGG,HBN,DOGE,249.18886804,498.37773608,1,JordanManual,cryptocompare,HBN,2017-12-31 00:19:32.016349

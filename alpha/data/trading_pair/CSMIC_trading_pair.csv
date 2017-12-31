@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,CSMIC,BTC,414.75757739,0.0012388066258,1,JordanManual,cryptocompare,CSMIC,2017-12-31 03:18:40.687821
+CCCAGG,CSMIC,BTC,414.75757739,0.0012388066258,1,JordanManual,cryptocompare,CSMIC,2017-12-31 00:19:25.205726
+CCCAGG,CSMIC,RUR,1.0,5.13777779,1,JordanManual,cryptocompare,CSMIC,2017-12-31 00:19:25.205726
+CCCAGG,CSMIC,WAVES,0.03036331,0.00015181655,1,JordanManual,cryptocompare,CSMIC,2017-12-31 00:19:25.205726

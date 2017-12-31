@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,DPP,DOGE,4.39838915,91.10350329,1,JordanManual,cryptocompare,DPP,2017-12-31 03:21:47.242247
+CCCAGG,DPP,BTC,567.09595562,0.00708609,1,JordanManual,cryptocompare,DPP,2017-12-31 03:08:41.447049
+CCCAGG,DPP,DOGE,4.39838915,91.10350329,1,JordanManual,cryptocompare,DPP,2017-12-31 03:08:41.447049

@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,EDR,BTC,87996.6610297,0.071531579085,1,JordanManual,cryptocompare,EDR,2017-12-31 03:18:36.096585
+CCCAGG,EDR,USD,37767.4135404,411.071086711,1,JordanManual,cryptocompare,EDR,2017-12-31 03:18:36.096585
+CCCAGG,EDR,BTC,87996.6610297,0.071531579085,1,JordanManual,cryptocompare,EDR,2017-12-31 03:08:27.028050
+CCCAGG,EDR,USD,37767.4135404,411.071086711,1,JordanManual,cryptocompare,EDR,2017-12-31 03:08:27.028050

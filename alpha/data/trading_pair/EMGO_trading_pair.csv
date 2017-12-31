@@ -1,0 +1,7 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,EMGO,BTC,3601.765,0.305327476,1,JordanManual,cryptocompare,EMGO,2017-12-31 03:21:49.668266
+CCCAGG,EMGO,USD,1462.82,1544.6552692,1,JordanManual,cryptocompare,EMGO,2017-12-31 03:21:49.668266
+CCCAGG,EMGO,BTC,3601.765,0.305327476,1,JordanManual,cryptocompare,EMGO,2017-12-31 03:16:34.012333
+CCCAGG,EMGO,USD,1462.82,1544.6552692,1,JordanManual,cryptocompare,EMGO,2017-12-31 03:16:34.012333
+CCCAGG,EMGO,BTC,3803.635,0.323702542,1,JordanManual,cryptocompare,EMGO,2017-12-31 00:19:34.275503
+CCCAGG,EMGO,USD,1675.21,1821.1259971,1,JordanManual,cryptocompare,EMGO,2017-12-31 00:19:34.275503

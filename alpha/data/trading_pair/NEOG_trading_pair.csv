@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,NEOG,ETH,733409,5.34254905832,1,JordanManual,cryptocompare,NEOG,2017-12-31 03:21:41.806883
+CCCAGG,NEOG,ETH,733409,5.34254905832,1,JordanManual,cryptocompare,NEOG,2017-12-31 03:08:34.169241
+CCCAGG,NEOG,ETH,526833,3.26429473332,1,JordanManual,cryptocompare,NEOG,2017-12-31 00:19:27.259332

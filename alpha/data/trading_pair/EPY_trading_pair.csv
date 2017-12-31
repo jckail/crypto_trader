@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,EPY,ETH,62763.120545,18.8551512402,1,JordanManual,cryptocompare,EPY,2017-12-31 03:21:53.131070
+CCCAGG,EPY,BTC,0.00853707,0.000109999890838,1,JordanManual,cryptocompare,EPY,2017-12-31 03:21:53.131070
+CCCAGG,EPY,ETH,62763.120545,18.8551512402,1,JordanManual,cryptocompare,EPY,2017-12-31 03:18:56.983797
+CCCAGG,EPY,BTC,0.00853707,0.000109999890838,1,JordanManual,cryptocompare,EPY,2017-12-31 03:18:56.983797

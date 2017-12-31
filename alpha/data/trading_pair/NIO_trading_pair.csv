@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,NIO,ETH,48440,3.31845966248,1,JordanManual,cryptocompare,NIO,2017-12-31 03:21:42.890994
+CCCAGG,NIO,ETH,48440,3.31845966248,1,JordanManual,cryptocompare,NIO,2017-12-31 03:16:26.814207
+CCCAGG,NIO,ETH,46614,3.18150783648,1,JordanManual,cryptocompare,NIO,2017-12-31 03:08:35.916898
+CCCAGG,NIO,ETH,47632,3.25298682248,1,JordanManual,cryptocompare,NIO,2017-12-31 00:19:29.279616

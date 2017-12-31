@@ -1,0 +1,8 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,EKO,BTC,20180.0,0.0002018,1,JordanManual,cryptocompare,EKO,2017-12-31 03:18:34.841967
+CCCAGG,EKO,RUR,105.24910717,1.90499199992,1,JordanManual,cryptocompare,EKO,2017-12-31 03:18:34.841967
+CCCAGG,EKO,DOGE,6000.0,96.0,1,JordanManual,cryptocompare,EKO,2017-12-31 03:08:26.271018
+CCCAGG,EKO,BTC,20180.0,0.0002018,1,JordanManual,cryptocompare,EKO,2017-12-31 00:19:18.926770
+CCCAGG,EKO,USD,16294.4193627,3.01773415035,1,JordanManual,cryptocompare,EKO,2017-12-31 00:19:18.926770
+CCCAGG,EKO,DOGE,16294.4193627,260.710709803,1,JordanManual,cryptocompare,EKO,2017-12-31 00:19:18.926770
+CCCAGG,EKO,RUR,105.24910717,1.90499199992,1,JordanManual,cryptocompare,EKO,2017-12-31 00:19:18.926770

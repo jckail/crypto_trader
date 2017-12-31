@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,VAPOR,BTC,2048.72106959,0.00393463077486,1,JordanManual,cryptocompare,VAPOR,2017-12-31 03:08:29.033104
+CCCAGG,VAPOR,RUR,808.86242036,294.859157626,1,JordanManual,cryptocompare,VAPOR,2017-12-31 03:08:29.033104
+CCCAGG,VAPOR,DOGE,4.0,83.96,1,JordanManual,cryptocompare,VAPOR,2017-12-31 03:08:29.033104

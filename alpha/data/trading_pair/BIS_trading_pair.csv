@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BIS,BTC,39447.3401392,9.98455859,1,JordanManual,cryptocompare,BIS,2017-12-31 03:15:49.446912
+CCCAGG,BIS,LTC,1723.27223201,27.43590807,1,JordanManual,cryptocompare,BIS,2017-12-31 03:15:49.446912
+CCCAGG,BIS,DOGE,47.70085905,23079.1346445,1,JordanManual,cryptocompare,BIS,2017-12-31 03:15:49.446912

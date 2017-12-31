@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,FRST,BTC,8249.23294037,9.04064781242,1,JordanManual,cryptocompare,FRST,2017-12-31 00:19:30.394030
+CCCAGG,FRST,USD,86.52205649,1311.95429151,1,JordanManual,cryptocompare,FRST,2017-12-31 00:19:30.394030
+CCCAGG,FRST,ETH,61.31106665,1.23491822177,1,JordanManual,cryptocompare,FRST,2017-12-31 00:19:30.394030
+CCCAGG,FRST,DOGE,29.16094171,73555.9647064,1,JordanManual,cryptocompare,FRST,2017-12-31 00:19:30.394030

@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ATL,BTC,52374.7302281,1.11402931392,1,JordanManual,cryptocompare,ATL,2017-12-31 03:15:45.738357
+CCCAGG,ATL,ETH,22182.8410335,7.55862556197,1,JordanManual,cryptocompare,ATL,2017-12-31 03:15:45.738357
+CCCAGG,ATL,DOGE,504.34936217,11620.00733,1,JordanManual,cryptocompare,ATL,2017-12-31 03:15:45.738357
+CCCAGG,ATL,USD,380.96366647,88.5645567511,1,JordanManual,cryptocompare,ATL,2017-12-31 03:15:45.738357
+CCCAGG,ATL,RUR,0.0774351,1.20106585783,1,JordanManual,cryptocompare,ATL,2017-12-31 03:15:45.738357

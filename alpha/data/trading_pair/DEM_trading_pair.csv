@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,DEM,BTC,66474.5270262,0.193142384678,1,JordanManual,cryptocompare,DEM,2017-12-31 03:16:27.712313
+CCCAGG,DEM,LTC,4011.36217268,0.6622667,1,JordanManual,cryptocompare,DEM,2017-12-31 03:16:27.712313
+CCCAGG,DEM,DOGE,246.77772757,1160.64959312,1,JordanManual,cryptocompare,DEM,2017-12-31 03:16:27.712313
+CCCAGG,DEM,USD,50.0,1.50104292643,1,JordanManual,cryptocompare,DEM,2017-12-31 03:16:27.712313
+CCCAGG,DEM,RUR,6.0,20.90999995,1,JordanManual,cryptocompare,DEM,2017-12-31 03:16:27.712313

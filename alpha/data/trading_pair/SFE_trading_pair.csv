@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SFE,WAVES,19518270.6029,38.4072681656,1,JordanManual,cryptocompare,SFE,2017-12-31 03:15:51.289926
+CCCAGG,SFE,ETH,18213342.7266,0.962565521389,1,JordanManual,cryptocompare,SFE,2017-12-31 03:15:51.289926
+CCCAGG,SFE,USD,3969609.56831,150.200648662,1,JordanManual,cryptocompare,SFE,2017-12-31 03:15:51.289926
+CCCAGG,SFE,DOGE,205808.18696,1984.97714446,1,JordanManual,cryptocompare,SFE,2017-12-31 03:15:51.289926
+CCCAGG,SFE,RUR,54583.8061192,127.515920509,1,JordanManual,cryptocompare,SFE,2017-12-31 03:15:51.289926

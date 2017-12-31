@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,GAY,BTC,21892.6020373,0.10145151,1,JordanManual,cryptocompare,GAY,2017-12-31 03:21:33.693325
+CCCAGG,GAY,BTC,21892.6020373,0.10145151,1,JordanManual,cryptocompare,GAY,2017-12-31 03:08:28.042010
+CCCAGG,GAY,BTC,27094.1735769,0.12603595,1,JordanManual,cryptocompare,GAY,2017-12-31 00:19:21.205646
+CCCAGG,GAY,LTC,2911.21655695,0.87928423,1,JordanManual,cryptocompare,GAY,2017-12-31 00:19:21.205646
+CCCAGG,GAY,DOGE,1.43566445,10.3039308,1,JordanManual,cryptocompare,GAY,2017-12-31 00:19:21.205646

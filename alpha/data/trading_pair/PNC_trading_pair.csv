@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PNC,RUR,1.04088513,4.12727191506,1,JordanManual,cryptocompare,PNC,2017-12-31 03:21:36.114254
+CCCAGG,PNC,DOGE,0.94020999,11.282519974,1,JordanManual,cryptocompare,PNC,2017-12-31 03:21:36.114254
+CCCAGG,PNC,RUR,1.04088513,4.12727191506,1,JordanManual,cryptocompare,PNC,2017-12-31 03:08:31.697472
+CCCAGG,PNC,DOGE,0.94020999,11.282519974,1,JordanManual,cryptocompare,PNC,2017-12-31 03:08:31.697472
+CCCAGG,PNC,WAVES,0.04725417,0.000113410008,1,JordanManual,cryptocompare,PNC,2017-12-31 03:08:31.697472

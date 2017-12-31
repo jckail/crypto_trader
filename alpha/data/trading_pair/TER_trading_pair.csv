@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,TER,BTC,232.69199587,30.2316661521,1,JordanManual,cryptocompare,TER,2017-12-31 03:21:36.783692
+CCCAGG,TER,DOGE,25.63249047,92802.2105417,1,JordanManual,cryptocompare,TER,2017-12-31 03:21:36.783692
+CCCAGG,TER,LTC,1.59284805,0.11092387,1,JordanManual,cryptocompare,TER,2017-12-31 03:21:36.783692
+CCCAGG,TER,ETH,1.0116123,3.38910301875,1,JordanManual,cryptocompare,TER,2017-12-31 03:21:36.783692

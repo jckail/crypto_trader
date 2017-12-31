@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SCASH,BTC,3374.97380239,0.00385294366316,1,JordanManual,cryptocompare,SCASH,2017-12-31 03:18:40.534468
+CCCAGG,SCASH,BTC,3648.51671655,0.00408819056934,1,JordanManual,cryptocompare,SCASH,2017-12-31 00:19:25.302484
+CCCAGG,SCASH,USD,50.0,0.696667,1,JordanManual,cryptocompare,SCASH,2017-12-31 00:19:25.302484

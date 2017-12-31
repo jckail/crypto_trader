@@ -1,0 +1,7 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PST,USDT,76306.6107,44990.5086478,1,JordanManual,cryptocompare,PST,2017-12-31 03:15:45.987964
+CCCAGG,PST,ETH,54310.69,45.27446438,1,JordanManual,cryptocompare,PST,2017-12-31 03:15:45.987964
+CCCAGG,PST,USDT,76066.2011,44853.1662853,1,JordanManual,cryptocompare,PST,2017-12-31 03:08:26.824370
+CCCAGG,PST,ETH,54303.23,45.26849638,1,JordanManual,cryptocompare,PST,2017-12-31 03:08:26.824370
+CCCAGG,PST,USDT,79798.3997,47883.216097,1,JordanManual,cryptocompare,PST,2017-12-31 00:19:19.544665
+CCCAGG,PST,ETH,78559.75,67.46308601,1,JordanManual,cryptocompare,PST,2017-12-31 00:19:19.544665

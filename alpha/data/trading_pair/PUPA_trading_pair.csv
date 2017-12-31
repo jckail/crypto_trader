@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PUPA,BTC,410670.558882,0.00410670558882,1,JordanManual,cryptocompare,PUPA,2017-12-31 03:21:53.220698
+CCCAGG,PUPA,RUR,1645.82278481,10.6369620253,1,JordanManual,cryptocompare,PUPA,2017-12-31 03:21:53.220698
+CCCAGG,PUPA,USD,1000.0,0.1761,1,JordanManual,cryptocompare,PUPA,2017-12-31 03:21:53.220698
+CCCAGG,PUPA,ETH,556.11111111,0.0001001,1,JordanManual,cryptocompare,PUPA,2017-12-31 03:21:53.220698

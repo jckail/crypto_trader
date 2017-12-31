@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,TIE,BTC,65577.9512064,0.793957745854,1,JordanManual,cryptocompare,TIE,2017-12-31 03:21:29.056160
+CCCAGG,TIE,BTC,65577.9512064,0.793957745854,1,JordanManual,cryptocompare,TIE,2017-12-31 03:15:42.190563
+CCCAGG,TIE,BTC,66765.1866526,0.785986344207,1,JordanManual,cryptocompare,TIE,2017-12-31 00:19:17.023665

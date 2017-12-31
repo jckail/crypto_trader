@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PCM,BTC,500.0,0.000155,1,JordanManual,cryptocompare,PCM,2017-12-31 03:18:41.333259
+CCCAGG,PCM,DOGE,252.66976,25.5197165075,1,JordanManual,cryptocompare,PCM,2017-12-31 03:18:41.333259
+CCCAGG,PCM,RUR,8.5,0.68160006,1,JordanManual,cryptocompare,PCM,2017-12-31 03:18:41.333259

@@ -1,0 +1,7 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,DRP,BTC,7833.64214189,0.41793137,1,JordanManual,cryptocompare,DRP,2017-12-31 03:08:21.787521
+CCCAGG,DRP,DOGE,18.5318731,1669.44104326,1,JordanManual,cryptocompare,DRP,2017-12-31 03:08:21.787521
+CCCAGG,DRP,BTC,9335.63680211,0.49323161,1,JordanManual,cryptocompare,DRP,2017-12-31 00:19:14.689019
+CCCAGG,DRP,ETH,2445.1,2.5521646998,1,JordanManual,cryptocompare,DRP,2017-12-31 00:19:14.689019
+CCCAGG,DRP,LTC,361.62747386,1.08970782,1,JordanManual,cryptocompare,DRP,2017-12-31 00:19:14.689019
+CCCAGG,DRP,DOGE,18.74375521,1689.40112277,1,JordanManual,cryptocompare,DRP,2017-12-31 00:19:14.689019

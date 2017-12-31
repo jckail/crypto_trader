@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BAC,BTC,1718.38715469,0.000481148403313,1,JordanManual,cryptocompare,BAC,2017-12-31 03:21:29.237075
+CCCAGG,BAC,RUR,10.0,3.9999999,1,JordanManual,cryptocompare,BAC,2017-12-31 03:21:29.237075
+CCCAGG,BAC,RUR,10.0,3.9999999,1,JordanManual,cryptocompare,BAC,2017-12-31 03:08:23.576786
+CCCAGG,BAC,BTC,1718.38715469,0.000481148403313,1,JordanManual,cryptocompare,BAC,2017-12-31 00:24:22.595926
+CCCAGG,BAC,RUR,20.0,7.9999998,1,JordanManual,cryptocompare,BAC,2017-12-31 00:24:22.595926

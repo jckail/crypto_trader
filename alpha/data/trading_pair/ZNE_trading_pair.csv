@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ZNE,BTC,29965.5146806,0.0324513322053,1,JordanManual,cryptocompare,ZNE,2017-12-31 03:18:35.824798
+CCCAGG,ZNE,RUR,151.12894009,124.857950628,1,JordanManual,cryptocompare,ZNE,2017-12-31 03:18:35.824798
+CCCAGG,ZNE,BTC,29965.5146806,0.0324513322053,1,JordanManual,cryptocompare,ZNE,2017-12-31 03:15:46.230135
+CCCAGG,ZNE,RUR,151.12894009,124.857950628,1,JordanManual,cryptocompare,ZNE,2017-12-31 03:15:46.230135

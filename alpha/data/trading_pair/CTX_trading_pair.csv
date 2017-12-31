@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,CTX,BTC,255900.0,1.06244,1,JordanManual,cryptocompare,CTX,2017-12-31 03:08:26.706979
+CCCAGG,CTX,ETH,215888.734706,17.8367764228,1,JordanManual,cryptocompare,CTX,2017-12-31 03:08:26.706979
+CCCAGG,CTX,BTC,253000.0,1.04884,1,JordanManual,cryptocompare,CTX,2017-12-31 00:19:19.801391
+CCCAGG,CTX,ETH,212092.114251,17.5141535454,1,JordanManual,cryptocompare,CTX,2017-12-31 00:19:19.801391

@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,WIC,BTC,166749.081855,0.0691670544548,1,JordanManual,cryptocompare,WIC,2017-12-31 03:18:38.803625
+CCCAGG,WIC,ETH,8723.05882763,0.000885018740591,1,JordanManual,cryptocompare,WIC,2017-12-31 03:18:38.803625
+CCCAGG,WIC,BTC,166749.081855,0.0691670544548,1,JordanManual,cryptocompare,WIC,2017-12-31 03:16:19.487265
+CCCAGG,WIC,ETH,8723.05882763,0.000885018740591,1,JordanManual,cryptocompare,WIC,2017-12-31 03:16:19.487265
+CCCAGG,WIC,RUR,1.0,0.2,1,JordanManual,cryptocompare,WIC,2017-12-31 03:16:19.487265

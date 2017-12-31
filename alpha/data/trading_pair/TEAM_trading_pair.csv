@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,TEAM,BTC,71327.4333333,0.001939823,1,JordanManual,cryptocompare,TEAM,2017-12-31 03:15:50.428857
+CCCAGG,TEAM,USD,18015.0633333,8.8965161854,1,JordanManual,cryptocompare,TEAM,2017-12-31 03:15:50.428857
+CCCAGG,TEAM,DOGE,10100.0,4038.889,1,JordanManual,cryptocompare,TEAM,2017-12-31 03:15:50.428857
+CCCAGG,TEAM,RUR,200.0,12.957978,1,JordanManual,cryptocompare,TEAM,2017-12-31 03:15:50.428857

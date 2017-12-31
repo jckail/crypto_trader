@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,FRD,ETH,23475.8614973,2.08264576484,1,JordanManual,cryptocompare,FRD,2017-12-31 03:18:43.554041
+CCCAGG,FRD,BTC,73600.0,0.35252,1,JordanManual,cryptocompare,FRD,2017-12-31 03:08:34.962934
+CCCAGG,FRD,ETH,23475.8614973,2.08264576484,1,JordanManual,cryptocompare,FRD,2017-12-31 03:08:34.962934

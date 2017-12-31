@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,2BACCO,DOGE,5903.19273556,420.91577767,1,JordanManual,cryptocompare,2BACCO,2017-12-31 03:15:50.331690
+CCCAGG,2BACCO,USD,2495.0,0.998,1,JordanManual,cryptocompare,2BACCO,2017-12-31 03:15:50.331690
+CCCAGG,2BACCO,RUR,647.82128118,15.1167323856,1,JordanManual,cryptocompare,2BACCO,2017-12-31 03:15:50.331690

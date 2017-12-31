@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,COSS,BTC,336705.8,6.747377,1,JordanManual,cryptocompare,COSS,2017-12-31 03:08:21.849000
+CCCAGG,COSS,ETH,94892.446388,35.4455187785,1,JordanManual,cryptocompare,COSS,2017-12-31 03:08:21.849000
+CCCAGG,COSS,BTC,336912.8,6.737294,1,JordanManual,cryptocompare,COSS,2017-12-31 00:24:05.842796
+CCCAGG,COSS,ETH,125544.700317,46.4738628327,1,JordanManual,cryptocompare,COSS,2017-12-31 00:24:05.842796

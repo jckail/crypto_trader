@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,WTC,BTC,874476.6105,634.538010827,1,JordanManual,cryptocompare,WTC,2017-12-31 00:19:21.609313
+CCCAGG,WTC,ETH,84966.7587592,1126.59352691,1,JordanManual,cryptocompare,WTC,2017-12-31 00:19:21.609313
+CCCAGG,WTC,BNB,4568.22,5408.512339,1,JordanManual,cryptocompare,WTC,2017-12-31 00:19:21.609313

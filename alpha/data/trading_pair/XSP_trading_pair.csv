@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,XSP,RUR,0.38646145,0.311101857576,1,JordanManual,cryptocompare,XSP,2017-12-31 03:21:36.519756
+CCCAGG,XSP,DOGE,23.0,237.0,1,JordanManual,cryptocompare,XSP,2017-12-31 03:16:22.223848
+CCCAGG,XSP,RUR,0.38646145,0.311101857576,1,JordanManual,cryptocompare,XSP,2017-12-31 03:16:22.223848

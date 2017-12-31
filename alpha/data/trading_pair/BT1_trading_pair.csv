@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BT1,USD,0.00432,58.428,1,JordanManual,cryptocompare,BT1,2017-12-31 03:21:40.181467
+CCCAGG,BT1,BTC,0.01224454,0.012135230328,1,JordanManual,cryptocompare,BT1,2017-12-31 03:08:33.738398
+CCCAGG,BT1,BTC,0.01730226,0.0171302851772,1,JordanManual,cryptocompare,BT1,2017-12-31 00:19:26.874117
+CCCAGG,BT1,USD,0.00432,58.428,1,JordanManual,cryptocompare,BT1,2017-12-31 00:19:26.874117

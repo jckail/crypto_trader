@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,IND,ETH,790030.178922,185.371957596,1,JordanManual,cryptocompare,IND,2017-12-31 00:24:05.004652
+CCCAGG,IND,USDT,697591.086709,112576.859468,1,JordanManual,cryptocompare,IND,2017-12-31 00:24:05.004652
+CCCAGG,IND,BTC,544327.262086,6.87530100051,1,JordanManual,cryptocompare,IND,2017-12-31 00:24:05.004652
+CCCAGG,IND,DOGE,13.18667668,791.20060034,1,JordanManual,cryptocompare,IND,2017-12-31 00:24:05.004652

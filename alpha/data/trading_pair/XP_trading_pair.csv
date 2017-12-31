@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,XP,DOGE,192004432.776,430819.068688,1,JordanManual,cryptocompare,XP,2017-12-31 03:18:38.756456
+CCCAGG,XP,DOGE,192004432.776,430819.068688,1,JordanManual,cryptocompare,XP,2017-12-31 03:15:50.521288
+CCCAGG,XP,BTC,125672.0,0.00125672,1,JordanManual,cryptocompare,XP,2017-12-31 03:15:50.521288

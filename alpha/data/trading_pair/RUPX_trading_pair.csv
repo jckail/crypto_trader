@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,RUPX,BTC,63794.6454945,0.00851001314183,1,JordanManual,cryptocompare,RUPX,2017-12-31 03:21:42.028457
+CCCAGG,RUPX,DOGE,1198.3725496,2232.32203388,1,JordanManual,cryptocompare,RUPX,2017-12-31 03:21:42.028457
+CCCAGG,RUPX,BTC,63794.6454945,0.00851001314183,1,JordanManual,cryptocompare,RUPX,2017-12-31 03:16:25.707800
+CCCAGG,RUPX,DOGE,1198.3725496,2232.32203388,1,JordanManual,cryptocompare,RUPX,2017-12-31 03:16:25.707800

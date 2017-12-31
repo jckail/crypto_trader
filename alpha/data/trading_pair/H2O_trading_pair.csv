@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,H2O,ETH,480.862802612,2.21940749679,1,JordanManual,cryptocompare,H2O,2017-12-31 03:15:49.372492

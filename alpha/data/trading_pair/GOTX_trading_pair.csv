@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,GOTX,USD,290964.860209,3.19676966621,1,JordanManual,cryptocompare,GOTX,2017-12-31 03:21:30.068511
+CCCAGG,GOTX,RUR,105301.567929,94.3399935002,1,JordanManual,cryptocompare,GOTX,2017-12-31 03:21:30.068511
+CCCAGG,GOTX,USD,290964.860209,3.19676966621,1,JordanManual,cryptocompare,GOTX,2017-12-31 03:15:43.441002
+CCCAGG,GOTX,RUR,105301.567929,94.3399935002,1,JordanManual,cryptocompare,GOTX,2017-12-31 03:15:43.441002

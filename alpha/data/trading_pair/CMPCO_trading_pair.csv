@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,CMPCO,BTC,2893874.67205,0.68845758,1,JordanManual,cryptocompare,CMPCO,2017-12-31 03:15:46.833339
+CCCAGG,CMPCO,LTC,495032.124751,7.39523787,1,JordanManual,cryptocompare,CMPCO,2017-12-31 03:15:46.833339
+CCCAGG,CMPCO,DOGE,28428.1506687,11186.1614549,1,JordanManual,cryptocompare,CMPCO,2017-12-31 03:15:46.833339

@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,XCRE,BTC,163308.882411,0.091722383724,1,JordanManual,cryptocompare,XCRE,2017-12-31 03:16:22.145674
+CCCAGG,XCRE,DOGE,19297.586497,21013.5445589,1,JordanManual,cryptocompare,XCRE,2017-12-31 03:16:22.145674
+CCCAGG,XCRE,RUR,15.29210178,152.921017758,1,JordanManual,cryptocompare,XCRE,2017-12-31 03:16:22.145674

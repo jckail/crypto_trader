@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,RUBIT,USD,90.17290136,0.316805356077,1,JordanManual,cryptocompare,RUBIT,2017-12-31 03:15:51.230625
+CCCAGG,RUBIT,WAVES,1.70128194,0.000170179232458,1,JordanManual,cryptocompare,RUBIT,2017-12-31 03:15:51.230625
+CCCAGG,RUBIT,USD,90.17290136,0.316805356077,1,JordanManual,cryptocompare,RUBIT,2017-12-31 03:08:28.696874
+CCCAGG,RUBIT,WAVES,1.70128194,0.000170179232458,1,JordanManual,cryptocompare,RUBIT,2017-12-31 03:08:28.696874

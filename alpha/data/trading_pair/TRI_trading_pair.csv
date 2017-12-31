@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,TRI,BTC,169.73169136,0.20234022,1,JordanManual,cryptocompare,TRI,2017-12-31 03:21:49.759401
+CCCAGG,TRI,BTC,169.73169136,0.20234022,1,JordanManual,cryptocompare,TRI,2017-12-31 03:08:43.095921
+CCCAGG,TRI,LTC,9.09685311,1.10287416,1,JordanManual,cryptocompare,TRI,2017-12-31 03:08:43.095921
+CCCAGG,TRI,DOGE,0.12549209,338.78816363,1,JordanManual,cryptocompare,TRI,2017-12-31 03:08:43.095921

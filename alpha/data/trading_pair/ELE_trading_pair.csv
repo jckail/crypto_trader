@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ELE,BTC,23619.3870109,0.0685966485587,1,JordanManual,cryptocompare,ELE,2017-12-31 03:15:49.355034
+CCCAGG,ELE,USD,270.8577643,16.1997619634,1,JordanManual,cryptocompare,ELE,2017-12-31 03:15:49.355034
+CCCAGG,ELE,RUR,100.0,298.898,1,JordanManual,cryptocompare,ELE,2017-12-31 03:15:49.355034

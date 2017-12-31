@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,WAY,RUR,2,1.81759936,1,JordanManual,cryptocompare,WAY,2017-12-31 03:08:26.742547

@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,XVP,BTC,16088.7537033,0.0278838677427,1,JordanManual,cryptocompare,XVP,2017-12-31 03:18:54.626129
+CCCAGG,XVP,DOGE,300.14599331,692.80497975,1,JordanManual,cryptocompare,XVP,2017-12-31 03:18:54.626129
+CCCAGG,XVP,BTC,16088.7537033,0.0278838677427,1,JordanManual,cryptocompare,XVP,2017-12-31 03:08:43.855490
+CCCAGG,XVP,DOGE,300.14599331,692.80497975,1,JordanManual,cryptocompare,XVP,2017-12-31 03:08:43.855490

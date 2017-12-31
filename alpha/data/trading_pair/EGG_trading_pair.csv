@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,EGG,BTC,4152.1148243,0.00632336539999,1,JordanManual,cryptocompare,EGG,2017-12-31 03:18:55.686750

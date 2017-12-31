@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,EBCH,ETH,147911.577557,9.90679701372,1,JordanManual,cryptocompare,EBCH,2017-12-31 03:21:41.684189
+CCCAGG,EBCH,ETH,147911.577557,9.90679701372,1,JordanManual,cryptocompare,EBCH,2017-12-31 03:08:33.932098
+CCCAGG,EBCH,ETH,151196.149385,10.0359143072,1,JordanManual,cryptocompare,EBCH,2017-12-31 00:19:27.245766

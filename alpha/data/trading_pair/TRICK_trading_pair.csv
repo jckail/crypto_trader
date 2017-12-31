@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,TRICK,ETH,1.77608931,0.000229079999204,1,JordanManual,cryptocompare,TRICK,2017-12-31 03:21:36.940058
+CCCAGG,TRICK,RUR,2.0,0.26000008,1,JordanManual,cryptocompare,TRICK,2017-12-31 03:18:41.213115
+CCCAGG,TRICK,ETH,1.77608931,0.000229079999204,1,JordanManual,cryptocompare,TRICK,2017-12-31 03:18:41.213115

@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,GOLOS,BTC,697903.558745,15.2227138277,1,JordanManual,cryptocompare,GOLOS,2017-12-31 03:08:34.667388

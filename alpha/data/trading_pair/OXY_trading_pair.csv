@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,OXY,BTC,29308.6444237,0.412471277556,1,JordanManual,cryptocompare,OXY,2017-12-31 03:15:44.769492
+CCCAGG,OXY,ETH,466.11433551,0.120909802428,1,JordanManual,cryptocompare,OXY,2017-12-31 03:15:44.769492
+CCCAGG,OXY,USD,79.4063009,21.43890718,1,JordanManual,cryptocompare,OXY,2017-12-31 03:15:44.769492
+CCCAGG,OXY,BTC,10417.1258013,0.157127929025,1,JordanManual,cryptocompare,OXY,2017-12-31 00:19:19.956897
+CCCAGG,OXY,USD,79.4063009,21.43890718,1,JordanManual,cryptocompare,OXY,2017-12-31 00:19:19.956897

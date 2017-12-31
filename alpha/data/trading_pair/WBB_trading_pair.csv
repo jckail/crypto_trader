@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,WBB,BTC,558.13973464,0.00912900948034,1,JordanManual,cryptocompare,WBB,2017-12-31 03:21:50.250412
+CCCAGG,WBB,RUR,3.44147257,43.0184074691,1,JordanManual,cryptocompare,WBB,2017-12-31 03:21:50.250412
+CCCAGG,WBB,BTC,558.13973464,0.00912900948034,1,JordanManual,cryptocompare,WBB,2017-12-31 03:16:33.886978
+CCCAGG,WBB,RUR,3.44147257,43.0184074691,1,JordanManual,cryptocompare,WBB,2017-12-31 03:16:33.886978

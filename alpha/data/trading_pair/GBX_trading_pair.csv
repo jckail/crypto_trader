@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,GBX,BTC,5112.77779428,9.67294685,1,JordanManual,cryptocompare,GBX,2017-12-31 03:21:41.917271
+CCCAGG,GBX,DOGE,5.10060462,15783.3270974,1,JordanManual,cryptocompare,GBX,2017-12-31 03:21:41.917271
+CCCAGG,GBX,BTC,5112.77779428,9.67294685,1,JordanManual,cryptocompare,GBX,2017-12-31 03:08:34.596076
+CCCAGG,GBX,LTC,34.04358171,3.72452867,1,JordanManual,cryptocompare,GBX,2017-12-31 03:08:34.596076
+CCCAGG,GBX,DOGE,5.10060462,15783.3270974,1,JordanManual,cryptocompare,GBX,2017-12-31 03:08:34.596076

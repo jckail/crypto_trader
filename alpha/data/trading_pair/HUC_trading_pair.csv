@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,HUC,BTC,219797.883256,4.7557723,1,JordanManual,cryptocompare,HUC,2017-12-31 03:21:46.892589
+CCCAGG,HUC,BTC,219797.883256,4.7557723,1,JordanManual,cryptocompare,HUC,2017-12-31 03:18:49.410197
+CCCAGG,HUC,BTC,219742.719002,4.75451952,1,JordanManual,cryptocompare,HUC,2017-12-31 03:16:30.306697
+CCCAGG,HUC,BTC,215257.291436,4.65357687,1,JordanManual,cryptocompare,HUC,2017-12-31 03:08:38.153521
+CCCAGG,HUC,BTC,209890.551897,4.46540118,1,JordanManual,cryptocompare,HUC,2017-12-31 00:19:32.180142

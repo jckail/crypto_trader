@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,XEL,BTC,2304803.22847,104.0522633,1,JordanManual,cryptocompare,XEL,2017-12-31 03:21:26.491663
+CCCAGG,XEL,BTC,2304532.06868,104.0395676,1,JordanManual,cryptocompare,XEL,2017-12-31 03:18:28.235394
+CCCAGG,XEL,BTC,2498349.04149,112.58487913,1,JordanManual,cryptocompare,XEL,2017-12-31 00:23:56.081035
+CCCAGG,XEL,BTC,2493353.0599,112.36043673,1,JordanManual,cryptocompare,XEL,2017-12-31 00:19:14.953426

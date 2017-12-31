@@ -1,0 +1,8 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SUR,ETH,4425.5,22.77371193,1,JordanManual,cryptocompare,SUR,2017-12-31 03:21:27.225671
+CCCAGG,SUR,BTC,2230.62483376,0.335257099876,1,JordanManual,cryptocompare,SUR,2017-12-31 03:21:27.225671
+CCCAGG,SUR,ETH,4417.87,22.72605584,1,JordanManual,cryptocompare,SUR,2017-12-31 03:18:28.314071
+CCCAGG,SUR,BTC,2230.62483376,0.335257099876,1,JordanManual,cryptocompare,SUR,2017-12-31 03:18:28.314071
+CCCAGG,SUR,ETH,8955.4,45.6533541,1,JordanManual,cryptocompare,SUR,2017-12-31 00:23:54.412625
+CCCAGG,SUR,BTC,3000.12483376,0.562147099876,1,JordanManual,cryptocompare,SUR,2017-12-31 00:23:54.412625
+CCCAGG,SUR,WAVES,0.01,0.0088,1,JordanManual,cryptocompare,SUR,2017-12-31 00:23:54.412625

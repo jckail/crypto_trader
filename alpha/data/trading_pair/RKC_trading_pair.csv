@@ -1,0 +1,9 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,RKC,BTC,2949.98290463,0.12509233,1,JordanManual,cryptocompare,RKC,2017-12-31 03:18:28.568292
+CCCAGG,RKC,ETH,2400.0,2.0841,1,JordanManual,cryptocompare,RKC,2017-12-31 03:18:28.568292
+CCCAGG,RKC,LTC,10.00000105,0.028,1,JordanManual,cryptocompare,RKC,2017-12-31 03:18:28.568292
+CCCAGG,RKC,DOGE,0.54765573,31.62164818,1,JordanManual,cryptocompare,RKC,2017-12-31 03:18:28.568292
+CCCAGG,RKC,BTC,4440.33848501,0.1877156,1,JordanManual,cryptocompare,RKC,2017-12-31 00:19:14.819139
+CCCAGG,RKC,ETH,4400.0,3.7425,1,JordanManual,cryptocompare,RKC,2017-12-31 00:19:14.819139
+CCCAGG,RKC,LTC,241.31235604,0.69322003,1,JordanManual,cryptocompare,RKC,2017-12-31 00:19:14.819139
+CCCAGG,RKC,DOGE,2.00856122,178.81279112,1,JordanManual,cryptocompare,RKC,2017-12-31 00:19:14.819139

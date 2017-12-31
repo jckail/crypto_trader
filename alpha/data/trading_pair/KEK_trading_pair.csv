@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,KEK,BTC,7585.70480728,0.08673351,1,JordanManual,cryptocompare,KEK,2017-12-31 03:21:40.267772
+CCCAGG,KEK,BTC,7585.70480728,0.08673351,1,JordanManual,cryptocompare,KEK,2017-12-31 03:08:34.059655
+CCCAGG,KEK,DOGE,60.54864094,1220.95808375,1,JordanManual,cryptocompare,KEK,2017-12-31 03:08:34.059655
+CCCAGG,KEK,BTC,19885.4104728,0.22534538,1,JordanManual,cryptocompare,KEK,2017-12-31 00:19:27.523059
+CCCAGG,KEK,DOGE,206.65220266,3599.33030709,1,JordanManual,cryptocompare,KEK,2017-12-31 00:19:27.523059

@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PULSE,USD,535.71684614,17.2351965333,1,JordanManual,cryptocompare,PULSE,2017-12-31 03:21:29.939537
+CCCAGG,PULSE,BTC,21080.0,0.0086236,1,JordanManual,cryptocompare,PULSE,2017-12-31 03:15:42.504960
+CCCAGG,PULSE,USD,535.71684614,17.2351965333,1,JordanManual,cryptocompare,PULSE,2017-12-31 03:15:42.504960

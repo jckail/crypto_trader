@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,UNB,BTC,3155702.6173,585.96470685,1,JordanManual,cryptocompare,UNB,2017-12-31 03:16:31.786182

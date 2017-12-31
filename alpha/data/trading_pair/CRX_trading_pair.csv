@@ -1,0 +1,7 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,CRX,BTC,477650.077777,0.205027384,1,JordanManual,cryptocompare,CRX,2017-12-31 03:08:26.952072
+CCCAGG,CRX,DOGE,5631.52061805,5751.65598827,1,JordanManual,cryptocompare,CRX,2017-12-31 03:08:26.952072
+CCCAGG,CRX,BTC,726527.17264,0.2776224162,1,JordanManual,cryptocompare,CRX,2017-12-31 00:19:19.953670
+CCCAGG,CRX,DOGE,24571.4783836,25675.4729084,1,JordanManual,cryptocompare,CRX,2017-12-31 00:19:19.953670
+CCCAGG,CRX,ETH,5.0,0.00014445,1,JordanManual,cryptocompare,CRX,2017-12-31 00:19:19.953670
+CCCAGG,CRX,RUR,0.43144986,0.107862465,1,JordanManual,cryptocompare,CRX,2017-12-31 00:19:19.953670

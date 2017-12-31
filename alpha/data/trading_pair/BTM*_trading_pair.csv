@@ -1,0 +1,7 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BTM*,USDT,6544916.7606,2074810.71796,1,JordanManual,cryptocompare,BTM*,2017-12-31 03:15:42.524084
+CCCAGG,BTM*,ETH,2243130.321,1028.64798801,1,JordanManual,cryptocompare,BTM*,2017-12-31 03:15:42.524084
+CCCAGG,BTM*,BTC,225660.781676,5.74773768737,1,JordanManual,cryptocompare,BTM*,2017-12-31 03:15:42.524084
+CCCAGG,BTM*,USD,5740.0,1929.999,1,JordanManual,cryptocompare,BTM*,2017-12-31 03:15:42.524084
+CCCAGG,BTM*,LTC,5075.40203178,7.85820859,1,JordanManual,cryptocompare,BTM*,2017-12-31 03:15:42.524084
+CCCAGG,BTM*,DOGE,184.3357503,7842.56053085,1,JordanManual,cryptocompare,BTM*,2017-12-31 03:15:42.524084

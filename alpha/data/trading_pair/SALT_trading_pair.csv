@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SALT,BTC,1807917.31458,1773.94691001,1,JordanManual,cryptocompare,SALT,2017-12-31 03:15:50.498662
+CCCAGG,SALT,ETH,285636.373297,5170.533826,1,JordanManual,cryptocompare,SALT,2017-12-31 03:15:50.498662
+CCCAGG,SALT,USDT,21006.1841555,263588.753045,1,JordanManual,cryptocompare,SALT,2017-12-31 03:15:50.498662

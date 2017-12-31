@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,MNM,DOGE,920.55068308,4619.32404911,1,JordanManual,cryptocompare,MNM,2017-12-31 03:18:31.721966
+CCCAGG,MNM,DOGE,920.55068308,4619.32404911,1,JordanManual,cryptocompare,MNM,2017-12-31 03:15:42.388539
+CCCAGG,MNM,BTC,182.35953342,0.0005489,1,JordanManual,cryptocompare,MNM,2017-12-31 03:15:42.388539

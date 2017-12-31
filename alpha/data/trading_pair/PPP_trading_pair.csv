@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PPP,ETH,119868.988061,291.393813769,1,JordanManual,cryptocompare,PPP,2017-12-31 03:21:35.592262
+CCCAGG,PPP,ETH,119868.988061,291.393813769,1,JordanManual,cryptocompare,PPP,2017-12-31 03:16:20.583655
+CCCAGG,PPP,ETH,114550.182079,279.150539922,1,JordanManual,cryptocompare,PPP,2017-12-31 00:19:23.719758

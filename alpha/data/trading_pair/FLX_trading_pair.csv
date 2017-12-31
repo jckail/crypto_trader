@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,FLX,BTC,857.08484847,0.00056567599999,1,JordanManual,cryptocompare,FLX,2017-12-31 03:21:29.763461
+CCCAGG,FLX,DOGE,490.6157315,1698.31327905,1,JordanManual,cryptocompare,FLX,2017-12-31 03:21:29.763461
+CCCAGG,FLX,BTC,857.08484847,0.00056567599999,1,JordanManual,cryptocompare,FLX,2017-12-31 03:18:31.795780
+CCCAGG,FLX,DOGE,490.6157315,1698.31327905,1,JordanManual,cryptocompare,FLX,2017-12-31 03:18:31.795780

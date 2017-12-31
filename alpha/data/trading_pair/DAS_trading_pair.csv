@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,DAS,BTC,6097.52625803,0.05896768,1,JordanManual,cryptocompare,DAS,2017-12-31 03:18:28.479712
+CCCAGG,DAS,DOGE,155.12939968,2429.12166999,1,JordanManual,cryptocompare,DAS,2017-12-31 03:18:28.479712
+CCCAGG,DAS,BTC,6225.47548778,0.06033674,1,JordanManual,cryptocompare,DAS,2017-12-31 00:19:14.596543
+CCCAGG,DAS,LTC,1688.50838357,0.95143845,1,JordanManual,cryptocompare,DAS,2017-12-31 00:19:14.596543
+CCCAGG,DAS,DOGE,162.39309374,2535.00917983,1,JordanManual,cryptocompare,DAS,2017-12-31 00:19:14.596543

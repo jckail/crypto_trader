@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,WGR,BTC,536658.504841,20.2991839416,1,JordanManual,cryptocompare,WGR,2017-12-31 00:23:56.062988
+CCCAGG,WGR,WAVES,406340.672856,16332.0089603,1,JordanManual,cryptocompare,WGR,2017-12-31 00:23:56.062988
+CCCAGG,WGR,ETH,4305.03644161,3.40448063336,1,JordanManual,cryptocompare,WGR,2017-12-31 00:23:56.062988
+CCCAGG,WGR,USD,252.78899554,132.919617775,1,JordanManual,cryptocompare,WGR,2017-12-31 00:23:56.062988
+CCCAGG,WGR,RUR,1.69216194,54.3933079225,1,JordanManual,cryptocompare,WGR,2017-12-31 00:23:56.062988

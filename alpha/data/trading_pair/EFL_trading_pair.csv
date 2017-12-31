@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,EFL,BTC,299572.8145,7.52444042,1,JordanManual,cryptocompare,EFL,2017-12-31 03:18:47.593976
+CCCAGG,EFL,DOGE,15.38930374,548.3714478,1,JordanManual,cryptocompare,EFL,2017-12-31 03:18:47.593976
+CCCAGG,EFL,BTC,299572.8145,7.52444042,1,JordanManual,cryptocompare,EFL,2017-12-31 03:16:27.881908
+CCCAGG,EFL,LTC,42.65538922,0.0627366,1,JordanManual,cryptocompare,EFL,2017-12-31 03:16:27.881908
+CCCAGG,EFL,DOGE,15.38930374,548.3714478,1,JordanManual,cryptocompare,EFL,2017-12-31 03:16:27.881908

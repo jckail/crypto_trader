@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PYN,BTC,3.76253325,0.00045150399,1,JordanManual,cryptocompare,PYN,2017-12-31 03:15:50.412706

@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,AIB,BTC,39881.5057698,0.041744353228,1,JordanManual,cryptocompare,AIB,2017-12-31 03:21:30.189916
+CCCAGG,AIB,BTC,39881.5057698,0.041744353228,1,JordanManual,cryptocompare,AIB,2017-12-31 03:18:31.686082
+CCCAGG,AIB,RUR,1.0,0.22000142,1,JordanManual,cryptocompare,AIB,2017-12-31 03:18:31.686082

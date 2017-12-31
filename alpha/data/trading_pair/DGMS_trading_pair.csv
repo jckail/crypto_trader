@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,DGMS,BTC,15576.0461834,0.000311520923668,1,JordanManual,cryptocompare,DGMS,2017-12-31 03:18:40.992791
+CCCAGG,DGMS,RUR,495.26071781,7.95262298853,1,JordanManual,cryptocompare,DGMS,2017-12-31 03:18:40.992791
+CCCAGG,DGMS,BTC,31189.7777388,0.000623795554776,1,JordanManual,cryptocompare,DGMS,2017-12-31 00:19:24.606392
+CCCAGG,DGMS,RUR,342.01102249,6.42011990534,1,JordanManual,cryptocompare,DGMS,2017-12-31 00:19:24.606392

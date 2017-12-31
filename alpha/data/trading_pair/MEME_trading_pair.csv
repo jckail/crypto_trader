@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,MEME,BTC,1481608.57354,83.99771534,1,JordanManual,cryptocompare,MEME,2017-12-31 03:21:29.608913
+CCCAGG,MEME,BTC,1478358.65164,83.81216953,1,JordanManual,cryptocompare,MEME,2017-12-31 03:18:31.998563
+CCCAGG,MEME,BTC,1476353.13735,83.69772027,1,JordanManual,cryptocompare,MEME,2017-12-31 03:15:42.733620

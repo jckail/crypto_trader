@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,RYZ,BTC,20831.599466,0.0357948005852,1,JordanManual,cryptocompare,RYZ,2017-12-31 03:21:36.788513
+CCCAGG,RYZ,BTC,20831.599466,0.0357948005852,1,JordanManual,cryptocompare,RYZ,2017-12-31 03:08:31.541040
+CCCAGG,RYZ,BTC,40222.189479,0.0678825779153,1,JordanManual,cryptocompare,RYZ,2017-12-31 00:19:24.568181

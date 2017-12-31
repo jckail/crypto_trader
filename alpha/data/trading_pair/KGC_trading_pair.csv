@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,KGC,DOGE,1435.19294743,243.519284743,1,JordanManual,cryptocompare,KGC,2017-12-31 03:18:50.755479
+CCCAGG,KGC,RUR,200.0,8.5,1,JordanManual,cryptocompare,KGC,2017-12-31 03:08:38.236806
+CCCAGG,KGC,BTC,3400.0,0.000102,1,JordanManual,cryptocompare,KGC,2017-12-31 00:19:32.169774
+CCCAGG,KGC,RUR,1586.69651631,66.7415886762,1,JordanManual,cryptocompare,KGC,2017-12-31 00:19:32.169774
+CCCAGG,KGC,DOGE,1435.19294743,243.519284743,1,JordanManual,cryptocompare,KGC,2017-12-31 00:19:32.169774

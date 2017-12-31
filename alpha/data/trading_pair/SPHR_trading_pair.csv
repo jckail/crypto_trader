@@ -1,0 +1,6 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,SPHR,BTC,88288.1614205,39.43254966,1,JordanManual,cryptocompare,SPHR,2017-12-31 03:21:51.564990
+CCCAGG,SPHR,BTC,88242.0414205,39.41167299,1,JordanManual,cryptocompare,SPHR,2017-12-31 03:18:56.580796
+CCCAGG,SPHR,BTC,87192.0464462,38.93504915,1,JordanManual,cryptocompare,SPHR,2017-12-31 03:16:36.221896
+CCCAGG,SPHR,BTC,86408.1364879,38.57623464,1,JordanManual,cryptocompare,SPHR,2017-12-31 03:08:47.002862
+CCCAGG,SPHR,BTC,110622.648869,49.46621119,1,JordanManual,cryptocompare,SPHR,2017-12-31 00:19:37.521809

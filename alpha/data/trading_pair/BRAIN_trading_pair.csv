@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,BRAIN,BTC,99308.5190391,0.0242372015573,1,JordanManual,cryptocompare,BRAIN,2017-12-31 03:15:48.505342
+CCCAGG,BRAIN,RUR,5.10059701,2.580238744,1,JordanManual,cryptocompare,BRAIN,2017-12-31 03:15:48.505342
+CCCAGG,BRAIN,DOGE,2.1568627,10.9999999857,1,JordanManual,cryptocompare,BRAIN,2017-12-31 03:15:48.505342

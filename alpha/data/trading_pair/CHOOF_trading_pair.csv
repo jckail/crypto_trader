@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,CHOOF,DOGE,239183.674639,3399.40481367,1,JordanManual,cryptocompare,CHOOF,2017-12-31 03:15:48.645818
+CCCAGG,CHOOF,USD,201573.409267,18.9397890979,1,JordanManual,cryptocompare,CHOOF,2017-12-31 03:15:48.645818
+CCCAGG,CHOOF,RUR,18902.5468368,35.698313421,1,JordanManual,cryptocompare,CHOOF,2017-12-31 03:15:48.645818
