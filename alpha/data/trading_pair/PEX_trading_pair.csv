@@ -1,0 +1,2 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,PEX,BTC,100.1,0.0001001,1,JordanManual,cryptocompare,PEX,2017-12-31 11:54:36.424302

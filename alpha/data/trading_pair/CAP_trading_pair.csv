@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,CAP,DOGE,670.65373853,335.328233894,1,JordanManual,cryptocompare,CAP,2017-12-31 03:21:43.428117
-CCCAGG,CAP,BTC,12429.3236904,0.00186439855356,1,JordanManual,cryptocompare,CAP,2017-12-31 03:16:27.828135
-CCCAGG,CAP,DOGE,670.65373853,335.328233894,1,JordanManual,cryptocompare,CAP,2017-12-31 03:16:27.828135

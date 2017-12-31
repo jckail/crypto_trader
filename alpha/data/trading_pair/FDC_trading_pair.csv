@@ -1,3 +1,2 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,FDC,DOGE,3001.984,150.0992,1,JordanManual,cryptocompare,FDC,2017-12-31 03:18:38.273708
-CCCAGG,FDC,DOGE,3001.984,150.0992,1,JordanManual,cryptocompare,FDC,2017-12-31 03:15:50.516315
+CCCAGG,FDC,DOGE,3001.984,150.0992,1,JordanManual,cryptocompare,FDC,2017-12-31 11:54:34.857770

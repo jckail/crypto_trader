@@ -1,2 +1,5 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,LAT,BTC,4655,0.290119,1,JordanManual,cryptocompare,LAT,2017-12-31 03:08:26.056828
+CCCAGG,LAT,BTC,12682.8,0.887858,1,JordanManual,cryptocompare,LAT,2017-12-31 12:18:00.908492
+CCCAGG,LAT,BTC,12682.8,0.887858,1,JordanManual,cryptocompare,LAT,2017-12-31 12:14:54.633900
+CCCAGG,LAT,BTC,11773.5,0.814,1,JordanManual,cryptocompare,LAT,2017-12-31 11:57:06.923478
+CCCAGG,LAT,BTC,11037.0,0.75508,1,JordanManual,cryptocompare,LAT,2017-12-31 11:54:31.829183

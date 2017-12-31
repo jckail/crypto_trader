@@ -124,7 +124,8 @@ class GetTradePair(object):
                     raw_exchange = exchange
                     exchange = "'"+exchange+"'"
                     df = df.query('exchange == '+exchange)
-                    x = df["toSymbol"].tolist()
+                    x = set(df["toSymbol"].tolist())
+                    x = list(x)
                     df = df.reset_index(drop=True)
                     self.trade_pair.update({symbol:x})
                     self.exchange_trade_pair.update({raw_exchange:self.trade_pair})
@@ -145,7 +146,7 @@ class GetTradePair(object):
 
         #self.exchange_trade_pair = self.exchange_trade_pair
         #print self.exchange_trade_pair
-        print 'end: GetTradePair.main'
+
 
 
 if __name__ == '__main__':

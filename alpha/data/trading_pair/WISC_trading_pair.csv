@@ -1,3 +1,2 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,WISC,USD,7656.42857142,2.68275,1,JordanManual,cryptocompare,WISC,2017-12-31 03:18:51.419543
-CCCAGG,WISC,BTC,5488.45,0.000109769,1,JordanManual,cryptocompare,WISC,2017-12-31 03:18:51.419543
+CCCAGG,WISC,BTC,40000,0.0004,1,JordanManual,cryptocompare,WISC,2017-12-31 11:54:44.912661

@@ -1,5 +1,2 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,XVC,BTC,276113.046638,18.45312082,1,JordanManual,cryptocompare,XVC,2017-12-31 03:21:49.339751
-CCCAGG,XVC,BTC,273528.161895,18.3002537,1,JordanManual,cryptocompare,XVC,2017-12-31 03:16:33.807023
-CCCAGG,XVC,BTC,273275.184109,18.2855076,1,JordanManual,cryptocompare,XVC,2017-12-31 03:08:42.469780
-CCCAGG,XVC,BTC,303131.541844,20.60773355,1,JordanManual,cryptocompare,XVC,2017-12-31 00:19:34.269020
+CCCAGG,XVC,BTC,229090.261665,14.11363052,1,JordanManual,cryptocompare,XVC,2017-12-31 11:54:46.031937

@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,CYC,BTC,13242.1602851,0.00117135984875,1,JordanManual,cryptocompare,CYC,2017-12-31 03:16:34.536807
-CCCAGG,CYC,RUR,3042.22273581,153.996701798,1,JordanManual,cryptocompare,CYC,2017-12-31 03:16:34.536807
-CCCAGG,CYC,BTC,13242.1602851,0.00117135984875,1,JordanManual,cryptocompare,CYC,2017-12-31 03:08:43.512903
-CCCAGG,CYC,RUR,3042.22273581,153.996701798,1,JordanManual,cryptocompare,CYC,2017-12-31 03:08:43.512903

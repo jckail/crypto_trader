@@ -27,12 +27,16 @@ class GetDtlPrice(object):
 
             xlist = self.exchange_trade_pair[exchange][symbol]
 
+            #print symbol
             xsymbols = [xlist[x:x+50] for x in xrange(0, len(xlist), 50 )]
 
             for xsym in xsymbols:
+                # print len(xsym)
                 xsym = "'"+','.join(xsym)+"'"
-
-                #print symbol
+                # print '----------'
+                # print len(xlist)
+                # print symbol
+                # print '----------'
                 #print xsym
                 url = "https://min-api.cryptocompare.com/data/pricemultifull"
 
@@ -58,7 +62,7 @@ class GetDtlPrice(object):
                     else:
                         pass
                 except requests.exceptions.RequestException as e:
-                    #print(e)
+                    print(e)
                     error_symbols.append(symbol)
                     #.append(symbol)
                     sleep(0.2)
@@ -102,7 +106,9 @@ class GetDtlPrice(object):
                 #print 'x'
                 #print dict[key].keys()
                 #print 'x'
-
+                # print '------'
+                # print len(dict[key].keys())
+                # print '------'
             xsymbols = [dict[key].keys()[x:x+self.chunksize] for x in xrange(0, len(dict[key].keys()), self.chunksize )]
 
             for symbol_list in tqdm(xsymbols,desc='get_price_details_for_symbols'):
@@ -126,17 +132,19 @@ class GetDtlPrice(object):
             my_file = self.cwd+'/data/%s_current_dtl_price.csv' % exchange
 
             if os.path.isfile(my_file):
-                df_resident = p.read_csv(my_file)
+                df_resident = p.read_csv(my_file,  encoding= 'utf-8')
                 frames.append(df_resident)
 
             else:
                 pass
-
+            # print '--------'
+            # print len(frames)
+            # print '--------'
             df = p.concat(frames)
 
             if not df.empty:
                 df = df.drop_duplicates(['FROMSYMBOL','LASTUPDATE','LASTMARKET','MARKET'], keep='last')
-                df = df.sort_values('LASTUPDATE')
+                df = df.sort_values('FROMSYMBOL')
                 df = df.reset_index(drop=True)
                 df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
             else:

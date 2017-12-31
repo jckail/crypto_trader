@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,TRC,BTC,64844.6097477,1.06726782,1,JordanManual,cryptocompare,TRC,2017-12-31 03:18:51.032237
-CCCAGG,TRC,DOGE,235.23738811,7021.63078148,1,JordanManual,cryptocompare,TRC,2017-12-31 03:18:51.032237
-CCCAGG,TRC,BTC,64844.6097477,1.06726782,1,JordanManual,cryptocompare,TRC,2017-12-31 03:08:38.700207
-CCCAGG,TRC,LTC,2645.15817672,3.2039213,1,JordanManual,cryptocompare,TRC,2017-12-31 03:08:38.700207
-CCCAGG,TRC,DOGE,235.23738811,7021.63078148,1,JordanManual,cryptocompare,TRC,2017-12-31 03:08:38.700207

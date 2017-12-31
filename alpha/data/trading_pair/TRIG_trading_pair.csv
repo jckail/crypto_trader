@@ -1,3 +1,2 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,TRIG,BTC,913968.417981,393.15538246,1,JordanManual,cryptocompare,TRIG,2017-12-31 03:18:36.146438
-CCCAGG,TRIG,BTC,913857.019103,393.10541539,1,JordanManual,cryptocompare,TRIG,2017-12-31 03:15:46.071933
+CCCAGG,TRIG,BTC,1409494.06358,653.58056211,1,JordanManual,cryptocompare,TRIG,2017-12-31 11:57:08.763894

@@ -1,3 +1,2 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,XPO,BTC,11762.6452976,0.00176439679464,1,JordanManual,cryptocompare,XPO,2017-12-31 03:18:37.257390
-CCCAGG,XPO,BTC,11762.6452976,0.00176439679464,1,JordanManual,cryptocompare,XPO,2017-12-31 00:19:21.276569
+CCCAGG,XPO,RUR,111.73003977,9.60878850482,1,JordanManual,cryptocompare,XPO,2017-12-31 11:54:34.012732

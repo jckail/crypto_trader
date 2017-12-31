@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,SNOV,ETH,5953832.51197,223.544762351,1,JordanManual,cryptocompare,SNOV,2017-12-31 03:15:53.689912
-CCCAGG,SNOV,BTC,812435.675281,1.87778129169,1,JordanManual,cryptocompare,SNOV,2017-12-31 03:15:53.689912

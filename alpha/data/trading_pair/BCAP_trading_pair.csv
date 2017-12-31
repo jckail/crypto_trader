@@ -1,3 +1,2 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BCAP,ETH,3655,13.4184092113,1,JordanManual,cryptocompare,BCAP,2017-12-31 03:21:52.155081
-CCCAGG,BCAP,ETH,3561,13.0424092113,1,JordanManual,cryptocompare,BCAP,2017-12-31 00:19:37.914365
+CCCAGG,BCAP,ETH,1816,5.083605087,1,JordanManual,cryptocompare,BCAP,2017-12-31 11:54:49.706669

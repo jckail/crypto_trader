@@ -29,6 +29,7 @@ import mtsocial
 import price_all_permutation
 import newfetchprice
 import newtradepair
+import forloopfetchprice
 
 
 class AlphaRunner(object):
@@ -91,7 +92,7 @@ class AlphaRunner(object):
 
                 try:
                     x = len(self.symbol_list)
-                    #self.symbol_list = self.symbol_list[:50]
+                    self.symbol_list = self.symbol_list[:500]
                     # #self.symbol_list.append('SMT')
                     # print '--------------------------------------------------------------------------'
                     # print 'Evaluating: '+str(x)+' Coins'
@@ -142,7 +143,9 @@ class AlphaRunner(object):
                     #print self.exchange_trade_pair.keys
                     nfp = newfetchprice.GetDtlPrice(self.symbol_list,self.chunksize,self.cwd,self.trade_pair,self.exchanges,self.exchange_trade_pair)
                     nfp.main()
-
+                    print '---------'
+                    fl = forloopfetchprice.GetDtlPrice(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
+                    fl.main()
                         # non 0:00:35.364493
                         #multi#thread  0:00:21.039896
                         #full run mutli #threadCompletion time: 0:16:40.115999

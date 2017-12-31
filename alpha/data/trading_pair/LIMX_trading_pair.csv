@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,LIMX,BTC,6969.38972099,0.174145404159,1,JordanManual,cryptocompare,LIMX,2017-12-31 03:21:43.675639
-CCCAGG,LIMX,BTC,6969.38972099,0.174145404159,1,JordanManual,cryptocompare,LIMX,2017-12-31 03:18:46.579405
-CCCAGG,LIMX,RUR,10.0,190.0,1,JordanManual,cryptocompare,LIMX,2017-12-31 03:18:46.579405

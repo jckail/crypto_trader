@@ -1,4 +1,4 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,SQL,BTC,175.32292107,0.00626701,1,JordanManual,cryptocompare,SQL,2017-12-31 03:16:36.771144
-CCCAGG,SQL,DOGE,2.05440462,141.23127312,1,JordanManual,cryptocompare,SQL,2017-12-31 03:16:36.771144
-CCCAGG,SQL,RUR,0.02409351,0.28912212,1,JordanManual,cryptocompare,SQL,2017-12-31 03:16:36.771144
+CCCAGG,SQL,BTC,131.4121721,0.00400748155594,1,JordanManual,cryptocompare,SQL,2017-12-31 11:54:50.109910
+CCCAGG,SQL,DOGE,1.74926994,121.05143306,1,JordanManual,cryptocompare,SQL,2017-12-31 11:54:50.109910
+CCCAGG,SQL,RUR,0.01073179,0.1289961158,1,JordanManual,cryptocompare,SQL,2017-12-31 11:54:50.109910

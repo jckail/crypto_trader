@@ -1,4 +1,4 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ZYD,BTC,125.0,0.0001,1,JordanManual,cryptocompare,ZYD,2017-12-31 03:18:35.831405
-CCCAGG,ZYD,RUR,124.99999999,22.4165590063,1,JordanManual,cryptocompare,ZYD,2017-12-31 03:18:35.831405
-CCCAGG,ZYD,USD,37.42907978,0.247031926548,1,JordanManual,cryptocompare,ZYD,2017-12-31 03:18:35.831405
+CCCAGG,ZYD,BTC,125.0,0.0001,1,JordanManual,cryptocompare,ZYD,2017-12-31 11:57:14.430946
+CCCAGG,ZYD,RUR,124.99999999,22.4165590063,1,JordanManual,cryptocompare,ZYD,2017-12-31 11:57:14.430946
+CCCAGG,ZYD,USD,90.56441546,0.594729905717,1,JordanManual,cryptocompare,ZYD,2017-12-31 11:57:14.430946

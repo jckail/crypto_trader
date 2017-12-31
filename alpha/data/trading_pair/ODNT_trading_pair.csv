@@ -1,0 +1,5 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,ODNT,BTC,8358.24455572,0.0267026941933,1,JordanManual,cryptocompare,ODNT,2017-12-31 11:57:19.747435
+CCCAGG,ODNT,USD,115.59885057,9.35709999959,1,JordanManual,cryptocompare,ODNT,2017-12-31 11:57:19.747435
+CCCAGG,ODNT,RUR,22.03251909,89.5137433943,1,JordanManual,cryptocompare,ODNT,2017-12-31 11:57:19.747435
+CCCAGG,ODNT,ETH,0.07985808,0.00031943232,1,JordanManual,cryptocompare,ODNT,2017-12-31 11:57:19.747435

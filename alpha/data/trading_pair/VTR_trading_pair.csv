@@ -1,3 +1,2 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,VTR,BTC,324617.761793,14.59392052,1,JordanManual,cryptocompare,VTR,2017-12-31 03:21:50.323059
-CCCAGG,VTR,BTC,322588.62837,14.50238951,1,JordanManual,cryptocompare,VTR,2017-12-31 03:18:53.723769
+CCCAGG,VTR,BTC,378019.63727,16.99740305,1,JordanManual,cryptocompare,VTR,2017-12-31 11:54:46.294694

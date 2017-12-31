@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BTCD,BTC,1086.14611841,23.15000433,1,JordanManual,cryptocompare,BTCD,2017-12-31 03:21:43.810702
-CCCAGG,BTCD,XMR,1.13032156,0.98052953,1,JordanManual,cryptocompare,BTCD,2017-12-31 03:21:43.810702
-CCCAGG,BTCD,DOGE,0.24543515,7821.34901645,1,JordanManual,cryptocompare,BTCD,2017-12-31 03:21:43.810702
-CCCAGG,BTCD,LTC,0.01448276,0.021,1,JordanManual,cryptocompare,BTCD,2017-12-31 03:21:43.810702

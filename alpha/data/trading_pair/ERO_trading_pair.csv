@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ERO,BTC,4275359.98603,27.5875506134,1,JordanManual,cryptocompare,ERO,2017-12-31 03:21:43.336937
-CCCAGG,ERO,ETH,1224.8259964,0.281299329442,1,JordanManual,cryptocompare,ERO,2017-12-31 03:21:43.336937
-CCCAGG,ERO,BTC,4274959.98603,27.5849106134,1,JordanManual,cryptocompare,ERO,2017-12-31 03:16:28.451707
-CCCAGG,ERO,ETH,1224.8259964,0.281299329442,1,JordanManual,cryptocompare,ERO,2017-12-31 03:16:28.451707

@@ -1,56 +1,18 @@
-import requests
-import pandas as p
-import os
-import datetime as dt
-cwd = os.getcwd()
-source = 'cryptocompare'
+import boto3
+import botocore
 
+BUCKET_NAME = 'ii-test-data-bucket'
+s3_location= 's3://ii-test-data-bucket/testfolder/Clients/'
 
-url = "https://www.cryptocompare.com/api/data/miningequipment/"
+#BUCKET_NAME = 'my-bucket' # replace with your bucket name
+KEY = 'my_image_in_s3.jpg' # replace with your object key
 
-headers = {
-    'cache-control': "no-cache",
-    'postman-token': "f2ac0486-84d0-6e4c-a3e7-ba91f5f35897"
-}
+s3 = boto3.resource('s3')
 
-response = requests.request("GET", url, headers=headers)
-
-data = response.json()
-
-def miner_data(data):
-    keys = data['MiningData'].keys()
-    frames = []
-
-    for key in keys:
-        print '----------'
-
-        print key
-        sub =  data['MiningData'][key]
-        print '----------'
-
-        df = p.DataFrame.from_dict(sub,orient='Index', dtype=None)
-        df = p.DataFrame.transpose(df)
-        df = df.assign (timestamp_api_call = dt.datetime.now(),source = source,key = key )
-        frames.append(df)
-
-    my_file = cwd+'/data/mining_equipment.csv'
-
-    if os.path.isfile(my_file):
-        df_resident = p.DataFrame.from_csv(my_file)
-        print 'appending new data: '
-        frames.append(df_resident)
+try:
+    s3.Bucket(BUCKET_NAME).download_file(KEY, 'my_local_image.jpg')
+except botocore.exceptions.ClientError as e:
+    if e.response['Error']['Code'] == "404":
+        print("The object does not exist.")
     else:
-        print ''
-
-    df = p.concat(frames)
-    df = df.drop_duplicates(['Company','Cost','CurrenciesAvailable','HashesPerSecond','Name'],  keep='last')
-    df = df.sort_values('key')
-    df = df.reset_index(drop=True)
-    print df
-    if not df.empty:
-        df.to_csv(my_file,index_label='Sequence',  encoding= 'utf-8' ) #need to add this
-        print 'Updated: '+str(my_file)
-    else:
-        print 'No data: '
-
-miner_data(data)
+        raise

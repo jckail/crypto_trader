@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NUBIS,BTC,147.09466636,0.00457530110468,1,JordanManual,cryptocompare,NUBIS,2017-12-31 03:15:48.786122
-CCCAGG,NUBIS,USD,1.0,1.69000023,1,JordanManual,cryptocompare,NUBIS,2017-12-31 03:15:48.786122
-CCCAGG,NUBIS,RUR,0.02,0.240424468,1,JordanManual,cryptocompare,NUBIS,2017-12-31 03:15:48.786122

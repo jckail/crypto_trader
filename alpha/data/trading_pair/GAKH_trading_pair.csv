@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,GAKH,RUR,4.24465999,0.944538743538,1,JordanManual,cryptocompare,GAKH,2017-12-31 03:16:25.036555
-CCCAGG,GAKH,RUR,4.24465999,0.944538743538,1,JordanManual,cryptocompare,GAKH,2017-12-31 03:08:34.980685
-CCCAGG,GAKH,RUR,2.40387262,0.569018120058,1,JordanManual,cryptocompare,GAKH,2017-12-31 00:19:28.073330

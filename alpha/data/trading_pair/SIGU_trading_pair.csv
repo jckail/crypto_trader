@@ -1,3 +1,5 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,SIGU,BTC,20,0.0003044,1,JordanManual,cryptocompare,SIGU,2017-12-31 03:21:51.575515
-CCCAGG,SIGU,BTC,20,0.0003044,1,JordanManual,cryptocompare,SIGU,2017-12-31 00:19:37.461174
+CCCAGG,SIGU,WAVES,0.0782837,0.00151366152688,1,JordanManual,cryptocompare,SIGU,2017-12-31 11:57:34.367857
+CCCAGG,SIGU,RUR,0.0782837,1.17360714495,1,JordanManual,cryptocompare,SIGU,2017-12-31 11:57:34.367857
+CCCAGG,SIGU,WAVES,0.0782837,0.00151366152688,1,JordanManual,cryptocompare,SIGU,2017-12-31 11:54:48.982769
+CCCAGG,SIGU,RUR,0.0782837,1.17360714495,1,JordanManual,cryptocompare,SIGU,2017-12-31 11:54:48.982769

@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NICE,BTC,9988.26439551,0.00532250999999,1,JordanManual,cryptocompare,NICE,2017-12-31 03:21:44.460955
-CCCAGG,NICE,RUR,37.66663703,7.30000639872,1,JordanManual,cryptocompare,NICE,2017-12-31 03:21:44.460955
-CCCAGG,NICE,BTC,9988.26439551,0.00532250999999,1,JordanManual,cryptocompare,NICE,2017-12-31 03:08:36.392228
-CCCAGG,NICE,RUR,37.66663703,7.30000639872,1,JordanManual,cryptocompare,NICE,2017-12-31 03:08:36.392228

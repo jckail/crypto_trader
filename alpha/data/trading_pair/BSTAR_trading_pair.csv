@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BSTAR,DOGE,96924.1314744,1114.39193053,1,JordanManual,cryptocompare,BSTAR,2017-12-31 03:16:21.441354
-CCCAGG,BSTAR,RUR,30578.357884,222.442873118,1,JordanManual,cryptocompare,BSTAR,2017-12-31 03:16:21.441354
-CCCAGG,BSTAR,BTC,20010.0,0.0002001,1,JordanManual,cryptocompare,BSTAR,2017-12-31 03:16:21.441354
-CCCAGG,BSTAR,USD,16275.5641531,3.70821935701,1,JordanManual,cryptocompare,BSTAR,2017-12-31 03:16:21.441354

@@ -1,32 +1,63 @@
-import pandas as p
-cwd = '/Users/jkail/Documents/GitHub/lit_crypto/alpha/'
-df = p.read_csv(cwd+'/data/coinlist_info.csv')
-ls_has = df["Symbol"].tolist()
-ls_has = ls_has[:100]
-chunksize = 50
-trade_pair = {}
-exchange_trade_pair ={}
-symbols = ['BTC','BCH','LTC','ETH']
-exchanges = ['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
-exchange = 'CCCAGG'
+import boto3
+import sys
 
-for symbol in symbols:
-    df = p.read_csv(cwd+'/data/trading_pair/%s_trading_pair.csv' % symbol)
+AWS_ACCESS_KEY_ID = 'AKIAJDFDUSQXDG3Z7CEA'
+AWS_ACCESS_KEY_SECRET = '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'
 
-    x = set(df["exchange"].tolist())
-    x = list(x)
-    for exchange in x:
-        raw_exchange = exchange
-        exchange = "'"+exchange+"'"
-        df = df.query('exchange == '+exchange)
-        x = df["toSymbol"].tolist()
-        df = df.reset_index(drop=True)
-        print trade_pair
-        trade_pair.update({symbol:x})
-        dfs = []
-        dfs.append(df)
-        df = p.concat(dfs)
-        exchange_trade_pair.update({raw_exchange:trade_pair})
+##use this to replace jckail etc
+#credentials = "credentials 'aws_iam_role=arn:aws:iam::462455771080:role/redshift_admin'"
+
+s3_bucket = 'ii-test-data-bucket'
+s3_location= 's3://ii-test-data-bucket/testfolder/Clients/'
+
+organization_code = 'org1' #passed from sftp name
+s3_outputdirectory = s3_location.replace("s3://"+s3_bucket,"")
 
 
+def s3_batch_loader(AWS_ACCESS_KEY_ID,AWS_ACCESS_KEY_SECRET,bucket_name,sourceDir,destDir):
 
+    #max size in bytes before uploading in parts. between 1 and 5 GB recommended
+    MAX_SIZE = 20 * 1000 * 1000
+    #size of parts when uploading in parts
+    PART_SIZE = 6 * 1000 * 1000
+
+    conn = boto.connect_s3(AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY_SECRET)
+
+    bucket = conn.create_bucket(bucket_name,
+                                location=boto.s3.connection.Location.DEFAULT)
+
+
+    uploadFileNames = []
+    for (sourceDir, dirname, filename) in os.walk(sourceDir):
+        uploadFileNames.extend(filename)
+        break
+
+    def percent_cb(complete, total):
+        sys.stdout.write('.')
+        sys.stdout.flush()
+
+    for filename in uploadFileNames:
+        sourcepath = os.path.join(sourceDir + filename)
+        destpath = os.path.join(destDir, filename)
+        print 'Uploading %s to Amazon S3 bucket %s' % \
+              (sourcepath, bucket_name)
+
+        filesize = os.path.getsize(sourcepath)
+        if filesize > MAX_SIZE:
+            print "multipart upload"
+            mp = bucket.initiate_multipart_upload(destpath)
+            fp = open(sourcepath,'rb')
+            fp_num = 0
+            while (fp.tell() < filesize):
+                fp_num += 1
+                print "uploading part %i" %fp_num
+                mp.upload_part_from_file(fp, fp_num, cb=percent_cb, num_cb=10, size=PART_SIZE)
+
+            mp.complete_upload()
+
+        else:
+            print "singlepart upload"
+            k = boto.s3.key.Key(bucket)
+            k.key = destpath
+            k.set_contents_from_filename(sourcepath,
+                                         cb=percent_cb, num_cb=10)

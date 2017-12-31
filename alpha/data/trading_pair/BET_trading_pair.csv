@@ -1,3 +1,2 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BET,ETH,11615.1353903,1.11517021747,1,JordanManual,cryptocompare,BET,2017-12-31 03:21:43.296743
-CCCAGG,BET,ETH,11615.1353903,1.11517021747,1,JordanManual,cryptocompare,BET,2017-12-31 03:08:36.766459
+CCCAGG,BET,ETH,13267.7623434,1.37931308743,1,JordanManual,cryptocompare,BET,2017-12-31 11:54:41.611480

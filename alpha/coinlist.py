@@ -53,7 +53,7 @@ class GetCoinLists(object):
                 df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
             else:
                 pass
-            print 'DONE'
+
         except requests.exceptions.RequestException as e:
             print e
         except Exception as e:
@@ -70,7 +70,7 @@ class GetCoinLists(object):
             print e
 
 
-        print 'end: GetCoinLists.main'
+        print 'DONE'
 
 
 if __name__ == '__main__':

@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ICASH,BTC,17776.8835888,0.00269273971713,1,JordanManual,cryptocompare,ICASH,2017-12-31 03:18:55.704489
-CCCAGG,ICASH,RUR,265.7736294,25.6375374,1,JordanManual,cryptocompare,ICASH,2017-12-31 03:18:55.704489
-CCCAGG,ICASH,WAVES,10.14885495,0.000346278930894,1,JordanManual,cryptocompare,ICASH,2017-12-31 03:18:55.704489

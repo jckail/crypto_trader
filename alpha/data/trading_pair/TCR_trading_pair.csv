@@ -1,3 +1,4 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,TCR,USD,1125.01125011,0.999999999998,1,JordanManual,cryptocompare,TCR,2017-12-31 03:18:33.525741
-CCCAGG,TCR,USD,1125.01125011,0.999999999998,1,JordanManual,cryptocompare,TCR,2017-12-31 00:24:23.409293
+CCCAGG,TCR,DOGE,625.00078125,49.9999999999,1,JordanManual,cryptocompare,TCR,2017-12-31 12:17:54.000630
+CCCAGG,TCR,BTC,3334.0,0.00010002,1,JordanManual,cryptocompare,TCR,2017-12-31 11:54:29.700240
+CCCAGG,TCR,DOGE,625.00078125,49.9999999999,1,JordanManual,cryptocompare,TCR,2017-12-31 11:54:29.700240

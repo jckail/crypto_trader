@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,TGT,BTC,159300.0,0.15437,1,JordanManual,cryptocompare,TGT,2017-12-31 03:18:51.750767
-CCCAGG,TGT,ETH,4802.2,0.1099318389,1,JordanManual,cryptocompare,TGT,2017-12-31 03:18:51.750767
-CCCAGG,TGT,BTC,159300.0,0.15437,1,JordanManual,cryptocompare,TGT,2017-12-31 03:08:41.458119
-CCCAGG,TGT,ETH,4802.2,0.1099318389,1,JordanManual,cryptocompare,TGT,2017-12-31 03:08:41.458119

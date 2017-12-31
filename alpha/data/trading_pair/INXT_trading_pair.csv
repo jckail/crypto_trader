@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,INXT,ETH,5.32980226,0.14680525126,1,JordanManual,cryptocompare,INXT,2017-12-31 03:18:40.942276
-CCCAGG,INXT,ETH,6.62980226,0.17982525126,1,JordanManual,cryptocompare,INXT,2017-12-31 00:19:25.026243

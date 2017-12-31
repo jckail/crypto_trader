@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ORB,BTC,5524.99768602,0.16007909,1,JordanManual,cryptocompare,ORB,2017-12-31 03:08:38.560199
-CCCAGG,ORB,LTC,219.0,0.37230751,1,JordanManual,cryptocompare,ORB,2017-12-31 03:08:38.560199
-CCCAGG,ORB,DOGE,0.30264816,13.82713948,1,JordanManual,cryptocompare,ORB,2017-12-31 03:08:38.560199

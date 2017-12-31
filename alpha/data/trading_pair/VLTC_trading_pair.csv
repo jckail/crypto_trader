@@ -1,2 +1,3 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,VLTC,BTC,8012.46868944,0.00105599719521,1,JordanManual,cryptocompare,VLTC,2017-12-31 03:08:39.376128
+CCCAGG,VLTC,BTC,11970.5156335,0.0017579609937,1,JordanManual,cryptocompare,VLTC,2017-12-31 11:57:28.697409
+CCCAGG,VLTC,BTC,11970.5156335,0.0017579609937,1,JordanManual,cryptocompare,VLTC,2017-12-31 11:54:44.753502

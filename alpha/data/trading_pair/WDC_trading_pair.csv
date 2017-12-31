@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,WDC,BTC,183160.944285,0.36583261,1,JordanManual,cryptocompare,WDC,2017-12-31 03:21:47.967575
-CCCAGG,WDC,LTC,13039.7016135,1.50397118,1,JordanManual,cryptocompare,WDC,2017-12-31 03:21:47.967575
-CCCAGG,WDC,BTC,183160.944285,0.36583261,1,JordanManual,cryptocompare,WDC,2017-12-31 03:08:39.242036
-CCCAGG,WDC,LTC,13039.7016135,1.50397118,1,JordanManual,cryptocompare,WDC,2017-12-31 03:08:39.242036
-CCCAGG,WDC,DOGE,1550.0556003,4713.24414798,1,JordanManual,cryptocompare,WDC,2017-12-31 03:08:39.242036

@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ROYAL,BTC,4739.55252283,0.00126773182725,1,JordanManual,cryptocompare,ROYAL,2017-12-31 03:15:48.653796
-CCCAGG,ROYAL,DOGE,1501.13686766,3306.27691885,1,JordanManual,cryptocompare,ROYAL,2017-12-31 03:15:48.653796

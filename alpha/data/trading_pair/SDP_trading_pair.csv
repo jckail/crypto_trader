@@ -1,3 +1,2 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,SDP,BTC,267.75825557,0.00219561769567,1,JordanManual,cryptocompare,SDP,2017-12-31 03:18:37.957952
-CCCAGG,SDP,BTC,267.75825557,0.00219561769567,1,JordanManual,cryptocompare,SDP,2017-12-31 00:19:21.911159
+CCCAGG,SDP,BTC,267.75825557,0.00219561769567,1,JordanManual,cryptocompare,SDP,2017-12-31 11:54:34.259680

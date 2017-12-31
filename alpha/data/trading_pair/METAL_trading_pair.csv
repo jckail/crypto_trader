@@ -1,4 +1,4 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,METAL,BTC,362.64736263,0.000330009099993,1,JordanManual,cryptocompare,METAL,2017-12-31 03:16:34.204921
-CCCAGG,METAL,USD,100.0,6.29,1,JordanManual,cryptocompare,METAL,2017-12-31 03:16:34.204921
-CCCAGG,METAL,RUR,73.45300013,131.193498707,1,JordanManual,cryptocompare,METAL,2017-12-31 03:16:34.204921
+CCCAGG,METAL,BTC,288.0,0.00024968,1,JordanManual,cryptocompare,METAL,2017-12-31 11:57:31.011217
+CCCAGG,METAL,USD,200.0,6.621,1,JordanManual,cryptocompare,METAL,2017-12-31 11:57:31.011217
+CCCAGG,METAL,RUR,31.24561425,38.5245589375,1,JordanManual,cryptocompare,METAL,2017-12-31 11:57:31.011217

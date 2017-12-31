@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,PASC,BTC,324807.234061,66.63978112,1,JordanManual,cryptocompare,PASC,2017-12-31 03:18:44.060868
-CCCAGG,PASC,BTC,324637.811002,66.60346382,1,JordanManual,cryptocompare,PASC,2017-12-31 03:08:34.700824

@@ -1,4 +1,4 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,EBTC,BTC,47050.0,1.21735,1,JordanManual,cryptocompare,EBTC,2017-12-31 03:08:29.383193
-CCCAGG,EBTC,ETH,20020.0,9.54216,1,JordanManual,cryptocompare,EBTC,2017-12-31 03:08:29.383193
-CCCAGG,EBTC,USD,10143.9,3406.7345,1,JordanManual,cryptocompare,EBTC,2017-12-31 03:08:29.383193
+CCCAGG,EBTC,BTC,65740.0,1.680943,1,JordanManual,cryptocompare,EBTC,2017-12-31 11:57:16.828029
+CCCAGG,EBTC,ETH,28340.0,13.27556,1,JordanManual,cryptocompare,EBTC,2017-12-31 11:57:16.828029
+CCCAGG,EBTC,USD,7575.6,2543.5074,1,JordanManual,cryptocompare,EBTC,2017-12-31 11:57:16.828029

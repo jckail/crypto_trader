@@ -1,5 +1,4 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,MAT*,RUR,3748.72230538,44.9861671535,1,JordanManual,cryptocompare,MAT*,2017-12-31 03:21:26.078429
-CCCAGG,MAT*,RUR,3748.72230538,44.9861671535,1,JordanManual,cryptocompare,MAT*,2017-12-31 02:17:02.275010
-CCCAGG,MAT*,BTC,12500.0,0.000125,1,JordanManual,cryptocompare,MAT*,2017-12-31 00:19:13.509511
-CCCAGG,MAT*,DOGE,1000.0,79.99999,1,JordanManual,cryptocompare,MAT*,2017-12-31 00:19:13.509511
+CCCAGG,MAT*,RUR,3762.22230538,45.3385171535,1,JordanManual,cryptocompare,MAT*,2017-12-31 12:17:44.658107
+CCCAGG,MAT*,RUR,3762.22230538,45.3385171535,1,JordanManual,cryptocompare,MAT*,2017-12-31 11:54:26.286464
+CCCAGG,MAT*,DOGE,1000.0,79.99999,1,JordanManual,cryptocompare,MAT*,2017-12-31 11:54:26.286464

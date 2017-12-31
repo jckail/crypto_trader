@@ -1,5 +1,2 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ZCG,ETH,59071.2959387,42.7567925749,1,JordanManual,cryptocompare,ZCG,2017-12-31 03:21:43.143262
-CCCAGG,ZCG,ETH,59071.2959387,42.7567925749,1,JordanManual,cryptocompare,ZCG,2017-12-31 03:16:27.117502
-CCCAGG,ZCG,ETH,58071.2959387,42.0567895749,1,JordanManual,cryptocompare,ZCG,2017-12-31 03:08:36.311930
-CCCAGG,ZCG,ETH,63194.224512,45.630973059,1,JordanManual,cryptocompare,ZCG,2017-12-31 00:19:29.740704
+CCCAGG,ZCG,ETH,63095.8571922,50.6298538123,1,JordanManual,cryptocompare,ZCG,2017-12-31 11:54:41.529343

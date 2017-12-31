@@ -1,3 +1,2 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,GOOD,ETH,13966.171902,0.219910824726,1,JordanManual,cryptocompare,GOOD,2017-12-31 03:15:46.062582
-CCCAGG,GOOD,ETH,13966.171902,0.219910824726,1,JordanManual,cryptocompare,GOOD,2017-12-31 03:08:26.804116
+CCCAGG,GOOD,ETH,6599.871721,0.130833627688,1,JordanManual,cryptocompare,GOOD,2017-12-31 11:57:08.290592

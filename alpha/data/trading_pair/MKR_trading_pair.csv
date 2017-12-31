@@ -1,3 +1,2 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,MKR,ETH,35.0663269278,47.5347085858,1,JordanManual,cryptocompare,MKR,2017-12-31 03:18:43.556338
-CCCAGG,MKR,ETH,35.0663269278,47.5347085858,1,JordanManual,cryptocompare,MKR,2017-12-31 03:08:34.699472
+CCCAGG,MKR,ETH,138.929569034,188.185411249,1,JordanManual,cryptocompare,MKR,2017-12-31 11:54:39.978066
