@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ATMS,BTC,204199.30465,1.76338827,1,JordanManual,cryptocompare,ATMS,2017-12-29 00:03:29.555446
-CCCAGG,ATMS,LTC,99.51492536,0.05064974,1,JordanManual,cryptocompare,ATMS,2017-12-29 00:03:29.555446
-CCCAGG,ATMS,DOGE,13.84998019,268.08648686,1,JordanManual,cryptocompare,ATMS,2017-12-29 00:03:29.555446

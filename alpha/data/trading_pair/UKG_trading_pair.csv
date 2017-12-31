@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,UKG,BTC,359702.683235,7.04967917724,1,JordanManual,cryptocompare,UKG,2017-12-29 00:03:11.135084
-CCCAGG,UKG,ETH,232005.108687,93.5370862999,1,JordanManual,cryptocompare,UKG,2017-12-29 00:03:11.135084

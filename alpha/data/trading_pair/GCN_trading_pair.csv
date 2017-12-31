@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,GCN,LTC,2440837591.6,159.43217634,1,JordanManual,cryptocompare,GCN,2017-12-29 00:02:47.777780
-CCCAGG,GCN,DOGE,378351095.853,772442.493097,1,JordanManual,cryptocompare,GCN,2017-12-29 00:02:47.777780

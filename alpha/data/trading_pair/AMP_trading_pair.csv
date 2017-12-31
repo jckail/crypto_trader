@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,AMP,BTC,4732245.71229,205.72086717,1,JordanManual,cryptocompare,AMP,2017-12-29 00:10:54.534575
-CCCAGG,AMP,LTC,582.40378171,1.70329427,1,JordanManual,cryptocompare,AMP,2017-12-29 00:10:54.534575
-CCCAGG,AMP,DOGE,157.77192098,12651.5596549,1,JordanManual,cryptocompare,AMP,2017-12-29 00:10:54.534575

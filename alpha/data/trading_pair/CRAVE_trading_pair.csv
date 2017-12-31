@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,CRAVE,BTC,5181.27922297,1.19257638053,1,JordanManual,cryptocompare,CRAVE,2017-12-29 00:03:24.890575
-CCCAGG,CRAVE,DOGE,40.36105029,13680.8690644,1,JordanManual,cryptocompare,CRAVE,2017-12-29 00:03:24.890575
-CCCAGG,CRAVE,LTC,20.84036962,0.41314629,1,JordanManual,cryptocompare,CRAVE,2017-12-29 00:03:24.890575

@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,LIFE,BTC,30975579.2187,3.09755792187,1,JordanManual,cryptocompare,LIFE,2017-12-29 00:03:12.537625
-CCCAGG,LIFE,ETH,5503010.49735,4.7521320502,1,JordanManual,cryptocompare,LIFE,2017-12-29 00:03:12.537625
-CCCAGG,LIFE,WAVES,13180.0,1.318,1,JordanManual,cryptocompare,LIFE,2017-12-29 00:03:12.537625

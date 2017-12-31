@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NXE,BTC,654.57729816,0.00114416813274,1,JordanManual,cryptocompare,NXE,2017-12-29 00:02:53.505226
-CCCAGG,NXE,RUR,67.54925857,111.032334697,1,JordanManual,cryptocompare,NXE,2017-12-29 00:02:53.505226
-CCCAGG,NXE,USD,51.0,20.0298,1,JordanManual,cryptocompare,NXE,2017-12-29 00:02:53.505226

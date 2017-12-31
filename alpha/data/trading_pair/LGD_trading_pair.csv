@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,LGD,BTC,281900.454849,41.89623788,1,JordanManual,cryptocompare,LGD,2017-12-29 00:03:29.750006
-CCCAGG,LGD,ETH,2824.0477401,8.50259975,1,JordanManual,cryptocompare,LGD,2017-12-29 00:03:29.750006

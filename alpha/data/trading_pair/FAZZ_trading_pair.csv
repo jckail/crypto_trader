@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,FAZZ,BTC,20947.9078469,0.0156572343792,1,JordanManual,cryptocompare,FAZZ,2017-12-29 00:03:25.545497
-CCCAGG,FAZZ,DOGE,933.62545161,2652.28388959,1,JordanManual,cryptocompare,FAZZ,2017-12-29 00:03:25.545497
-CCCAGG,FAZZ,LTC,810.60887128,0.04341817,1,JordanManual,cryptocompare,FAZZ,2017-12-29 00:03:25.545497
-CCCAGG,FAZZ,RUR,3.0,0.60000081,1,JordanManual,cryptocompare,FAZZ,2017-12-29 00:03:25.545497

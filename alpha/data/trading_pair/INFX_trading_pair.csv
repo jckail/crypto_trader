@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,INFX,BTC,271541.543736,26.61607491,1,JordanManual,cryptocompare,INFX,2017-12-29 00:02:47.679702
-CCCAGG,INFX,LTC,100.0,0.82181679,1,JordanManual,cryptocompare,INFX,2017-12-29 00:02:47.679702
-CCCAGG,INFX,DOGE,4.72475785,947.03547897,1,JordanManual,cryptocompare,INFX,2017-12-29 00:02:47.679702

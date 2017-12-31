@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,EVC,BTC,6589.31075985,0.103341587847,1,JordanManual,cryptocompare,EVC,2017-12-29 00:11:12.446238
-CCCAGG,EVC,ETH,6497.10790154,1.6309989409,1,JordanManual,cryptocompare,EVC,2017-12-29 00:11:12.446238

@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BIO,RUR,105888.57622,123529.754373,1,JordanManual,cryptocompare,BIO,2017-12-29 00:03:20.815439
-CCCAGG,BIO,BTC,73400.4112995,0.092212464468,1,JordanManual,cryptocompare,BIO,2017-12-29 00:03:20.815439
-CCCAGG,BIO,DOGE,72624.2753338,157094.560608,1,JordanManual,cryptocompare,BIO,2017-12-29 00:03:20.815439
-CCCAGG,BIO,ETH,44975.0171667,1.10251925341,1,JordanManual,cryptocompare,BIO,2017-12-29 00:03:20.815439
-CCCAGG,BIO,USD,7764.97692391,141.21467789,1,JordanManual,cryptocompare,BIO,2017-12-29 00:03:20.815439

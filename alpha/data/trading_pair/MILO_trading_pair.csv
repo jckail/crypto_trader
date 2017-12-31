@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,MILO,BTC,1082.21143918,0.000313841317362,1,JordanManual,cryptocompare,MILO,2017-12-29 00:03:31.719968
-CCCAGG,MILO,RUR,4.14003,0.414003662405,1,JordanManual,cryptocompare,MILO,2017-12-29 00:03:31.719968
-CCCAGG,MILO,WAVES,2.07,0.000207,1,JordanManual,cryptocompare,MILO,2017-12-29 00:03:31.719968
-CCCAGG,MILO,DOGE,1e-07,1.1e-08,1,JordanManual,cryptocompare,MILO,2017-12-29 00:03:31.719968

@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,DTR,BTC,226826.633505,0.828188172839,1,JordanManual,cryptocompare,DTR,2017-12-29 00:03:11.434746
-CCCAGG,DTR,ETH,166787.560539,12.5364985001,1,JordanManual,cryptocompare,DTR,2017-12-29 00:03:11.434746

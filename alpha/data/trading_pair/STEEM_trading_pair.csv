@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,STEEM,BTC,1550611.9148,307.143658361,1,JordanManual,cryptocompare,STEEM,2017-12-29 00:02:47.733807
-CCCAGG,STEEM,ETH,8377.29828284,33.15697395,1,JordanManual,cryptocompare,STEEM,2017-12-29 00:02:47.733807

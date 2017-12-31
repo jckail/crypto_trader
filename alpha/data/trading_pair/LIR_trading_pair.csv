@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,LIR,BTC,31940.2298495,0.00191486395422,1,JordanManual,cryptocompare,LIR,2017-12-29 00:02:51.543352
-CCCAGG,LIR,USD,2155.22738778,1.93981241037,1,JordanManual,cryptocompare,LIR,2017-12-29 00:02:51.543352

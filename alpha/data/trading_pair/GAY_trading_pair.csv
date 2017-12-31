@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,GAY,BTC,553759.906015,2.05565364,1,JordanManual,cryptocompare,GAY,2017-12-29 00:02:57.967554
-CCCAGG,GAY,LTC,41565.0989237,12.06855729,1,JordanManual,cryptocompare,GAY,2017-12-29 00:02:57.967554
-CCCAGG,GAY,DOGE,18788.9385039,163614.967257,1,JordanManual,cryptocompare,GAY,2017-12-29 00:02:57.967554

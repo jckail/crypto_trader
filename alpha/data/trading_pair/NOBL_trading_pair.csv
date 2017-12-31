@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NOBL,BTC,4751675.95007,0.26772505,1,JordanManual,cryptocompare,NOBL,2017-12-29 00:03:19.653051
-CCCAGG,NOBL,LTC,624533.480649,2.37196519,1,JordanManual,cryptocompare,NOBL,2017-12-29 00:03:19.653051
-CCCAGG,NOBL,DOGE,371623.041421,42319.8656827,1,JordanManual,cryptocompare,NOBL,2017-12-29 00:03:19.653051

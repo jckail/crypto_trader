@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,KURT,BTC,331709.294901,0.328191083998,1,JordanManual,cryptocompare,KURT,2017-12-29 00:03:01.435929
-CCCAGG,KURT,LTC,40015.4659266,3.39374876,1,JordanManual,cryptocompare,KURT,2017-12-29 00:03:01.435929
-CCCAGG,KURT,DOGE,29680.9181194,51685.0756709,1,JordanManual,cryptocompare,KURT,2017-12-29 00:03:01.435929
-CCCAGG,KURT,RUR,10.0,20.9999998,1,JordanManual,cryptocompare,KURT,2017-12-29 00:03:01.435929

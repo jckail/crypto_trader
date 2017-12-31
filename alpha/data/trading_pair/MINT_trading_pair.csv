@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,MINT,BTC,346803898.153,10.89077421,1,JordanManual,cryptocompare,MINT,2017-12-29 00:03:19.498172
-CCCAGG,MINT,LTC,24676429.9917,45.99230798,1,JordanManual,cryptocompare,MINT,2017-12-29 00:03:19.498172
-CCCAGG,MINT,DOGE,12873390.5175,739893.529607,1,JordanManual,cryptocompare,MINT,2017-12-29 00:03:19.498172
-CCCAGG,MINT,ETH,1920884.48525,0.149479753558,1,JordanManual,cryptocompare,MINT,2017-12-29 00:03:19.498172

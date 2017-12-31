@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,8BIT,BTC,2021.32032862,0.08572492,1,JordanManual,cryptocompare,8BIT,2017-12-29 00:03:27.215100
-CCCAGG,8BIT,LTC,231.32058665,0.59216815,1,JordanManual,cryptocompare,8BIT,2017-12-29 00:03:27.215100
-CCCAGG,8BIT,DOGE,56.38359408,3906.48990344,1,JordanManual,cryptocompare,8BIT,2017-12-29 00:03:27.215100

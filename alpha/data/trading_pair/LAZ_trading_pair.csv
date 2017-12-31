@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,LAZ,BTC,33271.3446,0.00332713446,1,JordanManual,cryptocompare,LAZ,2017-12-29 00:02:58.006816
-CCCAGG,LAZ,ETH,32668.0824738,0.0661276633164,1,JordanManual,cryptocompare,LAZ,2017-12-29 00:02:58.006816
-CCCAGG,LAZ,RUR,267.66636218,10.7071898199,1,JordanManual,cryptocompare,LAZ,2017-12-29 00:02:58.006816

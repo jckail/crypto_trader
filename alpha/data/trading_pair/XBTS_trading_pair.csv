@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,XBTS,BTC,5923.10982581,0.0277882944582,1,JordanManual,cryptocompare,XBTS,2017-12-29 00:02:56.754530
-CCCAGG,XBTS,LTC,777.24794463,0.27097704,1,JordanManual,cryptocompare,XBTS,2017-12-29 00:02:56.754530
-CCCAGG,XBTS,DOGE,168.42944232,539.261544639,1,JordanManual,cryptocompare,XBTS,2017-12-29 00:02:56.754530
-CCCAGG,XBTS,RUR,44.96330524,134.889914401,1,JordanManual,cryptocompare,XBTS,2017-12-29 00:02:56.754530

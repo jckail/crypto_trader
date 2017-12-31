@@ -9,6 +9,7 @@ import os
 import threading
 from time import sleep
 from tqdm import tqdm
+import coinlist
 
 
 class GetSocialData(object):
@@ -36,7 +37,7 @@ class GetSocialData(object):
         source = 'cryptocompare'
         raw_symbol = symbol
         symbol = "'"+symbol+"'" #must add for df query
-        df_get_id = p.read_csv('/Users/jkail/Documents/GitHub/lit_crypto/alpha/data/coinlist_info.csv')
+        df_get_id = p.read_csv(self.cwd+'/data/coinlist_info.csv')
         a = df_get_id.query("Symbol == "+symbol)
         b = a["Id"].tolist()
         if len(b) > 0:
@@ -135,20 +136,23 @@ class GetSocialData(object):
             except Exception as e:
                 pass
 
-    def create_social_files(self,social_dict,key):
+    def create_social_files(self,social_dict,drop_dupe_dict,key):
 
-            #print key
+        #print key
         my_file = self.cwd+'/data/social/%s.csv' % key
         workinglist = social_dict[key]
         #print workinglist
         if os.path.isfile(my_file):
-            df_resident = p.read_csv(my_file)
+            df_resident = p.read_csv(my_file,  encoding= 'utf-8')
             workinglist.append(df_resident)
         else:
             pass
         df = p.concat(workinglist)
-
-        #df = df.drop_duplicates(['name','comments_per_hour','posts_per_day','Points','subscribers','symbol'], keep='last')
+        if key in drop_dupe_dict.keys():
+            df = df.drop_duplicates(drop_dupe_dict[key], keep='last')
+        else:
+            print 'drop dupe no key'
+            df = df
         #dupes logic for each key** where key = dupe logic key?
         #ie: df.drop_duplicates(dedupelogic[key], keep='last')
         df = df.sort_values('symbol')
@@ -159,13 +163,17 @@ class GetSocialData(object):
             pass
 
 
-    def main(self):
+    def main_run(self):
+        print 'xxx'
         """
 
         :return:
         """
         print 'begin: GetSocialData.main'
         try:
+
+
+
             error_symbols = []
             gsd = GetSocialData(self.symbol_list,self.exchanges,self.chunksize,self.cwd,self.reddit_ls,self.coderepository_ls,self.twitter_ls,self.cryptocompare_ls,self.general_ls,self.facebook_ls)
             #gsd.get_socials()
@@ -192,21 +200,27 @@ class GetSocialData(object):
                         pass
 
 
-
-
             social_dict = {"reddit":self.reddit_ls,"coderepository":self.coderepository_ls,"twitter":self.twitter_ls,"cryptocompare":self.cryptocompare_ls,"general":self.general_ls,"facebook":self.facebook_ls}
+            #
+            drop_dupe_dict ={"reddit":['name','comments_per_hour','posts_per_day','Points','subscribers','symbol']\
+                             ,"coderepository":['closed_issues','closed_pull_issues','language','last_update','subscribers','stars','symbol'] \
+                             ,"twitter":['account_creation','name','Points','followers','statuses','symbol']\
+                             ,"cryptocompare":['PageViews','Posts','Comments','Points','Followers','symbol']\
+                             ,"general":['CoinName','Points','Type','Points','symbol']\
+                             ,"facebook":['name','talking_about','Points','likes','symbol']\
+                             }
+            #
             #print social_dict
             keys = social_dict.keys()
             #gsd.create_social_files(key)
 
-
-            threads = [threading.Thread(target=gsd.create_social_files, args=(social_dict,key,)) for key in tqdm(keys,desc='social_dict')]
+            threads = [threading.Thread(target=gsd.create_social_files, args=(social_dict,drop_dupe_dict,key,)) for key in keys]
 
             for thread in threads:
                 thread.start()
 
             #for thread in tqdm(threads,desc='Closed Threads'):
-            for thread in threads:
+            for thread in tqdm(threads,desc='social_dict'):
                 thread.join()
 
                 if len(error_symbols) > 0:
@@ -215,9 +229,6 @@ class GetSocialData(object):
                 else:
                     pass
 
-            print 'DONE'
-
-
         except requests.exceptions.RequestException as e:
             print e
         except OverflowError:
@@ -225,31 +236,47 @@ class GetSocialData(object):
         except Exception as e:
             print e
 
-        print 'end: GetSocialData.main'
+        #print 'end: GetSocialData.main'
+        print 'DONE'
+
+    def main(self):
+        gsd = GetSocialData(self.symbol_list,self.exchanges,self.chunksize,self.cwd,self.reddit_ls,self.coderepository_ls,self.twitter_ls,self.cryptocompare_ls,self.general_ls,self.facebook_ls)
+        if os.path.isfile(self.cwd+'/data/coinlist_info.csv'):
+            gsd.main_run()
+
+        else:
+            print "repopulating coinlist"
+            cl = coinlist.GetCoinLists(self.cwd)
+            cl.main()
+            gsd.main_run()
 
 
 if __name__ == '__main__':
-    test_symbol_list = ['BTC','BCH','LTC','ETH']
-    cwd = '/Users/jkail/Documents/GitHub/lit_crypto/alpha/'
-    df = p.read_csv(cwd+'/data/coinlist_info.csv')
-    ls_has = df["Symbol"].tolist()
-    #ls_has = ls_has[:1000]
-    exchanges = ['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
-    #cwd = '/Users/jkail/Documents/GitHub/lit_crypto/alpha/'
+    # ls_has = ['BTC','BCH','LTC','ETH']
+    # cwd = '/Users/jkail/Documents/GitHub/lit_crypto/alpha/'
+    # df = p.read_csv(cwd+'data/coinlist_info.csv')
+    # ls_has = df["Symbol"].tolist()
+    # ls_has = ls_has[:100]
+    # exchanges = ['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
+    # cwd = '/Users/jkail/Documents/GitHub/lit_crypto/alpha/'
     """
 
     :return:
     """
-    reddit_ls = []
-    coderepository_ls = []
-    twitter_ls = []
-    cryptocompare_ls = []
-    general_ls = []
-    facebook_ls = []
-
+    # reddit_ls = []
+    # coderepository_ls = []
+    # twitter_ls = []
+    # cryptocompare_ls = []
+    # general_ls = []
+    # facebook_ls = []
 
     #self.exchanges,self.chunksize,self.cwd)
-    runner = GetSocialData(ls_has, exchanges, 199,cwd,reddit_ls,coderepository_ls,twitter_ls,cryptocompare_ls,general_ls,facebook_ls ) #pass symbol_list to run test in place
+    #runner = GetSocialData(ls_has, exchanges, 199,cwd,reddit_ls,coderepository_ls,twitter_ls,cryptocompare_ls,general_ls,facebook_ls ) #pass symbol_list to run test in place
+
+
+    runner = GetSocialData()
+    #runner = GetSocialData(ls_has, exchanges, 199,cwd,reddit_ls,coderepository_ls,twitter_ls,cryptocompare_ls,general_ls,facebook_ls ) #pass symbol_list to run test in place
     runner.main()
+
 
 

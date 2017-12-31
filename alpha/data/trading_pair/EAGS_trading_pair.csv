@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,EAGS,BTC,36710.5956419,0.0184402504358,1,JordanManual,cryptocompare,EAGS,2017-12-29 00:03:28.530188
-CCCAGG,EAGS,RUR,1.29e-06,1.4073899871e-06,1,JordanManual,cryptocompare,EAGS,2017-12-29 00:03:28.530188

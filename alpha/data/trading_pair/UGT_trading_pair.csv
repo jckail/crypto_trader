@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,UGT,USD,963.2,702.7444,1,JordanManual,cryptocompare,UGT,2017-12-29 00:03:11.115323
-CCCAGG,UGT,BTC,170.0,0.00833,1,JordanManual,cryptocompare,UGT,2017-12-29 00:03:11.115323
-CCCAGG,UGT,ETH,140.0,0.1438,1,JordanManual,cryptocompare,UGT,2017-12-29 00:03:11.115323

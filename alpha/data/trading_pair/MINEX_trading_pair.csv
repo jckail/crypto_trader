@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,MINEX,BTC,19329.665258,0.03506751,1,JordanManual,cryptocompare,MINEX,2017-12-29 00:02:51.753946
-CCCAGG,MINEX,DOGE,2928.10765162,11707.3533705,1,JordanManual,cryptocompare,MINEX,2017-12-29 00:02:51.753946
-CCCAGG,MINEX,LTC,258.60606061,0.01775589,1,JordanManual,cryptocompare,MINEX,2017-12-29 00:02:51.753946

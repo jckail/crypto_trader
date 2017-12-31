@@ -110,7 +110,7 @@ class GetDtlPrice(object):
                 df = df.drop_duplicates(['FROMSYMBOL','LASTUPDATE','LASTMARKET','MARKET'], keep='last')
                 df = df.sort_values('LASTUPDATE')
                 df = df.reset_index(drop=True)
-                df.to_csv(my_file, index = False) #need to add this
+                df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
             else:
                 pass
             print 'DONE'

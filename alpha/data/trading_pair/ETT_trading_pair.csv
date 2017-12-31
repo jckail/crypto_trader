@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ETT,BTC,37132.9700403,0.41991848719,1,JordanManual,cryptocompare,ETT,2017-12-29 00:03:29.520558
-CCCAGG,ETT,WAVES,12467.4217921,158.139014649,1,JordanManual,cryptocompare,ETT,2017-12-29 00:03:29.520558
-CCCAGG,ETT,DOGE,207.9999922,4670.8186758,1,JordanManual,cryptocompare,ETT,2017-12-29 00:03:29.520558
-CCCAGG,ETT,LTC,154.26897098,0.13884053,1,JordanManual,cryptocompare,ETT,2017-12-29 00:03:29.520558

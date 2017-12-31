@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ZLQ,BTC,151192.897134,0.00156192897134,1,JordanManual,cryptocompare,ZLQ,2017-12-29 00:03:12.646418
-CCCAGG,ZLQ,RUR,15923.1124921,184.859994494,1,JordanManual,cryptocompare,ZLQ,2017-12-29 00:03:12.646418

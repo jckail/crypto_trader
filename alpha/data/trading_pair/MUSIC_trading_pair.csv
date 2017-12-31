@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,MUSIC,BTC,132879329.552,493.68696984,1,JordanManual,cryptocompare,MUSIC,2017-12-29 00:03:25.264395
-CCCAGG,MUSIC,LTC,295355.417453,80.95580868,1,JordanManual,cryptocompare,MUSIC,2017-12-29 00:03:25.264395
-CCCAGG,MUSIC,DOGE,55742.127661,315543.877964,1,JordanManual,cryptocompare,MUSIC,2017-12-29 00:03:25.264395

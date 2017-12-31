@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,JNT,USD,100000,0.801,1,JordanManual,cryptocompare,JNT,2017-12-29 00:03:12.809625
-CCCAGG,JNT,RUR,2000,6.59996,1,JordanManual,cryptocompare,JNT,2017-12-29 00:03:12.809625

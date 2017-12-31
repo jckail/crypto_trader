@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,STO,BTC,185919.140773,0.00255369140773,1,JordanManual,cryptocompare,STO,2017-12-29 00:11:05.644410
-CCCAGG,STO,RUR,2139.41400762,54.6550571943,1,JordanManual,cryptocompare,STO,2017-12-29 00:11:05.644410
-CCCAGG,STO,USD,1139.414,0.4557656,1,JordanManual,cryptocompare,STO,2017-12-29 00:11:05.644410

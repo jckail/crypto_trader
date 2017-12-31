@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ICOB,BTC,851834.189458,0.155138082052,1,JordanManual,cryptocompare,ICOB,2017-12-29 00:03:00.761953
-CCCAGG,ICOB,DOGE,87603.0441637,28299.3783703,1,JordanManual,cryptocompare,ICOB,2017-12-29 00:03:00.761953
-CCCAGG,ICOB,LTC,59266.4918146,0.82045581,1,JordanManual,cryptocompare,ICOB,2017-12-29 00:03:00.761953
-CCCAGG,ICOB,RUR,1409.33125,225.493871633,1,JordanManual,cryptocompare,ICOB,2017-12-29 00:03:00.761953
-CCCAGG,ICOB,USD,564.0,1.12800564,1,JordanManual,cryptocompare,ICOB,2017-12-29 00:03:00.761953

@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NLG,BTC,5171562.80486,66.7539345776,1,JordanManual,cryptocompare,NLG,2017-12-29 00:11:29.097926
-CCCAGG,NLG,DOGE,59.18012771,1428.36309225,1,JordanManual,cryptocompare,NLG,2017-12-29 00:11:29.097926
-CCCAGG,NLG,USD,13.71797034,54.87188136,1,JordanManual,cryptocompare,NLG,2017-12-29 00:11:29.097926
-CCCAGG,NLG,RUR,0.0044786,0.134358000045,1,JordanManual,cryptocompare,NLG,2017-12-29 00:11:29.097926

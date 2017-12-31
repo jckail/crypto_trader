@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,GRS,BTC,1647624.32153,176.801854666,1,JordanManual,cryptocompare,GRS,2017-12-29 00:02:45.454322
-CCCAGG,GRS,LTC,6135.18903364,39.79164453,1,JordanManual,cryptocompare,GRS,2017-12-29 00:02:45.454322
-CCCAGG,GRS,DOGE,875.8826241,166129.707305,1,JordanManual,cryptocompare,GRS,2017-12-29 00:02:45.454322
-CCCAGG,GRS,ETH,14.17755264,0.0312852644862,1,JordanManual,cryptocompare,GRS,2017-12-29 00:02:45.454322
-CCCAGG,GRS,USD,4.0199675,7.77939557855,1,JordanManual,cryptocompare,GRS,2017-12-29 00:02:45.454322

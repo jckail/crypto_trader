@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,EAC,BTC,4330175.49352,0.0795840749872,1,JordanManual,cryptocompare,EAC,2017-12-29 00:03:16.430521
-CCCAGG,EAC,DOGE,411011.947552,44582.9797148,1,JordanManual,cryptocompare,EAC,2017-12-29 00:03:16.430521

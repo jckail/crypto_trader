@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ROS,BTC,2172.91666666,0.000235624999999,1,JordanManual,cryptocompare,ROS,2017-12-29 00:03:27.410898
-CCCAGG,ROS,RUR,47.24137308,19.9999999968,1,JordanManual,cryptocompare,ROS,2017-12-29 00:03:27.410898

@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,YAC,BTC,15696.0,0.00193514666667,1,JordanManual,cryptocompare,YAC,2017-12-29 00:03:21.871315
-CCCAGG,YAC,RUR,30.9643619,14.7699996974,1,JordanManual,cryptocompare,YAC,2017-12-29 00:03:21.871315

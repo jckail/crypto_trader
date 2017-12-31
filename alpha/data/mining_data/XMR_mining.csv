@@ -1,2 +1,2 @@
 TotalCoinsMined,BlockReward,DifficultyAdjustment,BlockRewardReduction,Symbol,BlockNumber,NetHashesPerSecond,BlockTime,PreviousTotalCoinsMined,PriceUSD,key,source,timestamp_api_call
-15529226.6416,5.71863337916,2 blocks,-,XMR,1473850,487738060.9,120,0.0,349.57,XMR,cryptocompare,2017-12-28 16:11:32.003159
+15543422.0759,5.56765780536,2 blocks,-,XMR,1476408,545944934.633,120,0.0,314.74,XMR,cryptocompare,2017-12-30 17:31:24.561320

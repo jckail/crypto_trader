@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,GAS,BTC,110939.03253,202.016535402,1,JordanManual,cryptocompare,GAS,2017-12-29 00:10:59.103894
-CCCAGG,GAS,ETH,3887.79476475,142.834394429,1,JordanManual,cryptocompare,GAS,2017-12-29 00:10:59.103894
-CCCAGG,GAS,NEO,1043.6666,436.911840368,1,JordanManual,cryptocompare,GAS,2017-12-29 00:10:59.103894
-CCCAGG,GAS,USDT,784.72934638,20128.8406072,1,JordanManual,cryptocompare,GAS,2017-12-29 00:10:59.103894
-CCCAGG,GAS,KCS,289.7121,2950.14038038,1,JordanManual,cryptocompare,GAS,2017-12-29 00:10:59.103894

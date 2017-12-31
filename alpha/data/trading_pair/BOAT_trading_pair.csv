@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BOAT,BTC,131963.378097,0.0236610615546,1,JordanManual,cryptocompare,BOAT,2017-12-29 00:03:26.323203
-CCCAGG,BOAT,DOGE,18.4480278,10.6954394633,1,JordanManual,cryptocompare,BOAT,2017-12-29 00:03:26.323203

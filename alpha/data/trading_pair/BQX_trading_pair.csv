@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BQX,BTC,2482182.4,424.77439881,1,JordanManual,cryptocompare,BQX,2017-12-29 00:02:45.609781
-CCCAGG,BQX,ETH,183491.06038,629.452379605,1,JordanManual,cryptocompare,BQX,2017-12-29 00:02:45.609781

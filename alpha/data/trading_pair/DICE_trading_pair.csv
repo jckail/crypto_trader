@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,DICE,ETH,11719.1505282,44.141890674,1,JordanManual,cryptocompare,DICE,2017-12-29 00:03:30.793675
-CCCAGG,DICE,BTC,668.985,0.125521962,1,JordanManual,cryptocompare,DICE,2017-12-29 00:03:30.793675

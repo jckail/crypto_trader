@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,DNT,BTC,58805843.268,477.234717504,1,JordanManual,cryptocompare,DNT,2017-12-29 00:10:54.818305
-CCCAGG,DNT,ETH,7040386.76084,1135.18803916,1,JordanManual,cryptocompare,DNT,2017-12-29 00:10:54.818305

@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,DIVX,BTC,68225.5470166,7.4354099,1,JordanManual,cryptocompare,DIVX,2017-12-29 00:03:15.012629
-CCCAGG,DIVX,ETH,376.841587342,0.583413083737,1,JordanManual,cryptocompare,DIVX,2017-12-29 00:03:15.012629
-CCCAGG,DIVX,LTC,248.36081047,1.38144258,1,JordanManual,cryptocompare,DIVX,2017-12-29 00:03:15.012629
-CCCAGG,DIVX,DOGE,131.69311346,23460.1227887,1,JordanManual,cryptocompare,DIVX,2017-12-29 00:03:15.012629

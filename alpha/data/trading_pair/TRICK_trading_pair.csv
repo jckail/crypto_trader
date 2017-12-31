@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,TRICK,BTC,997.71762758,0.000715628160507,1,JordanManual,cryptocompare,TRICK,2017-12-29 00:03:00.840749
-CCCAGG,TRICK,RUR,102.78005645,11.3058162345,1,JordanManual,cryptocompare,TRICK,2017-12-29 00:03:00.840749

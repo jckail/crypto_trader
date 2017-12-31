@@ -42,7 +42,7 @@ class GetHourHist(object):
                         frames.append(df)
                         my_file = self.cwd+'/data/hour_data/'+symbol+'_hour.csv'
                         if os.path.isfile(my_file):
-                            df_resident = p.read_csv(my_file)
+                            df_resident = p.read_csv(my_file,  encoding= 'utf-8')
                             frames.append(df_resident)
                         else:
                             pass
@@ -51,7 +51,7 @@ class GetHourHist(object):
                             df = df.drop_duplicates(['time','exchange','coin'], keep='last')
                             df = df.sort_values('time')
                             df = df.reset_index(drop=True)
-                            df.to_csv(my_file, index = False) #need to add this
+                            df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
                             #print 'Updated trade pair: '+str(my_file)
                         else:
                             pass

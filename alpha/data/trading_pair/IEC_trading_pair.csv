@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,IEC,BTC,7721.26877459,0.0222415481559,1,JordanManual,cryptocompare,IEC,2017-12-29 00:03:29.721999
-CCCAGG,IEC,RUR,6108.08754468,32028.7232165,1,JordanManual,cryptocompare,IEC,2017-12-29 00:03:29.721999
-CCCAGG,IEC,USD,288.44444443,22.3222783636,1,JordanManual,cryptocompare,IEC,2017-12-29 00:03:29.721999

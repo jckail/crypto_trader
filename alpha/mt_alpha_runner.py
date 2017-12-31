@@ -22,10 +22,10 @@ import fetchprice
 import haspricing
 import hour_hist
 import minute_hist
-import social
 import miningdata
 import tradepair
 import fetchprice
+import mtsocial
 
 
 class AlphaRunner(object):
@@ -47,6 +47,12 @@ class AlphaRunner(object):
         #self.exchanges = ['Coinbase']
         self.chunksize = 199  #~~#thread limit
         #self.org_params = json.load(open("config/cti_config.dict"))
+        self.reddit_ls = []
+        self.coderepository_ls = []
+        self.twitter_ls = []
+        self.cryptocompare_ls = []
+        self.general_ls = []
+        self.facebook_ls = []
 
     def get_args(self):
         """
@@ -69,7 +75,7 @@ class AlphaRunner(object):
                     if self.runfocus_symbols_only == 'N':
                         cl = coinlist.GetCoinLists(self.cwd)
                         cl.main()
-                        df = p.read_csv(self.cwd+'/data/coinlist_info.csv')
+                        df = p.read_csv(self.cwd+'/data/coinlist_info.csv', encoding= 'utf-8')
                         self.symbol_list = df["Symbol"].tolist()
 
                     elif self.runfocus_symbols_only == 'Y':
@@ -102,7 +108,6 @@ class AlphaRunner(object):
                     #thread3 = threading.Thread(target=tp.main(), args=())
                     print'--------------------------------------------------------------------------'
 
-
                     mh = minute_hist.GetMinuteHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
                     mh.main()
                     # thread4 = threading.Thread(target=mh.main(), args=())
@@ -116,9 +121,16 @@ class AlphaRunner(object):
                     # thread6 = threading.Thread(target=dh.main(), args=())
                     print'--------------------------------------------------------------------------'
 
+                    gsd = mtsocial.GetSocialData(self.symbol_list,self.exchanges,self.chunksize,self.cwd,\
+                    self.reddit_ls,\
+                    self.coderepository_ls,\
+                    self.twitter_ls,\
+                    self.cryptocompare_ls,\
+                    self.general_ls,\
+                    self.facebook_ls)
+                    gsd.main()
                     #gsd = social.GetSocialData(self.symbol_list,self.cwd)
                     #gsd.main()
-
 
                         # non 0:00:35.364493
                         #multi#thread  0:00:21.039896

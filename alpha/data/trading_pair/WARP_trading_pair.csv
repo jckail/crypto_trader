@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,WARP,BTC,259.35779816,0.00113079999998,1,JordanManual,cryptocompare,WARP,2017-12-29 00:11:05.659777
-CCCAGG,WARP,USD,1.81696036,0.36702597455,1,JordanManual,cryptocompare,WARP,2017-12-29 00:11:05.659777
-CCCAGG,WARP,RUR,0.03200002,0.12800008,1,JordanManual,cryptocompare,WARP,2017-12-29 00:11:05.659777

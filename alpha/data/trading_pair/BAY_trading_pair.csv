@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BAY,BTC,34941025.2341,461.63282794,1,JordanManual,cryptocompare,BAY,2017-12-29 00:03:27.988643
-CCCAGG,BAY,LTC,54669.8031459,47.09945483,1,JordanManual,cryptocompare,BAY,2017-12-29 00:03:27.988643
-CCCAGG,BAY,DOGE,7253.82477526,182293.393934,1,JordanManual,cryptocompare,BAY,2017-12-29 00:03:27.988643

@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,OBS,BTC,324.25611823,0.0361470449478,1,JordanManual,cryptocompare,OBS,2017-12-29 00:02:50.094241
-CCCAGG,OBS,USD,6.42608493,77.11301916,1,JordanManual,cryptocompare,OBS,2017-12-29 00:02:50.094241

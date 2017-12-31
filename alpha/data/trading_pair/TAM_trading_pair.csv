@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,TAM,BTC,96.99528433,0.00181395444038,1,JordanManual,cryptocompare,TAM,2017-12-29 00:11:33.711360
-CCCAGG,TAM,RUR,16.72048116,1645.53064844,1,JordanManual,cryptocompare,TAM,2017-12-29 00:11:33.711360

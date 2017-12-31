@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NETC,BTC,124.10447475,0.00463470661648,1,JordanManual,cryptocompare,NETC,2017-12-29 00:02:48.395441
-CCCAGG,NETC,RUR,15.5854252,846.673505523,1,JordanManual,cryptocompare,NETC,2017-12-29 00:02:48.395441

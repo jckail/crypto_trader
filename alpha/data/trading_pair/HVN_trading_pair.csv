@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,HVN,BTC,2949550.14855,15.7065921078,1,JordanManual,cryptocompare,HVN,2017-12-29 00:10:55.146366
-CCCAGG,HVN,ETH,1274000.01502,142.063183737,1,JordanManual,cryptocompare,HVN,2017-12-29 00:10:55.146366
-CCCAGG,HVN,USD,102.05709057,9.64758673053,1,JordanManual,cryptocompare,HVN,2017-12-29 00:10:55.146366

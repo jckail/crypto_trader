@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,JIF,BTC,1310.43682734,0.00128985377555,1,JordanManual,cryptocompare,JIF,2017-12-29 00:02:57.774119
-CCCAGG,JIF,USD,499.99012759,5.31191011522,1,JordanManual,cryptocompare,JIF,2017-12-29 00:02:57.774119
-CCCAGG,JIF,DOGE,32.25806451,38.7096787023,1,JordanManual,cryptocompare,JIF,2017-12-29 00:02:57.774119

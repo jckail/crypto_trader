@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NZC,RUR,5069.44454121,7.50085000034,1,JordanManual,cryptocompare,NZC,2017-12-29 00:02:51.467177
-CCCAGG,NZC,USD,303.49019411,0.100000018959,1,JordanManual,cryptocompare,NZC,2017-12-29 00:02:51.467177

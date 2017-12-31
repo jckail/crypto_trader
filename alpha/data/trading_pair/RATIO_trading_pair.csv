@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,RATIO,BTC,4800.0,0.000432,1,JordanManual,cryptocompare,RATIO,2017-12-29 00:03:15.079267
-CCCAGG,RATIO,RUR,101.83002887,10.3988113866,1,JordanManual,cryptocompare,RATIO,2017-12-29 00:03:15.079267

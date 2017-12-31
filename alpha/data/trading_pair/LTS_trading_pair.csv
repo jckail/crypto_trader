@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,LTS,USD,10.0,0.1100013,1,JordanManual,cryptocompare,LTS,2017-12-29 00:03:30.691207
-CCCAGG,LTS,RUR,2.00372051,4.99698558464,1,JordanManual,cryptocompare,LTS,2017-12-29 00:03:30.691207

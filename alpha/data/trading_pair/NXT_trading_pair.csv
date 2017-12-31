@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NXT,BTC,290589457.658,15081.4148269,1,JordanManual,cryptocompare,NXT,2017-12-29 00:02:45.612767
-CCCAGG,NXT,USD,29584183.4143,21966395.5237,1,JordanManual,cryptocompare,NXT,2017-12-29 00:02:45.612767
-CCCAGG,NXT,ETH,1210000.0,1209.09667,1,JordanManual,cryptocompare,NXT,2017-12-29 00:02:45.612767
-CCCAGG,NXT,XMR,205365.549157,455.0621607,1,JordanManual,cryptocompare,NXT,2017-12-29 00:02:45.612767

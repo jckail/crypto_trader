@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,MBIT,RUR,13.40305047,56.2928123761,1,JordanManual,cryptocompare,MBIT,2017-12-29 00:03:25.401221
-CCCAGG,MBIT,BTC,8.42544229,0.000100009999982,1,JordanManual,cryptocompare,MBIT,2017-12-29 00:03:25.401221

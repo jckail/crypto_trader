@@ -72,7 +72,7 @@ class HasPricingCheck(object):
         my_file = cwd+'/data/has_pricing.csv'
 
         if os.path.isfile(my_file):
-            df_resident = p.read_csv(my_file)
+            df_resident = p.read_csv(my_file,  encoding= 'utf-8')
             frames.append(df_resident)
         else:
             pass
@@ -82,7 +82,7 @@ class HasPricingCheck(object):
             df = df.sort_values('symbol')
             df = df.drop_duplicates(['symbol'], keep='last')
             df = df.reset_index(drop=True)
-            df.to_csv(my_file, index_label='Sequence') #need to add this
+            df.to_csv(my_file, index_label='Sequence',  encoding= 'utf-8') #need to add this
             #print 'Updated trade pair: '+str(my_file)
         else:
             pass

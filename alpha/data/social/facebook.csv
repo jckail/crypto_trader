@@ -1,0 +1,5 @@
+Points,is_closed,likes,link,name,socialsource,source,symbol,symbol_id,talking_about,timestamp_api_call
+0,,,,,Facebook,cryptocompare,BCH,202330,,2017-12-30 17:32:32.893549
+38481,false,36281,https://www.facebook.com/bitcoins/,Bitcoin P2P Cryptocurrency,Facebook,cryptocompare,BTC,1182,220,2017-12-30 17:32:32.872250
+150916,false,116476,https://www.facebook.com/ethereumproject/,Ethereum,Facebook,cryptocompare,ETH,7605,3444,2017-12-30 17:32:32.910201
+8235,false,7865,https://www.facebook.com/litecoincommunity/,Litecoin,Facebook,cryptocompare,LTC,3808,37,2017-12-30 17:32:32.906276

@@ -1,0 +1,5 @@
+Points,active_users,comments_per_day,comments_per_hour,community_creation,link,name,posts_per_day,posts_per_hour,socialsource,source,subscribers,symbol,symbol_id,timestamp_api_call
+0,,,,,,,,,Reddit,cryptocompare,,BCH,202330,2017-12-30 17:32:32.842702
+691762,15948,15709.09,654.55,1284042626,https://www.reddit.com/r/bitcoin/,Bitcoin,559.62,23.32,Reddit,cryptocompare,612500,BTC,1182,2017-12-30 17:32:32.812098
+255021,5950,776.42,32.35,1387037735,https://www.reddit.com/r/ethereum/,ethereum,42.53,1.77,Reddit,cryptocompare,235619,ETH,7605,2017-12-30 17:32:32.868624
+176314,3881,2046.42,85.27,1318615591,https://www.reddit.com/r/litecoin/,litecoin,94.29,3.93,Reddit,cryptocompare,160579,LTC,3808,2017-12-30 17:32:32.870485

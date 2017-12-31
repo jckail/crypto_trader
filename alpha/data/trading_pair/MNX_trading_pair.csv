@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,MNX,BTC,637.10164894,0.765456366627,1,JordanManual,cryptocompare,MNX,2017-12-29 00:03:11.538259
-CCCAGG,MNX,ETH,106.16154981,2.53905426808,1,JordanManual,cryptocompare,MNX,2017-12-29 00:03:11.538259
-CCCAGG,MNX,USD,93.09386404,1617.60439424,1,JordanManual,cryptocompare,MNX,2017-12-29 00:03:11.538259

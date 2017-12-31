@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,OCL,BTC,35558.9555883,0.246987401797,1,JordanManual,cryptocompare,OCL,2017-12-29 00:02:49.204736
-CCCAGG,OCL,WAVES,24734.0956333,196.665977662,1,JordanManual,cryptocompare,OCL,2017-12-29 00:02:49.204736
-CCCAGG,OCL,ETH,6656.39751773,0.93855205,1,JordanManual,cryptocompare,OCL,2017-12-29 00:02:49.204736
-CCCAGG,OCL,EUR,104.62499999,8.3699999992,1,JordanManual,cryptocompare,OCL,2017-12-29 00:02:49.204736

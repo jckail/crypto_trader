@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,CNT,BTC,483982.4101,0.893713203516,1,JordanManual,cryptocompare,CNT,2017-12-29 00:03:29.769443
-CCCAGG,CNT,USD,17435.4738748,533.673425167,1,JordanManual,cryptocompare,CNT,2017-12-29 00:03:29.769443
-CCCAGG,CNT,DOGE,6554.97331911,20725.1188577,1,JordanManual,cryptocompare,CNT,2017-12-29 00:03:29.769443
-CCCAGG,CNT,ETH,3108.91670771,0.104008263873,1,JordanManual,cryptocompare,CNT,2017-12-29 00:03:29.769443
-CCCAGG,CNT,RUR,1.55577844,1.72705421292,1,JordanManual,cryptocompare,CNT,2017-12-29 00:03:29.769443

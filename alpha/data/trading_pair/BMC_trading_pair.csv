@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BMC,ETH,372897.010955,361.010492095,1,JordanManual,cryptocompare,BMC,2017-12-29 00:02:57.399782
-CCCAGG,BMC,USDT,300354.205239,204158.032426,1,JordanManual,cryptocompare,BMC,2017-12-29 00:02:57.399782
-CCCAGG,BMC,BTC,12306.154,0.617040148,1,JordanManual,cryptocompare,BMC,2017-12-29 00:02:57.399782
-CCCAGG,BMC,USD,3204.31,2330.8645795,1,JordanManual,cryptocompare,BMC,2017-12-29 00:02:57.399782

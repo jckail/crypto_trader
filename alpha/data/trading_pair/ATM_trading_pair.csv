@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ATM,ETH,1147607.56417,26.1162843475,1,JordanManual,cryptocompare,ATM,2017-12-29 00:11:09.443279
-CCCAGG,ATM,USD,391390.0,6568.029,1,JordanManual,cryptocompare,ATM,2017-12-29 00:11:09.443279
-CCCAGG,ATM,BTC,381700.0,0.45236,1,JordanManual,cryptocompare,ATM,2017-12-29 00:11:09.443279

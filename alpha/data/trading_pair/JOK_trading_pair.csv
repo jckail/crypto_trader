@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,JOK,RUR,162482.753849,425.140505156,1,JordanManual,cryptocompare,JOK,2017-12-29 00:11:20.583249
-CCCAGG,JOK,USD,32711.1795266,1.7,1,JordanManual,cryptocompare,JOK,2017-12-29 00:11:20.583249
-CCCAGG,JOK,BTC,10000.0,0.0001,1,JordanManual,cryptocompare,JOK,2017-12-29 00:11:20.583249

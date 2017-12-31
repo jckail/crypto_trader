@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,SWING,BTC,4389.45940508,0.0383554883285,1,JordanManual,cryptocompare,SWING,2017-12-29 00:02:49.233906
-CCCAGG,SWING,DOGE,164.56145864,2908.32660419,1,JordanManual,cryptocompare,SWING,2017-12-29 00:02:49.233906
-CCCAGG,SWING,LTC,51.156484,0.02658091,1,JordanManual,cryptocompare,SWING,2017-12-29 00:02:49.233906
-CCCAGG,SWING,RUR,0.36040058,2.34260377111,1,JordanManual,cryptocompare,SWING,2017-12-29 00:02:49.233906

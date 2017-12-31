@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,SIGT,BTC,829265.941268,0.913985382646,1,JordanManual,cryptocompare,SIGT,2017-12-29 00:02:47.541121
-CCCAGG,SIGT,USD,5461.29024527,90.4215555533,1,JordanManual,cryptocompare,SIGT,2017-12-29 00:02:47.541121
-CCCAGG,SIGT,RUR,4176.06172405,4250.22467368,1,JordanManual,cryptocompare,SIGT,2017-12-29 00:02:47.541121
-CCCAGG,SIGT,ETH,442.02100567,0.0088404201134,1,JordanManual,cryptocompare,SIGT,2017-12-29 00:02:47.541121
-CCCAGG,SIGT,DOGE,206.0,20.26261901,1,JordanManual,cryptocompare,SIGT,2017-12-29 00:02:47.541121

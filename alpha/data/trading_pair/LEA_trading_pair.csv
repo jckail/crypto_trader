@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,LEA,DOGE,368280.758439,37067.5420421,1,JordanManual,cryptocompare,LEA,2017-12-29 00:11:11.126497
-CCCAGG,LEA,BTC,218242.455672,0.00872969822687,1,JordanManual,cryptocompare,LEA,2017-12-29 00:11:11.126497
-CCCAGG,LEA,LTC,171708.756759,0.67242763,1,JordanManual,cryptocompare,LEA,2017-12-29 00:11:11.126497
-CCCAGG,LEA,RUR,701.4910538,22.3084554124,1,JordanManual,cryptocompare,LEA,2017-12-29 00:11:11.126497

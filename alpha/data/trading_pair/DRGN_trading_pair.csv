@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,DRGN,ETH,616194.126629,690.436505674,1,JordanManual,cryptocompare,DRGN,2017-12-29 00:03:01.850645
-CCCAGG,DRGN,BTC,18745.034276,1.04798259914,1,JordanManual,cryptocompare,DRGN,2017-12-29 00:03:01.850645
-CCCAGG,DRGN,USDT,158.97820403,163.841037506,1,JordanManual,cryptocompare,DRGN,2017-12-29 00:03:01.850645

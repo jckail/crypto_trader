@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,TAP,RUR,3019871.71851,3933.14129022,1,JordanManual,cryptocompare,TAP,2017-12-29 00:03:30.872303
-CCCAGG,TAP,USD,1114151.50672,26.8684476596,1,JordanManual,cryptocompare,TAP,2017-12-29 00:03:30.872303
-CCCAGG,TAP,ETH,513007.686213,0.0157869741155,1,JordanManual,cryptocompare,TAP,2017-12-29 00:03:30.872303
-CCCAGG,TAP,DOGE,369111.20693,363.929725559,1,JordanManual,cryptocompare,TAP,2017-12-29 00:03:30.872303

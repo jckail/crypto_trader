@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ZCL,BTC,1283293.26119,5810.4265261,1,JordanManual,cryptocompare,ZCL,2017-12-29 00:02:57.565071
-CCCAGG,ZCL,LTC,3231.08571315,825.13107652,1,JordanManual,cryptocompare,ZCL,2017-12-29 00:02:57.565071
-CCCAGG,ZCL,DOGE,503.40580301,4309251.73016,1,JordanManual,cryptocompare,ZCL,2017-12-29 00:02:57.565071

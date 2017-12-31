@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,DCRE,BTC,18.14470494,0.000399999999825,1,JordanManual,cryptocompare,DCRE,2017-12-29 00:03:00.605175
-CCCAGG,DCRE,RUR,10.62306504,168.906734242,1,JordanManual,cryptocompare,DCRE,2017-12-29 00:03:00.605175
-CCCAGG,DCRE,WAVES,0.001153,0.00011529994235,1,JordanManual,cryptocompare,DCRE,2017-12-29 00:03:00.605175

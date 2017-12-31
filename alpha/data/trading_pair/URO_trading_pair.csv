@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,URO,RUR,90.12273468,424.254107835,1,JordanManual,cryptocompare,URO,2017-12-29 00:11:25.067751
-CCCAGG,URO,USD,52.44475196,5.24708300305,1,JordanManual,cryptocompare,URO,2017-12-29 00:11:25.067751
-CCCAGG,URO,DOGE,0.32409431,14.5842439468,1,JordanManual,cryptocompare,URO,2017-12-29 00:11:25.067751

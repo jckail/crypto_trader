@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,VIA,BTC,609872.09739,179.53686339,1,JordanManual,cryptocompare,VIA,2017-12-29 00:03:23.934851
-CCCAGG,VIA,WAVES,23.28238173,8.30660271638,1,JordanManual,cryptocompare,VIA,2017-12-29 00:03:23.934851
-CCCAGG,VIA,USD,1.79789,9.88839498278,1,JordanManual,cryptocompare,VIA,2017-12-29 00:03:23.934851
-CCCAGG,VIA,DOGE,0.44015979,220.079895,1,JordanManual,cryptocompare,VIA,2017-12-29 00:03:23.934851
-CCCAGG,VIA,RUR,0.13885756,29.28453602,1,JordanManual,cryptocompare,VIA,2017-12-29 00:03:23.934851

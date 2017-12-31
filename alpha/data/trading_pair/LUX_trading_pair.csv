@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,LUX,BTC,102795.035152,79.53981039,1,JordanManual,cryptocompare,LUX,2017-12-29 00:03:01.579047
-CCCAGG,LUX,LTC,3699.17258804,185.96374446,1,JordanManual,cryptocompare,LUX,2017-12-29 00:03:01.579047
-CCCAGG,LUX,DOGE,452.49998974,621044.536278,1,JordanManual,cryptocompare,LUX,2017-12-29 00:03:01.579047

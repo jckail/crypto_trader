@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,DUX,USD,633336.488045,11.1155639385,1,JordanManual,cryptocompare,DUX,2017-12-29 00:02:45.026736
-CCCAGG,DUX,ETH,133456.995029,0.00339497206607,1,JordanManual,cryptocompare,DUX,2017-12-29 00:02:45.026736
-CCCAGG,DUX,DOGE,50166.3811801,125.415451286,1,JordanManual,cryptocompare,DUX,2017-12-29 00:02:45.026736
-CCCAGG,DUX,RUR,3469.7222299,4.51340685999,1,JordanManual,cryptocompare,DUX,2017-12-29 00:02:45.026736

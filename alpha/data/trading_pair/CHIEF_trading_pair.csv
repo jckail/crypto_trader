@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,CHIEF,DOGE,4172281.0663,35707.0747469,1,JordanManual,cryptocompare,CHIEF,2017-12-29 00:03:12.390936
-CCCAGG,CHIEF,LTC,2403631.30468,0.65349303,1,JordanManual,cryptocompare,CHIEF,2017-12-29 00:03:12.390936

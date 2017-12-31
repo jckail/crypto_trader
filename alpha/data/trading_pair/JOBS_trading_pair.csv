@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,JOBS,BTC,69308.7252614,0.00138617450523,1,JordanManual,cryptocompare,JOBS,2017-12-29 00:02:56.803509
-CCCAGG,JOBS,RUR,5079.27931465,166.0627644,1,JordanManual,cryptocompare,JOBS,2017-12-29 00:02:56.803509
-CCCAGG,JOBS,USD,3910.72200095,1.87714656046,1,JordanManual,cryptocompare,JOBS,2017-12-29 00:02:56.803509
-CCCAGG,JOBS,DOGE,573.68458589,79.7249411643,1,JordanManual,cryptocompare,JOBS,2017-12-29 00:02:56.803509

@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ACOIN,BTC,5449.62262894,0.0653626133303,1,JordanManual,cryptocompare,ACOIN,2017-12-29 00:03:15.452808
-CCCAGG,ACOIN,DOGE,3280.34421372,82848.4931751,1,JordanManual,cryptocompare,ACOIN,2017-12-29 00:03:15.452808
-CCCAGG,ACOIN,LTC,52.70354955,0.02951451,1,JordanManual,cryptocompare,ACOIN,2017-12-29 00:03:15.452808

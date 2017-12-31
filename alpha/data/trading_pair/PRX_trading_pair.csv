@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,PRX,BTC,24484.4351712,0.0103056234526,1,JordanManual,cryptocompare,PRX,2017-12-29 00:03:15.417957
-CCCAGG,PRX,RUR,3205.49319472,4212.50641291,1,JordanManual,cryptocompare,PRX,2017-12-29 00:03:15.417957
-CCCAGG,PRX,USD,715.05564279,9.03805545916,1,JordanManual,cryptocompare,PRX,2017-12-29 00:03:15.417957
-CCCAGG,PRX,DOGE,324.54129554,904.06497671,1,JordanManual,cryptocompare,PRX,2017-12-29 00:03:15.417957

@@ -1,7 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,PUT,BTC,235553.03381,0.319309554834,1,JordanManual,cryptocompare,PUT,2017-12-29 00:02:51.709294
-CCCAGG,PUT,LTC,51795.4652374,4.40808392,1,JordanManual,cryptocompare,PUT,2017-12-29 00:02:51.709294
-CCCAGG,PUT,DOGE,19237.0172326,43392.8829484,1,JordanManual,cryptocompare,PUT,2017-12-29 00:02:51.709294
-CCCAGG,PUT,ETH,297.46958633,0.00770189099601,1,JordanManual,cryptocompare,PUT,2017-12-29 00:02:51.709294
-CCCAGG,PUT,USD,97.38568,1.99640644,1,JordanManual,cryptocompare,PUT,2017-12-29 00:02:51.709294
-CCCAGG,PUT,RUR,69.7,96.186,1,JordanManual,cryptocompare,PUT,2017-12-29 00:02:51.709294

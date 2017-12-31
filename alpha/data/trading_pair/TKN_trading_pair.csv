@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,TKN,BTC,56569.6766237,3.70435251908,1,JordanManual,cryptocompare,TKN,2017-12-29 00:03:29.650609
-CCCAGG,TKN,ETH,47249.8094346,62.7421055494,1,JordanManual,cryptocompare,TKN,2017-12-29 00:03:29.650609
-CCCAGG,TKN,USDT,33172.7851976,30660.7289934,1,JordanManual,cryptocompare,TKN,2017-12-29 00:03:29.650609
-CCCAGG,TKN,USD,36.11564526,34.594027455,1,JordanManual,cryptocompare,TKN,2017-12-29 00:03:29.650609

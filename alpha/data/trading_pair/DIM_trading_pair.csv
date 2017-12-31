@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,DIM,BTC,887221,13.027741,1,JordanManual,cryptocompare,DIM,2017-12-29 00:10:57.199779
-CCCAGG,DIM,USD,405045,81870.4157,1,JordanManual,cryptocompare,DIM,2017-12-29 00:10:57.199779
-CCCAGG,DIM,ETH,274742,79.15974,1,JordanManual,cryptocompare,DIM,2017-12-29 00:10:57.199779

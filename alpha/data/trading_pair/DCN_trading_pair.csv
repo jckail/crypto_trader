@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,DCN,ETH,872370000.0,684.5379,1,JordanManual,cryptocompare,DCN,2017-12-29 00:10:59.793576
-CCCAGG,DCN,USD,752717000.0,407487.394,1,JordanManual,cryptocompare,DCN,2017-12-29 00:10:59.793576
-CCCAGG,DCN,LTC,206766594.544,468.56842111,1,JordanManual,cryptocompare,DCN,2017-12-29 00:10:59.793576
-CCCAGG,DCN,DOGE,78592899.3535,5516737.23657,1,JordanManual,cryptocompare,DCN,2017-12-29 00:10:59.793576

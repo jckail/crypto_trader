@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,TIE,BTC,204002.458223,1.40803029675,1,JordanManual,cryptocompare,TIE,2017-12-29 00:02:48.384052
-CCCAGG,TIE,ETH,5200.04463443,0.610336484614,1,JordanManual,cryptocompare,TIE,2017-12-29 00:02:48.384052

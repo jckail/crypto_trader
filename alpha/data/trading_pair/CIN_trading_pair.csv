@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,CIN,USD,120.0,96.0,1,JordanManual,cryptocompare,CIN,2017-12-29 00:03:17.350526
-CCCAGG,CIN,RUR,14.4515218,347.10237,1,JordanManual,cryptocompare,CIN,2017-12-29 00:03:17.350526
-CCCAGG,CIN,BTC,4.68897907,0.000109769000029,1,JordanManual,cryptocompare,CIN,2017-12-29 00:03:17.350526

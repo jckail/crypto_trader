@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ETP,USD,1984952.71828,5459903.02133,1,JordanManual,cryptocompare,ETP,2017-12-29 00:03:05.589476
-CCCAGG,ETP,BTC,466232.657976,93.8227745075,1,JordanManual,cryptocompare,ETP,2017-12-29 00:03:05.589476
-CCCAGG,ETP,ETH,190918.3424,771.364414687,1,JordanManual,cryptocompare,ETP,2017-12-29 00:03:05.589476
-CCCAGG,ETP,QTUM,2162.987,405.99238618,1,JordanManual,cryptocompare,ETP,2017-12-29 00:03:05.589476

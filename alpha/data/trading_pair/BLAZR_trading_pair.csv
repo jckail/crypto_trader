@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BLAZR,BTC,96605.4106353,0.00713884798064,1,JordanManual,cryptocompare,BLAZR,2017-12-29 00:03:26.339939
-CCCAGG,BLAZR,DOGE,15233.8708504,1594.28682766,1,JordanManual,cryptocompare,BLAZR,2017-12-29 00:03:26.339939
-CCCAGG,BLAZR,USD,500.0,0.695825,1,JordanManual,cryptocompare,BLAZR,2017-12-29 00:03:26.339939
-CCCAGG,BLAZR,RUR,209.0,17.36340505,1,JordanManual,cryptocompare,BLAZR,2017-12-29 00:03:26.339939

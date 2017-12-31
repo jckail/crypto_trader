@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,QTL,BTC,1046.5219585,0.00215216,1,JordanManual,cryptocompare,QTL,2017-12-29 00:03:17.174952
-CCCAGG,QTL,LTC,508.7778137,0.05644844,1,JordanManual,cryptocompare,QTL,2017-12-29 00:03:17.174952
-CCCAGG,QTL,DOGE,465.39211866,1414.2055719,1,JordanManual,cryptocompare,QTL,2017-12-29 00:03:17.174952

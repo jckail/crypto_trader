@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BOOM,BTC,9.92515492,0.0032173837953,1,JordanManual,cryptocompare,BOOM,2017-12-29 00:03:27.344669
-CCCAGG,BOOM,RUR,3.59930748,2083.47463681,1,JordanManual,cryptocompare,BOOM,2017-12-29 00:03:27.344669

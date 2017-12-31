@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,PXI,BTC,52534.8232671,0.0666606497698,1,JordanManual,cryptocompare,PXI,2017-12-29 00:10:55.153914
-CCCAGG,PXI,DOGE,970.78173698,2058.45951817,1,JordanManual,cryptocompare,PXI,2017-12-29 00:10:55.153914
-CCCAGG,PXI,LTC,523.13452664,0.03935832,1,JordanManual,cryptocompare,PXI,2017-12-29 00:10:55.153914
-CCCAGG,PXI,RUR,259.65876136,852.655050409,1,JordanManual,cryptocompare,PXI,2017-12-29 00:10:55.153914
-CCCAGG,PXI,WAVES,50.76501745,0.0614251634643,1,JordanManual,cryptocompare,PXI,2017-12-29 00:10:55.153914

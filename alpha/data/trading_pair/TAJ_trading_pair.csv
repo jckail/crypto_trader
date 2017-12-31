@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,TAJ,BTC,34054.2117534,0.0427988717271,1,JordanManual,cryptocompare,TAJ,2017-12-29 00:03:28.390542
-CCCAGG,TAJ,DOGE,524.57482322,1191.23894714,1,JordanManual,cryptocompare,TAJ,2017-12-29 00:03:28.390542

@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,SJCX,JPY,2903.6,496999.84797,1,JordanManual,cryptocompare,SJCX,2017-12-29 00:03:24.905512
-CCCAGG,SJCX,BTC,1.0,9.87e-05,1,JordanManual,cryptocompare,SJCX,2017-12-29 00:03:24.905512

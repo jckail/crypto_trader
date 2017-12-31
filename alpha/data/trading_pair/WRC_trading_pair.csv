@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,WRC,BTC,2569925.0,22.412337,1,JordanManual,cryptocompare,WRC,2017-12-29 00:02:57.051164
-CCCAGG,WRC,USD,1759933.0,231037.041,1,JordanManual,cryptocompare,WRC,2017-12-29 00:02:57.051164
-CCCAGG,WRC,ETH,192092.984629,35.2274317877,1,JordanManual,cryptocompare,WRC,2017-12-29 00:02:57.051164

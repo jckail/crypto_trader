@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BPL,BTC,30515.6579879,1.02752879,1,JordanManual,cryptocompare,BPL,2017-12-29 00:03:12.578593
-CCCAGG,BPL,DOGE,13.05664586,683.57782187,1,JordanManual,cryptocompare,BPL,2017-12-29 00:03:12.578593
-CCCAGG,BPL,LTC,0.03680605,6.53e-05,1,JordanManual,cryptocompare,BPL,2017-12-29 00:03:12.578593

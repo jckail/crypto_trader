@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ODNT,BTC,37.03703703,0.000109999999979,1,JordanManual,cryptocompare,ODNT,2017-12-29 00:03:09.885348
-CCCAGG,ODNT,RUR,1.0,0.18000062,1,JordanManual,cryptocompare,ODNT,2017-12-29 00:03:09.885348

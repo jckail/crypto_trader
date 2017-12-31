@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,MRP,BTC,168.06722689,0.000199999999999,1,JordanManual,cryptocompare,MRP,2017-12-29 00:03:29.544017
-CCCAGG,MRP,RUR,98.69360151,40.2590239314,1,JordanManual,cryptocompare,MRP,2017-12-29 00:03:29.544017

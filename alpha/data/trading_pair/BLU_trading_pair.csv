@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BLU,BTC,131127.840151,0.0843948500534,1,JordanManual,cryptocompare,BLU,2017-12-29 00:11:20.880519
-CCCAGG,BLU,RUR,680.56224077,459.389344133,1,JordanManual,cryptocompare,BLU,2017-12-29 00:11:20.880519
-CCCAGG,BLU,USD,513.33784241,5.18471220834,1,JordanManual,cryptocompare,BLU,2017-12-29 00:11:20.880519

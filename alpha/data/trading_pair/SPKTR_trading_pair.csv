@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,SPKTR,BTC,232.53012048,0.000231204819275,1,JordanManual,cryptocompare,SPKTR,2017-12-29 00:03:14.806388
-CCCAGG,SPKTR,USD,17.18908309,0.137704322996,1,JordanManual,cryptocompare,SPKTR,2017-12-29 00:03:14.806388

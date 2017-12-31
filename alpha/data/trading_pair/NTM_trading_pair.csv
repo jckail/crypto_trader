@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NTM,DOGE,7171362.84244,12790.8368003,1,JordanManual,cryptocompare,NTM,2017-12-29 00:03:00.447647
-CCCAGG,NTM,WAVES,1034165.9227,0.905958356577,1,JordanManual,cryptocompare,NTM,2017-12-29 00:03:00.447647
-CCCAGG,NTM,ETH,752300.230173,0.0100108323017,1,JordanManual,cryptocompare,NTM,2017-12-29 00:03:00.447647
-CCCAGG,NTM,USD,443378.90842,6.22442421823,1,JordanManual,cryptocompare,NTM,2017-12-29 00:03:00.447647
-CCCAGG,NTM,RUR,104029.477968,54.8356297017,1,JordanManual,cryptocompare,NTM,2017-12-29 00:03:00.447647

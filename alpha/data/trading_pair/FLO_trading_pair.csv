@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,FLO,BTC,3106238.31746,43.69285636,1,JordanManual,cryptocompare,FLO,2017-12-29 00:11:29.209132
-CCCAGG,FLO,DOGE,0.09,5.1300000026,1,JordanManual,cryptocompare,FLO,2017-12-29 00:11:29.209132

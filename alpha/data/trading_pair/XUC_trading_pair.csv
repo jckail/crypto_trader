@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,XUC,BTC,21405.7285498,13.0958850852,1,JordanManual,cryptocompare,XUC,2017-12-29 00:10:54.529187
-CCCAGG,XUC,USDT,19130.2598,169108.905813,1,JordanManual,cryptocompare,XUC,2017-12-29 00:10:54.529187
-CCCAGG,XUC,ETH,13367.9159685,163.629467983,1,JordanManual,cryptocompare,XUC,2017-12-29 00:10:54.529187
-CCCAGG,XUC,USD,2809.3,25493.6661,1,JordanManual,cryptocompare,XUC,2017-12-29 00:10:54.529187

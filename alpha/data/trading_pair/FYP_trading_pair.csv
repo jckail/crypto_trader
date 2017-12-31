@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,FYP,BTC,20815.314,0.646037204,1,JordanManual,cryptocompare,FYP,2017-12-29 00:03:20.746430
-CCCAGG,FYP,ETH,5753.65053396,4.83842693649,1,JordanManual,cryptocompare,FYP,2017-12-29 00:03:20.746430

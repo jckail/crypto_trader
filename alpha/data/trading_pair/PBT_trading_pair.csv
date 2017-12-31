@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,PBT,BTC,156.29928113,78.4912810753,1,JordanManual,cryptocompare,PBT,2017-12-29 00:03:30.896053
-CCCAGG,PBT,WEUR,2.0805741,11773.5257223,1,JordanManual,cryptocompare,PBT,2017-12-29 00:03:30.896053
-CCCAGG,PBT,WAVES,1.89471736,1085.10571315,1,JordanManual,cryptocompare,PBT,2017-12-29 00:03:30.896053
-CCCAGG,PBT,WUSD,1.08958237,7464.75394392,1,JordanManual,cryptocompare,PBT,2017-12-29 00:03:30.896053

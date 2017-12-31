@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ADX,BTC,8332474.75,1594.77212628,1,JordanManual,cryptocompare,ADX,2017-12-29 00:10:53.673384
-CCCAGG,ADX,ETH,1505283.19846,5795.40903475,1,JordanManual,cryptocompare,ADX,2017-12-29 00:10:53.673384
-CCCAGG,ADX,USDT,412226.761855,1100624.75301,1,JordanManual,cryptocompare,ADX,2017-12-29 00:10:53.673384
-CCCAGG,ADX,BNB,21238.59,6559.3877209,1,JordanManual,cryptocompare,ADX,2017-12-29 00:10:53.673384

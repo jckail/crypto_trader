@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,LTH,BTC,23147.2606688,0.00065965137106,1,JordanManual,cryptocompare,LTH,2017-12-29 00:02:56.718386
-CCCAGG,LTH,RUR,64.00589772,3.51272447478,1,JordanManual,cryptocompare,LTH,2017-12-29 00:02:56.718386

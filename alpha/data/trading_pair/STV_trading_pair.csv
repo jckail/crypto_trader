@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,STV,BTC,15217.7689752,0.0658730549211,1,JordanManual,cryptocompare,STV,2017-12-29 00:03:25.100922
-CCCAGG,STV,LTC,910.0,0.22295,1,JordanManual,cryptocompare,STV,2017-12-29 00:03:25.100922
-CCCAGG,STV,DOGE,595.14696461,4706.07660126,1,JordanManual,cryptocompare,STV,2017-12-29 00:03:25.100922

@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,WINE,RUR,3885.61498143,18.3284513283,1,JordanManual,cryptocompare,WINE,2017-12-29 00:03:00.168776
-CCCAGG,WINE,DOGE,3264.74653692,39.5034657442,1,JordanManual,cryptocompare,WINE,2017-12-29 00:03:00.168776
-CCCAGG,WINE,USD,963.99968399,0.183034619999,1,JordanManual,cryptocompare,WINE,2017-12-29 00:03:00.168776
-CCCAGG,WINE,WAVES,203.0,0.00043435,1,JordanManual,cryptocompare,WINE,2017-12-29 00:03:00.168776

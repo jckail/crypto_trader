@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ZER,BTC,361749.53102,86.04673753,1,JordanManual,cryptocompare,ZER,2017-12-29 00:03:21.015799
-CCCAGG,ZER,LTC,5158.59917789,92.93203233,1,JordanManual,cryptocompare,ZER,2017-12-29 00:03:21.015799
-CCCAGG,ZER,DOGE,504.66340126,253764.225932,1,JordanManual,cryptocompare,ZER,2017-12-29 00:03:21.015799

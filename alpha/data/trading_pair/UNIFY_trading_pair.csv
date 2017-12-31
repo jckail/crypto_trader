@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,UNIFY,BTC,89531.2290263,0.546774283096,1,JordanManual,cryptocompare,UNIFY,2017-12-29 00:10:54.910471
-CCCAGG,UNIFY,LTC,3293.43567775,1.51850311,1,JordanManual,cryptocompare,UNIFY,2017-12-29 00:10:54.910471
-CCCAGG,UNIFY,DOGE,718.42957454,6370.75802741,1,JordanManual,cryptocompare,UNIFY,2017-12-29 00:10:54.910471
-CCCAGG,UNIFY,WAVES,2.0,0.00444476,1,JordanManual,cryptocompare,UNIFY,2017-12-29 00:10:54.910471
-CCCAGG,UNIFY,RUR,1.0,3.20000082,1,JordanManual,cryptocompare,UNIFY,2017-12-29 00:10:54.910471

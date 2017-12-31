@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,FRC,BTC,23679.2584877,0.03371619,1,JordanManual,cryptocompare,FRC,2017-12-29 00:03:16.510536
-CCCAGG,FRC,DOGE,111.31491062,353.23682373,1,JordanManual,cryptocompare,FRC,2017-12-29 00:03:16.510536

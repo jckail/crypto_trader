@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,IMS,BTC,6126.38297748,0.02138306,1,JordanManual,cryptocompare,IMS,2017-12-29 00:03:29.843665
-CCCAGG,IMS,USD,47.25533338,1.3638892939,1,JordanManual,cryptocompare,IMS,2017-12-29 00:03:29.843665
-CCCAGG,IMS,DOGE,33.59079774,219.7680453,1,JordanManual,cryptocompare,IMS,2017-12-29 00:03:29.843665
-CCCAGG,IMS,RUR,2.72325684,4.08488526,1,JordanManual,cryptocompare,IMS,2017-12-29 00:03:29.843665
-CCCAGG,IMS,WAVES,2.57869227,0.00436924396853,1,JordanManual,cryptocompare,IMS,2017-12-29 00:03:29.843665

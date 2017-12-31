@@ -1,0 +1,5 @@
+Points,account_creation,favourites,followers,following,link,lists,name,socialsource,source,statuses,symbol,symbol_id,timestamp_api_call
+0,,,,,,,,Twitter,cryptocompare,,BCH,202330,2017-12-30 17:32:32.866329
+632886,1313643968,77,606398,105,https://twitter.com/bitcoin,5294,Bitcoin,Twitter,cryptocompare,18989,BTC,1182,2017-12-30 17:32:32.832908
+288327,1390763724,2242,266851,0,https://twitter.com/ethereumproject,4295,Ethereum,Twitter,cryptocompare,1890,ETH,7605,2017-12-30 17:32:32.891176
+290444,1317839450,245,280064,21,https://twitter.com/litecoin,2076,litecoin,Twitter,cryptocompare,622,LTC,3808,2017-12-30 17:32:32.890396

@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NEF,DOGE,1403421.35283,2402.19198896,1,JordanManual,cryptocompare,NEF,2017-12-29 00:02:45.307773
-CCCAGG,NEF,ETH,1102268.03695,0.022838847797,1,JordanManual,cryptocompare,NEF,2017-12-29 00:02:45.307773
-CCCAGG,NEF,RUR,457038.447521,145.497577689,1,JordanManual,cryptocompare,NEF,2017-12-29 00:02:45.307773
-CCCAGG,NEF,USD,200000.0,1.32072325747,1,JordanManual,cryptocompare,NEF,2017-12-29 00:02:45.307773
-CCCAGG,NEF,WAVES,10000.0,0.0051,1,JordanManual,cryptocompare,NEF,2017-12-29 00:02:45.307773

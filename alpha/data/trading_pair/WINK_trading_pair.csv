@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,WINK,BTC,35000.0,0.0007,1,JordanManual,cryptocompare,WINK,2017-12-29 00:02:47.921015
-CCCAGG,WINK,DOGE,1041.66688368,500.0,1,JordanManual,cryptocompare,WINK,2017-12-29 00:02:47.921015
-CCCAGG,WINK,USD,100.0,0.899999,1,JordanManual,cryptocompare,WINK,2017-12-29 00:02:47.921015
-CCCAGG,WINK,RUR,20.0,6.9999926,1,JordanManual,cryptocompare,WINK,2017-12-29 00:02:47.921015

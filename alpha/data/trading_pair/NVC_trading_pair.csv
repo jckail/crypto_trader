@@ -1,7 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NVC,BTC,445.48652347,0.194371120089,1,JordanManual,cryptocompare,NVC,2017-12-29 00:03:20.543941
-CCCAGG,NVC,USD,8.74737363,56.9060221629,1,JordanManual,cryptocompare,NVC,2017-12-29 00:03:20.543941
-CCCAGG,NVC,LTC,6.119569,0.15780003,1,JordanManual,cryptocompare,NVC,2017-12-29 00:03:20.543941
-CCCAGG,NVC,DOGE,1.12753455,836.572606322,1,JordanManual,cryptocompare,NVC,2017-12-29 00:03:20.543941
-CCCAGG,NVC,RUR,0.00518916,1.92517836397,1,JordanManual,cryptocompare,NVC,2017-12-29 00:03:20.543941
-CCCAGG,NVC,WAVES,0.00101,0.000511806249847,1,JordanManual,cryptocompare,NVC,2017-12-29 00:03:20.543941

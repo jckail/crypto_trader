@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BNB,BTC,4130849.0,2547.35671597,1,JordanManual,cryptocompare,BNB,2017-12-29 00:10:59.065700
-CCCAGG,BNB,USDT,1704928.07,14722038.6479,1,JordanManual,cryptocompare,BNB,2017-12-29 00:10:59.065700
-CCCAGG,BNB,ETH,675814.745647,8344.34852222,1,JordanManual,cryptocompare,BNB,2017-12-29 00:10:59.065700

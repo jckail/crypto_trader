@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ZBC,BTC,751.0457779,0.00170961654619,1,JordanManual,cryptocompare,ZBC,2017-12-29 00:03:20.151797
-CCCAGG,ZBC,USD,220.3315,8.34615722,1,JordanManual,cryptocompare,ZBC,2017-12-29 00:03:20.151797

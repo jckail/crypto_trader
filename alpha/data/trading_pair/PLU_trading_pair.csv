@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,PLU,ETH,1247.0462218,26.9659971476,1,JordanManual,cryptocompare,PLU,2017-12-29 00:03:14.900777
-CCCAGG,PLU,BTC,203.82513113,0.321192169591,1,JordanManual,cryptocompare,PLU,2017-12-29 00:03:14.900777

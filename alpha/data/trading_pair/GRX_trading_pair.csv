@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,GRX,ETH,7919.24474869,19.2153415061,1,JordanManual,cryptocompare,GRX,2017-12-29 00:03:16.187460
-CCCAGG,GRX,BTC,763.21787589,0.103382018422,1,JordanManual,cryptocompare,GRX,2017-12-29 00:03:16.187460

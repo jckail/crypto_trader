@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,OLYMP,BTC,17139.55,0.000342791,1,JordanManual,cryptocompare,OLYMP,2017-12-29 00:02:57.123556
-CCCAGG,OLYMP,RUR,15503.45,480.875660764,1,JordanManual,cryptocompare,OLYMP,2017-12-29 00:02:57.123556
-CCCAGG,OLYMP,USD,600.00000002,0.840000000028,1,JordanManual,cryptocompare,OLYMP,2017-12-29 00:02:57.123556

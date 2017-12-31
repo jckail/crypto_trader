@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,MLN,BTC,3319.59728886,26.7785155398,1,JordanManual,cryptocompare,MLN,2017-12-29 00:03:20.163309
-CCCAGG,MLN,ETH,2202.76771451,367.576568616,1,JordanManual,cryptocompare,MLN,2017-12-29 00:03:20.163309
-CCCAGG,MLN,USDT,1722.20161626,202728.661582,1,JordanManual,cryptocompare,MLN,2017-12-29 00:03:20.163309

@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,FLVR,BTC,19879.8321299,0.00396669092025,1,JordanManual,cryptocompare,FLVR,2017-12-29 00:02:49.247926
-CCCAGG,FLVR,ETH,8892.28189189,0.00904296999986,1,JordanManual,cryptocompare,FLVR,2017-12-29 00:02:49.247926
-CCCAGG,FLVR,USD,3111.80828741,86.9236734113,1,JordanManual,cryptocompare,FLVR,2017-12-29 00:02:49.247926

@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NGC,BTC,289522.4,27.106748,1,JordanManual,cryptocompare,NGC,2017-12-29 00:03:21.286750
-CCCAGG,NGC,ETH,153873.1,287.78499,1,JordanManual,cryptocompare,NGC,2017-12-29 00:03:21.286750
-CCCAGG,NGC,USD,119373.8,159101.6475,1,JordanManual,cryptocompare,NGC,2017-12-29 00:03:21.286750

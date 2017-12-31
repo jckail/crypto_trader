@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,COAL,BTC,34559.9312085,0.0852935,1,JordanManual,cryptocompare,COAL,2017-12-29 00:03:19.214973
-CCCAGG,COAL,DOGE,2003.86268439,10283.6817976,1,JordanManual,cryptocompare,COAL,2017-12-29 00:03:19.214973

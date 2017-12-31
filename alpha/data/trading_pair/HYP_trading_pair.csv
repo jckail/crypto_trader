@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,HYP,BTC,2914075.38661,1.01738235497,1,JordanManual,cryptocompare,HYP,2017-12-29 00:03:19.273934
-CCCAGG,HYP,LTC,173261.29802,3.52461203,1,JordanManual,cryptocompare,HYP,2017-12-29 00:03:19.273934
-CCCAGG,HYP,DOGE,79459.239687,51165.2380152,1,JordanManual,cryptocompare,HYP,2017-12-29 00:03:19.273934

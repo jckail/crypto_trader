@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,VEN,BTC,21103792.2211,2749.07532883,1,JordanManual,cryptocompare,VEN,2017-12-29 00:02:50.352072
-CCCAGG,VEN,ETH,2947782.15005,7723.60931139,1,JordanManual,cryptocompare,VEN,2017-12-29 00:02:50.352072
-CCCAGG,VEN,USDT,310181.736259,547902.50145,1,JordanManual,cryptocompare,VEN,2017-12-29 00:02:50.352072
-CCCAGG,VEN,BNB,274005.69,59079.509849,1,JordanManual,cryptocompare,VEN,2017-12-29 00:02:50.352072
-CCCAGG,VEN,USD,51070.8,94546.7929,1,JordanManual,cryptocompare,VEN,2017-12-29 00:02:50.352072

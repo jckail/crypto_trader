@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,UBIQ,BTC,3698.99418134,0.00118234533521,1,JordanManual,cryptocompare,UBIQ,2017-12-29 00:02:58.327924
-CCCAGG,UBIQ,USD,441.88153446,2.46864244218,1,JordanManual,cryptocompare,UBIQ,2017-12-29 00:02:58.327924
-CCCAGG,UBIQ,RUR,368.26969147,283.290294918,1,JordanManual,cryptocompare,UBIQ,2017-12-29 00:02:58.327924
-CCCAGG,UBIQ,DOGE,53.11043407,58.1559199956,1,JordanManual,cryptocompare,UBIQ,2017-12-29 00:02:58.327924

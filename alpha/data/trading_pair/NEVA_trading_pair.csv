@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NEVA,BTC,3378.71687977,0.0131358019159,1,JordanManual,cryptocompare,NEVA,2017-12-29 00:02:49.211039
-CCCAGG,NEVA,RUR,101.27328108,505.499357193,1,JordanManual,cryptocompare,NEVA,2017-12-29 00:02:49.211039
-CCCAGG,NEVA,DOGE,8.60985123,62.05253251,1,JordanManual,cryptocompare,NEVA,2017-12-29 00:02:49.211039

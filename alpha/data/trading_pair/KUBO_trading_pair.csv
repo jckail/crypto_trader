@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,KUBO,USD,152230.769231,3.14945615385,1,JordanManual,cryptocompare,KUBO,2017-12-29 00:02:53.546774
-CCCAGG,KUBO,RUR,18180.1789686,17.6924723439,1,JordanManual,cryptocompare,KUBO,2017-12-29 00:02:53.546774

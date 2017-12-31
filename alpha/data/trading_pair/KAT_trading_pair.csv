@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,KAT,BTC,1258761.82047,0.0126631715979,1,JordanManual,cryptocompare,KAT,2017-12-29 00:11:00.534351
-CCCAGG,KAT,RUR,2000.0,30.66702,1,JordanManual,cryptocompare,KAT,2017-12-29 00:11:00.534351

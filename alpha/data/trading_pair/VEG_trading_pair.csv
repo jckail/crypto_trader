@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,VEG,RUR,5229.83911605,2108.15167718,1,JordanManual,cryptocompare,VEG,2017-12-29 00:03:25.388209
-CCCAGG,VEG,BTC,4654.43384615,0.000605076399999,1,JordanManual,cryptocompare,VEG,2017-12-29 00:03:25.388209
-CCCAGG,VEG,DOGE,1639.07394087,347.805706981,1,JordanManual,cryptocompare,VEG,2017-12-29 00:03:25.388209
-CCCAGG,VEG,WAVES,492.97393468,0.122855887374,1,JordanManual,cryptocompare,VEG,2017-12-29 00:03:25.388209

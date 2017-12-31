@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,MARS,BTC,1037600.49196,2.4907935,1,JordanManual,cryptocompare,MARS,2017-12-29 00:03:29.330733
-CCCAGG,MARS,LTC,178568.813261,25.63819655,1,JordanManual,cryptocompare,MARS,2017-12-29 00:03:29.330733
-CCCAGG,MARS,DOGE,43808.5632021,226187.948127,1,JordanManual,cryptocompare,MARS,2017-12-29 00:03:29.330733

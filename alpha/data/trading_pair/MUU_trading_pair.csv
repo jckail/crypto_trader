@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,MUU,DOGE,804079.933393,1710.40091591,1,JordanManual,cryptocompare,MUU,2017-12-29 00:03:30.921747
-CCCAGG,MUU,USD,131739.130435,2.82506092361,1,JordanManual,cryptocompare,MUU,2017-12-29 00:03:30.921747
-CCCAGG,MUU,RUR,20470.396841,26.8946826512,1,JordanManual,cryptocompare,MUU,2017-12-29 00:03:30.921747

@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,TUR,DOGE,0.24526915,85.5238681013,1,JordanManual,cryptocompare,TUR,2017-12-29 00:02:49.182367
-CCCAGG,TUR,RUR,0.05314394,12.303389827,1,JordanManual,cryptocompare,TUR,2017-12-29 00:02:49.182367

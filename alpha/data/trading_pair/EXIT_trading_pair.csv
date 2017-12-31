@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,EXIT,BTC,20007.0,0.00020007,1,JordanManual,cryptocompare,EXIT,2017-12-29 00:02:50.091940
-CCCAGG,EXIT,RUR,10000.0000004,8.90180000966,1,JordanManual,cryptocompare,EXIT,2017-12-29 00:02:50.091940

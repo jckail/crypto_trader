@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ANC,BTC,631.98119713,0.0352576487681,1,JordanManual,cryptocompare,ANC,2017-12-29 00:11:02.585201
-CCCAGG,ANC,DOGE,0.00022685,0.131161836907,1,JordanManual,cryptocompare,ANC,2017-12-29 00:11:02.585201

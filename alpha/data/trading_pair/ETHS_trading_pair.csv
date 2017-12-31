@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ETHS,BTC,267.33168256,0.000567519776582,1,JordanManual,cryptocompare,ETHS,2017-12-29 00:02:48.811974
-CCCAGG,ETHS,USD,207.57085959,6.84984201491,1,JordanManual,cryptocompare,ETHS,2017-12-29 00:02:48.811974
-CCCAGG,ETHS,DOGE,1.0,18.0,1,JordanManual,cryptocompare,ETHS,2017-12-29 00:02:48.811974

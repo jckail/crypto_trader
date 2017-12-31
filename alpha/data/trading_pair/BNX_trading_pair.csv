@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BNX,BTC,667422.765951,0.09505265,1,JordanManual,cryptocompare,BNX,2017-12-29 00:03:28.472938
-CCCAGG,BNX,DOGE,125619.48148,32583.2575656,1,JordanManual,cryptocompare,BNX,2017-12-29 00:03:28.472938
-CCCAGG,BNX,LTC,78908.2456713,0.6086944,1,JordanManual,cryptocompare,BNX,2017-12-29 00:03:28.472938

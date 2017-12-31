@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,XHI,BTC,454730.55514,0.176483779756,1,JordanManual,cryptocompare,XHI,2017-12-29 00:02:47.728209
-CCCAGG,XHI,RUR,2938.861859,1817.00569689,1,JordanManual,cryptocompare,XHI,2017-12-29 00:02:47.728209
-CCCAGG,XHI,USD,10.0,0.125001,1,JordanManual,cryptocompare,XHI,2017-12-29 00:02:47.728209

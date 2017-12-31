@@ -50,7 +50,7 @@ class GetMineData(object):
                     my_file = self.cwd+'/data/mining_data/%s_mining.csv' % key
 
                     if os.path.isfile(my_file):
-                        df_resident = p.read_csv(my_file)
+                        df_resident = p.read_csv(my_file,  encoding= 'utf-8')
                         frames.append(df_resident)
                     else:
                         pass
@@ -97,7 +97,7 @@ class GetMineData(object):
                 my_file = self.cwd+'/data/mining_data/mining_equipment.csv'
 
                 if os.path.isfile(my_file):
-                    df_resident = p.read_csv(my_file)
+                    df_resident = p.read_csv(my_file,  encoding= 'utf-8')
                     frames.append(df_resident)
                 else:
                     pass

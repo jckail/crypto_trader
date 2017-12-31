@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,GCR,BTC,3868533.07452,66.4848188712,1,JordanManual,cryptocompare,GCR,2017-12-29 00:02:45.282759
-CCCAGG,GCR,RUR,252.04847101,2720.41190141,1,JordanManual,cryptocompare,GCR,2017-12-29 00:02:45.282759

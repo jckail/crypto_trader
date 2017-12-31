@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BCN,BTC,1222585070.95,489.34877936,1,JordanManual,cryptocompare,BCN,2017-12-29 00:03:22.705521
-CCCAGG,BCN,USD,105097610.0,573475.55426,1,JordanManual,cryptocompare,BCN,2017-12-29 00:03:22.705521
-CCCAGG,BCN,ETH,20260000.0,157.88356,1,JordanManual,cryptocompare,BCN,2017-12-29 00:03:22.705521
-CCCAGG,BCN,XMR,723626.869494,12.58756962,1,JordanManual,cryptocompare,BCN,2017-12-29 00:03:22.705521

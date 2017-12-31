@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,DRXNE,BTC,132323.083264,0.0643209,1,JordanManual,cryptocompare,DRXNE,2017-12-29 00:03:12.628625
-CCCAGG,DRXNE,LTC,7768.0415718,0.26024281,1,JordanManual,cryptocompare,DRXNE,2017-12-29 00:03:12.628625
-CCCAGG,DRXNE,DOGE,2068.03100958,2293.9793233,1,JordanManual,cryptocompare,DRXNE,2017-12-29 00:03:12.628625

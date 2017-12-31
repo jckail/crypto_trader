@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,GAME,BTC,926872.929731,257.764586671,1,JordanManual,cryptocompare,GAME,2017-12-29 00:02:47.470305
-CCCAGG,GAME,DOGE,66.96979934,31824.615696,1,JordanManual,cryptocompare,GAME,2017-12-29 00:02:47.470305
-CCCAGG,GAME,USD,55.57579823,208.853874311,1,JordanManual,cryptocompare,GAME,2017-12-29 00:02:47.470305
-CCCAGG,GAME,LTC,44.19646572,0.70388242,1,JordanManual,cryptocompare,GAME,2017-12-29 00:02:47.470305
-CCCAGG,GAME,ETH,0.04436065,0.000156381494199,1,JordanManual,cryptocompare,GAME,2017-12-29 00:02:47.470305

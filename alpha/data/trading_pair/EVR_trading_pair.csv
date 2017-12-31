@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,EVR,BTC,6880.24639974,0.20034019,1,JordanManual,cryptocompare,EVR,2017-12-29 00:03:00.585612
-CCCAGG,EVR,LTC,1063.86547309,2.4282571,1,JordanManual,cryptocompare,EVR,2017-12-29 00:03:00.585612
-CCCAGG,EVR,DOGE,40.26246726,2054.47380954,1,JordanManual,cryptocompare,EVR,2017-12-29 00:03:00.585612

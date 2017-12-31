@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,TES,BTC,1923436.45667,2.49516627396,1,JordanManual,cryptocompare,TES,2017-12-29 00:11:24.972857
-CCCAGG,TES,LTC,75744.7131848,7.33066174,1,JordanManual,cryptocompare,TES,2017-12-29 00:11:24.972857
-CCCAGG,TES,DOGE,62485.3632644,144496.779864,1,JordanManual,cryptocompare,TES,2017-12-29 00:11:24.972857
-CCCAGG,TES,USD,0.51240856,0.684526595304,1,JordanManual,cryptocompare,TES,2017-12-29 00:11:24.972857

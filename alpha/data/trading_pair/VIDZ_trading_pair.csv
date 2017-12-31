@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,VIDZ,BTC,169767.868388,0.0503612834509,1,JordanManual,cryptocompare,VIDZ,2017-12-29 00:03:11.942918
-CCCAGG,VIDZ,DOGE,211.17671672,120.72824246,1,JordanManual,cryptocompare,VIDZ,2017-12-29 00:03:11.942918
-CCCAGG,VIDZ,RUR,13.05131861,2.7618163676,1,JordanManual,cryptocompare,VIDZ,2017-12-29 00:03:11.942918

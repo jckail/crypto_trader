@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,QWARK,BTC,1246131.96486,22.98912698,1,JordanManual,cryptocompare,QWARK,2017-12-29 00:02:45.325355
-CCCAGG,QWARK,DOGE,1531.55966487,48016.8727612,1,JordanManual,cryptocompare,QWARK,2017-12-29 00:02:45.325355
-CCCAGG,QWARK,LTC,36.91916735,0.08853438,1,JordanManual,cryptocompare,QWARK,2017-12-29 00:02:45.325355

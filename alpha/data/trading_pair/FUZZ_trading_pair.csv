@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,FUZZ,BTC,2690.30019818,0.00227690875446,1,JordanManual,cryptocompare,FUZZ,2017-12-29 00:02:49.113383
-CCCAGG,FUZZ,DOGE,173.89670605,305.111241684,1,JordanManual,cryptocompare,FUZZ,2017-12-29 00:02:49.113383
-CCCAGG,FUZZ,RUR,53.63687749,53.5951419149,1,JordanManual,cryptocompare,FUZZ,2017-12-29 00:02:49.113383
-CCCAGG,FUZZ,USD,40.00116088,0.320124640393,1,JordanManual,cryptocompare,FUZZ,2017-12-29 00:02:49.113383

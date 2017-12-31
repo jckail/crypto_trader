@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,XPTX,BTC,4663.03955277,0.362607302821,1,JordanManual,cryptocompare,XPTX,2017-12-29 00:03:12.083445
-CCCAGG,XPTX,USD,1.19999748,0.119999999999,1,JordanManual,cryptocompare,XPTX,2017-12-29 00:03:12.083445
-CCCAGG,XPTX,DOGE,0.36082801,43.66014555,1,JordanManual,cryptocompare,XPTX,2017-12-29 00:03:12.083445
-CCCAGG,XPTX,RUR,0.0836553,1.90020830376,1,JordanManual,cryptocompare,XPTX,2017-12-29 00:03:12.083445

@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,INPAY,BTC,1695.62236143,0.0218319231458,1,JordanManual,cryptocompare,INPAY,2017-12-29 00:03:29.436445
-CCCAGG,INPAY,WAVES,1587.58140164,11.9417873031,1,JordanManual,cryptocompare,INPAY,2017-12-29 00:03:29.436445
-CCCAGG,INPAY,ETH,100.0,0.01,1,JordanManual,cryptocompare,INPAY,2017-12-29 00:03:29.436445
-CCCAGG,INPAY,RUR,43.260067,309.194562651,1,JordanManual,cryptocompare,INPAY,2017-12-29 00:03:29.436445
-CCCAGG,INPAY,USD,0.1018341,1.8330138,1,JordanManual,cryptocompare,INPAY,2017-12-29 00:03:29.436445

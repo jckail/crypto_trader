@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,HTC,BTC,13222734.9467,0.132227349467,1,JordanManual,cryptocompare,HTC,2017-12-29 00:02:47.848873
-CCCAGG,HTC,USD,253591.217641,40.7386832698,1,JordanManual,cryptocompare,HTC,2017-12-29 00:02:47.848873
-CCCAGG,HTC,RUR,34995.1142078,463.541407318,1,JordanManual,cryptocompare,HTC,2017-12-29 00:02:47.848873
-CCCAGG,HTC,ETH,10000.0,0.0025,1,JordanManual,cryptocompare,HTC,2017-12-29 00:02:47.848873
-CCCAGG,HTC,DOGE,5215.18706735,93.7522919225,1,JordanManual,cryptocompare,HTC,2017-12-29 00:02:47.848873

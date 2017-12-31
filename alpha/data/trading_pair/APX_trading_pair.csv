@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,APX,BTC,3352.4257769,3.38044768,1,JordanManual,cryptocompare,APX,2017-12-29 00:03:31.707786
-CCCAGG,APX,DOGE,0.610529,1863.07174587,1,JordanManual,cryptocompare,APX,2017-12-29 00:03:31.707786

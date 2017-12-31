@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,KING,BTC,25511.0072214,0.03029491,1,JordanManual,cryptocompare,KING,2017-12-29 00:10:54.835785
-CCCAGG,KING,LTC,14596.0144607,1.08711116,1,JordanManual,cryptocompare,KING,2017-12-29 00:10:54.835785
-CCCAGG,KING,DOGE,579.03548439,1071.76798054,1,JordanManual,cryptocompare,KING,2017-12-29 00:10:54.835785

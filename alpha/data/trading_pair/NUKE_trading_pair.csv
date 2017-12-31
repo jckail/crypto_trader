@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NUKE,BTC,819.0125,0.00065521,1,JordanManual,cryptocompare,NUKE,2017-12-29 00:03:15.669222
-CCCAGG,NUKE,RUR,639.15754197,572.70820003,1,JordanManual,cryptocompare,NUKE,2017-12-29 00:03:15.669222

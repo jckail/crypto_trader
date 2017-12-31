@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,HONEY,BTC,898.05057764,0.0110011195761,1,JordanManual,cryptocompare,HONEY,2017-12-29 00:03:27.159136
-CCCAGG,HONEY,DOGE,1.49963695,214.694699146,1,JordanManual,cryptocompare,HONEY,2017-12-29 00:03:27.159136

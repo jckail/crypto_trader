@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ARCO,BTC,4688.78410902,0.04800807,1,JordanManual,cryptocompare,ARCO,2017-12-29 00:03:00.708349
-CCCAGG,ARCO,DOGE,196.74400508,2867.67446683,1,JordanManual,cryptocompare,ARCO,2017-12-29 00:03:00.708349
-CCCAGG,ARCO,RUR,0.33956,3.05604,1,JordanManual,cryptocompare,ARCO,2017-12-29 00:03:00.708349

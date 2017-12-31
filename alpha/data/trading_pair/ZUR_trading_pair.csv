@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ZUR,BTC,164122.024713,0.0575154360074,1,JordanManual,cryptocompare,ZUR,2017-12-29 00:02:58.334061
-CCCAGG,ZUR,DOGE,2405.25091018,3881.91364473,1,JordanManual,cryptocompare,ZUR,2017-12-29 00:02:58.334061
-CCCAGG,ZUR,RUR,300.92022311,213.276984276,1,JordanManual,cryptocompare,ZUR,2017-12-29 00:02:58.334061

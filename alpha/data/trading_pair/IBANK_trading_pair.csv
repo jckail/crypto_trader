@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,IBANK,BTC,7750.99910562,0.00219462110092,1,JordanManual,cryptocompare,IBANK,2017-12-29 00:02:50.401674
-CCCAGG,IBANK,RUR,11.3157895,4.75000001816,1,JordanManual,cryptocompare,IBANK,2017-12-29 00:02:50.401674

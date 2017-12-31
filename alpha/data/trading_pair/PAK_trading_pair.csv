@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,PAK,BTC,121158.892289,0.086270415436,1,JordanManual,cryptocompare,PAK,2017-12-29 00:10:57.066194
-CCCAGG,PAK,DOGE,5050.24634576,6420.98235754,1,JordanManual,cryptocompare,PAK,2017-12-29 00:10:57.066194
-CCCAGG,PAK,USD,4406.18232044,46.8557184496,1,JordanManual,cryptocompare,PAK,2017-12-29 00:10:57.066194
-CCCAGG,PAK,LTC,1960.0,0.1046434,1,JordanManual,cryptocompare,PAK,2017-12-29 00:10:57.066194
-CCCAGG,PAK,RUR,1326.82739409,932.803076129,1,JordanManual,cryptocompare,PAK,2017-12-29 00:10:57.066194

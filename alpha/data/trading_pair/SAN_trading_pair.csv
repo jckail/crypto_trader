@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,SAN,USD,455665.697162,2375192.42232,1,JordanManual,cryptocompare,SAN,2017-12-29 00:10:53.765273
-CCCAGG,SAN,BTC,95460.3940557,34.8715596078,1,JordanManual,cryptocompare,SAN,2017-12-29 00:10:53.765273
-CCCAGG,SAN,ETH,63911.7304625,470.971458841,1,JordanManual,cryptocompare,SAN,2017-12-29 00:10:53.765273
-CCCAGG,SAN,USDT,46612.263794,238816.532201,1,JordanManual,cryptocompare,SAN,2017-12-29 00:10:53.765273
-CCCAGG,SAN,RUR,1.38983301,528.136543895,1,JordanManual,cryptocompare,SAN,2017-12-29 00:10:53.765273

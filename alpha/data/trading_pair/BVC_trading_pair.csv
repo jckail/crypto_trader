@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BVC,RUR,103.12269487,114.979191477,1,JordanManual,cryptocompare,BVC,2017-12-29 00:03:21.795344
-CCCAGG,BVC,BTC,78.13893588,0.000163310375989,1,JordanManual,cryptocompare,BVC,2017-12-29 00:03:21.795344

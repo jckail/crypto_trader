@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,DGD,BTC,19636.5252027,218.775709158,1,JordanManual,cryptocompare,DGD,2017-12-29 00:03:33.871556
-CCCAGG,DGD,ETH,1088.57790243,244.656844854,1,JordanManual,cryptocompare,DGD,2017-12-29 00:03:33.871556
-CCCAGG,DGD,USDT,500.90977174,78988.9787557,1,JordanManual,cryptocompare,DGD,2017-12-29 00:03:33.871556

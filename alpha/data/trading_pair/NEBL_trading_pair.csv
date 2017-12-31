@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NEBL,BTC,27933.7171702,12.8478924984,1,JordanManual,cryptocompare,NEBL,2017-12-29 00:02:52.527670
-CCCAGG,NEBL,ETH,2066.476481,16.6577702019,1,JordanManual,cryptocompare,NEBL,2017-12-29 00:02:52.527670
-CCCAGG,NEBL,LTC,1929.46410663,52.12176199,1,JordanManual,cryptocompare,NEBL,2017-12-29 00:02:52.527670
-CCCAGG,NEBL,DOGE,1.87273438,1553.10298444,1,JordanManual,cryptocompare,NEBL,2017-12-29 00:02:52.527670

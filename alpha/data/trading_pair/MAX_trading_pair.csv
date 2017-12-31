@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,MAX,BTC,159205.817281,0.186248935913,1,JordanManual,cryptocompare,MAX,2017-12-29 00:03:19.517521
-CCCAGG,MAX,RUR,53.68521871,100.543650984,1,JordanManual,cryptocompare,MAX,2017-12-29 00:03:19.517521
-CCCAGG,MAX,USD,19.61346231,0.453070979361,1,JordanManual,cryptocompare,MAX,2017-12-29 00:03:19.517521

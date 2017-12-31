@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,PURA,BTC,102591.133498,3.51853147612,1,JordanManual,cryptocompare,PURA,2017-12-29 00:03:11.203275
-CCCAGG,PURA,LTC,1704.60243953,3.93476858,1,JordanManual,cryptocompare,PURA,2017-12-29 00:03:11.203275
-CCCAGG,PURA,ETH,656.907,0.394177295115,1,JordanManual,cryptocompare,PURA,2017-12-29 00:03:11.203275
-CCCAGG,PURA,DOGE,5.20375686,328.19009215,1,JordanManual,cryptocompare,PURA,2017-12-29 00:03:11.203275

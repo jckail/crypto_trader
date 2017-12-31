@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,SFE,USD,1292215.76652,29.0170048998,1,JordanManual,cryptocompare,SFE,2017-12-29 00:11:12.608035
-CCCAGG,SFE,RUR,25449.524479,36.8918709,1,JordanManual,cryptocompare,SFE,2017-12-29 00:11:12.608035
-CCCAGG,SFE,DOGE,19999.9999931,57.99999998,1,JordanManual,cryptocompare,SFE,2017-12-29 00:11:12.608035

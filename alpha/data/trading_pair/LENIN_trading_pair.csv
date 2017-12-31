@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,LENIN,BTC,75801.0745786,0.00685073256037,1,JordanManual,cryptocompare,LENIN,2017-12-29 00:03:12.013874
-CCCAGG,LENIN,RUR,5002.78529451,390.394694494,1,JordanManual,cryptocompare,LENIN,2017-12-29 00:03:12.013874
-CCCAGG,LENIN,ETH,882.96106608,0.001509863423,1,JordanManual,cryptocompare,LENIN,2017-12-29 00:03:12.013874
-CCCAGG,LENIN,USD,859.08217921,1.37822248347,1,JordanManual,cryptocompare,LENIN,2017-12-29 00:03:12.013874

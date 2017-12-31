@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,VRS,USD,3228967.44191,126.80015472,1,JordanManual,cryptocompare,VRS,2017-12-29 00:03:05.422377
-CCCAGG,VRS,BTC,3116388.5007,0.031163885007,1,JordanManual,cryptocompare,VRS,2017-12-29 00:03:05.422377

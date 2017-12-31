@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,PINK,BTC,26478260.9439,99.52485352,1,JordanManual,cryptocompare,PINK,2017-12-29 00:03:25.298730
-CCCAGG,PINK,LTC,14452.1659256,4.25469252,1,JordanManual,cryptocompare,PINK,2017-12-29 00:03:25.298730
-CCCAGG,PINK,DOGE,3423.03713529,30371.3683142,1,JordanManual,cryptocompare,PINK,2017-12-29 00:03:25.298730

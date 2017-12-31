@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ALTCOM,BTC,501.44909405,0.13992260539,1,JordanManual,cryptocompare,ALTCOM,2017-12-29 00:03:10.836234
-CCCAGG,ALTCOM,USD,42.94136884,163.150525689,1,JordanManual,cryptocompare,ALTCOM,2017-12-29 00:03:10.836234
-CCCAGG,ALTCOM,RUR,3.53102227,795.628109564,1,JordanManual,cryptocompare,ALTCOM,2017-12-29 00:03:10.836234
-CCCAGG,ALTCOM,ETH,0.12183789,0.000472309454101,1,JordanManual,cryptocompare,ALTCOM,2017-12-29 00:03:10.836234

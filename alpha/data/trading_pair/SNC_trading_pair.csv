@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,SNC,ETH,3274982.46,1081.35173968,1,JordanManual,cryptocompare,SNC,2017-12-29 00:10:55.050224
-CCCAGG,SNC,BTC,441357.986802,7.2851902058,1,JordanManual,cryptocompare,SNC,2017-12-29 00:10:55.050224
-CCCAGG,SNC,USD,106741.798272,24185.3651401,1,JordanManual,cryptocompare,SNC,2017-12-29 00:10:55.050224
-CCCAGG,SNC,RUR,5.0,166.6144425,1,JordanManual,cryptocompare,SNC,2017-12-29 00:10:55.050224

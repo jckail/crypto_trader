@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,HSR,BTC,1977935.75019,3644.16438568,1,JordanManual,cryptocompare,HSR,2017-12-29 00:02:57.733402
-CCCAGG,HSR,ETH,54080.3684196,1994.76050125,1,JordanManual,cryptocompare,HSR,2017-12-29 00:02:57.733402
-CCCAGG,HSR,USDT,46479.0087816,1209763.68115,1,JordanManual,cryptocompare,HSR,2017-12-29 00:02:57.733402
-CCCAGG,HSR,LTC,185.88839093,21.56384668,1,JordanManual,cryptocompare,HSR,2017-12-29 00:02:57.733402
-CCCAGG,HSR,DOGE,1.96171674,6465.87143584,1,JordanManual,cryptocompare,HSR,2017-12-29 00:02:57.733402

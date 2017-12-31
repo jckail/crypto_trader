@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,HPC,BTC,119362.252993,0.507735702533,1,JordanManual,cryptocompare,HPC,2017-12-29 00:03:29.470492
-CCCAGG,HPC,RUR,2121.08164942,11627.4194639,1,JordanManual,cryptocompare,HPC,2017-12-29 00:03:29.470492
-CCCAGG,HPC,USD,316.50048739,25.0000000284,1,JordanManual,cryptocompare,HPC,2017-12-29 00:03:29.470492
-CCCAGG,HPC,DOGE,3.08164942,10.169443086,1,JordanManual,cryptocompare,HPC,2017-12-29 00:03:29.470492

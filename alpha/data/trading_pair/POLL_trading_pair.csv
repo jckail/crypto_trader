@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,POLL,BTC,120306.418916,16.46835477,1,JordanManual,cryptocompare,POLL,2017-12-29 00:02:58.022830
-CCCAGG,POLL,LTC,15240.6932717,120.05841043,1,JordanManual,cryptocompare,POLL,2017-12-29 00:02:58.022830
-CCCAGG,POLL,ETH,2664.57796092,7.53246113247,1,JordanManual,cryptocompare,POLL,2017-12-29 00:02:58.022830
-CCCAGG,POLL,DOGE,5.78474684,1507.09842471,1,JordanManual,cryptocompare,POLL,2017-12-29 00:02:58.022830

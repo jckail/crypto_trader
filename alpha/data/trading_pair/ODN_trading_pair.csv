@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ODN,BTC,368264.003073,13.64701381,1,JordanManual,cryptocompare,ODN,2017-12-29 00:02:57.617247
-CCCAGG,ODN,LTC,16510.05522,37.47437277,1,JordanManual,cryptocompare,ODN,2017-12-29 00:02:57.617247
-CCCAGG,ODN,DOGE,189.09891239,13456.6265393,1,JordanManual,cryptocompare,ODN,2017-12-29 00:02:57.617247

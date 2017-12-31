@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BCPT,BTC,6186548.19714,170.547457271,1,JordanManual,cryptocompare,BCPT,2017-12-29 00:03:12.397151
-CCCAGG,BCPT,ETH,1284170.99111,717.830483995,1,JordanManual,cryptocompare,BCPT,2017-12-29 00:03:12.397151
-CCCAGG,BCPT,BNB,337806.1,15185.1831895,1,JordanManual,cryptocompare,BCPT,2017-12-29 00:03:12.397151
-CCCAGG,BCPT,DOGE,52.61931943,3441.39463837,1,JordanManual,cryptocompare,BCPT,2017-12-29 00:03:12.397151
-CCCAGG,BCPT,LTC,32.70421426,0.09625859,1,JordanManual,cryptocompare,BCPT,2017-12-29 00:03:12.397151

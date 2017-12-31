@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,XPY,BTC,13229.8205068,0.0461968934001,1,JordanManual,cryptocompare,XPY,2017-12-29 00:03:20.930324
-CCCAGG,XPY,RUR,34.0,200.0,1,JordanManual,cryptocompare,XPY,2017-12-29 00:03:20.930324

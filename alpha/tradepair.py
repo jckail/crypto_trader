@@ -44,7 +44,7 @@ class GetTradePair(object):
                     frames.append(df)
 
                     if os.path.isfile(my_file):
-                        df_resident = p.read_csv(my_file)
+                        df_resident = p.read_csv(my_file,  encoding= 'utf-8')
                         frames.append(df_resident)
                     else:
                         pass
@@ -53,7 +53,7 @@ class GetTradePair(object):
                         df = df.drop_duplicates(['exchange','fromSymbol','toSymbol','volume24h','volume24hTo','source','timestamp_api_call'], keep='last')
                         df = df.sort_values('timestamp_api_call')
                         df = df.reset_index(drop=True)
-                        df.to_csv(my_file, index = False) #need to add this
+                        df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
                         #print 'Updated trade pair: '+str(my_file)
                     else:
                         pass

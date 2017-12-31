@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,HAMS,BTC,36902.3390048,0.0521585893525,1,JordanManual,cryptocompare,HAMS,2017-12-29 00:02:45.509038
-CCCAGG,HAMS,RUR,123.62219979,53.8386169494,1,JordanManual,cryptocompare,HAMS,2017-12-29 00:02:45.509038
-CCCAGG,HAMS,DOGE,34.176803,98.2911730388,1,JordanManual,cryptocompare,HAMS,2017-12-29 00:02:45.509038

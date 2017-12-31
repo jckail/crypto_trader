@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ATS,BTC,634410.0,0.820964,1,JordanManual,cryptocompare,ATS,2017-12-29 00:03:01.403611
-CCCAGG,ATS,ETH,119894.379,3.67499416697,1,JordanManual,cryptocompare,ATS,2017-12-29 00:03:01.403611

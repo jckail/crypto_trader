@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,QRL,BTC,750932.170698,114.450042656,1,JordanManual,cryptocompare,QRL,2017-12-29 00:02:45.850003
-CCCAGG,QRL,ETH,38580.8205146,116.485624739,1,JordanManual,cryptocompare,QRL,2017-12-29 00:02:45.850003
-CCCAGG,QRL,USDT,19407.6395571,41210.3609844,1,JordanManual,cryptocompare,QRL,2017-12-29 00:02:45.850003

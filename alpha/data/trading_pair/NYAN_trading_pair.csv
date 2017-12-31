@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NYAN,BTC,569373.695556,0.08727859,1,JordanManual,cryptocompare,NYAN,2017-12-29 00:03:19.641297
-CCCAGG,NYAN,LTC,96212.4398418,0.83755713,1,JordanManual,cryptocompare,NYAN,2017-12-29 00:03:19.641297
-CCCAGG,NYAN,DOGE,549.717839,153.44544924,1,JordanManual,cryptocompare,NYAN,2017-12-29 00:03:19.641297

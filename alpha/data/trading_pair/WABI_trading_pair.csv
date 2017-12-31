@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,WABI,BTC,2277423.0,290.15397477,1,JordanManual,cryptocompare,WABI,2017-12-29 00:03:00.440873
-CCCAGG,WABI,ETH,659689.962984,1685.82066656,1,JordanManual,cryptocompare,WABI,2017-12-29 00:03:00.440873
-CCCAGG,WABI,BNB,37722.85,7743.5268428,1,JordanManual,cryptocompare,WABI,2017-12-29 00:03:00.440873

@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NEOS,BTC,109559.833669,58.98305148,1,JordanManual,cryptocompare,NEOS,2017-12-29 00:03:27.358859
-CCCAGG,NEOS,ETH,0.00247897,1.11554393691e-05,1,JordanManual,cryptocompare,NEOS,2017-12-29 00:03:27.358859

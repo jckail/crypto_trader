@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,CLD,USD,49209.54,9094.6444,1,JordanManual,cryptocompare,CLD,2017-12-29 00:03:11.402623
-CCCAGG,CLD,ETH,8513.0,2.5414,1,JordanManual,cryptocompare,CLD,2017-12-29 00:03:11.402623
-CCCAGG,CLD,BTC,2897.0,0.057015,1,JordanManual,cryptocompare,CLD,2017-12-29 00:03:11.402623

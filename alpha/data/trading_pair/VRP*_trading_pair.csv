@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,VRP*,BTC,12283431.2701,0.142884317192,1,JordanManual,cryptocompare,VRP*,2017-12-29 00:03:00.394476
-CCCAGG,VRP*,USD,216609.414794,51.9675147032,1,JordanManual,cryptocompare,VRP*,2017-12-29 00:03:00.394476
-CCCAGG,VRP*,RUR,35620.7491996,532.596355952,1,JordanManual,cryptocompare,VRP*,2017-12-29 00:03:00.394476
-CCCAGG,VRP*,ETH,10000.0,0.0007,1,JordanManual,cryptocompare,VRP*,2017-12-29 00:03:00.394476

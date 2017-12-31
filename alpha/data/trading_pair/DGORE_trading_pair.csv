@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,DGORE,RUR,7430.77143608,2227.08392448,1,JordanManual,cryptocompare,DGORE,2017-12-29 00:02:57.108818
-CCCAGG,DGORE,BTC,2955.79697746,0.000413811576844,1,JordanManual,cryptocompare,DGORE,2017-12-29 00:02:57.108818

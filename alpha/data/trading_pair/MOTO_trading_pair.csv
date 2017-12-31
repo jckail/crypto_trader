@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,MOTO,BTC,179654.887287,0.287944603186,1,JordanManual,cryptocompare,MOTO,2017-12-29 00:03:16.067668
-CCCAGG,MOTO,LTC,5159.42892971,0.49744959,1,JordanManual,cryptocompare,MOTO,2017-12-29 00:03:16.067668
-CCCAGG,MOTO,DOGE,856.64235398,2219.75348106,1,JordanManual,cryptocompare,MOTO,2017-12-29 00:03:16.067668

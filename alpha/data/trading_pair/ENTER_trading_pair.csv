@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ENTER,RUR,10001.0000002,11.1058228465,1,JordanManual,cryptocompare,ENTER,2017-12-29 00:02:51.321446
-CCCAGG,ENTER,USD,6700.0,1.138263,1,JordanManual,cryptocompare,ENTER,2017-12-29 00:02:51.321446
-CCCAGG,ENTER,ETH,3737.65406733,0.0114729741165,1,JordanManual,cryptocompare,ENTER,2017-12-29 00:02:51.321446

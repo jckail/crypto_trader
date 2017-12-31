@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ASN,BTC,770.76923076,0.000100199999999,1,JordanManual,cryptocompare,ASN,2017-12-29 00:03:25.121092
-CCCAGG,ASN,RUR,183.91305103,42.2999998978,1,JordanManual,cryptocompare,ASN,2017-12-29 00:03:25.121092

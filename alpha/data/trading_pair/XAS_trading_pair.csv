@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,XAS,BTC,78388.60672,6.81153881331,1,JordanManual,cryptocompare,XAS,2017-12-29 00:02:49.223920
-CCCAGG,XAS,ETH,7927.501726,13.6084251035,1,JordanManual,cryptocompare,XAS,2017-12-29 00:02:49.223920

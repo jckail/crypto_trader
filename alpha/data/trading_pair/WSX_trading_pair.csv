@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,WSX,BTC,91242.4439006,0.02014923,1,JordanManual,cryptocompare,WSX,2017-12-29 00:03:30.783656
-CCCAGG,WSX,DOGE,117.064119,83.80397081,1,JordanManual,cryptocompare,WSX,2017-12-29 00:03:30.783656

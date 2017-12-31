@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BSTY,BTC,22960.7953865,0.0402218414007,1,JordanManual,cryptocompare,BSTY,2017-12-29 00:03:27.902503
-CCCAGG,BSTY,DOGE,591.31647718,1796.9931618,1,JordanManual,cryptocompare,BSTY,2017-12-29 00:03:27.902503
-CCCAGG,BSTY,RUR,379.97053743,562.273040031,1,JordanManual,cryptocompare,BSTY,2017-12-29 00:03:27.902503
-CCCAGG,BSTY,WAVES,0.24253164,0.000322668944489,1,JordanManual,cryptocompare,BSTY,2017-12-29 00:03:27.902503

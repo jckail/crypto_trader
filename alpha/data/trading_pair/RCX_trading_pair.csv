@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,RCX,BTC,10010.0,0.0001001,1,JordanManual,cryptocompare,RCX,2017-12-29 00:02:47.665428
-CCCAGG,RCX,DOGE,3530.4117647,12.0034,1,JordanManual,cryptocompare,RCX,2017-12-29 00:02:47.665428
-CCCAGG,RCX,RUR,390.0,0.9690387,1,JordanManual,cryptocompare,RCX,2017-12-29 00:02:47.665428
