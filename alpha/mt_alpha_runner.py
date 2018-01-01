@@ -93,37 +93,40 @@ class AlphaRunner(object):
 
                 try:
 
-                    self.symbol_list = self.symbol_list[:100]
+                    #add processing queue
+
+                    #self.symbol_list = self.symbol_list[:100]
+
                     x = len(self.symbol_list)
-                    # # #self.symbol_list.append('SMT')
-                    # print ('--------------------------------------------------------------------------')
-                    # print ('Evaluating: '+str(x)+' Coins')
-                    # print ('--------------------------------------------------------------------------')
-                    # # #helps limit #threads open etc
-                    # #
-                    # md = miningdata.GetMineData(self.cwd)
-                    # md.main()
-                    # # #thread1 = threading.Thread(target=md.main(), args=())
-                    # #
-                    # print('--------------------------------------------------------------------------')
-                    # mfp = fetchprice.GetDtlPrice(self.symbol_list, self.exchanges, self.chunksize,self.cwd) #chunk size not used here just broken up into 50 strings due to api list constraint
-                    # mfp.main()
-                    # # #thread2 = threading.Thread(target=mfp.main(), args=())
-                    # print('--------------------------------------------------------------------------')
-                    # #
-                    # tp = tradepair.GetTradePair(self.symbol_list,self.chunksize,self.cwd)
-                    # tp.main()
-                    # # #thread3 = threading.Thread(target=tp.main(), args=())
-                    # print('--------------------------------------------------------------------------')
-                    # #
-                    # mh = minute_hist.GetMinuteHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
-                    # mh.main()
-                    # # thread4 = threading.Thread(target=mh.main(), args=())
-                    # #
-                    # hh = hour_hist.GetHourHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
-                    # hh.main()
-                    # # thread5 = threading.Thread(target=hh.main(), args=())
-                    # #
+                    # #self.symbol_list.append('SMT')
+                    print ('--------------------------------------------------------------------------')
+                    print ('Evaluating: '+str(x)+' Coins')
+                    print ('--------------------------------------------------------------------------')
+                    # #helps limit #threads open etc
+                    #
+                    md = miningdata.GetMineData(self.cwd)
+                    md.main()
+                    # #thread1 = threading.Thread(target=md.main(), args=())
+                    #
+                    print('--------------------------------------------------------------------------')
+                    mfp = fetchprice.GetDtlPrice(self.symbol_list, self.exchanges, self.chunksize,self.cwd) #chunk size not used here just broken up into 50 strings due to api list constraint
+                    mfp.main()
+                    # #thread2 = threading.Thread(target=mfp.main(), args=())
+                    print('--------------------------------------------------------------------------')
+                    #
+                    tp = tradepair.GetTradePair(self.symbol_list,self.chunksize,self.cwd)
+                    tp.main()
+                    # #thread3 = threading.Thread(target=tp.main(), args=())
+                    print('--------------------------------------------------------------------------')
+                    #
+                    mh = minute_hist.GetMinuteHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
+                    mh.main()
+                    # thread4 = threading.Thread(target=mh.main(), args=())
+                    #
+                    hh = hour_hist.GetHourHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
+                    hh.main()
+                    # thread5 = threading.Thread(target=hh.main(), args=())
+                    #
                     dh = day_hist.GetDayHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
                     dh.main()
                     # thread6 = threading.Thread(target=dh.main(), args=())
