@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,KIN,ETH,2792787936.76,1195.13554677,1,JordanManual,cryptocompare,KIN,2017-12-31 12:17:47.528394
-CCCAGG,KIN,ETH,2792787936.76,1195.13554677,1,JordanManual,cryptocompare,KIN,2017-12-31 12:14:48.297479
-CCCAGG,KIN,ETH,2818237788.05,1188.36406463,1,JordanManual,cryptocompare,KIN,2017-12-31 11:57:01.775622
-CCCAGG,KIN,ETH,2764280074.64,1157.97383395,1,JordanManual,cryptocompare,KIN,2017-12-31 11:54:27.555154

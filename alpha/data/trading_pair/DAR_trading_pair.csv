@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,DAR,WAVES,6630.27,185.370505005,1,JordanManual,cryptocompare,DAR,2017-12-31 13:18:03.109241
-CCCAGG,DAR,BTC,553.27,0.014091455,1,JordanManual,cryptocompare,DAR,2017-12-31 13:18:03.109241
-CCCAGG,DAR,BTC,5945.193403,0.156552340543,1,JordanManual,cryptocompare,DAR,2017-12-31 11:54:36.242055
-CCCAGG,DAR,WAVES,5185.707791,139.624959546,1,JordanManual,cryptocompare,DAR,2017-12-31 11:54:36.242055

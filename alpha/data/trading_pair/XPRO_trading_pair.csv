@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,XPRO,RUR,307.59310778,794.476053695,1,JordanManual,cryptocompare,XPRO,2017-12-31 11:54:39.995366
-CCCAGG,XPRO,BTC,282.22781965,0.000344317939973,1,JordanManual,cryptocompare,XPRO,2017-12-31 11:54:39.995366

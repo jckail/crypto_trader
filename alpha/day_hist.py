@@ -7,6 +7,7 @@ import urllib2
 import time
 from time import sleep
 from tqdm import tqdm
+import savetos3
 
 
 class GetDayHist(object):
@@ -48,11 +49,12 @@ class GetDayHist(object):
                             pass
                         df = p.concat(frames)
                         if not df.empty:
-                            df = df.drop_duplicates(['time','exchange','coin'], keep='last')
+                            df = df.drop_duplicates(['symbol','time','exchange'], keep='last')
                             df = df.sort_values('time')
                             df = df.reset_index(drop=True)
                             df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
-                            #print 'Updated trade pair: '+str(my_file)
+                            s3 = savetos3.SaveS3(my_file)
+                            s3.main()
                         else:
                             pass
 
@@ -65,7 +67,7 @@ class GetDayHist(object):
                 sleep(0.2)
                 pass
             except OverflowError:
-                print 'OverflowError: '+str(symbol)
+                print('OverflowError: '+str(symbol))
                 pass
             except Exception as e:
                 pass
@@ -76,7 +78,7 @@ class GetDayHist(object):
 
         xsymbols = [self.symbol_list[x:x+self.chunksize] for x in xrange(0, len(self.symbol_list), self.chunksize )]
 
-        print 'Begin: get_day_hist'
+        print('Begin: get_day_hist')
 
         for symbol_list in tqdm(xsymbols,desc='get_day_hist'):
 
@@ -91,11 +93,10 @@ class GetDayHist(object):
 
                 if len(error_symbols) > 0:
                     xsymbols.append(error_symbols)
-                    #print 'appending: errors: '+ str(error_symbols)
                     error_symbols = []
                 else:
                     pass
-        print 'DONE'
+        print('DONE')
 
 
 
@@ -109,10 +110,10 @@ if __name__ == '__main__':
     #ls_has = ls_has[:100]
     runner = GetDayHist()
     #start_time = dt.datetime.now()
-    print '--------------------------------------------------------------------------'
+    #print '--------------------------------------------------------------------------'
     runner.main()
-    print '--------------------------------------------------------------------------'
-    # x =  dt.datetime.now() - start_time
-    #print 'Completion time: '+str(x)
+    #print '--------------------------------------------------------------------------'
+# x =  dt.datetime.now() - start_time
+#print 'Completion time: '+str(x)
 
-    #7 seconds 100 records
+#7 seconds 100 records

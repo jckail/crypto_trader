@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,HMQ,BTC,11860198.0566,422.494387689,1,JordanManual,cryptocompare,HMQ,2017-12-31 11:54:49.302284
-CCCAGG,HMQ,ETH,161703.7776,108.861703407,1,JordanManual,cryptocompare,HMQ,2017-12-31 11:54:49.302284
-CCCAGG,HMQ,RUR,411.85091303,13428.2280374,1,JordanManual,cryptocompare,HMQ,2017-12-31 11:54:49.302284
-CCCAGG,HMQ,DOGE,183.29520702,11433.9953978,1,JordanManual,cryptocompare,HMQ,2017-12-31 11:54:49.302284
-CCCAGG,HMQ,USD,41.89431745,16.7577294937,1,JordanManual,cryptocompare,HMQ,2017-12-31 11:54:49.302284

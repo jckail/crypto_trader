@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,DNA,ETH,40889.0964562,31.8153542805,1,JordanManual,cryptocompare,DNA,2017-12-31 12:17:43.793773
-CCCAGG,DNA,BTC,26043.3494621,1.09502616,1,JordanManual,cryptocompare,DNA,2017-12-31 12:17:43.793773
-CCCAGG,DNA,LTC,8256.3834486,21.66239443,1,JordanManual,cryptocompare,DNA,2017-12-31 12:17:43.793773
-CCCAGG,DNA,DOGE,69.42903334,4886.80275945,1,JordanManual,cryptocompare,DNA,2017-12-31 12:17:43.793773

@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,TAGR,BTC,2481.14444443,0.000223302999999,1,JordanManual,cryptocompare,TAGR,2017-12-31 12:11:56.654040
-CCCAGG,TAGR,USD,1189.6189326,21.8125791358,1,JordanManual,cryptocompare,TAGR,2017-12-31 12:11:56.654040
-CCCAGG,TAGR,RUR,753.84036381,188.460090952,1,JordanManual,cryptocompare,TAGR,2017-12-31 12:11:56.654040

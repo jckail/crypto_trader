@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,VTX,BTC,4911.07084088,0.000638439209314,1,JordanManual,cryptocompare,VTX,2017-12-31 11:54:34.931628
-CCCAGG,VTX,RUR,3.0,1.48509537,1,JordanManual,cryptocompare,VTX,2017-12-31 11:54:34.931628

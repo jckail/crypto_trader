@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,SCL,BTC,79026.3681833,1.88215896591,1,JordanManual,cryptocompare,SCL,2017-12-31 11:57:09.073901
-CCCAGG,SCL,ETH,2320.96203768,0.928555078158,1,JordanManual,cryptocompare,SCL,2017-12-31 11:57:09.073901
-CCCAGG,SCL,BTC,79026.3681833,1.88215896591,1,JordanManual,cryptocompare,SCL,2017-12-31 11:54:31.857266
-CCCAGG,SCL,ETH,2320.96203768,0.928555078158,1,JordanManual,cryptocompare,SCL,2017-12-31 11:54:31.857266

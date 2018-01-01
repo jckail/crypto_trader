@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ELM,BTC,122312.556489,0.63748373,1,JordanManual,cryptocompare,ELM,2017-12-31 11:57:19.465960
-CCCAGG,ELM,BTC,122312.556489,0.63748373,1,JordanManual,cryptocompare,ELM,2017-12-31 11:54:36.701701
-CCCAGG,ELM,DOGE,1850.22653272,9830.98941152,1,JordanManual,cryptocompare,ELM,2017-12-31 11:54:36.701701

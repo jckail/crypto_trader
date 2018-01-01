@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,XDE2,RUR,0.04000001,10.5210265903,1,JordanManual,cryptocompare,XDE2,2017-12-31 12:18:06.873095
-CCCAGG,XDE2,USD,0.01343352,0.255236879866,1,JordanManual,cryptocompare,XDE2,2017-12-31 12:18:06.873095
-CCCAGG,XDE2,DOGE,0.30284675,999.9999685,1,JordanManual,cryptocompare,XDE2,2017-12-31 11:57:10.237832
-CCCAGG,XDE2,RUR,0.04000001,10.5210265903,1,JordanManual,cryptocompare,XDE2,2017-12-31 11:57:10.237832
-CCCAGG,XDE2,USD,0.01343352,0.255236879866,1,JordanManual,cryptocompare,XDE2,2017-12-31 11:57:10.237832

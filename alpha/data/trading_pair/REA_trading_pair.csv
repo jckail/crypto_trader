@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,REA,BTC,18930.2596946,0.49462086377,1,JordanManual,cryptocompare,REA,2017-12-31 11:57:20.990687
-CCCAGG,REA,ETH,3307.80431368,1.68698457998,1,JordanManual,cryptocompare,REA,2017-12-31 11:57:20.990687

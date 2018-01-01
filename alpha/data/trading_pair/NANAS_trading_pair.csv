@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NANAS,RUR,18.76393162,93.8196581,1,JordanManual,cryptocompare,NANAS,2017-12-31 11:57:34.584824
-CCCAGG,NANAS,BTC,18.76393162,0.00010320162391,1,JordanManual,cryptocompare,NANAS,2017-12-31 11:54:49.224505
-CCCAGG,NANAS,RUR,18.76393162,93.8196581,1,JordanManual,cryptocompare,NANAS,2017-12-31 11:54:49.224505

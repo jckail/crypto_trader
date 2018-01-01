@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,STA*,USD,5104.85378786,0.867774095398,1,JordanManual,cryptocompare,STA*,2017-12-31 12:17:52.065835
-CCCAGG,STA*,RUR,70.0,2.1,1,JordanManual,cryptocompare,STA*,2017-12-31 12:17:52.065835
-CCCAGG,STA*,USD,5104.85378786,0.867774095398,1,JordanManual,cryptocompare,STA*,2017-12-31 11:54:30.068887
-CCCAGG,STA*,RUR,70.0,2.1,1,JordanManual,cryptocompare,STA*,2017-12-31 11:54:30.068887

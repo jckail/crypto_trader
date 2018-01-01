@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,UIS,BTC,23772.5676512,0.0725854449418,1,JordanManual,cryptocompare,UIS,2017-12-31 11:57:31.886946
-CCCAGG,UIS,BTC,23772.5676512,0.0725854449418,1,JordanManual,cryptocompare,UIS,2017-12-31 11:54:46.580933
-CCCAGG,UIS,LTC,288.66603906,0.07076359,1,JordanManual,cryptocompare,UIS,2017-12-31 11:54:46.580933
-CCCAGG,UIS,DOGE,8.0,65.59999992,1,JordanManual,cryptocompare,UIS,2017-12-31 11:54:46.580933
-CCCAGG,UIS,RUR,0.1577,0.193975738885,1,JordanManual,cryptocompare,UIS,2017-12-31 11:54:46.580933

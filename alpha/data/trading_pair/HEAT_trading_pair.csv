@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,HEAT,BTC,723.30112312,0.05233511,1,JordanManual,cryptocompare,HEAT,2017-12-31 11:57:07.220298
-CCCAGG,HEAT,DOGE,102.09638798,13542.0592774,1,JordanManual,cryptocompare,HEAT,2017-12-31 11:57:07.220298
-CCCAGG,HEAT,LTC,8.99964825,0.04220835,1,JordanManual,cryptocompare,HEAT,2017-12-31 11:57:07.220298

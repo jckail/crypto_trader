@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,WASH,RUR,16273.7658912,432.451513291,1,JordanManual,cryptocompare,WASH,2017-12-31 11:57:18.376189
-CCCAGG,WASH,BTC,16015.84,0.000480475199999,1,JordanManual,cryptocompare,WASH,2017-12-31 11:57:18.376189
-CCCAGG,WASH,RUR,16273.7658912,432.451513291,1,JordanManual,cryptocompare,WASH,2017-12-31 11:54:36.499751
-CCCAGG,WASH,BTC,16015.84,0.000480475199999,1,JordanManual,cryptocompare,WASH,2017-12-31 11:54:36.499751

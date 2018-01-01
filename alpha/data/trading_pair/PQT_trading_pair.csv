@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,PQT,USD,1709.01,590.3337208,1,JordanManual,cryptocompare,PQT,2017-12-31 12:17:43.191670
-CCCAGG,PQT,USD,1706.01,588.5937208,1,JordanManual,cryptocompare,PQT,2017-12-31 11:54:27.323701

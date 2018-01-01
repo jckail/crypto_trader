@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,QBC,BTC,90193.961284,0.0229471606369,1,JordanManual,cryptocompare,QBC,2017-12-31 11:54:39.634692
-CCCAGG,QBC,USD,199.00503,1.01522018044,1,JordanManual,cryptocompare,QBC,2017-12-31 11:54:39.634692
-CCCAGG,QBC,RUR,6.54806135,1.9366048228,1,JordanManual,cryptocompare,QBC,2017-12-31 11:54:39.634692

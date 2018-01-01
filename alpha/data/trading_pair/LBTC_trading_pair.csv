@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,LBTC,BTC,383633.138996,0.64531198,1,JordanManual,cryptocompare,LBTC,2017-12-31 11:57:10.069336
-CCCAGG,LBTC,DOGE,10101.2637491,29347.0800354,1,JordanManual,cryptocompare,LBTC,2017-12-31 11:57:10.069336
-CCCAGG,LBTC,LTC,8886.94988959,0.91299696,1,JordanManual,cryptocompare,LBTC,2017-12-31 11:57:10.069336

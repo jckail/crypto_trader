@@ -1,7 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BTCA,BTC,4203380,3.728211,1,JordanManual,cryptocompare,BTCA,2017-12-31 13:17:58.927220
-CCCAGG,BTCA,USD,1310390,15884.6389,1,JordanManual,cryptocompare,BTCA,2017-12-31 13:17:58.927220
-CCCAGG,BTCA,ETH,674010,11.35618,1,JordanManual,cryptocompare,BTCA,2017-12-31 13:17:58.927220
-CCCAGG,BTCA,BTC,5846730,5.141065,1,JordanManual,cryptocompare,BTCA,2017-12-31 11:54:46.628739
-CCCAGG,BTCA,USD,1205550,14339.6773,1,JordanManual,cryptocompare,BTCA,2017-12-31 11:54:46.628739
-CCCAGG,BTCA,ETH,1001100,16.28167,1,JordanManual,cryptocompare,BTCA,2017-12-31 11:54:46.628739

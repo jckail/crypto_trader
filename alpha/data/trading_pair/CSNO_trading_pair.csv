@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,CSNO,ETH,8876.03231143,5.2537590233,1,JordanManual,cryptocompare,CSNO,2017-12-31 12:17:55.809569
-CCCAGG,CSNO,BTC,210150.0,6.26066,1,JordanManual,cryptocompare,CSNO,2017-12-31 12:14:51.512503
-CCCAGG,CSNO,ETH,8876.03231143,5.2537590233,1,JordanManual,cryptocompare,CSNO,2017-12-31 12:14:51.512503
-CCCAGG,CSNO,BTC,210170.0,6.26127,1,JordanManual,cryptocompare,CSNO,2017-12-31 11:54:29.359702
-CCCAGG,CSNO,ETH,8846.03231143,5.2354594233,1,JordanManual,cryptocompare,CSNO,2017-12-31 11:54:29.359702

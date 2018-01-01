@@ -9,6 +9,7 @@ import os
 import threading
 from tqdm import tqdm
 from time import sleep
+import savetos3
 
 
 class GetDtlPrice(object):
@@ -156,7 +157,6 @@ class GetDtlPrice(object):
             print 'Error: GetDtlPrice.main'
         print 'DONE'
 
-    print 'end: GetDtlPrice.main'
 
 
 if __name__ == '__main__':

@@ -9,6 +9,7 @@ import os
 import threading
 from time import sleep
 from tqdm import tqdm
+import savetos3
 
 
 class GetTradePair(object):
@@ -54,7 +55,8 @@ class GetTradePair(object):
                         df = df.sort_values('timestamp_api_call')
                         df = df.reset_index(drop=True)
                         df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
-                        #print 'Updated trade pair: '+str(my_file)
+                        s3 = savetos3.SaveS3(my_file)
+                        s3.main()
                     else:
                         pass
 
@@ -67,7 +69,7 @@ class GetTradePair(object):
             sleep(0.2)
             pass
         except OverflowError:
-            print 'OverflowError: '+str(symbol)
+            print('OverflowError: '+str(symbol))
             pass
         except Exception as e:
             pass
@@ -76,7 +78,7 @@ class GetTradePair(object):
 
     def main(self):
 
-        print 'begin: GetTradePair.main'
+        print('begin: GetTradePair.main')
 
         try:
             error_symbols = []
@@ -89,8 +91,6 @@ class GetTradePair(object):
 
 
             xsymbols = [self.symbol_list[x:x+self.chunksize] for x in xrange(0, len(self.symbol_list), self.chunksize )]
-
-            print 'Begin: trading_partners'
 
             for symbol_list in tqdm(xsymbols,desc='trading_partners'):
 
@@ -109,18 +109,16 @@ class GetTradePair(object):
                     else:
                         pass
 
-            print 'DONE'
+            print('DONE')
 
             for x in append_list:
                 self.symbol_list.remove(x)
         except requests.exceptions.RequestException as e:
-            print e
+            print(e)
         except OverflowError:
-            print 'OverflowError: '+str(symbol)
+            print('OverflowError: '+str(symbol))
         except Exception as e:
-            print e
-
-        print 'end: GetTradePair.main'
+            print(e)
 
 
 if __name__ == '__main__':

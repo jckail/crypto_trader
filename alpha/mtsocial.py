@@ -10,6 +10,7 @@ import threading
 from time import sleep
 from tqdm import tqdm
 import coinlist
+import savetos3
 
 
 class GetSocialData(object):
@@ -122,16 +123,16 @@ class GetSocialData(object):
                                 #print self.general_ls
 
                     else:
-                        print 'No Social Data'+str(symbol)+' '+str(symbol_count)+'/'+str(len_symbol_list)
+                        print('No Social Data'+str(symbol)+' '+str(symbol_count)+'/'+str(len_symbol_list))
                 else:
-                    print 'Invald coin'+str(symbol)+' '+str(symbol_count)+'/'+str(len_symbol_list)
+                    print('Invald coin'+str(symbol)+' '+str(symbol_count)+'/'+str(len_symbol_list))
 
             except requests.exceptions.RequestException as e:
                 error_symbols.append(symbol)
                 sleep(0.2)
                 pass
             except OverflowError:
-                print 'OverflowError: '+str(symbol)
+                print('OverflowError: '+str(symbol))
                 pass
             except Exception as e:
                 pass
@@ -151,14 +152,15 @@ class GetSocialData(object):
         if key in drop_dupe_dict.keys():
             df = df.drop_duplicates(drop_dupe_dict[key], keep='last')
         else:
-            print 'drop dupe no key'
+            print('drop dupe no key')
             df = df
-        #dupes logic for each key** where key = dupe logic key?
-        #ie: df.drop_duplicates(dedupelogic[key], keep='last')
+
         df = df.sort_values('symbol')
         df = df.reset_index(drop=True)
         if not df.empty:
             df.to_csv(my_file, index = False,  encoding= 'utf-8')
+            s3 = savetos3.SaveS3(my_file)
+            s3.main()
         else:
             pass
 
@@ -169,7 +171,7 @@ class GetSocialData(object):
 
         :return:
         """
-        print 'begin: GetSocialData.main'
+        print('begin: GetSocialData.main')
         try:
 
 
@@ -180,7 +182,6 @@ class GetSocialData(object):
 
             xsymbols = [self.symbol_list[x:x+self.chunksize] for x in xrange(0, len(self.symbol_list), self.chunksize )]
 
-            print 'Begin: get_socials'
 
             for symbol_list in tqdm(xsymbols,desc='get_socials'):
 
@@ -230,14 +231,14 @@ class GetSocialData(object):
                     pass
 
         except requests.exceptions.RequestException as e:
-            print e
+            print(e)
         except OverflowError:
-            print 'OverflowError: '+str(symbol)
+            print('OverflowError: '+str(symbol))
         except Exception as e:
-            print e
+            print(e)
 
         #print 'end: GetSocialData.main'
-        print 'DONE'
+        print('DONE')
 
     def main(self):
         gsd = GetSocialData(self.symbol_list,self.exchanges,self.chunksize,self.cwd,self.reddit_ls,self.coderepository_ls,self.twitter_ls,self.cryptocompare_ls,self.general_ls,self.facebook_ls)
@@ -245,7 +246,7 @@ class GetSocialData(object):
             gsd.main_run()
 
         else:
-            print "repopulating coinlist"
+            print("repopulating coinlist")
             cl = coinlist.GetCoinLists(self.cwd)
             cl.main()
             gsd.main_run()

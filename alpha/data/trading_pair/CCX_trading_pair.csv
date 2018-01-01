@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,CCX,BTC,1039.86493376,0.00232230198148,1,JordanManual,cryptocompare,CCX,2017-12-31 13:17:59.907346
-CCCAGG,CCX,USD,1030.86106697,37.6526116945,1,JordanManual,cryptocompare,CCX,2017-12-31 13:17:59.907346
-CCCAGG,CCX,RUR,43.19908669,56.3004739239,1,JordanManual,cryptocompare,CCX,2017-12-31 13:17:59.907346

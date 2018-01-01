@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BXC,LTC,1500.0,0.03064,1,JordanManual,cryptocompare,BXC,2017-12-31 13:18:00.116838
-CCCAGG,BXC,LTC,1500.0,0.03064,1,JordanManual,cryptocompare,BXC,2017-12-31 11:54:42.480353
-CCCAGG,BXC,DOGE,57.65787497,40.01704971,1,JordanManual,cryptocompare,BXC,2017-12-31 11:54:42.480353

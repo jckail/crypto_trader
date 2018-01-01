@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NAMO,LTC,223500.0,0.10034,1,JordanManual,cryptocompare,NAMO,2017-12-31 11:57:19.748838
-CCCAGG,NAMO,DOGE,79955.7456311,1201.39657244,1,JordanManual,cryptocompare,NAMO,2017-12-31 11:57:19.748838

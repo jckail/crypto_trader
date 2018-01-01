@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,CNBC,BTC,156493.377273,2.03010679908,1,JordanManual,cryptocompare,CNBC,2017-12-31 11:57:25.102472
-CCCAGG,CNBC,BTC,156493.377273,2.03010679908,1,JordanManual,cryptocompare,CNBC,2017-12-31 11:54:42.357963

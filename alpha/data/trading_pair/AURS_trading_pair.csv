@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,AURS,BTC,137.44291491,0.01508799,1,JordanManual,cryptocompare,AURS,2017-12-31 13:17:54.892892
-CCCAGG,AURS,DOGE,5.9929739,1009.99999957,1,JordanManual,cryptocompare,AURS,2017-12-31 13:17:54.892892
-CCCAGG,AURS,BTC,290.44291491,0.03211095,1,JordanManual,cryptocompare,AURS,2017-12-31 11:57:19.875339
-CCCAGG,AURS,DOGE,6.41205053,1080.6798188,1,JordanManual,cryptocompare,AURS,2017-12-31 11:57:19.875339

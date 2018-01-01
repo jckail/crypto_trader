@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,STORM,BTC,68140090,317.68975,1,JordanManual,cryptocompare,STORM,2017-12-31 12:17:44.896145
-CCCAGG,STORM,BTC,67311120,313.750202,1,JordanManual,cryptocompare,STORM,2017-12-31 11:57:01.071229

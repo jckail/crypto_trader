@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,PIE,BTC,18615.61475,0.00655743947332,1,JordanManual,cryptocompare,PIE,2017-12-31 11:57:28.248769
-CCCAGG,PIE,RUR,27.52814302,5.18143535551,1,JordanManual,cryptocompare,PIE,2017-12-31 11:57:28.248769

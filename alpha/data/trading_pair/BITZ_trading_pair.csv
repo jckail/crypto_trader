@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BITZ,BTC,539.20368259,0.0042869625539,1,JordanManual,cryptocompare,BITZ,2017-12-31 13:17:57.428012
-CCCAGG,BITZ,RUR,4.7153846,28.5923076,1,JordanManual,cryptocompare,BITZ,2017-12-31 13:17:57.428012
-CCCAGG,BITZ,BTC,219.20368259,0.0017307887242,1,JordanManual,cryptocompare,BITZ,2017-12-31 11:54:49.815594
-CCCAGG,BITZ,RUR,4.7153846,28.5923076,1,JordanManual,cryptocompare,BITZ,2017-12-31 11:54:49.815594

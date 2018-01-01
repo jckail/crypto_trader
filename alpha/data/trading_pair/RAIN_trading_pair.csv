@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,RAIN,BTC,328841.932509,0.88287219,1,JordanManual,cryptocompare,RAIN,2017-12-31 11:57:34.870824
-CCCAGG,RAIN,LTC,28461.3633269,4.36688697,1,JordanManual,cryptocompare,RAIN,2017-12-31 11:57:34.870824
-CCCAGG,RAIN,BTC,328841.932509,0.88287219,1,JordanManual,cryptocompare,RAIN,2017-12-31 11:54:49.222153
-CCCAGG,RAIN,LTC,28461.3633269,4.36688697,1,JordanManual,cryptocompare,RAIN,2017-12-31 11:54:49.222153
-CCCAGG,RAIN,DOGE,1577.52610084,6765.35633676,1,JordanManual,cryptocompare,RAIN,2017-12-31 11:54:49.222153

@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,PIGGY,BTC,14184.4871334,0.00212768,1,JordanManual,cryptocompare,PIGGY,2017-12-31 11:57:35.020969
-CCCAGG,PIGGY,DOGE,2831.33919563,658.0318401,1,JordanManual,cryptocompare,PIGGY,2017-12-31 11:57:35.020969
-CCCAGG,PIGGY,BTC,14184.4871334,0.00212768,1,JordanManual,cryptocompare,PIGGY,2017-12-31 11:54:49.342243
-CCCAGG,PIGGY,DOGE,2831.33919563,658.0318401,1,JordanManual,cryptocompare,PIGGY,2017-12-31 11:54:49.342243

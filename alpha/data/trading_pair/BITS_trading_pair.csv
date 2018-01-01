@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BITS,BTC,265.4193677,0.00175934266476,1,JordanManual,cryptocompare,BITS,2017-12-31 13:17:55.960172
-CCCAGG,BITS,BTC,2841.8523008,0.0171406426648,1,JordanManual,cryptocompare,BITS,2017-12-31 11:54:46.571754
-CCCAGG,BITS,RUR,14.10215949,75.86190038,1,JordanManual,cryptocompare,BITS,2017-12-31 11:54:46.571754
-CCCAGG,BITS,USD,11.60510206,0.85877755244,1,JordanManual,cryptocompare,BITS,2017-12-31 11:54:46.571754
-CCCAGG,BITS,DOGE,6.0,65.21682024,1,JordanManual,cryptocompare,BITS,2017-12-31 11:54:46.571754

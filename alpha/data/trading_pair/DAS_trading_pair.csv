@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,DAS,BTC,1341.10699094,0.01446709,1,JordanManual,cryptocompare,DAS,2017-12-31 12:11:55.028032
-CCCAGG,DAS,DOGE,151.2652894,2381.27717203,1,JordanManual,cryptocompare,DAS,2017-12-31 12:11:55.028032

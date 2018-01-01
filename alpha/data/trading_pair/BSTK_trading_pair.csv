@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BSTK,BTC,34.61278238,0.00504067123537,1,JordanManual,cryptocompare,BSTK,2017-12-31 13:17:59.021911
-CCCAGG,BSTK,BTC,34.61278238,0.00504067123537,1,JordanManual,cryptocompare,BSTK,2017-12-31 11:57:31.687474

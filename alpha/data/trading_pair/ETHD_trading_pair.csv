@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ETHD,BTC,45294.0123875,1.16244951,1,JordanManual,cryptocompare,ETHD,2017-12-31 11:54:34.932188
-CCCAGG,ETHD,ETH,3245.12609757,1.21281350509,1,JordanManual,cryptocompare,ETHD,2017-12-31 11:54:34.932188
-CCCAGG,ETHD,DOGE,1012.67088427,44940.7513461,1,JordanManual,cryptocompare,ETHD,2017-12-31 11:54:34.932188
-CCCAGG,ETHD,LTC,968.92223112,1.5621097,1,JordanManual,cryptocompare,ETHD,2017-12-31 11:54:34.932188

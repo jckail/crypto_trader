@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,LEND,BTC,178271324.0,2397.78790826,1,JordanManual,cryptocompare,LEND,2017-12-31 11:57:24.696703
-CCCAGG,LEND,ETH,41058264.5321,10170.4025871,1,JordanManual,cryptocompare,LEND,2017-12-31 11:57:24.696703
-CCCAGG,LEND,BTC,178201123.0,2396.86763589,1,JordanManual,cryptocompare,LEND,2017-12-31 11:54:41.502508
-CCCAGG,LEND,ETH,41054891.5321,10169.5718886,1,JordanManual,cryptocompare,LEND,2017-12-31 11:54:41.502508

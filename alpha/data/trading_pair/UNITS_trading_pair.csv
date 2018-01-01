@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,UNITS,BTC,1397.10462238,0.0119950608458,1,JordanManual,cryptocompare,UNITS,2017-12-31 11:54:39.093006
-CCCAGG,UNITS,RUR,0.6284141,3.14207051257,1,JordanManual,cryptocompare,UNITS,2017-12-31 11:54:39.093006

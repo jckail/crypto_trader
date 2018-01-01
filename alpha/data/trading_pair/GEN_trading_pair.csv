@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,GEN,BTC,8999.99800399,0.00440999902196,1,JordanManual,cryptocompare,GEN,2017-12-31 11:57:35.562192
-CCCAGG,GEN,ETH,4984.64790151,0.00884807252517,1,JordanManual,cryptocompare,GEN,2017-12-31 11:57:35.562192
-CCCAGG,GEN,BTC,8999.99800399,0.00440999902196,1,JordanManual,cryptocompare,GEN,2017-12-31 11:54:49.917741
-CCCAGG,GEN,ETH,4984.64790151,0.00884807252517,1,JordanManual,cryptocompare,GEN,2017-12-31 11:54:49.917741

@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ALEX,BTC,400.22896328,0.00356070409508,1,JordanManual,cryptocompare,ALEX,2017-12-31 11:57:28.034701
-CCCAGG,ALEX,RUR,29.49789249,117.991571435,1,JordanManual,cryptocompare,ALEX,2017-12-31 11:57:28.034701
-CCCAGG,ALEX,BTC,400.22896328,0.00356070409508,1,JordanManual,cryptocompare,ALEX,2017-12-31 11:54:43.890346
-CCCAGG,ALEX,RUR,29.49789249,117.991571435,1,JordanManual,cryptocompare,ALEX,2017-12-31 11:54:43.890346
-CCCAGG,ALEX,DOGE,1.52,18.60828671,1,JordanManual,cryptocompare,ALEX,2017-12-31 11:54:43.890346

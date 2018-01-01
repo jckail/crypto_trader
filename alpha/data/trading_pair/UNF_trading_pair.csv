@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,UNF,BTC,32358.6047904,0.00226510233533,1,JordanManual,cryptocompare,UNF,2017-12-31 11:57:16.055322
-CCCAGG,UNF,ETH,3993.12550718,0.000718762591292,1,JordanManual,cryptocompare,UNF,2017-12-31 11:57:16.055322
-CCCAGG,UNF,DOGE,1525.28571428,167.781429308,1,JordanManual,cryptocompare,UNF,2017-12-31 11:57:16.055322

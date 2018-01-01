@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ARGUS,ETH,50.48016109,0.000252905607061,1,JordanManual,cryptocompare,ARGUS,2017-12-31 13:17:55.485722
-CCCAGG,ARGUS,BTC,1460.62518104,0.00244552,1,JordanManual,cryptocompare,ARGUS,2017-12-31 11:54:50.024960
-CCCAGG,ARGUS,LTC,833.33333332,0.08379166,1,JordanManual,cryptocompare,ARGUS,2017-12-31 11:54:50.024960
-CCCAGG,ARGUS,ETH,50.48016109,0.000252905607061,1,JordanManual,cryptocompare,ARGUS,2017-12-31 11:54:50.024960

@@ -9,6 +9,7 @@ import os
 import threading
 from time import sleep
 from tqdm import tqdm
+import savetos3
 
 
 class GetTradePair(object):

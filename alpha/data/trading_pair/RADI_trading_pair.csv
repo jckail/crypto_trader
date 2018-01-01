@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,RADI,BTC,10070.0,0.0001007,1,JordanManual,cryptocompare,RADI,2017-12-31 11:54:39.581983
-CCCAGG,RADI,USD,10000.0,1.72744391598,1,JordanManual,cryptocompare,RADI,2017-12-31 11:54:39.581983
-CCCAGG,RADI,ETH,1303.68410019,0.00020858945603,1,JordanManual,cryptocompare,RADI,2017-12-31 11:54:39.581983
-CCCAGG,RADI,DOGE,1000.0,32.1000089349,1,JordanManual,cryptocompare,RADI,2017-12-31 11:54:39.581983
-CCCAGG,RADI,RUR,565.94263515,16.8358657227,1,JordanManual,cryptocompare,RADI,2017-12-31 11:54:39.581983

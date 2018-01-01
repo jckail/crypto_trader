@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,LIV,RUR,26166.4178021,36.196656767,1,JordanManual,cryptocompare,LIV,2017-12-31 11:57:18.623958
-CCCAGG,LIV,USD,18946.8158095,0.360478436696,1,JordanManual,cryptocompare,LIV,2017-12-31 11:57:18.623958
-CCCAGG,LIV,RUR,26166.4178021,36.196656767,1,JordanManual,cryptocompare,LIV,2017-12-31 11:54:36.207723
-CCCAGG,LIV,BTC,20000.0,0.0002,1,JordanManual,cryptocompare,LIV,2017-12-31 11:54:36.207723
-CCCAGG,LIV,USD,18946.8158095,0.360478436696,1,JordanManual,cryptocompare,LIV,2017-12-31 11:54:36.207723

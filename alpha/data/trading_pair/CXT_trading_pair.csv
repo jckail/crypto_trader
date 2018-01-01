@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,CXT,BTC,25979.9210589,0.020003583075,1,JordanManual,cryptocompare,CXT,2017-12-31 13:18:03.482218
-CCCAGG,CXT,USD,275.76922683,3.06746198005,1,JordanManual,cryptocompare,CXT,2017-12-31 13:18:03.482218
-CCCAGG,CXT,BTC,26728.7313045,0.020535243075,1,JordanManual,cryptocompare,CXT,2017-12-31 11:54:49.201565
-CCCAGG,CXT,USD,275.76922683,3.06746198005,1,JordanManual,cryptocompare,CXT,2017-12-31 11:54:49.201565
-CCCAGG,CXT,DOGE,17.25203339,21.2169242,1,JordanManual,cryptocompare,CXT,2017-12-31 11:54:49.201565

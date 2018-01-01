@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,POE,BTC,990511622.0,8271.52419236,1,JordanManual,cryptocompare,POE,2017-12-31 12:17:44.953930
-CCCAGG,POE,ETH,168183836.66,25651.9768518,1,JordanManual,cryptocompare,POE,2017-12-31 12:17:44.953930
-CCCAGG,POE,BTC,1108954532.0,9273.96371797,1,JordanManual,cryptocompare,POE,2017-12-31 11:57:01.805375
-CCCAGG,POE,ETH,185258404.841,28326.8212047,1,JordanManual,cryptocompare,POE,2017-12-31 11:57:01.805375

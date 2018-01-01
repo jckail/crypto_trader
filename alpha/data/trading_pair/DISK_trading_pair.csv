@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,DISK,ETH,1696.99420323,0.00828403901455,1,JordanManual,cryptocompare,DISK,2017-12-31 12:17:58.779590
-CCCAGG,DISK,RUR,43.83793442,6.575689413,1,JordanManual,cryptocompare,DISK,2017-12-31 12:17:58.779590
-CCCAGG,DISK,ETH,1696.99420323,0.00828403901455,1,JordanManual,cryptocompare,DISK,2017-12-31 11:54:29.791160
-CCCAGG,DISK,RUR,43.83793442,6.575689413,1,JordanManual,cryptocompare,DISK,2017-12-31 11:54:29.791160

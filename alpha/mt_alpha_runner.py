@@ -30,6 +30,7 @@ import price_all_permutation
 import newfetchprice
 import newtradepair
 import forloopfetchprice
+import savetos3
 
 
 class AlphaRunner(object):
@@ -69,13 +70,13 @@ class AlphaRunner(object):
         parser.add_argument('--runfocus_symbols_only', required=True, dest='runfocus_symbols_only', choices=['Y', 'N'], help='runfocus_symbols_only run')
         parser.add_argument('--runisprice', required= False, default= 'N',dest='runisprice', choices=['Y', 'N'], help='runfocus_symbols_only run')
         args = parser.parse_args()
-        print '------'+str(args)
+
         return args
 
     def alpha_runner(self):
-        print 'Chunk size: '+str(self.chunksize)
+        print ('Chunk size: '+str(self.chunksize))
         if self.run == 'Y':
-            print "Begin alpha_runner"
+            print ("Begin alpha_runner")
             try:
                 try:
                     if self.runfocus_symbols_only == 'N':
@@ -88,32 +89,33 @@ class AlphaRunner(object):
                          self.symbol_list = self.focus_symbols
                 except Exception as e:
                     print(e)
-                    print 'error getting self.symbol_list'
+                    print ('error getting self.symbol_list')
 
                 try:
+
+                    self.symbol_list = self.symbol_list[:100]
                     x = len(self.symbol_list)
-                    self.symbol_list = self.symbol_list[:500]
-                    # #self.symbol_list.append('SMT')
-                    # print '--------------------------------------------------------------------------'
-                    # print 'Evaluating: '+str(x)+' Coins'
-                    # print '--------------------------------------------------------------------------'
-                    # #helps limit #threads open etc
-                    #
+                    # # #self.symbol_list.append('SMT')
+                    # print ('--------------------------------------------------------------------------')
+                    # print ('Evaluating: '+str(x)+' Coins')
+                    # print ('--------------------------------------------------------------------------')
+                    # # #helps limit #threads open etc
+                    # #
                     # md = miningdata.GetMineData(self.cwd)
                     # md.main()
-                    # #thread1 = threading.Thread(target=md.main(), args=())
-                    #
-                    # print'--------------------------------------------------------------------------'
+                    # # #thread1 = threading.Thread(target=md.main(), args=())
+                    # #
+                    # print('--------------------------------------------------------------------------')
                     # mfp = fetchprice.GetDtlPrice(self.symbol_list, self.exchanges, self.chunksize,self.cwd) #chunk size not used here just broken up into 50 strings due to api list constraint
                     # mfp.main()
-                    # #thread2 = threading.Thread(target=mfp.main(), args=())
-                    # print'--------------------------------------------------------------------------'
-                    #
+                    # # #thread2 = threading.Thread(target=mfp.main(), args=())
+                    # print('--------------------------------------------------------------------------')
+                    # #
                     # tp = tradepair.GetTradePair(self.symbol_list,self.chunksize,self.cwd)
                     # tp.main()
-                    # #thread3 = threading.Thread(target=tp.main(), args=())
-                    # print'--------------------------------------------------------------------------'
-                    #
+                    # # #thread3 = threading.Thread(target=tp.main(), args=())
+                    # print('--------------------------------------------------------------------------')
+                    # #
                     # mh = minute_hist.GetMinuteHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
                     # mh.main()
                     # # thread4 = threading.Thread(target=mh.main(), args=())
@@ -122,59 +124,62 @@ class AlphaRunner(object):
                     # hh.main()
                     # # thread5 = threading.Thread(target=hh.main(), args=())
                     # #
-                    # dh = day_hist.GetDayHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
-                    # dh.main()
-                    # # thread6 = threading.Thread(target=dh.main(), args=())
-                    # print'--------------------------------------------------------------------------'
+                    dh = day_hist.GetDayHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
+                    dh.main()
+                    # thread6 = threading.Thread(target=dh.main(), args=())
+                    print('--------------------------------------------------------------------------')
                     #
-                    # gsd = mtsocial.GetSocialData(self.symbol_list,self.exchanges,self.chunksize,self.cwd,\
-                    # self.reddit_ls,\
-                    # self.coderepository_ls,\
-                    # self.twitter_ls,\
-                    # self.cryptocompare_ls,\
-                    # self.general_ls,\
-                    # self.facebook_ls)
-                    # gsd.main()
-                    # #gsd = social.GetSocialData(self.symbol_list,self.cwd)
-                    # #gsd.main()
+                    gsd = mtsocial.GetSocialData(self.symbol_list,self.exchanges,self.chunksize,self.cwd,\
+                    self.reddit_ls,\
+                    self.coderepository_ls,\
+                    self.twitter_ls,\
+                    self.cryptocompare_ls,\
+                    self.general_ls,\
+                    self.facebook_ls)
+                    gsd.main()
 
-                    tp = newtradepair.GetTradePair(self.symbol_list,self.chunksize,self.cwd,self.trade_pair,self.exchanges,self.exchange_trade_pair)
-                    tp.main()
+                    #
+                    # tp = newtradepair.GetTradePair(self.symbol_list,self.chunksize,self.cwd,self.trade_pair,self.exchanges,self.exchange_trade_pair)
+                    # tp.main()
                     #print self.exchange_trade_pair.keys
-                    nfp = newfetchprice.GetDtlPrice(self.symbol_list,self.chunksize,self.cwd,self.trade_pair,self.exchanges,self.exchange_trade_pair)
-                    nfp.main()
-                    print '---------'
-                    fl = forloopfetchprice.GetDtlPrice(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
-                    fl.main()
+                    # nfp = newfetchprice.GetDtlPrice(self.symbol_list,self.chunksize,self.cwd,self.trade_pair,self.exchanges,self.exchange_trade_pair)
+                    # nfp.main()
+                    # print '---------'
+                    #fl = forloopfetchprice.GetDtlPrice(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
+                    #fl.main()
                         # non 0:00:35.364493
                         #multi#thread  0:00:21.039896
                         #full run mutli #threadCompletion time: 0:16:40.115999
 
+
                 except Exception as e:
                     print(e)
-                    print 'error on processing dtl, hist'
+                    print ('error on processing dtl, hist')
                 #askcurrentprice from has price/ if focus_symbols passed
 
             except Exception as e:
                 print(e)
-                print "ERROR: alpha_runner"
+                print ("ERROR: alpha_runner")
 
         else:
-            print 'invalid args'
+            print ('invalid args')
 
     def main(self):
         start_time = dt.datetime.now()
+        print ('-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
+        print (self.args)
+        print (self.cwd)
+        print ('---------------------------------------------------------------------------------------BEGIN---------------------------------------------------------------------------------------')
         setup.setup_alpha()
-        print '----------------------------BEGIN----------------------------'
         self.alpha_runner()
-        print '----------------------------END----------------------------'
+        print ('---------------------------------------------------------------------------------------END---------------------------------------------------------------------------------------')
         x = dt.datetime.now() - start_time
-        print 'Completion time: '+str(x)
+        print ('Completion time: '+str(x))
+        print ('---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
 
 
 
 
 if __name__ == '__main__':
     ar = AlphaRunner()
-
     ar.main()

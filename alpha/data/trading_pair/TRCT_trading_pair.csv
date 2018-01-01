@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,TRCT,BTC,16635.1252915,0.358503047742,1,JordanManual,cryptocompare,TRCT,2017-12-31 11:57:22.324568
-CCCAGG,TRCT,ETH,3520.16264055,1.61480074163,1,JordanManual,cryptocompare,TRCT,2017-12-31 11:57:22.324568

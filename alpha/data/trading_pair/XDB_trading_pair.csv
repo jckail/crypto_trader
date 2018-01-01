@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,XDB,BTC,4730.00400673,0.00263083182862,1,JordanManual,cryptocompare,XDB,2017-12-31 12:17:58.700098
-CCCAGG,XDB,RUR,14.90725159,7.84883100561,1,JordanManual,cryptocompare,XDB,2017-12-31 12:17:58.700098
-CCCAGG,XDB,BTC,4730.00400673,0.00263083182862,1,JordanManual,cryptocompare,XDB,2017-12-31 12:11:57.413164
-CCCAGG,XDB,RUR,14.90725159,7.84883100561,1,JordanManual,cryptocompare,XDB,2017-12-31 12:11:57.413164

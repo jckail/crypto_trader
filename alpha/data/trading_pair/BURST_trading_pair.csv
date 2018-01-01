@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BURST,BTC,105039940.754,373.670805055,1,JordanManual,cryptocompare,BURST,2017-12-31 13:17:59.773863
-CCCAGG,BURST,BTC,106551403.714,378.039398615,1,JordanManual,cryptocompare,BURST,2017-12-31 11:57:28.531409
-CCCAGG,BURST,BTC,106422114.398,377.577034825,1,JordanManual,cryptocompare,BURST,2017-12-31 11:54:44.656223

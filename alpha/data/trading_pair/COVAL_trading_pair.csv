@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,COVAL,BTC,25109274.211,41.27791598,1,JordanManual,cryptocompare,COVAL,2017-12-31 13:18:03.345808
-CCCAGG,COVAL,BTC,24694417.5163,40.67864858,1,JordanManual,cryptocompare,COVAL,2017-12-31 11:57:08.422915

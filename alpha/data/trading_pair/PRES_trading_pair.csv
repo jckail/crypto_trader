@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,PRES,BTC,750,0.00048,1,JordanManual,cryptocompare,PRES,2017-12-31 11:57:24.971112
-CCCAGG,PRES,BTC,750,0.00048,1,JordanManual,cryptocompare,PRES,2017-12-31 11:54:42.464203

@@ -1,7 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,XT,RUR,1033633.00616,3361.60725141,1,JordanManual,cryptocompare,XT,2017-12-31 11:57:08.311316
-CCCAGG,XT,USD,923515.137284,53.2177248347,1,JordanManual,cryptocompare,XT,2017-12-31 11:57:08.311316
-CCCAGG,XT,WAVES,2550.0,0.005105,1,JordanManual,cryptocompare,XT,2017-12-31 11:57:08.311316
-CCCAGG,XT,RUR,1033633.00616,3361.60725141,1,JordanManual,cryptocompare,XT,2017-12-31 11:54:32.149241
-CCCAGG,XT,USD,923515.137284,53.2177248347,1,JordanManual,cryptocompare,XT,2017-12-31 11:54:32.149241
-CCCAGG,XT,WAVES,2550.0,0.005105,1,JordanManual,cryptocompare,XT,2017-12-31 11:54:32.149241

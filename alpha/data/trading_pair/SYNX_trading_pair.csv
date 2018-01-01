@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,SYNX,BTC,950105.696673,46.1600594289,1,JordanManual,cryptocompare,SYNX,2017-12-31 11:57:07.288529
-CCCAGG,SYNX,LTC,1135.93705228,3.63499857,1,JordanManual,cryptocompare,SYNX,2017-12-31 11:57:07.288529

@@ -1,7 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,XDN,BTC,447912535.445,692.40535411,1,JordanManual,cryptocompare,XDN,2017-12-31 11:57:28.804625
-CCCAGG,XDN,USD,52269510.0,1024865.74164,1,JordanManual,cryptocompare,XDN,2017-12-31 11:57:28.804625
-CCCAGG,XDN,ETH,3854200.0,104.60779,1,JordanManual,cryptocompare,XDN,2017-12-31 11:57:28.804625
-CCCAGG,XDN,BTC,447544571.932,691.84604869,1,JordanManual,cryptocompare,XDN,2017-12-31 11:54:44.818522
-CCCAGG,XDN,USD,52250260.0,1024466.07751,1,JordanManual,cryptocompare,XDN,2017-12-31 11:54:44.818522
-CCCAGG,XDN,ETH,3854000.0,104.60209,1,JordanManual,cryptocompare,XDN,2017-12-31 11:54:44.818522

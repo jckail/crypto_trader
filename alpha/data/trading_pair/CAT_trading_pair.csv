@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,CAT,ETH,32833.0328697,72.4502424996,1,JordanManual,cryptocompare,CAT,2017-12-31 13:17:59.841284
-CCCAGG,CAT,ETH,31876.2926306,70.2657630343,1,JordanManual,cryptocompare,CAT,2017-12-31 12:16:38.927866
-CCCAGG,CAT,ETH,30086.3188431,66.2922375825,1,JordanManual,cryptocompare,CAT,2017-12-31 11:54:27.489881

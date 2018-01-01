@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,EDDIE,BTC,267640.505458,0.18517946,1,JordanManual,cryptocompare,EDDIE,2017-12-31 11:54:37.377812
-CCCAGG,EDDIE,LTC,5394.89512539,0.25319725,1,JordanManual,cryptocompare,EDDIE,2017-12-31 11:54:37.377812

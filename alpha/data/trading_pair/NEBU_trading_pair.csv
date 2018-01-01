@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NEBU,RUR,2.50000131,0.3050003717,1,JordanManual,cryptocompare,NEBU,2017-12-31 12:17:54.839433
-CCCAGG,NEBU,BTC,580.0,0.0001044,1,JordanManual,cryptocompare,NEBU,2017-12-31 11:54:29.817089
-CCCAGG,NEBU,RUR,2.50000131,0.3050003717,1,JordanManual,cryptocompare,NEBU,2017-12-31 11:54:29.817089

@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BEST,BTC,34371.0233385,0.00962937464723,1,JordanManual,cryptocompare,BEST,2017-12-31 13:17:55.776756
-CCCAGG,BEST,USD,145.61190049,0.334913195603,1,JordanManual,cryptocompare,BEST,2017-12-31 13:17:55.776756

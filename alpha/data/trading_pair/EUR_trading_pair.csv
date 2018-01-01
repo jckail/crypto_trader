@@ -1,0 +1,4 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,EUR,USD,5151163.05297,6172692.1166,1,JordanManual,cryptocompare,EUR,2018-01-01 15:00:11.885956
+CCCAGG,EUR,CHF,500.01,584.2016838,1,JordanManual,cryptocompare,EUR,2018-01-01 15:00:11.885956
+CCCAGG,EUR,GBP,112.47,99.9948276,1,JordanManual,cryptocompare,EUR,2018-01-01 15:00:11.885956

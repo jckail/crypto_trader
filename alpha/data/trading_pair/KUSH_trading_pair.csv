@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,KUSH,BTC,3043.85650441,0.0417561320296,1,JordanManual,cryptocompare,KUSH,2017-12-31 11:57:25.826233
-CCCAGG,KUSH,BTC,3043.85650441,0.0417561320296,1,JordanManual,cryptocompare,KUSH,2017-12-31 11:54:42.007150
-CCCAGG,KUSH,LTC,100.0,0.12997,1,JordanManual,cryptocompare,KUSH,2017-12-31 11:54:42.007150
-CCCAGG,KUSH,DOGE,13.71819825,344.736512555,1,JordanManual,cryptocompare,KUSH,2017-12-31 11:54:42.007150
-CCCAGG,KUSH,RUR,10.33,516.5,1,JordanManual,cryptocompare,KUSH,2017-12-31 11:54:42.007150

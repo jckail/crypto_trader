@@ -1,4 +1,2 @@
 exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,SEQ,BTC,624037.289653,20.99267208,1,JordanManual,cryptocompare,SEQ,2017-12-31 12:11:54.370933
-CCCAGG,SEQ,BTC,641229.548553,21.53101513,1,JordanManual,cryptocompare,SEQ,2017-12-31 12:01:55.331862
-CCCAGG,SEQ,BTC,640281.239516,21.49848814,1,JordanManual,cryptocompare,SEQ,2017-12-31 11:54:26.996259
+CCCAGG,SEQ,BTC,489256.845744,17.79195714,1,JordanManual,cryptocompare,SEQ,2018-01-01 14:45:58.588726

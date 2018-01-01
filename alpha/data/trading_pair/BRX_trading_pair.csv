@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BRX,BTC,57936.7303135,6.21856149,1,JordanManual,cryptocompare,BRX,2017-12-31 13:17:59.526001
-CCCAGG,BRX,BTC,62772.8574922,6.6964401,1,JordanManual,cryptocompare,BRX,2017-12-31 11:54:34.793215

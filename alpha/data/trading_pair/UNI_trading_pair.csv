@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,UNI,BTC,4738.21671515,0.0176132394015,1,JordanManual,cryptocompare,UNI,2017-12-31 11:57:31.689424
-CCCAGG,UNI,RUR,602.46539018,2177.94865468,1,JordanManual,cryptocompare,UNI,2017-12-31 11:57:31.689424
-CCCAGG,UNI,USD,80.07643199,7.6068783791,1,JordanManual,cryptocompare,UNI,2017-12-31 11:57:31.689424
-CCCAGG,UNI,ETH,32.24011702,0.00219271050631,1,JordanManual,cryptocompare,UNI,2017-12-31 11:57:31.689424

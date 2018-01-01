@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,PRL,ETH,48797.759093,34.157202884,1,JordanManual,cryptocompare,PRL,2017-12-31 11:57:25.315241
-CCCAGG,PRL,BTC,42177.5119288,1.85078772,1,JordanManual,cryptocompare,PRL,2017-12-31 11:57:25.315241
-CCCAGG,PRL,LTC,12452.1667055,39.15958132,1,JordanManual,cryptocompare,PRL,2017-12-31 11:57:25.315241
-CCCAGG,PRL,DOGE,14.14380317,1031.57924683,1,JordanManual,cryptocompare,PRL,2017-12-31 11:57:25.315241

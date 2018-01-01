@@ -1,7 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,MBRS,BTC,75490.8846172,0.56138983,1,JordanManual,cryptocompare,MBRS,2017-12-31 12:17:52.035867
-CCCAGG,MBRS,LTC,23995.4387237,9.86012299,1,JordanManual,cryptocompare,MBRS,2017-12-31 12:17:52.035867
-CCCAGG,MBRS,BTC,78806.1790325,0.58492701,1,JordanManual,cryptocompare,MBRS,2017-12-31 11:54:29.506893
-CCCAGG,MBRS,LTC,23995.4387237,9.86012299,1,JordanManual,cryptocompare,MBRS,2017-12-31 11:54:29.506893
-CCCAGG,MBRS,ETH,1101.0,0.149579772,1,JordanManual,cryptocompare,MBRS,2017-12-31 11:54:29.506893
-CCCAGG,MBRS,DOGE,9.0,121.84071435,1,JordanManual,cryptocompare,MBRS,2017-12-31 11:54:29.506893

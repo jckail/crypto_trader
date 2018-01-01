@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,RBIT,BTC,217676.898011,0.00653030694032,1,JordanManual,cryptocompare,RBIT,2017-12-31 11:57:10.281760
-CCCAGG,RBIT,USD,4000.0,1.50532,1,JordanManual,cryptocompare,RBIT,2017-12-31 11:57:10.281760
-CCCAGG,RBIT,DOGE,683.09147341,12.3715721386,1,JordanManual,cryptocompare,RBIT,2017-12-31 11:57:10.281760
-CCCAGG,RBIT,RUR,68.82352941,5.84999999985,1,JordanManual,cryptocompare,RBIT,2017-12-31 11:57:10.281760

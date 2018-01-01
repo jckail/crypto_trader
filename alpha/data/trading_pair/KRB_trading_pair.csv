@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,KRB,BTC,11426.1418156,1.59875045831,1,JordanManual,cryptocompare,KRB,2017-12-31 11:57:10.337877
-CCCAGG,KRB,USD,489.76233428,938.859125535,1,JordanManual,cryptocompare,KRB,2017-12-31 11:57:10.337877
-CCCAGG,KRB,DOGE,98.15658513,23763.1158361,1,JordanManual,cryptocompare,KRB,2017-12-31 11:57:10.337877
-CCCAGG,KRB,LTC,2.6499,0.01709217,1,JordanManual,cryptocompare,KRB,2017-12-31 11:57:10.337877

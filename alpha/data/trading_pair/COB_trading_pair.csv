@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,COB,ETH,471770.860678,114.750572339,1,JordanManual,cryptocompare,COB,2017-12-31 13:18:00.845725
-CCCAGG,COB,ETH,443733.87878,108.285826269,1,JordanManual,cryptocompare,COB,2017-12-31 12:16:47.303812
-CCCAGG,COB,ETH,445882.892212,108.864303275,1,JordanManual,cryptocompare,COB,2017-12-31 11:54:31.805905

@@ -8,13 +8,18 @@ import datetime as dt
 import os
 from tqdm import tqdm
 from time import sleep
+from io import StringIO
+import boto3
+from os.path import basename
 
+import savetos3
 
 class GetCoinLists(object):
 
     def __init__(self, cwd):
 
         self.cwd = cwd
+
 
     def func_get_coin_list(self):
         try:
@@ -51,26 +56,29 @@ class GetCoinLists(object):
                 df = df.drop_duplicates(['Symbol','source'], keep='last')
                 df = df.reset_index(drop=True)
                 df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
+                s3 = savetos3.SaveS3(my_file)
+                s3.main()
+
             else:
                 pass
 
         except requests.exceptions.RequestException as e:
-            print e
+            print (e)
         except Exception as e:
-            print e
+            print (e)
 
     def main(self):
-        print 'begin: GetCoinLists.main'
+        print ('begin: GetCoinLists.main')
 
         try:
             gcl = GetCoinLists(self.cwd)
             gcl.func_get_coin_list()
 
         except Exception as e:
-            print e
+            print (e)
 
 
-        print 'DONE'
+        print ('DONE')
 
 
 if __name__ == '__main__':
@@ -78,8 +86,8 @@ if __name__ == '__main__':
 
     :return:
     """
-    #cwd = '/Users/jkail/Documents/GitHub/lit_crypto/alpha/'
-    runner = GetCoinLists()
+    cwd = '/Users/jckail13/lit_crypto/alpha'
+    runner = GetCoinLists(cwd)
 
     runner.main()
 

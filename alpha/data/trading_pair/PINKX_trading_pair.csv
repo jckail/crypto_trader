@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,PINKX,BTC,186705.0,0.00186705,1,JordanManual,cryptocompare,PINKX,2017-12-31 11:54:33.938160
-CCCAGG,PINKX,DOGE,156000.0,2840.5884,1,JordanManual,cryptocompare,PINKX,2017-12-31 11:54:33.938160
-CCCAGG,PINKX,USD,53494.8624116,11.5206584335,1,JordanManual,cryptocompare,PINKX,2017-12-31 11:54:33.938160
-CCCAGG,PINKX,RUR,3988.43590862,39.8374650799,1,JordanManual,cryptocompare,PINKX,2017-12-31 11:54:33.938160

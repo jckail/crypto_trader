@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BLRY,BTC,4020.99006442,0.00266971998837,1,JordanManual,cryptocompare,BLRY,2017-12-31 13:17:57.572807
-CCCAGG,BLRY,BTC,2236.44258909,0.00152078096058,1,JordanManual,cryptocompare,BLRY,2017-12-31 12:01:57.232835
-CCCAGG,BLRY,RUR,1.0,1.17,1,JordanManual,cryptocompare,BLRY,2017-12-31 12:01:57.232835

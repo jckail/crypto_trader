@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,DDF,ETH,7060.58875073,1.13036555813,1,JordanManual,cryptocompare,DDF,2017-12-31 12:17:43.277023
-CCCAGG,DDF,ETH,7060.58875073,1.13036555813,1,JordanManual,cryptocompare,DDF,2017-12-31 11:57:01.084535
-CCCAGG,DDF,BTC,802.13921924,0.00923693,1,JordanManual,cryptocompare,DDF,2017-12-31 11:57:01.084535
-CCCAGG,DDF,DOGE,1.97475094,30.30000016,1,JordanManual,cryptocompare,DDF,2017-12-31 11:57:01.084535

@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,IGNIS,ETH,7949.32,100.56042056,1,JordanManual,cryptocompare,IGNIS,2017-12-31 12:18:00.855615
-CCCAGG,IGNIS,ETH,7949.32,100.56042056,1,JordanManual,cryptocompare,IGNIS,2017-12-31 12:14:54.373216
-CCCAGG,IGNIS,ETH,7947.35,100.520963,1,JordanManual,cryptocompare,IGNIS,2017-12-31 12:11:59.262692
-CCCAGG,IGNIS,ETH,8139.11,103.07625516,1,JordanManual,cryptocompare,IGNIS,2017-12-31 11:57:10.303079

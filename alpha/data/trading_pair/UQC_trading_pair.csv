@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,UQC,BTC,7166.9596907,0.618472564663,1,JordanManual,cryptocompare,UQC,2017-12-31 11:57:25.028485
-CCCAGG,UQC,USD,3479.64837747,4265.58164237,1,JordanManual,cryptocompare,UQC,2017-12-31 11:57:25.028485
-CCCAGG,UQC,ETH,837.15361165,1.22618414723,1,JordanManual,cryptocompare,UQC,2017-12-31 11:57:25.028485

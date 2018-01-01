@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,DMD,BTC,9447.46475528,13.231793928,1,JordanManual,cryptocompare,DMD,2017-12-31 11:57:25.847524
-CCCAGG,DMD,USD,72.70740262,1391.88801947,1,JordanManual,cryptocompare,DMD,2017-12-31 11:57:25.847524

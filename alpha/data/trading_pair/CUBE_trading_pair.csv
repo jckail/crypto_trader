@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,CUBE,BTC,1.12293622,0.000147407837599,1,JordanManual,cryptocompare,CUBE,2017-12-31 12:17:54.714097
-CCCAGG,CUBE,BTC,1.12293622,0.000147407837599,1,JordanManual,cryptocompare,CUBE,2017-12-31 11:57:03.938743

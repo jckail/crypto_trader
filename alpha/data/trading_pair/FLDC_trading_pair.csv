@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,FLDC,BTC,29436507.5576,113.55274278,1,JordanManual,cryptocompare,FLDC,2017-12-31 11:57:30.945844
-CCCAGG,FLDC,BTC,29369595.4918,113.29915281,1,JordanManual,cryptocompare,FLDC,2017-12-31 11:54:46.449715

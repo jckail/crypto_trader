@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,HAL,BTC,220.75065483,0.00180075,1,JordanManual,cryptocompare,HAL,2017-12-31 11:57:28.052646
-CCCAGG,HAL,BTC,220.75065483,0.00180075,1,JordanManual,cryptocompare,HAL,2017-12-31 11:54:43.681623
-CCCAGG,HAL,DOGE,158.95187421,2170.59746151,1,JordanManual,cryptocompare,HAL,2017-12-31 11:54:43.681623

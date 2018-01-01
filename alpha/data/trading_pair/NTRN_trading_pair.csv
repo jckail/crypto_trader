@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NTRN,BTC,40451.7541679,0.886473766036,1,JordanManual,cryptocompare,NTRN,2017-12-31 11:54:46.042798
-CCCAGG,NTRN,DOGE,9.08182726,344.51180042,1,JordanManual,cryptocompare,NTRN,2017-12-31 11:54:46.042798
-CCCAGG,NTRN,RUR,0.3,1.0323,1,JordanManual,cryptocompare,NTRN,2017-12-31 11:54:46.042798

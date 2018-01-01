@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,XWC,BTC,2202628.84127,32.22902379,1,JordanManual,cryptocompare,XWC,2017-12-31 12:17:52.809478
-CCCAGG,XWC,BTC,2202628.84127,32.22902379,1,JordanManual,cryptocompare,XWC,2017-12-31 12:16:41.124636
-CCCAGG,XWC,BTC,2202443.37417,32.22645693,1,JordanManual,cryptocompare,XWC,2017-12-31 12:11:56.566187
-CCCAGG,XWC,BTC,2321445.56863,33.7660406,1,JordanManual,cryptocompare,XWC,2017-12-31 12:01:57.330310
-CCCAGG,XWC,BTC,2314945.56863,33.6775106,1,JordanManual,cryptocompare,XWC,2017-12-31 11:54:28.947811

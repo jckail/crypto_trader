@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,UBQ,BTC,588384.855308,246.14500391,1,JordanManual,cryptocompare,UBQ,2017-12-31 11:57:25.309814
-CCCAGG,UBQ,LTC,452.30437516,11.33960234,1,JordanManual,cryptocompare,UBQ,2017-12-31 11:57:25.309814
-CCCAGG,UBQ,BTC,588061.64534,246.00769381,1,JordanManual,cryptocompare,UBQ,2017-12-31 11:54:42.628485
-CCCAGG,UBQ,LTC,452.30437516,11.33960234,1,JordanManual,cryptocompare,UBQ,2017-12-31 11:54:42.628485
-CCCAGG,UBQ,DOGE,2.39924875,1465.73222391,1,JordanManual,cryptocompare,UBQ,2017-12-31 11:54:42.628485

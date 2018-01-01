@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,VIP,RUR,200,15.020007,1,JordanManual,cryptocompare,VIP,2017-12-31 12:17:59.656687
-CCCAGG,VIP,RUR,200,15.020007,1,JordanManual,cryptocompare,VIP,2017-12-31 11:54:31.278164
-CCCAGG,VIP,USD,100,0.16,1,JordanManual,cryptocompare,VIP,2017-12-31 11:54:31.278164

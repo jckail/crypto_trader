@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,RBX,BTC,1036289.30136,0.0542915605362,1,JordanManual,cryptocompare,RBX,2017-12-31 11:54:49.571498
-CCCAGG,RBX,WAVES,377871.555779,13.9458349922,1,JordanManual,cryptocompare,RBX,2017-12-31 11:54:49.571498

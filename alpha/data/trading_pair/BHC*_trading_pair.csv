@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BHC*,BTC,78286.2927108,0.474322564103,1,JordanManual,cryptocompare,BHC*,2017-12-31 13:17:55.584577
-CCCAGG,BHC*,USD,5926.22030171,122.908428031,1,JordanManual,cryptocompare,BHC*,2017-12-31 13:17:55.584577
-CCCAGG,BHC*,BTC,96438.678829,0.549673332874,1,JordanManual,cryptocompare,BHC*,2017-12-31 11:54:38.815599
-CCCAGG,BHC*,USD,9392.42375566,203.954049798,1,JordanManual,cryptocompare,BHC*,2017-12-31 11:54:38.815599

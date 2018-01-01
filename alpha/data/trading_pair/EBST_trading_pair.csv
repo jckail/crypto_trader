@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,EBST,BTC,2057416.22579,50.32628887,1,JordanManual,cryptocompare,EBST,2017-12-31 11:57:22.205725
-CCCAGG,EBST,BTC,2057036.36871,50.31729007,1,JordanManual,cryptocompare,EBST,2017-12-31 11:54:39.218446

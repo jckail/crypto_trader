@@ -9,6 +9,7 @@ import os
 import threading
 from tqdm import tqdm
 from time import sleep
+import savetos3
 
 
 class GetMineData(object):
@@ -37,10 +38,7 @@ class GetMineData(object):
 
                 for key in tqdm(keys,desc='coin_miner_data'):
                     frames = []
-                    #print key
                     sub =  data['CoinData'][key]
-                    #print sub
-                    #print '----------'
 
                     df = p.DataFrame.from_dict(sub,orient='Index', dtype=None)
                     df = p.DataFrame.transpose(df)
@@ -54,24 +52,21 @@ class GetMineData(object):
                         frames.append(df_resident)
                     else:
                         pass
-                    #print df
                     df = p.concat(frames)
-                    df = df.drop_duplicates(['CoinName','Points','Type','Points','key'],  keep='last')
+                    df = df.drop_duplicates(['Symbol','TotalCoinsMined','BlockReward','DifficultyAdjustment','BlockRewardReduction','BlockNumber','PreviousTotalCoinsMined'],  keep='last')
                     df = df.sort_values('key')
                     df = df.reset_index(drop=True)
-                    #print '--------'
-                    #print df
                     if not df.empty:
-                        #print my_file
                         df.to_csv(my_file, index = False,  encoding= 'utf-8')
-                        pass #print 'Updated: '+str(my_file)
+                        s3 = savetos3.SaveS3(my_file)
+                        s3.main()
                     else:
-                        print 'No '+str(key)+' data: '+key
-                print 'DONE'
+                        print ('No '+str(key)+' data: '+key)
+                print ('DONE')
             else:
-                print 'No coin_miner_data'
-        except ValueError:
-            print ValueError
+                print ('No coin_miner_data')
+        except Exception as e:
+            print (e)
 
 
     def miner_data(self):
@@ -109,12 +104,14 @@ class GetMineData(object):
 
                 if not df.empty:
                     df.to_csv(my_file, index = False,  encoding= 'utf-8' ) #need to add this
+                    s3 = savetos3.SaveS3(my_file)
+                    s3.main()
                     pass #print 'Updated: '+str(my_file)
                 else:
-                    print 'No data: '
-                print 'DONE'
+                    print ('No data: ')
+                print ('DONE')
             else:
-                print 'no miner_data'
+                print ('no miner_data')
         except Exception as e:
             print(e)
 
@@ -123,7 +120,7 @@ class GetMineData(object):
 
         :return:
         """
-        print 'begin: GetMineData.main'
+        print ('BEGIN: GetMineData.main')
         try:
             gmd = GetMineData(self.cwd)
             gmd.coin_miner_data()

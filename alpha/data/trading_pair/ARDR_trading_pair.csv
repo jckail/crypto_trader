@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ARDR,BTC,4603255.82514,616.914589134,1,JordanManual,cryptocompare,ARDR,2017-12-31 13:17:54.649253
-CCCAGG,ARDR,BTC,4756051.33334,625.359751369,1,JordanManual,cryptocompare,ARDR,2017-12-31 11:57:16.112869

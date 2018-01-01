@@ -9,6 +9,7 @@ import os
 import threading
 from tqdm import tqdm
 from time import sleep
+import savetos3
 
 
 class GetDtlPrice(object):
@@ -35,11 +36,6 @@ class GetDtlPrice(object):
 
                 if response.status_code == 200:
                     data = response.json()
-                    #print data
-                    #print keys
-                    #print data[1]
-                    #if data["RAW"]:
-                    #print data.keys()[0]
                     if data.keys()[0] == "RAW":
                         df = p.DataFrame(data["RAW"][symbol])
                         df = p.DataFrame.transpose(df)
@@ -57,7 +53,7 @@ class GetDtlPrice(object):
                 #print 'request error'
                 pass
             except OverflowError:
-                print 'OverflowError: '+str(symbol)
+                print('OverflowError: '+str(symbol))
                 pass
             except Exception as e:
                 #print(e)
@@ -72,7 +68,7 @@ class GetDtlPrice(object):
         """
         frames = []
         error_symbols = []
-        print 'begin: GetDtlPrice.main'
+        print ('begin: GetDtlPrice.main')
         try:
             
             gdl = GetDtlPrice(self.symbol_list, self.exchanges, self.chunksize, self.cwd)
@@ -111,15 +107,17 @@ class GetDtlPrice(object):
                 df = df.sort_values('LASTUPDATE')
                 df = df.reset_index(drop=True)
                 df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
+                s3 = savetos3.SaveS3(my_file)
+                s3.main()
             else:
                 pass
-            print 'DONE'
+            print('DONE')
 
         except Exception as e:
             print(e)
-            print 'Error: GetDtlPrice.main'
+            print('Error: GetDtlPrice.main')
 
-    print 'end: GetDtlPrice.main'
+
 
 
 if __name__ == '__main__':

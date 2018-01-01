@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,GB,BTC,43980.8133327,0.511406609129,1,JordanManual,cryptocompare,GB,2017-12-31 11:57:09.201011
-CCCAGG,GB,DOGE,1393.88314421,24426.8843405,1,JordanManual,cryptocompare,GB,2017-12-31 11:57:09.201011
-CCCAGG,GB,RUR,251.61620278,2549.90180264,1,JordanManual,cryptocompare,GB,2017-12-31 11:57:09.201011
-CCCAGG,GB,ETH,6.99300823,0.00230531915585,1,JordanManual,cryptocompare,GB,2017-12-31 11:57:09.201011
-CCCAGG,GB,WAVES,0.45100734,0.0145335183216,1,JordanManual,cryptocompare,GB,2017-12-31 11:57:09.201011

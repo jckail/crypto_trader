@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,KURT,BTC,304094.014496,0.712825129095,1,JordanManual,cryptocompare,KURT,2017-12-31 11:57:19.949319
-CCCAGG,KURT,USD,39.30637213,1.31021266638,1,JordanManual,cryptocompare,KURT,2017-12-31 11:57:19.949319

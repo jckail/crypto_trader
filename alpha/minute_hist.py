@@ -3,10 +3,11 @@ import pandas as p
 import datetime as dt
 import os
 import threading
-import urllib2
+#import urllib2
 import time
 from time import sleep
 from tqdm import tqdm
+import savetos3
 
 
 class GetMinuteHist(object):
@@ -48,11 +49,15 @@ class GetMinuteHist(object):
                             pass
                         df = p.concat(frames)
                         if not df.empty:
-                            df = df.drop_duplicates(['time','exchange','coin'], keep='last')
+
+                            df = df.drop_duplicates(['symbol','time','exchange'], keep='last')
                             df = df.sort_values('time')
                             df = df.reset_index(drop=True)
+
                             df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
-                            #print 'Updated trade pair: '+str(my_file)
+                            s3 = savetos3.SaveS3(my_file)
+
+                            s3.main()
                         else:
                             pass
 
@@ -65,7 +70,7 @@ class GetMinuteHist(object):
                 sleep(0.2)
                 pass
             except OverflowError:
-                print 'OverflowError: '+str(symbol)
+                print('OverflowError: '+str(symbol))
                 pass
             except Exception as e:
                 pass
@@ -74,9 +79,9 @@ class GetMinuteHist(object):
         error_symbols = []
         gmt = GetMinuteHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
 
-        xsymbols = [self.symbol_list[x:x+self.chunksize] for x in xrange(0, len(self.symbol_list), self.chunksize )]
+        xsymbols = [self.symbol_list[x:x+self.chunksize] for x in range(0, len(self.symbol_list), self.chunksize )]
 
-        print 'Begin: get_minute_hist'
+        print('Begin: get_minute_hist')
 
         for symbol_list in tqdm(xsymbols,desc='get_minute_hist'):
 
@@ -91,27 +96,25 @@ class GetMinuteHist(object):
 
                 if len(error_symbols) > 0:
                     xsymbols.append(error_symbols)
-                    #print 'appending: errors: '+ str(error_symbols)
                     error_symbols = []
                 else:
                     pass
-        print 'DONE'
+        print('DONE')
 
 
 
 
 
 if __name__ == '__main__':
-    #exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
-    #
-    #df = p.read_csv(self.cwd+'/data/coinlist_info.csv')
-    #ls_has = df["Symbol"].tolist()
-    #ls_has = ls_has[:100]
-    runner = GetMinuteHist()
-    #start_time = dt.datetime.now()
-    print '--------------------------------------------------------------------------'
+    exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
+    cwd = '/Users/jckail13/lit_crypto/alpha'
+    df = p.read_csv(cwd+'/data/coinlist_info.csv')
+    ls_has = df["Symbol"].tolist()
+    ls_has = ls_has[:100]
+    runner = GetMinuteHist(ls_has, exchanges, 100, cwd)
+    #runner = GetMinuteHist()
     runner.main()
-    print '--------------------------------------------------------------------------'
+    #print '--------------------------------------------------------------------------'
    # x =  dt.datetime.now() - start_time
     #print 'Completion time: '+str(x)
 

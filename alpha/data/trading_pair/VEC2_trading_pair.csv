@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,VEC2,RUR,280.38317757,64.7685700953,1,JordanManual,cryptocompare,VEC2,2017-12-31 12:18:06.862675
-CCCAGG,VEC2,USD,170.41272473,0.6646880163,1,JordanManual,cryptocompare,VEC2,2017-12-31 12:18:06.862675
-CCCAGG,VEC2,RUR,280.38317757,64.7685700953,1,JordanManual,cryptocompare,VEC2,2017-12-31 11:54:31.567260
-CCCAGG,VEC2,USD,170.41272473,0.6646880163,1,JordanManual,cryptocompare,VEC2,2017-12-31 11:54:31.567260

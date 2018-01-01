@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ARI,BTC,13796.6438296,0.00314865,1,JordanManual,cryptocompare,ARI,2017-12-31 13:17:54.985065
-CCCAGG,ARI,BTC,85201.3380924,0.01906872,1,JordanManual,cryptocompare,ARI,2017-12-31 11:54:41.903835
-CCCAGG,ARI,DOGE,2764.85059508,1120.35181305,1,JordanManual,cryptocompare,ARI,2017-12-31 11:54:41.903835
-CCCAGG,ARI,LTC,2572.33029686,0.05029642,1,JordanManual,cryptocompare,ARI,2017-12-31 11:54:41.903835

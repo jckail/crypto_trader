@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,OS76,BTC,155.83838118,0.000446747053774,1,JordanManual,cryptocompare,OS76,2017-12-31 11:54:40.025203
-CCCAGG,OS76,USD,60.5,2.24000116,1,JordanManual,cryptocompare,OS76,2017-12-31 11:54:40.025203
-CCCAGG,OS76,RUR,10.00025228,7.1001792688,1,JordanManual,cryptocompare,OS76,2017-12-31 11:54:40.025203

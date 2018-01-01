@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,SWEET,RUR,3533.35111121,34.4976368674,1,JordanManual,cryptocompare,SWEET,2017-12-31 11:54:35.135362
-CCCAGG,SWEET,USD,2900.0,2.088493,1,JordanManual,cryptocompare,SWEET,2017-12-31 11:54:35.135362
-CCCAGG,SWEET,WAVES,11.53846153,0.00014999999989,1,JordanManual,cryptocompare,SWEET,2017-12-31 11:54:35.135362

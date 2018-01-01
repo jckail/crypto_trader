@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,PRIX,ETH,7832.71030329,56.3476431587,1,JordanManual,cryptocompare,PRIX,2017-12-31 11:57:10.224714
-CCCAGG,PRIX,BTC,1573.13424303,0.458690757118,1,JordanManual,cryptocompare,PRIX,2017-12-31 11:57:10.224714
-CCCAGG,PRIX,ETH,7832.71030329,56.3476431587,1,JordanManual,cryptocompare,PRIX,2017-12-31 11:54:32.547490
-CCCAGG,PRIX,BTC,1573.13424303,0.458690757118,1,JordanManual,cryptocompare,PRIX,2017-12-31 11:54:32.547490

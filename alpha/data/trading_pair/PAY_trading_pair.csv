@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,PAY,BTC,3888096.19946,1142.66082897,1,JordanManual,cryptocompare,PAY,2017-12-31 11:57:25.986516
-CCCAGG,PAY,ETH,225087.252213,1186.3589055,1,JordanManual,cryptocompare,PAY,2017-12-31 11:57:25.986516
-CCCAGG,PAY,USDT,68115.6004379,255987.827099,1,JordanManual,cryptocompare,PAY,2017-12-31 11:57:25.986516
-CCCAGG,PAY,LTC,365.88345864,6.48978652,1,JordanManual,cryptocompare,PAY,2017-12-31 11:57:25.986516
-CCCAGG,PAY,DOGE,18.69038718,8886.12184231,1,JordanManual,cryptocompare,PAY,2017-12-31 11:57:25.986516

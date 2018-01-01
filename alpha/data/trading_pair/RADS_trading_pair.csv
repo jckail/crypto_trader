@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,RADS,BTC,104517.734411,100.61460637,1,JordanManual,cryptocompare,RADS,2017-12-31 12:17:46.488295
-CCCAGG,RADS,BTC,104516.573492,100.61351239,1,JordanManual,cryptocompare,RADS,2017-12-31 12:14:49.453918
-CCCAGG,RADS,BTC,108287.41521,104.38056969,1,JordanManual,cryptocompare,RADS,2017-12-31 11:57:00.873656
-CCCAGG,RADS,BTC,108191.85421,104.28884069,1,JordanManual,cryptocompare,RADS,2017-12-31 11:54:26.890085

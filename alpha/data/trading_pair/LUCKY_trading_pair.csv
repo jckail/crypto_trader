@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,LUCKY,RUR,80.4501,256.010308019,1,JordanManual,cryptocompare,LUCKY,2017-12-31 11:57:19.211848
-CCCAGG,LUCKY,USD,5.0,0.41,1,JordanManual,cryptocompare,LUCKY,2017-12-31 11:57:19.211848
-CCCAGG,LUCKY,RUR,80.4501,256.010308019,1,JordanManual,cryptocompare,LUCKY,2017-12-31 11:54:36.259093
-CCCAGG,LUCKY,USD,5.0,0.41,1,JordanManual,cryptocompare,LUCKY,2017-12-31 11:54:36.259093

@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,GBIT,RUR,61.220816,31.2859049525,1,JordanManual,cryptocompare,GBIT,2017-12-31 11:57:25.152327
-CCCAGG,GBIT,USD,100.0,0.999999,1,JordanManual,cryptocompare,GBIT,2017-12-31 11:54:42.617245
-CCCAGG,GBIT,RUR,61.220816,31.2859049525,1,JordanManual,cryptocompare,GBIT,2017-12-31 11:54:42.617245
-CCCAGG,GBIT,DOGE,50.0,12.5000065,1,JordanManual,cryptocompare,GBIT,2017-12-31 11:54:42.617245

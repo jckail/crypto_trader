@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,SDC,BTC,14746.2439266,0.594050321791,1,JordanManual,cryptocompare,SDC,2017-12-31 11:54:43.967024
-CCCAGG,SDC,USD,182.91903356,101.91123016,1,JordanManual,cryptocompare,SDC,2017-12-31 11:54:43.967024
-CCCAGG,SDC,ETH,15.99999999,0.087999999945,1,JordanManual,cryptocompare,SDC,2017-12-31 11:54:43.967024
-CCCAGG,SDC,RUR,10.46416309,478.183335856,1,JordanManual,cryptocompare,SDC,2017-12-31 11:54:43.967024

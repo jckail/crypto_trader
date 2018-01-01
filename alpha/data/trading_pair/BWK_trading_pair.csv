@@ -1,7 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BWK,BTC,1566.69255133,0.80695858,1,JordanManual,cryptocompare,BWK,2017-12-31 13:18:00.293952
-CCCAGG,BWK,LTC,13.884,0.39930452,1,JordanManual,cryptocompare,BWK,2017-12-31 13:18:00.293952
-CCCAGG,BWK,DOGE,0.70309171,584.14968543,1,JordanManual,cryptocompare,BWK,2017-12-31 13:18:00.293952
-CCCAGG,BWK,BTC,14329.3647696,7.32700314,1,JordanManual,cryptocompare,BWK,2017-12-31 11:54:43.678365
-CCCAGG,BWK,LTC,64.16285945,1.93647094,1,JordanManual,cryptocompare,BWK,2017-12-31 11:54:43.678365
-CCCAGG,BWK,DOGE,3.01319274,2517.25920883,1,JordanManual,cryptocompare,BWK,2017-12-31 11:54:43.678365

@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,KR,BTC,32.91083048,0.000178376701202,1,JordanManual,cryptocompare,KR,2017-12-31 12:17:52.908384
-CCCAGG,KR,RUR,3.44936263,10.3481931301,1,JordanManual,cryptocompare,KR,2017-12-31 12:17:52.908384
-CCCAGG,KR,BTC,32.91083048,0.000178376701202,1,JordanManual,cryptocompare,KR,2017-12-31 11:54:29.753173
-CCCAGG,KR,RUR,3.44936263,10.3481931301,1,JordanManual,cryptocompare,KR,2017-12-31 11:54:29.753173

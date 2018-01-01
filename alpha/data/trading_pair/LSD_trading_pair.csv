@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,LSD,USD,18908.8780912,2.60480975246,1,JordanManual,cryptocompare,LSD,2017-12-31 11:57:27.887954
-CCCAGG,LSD,RUR,1806.69734456,13.7275424623,1,JordanManual,cryptocompare,LSD,2017-12-31 11:57:27.887954
-CCCAGG,LSD,BTC,2130001.0,0.02130001,1,JordanManual,cryptocompare,LSD,2017-12-31 11:54:44.018511
-CCCAGG,LSD,USD,18908.8780912,2.60480975246,1,JordanManual,cryptocompare,LSD,2017-12-31 11:54:44.018511
-CCCAGG,LSD,RUR,1806.69734456,13.7275424623,1,JordanManual,cryptocompare,LSD,2017-12-31 11:54:44.018511

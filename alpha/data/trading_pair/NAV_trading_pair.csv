@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NAV,BTC,1100647.13321,255.47621134,1,JordanManual,cryptocompare,NAV,2017-12-31 11:57:28.178608
-CCCAGG,NAV,LTC,751.32286949,11.35868843,1,JordanManual,cryptocompare,NAV,2017-12-31 11:57:28.178608
-CCCAGG,NAV,USDT,110.74656468,332.51319658,1,JordanManual,cryptocompare,NAV,2017-12-31 11:57:28.178608
-CCCAGG,NAV,NZDT,9.50111853,48.37584365,1,JordanManual,cryptocompare,NAV,2017-12-31 11:57:28.178608
-CCCAGG,NAV,DOGE,3.27023332,1259.80194167,1,JordanManual,cryptocompare,NAV,2017-12-31 11:57:28.178608

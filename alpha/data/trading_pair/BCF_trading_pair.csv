@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BCF,BTC,1388.9108482,0.01809691,1,JordanManual,cryptocompare,BCF,2017-12-31 13:17:55.727342
-CCCAGG,BCF,DOGE,1.09665377,24.95009983,1,JordanManual,cryptocompare,BCF,2017-12-31 13:17:55.727342

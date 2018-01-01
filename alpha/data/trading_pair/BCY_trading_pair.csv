@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BCY,BTC,679662.342604,45.05059954,1,JordanManual,cryptocompare,BCY,2017-12-31 13:17:55.753934
-CCCAGG,BCY,BTC,677726.768092,44.87632274,1,JordanManual,cryptocompare,BCY,2017-12-31 12:14:51.534915
-CCCAGG,BCY,BTC,675181.380728,44.70233981,1,JordanManual,cryptocompare,BCY,2017-12-31 12:11:56.498515
-CCCAGG,BCY,BTC,688665.688414,45.58486458,1,JordanManual,cryptocompare,BCY,2017-12-31 11:54:29.214626

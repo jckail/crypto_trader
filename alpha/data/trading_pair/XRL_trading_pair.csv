@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,XRL,ETH,151946.224132,73.585870701,1,JordanManual,cryptocompare,XRL,2017-12-31 12:17:45.796490
-CCCAGG,XRL,BTC,56232.0346785,1.69682865068,1,JordanManual,cryptocompare,XRL,2017-12-31 12:17:45.796490
-CCCAGG,XRL,RUR,148.56285483,2879.00671916,1,JordanManual,cryptocompare,XRL,2017-12-31 12:17:45.796490
-CCCAGG,XRL,USD,45.22146482,17.9239901116,1,JordanManual,cryptocompare,XRL,2017-12-31 12:17:45.796490
-CCCAGG,XRL,DOGE,15.7796345,1942.31785806,1,JordanManual,cryptocompare,XRL,2017-12-31 12:17:45.796490

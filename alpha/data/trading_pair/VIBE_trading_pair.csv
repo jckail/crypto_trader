@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,VIBE,BTC,799600.0,9.67964,1,JordanManual,cryptocompare,VIBE,2017-12-31 11:57:19.359866
-CCCAGG,VIBE,ETH,279354.243915,66.9264373737,1,JordanManual,cryptocompare,VIBE,2017-12-31 11:57:19.359866
-CCCAGG,VIBE,BTC,799600.0,9.67964,1,JordanManual,cryptocompare,VIBE,2017-12-31 11:54:36.688383
-CCCAGG,VIBE,ETH,279354.243915,66.9264373737,1,JordanManual,cryptocompare,VIBE,2017-12-31 11:54:36.688383

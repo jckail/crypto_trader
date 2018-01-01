@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,STCN,BTC,0.33070216,0.000248020005957,1,JordanManual,cryptocompare,STCN,2017-12-31 12:18:00.349019
-CCCAGG,STCN,ETH,15502.0,0.020433301,1,JordanManual,cryptocompare,STCN,2017-12-31 11:57:07.174159
-CCCAGG,STCN,BTC,0.33070216,0.000248020005957,1,JordanManual,cryptocompare,STCN,2017-12-31 11:57:07.174159

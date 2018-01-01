@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,AMBER,BTC,22466.1359125,0.0281890875777,1,JordanManual,cryptocompare,AMBER,2017-12-31 13:17:54.782965
-CCCAGG,AMBER,RUR,7.0,7.72000014,1,JordanManual,cryptocompare,AMBER,2017-12-31 13:17:54.782965
-CCCAGG,AMBER,BTC,23726.1359125,0.0297262875777,1,JordanManual,cryptocompare,AMBER,2017-12-31 11:54:46.383105
-CCCAGG,AMBER,RUR,7.0,7.72000014,1,JordanManual,cryptocompare,AMBER,2017-12-31 11:54:46.383105

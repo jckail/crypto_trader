@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,CREA,BTC,2947.30150502,0.11681575,1,JordanManual,cryptocompare,CREA,2017-12-31 13:18:02.744208
-CCCAGG,CREA,BTC,3405.9454907,0.13499151,1,JordanManual,cryptocompare,CREA,2017-12-31 11:54:44.892271
-CCCAGG,CREA,LTC,20.04800083,0.04634256,1,JordanManual,cryptocompare,CREA,2017-12-31 11:54:44.892271
-CCCAGG,CREA,DOGE,0.51740806,36.67629103,1,JordanManual,cryptocompare,CREA,2017-12-31 11:54:44.892271

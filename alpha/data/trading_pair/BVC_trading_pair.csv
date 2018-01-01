@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BVC,BTC,401.29373028,0.000858768582799,1,JordanManual,cryptocompare,BVC,2017-12-31 13:17:59.544289
-CCCAGG,BVC,USD,36.82174103,0.945125720062,1,JordanManual,cryptocompare,BVC,2017-12-31 13:17:59.544289

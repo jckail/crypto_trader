@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,SANDG,RUR,76.95089222,22.4961576679,1,JordanManual,cryptocompare,SANDG,2017-12-31 11:54:33.904666
-CCCAGG,SANDG,DOGE,1.07e-06,5.350001819e-07,1,JordanManual,cryptocompare,SANDG,2017-12-31 11:54:33.904666

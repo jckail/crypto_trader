@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,WTT,ETH,62367.2175551,137.431681872,1,JordanManual,cryptocompare,WTT,2017-12-31 12:17:43.261075
-CCCAGG,WTT,BTC,4246.02235336,0.520660185907,1,JordanManual,cryptocompare,WTT,2017-12-31 12:17:43.261075
-CCCAGG,WTT,RUR,4.43982436,446.988576498,1,JordanManual,cryptocompare,WTT,2017-12-31 12:17:43.261075

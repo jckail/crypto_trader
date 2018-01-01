@@ -1,0 +1,3 @@
+exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
+CCCAGG,MND,BTC,400,0.000104,1,JordanManual,cryptocompare,MND,2018-01-01 15:00:11.969251
+CCCAGG,MND,USD,246,1.0578123,1,JordanManual,cryptocompare,MND,2018-01-01 15:00:11.969251

@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,7,BTC,7.54080211,0.00138856330054,1,JordanManual,cryptocompare,7,2017-12-31 11:57:30.912349
-CCCAGG,007,BTC,7.54080211,0.00138856330054,1,JordanManual,cryptocompare,007,2017-12-31 13:17:52.947912

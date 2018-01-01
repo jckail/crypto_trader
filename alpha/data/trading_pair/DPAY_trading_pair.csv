@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,DPAY,BTC,31609.1616766,0.00124045808383,1,JordanManual,cryptocompare,DPAY,2017-12-31 11:54:34.669313
-CCCAGG,DPAY,RUR,190.00149327,7.03887872196,1,JordanManual,cryptocompare,DPAY,2017-12-31 11:54:34.669313

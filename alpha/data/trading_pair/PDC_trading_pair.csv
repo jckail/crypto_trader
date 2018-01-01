@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,PDC,BTC,786734.18226,11.49876314,1,JordanManual,cryptocompare,PDC,2017-12-31 12:17:59.662862
-CCCAGG,PDC,BTC,786734.18226,11.49876314,1,JordanManual,cryptocompare,PDC,2017-12-31 12:11:59.335445
-CCCAGG,PDC,BTC,782515.718244,11.43760512,1,JordanManual,cryptocompare,PDC,2017-12-31 12:01:59.419854
-CCCAGG,PDC,BTC,804678.364103,11.74628132,1,JordanManual,cryptocompare,PDC,2017-12-31 11:57:10.087657

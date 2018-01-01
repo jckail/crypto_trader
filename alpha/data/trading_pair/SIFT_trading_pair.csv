@@ -1,2 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,SIFT,ETH,812,5.53125,1,JordanManual,cryptocompare,SIFT,2017-12-31 11:54:31.682918

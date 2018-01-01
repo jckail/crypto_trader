@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,PEPECASH,JPY,6056676.2857,54798954.5606,1,JordanManual,cryptocompare,PEPECASH,2017-12-31 11:57:25.271928
-CCCAGG,PEPECASH,BTC,285397.304574,1.72976597,1,JordanManual,cryptocompare,PEPECASH,2017-12-31 11:57:25.271928

@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,LTCU,BTC,114958.560877,0.480639745971,1,JordanManual,cryptocompare,LTCU,2017-12-31 11:54:46.122808
-CCCAGG,LTCU,USD,26582.0350553,1540.63199063,1,JordanManual,cryptocompare,LTCU,2017-12-31 11:54:46.122808
-CCCAGG,LTCU,DOGE,2699.68211584,16705.0521081,1,JordanManual,cryptocompare,LTCU,2017-12-31 11:54:46.122808
-CCCAGG,LTCU,ETH,1944.32548808,0.152046010968,1,JordanManual,cryptocompare,LTCU,2017-12-31 11:54:46.122808
-CCCAGG,LTCU,RUR,2.8e-07,9.68680356e-07,1,JordanManual,cryptocompare,LTCU,2017-12-31 11:54:46.122808

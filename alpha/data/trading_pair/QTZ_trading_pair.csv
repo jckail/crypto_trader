@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,QTZ,BTC,168.08972911,0.000149599858908,1,JordanManual,cryptocompare,QTZ,2017-12-31 11:57:35.535236
-CCCAGG,QTZ,RUR,43.41184008,34.802612413,1,JordanManual,cryptocompare,QTZ,2017-12-31 11:57:35.535236
-CCCAGG,QTZ,BTC,168.08972911,0.000149599858908,1,JordanManual,cryptocompare,QTZ,2017-12-31 11:54:49.735432
-CCCAGG,QTZ,RUR,43.41184008,34.802612413,1,JordanManual,cryptocompare,QTZ,2017-12-31 11:54:49.735432

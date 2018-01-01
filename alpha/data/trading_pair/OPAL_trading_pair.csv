@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,OPAL,BTC,4099.5563013,0.0119847735692,1,JordanManual,cryptocompare,OPAL,2017-12-31 11:57:27.776495
-CCCAGG,OPAL,DOGE,5.2,62.58422698,1,JordanManual,cryptocompare,OPAL,2017-12-31 11:57:27.776495

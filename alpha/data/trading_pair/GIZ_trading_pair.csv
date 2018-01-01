@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,GIZ,USD,304.24553322,0.106674568858,1,JordanManual,cryptocompare,GIZ,2017-12-31 12:14:52.185997
-CCCAGG,GIZ,USD,304.24553322,0.106674568858,1,JordanManual,cryptocompare,GIZ,2017-12-31 11:54:29.507836
-CCCAGG,GIZ,RUR,100.0,9.799999,1,JordanManual,cryptocompare,GIZ,2017-12-31 11:54:29.507836
-CCCAGG,GIZ,DOGE,68.9,10.335,1,JordanManual,cryptocompare,GIZ,2017-12-31 11:54:29.507836

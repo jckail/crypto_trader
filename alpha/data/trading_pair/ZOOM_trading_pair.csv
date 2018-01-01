@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ZOOM,BTC,289.2490142,0.000665608123946,1,JordanManual,cryptocompare,ZOOM,2017-12-31 12:18:00.987816
-CCCAGG,ZOOM,BTC,289.2490142,0.000665608123946,1,JordanManual,cryptocompare,ZOOM,2017-12-31 11:54:31.918346

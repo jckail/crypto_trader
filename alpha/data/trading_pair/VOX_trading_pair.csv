@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,VOX,BTC,20455904.3823,877.736666787,1,JordanManual,cryptocompare,VOX,2017-12-31 12:17:44.860646
-CCCAGG,VOX,BTC,20448391.8672,877.419073757,1,JordanManual,cryptocompare,VOX,2017-12-31 12:11:55.015857
-CCCAGG,VOX,BTC,20799275.3723,893.128892337,1,JordanManual,cryptocompare,VOX,2017-12-31 11:57:01.533841

@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,DEA,BTC,22760.0545446,0.00160583008989,1,JordanManual,cryptocompare,DEA,2017-12-31 11:54:50.057509
-CCCAGG,DEA,RUR,4285.8875,424.078761405,1,JordanManual,cryptocompare,DEA,2017-12-31 11:54:50.057509
-CCCAGG,DEA,USD,3200.02048013,10.0,1,JordanManual,cryptocompare,DEA,2017-12-31 11:54:50.057509

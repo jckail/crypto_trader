@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BENJI,BTC,6851.66099666,0.00246200636673,1,JordanManual,cryptocompare,BENJI,2017-12-31 13:17:55.734187
-CCCAGG,BENJI,DOGE,9.16666666,10.999999992,1,JordanManual,cryptocompare,BENJI,2017-12-31 13:17:55.734187

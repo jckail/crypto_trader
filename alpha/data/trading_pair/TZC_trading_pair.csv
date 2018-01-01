@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,TZC,BTC,42733.7781076,0.39123706,1,JordanManual,cryptocompare,TZC,2017-12-31 11:57:19.016318
-CCCAGG,TZC,DOGE,394.84505007,6025.08660937,1,JordanManual,cryptocompare,TZC,2017-12-31 11:57:19.016318
-CCCAGG,TZC,BTC,42733.7781076,0.39123706,1,JordanManual,cryptocompare,TZC,2017-12-31 11:54:36.276288
-CCCAGG,TZC,DOGE,394.84505007,6025.08660937,1,JordanManual,cryptocompare,TZC,2017-12-31 11:54:36.276288
-CCCAGG,TZC,LTC,282.44216948,0.14136583,1,JordanManual,cryptocompare,TZC,2017-12-31 11:54:36.276288

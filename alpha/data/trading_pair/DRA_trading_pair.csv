@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,DRA,BTC,279.7077686,0.00492466793012,1,JordanManual,cryptocompare,DRA,2017-12-31 11:57:22.519090
-CCCAGG,DRA,RUR,0.20000003,2.200000358,1,JordanManual,cryptocompare,DRA,2017-12-31 11:57:22.519090
-CCCAGG,DRA,BTC,279.7077686,0.00492466793012,1,JordanManual,cryptocompare,DRA,2017-12-31 11:54:39.699646
-CCCAGG,DRA,RUR,0.20000003,2.200000358,1,JordanManual,cryptocompare,DRA,2017-12-31 11:54:39.699646

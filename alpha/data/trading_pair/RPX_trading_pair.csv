@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,RPX,BTC,4325191.65748,102.475654899,1,JordanManual,cryptocompare,RPX,2017-12-31 11:57:19.921898
-CCCAGG,RPX,ETH,2293279.0143,1014.52077587,1,JordanManual,cryptocompare,RPX,2017-12-31 11:57:19.921898
-CCCAGG,RPX,NEO,849733.3095,3598.95752347,1,JordanManual,cryptocompare,RPX,2017-12-31 11:57:19.921898
-CCCAGG,RPX,KCS,53373.8025,5160.29616154,1,JordanManual,cryptocompare,RPX,2017-12-31 11:57:19.921898

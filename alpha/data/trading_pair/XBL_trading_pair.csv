@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,XBL,DOGE,174.93636778,4543.77618075,1,JordanManual,cryptocompare,XBL,2017-12-31 11:57:22.545770
-CCCAGG,XBL,BTC,1946.42734623,0.02650462,1,JordanManual,cryptocompare,XBL,2017-12-31 11:54:39.192230
-CCCAGG,XBL,DOGE,174.93636778,4543.77618075,1,JordanManual,cryptocompare,XBL,2017-12-31 11:54:39.192230

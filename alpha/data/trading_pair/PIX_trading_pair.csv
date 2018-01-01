@@ -1,8 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,PIX,ETH,539796,91.6279883098,1,JordanManual,cryptocompare,PIX,2017-12-31 12:18:02.701547
-CCCAGG,PIX,BTC,186000,1.40427,1,JordanManual,cryptocompare,PIX,2017-12-31 12:18:02.701547
-CCCAGG,PIX,ETH,539796,91.6279883098,1,JordanManual,cryptocompare,PIX,2017-12-31 12:14:54.230176
-CCCAGG,PIX,ETH,539296,91.5445883098,1,JordanManual,cryptocompare,PIX,2017-12-31 12:11:59.203578
-CCCAGG,PIX,BTC,186000,1.40427,1,JordanManual,cryptocompare,PIX,2017-12-31 12:11:59.203578
-CCCAGG,PIX,ETH,549096,92.8505883098,1,JordanManual,cryptocompare,PIX,2017-12-31 11:54:31.378579
-CCCAGG,PIX,BTC,186600,1.40672,1,JordanManual,cryptocompare,PIX,2017-12-31 11:54:31.378579

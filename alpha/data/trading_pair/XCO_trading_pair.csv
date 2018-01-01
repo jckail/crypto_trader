@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,XCO,BTC,35127.8496096,0.0409491610182,1,JordanManual,cryptocompare,XCO,2017-12-31 11:57:31.937818
-CCCAGG,XCO,DOGE,126.08706762,230.42257996,1,JordanManual,cryptocompare,XCO,2017-12-31 11:57:31.937818
-CCCAGG,XCO,RUR,34.28597162,79.4582889534,1,JordanManual,cryptocompare,XCO,2017-12-31 11:57:31.937818
-CCCAGG,XCO,WAVES,2.57400634,0.00646055187621,1,JordanManual,cryptocompare,XCO,2017-12-31 11:57:31.937818

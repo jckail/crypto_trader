@@ -1,7 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,RIYA,BTC,281.97067676,0.01635006,1,JordanManual,cryptocompare,RIYA,2017-12-31 12:16:47.357314
-CCCAGG,RIYA,DOGE,0.18235604,16.59965474,1,JordanManual,cryptocompare,RIYA,2017-12-31 12:16:47.357314
-CCCAGG,RIYA,BTC,289.07534697,0.01698415,1,JordanManual,cryptocompare,RIYA,2017-12-31 11:57:07.183691
-CCCAGG,RIYA,LTC,39.854,0.14706126,1,JordanManual,cryptocompare,RIYA,2017-12-31 11:57:07.183691
-CCCAGG,RIYA,DOGE,2.45436307,225.15494251,1,JordanManual,cryptocompare,RIYA,2017-12-31 11:57:07.183691
-CCCAGG,RIYA,ETH,0.1,0.00035,1,JordanManual,cryptocompare,RIYA,2017-12-31 11:57:07.183691

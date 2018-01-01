@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,CYP,BTC,167.94857109,0.000530551884737,1,JordanManual,cryptocompare,CYP,2017-12-31 11:54:46.512248
-CCCAGG,CYP,DOGE,75.03299072,375.16495435,1,JordanManual,cryptocompare,CYP,2017-12-31 11:54:46.512248
-CCCAGG,CYP,RUR,4.844,9.6879995156,1,JordanManual,cryptocompare,CYP,2017-12-31 11:54:46.512248

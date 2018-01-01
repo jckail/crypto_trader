@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,CRNK,USD,1.35150451,1.35150314498,1,JordanManual,cryptocompare,CRNK,2017-12-31 13:18:02.267422
-CCCAGG,CRNK,RUR,0.0170022,0.682638335611,1,JordanManual,cryptocompare,CRNK,2017-12-31 13:18:02.267422
-CCCAGG,CRNK,USD,1.35150451,1.35150314498,1,JordanManual,cryptocompare,CRNK,2017-12-31 11:54:34.114234
-CCCAGG,CRNK,RUR,0.0170022,0.682638335611,1,JordanManual,cryptocompare,CRNK,2017-12-31 11:54:34.114234

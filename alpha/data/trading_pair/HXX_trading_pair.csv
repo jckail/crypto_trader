@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,HXX,BTC,4253.9392592,0.0333372137688,1,JordanManual,cryptocompare,HXX,2017-12-31 11:57:24.704612
-CCCAGG,HXX,DOGE,2.0004,10.04620894,1,JordanManual,cryptocompare,HXX,2017-12-31 11:57:24.704612
-CCCAGG,HXX,RUR,1.9874483,2.56380848587,1,JordanManual,cryptocompare,HXX,2017-12-31 11:57:24.704612

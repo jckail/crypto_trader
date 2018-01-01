@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ICX,BTC,9400,3.56033,1,JordanManual,cryptocompare,ICX,2017-12-31 11:57:16.807133
-CCCAGG,ICX,ETH,4600,32.6331,1,JordanManual,cryptocompare,ICX,2017-12-31 11:57:16.807133
-CCCAGG,ICX,USD,2300,11163.23,1,JordanManual,cryptocompare,ICX,2017-12-31 11:57:16.807133

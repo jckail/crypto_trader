@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,DGC,BTC,27538.0957568,0.0892489736018,1,JordanManual,cryptocompare,DGC,2017-12-31 11:57:25.870247
-CCCAGG,DGC,DOGE,7080.70843683,38318.4437038,1,JordanManual,cryptocompare,DGC,2017-12-31 11:57:25.870247

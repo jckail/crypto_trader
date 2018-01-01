@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,TWIST,BTC,1370.14400261,0.00494760170295,1,JordanManual,cryptocompare,TWIST,2017-12-31 11:54:39.802763
-CCCAGG,TWIST,USD,36.45454545,36.5487422477,1,JordanManual,cryptocompare,TWIST,2017-12-31 11:54:39.802763
-CCCAGG,TWIST,RUR,21.72832302,49.1269659105,1,JordanManual,cryptocompare,TWIST,2017-12-31 11:54:39.802763

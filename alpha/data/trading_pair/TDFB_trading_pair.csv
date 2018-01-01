@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,TDFB,RUR,2.31153005,18.916497245,1,JordanManual,cryptocompare,TDFB,2017-12-31 11:57:08.698971
-CCCAGG,TDFB,USD,1.8,0.495,1,JordanManual,cryptocompare,TDFB,2017-12-31 11:57:08.698971

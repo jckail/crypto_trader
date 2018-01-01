@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,MRV,ETH,299.24,0.03863454,1,JordanManual,cryptocompare,MRV,2017-12-31 12:14:52.667536
-CCCAGG,MRV,ETH,1482.89,0.17710401,1,JordanManual,cryptocompare,MRV,2017-12-31 11:54:30.083908
