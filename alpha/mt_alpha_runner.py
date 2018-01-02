@@ -26,7 +26,7 @@ import tradepair
 import fetchprice
 import mtsocial
 import savetos3
-import managedatastore
+import postrunmtc
 
 
 class AlphaRunner(object):
@@ -172,7 +172,7 @@ class AlphaRunner(object):
         s = setup.Setup(self.cwd)
         self.cwd = s.main()
         self.alpha_runner()
-        rg = managedatastore.RunGlue()
+        rg = postrunmtc.RunGlue()
         rg.main()
         print ('---------------------------------------------------------------------------------------END---------------------------------------------------------------------------------------')
         x = dt.datetime.now() - start_time

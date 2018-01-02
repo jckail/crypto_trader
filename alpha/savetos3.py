@@ -91,8 +91,8 @@ if __name__ == '__main__':
     """
     file ='/Users/jckail13/lit_crypto_data/alpha/data/social/reddit/reddit.json'
 
-    runner = SaveS3(file)
-    #runner = SaveS3()
+    #runner = SaveS3(file)
+    runner = SaveS3()
     runner.main()
 
 
