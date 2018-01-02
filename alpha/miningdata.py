@@ -15,7 +15,8 @@ import socket
 
 class GetMineData(object):
 
-    def __init__(self,cwd):
+    def __init__(self,cwd,catalog):
+        self.catalog = catalog
         self.cwd = cwd
         url = "https://www.cryptocompare.com/api/data/miningequipment/"
         headers = {
@@ -37,7 +38,8 @@ class GetMineData(object):
             if data["CoinData"]:
                 keys = list(data['CoinData'].keys())
 
-                for key in tqdm(keys,desc='coin_miner_data'):
+                #for key in tqdm(keys,desc='coin_miner_data'):
+                for key in keys:
                     frames = []
                     sub =  data['CoinData'][key]
 
@@ -59,7 +61,7 @@ class GetMineData(object):
                     df = df.reset_index(drop=True)
                     if not df.empty:
                         df.to_csv(my_file, index = False,  encoding= 'utf-8')
-                        s3 = savetos3.SaveS3(my_file)
+                        s3 = savetos3.SaveS3(my_file,self.catalog)
                         s3.main()
                     else:
                         print ('No '+str(key)+' data: '+key)
@@ -79,7 +81,8 @@ class GetMineData(object):
                 keys = list(data['MiningData'].keys())
                 frames = []
 
-                for key in tqdm(keys,desc='miner_data'):
+                #for key in tqdm(keys,desc='miner_data'):
+                for key in keys:
                     #print '----------'
                     #print key
                     sub =  data['MiningData'][key]
@@ -106,7 +109,7 @@ class GetMineData(object):
                 if not df.empty:
                     df.to_csv(my_file, index = False,  encoding= 'utf-8' ) #need to add this
 
-                    s3 = savetos3.SaveS3(my_file)
+                    s3 = savetos3.SaveS3(my_file,self.catalog)
                     s3.main()
 
                     pass #print 'Updated: '+str(my_file)
@@ -125,7 +128,7 @@ class GetMineData(object):
         """
         print ('BEGIN: GetMineData.main')
         try:
-            gmd = GetMineData(self.cwd)
+            gmd = GetMineData(self.cwd,self.catalog)
             #gmd.coin_miner_data()
             gmd.miner_data()
 

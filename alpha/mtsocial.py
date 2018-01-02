@@ -16,13 +16,13 @@ import socket
 
 class GetSocialData(object):
 
-    def __init__(self, symbol_list,exchanges,chunksize,cwd,reddit_ls,coderepository_ls,twitter_ls,cryptocompare_ls,general_ls,facebook_ls):
+    def __init__(self, symbol_list,exchanges,chunksize,cwd,catalog,reddit_ls,coderepository_ls,twitter_ls,cryptocompare_ls,general_ls,facebook_ls):
 
         self.symbol_list = symbol_list
         self.exchanges = exchanges
         self.chunksize = chunksize
         self.cwd = cwd
-
+        self.catalog = catalog
         self.reddit_ls = reddit_ls
         self.coderepository_ls = coderepository_ls
         self.twitter_ls = twitter_ls
@@ -179,7 +179,13 @@ class GetSocialData(object):
 
 
             error_symbols = []
-            gsd = GetSocialData(self.symbol_list,self.exchanges,self.chunksize,self.cwd,self.reddit_ls,self.coderepository_ls,self.twitter_ls,self.cryptocompare_ls,self.general_ls,self.facebook_ls)
+            gsd = GetSocialData(self.symbol_list,self.exchanges,self.chunksize,self.cwd,self.catalog, \
+                                self.reddit_ls, \
+                                self.coderepository_ls, \
+                                self.twitter_ls, \
+                                self.cryptocompare_ls, \
+                                self.general_ls, \
+                                self.facebook_ls)
             #gsd.get_socials()
 
             xsymbols = [self.symbol_list[x:x+self.chunksize] for x in range(0, len(self.symbol_list), self.chunksize )]

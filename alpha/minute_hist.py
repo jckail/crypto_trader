@@ -13,7 +13,8 @@ import socket
 
 class GetMinuteHist(object):
 
-    def __init__(self, symbol_list, exchanges, chunksize, cwd):
+    def __init__(self, symbol_list, exchanges, chunksize, cwd,catalog):
+        self.catalog = catalog
         self.symbol_list = symbol_list
         self.exchanges = exchanges
         self.chunksize = chunksize
@@ -56,7 +57,7 @@ class GetMinuteHist(object):
                             df = df.reset_index(drop=True)
 
                             df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
-                            s3 = savetos3.SaveS3(my_file)
+                            s3 = savetos3.SaveS3(my_file,self.catalog)
 
                             s3.main()
                         else:
@@ -78,7 +79,7 @@ class GetMinuteHist(object):
 
     def main(self):
         error_symbols = []
-        gmt = GetMinuteHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
+        gmt = GetMinuteHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd, self.catalog)
 
         xsymbols = [self.symbol_list[x:x+self.chunksize] for x in range(0, len(self.symbol_list), self.chunksize )]
 

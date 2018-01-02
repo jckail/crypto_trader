@@ -13,7 +13,8 @@ import socket
 
 class GetDayHist(object):
 
-    def __init__(self, symbol_list, exchanges, chunksize, cwd):
+    def __init__(self, symbol_list, exchanges, chunksize, cwd, catalog):
+        self.catalog = catalog
         self.symbol_list = symbol_list
         self.exchanges = exchanges
         self.chunksize = chunksize
@@ -55,7 +56,7 @@ class GetDayHist(object):
                             df = df.sort_values('time')
                             df = df.reset_index(drop=True)
                             df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
-                            s3 = savetos3.SaveS3(my_file)
+                            s3 = savetos3.SaveS3(my_file,self.catalog)
                             s3.main()
                         else:
                             pass
@@ -76,7 +77,7 @@ class GetDayHist(object):
 
     def main(self):
         error_symbols = []
-        gmt = GetDayHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
+        gmt = GetDayHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd,self.catalog)
 
         xsymbols = [self.symbol_list[x:x+self.chunksize] for x in range(0, len(self.symbol_list), self.chunksize )]
 

@@ -16,14 +16,15 @@ import csv
 import gzip
 import shutil
 import socket
-import managedatastore
+
+
 
 
 
 class SaveS3(object):
 
-    def __init__(self, file):
-
+    def __init__(self, file,catalog):
+        self.catalog = catalog
         self.file = file
         self.s3_client = boto3.client('s3')
         self.directory = file.replace(basename(file),'')
@@ -33,9 +34,9 @@ class SaveS3(object):
         target_ibdex = cwd_split.index('alpha') # project name
 
         self.s3_directory = '/'.join(cwd_split[target_ibdex:])
-
         self.basename = basename(file)
         self.filename, self.file_extension = os.path.splitext(self.basename)
+
 
     def to_json(self):
         try:
@@ -61,7 +62,7 @@ class SaveS3(object):
             s3 = boto3.resource('s3')
             self.basename = basename(self.file)
             #print(self.file,'litcrypto',self.s3_directory+self.basename)
-            s3.meta.client.upload_file(self.file,'litcrypto',self.s3_directory+self.basename )
+            s3.meta.client.upload_file(self.file,self.catalog,self.s3_directory+self.basename ) # bucket
             #multipart_upload_part = self.s3.MultipartUploadPart('litcrypto',self.s3_directory+self.basename,'multipart_upload_id','part_number')
             #s3.upload_fileobj(x,'litcrypto','data/coinlist_info')
 
@@ -71,14 +72,13 @@ class SaveS3(object):
 
     def main(self):
         try:
-            s3 = SaveS3(self.file)
+            s3 = SaveS3(self.file,self.catalog)
             #create a csv to hive datastore command
             #run athena query to validate datastore was created successfully
             s3.to_json()
             s3.gzip_jsons()
             s3.save_to_s3()
-            #rg = managedatastore.RunGlue(self.file)
-            #rg.main()
+
         except Exception as e:
             print(e)
 
@@ -91,8 +91,8 @@ if __name__ == '__main__':
     """
     file = '/Users/jckail13/lit_crypto_data/alpha/data/coininfo/coininfo.csv'
 
-    runner = SaveS3(file)
-    #runner = SaveS3()
+    #runner = SaveS3(file)
+    runner = SaveS3()
     runner.main()
 
 

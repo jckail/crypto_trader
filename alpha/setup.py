@@ -3,6 +3,8 @@ cwd = os.getcwd()
 from time import sleep
 from tqdm import tqdm
 import socket
+import boto3
+import awscatalogcreate
 
 
 class Setup(object):
@@ -48,7 +50,8 @@ class Setup(object):
                 ,'/data/mining_data/miner_data/'
                            ]
 
-            for y in tqdm(create_list,desc='validate_directories'):
+            #for y in tqdm(create_list,desc='validate_directories'): #progressbar
+            for y in create_list:
                 directory = self.cwd+y
                 gdirectory = self.cwd+y+"gzip_files/"
                 if not os.path.exists(directory):
@@ -64,7 +67,9 @@ class Setup(object):
 
     def main(self):
         try:
-            #print(self.cwd)
+            iam = boto3.resource('iam')
+            current_user = iam.CurrentUser()
+            print('Current User: '+current_user.user_name)
             s = Setup(self.cwd)
             self.cwd = s.build_data_path()
             s.validate_directories()
