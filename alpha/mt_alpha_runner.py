@@ -90,7 +90,7 @@ class AlphaRunner(object):
 
                     #add processing queue
 
-                    #self.symbol_list = self.symbol_list[:10]
+                    #self.symbol_list = self.symbol_list[:100]
                     #
                     x = len(self.symbol_list)
                     # #self.symbol_list.append('SMT')
@@ -172,8 +172,8 @@ class AlphaRunner(object):
         print(self.chunksize)
         print ('---------------------------------------------------------------------------------------BEGIN---------------------------------------------------------------------------------------')
         self.alpha_runner()
-        rg = postrunmtc.RunGlue()
-        rg.main()
+        prm = postrunmtc.RunGlue()
+        prm.main()
         print ('---------------------------------------------------------------------------------------END---------------------------------------------------------------------------------------')
         x = dt.datetime.now() - start_time
         print ('Completion time: '+str(x))
