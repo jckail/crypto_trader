@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,AHT,BTC,13009.805235,0.317130747375,1,JordanManual,cryptocompare,AHT,2018-01-01 15:00:12.321112
-CCCAGG,AHT,WAVES,1096.6125,30.74105,1,JordanManual,cryptocompare,AHT,2018-01-01 15:00:12.321112

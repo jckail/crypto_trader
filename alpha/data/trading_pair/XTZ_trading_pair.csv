@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,XTZ,USD,65463.95,280068.711681,1,JordanManual,cryptocompare,XTZ,2018-01-01 15:00:12.670755
-CCCAGG,XTZ,ETH,42674.82,247.04592739,1,JordanManual,cryptocompare,XTZ,2018-01-01 15:00:12.670755
-CCCAGG,XTZ,BTC,18775.256,6.138971694,1,JordanManual,cryptocompare,XTZ,2018-01-01 15:00:12.670755

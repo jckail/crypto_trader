@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,TFL,BTC,451.35249511,0.0525246522909,1,JordanManual,cryptocompare,TFL,2018-01-01 14:46:00.268476
-CCCAGG,TFL,ETH,120.82902195,0.412608743386,1,JordanManual,cryptocompare,TFL,2018-01-01 14:46:00.268476
-CCCAGG,TFL,RUR,1.01357789,51.69247239,1,JordanManual,cryptocompare,TFL,2018-01-01 14:46:00.268476

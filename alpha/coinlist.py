@@ -42,7 +42,7 @@ class GetCoinLists(object):
             df = df.sort_values('Id')
             frames.append(df)
 
-            my_file = self.cwd+'/data/coinlist_info.csv'
+            my_file = self.cwd+'/data/coininfo/coininfo.csv'
             if os.path.isfile(my_file):
                 df_resident = p.read_csv(my_file,  encoding= 'utf-8')
                 frames.append(df_resident)

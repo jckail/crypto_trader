@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,INSN,BTC,55126.5537084,0.62079109,1,JordanManual,cryptocompare,INSN,2018-01-01 14:45:59.270047
-CCCAGG,INSN,LTC,634.360243,0.68848141,1,JordanManual,cryptocompare,INSN,2018-01-01 14:45:59.270047
-CCCAGG,INSN,DOGE,112.24709128,1806.48612274,1,JordanManual,cryptocompare,INSN,2018-01-01 14:45:59.270047
-CCCAGG,INSN,ETH,44.43221403,0.00777785906595,1,JordanManual,cryptocompare,INSN,2018-01-01 14:45:59.270047

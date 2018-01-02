@@ -34,7 +34,7 @@ while loop_count < 2:
                 allData += dataSorted
                 currentTS = str(dataSorted[0]['time'])
                 df = pd.DataFrame(allData)
-                df = df.assign(coin = fsym,coin_units = 1, timestamp_api_call = dt.datetime.now(),computer_name = 'JordanManual',exchange = exchange )
+                df = df.assign(coin = fsym,coin_units = 1, timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),exchange = exchange )
                 frames.append(df)
 
             else:

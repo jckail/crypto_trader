@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,PING,BTC,4945.80060419,0.218889222767,1,JordanManual,cryptocompare,PING,2018-01-01 15:00:12.013913
-CCCAGG,PING,WAVES,1095.94273586,42.542359984,1,JordanManual,cryptocompare,PING,2018-01-01 15:00:12.013913

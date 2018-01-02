@@ -5,32 +5,28 @@ import argparse
 import os
 import pandas as p
 #from multiprocessing import Pool, TimeoutError
-import time
+#import timeurllib2urllib2
 import threading
 #add arg focus symbols only
 import datetime as dt
 import multiprocessing
+import socket
 
 
 
 # classes
 import coinlist
 import day_hist
-import test
 import setup
 import fetchprice
-import haspricing
 import hour_hist
 import minute_hist
 import miningdata
 import tradepair
 import fetchprice
 import mtsocial
-import price_all_permutation
-import newfetchprice
-import newtradepair
-import forloopfetchprice
 import savetos3
+import managedatastore
 
 
 class AlphaRunner(object):
@@ -82,7 +78,7 @@ class AlphaRunner(object):
                     if self.runfocus_symbols_only == 'N':
                         cl = coinlist.GetCoinLists(self.cwd)
                         cl.main()
-                        df = p.read_csv(self.cwd+'/data/coinlist_info.csv', encoding= 'utf-8')
+                        df = p.read_csv(self.cwd+'/data/coininfo/coininfo.csv', encoding= 'utf-8')
                         self.symbol_list = df["Symbol"].tolist()
 
                     elif self.runfocus_symbols_only == 'Y':
@@ -95,8 +91,8 @@ class AlphaRunner(object):
 
                     #add processing queue
 
-                    #self.symbol_list = self.symbol_list[:100]
-
+                    self.symbol_list = self.symbol_list[:10]
+                    #
                     x = len(self.symbol_list)
                     # #self.symbol_list.append('SMT')
                     print ('--------------------------------------------------------------------------')
@@ -106,17 +102,17 @@ class AlphaRunner(object):
                     #
                     md = miningdata.GetMineData(self.cwd)
                     md.main()
-                    # #thread1 = threading.Thread(target=md.main(), args=())
-                    #
+                    # # #thread1 = threading.Thread(target=md.main(), args=())
+                    # #
                     print('--------------------------------------------------------------------------')
                     mfp = fetchprice.GetDtlPrice(self.symbol_list, self.exchanges, self.chunksize,self.cwd) #chunk size not used here just broken up into 50 strings due to api list constraint
                     mfp.main()
-                    # #thread2 = threading.Thread(target=mfp.main(), args=())
+                    # # #thread2 = threading.Thread(target=mfp.main(), args=())
                     print('--------------------------------------------------------------------------')
                     #
                     tp = tradepair.GetTradePair(self.symbol_list,self.chunksize,self.cwd)
                     tp.main()
-                    # #thread3 = threading.Thread(target=tp.main(), args=())
+                    # # #thread3 = threading.Thread(target=tp.main(), args=())
                     print('--------------------------------------------------------------------------')
                     #
                     mh = minute_hist.GetMinuteHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
@@ -131,7 +127,7 @@ class AlphaRunner(object):
                     dh.main()
                     # thread6 = threading.Thread(target=dh.main(), args=())
                     print('--------------------------------------------------------------------------')
-                    #
+                    # #
                     gsd = mtsocial.GetSocialData(self.symbol_list,self.exchanges,self.chunksize,self.cwd,\
                     self.reddit_ls,\
                     self.coderepository_ls,\
@@ -173,8 +169,11 @@ class AlphaRunner(object):
         print (self.args)
         print (self.cwd)
         print ('---------------------------------------------------------------------------------------BEGIN---------------------------------------------------------------------------------------')
-        setup.setup_alpha()
+        s = setup.Setup(self.cwd)
+        self.cwd = s.main()
         self.alpha_runner()
+        rg = managedatastore.RunGlue()
+        rg.main()
         print ('---------------------------------------------------------------------------------------END---------------------------------------------------------------------------------------')
         x = dt.datetime.now() - start_time
         print ('Completion time: '+str(x))

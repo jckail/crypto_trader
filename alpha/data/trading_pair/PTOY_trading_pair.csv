@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,PTOY,BTC,5837747.48164,252.769949778,1,JordanManual,cryptocompare,PTOY,2018-01-01 14:45:58.550382
-CCCAGG,PTOY,ETH,233873.106141,184.221804142,1,JordanManual,cryptocompare,PTOY,2018-01-01 14:45:58.550382
-CCCAGG,PTOY,USDT,81356.3795762,47215.9198272,1,JordanManual,cryptocompare,PTOY,2018-01-01 14:45:58.550382

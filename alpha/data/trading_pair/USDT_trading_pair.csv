@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,USDT,USD,1637884.72686,1669208.60187,1,JordanManual,cryptocompare,USDT,2018-01-01 15:00:12.199028
-CCCAGG,USDT,RUB,18031.6061455,1167364.41816,1,JordanManual,cryptocompare,USDT,2018-01-01 15:00:12.199028

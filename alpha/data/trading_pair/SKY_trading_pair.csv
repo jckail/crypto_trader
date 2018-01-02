@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,SKY,BTC,24667.9684765,72.50722619,1,JordanManual,cryptocompare,SKY,2018-01-01 14:45:58.930256
-CCCAGG,SKY,LTC,1201.98521816,216.20035379,1,JordanManual,cryptocompare,SKY,2018-01-01 14:45:58.930256
-CCCAGG,SKY,USDT,339.16639898,13338.6094522,1,JordanManual,cryptocompare,SKY,2018-01-01 14:45:58.930256
-CCCAGG,SKY,DOGE,76.13158392,366922.957061,1,JordanManual,cryptocompare,SKY,2018-01-01 14:45:58.930256
-CCCAGG,SKY,NZDT,53.21603104,3203.78640811,1,JordanManual,cryptocompare,SKY,2018-01-01 14:45:58.930256

@@ -3,11 +3,12 @@ import pandas as p
 import datetime as dt
 import os
 import threading
-import urllib2
+#import urllib2
 import time
 from time import sleep
 from tqdm import tqdm
 import savetos3
+import socket
 
 
 class GetDayHist(object):
@@ -17,6 +18,7 @@ class GetDayHist(object):
         self.exchanges = exchanges
         self.chunksize = chunksize
         self.cwd = cwd
+
 
     def get_day_hist(self,symbol,error_symbols):
         currentts = str(int(time.time()))
@@ -39,7 +41,7 @@ class GetDayHist(object):
 
                     if data["Data"] != [] and data["Response"] == "Success":
                         df = p.DataFrame(data["Data"])
-                        df = df.assign(symbol = symbol, coin_units = 1, timestamp_api_call = dt.datetime.now(),computer_name = 'JordanManual',exchange = exchange )
+                        df = df.assign(symbol = symbol, coin_units = 1, timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),exchange = exchange )
                         frames.append(df)
                         my_file = self.cwd+'/data/day_data/'+symbol+'_day.csv'
                         if os.path.isfile(my_file):
@@ -105,7 +107,7 @@ class GetDayHist(object):
 if __name__ == '__main__':
     #exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
     #
-    #df = p.read_csv(self.cwd+'/data/coinlist_info.csv')
+    #df = p.read_csv(self.cwd+'/data/coininfo/coininfo.csv')
     #ls_has = df["Symbol"].tolist()
     #ls_has = ls_has[:100]
     runner = GetDayHist()

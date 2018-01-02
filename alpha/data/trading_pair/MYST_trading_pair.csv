@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,MYST,BTC,581796.614196,74.9853817144,1,JordanManual,cryptocompare,MYST,2018-01-01 14:45:58.951605
-CCCAGG,MYST,ETH,108264.509783,253.652568243,1,JordanManual,cryptocompare,MYST,2018-01-01 14:45:58.951605
-CCCAGG,MYST,USDT,60575.1369501,105225.234285,1,JordanManual,cryptocompare,MYST,2018-01-01 14:45:58.951605

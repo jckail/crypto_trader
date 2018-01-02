@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,AMS,BTC,228902.631384,0.171370832463,1,JordanManual,cryptocompare,AMS,2018-01-01 14:47:39.065695
-CCCAGG,AMS,DOGE,34.0454716,17.0227361405,1,JordanManual,cryptocompare,AMS,2018-01-01 14:47:39.065695
-CCCAGG,AMS,WAVES,3.00002548,0.0011774800009,1,JordanManual,cryptocompare,AMS,2018-01-01 14:47:39.065695

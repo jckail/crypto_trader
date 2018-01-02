@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,TIX,BTC,1031817.63862,87.35426804,1,JordanManual,cryptocompare,TIX,2018-01-01 15:00:12.268225
-CCCAGG,TIX,ETH,68120.943426,103.272643816,1,JordanManual,cryptocompare,TIX,2018-01-01 15:00:12.268225
-CCCAGG,TIX,LTC,117.98375614,0.71004065,1,JordanManual,cryptocompare,TIX,2018-01-01 15:00:12.268225
-CCCAGG,TIX,DOGE,2.0,332.00005774,1,JordanManual,cryptocompare,TIX,2018-01-01 15:00:12.268225

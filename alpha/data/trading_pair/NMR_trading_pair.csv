@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,NMR,BTC,77113.1261856,209.645553645,1,JordanManual,cryptocompare,NMR,2018-01-01 14:47:39.306030
-CCCAGG,NMR,ETH,2448.29516188,123.548969035,1,JordanManual,cryptocompare,NMR,2018-01-01 14:47:39.306030
-CCCAGG,NMR,RUR,0.0002053,1.23138939979,1,JordanManual,cryptocompare,NMR,2018-01-01 14:47:39.306030

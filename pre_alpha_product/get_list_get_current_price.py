@@ -132,7 +132,7 @@ while loop_count < loop_restriction:
                 test_df = p.DataFrame.from_dict(data,orient='index', dtype=None)
                 a1 = test_df
                 test_df = p.DataFrame.transpose(test_df)
-                test_df = test_df.assign (coin = symbol,coin_units = 1, timestamp_api_call = dt.datetime.now(),loop = loop_count,computer_name = 'JordanManual',data_source = data_source ) ##replace with ec2ip/region
+                test_df = test_df.assign (coin = symbol,coin_units = 1, timestamp_api_call = dt.datetime.now(),loop = loop_count,hostname = socket.gethostname(),data_source = data_source ) ##replace with ec2ip/region
                 #print test_df
                 frames.append(test_df)
                 #insert directly into data store will latency if aggregate all data frames at the end* per test 20 minute lag time if we do all on one cpu

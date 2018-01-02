@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,CLUB,BTC,206095.424536,44.6571060865,1,JordanManual,cryptocompare,CLUB,2018-01-01 14:47:39.115591
-CCCAGG,CLUB,USD,256.10100551,299.255796369,1,JordanManual,cryptocompare,CLUB,2018-01-01 14:47:39.115591
-CCCAGG,CLUB,DOGE,5.20541396,1472.90415239,1,JordanManual,cryptocompare,CLUB,2018-01-01 14:47:39.115591
-CCCAGG,CLUB,RUR,5.01750944,1260.36216911,1,JordanManual,cryptocompare,CLUB,2018-01-01 14:47:39.115591

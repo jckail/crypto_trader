@@ -10,6 +10,7 @@ import threading
 from tqdm import tqdm
 from time import sleep
 import savetos3
+import socket
 
 
 class GetMineData(object):
@@ -45,7 +46,7 @@ class GetMineData(object):
                     df = df.assign (timestamp_api_call = dt.datetime.now(),source = source,key = key )
                     frames.append(df)
 
-                    my_file = self.cwd+'/data/mining_data/%s_mining.csv' % key
+                    my_file = self.cwd+'/data/mining_data/coin_miner_data/%s_mining.csv' % key
 
                     if os.path.isfile(my_file):
                         df_resident = p.read_csv(my_file,  encoding= 'utf-8')
@@ -89,7 +90,7 @@ class GetMineData(object):
                     df = df.assign (timestamp_api_call = dt.datetime.now(),source = source,key = key )
                     frames.append(df)
 
-                my_file = self.cwd+'/data/mining_data/mining_equipment.csv'
+                my_file = self.cwd+'/data/mining_data/miner_data/mining_equipment.csv'
 
                 if os.path.isfile(my_file):
                     df_resident = p.read_csv(my_file,  encoding= 'utf-8')

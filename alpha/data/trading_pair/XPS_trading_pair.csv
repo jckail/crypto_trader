@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,XPS,RUR,1490552.79044,2750.1988847,1,JordanManual,cryptocompare,XPS,2018-01-01 14:45:58.106685
-CCCAGG,XPS,DOGE,333157.555169,578.330484843,1,JordanManual,cryptocompare,XPS,2018-01-01 14:45:58.106685
-CCCAGG,XPS,USD,105898.251192,3.3305,1,JordanManual,cryptocompare,XPS,2018-01-01 14:45:58.106685
-CCCAGG,XPS,BTC,100000.0,0.001,1,JordanManual,cryptocompare,XPS,2018-01-01 14:45:58.106685

@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,CPC,BTC,563762.713924,42.1795127001,1,JordanManual,cryptocompare,CPC,2018-01-01 14:47:39.159532
-CCCAGG,CPC,USD,90.26381968,102.900754435,1,JordanManual,cryptocompare,CPC,2018-01-01 14:47:39.159532

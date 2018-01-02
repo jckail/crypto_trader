@@ -15,6 +15,8 @@ import json
 import csv
 import gzip
 import shutil
+import socket
+import managedatastore
 
 
 
@@ -31,38 +33,54 @@ class SaveS3(object):
         target_ibdex = cwd_split.index('alpha') # project name
 
         self.s3_directory = '/'.join(cwd_split[target_ibdex:])
+
         self.basename = basename(file)
         self.filename, self.file_extension = os.path.splitext(self.basename)
 
     def to_json(self):
-        df = p.read_csv(self.file)
-        df.to_json(self.directory+self.filename+'.json')
-        self.basename = self.filename+'.json'
+        try:
+            df = p.read_csv(self.file)
+            df.to_json(self.directory+self.filename+'.json')
+            self.basename = self.filename+'.json'
+        except Exception as e:
+            print(e)
 
     def gzip_jsons(self):
-        zipped_file = self.directory +"gzip_files/"+self.basename+'.gz'
-        with open(self.file, 'rb') as f_in, gzip.open(zipped_file, 'wb') as f_out:
-            shutil.copyfileobj(f_in, f_out)
-        self.file = zipped_file
-        #print (self.file)
+        try:
+            zipped_file = self.directory +"gzip_files/"+self.basename+'.gz'
+            with open(self.file, 'rb') as f_in, gzip.open(zipped_file, 'wb') as f_out:
+                shutil.copyfileobj(f_in, f_out)
+            self.file = zipped_file
+            #print (self.file)
+        except Exception as e:
+            print(e)
 
 
     def save_to_s3(self):
-        s3 = boto3.resource('s3')
-        self.basename = basename(self.file)
-        #print(self.file,'litcrypto',self.s3_directory+self.basename)
-        s3.meta.client.upload_file(self.file,'litcrypto',self.s3_directory+self.basename )
+        try:
+            s3 = boto3.resource('s3')
+            self.basename = basename(self.file)
+            #print(self.file,'litcrypto',self.s3_directory+self.basename)
+            s3.meta.client.upload_file(self.file,'litcrypto',self.s3_directory+self.basename )
 
-        #multipart_upload_part = self.s3.MultipartUploadPart('litcrypto',self.s3_directory+self.basename,'multipart_upload_id','part_number')
-        #s3.upload_fileobj(x,'litcrypto','data/coinlist_info')
+            #multipart_upload_part = self.s3.MultipartUploadPart('litcrypto',self.s3_directory+self.basename,'multipart_upload_id','part_number')
+            #s3.upload_fileobj(x,'litcrypto','data/coinlist_info')
+
+        except Exception as e:
+            print(e)
 
     def main(self):
-        s3 = SaveS3(self.file)
-        #create a csv to hive datastore command
-        #run athena query to validate datastore was created successfully
-        s3.to_json()
-        s3.gzip_jsons()
-        s3.save_to_s3()
+        try:
+            s3 = SaveS3(self.file)
+            #create a csv to hive datastore command
+            #run athena query to validate datastore was created successfully
+            s3.to_json()
+            s3.gzip_jsons()
+            s3.save_to_s3()
+            rg = managedatastore.RunGlue(self.file)
+            rg.main()
+        except Exception as e:
+            print(e)
 
 
 
@@ -71,11 +89,10 @@ if __name__ == '__main__':
 
     :return:
     """
-    file ='/Users/jckail13/lit_crypto/alpha/data/coinlist_info.csv'
-    cwd = '/Users/jckail13/lit_crypto/alpha/data/'
+    file ='/Users/jckail13/lit_crypto_data/alpha/data/social/reddit/reddit.json'
 
-
-    runner = SaveS3()
+    runner = SaveS3(file)
+    #runner = SaveS3()
     runner.main()
 
 

@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,OBITS,BTC,712.37546221,0.0803823896335,1,JordanManual,cryptocompare,OBITS,2018-01-01 15:00:11.928710
-CCCAGG,OBITS,USD,4.81840698,9.5886298902,1,JordanManual,cryptocompare,OBITS,2018-01-01 15:00:11.928710

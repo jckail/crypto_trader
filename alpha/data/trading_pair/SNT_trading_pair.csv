@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,SNT,BTC,295774475.532,5671.3979538,1,JordanManual,cryptocompare,SNT,2018-01-01 14:45:58.806478
-CCCAGG,SNT,ETH,67472653.1292,23266.3302029,1,JordanManual,cryptocompare,SNT,2018-01-01 14:45:58.806478
-CCCAGG,SNT,USDT,9831409.18973,2478766.56064,1,JordanManual,cryptocompare,SNT,2018-01-01 14:45:58.806478
-CCCAGG,SNT,USD,1948.27747,563.753404365,1,JordanManual,cryptocompare,SNT,2018-01-01 14:45:58.806478

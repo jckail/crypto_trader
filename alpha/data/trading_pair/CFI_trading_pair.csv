@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,CFI,BTC,13211791.3479,250.067187243,1,JordanManual,cryptocompare,CFI,2018-01-01 14:45:59.704407
-CCCAGG,CFI,ETH,399192.921134,136.196777625,1,JordanManual,cryptocompare,CFI,2018-01-01 14:45:59.704407
-CCCAGG,CFI,USDT,172792.477358,43434.1360213,1,JordanManual,cryptocompare,CFI,2018-01-01 14:45:59.704407

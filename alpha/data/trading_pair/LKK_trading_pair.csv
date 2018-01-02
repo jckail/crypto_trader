@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,LKK,USD,233327.05,52092.6702092,1,JordanManual,cryptocompare,LKK,2018-01-01 14:45:58.938782
-CCCAGG,LKK,CHF,28924.64,6382.3636271,1,JordanManual,cryptocompare,LKK,2018-01-01 14:45:58.938782

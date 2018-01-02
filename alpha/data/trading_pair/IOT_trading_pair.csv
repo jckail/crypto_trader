@@ -1,6 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,IOT,BTC,27837510.272,7723.7611016,1,JordanManual,cryptocompare,IOT,2018-01-01 14:46:00.471763
-CCCAGG,IOT,USD,18083392.8484,68625640.8399,1,JordanManual,cryptocompare,IOT,2018-01-01 14:46:00.471763
-CCCAGG,IOT,ETH,4611715.56522,23044.6989221,1,JordanManual,cryptocompare,IOT,2018-01-01 14:46:00.471763
-CCCAGG,IOT,USDT,336444.4553,1235099.1487,1,JordanManual,cryptocompare,IOT,2018-01-01 14:46:00.471763
-CCCAGG,IOT,BNB,260902.37,117284.64283,1,JordanManual,cryptocompare,IOT,2018-01-01 14:46:00.471763

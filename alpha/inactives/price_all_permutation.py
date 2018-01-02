@@ -22,44 +22,55 @@ class GetDtlPrice(object):
         self.cwd = cwd
 
     def get_price_details_for_symbols(self,symbol,frames,error_symbols):
-        for exchange in self.exchanges:
+        xsymbols = [self.symbol_list[x:x+50] for x in xrange(0, len(self.symbol_list), 50 )]
+        for symbol2 in xsymbols:
+            if x in symbol2:
+                symbol2.remove(symbol)
+            tsyms = "'"+','.join(symbol2)+"'"
+            #print x
+            for exchange in self.exchanges:
 
-            url = "https://min-api.cryptocompare.com/data/pricemultifull"
+                url = "https://min-api.cryptocompare.com/data/pricemultifull"
 
-            querystring = {"fsyms":symbol,"tsyms":'USD',"e":exchange}
+                querystring = {"fsyms":symbol,"tsyms":tsyms,"e":exchange}
 
-            headers = {
-                'cache-control': "no-cache",
-                'postman-token': "f3d54076-038b-9e2d-1ff3-593ae13aabbf"
-            }
-            try:
-                response = requests.request("GET", url, headers=headers, params=querystring)
+                headers = {
+                    'cache-control': "no-cache",
+                    'postman-token': "f3d54076-038b-9e2d-1ff3-593ae13aabbf"
+                }
+                try:
+                    response = requests.request("GET", url, headers=headers, params=querystring)
 
-                if response.status_code == 200:
-                    data = response.json()
-                    if data.keys()[0] == "RAW":
-                        df = p.DataFrame(data["RAW"][symbol])
-                        df = p.DataFrame.transpose(df)
-                        df = df.assign (coin = symbol, coin_units = 1, timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname())
-                        frames.append(df)
+                    if response.status_code == 200:
+                        data = response.json()
+                        #print data
+                        #print keys
+                        #print data[1]
+                        #if data["RAW"]:
+                        #print data.keys()[0]
+                        if data.keys()[0] == "RAW":
+                            df = p.DataFrame(data["RAW"][symbol])
+                            df = p.DataFrame.transpose(df)
+                            df = df.assign (coin = symbol, coin_units = 1, timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname())
+                            frames.append(df)
+                        else:
+                            pass
                     else:
                         pass
-                else:
+                except requests.exceptions.RequestException as e:
+                    #print(e)
+                    error_symbols.append(symbol)
+                    #.append(symbol)
+                    sleep(0.2)
+                    #print 'request error'
                     pass
-            except requests.exceptions.RequestException as e:
-                #print(e)
-                error_symbols.append(symbol)
-                #.append(symbol)
-                sleep(0.2)
-                #print 'request error'
-                pass
-            except OverflowError:
-                print('OverflowError: '+str(symbol))
-                pass
-            except Exception as e:
-                #print(e)
-                #print 'exception'
-                pass
+                except OverflowError:
+                    print 'OverflowError: '+str(symbol)
+                    pass
+                except Exception as e:
+                    #print(e)
+                    #print 'exception'
+                    pass
 
 
     def main(self):
@@ -69,9 +80,9 @@ class GetDtlPrice(object):
         """
         frames = []
         error_symbols = []
-        print ('BEGIN: GetDtlPrice.main')
+        print 'begin: GetDtlPrice.main'
         try:
-            
+
             gdl = GetDtlPrice(self.symbol_list, self.exchanges, self.chunksize, self.cwd)
 
             xsymbols = [self.symbol_list[x:x+self.chunksize] for x in xrange(0, len(self.symbol_list), self.chunksize )]
@@ -93,7 +104,7 @@ class GetDtlPrice(object):
                     else:
                         pass
 
-            my_file = self.cwd+'/data/pricedetails/price.csv'
+            my_file = self.cwd+'/data/current_dtl_price.csv'
             if os.path.isfile(my_file):
                 df_resident = p.read_csv(my_file)
                 frames.append(df_resident)
@@ -108,16 +119,13 @@ class GetDtlPrice(object):
                 df = df.sort_values('LASTUPDATE')
                 df = df.reset_index(drop=True)
                 df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
-                s3 = savetos3.SaveS3(my_file)
-                s3.main()
             else:
                 pass
-            print('DONE')
+            print 'DONE'
 
         except Exception as e:
             print(e)
-            print('Error: GetDtlPrice.main')
-
+            print 'Error: GetDtlPrice.main'
 
 
 
@@ -126,17 +134,18 @@ if __name__ == '__main__':
 
     :return:
     """
-    #exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
+    exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
     #
-    #df = p.read_csv(self.cwd+'/data/coininfo/coininfo.csv')
-    #ls_has = df["Symbol"].tolist()
-    #ls_has = ls_has
+    cwd = '/Users/jkail/Documents/GitHub/lit_crypto/alpha/'
+    df = p.read_csv(cwd+'/data/coininfo/coininfo.csv')
+    ls_has = df["Symbol"].tolist()
+    #ls_has = ls_has[:200]
     #ls_has = ['BTC','BCH','LTC','ETH']
     #print len(ls_has)
     #ls_has, 200, exchanges
     #start_time = dt.datetime.now()
-
-    runner = GetDtlPrice()
+    #runner = GetDtlPrice()
+    runner = GetDtlPrice(ls_has,exchanges,200,cwd)
     runner.main()
     #x =  dt.datetime.now() - start_time
     #print 'Completion time: '+str(x)

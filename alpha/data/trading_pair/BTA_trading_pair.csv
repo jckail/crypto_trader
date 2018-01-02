@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,BTA,BTC,7367.92534048,0.170816459168,1,JordanManual,cryptocompare,BTA,2018-01-01 15:00:12.554127
-CCCAGG,BTA,LTC,56.59103591,0.07943372,1,JordanManual,cryptocompare,BTA,2018-01-01 15:00:12.554127
-CCCAGG,BTA,DOGE,25.93584673,1034.51405624,1,JordanManual,cryptocompare,BTA,2018-01-01 15:00:12.554127
-CCCAGG,BTA,ETH,12.3377346,0.0500721493463,1,JordanManual,cryptocompare,BTA,2018-01-01 15:00:12.554127

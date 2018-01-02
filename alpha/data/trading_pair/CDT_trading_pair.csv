@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,CDT,BTC,48971973.0,595.3877174,1,JordanManual,cryptocompare,CDT,2018-01-01 15:00:11.925435
-CCCAGG,CDT,ETH,12198139.7078,2695.04866888,1,JordanManual,cryptocompare,CDT,2018-01-01 15:00:11.925435
-CCCAGG,CDT,USDT,1048100.7526,168827.704208,1,JordanManual,cryptocompare,CDT,2018-01-01 15:00:11.925435
-CCCAGG,CDT,USD,68507.2,11526.8161481,1,JordanManual,cryptocompare,CDT,2018-01-01 15:00:11.925435

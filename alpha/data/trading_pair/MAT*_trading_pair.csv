@@ -1,5 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,MAT*,ETH,22699.533595,0.10146691517,1,JordanManual,cryptocompare,MAT*,2018-01-01 14:45:58.759228
-CCCAGG,MAT*,BTC,16216.4,0.000324328,1,JordanManual,cryptocompare,MAT*,2018-01-01 14:45:58.759228
-CCCAGG,MAT*,DOGE,10482.00131,838.55999998,1,JordanManual,cryptocompare,MAT*,2018-01-01 14:45:58.759228
-CCCAGG,MAT*,RUR,6472.29227577,91.9749299225,1,JordanManual,cryptocompare,MAT*,2018-01-01 14:45:58.759228

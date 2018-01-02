@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,CMP,BTC,446.83124799,0.42126364,1,JordanManual,cryptocompare,CMP,2018-01-01 15:00:13.118418
-CCCAGG,CMP,DOGE,0.08557142,223.14013624,1,JordanManual,cryptocompare,CMP,2018-01-01 15:00:13.118418

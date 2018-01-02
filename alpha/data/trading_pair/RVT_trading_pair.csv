@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,RVT,BTC,58112.052,4.503924503,1,JordanManual,cryptocompare,RVT,2018-01-01 15:00:11.811432
-CCCAGG,RVT,ETH,26167.6924819,37.23495893,1,JordanManual,cryptocompare,RVT,2018-01-01 15:00:11.811432

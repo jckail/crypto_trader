@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,EFYT,WAVES,96.04145225,124.855689998,1,JordanManual,cryptocompare,EFYT,2018-01-01 14:46:01.299148
-CCCAGG,EFYT,BTC,3.00158495,0.00360190194,1,JordanManual,cryptocompare,EFYT,2018-01-01 14:46:01.299148

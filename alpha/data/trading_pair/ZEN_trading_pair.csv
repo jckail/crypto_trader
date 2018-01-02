@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,ZEN,BTC,59702.2916797,259.17086864,1,JordanManual,cryptocompare,ZEN,2018-01-01 14:45:58.964722
-CCCAGG,ZEN,LTC,113.59374964,30.35772345,1,JordanManual,cryptocompare,ZEN,2018-01-01 14:45:58.964722
-CCCAGG,ZEN,DOGE,16.24110776,109723.464397,1,JordanManual,cryptocompare,ZEN,2018-01-01 14:45:58.964722

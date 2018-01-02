@@ -1,3 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,MCAP,BTC,58478.0,2.649944,1,JordanManual,cryptocompare,MCAP,2018-01-01 14:46:01.305528
-CCCAGG,MCAP,ETH,1392.32599999,1.05816672653,1,JordanManual,cryptocompare,MCAP,2018-01-01 14:46:01.305528

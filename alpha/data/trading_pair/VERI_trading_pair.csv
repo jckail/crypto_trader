@@ -1,4 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,VERI,ETH,1322.58996843,603.695523319,1,JordanManual,cryptocompare,VERI,2018-01-01 14:45:59.373396
-CCCAGG,VERI,BTC,57.83,1.540528415,1,JordanManual,cryptocompare,VERI,2018-01-01 14:45:59.373396
-CCCAGG,VERI,USD,10.36,3611.0545303,1,JordanManual,cryptocompare,VERI,2018-01-01 14:45:59.373396

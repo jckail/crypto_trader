@@ -1,7 +1,0 @@
-exchange,fromSymbol,toSymbol,volume24h,volume24hTo,coin_units,computer_name,source,symbol,timestamp_api_call
-CCCAGG,USD,RUB,234696.763449,13869730.9043,1,JordanManual,cryptocompare,USD,2018-01-01 15:00:12.216815
-CCCAGG,USD,RUR,195365.349497,11231751.2874,1,JordanManual,cryptocompare,USD,2018-01-01 15:00:12.216815
-CCCAGG,USD,JPY,4515.9873,510745.61902,1,JordanManual,cryptocompare,USD,2018-01-01 15:00:12.216815
-CCCAGG,USD,CHF,1093.26,1039.057611,1,JordanManual,cryptocompare,USD,2018-01-01 15:00:12.216815
-CCCAGG,USD,SGD,1055.207,1412.60338726,1,JordanManual,cryptocompare,USD,2018-01-01 15:00:12.216815
-CCCAGG,USD,CAD,933.4726,1176.69824919,1,JordanManual,cryptocompare,USD,2018-01-01 15:00:12.216815

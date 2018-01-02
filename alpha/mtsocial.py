@@ -11,6 +11,7 @@ from time import sleep
 from tqdm import tqdm
 import coinlist
 import savetos3
+import socket
 
 
 class GetSocialData(object):
@@ -38,7 +39,7 @@ class GetSocialData(object):
         source = 'cryptocompare'
         raw_symbol = symbol
         symbol = "'"+symbol+"'" #must add for df query
-        df_get_id = p.read_csv(self.cwd+'/data/coinlist_info.csv')
+        df_get_id = p.read_csv(self.cwd+'/data/coininfo/coininfo.csv')
         a = df_get_id.query("Symbol == "+symbol)
         b = a["Id"].tolist()
         if len(b) > 0:
@@ -140,7 +141,8 @@ class GetSocialData(object):
     def create_social_files(self,social_dict,drop_dupe_dict,key):
 
         #print key
-        my_file = self.cwd+'/data/social/%s.csv' % key
+        my_file = self.cwd+'/data/social/'+key+'/'+key+'.csv'
+
         workinglist = social_dict[key]
         #print workinglist
         if os.path.isfile(my_file):
@@ -242,7 +244,7 @@ class GetSocialData(object):
 
     def main(self):
         gsd = GetSocialData(self.symbol_list,self.exchanges,self.chunksize,self.cwd,self.reddit_ls,self.coderepository_ls,self.twitter_ls,self.cryptocompare_ls,self.general_ls,self.facebook_ls)
-        if os.path.isfile(self.cwd+'/data/coinlist_info.csv'):
+        if os.path.isfile(self.cwd+'/data/coininfo/coininfo.csv'):
             gsd.main_run()
 
         else:
