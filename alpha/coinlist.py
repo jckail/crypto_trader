@@ -16,9 +16,10 @@ import savetos3
 
 class GetCoinLists(object):
 
-    def __init__(self, cwd):
+    def __init__(self, cwd,catalog):
 
         self.cwd = cwd
+        self.catalog = catalog
 
 
     def func_get_coin_list(self):
@@ -56,7 +57,7 @@ class GetCoinLists(object):
                 df = df.drop_duplicates(['Symbol','source'], keep='last')
                 df = df.reset_index(drop=True)
                 df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
-                s3 = savetos3.SaveS3(my_file)
+                s3 = savetos3.SaveS3(my_file,self.catalog)
                 s3.main()
 
             else:
@@ -71,7 +72,7 @@ class GetCoinLists(object):
         print ('begin: GetCoinLists.main')
 
         try:
-            gcl = GetCoinLists(self.cwd)
+            gcl = GetCoinLists(self.cwd,self.catalog)
             gcl.func_get_coin_list()
 
         except Exception as e:
@@ -86,8 +87,8 @@ if __name__ == '__main__':
 
     :return:
     """
-    cwd = '/Users/jckail13/lit_crypto/alpha'
-    runner = GetCoinLists(cwd)
+    #cwd = os.getcwd()
+    runner = GetCoinLists()
 
     runner.main()
 

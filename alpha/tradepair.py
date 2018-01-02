@@ -15,10 +15,11 @@ import socket
 
 class GetTradePair(object):
 
-    def __init__(self, symbol_list,chunksize,cwd):
+    def __init__(self, symbol_list,chunksize,cwd,catalog):
         self.symbol_list = symbol_list
         self.chunksize = chunksize
         self.cwd = cwd
+        self.catalog = catalog
 
 
     def trading_partners(self,symbol,error_symbols):
@@ -56,7 +57,7 @@ class GetTradePair(object):
                         df = df.sort_values('timestamp_api_call')
                         df = df.reset_index(drop=True)
                         df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
-                        s3 = savetos3.SaveS3(my_file)
+                        s3 = savetos3.SaveS3(my_file,self.catalog)
                         s3.main()
                     else:
                         pass
@@ -88,7 +89,7 @@ class GetTradePair(object):
             source = 'cryptocompare'
             for x in append_list:
                 symbols.append(x)
-            gtp = GetTradePair(self.symbol_list,self.chunksize,self.cwd)
+            gtp = GetTradePair(self.symbol_list,self.chunksize,self.cwd,self.catalog)
 
 
             xsymbols = [self.symbol_list[x:x+self.chunksize] for x in range(0, len(self.symbol_list), self.chunksize )]
@@ -117,7 +118,7 @@ class GetTradePair(object):
         except requests.exceptions.RequestException as e:
             print(e)
         except OverflowError:
-            print('OverflowError: '+str(symbol))
+            print('OverflowError: ')
         except Exception as e:
             print(e)
 

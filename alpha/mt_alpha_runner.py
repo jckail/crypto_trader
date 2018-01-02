@@ -26,7 +26,9 @@ import tradepair
 import fetchprice
 import mtsocial
 import savetos3
-import postrunmtc
+import gluemaintenance
+import s3maintenance
+import awscatalogcreate
 
 
 class AlphaRunner(object):
@@ -56,6 +58,7 @@ class AlphaRunner(object):
         self.facebook_ls = []
         self.trade_pair = {}
         self.exchange_trade_pair = {}
+        self.catalog = ''
 
     def get_args(self):
         """
@@ -75,7 +78,7 @@ class AlphaRunner(object):
             try:
                 try:
                     if self.runfocus_symbols_only == 'N':
-                        cl = coinlist.GetCoinLists(self.cwd)
+                        cl = coinlist.GetCoinLists(self.cwd,self.catalog)
                         cl.main()
                         df = p.read_csv(self.cwd+'/data/coininfo/coininfo.csv', encoding= 'utf-8')
                         self.symbol_list = df["Symbol"].tolist()
@@ -90,7 +93,7 @@ class AlphaRunner(object):
 
                     #add processing queue
 
-                    #self.symbol_list = self.symbol_list[:100]
+                    #self.symbol_list = self.symbol_list[:10]
                     #
                     x = len(self.symbol_list)
                     # #self.symbol_list.append('SMT')
@@ -99,35 +102,35 @@ class AlphaRunner(object):
                     print ('--------------------------------------------------------------------------')
                     # #helps limit #threads open etc
                     #
-                    md = miningdata.GetMineData(self.cwd)
+                    md = miningdata.GetMineData(self.cwd,self.catalog)
                     md.main()
                     # # #thread1 = threading.Thread(target=md.main(), args=())
                     # #
                     print('--------------------------------------------------------------------------')
-                    mfp = fetchprice.GetDtlPrice(self.symbol_list, self.exchanges, self.chunksize,self.cwd) #chunk size not used here just broken up into 50 strings due to api list constraint
+                    mfp = fetchprice.GetDtlPrice(self.symbol_list, self.exchanges, self.chunksize,self.cwd,self.catalog) #chunk size not used here just broken up into 50 strings due to api list constraint
                     mfp.main()
                     # # #thread2 = threading.Thread(target=mfp.main(), args=())
                     print('--------------------------------------------------------------------------')
                     #
-                    tp = tradepair.GetTradePair(self.symbol_list,self.chunksize,self.cwd)
+                    tp = tradepair.GetTradePair(self.symbol_list,self.chunksize,self.cwd,self.catalog)
                     tp.main()
                     # # #thread3 = threading.Thread(target=tp.main(), args=())
                     print('--------------------------------------------------------------------------')
                     #
-                    mh = minute_hist.GetMinuteHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
+                    mh = minute_hist.GetMinuteHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd,self.catalog)
                     mh.main()
                     # thread4 = threading.Thread(target=mh.main(), args=())
                     #
-                    hh = hour_hist.GetHourHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
+                    hh = hour_hist.GetHourHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd,self.catalog)
                     hh.main()
                     # thread5 = threading.Thread(target=hh.main(), args=())
                     #
-                    dh = day_hist.GetDayHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
+                    dh = day_hist.GetDayHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd,self.catalog)
                     dh.main()
                     # thread6 = threading.Thread(target=dh.main(), args=())
                     print('--------------------------------------------------------------------------')
                     # #
-                    gsd = mtsocial.GetSocialData(self.symbol_list,self.exchanges,self.chunksize,self.cwd,\
+                    gsd = mtsocial.GetSocialData(self.symbol_list,self.exchanges,self.chunksize,self.cwd,self.catalog,\
                     self.reddit_ls,\
                     self.coderepository_ls,\
                     self.twitter_ls,\
@@ -165,14 +168,27 @@ class AlphaRunner(object):
     def main(self):
         start_time = dt.datetime.now()
         print ('-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
+        print ('-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
         print (self.args)
         s = setup.Setup(self.cwd)
         self.cwd = s.main()
         print(self.cwd)
-        print(self.chunksize)
+
+        cat = awscatalogcreate.CreateAwsCatalog(self.cwd)
+        self.catalog = cat.main()
+
+        s3 = s3maintenance.GetS3Bucket(self.catalog)
+        s3.main()
+
+        glue = gluemaintenance.RunGlue(self.catalog)
+        glue.main()
+
+        print('chunksize: '+str(self.chunksize))
+
         print ('---------------------------------------------------------------------------------------BEGIN---------------------------------------------------------------------------------------')
         self.alpha_runner()
-        prm = postrunmtc.RunGlue()
+        prm = gluemaintenance.RunGlue(self.catalog)
+
         prm.main()
         print ('---------------------------------------------------------------------------------------END---------------------------------------------------------------------------------------')
         x = dt.datetime.now() - start_time

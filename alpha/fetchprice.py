@@ -15,7 +15,8 @@ import socket
 
 class GetDtlPrice(object):
 
-    def __init__(self, symbol_list, exchanges, chunksize,cwd):
+    def __init__(self, symbol_list, exchanges, chunksize,cwd, catalog):
+        self.catalog = catalog
         self.symbol_list = symbol_list
         self.chunksize = chunksize
         self.exchanges = exchanges
@@ -71,7 +72,7 @@ class GetDtlPrice(object):
         print ('BEGIN: GetDtlPrice.main')
         try:
 
-            gdl = GetDtlPrice(self.symbol_list, self.exchanges, self.chunksize, self.cwd)
+            gdl = GetDtlPrice(self.symbol_list, self.exchanges, self.chunksize, self.cwd,self.catalog)
 
             xsymbols = [self.symbol_list[x:x+self.chunksize] for x in range(0, len(self.symbol_list), self.chunksize )]
             for  symbol_list in tqdm(xsymbols,desc='get_price_details_for_symbols'):
@@ -107,7 +108,7 @@ class GetDtlPrice(object):
                     df = df.sort_values('LASTUPDATE')
                     df = df.reset_index(drop=True)
                     df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
-                    s3 = savetos3.SaveS3(my_file)
+                    s3 = savetos3.SaveS3(my_file,self.catalog)
                     s3.main()
                 else:
                     pass
@@ -125,19 +126,19 @@ if __name__ == '__main__':
 
     :return:
     """
-    exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
-
-    cwd = '/Users/jckail13/lit_crypto_data/alpha'
-    chunksize = 50
-    df = p.read_csv(cwd+'/data/coininfo/coininfo.csv')
-    ls_has = df["Symbol"].tolist()
-    ls_has = ls_has [:10]
-    ls_has = ['BTC','BCH','LTC','ETH']
-    #print len(ls_has)
-    ls_has, 200, exchanges
+    # exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
+    #
+    # cwd = '/Users/jckail13/lit_crypto_data/alpha'
+    # chunksize = 50
+    # df = p.read_csv(cwd+'/data/coininfo/coininfo.csv')
+    # ls_has = df["Symbol"].tolist()
+    # ls_has = ls_has [:10]
+    # ls_has = ['BTC','BCH','LTC','ETH']
+    # #print len(ls_has)
+    # ls_has, 200, exchanges
     #start_time = dt.datetime.now()
 
-    runner = GetDtlPrice(ls_has, exchanges, chunksize,cwd)
+    runner = GetDtlPrice()
     #runner = GetDtlPrice()
     runner.main()
     #x =  dt.datetime.now() - start_time

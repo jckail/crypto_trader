@@ -15,7 +15,8 @@ import socket
 
 class GetMineData(object):
 
-    def __init__(self,cwd):
+    def __init__(self,cwd,catalog):
+        self.catalog = catalog
         self.cwd = cwd
         url = "https://www.cryptocompare.com/api/data/miningequipment/"
         headers = {
@@ -37,7 +38,8 @@ class GetMineData(object):
             if data["CoinData"]:
                 keys = list(data['CoinData'].keys())
 
-                for key in tqdm(keys,desc='coin_miner_data'):
+                #for key in tqdm(keys,desc='coin_miner_data'):
+                for key in keys:
                     frames = []
                     sub =  data['CoinData'][key]
 
@@ -47,7 +49,7 @@ class GetMineData(object):
                     frames.append(df)
 
                     my_file = self.cwd+'/data/mining_data/coin_miner_data/%s_mining.csv' % key
-
+                    #print(my_file)
                     if os.path.isfile(my_file):
                         df_resident = p.read_csv(my_file,  encoding= 'utf-8')
                         frames.append(df_resident)
@@ -59,7 +61,7 @@ class GetMineData(object):
                     df = df.reset_index(drop=True)
                     if not df.empty:
                         df.to_csv(my_file, index = False,  encoding= 'utf-8')
-                        s3 = savetos3.SaveS3(my_file)
+                        s3 = savetos3.SaveS3(my_file,self.catalog)
                         s3.main()
                     else:
                         print ('No '+str(key)+' data: '+key)
@@ -79,7 +81,8 @@ class GetMineData(object):
                 keys = list(data['MiningData'].keys())
                 frames = []
 
-                for key in tqdm(keys,desc='miner_data'):
+                #for key in tqdm(keys,desc='miner_data'):
+                for key in keys:
                     #print '----------'
                     #print key
                     sub =  data['MiningData'][key]
@@ -91,7 +94,7 @@ class GetMineData(object):
                     frames.append(df)
 
                 my_file = self.cwd+'/data/mining_data/miner_data/mining_equipment.csv'
-
+                #print(my_file)
                 if os.path.isfile(my_file):
                     df_resident = p.read_csv(my_file,  encoding= 'utf-8')
                     frames.append(df_resident)
@@ -106,7 +109,7 @@ class GetMineData(object):
                 if not df.empty:
                     df.to_csv(my_file, index = False,  encoding= 'utf-8' ) #need to add this
 
-                    s3 = savetos3.SaveS3(my_file)
+                    s3 = savetos3.SaveS3(my_file,self.catalog)
                     s3.main()
 
                     pass #print 'Updated: '+str(my_file)
@@ -125,8 +128,8 @@ class GetMineData(object):
         """
         print ('BEGIN: GetMineData.main')
         try:
-            gmd = GetMineData(self.cwd)
-            #gmd.coin_miner_data()
+            gmd = GetMineData(self.cwd,self.catalog)
+            gmd.coin_miner_data()
             gmd.miner_data()
 
         except Exception as e:
@@ -136,13 +139,13 @@ class GetMineData(object):
 
 
 if __name__ == '__main__':
-    symbols = ['BTC','BCH','LTC','ETH']
+    #symbols = ['BTC','BCH','LTC','ETH']
     """
 
     :return:
     """
-    cwd = '/Users/jckail13/lit_crypto_data/alpha'
-    runner = GetMineData() #pass symbols to run test in place
+    cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
+    runner = GetMineData(cwd,'litcryptodata') #pass symbols to run test in place
     runner.main()
 
 

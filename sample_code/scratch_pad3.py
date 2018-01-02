@@ -1,23 +1,37 @@
-# import boto3
-#
-# s3 = boto3.resource('s3')
-#
-# for bucket in s3.buckets.all():
-#     print (bucket.name)
-my_file = '/Users/jckail13/lit_crypto/alpha/data/coinlist_info.csv'
 import boto3
-import pandas as p
+client = boto3.client('glue')
 
-session = boto3.Session()
-s3_client = session.client('s3')
-try:
-    print("uploading file"),my_file
+class CheckDatabase:
 
-    tc = boto3.s3.transfer.TransferConfig()
-    t = boto3.s3.transfer.S3Transfer(client = s3_client,
-                                     config = tc)
-    t.upload_file(my_file,'litcrypto','data/coinlist_info.csv')
+    def __init__(self):
+        self.catalogid = '462455771080'
 
-except:
-    print ('ef')
+response = client.get_databases(
+    CatalogId='462455771080',
 
+    MaxResults=123
+)
+print(response)
+
+response = client.create_database(
+    CatalogId='string',
+    DatabaseInput={
+        'Name': 'string',
+        'Description': 'string',
+        'LocationUri': 'string',
+        'Parameters': {
+            'string': 'string'
+        }
+    }
+)
+
+if __name__ == '__main__':
+    my_file = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha/data/social/reddit/reddit.json'#.gz
+    cwd = my_file
+    #rg = RunGlue(my_file)
+    rg = RunGlue()
+    rg.main()
+
+print(response)
+
+#462455771080
