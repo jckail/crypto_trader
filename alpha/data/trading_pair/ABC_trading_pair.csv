@@ -1,4 +1,0 @@
-Id,exchange,fromSymbol,toSymbol,volume24h,volume24hTo,source,timestamp_api_call
-0,CCCAGG,ABC,BTC,21.38552366,0.07782812,cryptocompare,2017-12-27 19:46:45.408799
-1,CCCAGG,ABC,LTC,0.24050251,0.04088543,cryptocompare,2017-12-27 19:46:45.408799
-2,CCCAGG,ABC,DOGE,0.06200648,317.56665429,cryptocompare,2017-12-27 19:46:45.408799

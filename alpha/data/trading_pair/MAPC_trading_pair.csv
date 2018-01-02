@@ -1,3 +1,0 @@
-Id,exchange,fromSymbol,toSymbol,volume24h,volume24hTo,source,timestamp_api_call
-0,CCCAGG,MAPC,BTC,50,0.000391010855683,cryptocompare,2017-12-27 21:29:10.055536
-1,CCCAGG,MAPC,BTC,50,0.000391010855683,cryptocompare,2017-12-27 21:01:18.969832

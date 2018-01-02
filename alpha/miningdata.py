@@ -9,12 +9,14 @@ import os
 import threading
 from tqdm import tqdm
 from time import sleep
+import savetos3
+import socket
 
 
 class GetMineData(object):
 
-    def __init__(self):
-
+    def __init__(self,cwd):
+        self.cwd = cwd
         url = "https://www.cryptocompare.com/api/data/miningequipment/"
         headers = {
             'cache-control': "no-cache",
@@ -22,109 +24,115 @@ class GetMineData(object):
         }
         response = requests.request("GET", url, headers=headers)
         data = response.json()
+
         self.data = data
-        #print data
+
 
     def coin_miner_data(self):
+        try:
+            data = self.data
+            
+            source = 'cryptocompare'
 
-        data = self.data
-        cwd = os.getcwd()
-        source = 'cryptocompare'
+            if data["CoinData"]:
+                keys = list(data['CoinData'].keys())
 
-        if data["CoinData"]:
-            keys = data['CoinData'].keys()
+                for key in tqdm(keys,desc='coin_miner_data'):
+                    frames = []
+                    sub =  data['CoinData'][key]
 
-            for key in tqdm(keys,desc='coin_miner_data'):
+                    df = p.DataFrame.from_dict(sub,orient='Index', dtype=None)
+                    df = p.DataFrame.transpose(df)
+                    df = df.assign (timestamp_api_call = dt.datetime.now(),source = source,key = key )
+                    frames.append(df)
+
+                    my_file = self.cwd+'/data/mining_data/coin_miner_data/%s_mining.csv' % key
+
+                    if os.path.isfile(my_file):
+                        df_resident = p.read_csv(my_file,  encoding= 'utf-8')
+                        frames.append(df_resident)
+                    else:
+                        pass
+                    df = p.concat(frames)
+                    df = df.drop_duplicates(['Symbol','TotalCoinsMined','BlockReward','DifficultyAdjustment','BlockRewardReduction','BlockNumber','PreviousTotalCoinsMined'],  keep='last')
+                    df = df.sort_values('key')
+                    df = df.reset_index(drop=True)
+                    if not df.empty:
+                        df.to_csv(my_file, index = False,  encoding= 'utf-8')
+                        s3 = savetos3.SaveS3(my_file)
+                        s3.main()
+                    else:
+                        print ('No '+str(key)+' data: '+key)
+                print ('DONE')
+            else:
+                print ('No coin_miner_data')
+        except Exception as e:
+            print (e)
+
+
+    def miner_data(self):
+        try:
+            data = self.data
+            
+            source = 'cryptocompare'
+            if data["MiningData"]:
+                keys = list(data['MiningData'].keys())
                 frames = []
-                #print key
-                sub =  data['CoinData'][key]
-                #print sub
-                #print '----------'
 
-                df = p.DataFrame.from_dict(sub,orient='Index', dtype=None)
-                df = p.DataFrame.transpose(df)
-                df = df.assign (timestamp_api_call = dt.datetime.now(),source = source,key = key )
-                frames.append(df)
+                for key in tqdm(keys,desc='miner_data'):
+                    #print '----------'
+                    #print key
+                    sub =  data['MiningData'][key]
+                    #print '----------'
 
-                my_file = cwd+'/data/mining_data/%s_mining.csv' % key
+                    df = p.DataFrame.from_dict(sub,orient='Index', dtype=None)
+                    df = p.DataFrame.transpose(df)
+                    df = df.assign (timestamp_api_call = dt.datetime.now(),source = source,key = key )
+                    frames.append(df)
+
+                my_file = self.cwd+'/data/mining_data/miner_data/mining_equipment.csv'
 
                 if os.path.isfile(my_file):
-                    df_resident = p.read_csv(my_file)
+                    df_resident = p.read_csv(my_file,  encoding= 'utf-8')
                     frames.append(df_resident)
                 else:
                     pass
-                #print df
+
                 df = p.concat(frames)
-                df = df.drop_duplicates(['CoinName','Points','Type','Points','key'],  keep='last')
-                df = df.sort_values('key')
+                df = df.drop_duplicates(['Company','Cost','CurrenciesAvailable','HashesPerSecond','Name'],  keep='last')
+                df = df.sort_values('CurrenciesAvailable')
                 df = df.reset_index(drop=True)
-                #print '--------'
-                #print df
+
                 if not df.empty:
-                    #print my_file
-                    df.to_csv(my_file, index = False)
+                    df.to_csv(my_file, index = False,  encoding= 'utf-8' ) #need to add this
+
+                    s3 = savetos3.SaveS3(my_file)
+                    s3.main()
+
                     pass #print 'Updated: '+str(my_file)
                 else:
-                    print 'No '+str(key)+' data: '+key
-        else:
-            print 'No coin_miner_data'
-
-    def miner_data(self):
-        data = self.data
-        cwd = os.getcwd()
-        source = 'cryptocompare'
-        if data["MiningData"]:
-            keys = data['MiningData'].keys()
-            frames = []
-
-            for key in tqdm(keys,desc='miner_data'):
-                #print '----------'
-                #print key
-                sub =  data['MiningData'][key]
-                #print '----------'
-
-                df = p.DataFrame.from_dict(sub,orient='Index', dtype=None)
-                df = p.DataFrame.transpose(df)
-                df = df.assign (timestamp_api_call = dt.datetime.now(),source = source,key = key )
-                frames.append(df)
-
-            my_file = cwd+'/data/mining_data/mining_equipment.csv'
-
-            if os.path.isfile(my_file):
-                df_resident = p.read_csv(my_file)
-                frames.append(df_resident)
+                    print ('No data: ')
+                print ('DONE')
             else:
-                pass
-
-            df = p.concat(frames)
-            df = df.drop_duplicates(['Company','Cost','CurrenciesAvailable','HashesPerSecond','Name'],  keep='last')
-            df = df.sort_values('key')
-            df = df.reset_index(drop=True)
-
-            if not df.empty:
-                df.to_csv(my_file, index = False ) #need to add this
-                pass #print 'Updated: '+str(my_file)
-            else:
-                print 'No data: '
-        else:
-            print 'no miner_data'
+                print ('no miner_data')
+        except Exception as e:
+            print(e)
 
     def main(self):
         """
 
         :return:
         """
-        print 'begin: GetMineData.main'
+        print ('BEGIN: GetMineData.main')
         try:
-            gmd = GetMineData()
-            gmd.coin_miner_data()
+            gmd = GetMineData(self.cwd)
+            #gmd.coin_miner_data()
             gmd.miner_data()
 
+        except Exception as e:
+            print(e)
 
-        except:
-            print 'Error: GetMineData.main'
-
-        print 'end: GetMineData.main'
+        #print 'end: GetMineData.main'
 
 
 if __name__ == '__main__':
@@ -133,6 +141,7 @@ if __name__ == '__main__':
 
     :return:
     """
+    cwd = '/Users/jckail13/lit_crypto_data/alpha'
     runner = GetMineData() #pass symbols to run test in place
     runner.main()
 

@@ -1,30 +1,32 @@
 #!/usr/bin/env python
+
 #mods
 import argparse
 import os
 import pandas as p
-from multiprocessing import Pool, TimeoutError
-import time
-# classes
-import buildcoinlist
-import day_hist
-import test
+#from multiprocessing import Pool, TimeoutError
+#import timeurllib2urllib2
 import threading
 #add arg focus symbols only
 import datetime as dt
+import multiprocessing
+import socket
 
 
+
+# classes
+import coinlist
+import day_hist
+import setup
 import fetchprice
-import haspricing
 import hour_hist
 import minute_hist
-import social
 import miningdata
 import tradepair
 import fetchprice
-
-
-
+import mtsocial
+import savetos3
+import postrunmtc
 
 
 class AlphaRunner(object):
@@ -40,10 +42,20 @@ class AlphaRunner(object):
         self.runisprice = self.args.runisprice
         self.cwd = os.getcwd()
         self.focus_symbols = ['BTC','BCH','LTC','ETH']
+        self.symbol_list = []
+        # FULL LIST exchanges = ['Cryptsy', 'BTCChina', 'Bitstamp', 'BTER', 'OKCoin', 'Coinbase', 'Poloniex', 'Cexio', 'BTCE', 'BitTrex', 'Kraken', 'Bitfinex', 'Yacuna', 'LocalBitcoins', 'Yunbi', 'itBit', 'HitBTC', 'btcXchange', 'BTC38', 'Coinfloor', 'Huobi', 'CCCAGG', 'LakeBTC', 'ANXBTC', 'Bit2C', 'Coinsetter', 'CCEX', 'Coinse', 'MonetaGo', 'Gatecoin', 'Gemini', 'CCEDK', 'Cryptopia', 'Exmo', 'Yobit', 'Korbit', 'BitBay', 'BTCMarkets', 'Coincheck', 'QuadrigaCX', 'BitSquare', 'Vaultoro', 'MercadoBitcoin', 'Bitso', 'Unocoin', 'BTCXIndia', 'Paymium', 'TheRockTrading', 'bitFlyer', 'Quoine', 'Luno', 'EtherDelta', 'bitFlyerFX', 'TuxExchange', 'CryptoX', 'Liqui', 'MtGox', 'BitMarket', 'LiveCoin', 'Coinone', 'Tidex', 'Bleutrade', 'EthexIndia', 'Bithumb', 'CHBTC', 'ViaBTC', 'Jubi', 'Zaif', 'Novaexchange', 'WavesDEX', 'Binance', 'Lykke', 'Remitano', 'Coinroom', 'Abucoins', 'BXinth', 'Gateio', 'HuobiPro', 'OKEX']
         self.exchanges = ['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
         #self.exchanges = ['Coinbase']
-        self.chunksize = 199  #~~#thread limit
+        self.chunksize = 200  #~~#thread limit 199
         #self.org_params = json.load(open("config/cti_config.dict"))
+        self.reddit_ls = []
+        self.coderepository_ls = []
+        self.twitter_ls = []
+        self.cryptocompare_ls = []
+        self.general_ls = []
+        self.facebook_ls = []
+        self.trade_pair = {}
+        self.exchange_trade_pair = {}
 
     def get_args(self):
         """
@@ -54,136 +66,122 @@ class AlphaRunner(object):
         parser.add_argument('--runfocus_symbols_only', required=True, dest='runfocus_symbols_only', choices=['Y', 'N'], help='runfocus_symbols_only run')
         parser.add_argument('--runisprice', required= False, default= 'N',dest='runisprice', choices=['Y', 'N'], help='runfocus_symbols_only run')
         args = parser.parse_args()
-        print '------'+str(args)
+
         return args
 
-    def validate_coin_get_price(self):
-        print 'Chunk size: '+str(self.chunksize)
+    def alpha_runner(self):
         if self.run == 'Y':
-            print "Begin validate_coin_get_price"
+            print ("Begin alpha_runner")
             try:
                 try:
                     if self.runfocus_symbols_only == 'N':
-                        #get list of coins
-                        coin_df = buildcoinlist.GetCoinLists(self.runfocus_symbols_only,self.focus_symbols)
-                        gcl_output = coin_df.main()
-                        symbol_list = gcl_output["Symbol"].tolist()
-                        #symbol_list = symbol_list # for testing
-                        if self.runisprice == 'Y':
-                            has_pricing = []
-                            hpc = haspricing.HasPricingCheck(symbol_list,has_pricing,self.chunksize)
-                            hpc.main()
-                            df = p.read_csv(self.cwd+'/data/has_pricing.csv')
-                            df_has = df.query('has_pricing == 1')
-                            ls_has = df_has["symbol"].tolist()
-
-                        elif self.runisprice == 'N' and os.path.isfile(self.cwd+'/data/has_pricing.csv') == True:
-                            df = p.read_csv(self.cwd+'/data/coinlist_info.csv')
-                            #df_has = df.query('has_pricing == 1')
-                            ls_has = df["Symbol"].tolist()
-
-                        else:
-                            has_pricing = []
-                            hpc = haspricing.HasPricingCheck(symbol_list,has_pricing,self.chunksize)
-                            hpc.main()
-                            df = p.read_csv(self.cwd+'/data/has_pricing.csv')
-                            df_has = df.query('has_pricing == 1')
-                            ls_has = df_has["symbol"].tolist()
+                        cl = coinlist.GetCoinLists(self.cwd)
+                        cl.main()
+                        df = p.read_csv(self.cwd+'/data/coininfo/coininfo.csv', encoding= 'utf-8')
+                        self.symbol_list = df["Symbol"].tolist()
 
                     elif self.runfocus_symbols_only == 'Y':
-                        ls_has = self.focus_symbols
-                except ValueError:
-                    print 'error getting symbol_list'
+                         self.symbol_list = self.focus_symbols
+                except Exception as e:
+                    print(e)
+                    print ('error getting self.symbol_list')
 
                 try:
-                    x = len(ls_has)
-                    ls_has = ls_has[:200]
-                    print '--------------------------------------------------------------------------'
-                    print 'Evaluating: '+str(x)
-                    print '--------------------------------------------------------------------------'
-                    #helps limit #threads open etc
 
-                    md = miningdata.GetMineData()
+                    #add processing queue
+
+                    #self.symbol_list = self.symbol_list[:100]
+                    #
+                    x = len(self.symbol_list)
+                    # #self.symbol_list.append('SMT')
+                    print ('--------------------------------------------------------------------------')
+                    print ('Evaluating: '+str(x)+' Coins')
+                    print ('--------------------------------------------------------------------------')
+                    # #helps limit #threads open etc
+                    #
+                    md = miningdata.GetMineData(self.cwd)
                     md.main()
-                    #thread1 = #threading.Thread(target=md.main(), args=())
-
-                    print'--------------------------------------------------------------------------'
-                    mfp = fetchprice.GetDtlPrice(ls_has, self.exchanges, self.chunksize) #chunk size not used here just broken up into 50 strings due to api list constraint
+                    # # #thread1 = threading.Thread(target=md.main(), args=())
+                    # #
+                    print('--------------------------------------------------------------------------')
+                    mfp = fetchprice.GetDtlPrice(self.symbol_list, self.exchanges, self.chunksize,self.cwd) #chunk size not used here just broken up into 50 strings due to api list constraint
                     mfp.main()
-                    #thread2 = #threading.Thread(target=mfp.main(), args=())
-                    print'--------------------------------------------------------------------------'
-
-                    tp = tradepair.GetTradePair(ls_has)
-                    #tp.main()
-                    ##thread3 = #threading.Thread(target=tp.main(), args=())
-                    print'--------------------------------------------------------------------------'
-
-                    mh = minute_hist.GetMinuteHist(ls_has,self.exchanges,self.chunksize)
+                    # # #thread2 = threading.Thread(target=mfp.main(), args=())
+                    print('--------------------------------------------------------------------------')
+                    #
+                    tp = tradepair.GetTradePair(self.symbol_list,self.chunksize,self.cwd)
+                    tp.main()
+                    # # #thread3 = threading.Thread(target=tp.main(), args=())
+                    print('--------------------------------------------------------------------------')
+                    #
+                    mh = minute_hist.GetMinuteHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
                     mh.main()
-                    #thread4 = #threading.Thread(target=mh.main(), args=())
-
-                    hh = hour_hist.GetHourHist(ls_has,self.exchanges,self.chunksize)
+                    # thread4 = threading.Thread(target=mh.main(), args=())
+                    #
+                    hh = hour_hist.GetHourHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
                     hh.main()
-                    #thread5 = #threading.Thread(target=hh.main(), args=())
-
-                    dh = day_hist.GetDayHist(ls_has,self.exchanges,self.chunksize)
+                    # thread5 = threading.Thread(target=hh.main(), args=())
+                    #
+                    dh = day_hist.GetDayHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
                     dh.main()
-                    #thread6 = #threading.Thread(target=dh.main(), args=())
-                    print'--------------------------------------------------------------------------'
+                    # thread6 = threading.Thread(target=dh.main(), args=())
+                    print('--------------------------------------------------------------------------')
+                    # #
+                    gsd = mtsocial.GetSocialData(self.symbol_list,self.exchanges,self.chunksize,self.cwd,\
+                    self.reddit_ls,\
+                    self.coderepository_ls,\
+                    self.twitter_ls,\
+                    self.cryptocompare_ls,\
+                    self.general_ls,\
+                    self.facebook_ls)
+                    gsd.main()
 
-                    gsd = social.GetSocialData(ls_has)
-                    #gsd.main()
-                    ##thread7 = #threading.Thread(target=mfp.main(), args=())
-
-
-                    #thread1.start()
-                    #thread2.start()
-                    ##thread3.start()
-                    #thread4.start()
-                    #thread5.start()
-                    #thread6.start()
-
-                    #thread1.join()
-                    #thread2.join()
-                    ##thread3.join()
-                    #thread4.join()
-                    #thread5.join()
-                    #thread6.join()
-                    ##thread7.start()
-
+                    #
+                    # tp = newtradepair.GetTradePair(self.symbol_list,self.chunksize,self.cwd,self.trade_pair,self.exchanges,self.exchange_trade_pair)
+                    # tp.main()
+                    #print self.exchange_trade_pair.keys
+                    # nfp = newfetchprice.GetDtlPrice(self.symbol_list,self.chunksize,self.cwd,self.trade_pair,self.exchanges,self.exchange_trade_pair)
+                    # nfp.main()
+                    # print '---------'
+                    #fl = forloopfetchprice.GetDtlPrice(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
+                    #fl.main()
                         # non 0:00:35.364493
                         #multi#thread  0:00:21.039896
-                        #full run mutli #thread
+                        #full run mutli #threadCompletion time: 0:16:40.115999
 
-                except ValueError:
-                    print 'error on processing dtl, hist'
+
+                except Exception as e:
+                    print(e)
+                    print ('error on processing dtl, hist')
                 #askcurrentprice from has price/ if focus_symbols passed
 
-            except ValueError:
-                print "ERROR: validate_coin_get_price"
+            except Exception as e:
+                print(e)
+                print ("ERROR: alpha_runner")
 
         else:
-            print 'invalid args'
+            print ('invalid args')
 
     def main(self):
         start_time = dt.datetime.now()
-
-        print '----------------------------BEGIN----------------------------'
-        self.validate_coin_get_price()
-        print '----------------------------END----------------------------'
-        x =  dt.datetime.now() - start_time
-        print 'Completion time: '+str(x)
+        print ('-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
+        print (self.args)
+        s = setup.Setup(self.cwd)
+        self.cwd = s.main()
+        print(self.cwd)
+        print(self.chunksize)
+        print ('---------------------------------------------------------------------------------------BEGIN---------------------------------------------------------------------------------------')
+        self.alpha_runner()
+        prm = postrunmtc.RunGlue()
+        prm.main()
+        print ('---------------------------------------------------------------------------------------END---------------------------------------------------------------------------------------')
+        x = dt.datetime.now() - start_time
+        print ('Completion time: '+str(x))
+        print ('---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
 
 
 
 
 if __name__ == '__main__':
     ar = AlphaRunner()
-
     ar.main()
-
-
-
-
-
-
