@@ -65,7 +65,6 @@ class GetMineData(object):
                         s3.main()
                     else:
                         print ('No '+str(key)+' data: '+key)
-                print ('DONE')
             else:
                 print ('No coin_miner_data')
         except Exception as e:
@@ -115,7 +114,6 @@ class GetMineData(object):
                     pass #print 'Updated: '+str(my_file)
                 else:
                     print ('No data: ')
-                print ('DONE')
             else:
                 print ('no miner_data')
         except Exception as e:
@@ -131,6 +129,7 @@ class GetMineData(object):
             gmd = GetMineData(self.cwd,self.catalog)
             gmd.coin_miner_data()
             gmd.miner_data()
+            print ('DONE')
 
         except Exception as e:
             print(e)
