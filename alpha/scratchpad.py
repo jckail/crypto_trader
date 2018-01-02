@@ -28,15 +28,29 @@ class RunGlue:
         self.crawler_name = self.database+'crawler'
 
     def check_running(self):
+        rg = RunGlue(self.catalog)
+        #'RUNNING'
+        try:
+            response = self.client .get_crawlers()
+            print(response)
+            crawlers = response['Crawlers']
+            for crawler in crawlers:
+                if crawler['Name'] == self.crawler_name:
+                    if print(crawler['State']) == 'READY':
+                        rg.
+                    else:
+                        sleep(5)
+                        rg.check_running()
 
-        response = self.client.get_crawler_metrics(
-            CrawlerNameList=[
-                'string',
-            ],
-            MaxResults=123,
-            NextToken='string'
-        )
-        print(response)
+                else:
+                    pass
+
+
+
+
+        except Exception as e:
+            pass
+            print(e)
 
 
     def main(self):

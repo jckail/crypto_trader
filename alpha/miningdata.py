@@ -49,7 +49,7 @@ class GetMineData(object):
                     frames.append(df)
 
                     my_file = self.cwd+'/data/mining_data/coin_miner_data/%s_mining.csv' % key
-
+                    #print(my_file)
                     if os.path.isfile(my_file):
                         df_resident = p.read_csv(my_file,  encoding= 'utf-8')
                         frames.append(df_resident)
@@ -94,7 +94,7 @@ class GetMineData(object):
                     frames.append(df)
 
                 my_file = self.cwd+'/data/mining_data/miner_data/mining_equipment.csv'
-
+                #print(my_file)
                 if os.path.isfile(my_file):
                     df_resident = p.read_csv(my_file,  encoding= 'utf-8')
                     frames.append(df_resident)
@@ -129,7 +129,7 @@ class GetMineData(object):
         print ('BEGIN: GetMineData.main')
         try:
             gmd = GetMineData(self.cwd,self.catalog)
-            #gmd.coin_miner_data()
+            gmd.coin_miner_data()
             gmd.miner_data()
 
         except Exception as e:
@@ -144,8 +144,8 @@ if __name__ == '__main__':
 
     :return:
     """
-    cwd = '/Users/jckail13/lit_crypto_data/alpha'
-    runner = GetMineData() #pass symbols to run test in place
+    cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
+    runner = GetMineData(cwd,'litcryptodata') #pass symbols to run test in place
     runner.main()
 
 

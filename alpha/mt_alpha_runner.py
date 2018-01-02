@@ -93,7 +93,7 @@ class AlphaRunner(object):
 
                     #add processing queue
 
-                    self.symbol_list = self.symbol_list[:10]
+                    #self.symbol_list = self.symbol_list[:10]
                     #
                     x = len(self.symbol_list)
                     # #self.symbol_list.append('SMT')
@@ -173,16 +173,22 @@ class AlphaRunner(object):
         s = setup.Setup(self.cwd)
         self.cwd = s.main()
         print(self.cwd)
+
         cat = awscatalogcreate.CreateAwsCatalog(self.cwd)
         self.catalog = cat.main()
+
         s3 = s3maintenance.GetS3Bucket(self.catalog)
         s3.main()
+
         glue = gluemaintenance.RunGlue(self.catalog)
         glue.main()
+
         print('chunksize: '+str(self.chunksize))
+
         print ('---------------------------------------------------------------------------------------BEGIN---------------------------------------------------------------------------------------')
         self.alpha_runner()
         prm = gluemaintenance.RunGlue(self.catalog)
+
         prm.main()
         print ('---------------------------------------------------------------------------------------END---------------------------------------------------------------------------------------')
         x = dt.datetime.now() - start_time

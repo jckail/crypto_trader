@@ -61,7 +61,7 @@ class GetSocialData(object):
                     data = response.json()
                     if data["Data"]:
                         sub_data = data["Data"]
-                        keys = sub_data.keys()
+                        keys = list(sub_data.keys())
                         for key in keys:
                             frames =[]
                             ############################################################################################################################################################
@@ -139,32 +139,44 @@ class GetSocialData(object):
                 pass
 
     def create_social_files(self,social_dict,drop_dupe_dict,key):
+        try:
+            #print key
+            my_file = self.cwd+'/data/social/'+key+'/'+key+'.csv'
+            #print(my_file)
+            #print(social_dict[key])
+            workinglist = list(social_dict[key])
 
-        #print key
-        my_file = self.cwd+'/data/social/'+key+'/'+key+'.csv'
+            #print workinglist
+            if os.path.isfile(my_file):
+                df_resident = p.read_csv(my_file,  encoding= 'utf-8')
+                workinglist.append(df_resident)
+            else:
+                pass
+            df = p.concat(workinglist)
 
-        workinglist = social_dict[key]
-        #print workinglist
-        if os.path.isfile(my_file):
-            df_resident = p.read_csv(my_file,  encoding= 'utf-8')
-            workinglist.append(df_resident)
-        else:
-            pass
-        df = p.concat(workinglist)
-        if key in drop_dupe_dict.keys():
-            df = df.drop_duplicates(drop_dupe_dict[key], keep='last')
-        else:
-            print('drop dupe no key')
-            df = df
 
-        df = df.sort_values('symbol')
-        df = df.reset_index(drop=True)
-        if not df.empty:
-            df.to_csv(my_file, index = False,  encoding= 'utf-8')
-            s3 = savetos3.SaveS3(my_file)
-            s3.main()
-        else:
-            pass
+            #print (drop_dupe_dict)
+            if key in list(drop_dupe_dict.keys()):
+                #print(key)
+                #print(drop_dupe_dict[key])
+                #df = df.drop_duplicates(drop_dupe_dict[key], keep='last')
+                pass
+
+            else:
+                print('drop dupe no key')
+                #df = df
+
+            df = df.sort_values('symbol')
+            df = df.reset_index(drop=True)
+            if not df.empty:
+                df.to_csv(my_file, index = False,  encoding= 'utf-8')
+                s3 = savetos3.SaveS3(my_file,self.catalog)
+                s3.main()
+            else:
+                pass
+        except Exception as e:
+            print(e)
+            print(key)
 
 
     def main_run(self):
@@ -175,9 +187,6 @@ class GetSocialData(object):
         """
         print('begin: GetSocialData.main')
         try:
-
-
-
             error_symbols = []
             gsd = GetSocialData(self.symbol_list,self.exchanges,self.chunksize,self.cwd,self.catalog, \
                                 self.reddit_ls, \
@@ -220,7 +229,8 @@ class GetSocialData(object):
                              }
             #
             #print social_dict
-            keys = social_dict.keys()
+            keys = list(social_dict.keys())
+            #print(keys)
             #gsd.create_social_files(key)
 
             threads = [threading.Thread(target=gsd.create_social_files, args=(social_dict,drop_dupe_dict,key,)) for key in keys]
@@ -249,43 +259,62 @@ class GetSocialData(object):
         print('DONE')
 
     def main(self):
-        gsd = GetSocialData(self.symbol_list,self.exchanges,self.chunksize,self.cwd,self.reddit_ls,self.coderepository_ls,self.twitter_ls,self.cryptocompare_ls,self.general_ls,self.facebook_ls)
+        gsd = GetSocialData(self.symbol_list,self.exchanges,self.chunksize,self.cwd,self.catalog, \
+                            self.reddit_ls, \
+                            self.coderepository_ls, \
+                            self.twitter_ls, \
+                            self.cryptocompare_ls, \
+                            self.general_ls, \
+                            self.facebook_ls)
         if os.path.isfile(self.cwd+'/data/coininfo/coininfo.csv'):
             gsd.main_run()
 
         else:
             print("repopulating coinlist")
-            cl = coinlist.GetCoinLists(self.cwd)
+            cl = coinlist.GetCoinLists(self.cwd,self.catalog)
             cl.main()
             gsd.main_run()
 
 
 if __name__ == '__main__':
-    # ls_has = ['BTC','BCH','LTC','ETH']
-    # cwd = '/Users/jkail/Documents/GitHub/lit_crypto/alpha/'
-    # df = p.read_csv(cwd+'data/coinlist_info.csv')
-    # ls_has = df["Symbol"].tolist()
-    # ls_has = ls_has[:100]
-    # exchanges = ['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
-    # cwd = '/Users/jkail/Documents/GitHub/lit_crypto/alpha/'
     """
 
     :return:
     """
+
+    # cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
+    # catalog = 'litcryptodata'
     # reddit_ls = []
     # coderepository_ls = []
     # twitter_ls = []
     # cryptocompare_ls = []
     # general_ls = []
     # facebook_ls = []
-
-    #self.exchanges,self.chunksize,self.cwd)
-    #runner = GetSocialData(ls_has, exchanges, 199,cwd,reddit_ls,coderepository_ls,twitter_ls,cryptocompare_ls,general_ls,facebook_ls ) #pass symbol_list to run test in place
-
-
+    # df = p.read_csv(cwd+'/data/coininfo/coininfo.csv')
+    # symbol_list = df["Symbol"].tolist()
+    # symbol_list = symbol_list [:10]
+    # exchanges = ['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
+    # chunksize = 50
+    #
+    #
+    # runner = GetSocialData(symbol_list,exchanges,chunksize,cwd,catalog, \
+    #                        reddit_ls, \
+    #                        coderepository_ls, \
+    #                        twitter_ls, \
+    #                        cryptocompare_ls, \
+    #                        general_ls, \
+    #                        facebook_ls)
     runner = GetSocialData()
-    #runner = GetSocialData(ls_has, exchanges, 199,cwd,reddit_ls,coderepository_ls,twitter_ls,cryptocompare_ls,general_ls,facebook_ls ) #pass symbol_list to run test in place
     runner.main()
 
+"""
+            drop_dupe_dict ={"reddit":['name','comments_per_hour','posts_per_day','Points','subscribers','symbol']\
+                             ,"coderepository":['closed_issues','closed_pull_issues','language','last_update','subscribers','stars','symbol'] \
+                             ,"twitter":['account_creation','name','Points','followers','statuses','symbol']\
+                             ,"cryptocompare":['PageViews','Posts','Comments','Points','Followers','symbol']\
+                             ,"general":['CoinName','Points','Type','Points','symbol']\
+                             ,"facebook":['name','talking_about','Points','likes','symbol']\
+                             }
 
+"""
 
