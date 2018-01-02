@@ -108,12 +108,12 @@ class GetMinuteHist(object):
 
 
 if __name__ == '__main__':
-    exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
-    cwd = '/Users/jckail13/lit_crypto/alpha'
-    df = p.read_csv(cwd+'/data/coininfo/coininfo.csv')
-    ls_has = df["Symbol"].tolist()
-    ls_has = ls_has[:100]
-    runner = GetMinuteHist(ls_has, exchanges, 100, cwd)
+    # exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
+    # cwd = '/Users/jckail13/lit_crypto/alpha'
+    # df = p.read_csv(cwd+'/data/coininfo/coininfo.csv')
+    # ls_has = df["Symbol"].tolist()
+    # ls_has = ls_has[:100]
+    runner = GetMinuteHist()
     #runner = GetMinuteHist()
     runner.main()
     #print '--------------------------------------------------------------------------'

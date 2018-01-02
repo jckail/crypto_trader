@@ -139,7 +139,7 @@ class GetMineData(object):
 
 
 if __name__ == '__main__':
-    symbols = ['BTC','BCH','LTC','ETH']
+    #symbols = ['BTC','BCH','LTC','ETH']
     """
 
     :return:

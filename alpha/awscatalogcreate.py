@@ -23,6 +23,6 @@ class CreateAwsCatalog:
 
 
 if __name__ == '__main__':
-    cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
+    #cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
     cat = CreateAwsCatalog()
     catalog = cat.main()

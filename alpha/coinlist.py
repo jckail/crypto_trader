@@ -87,7 +87,7 @@ if __name__ == '__main__':
 
     :return:
     """
-    cwd = os.getcwd()
+    #cwd = os.getcwd()
     runner = GetCoinLists()
 
     runner.main()

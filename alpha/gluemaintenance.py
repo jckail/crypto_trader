@@ -14,13 +14,12 @@ import shutil
 import socket
 import validatedatabase
 
-
 class RunGlue:
     def __init__(self, catalog):
         self.client = boto3.client('glue')
         self.catalog = catalog
 
-        self.s3_path = 's3://%s/' % 'litcryptodata'
+        self.s3_path = 's3://%s/' % self.catalog
         self.cron = 'cron(15 12 * * ? *)'
 
 
@@ -96,7 +95,7 @@ class RunGlue:
 
 if __name__ == '__main__':
 
-    x = 'litcryptodata'
+    #x = 'litcryptodata'
     rg = RunGlue()
     rg.main()
 

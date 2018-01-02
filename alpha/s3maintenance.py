@@ -45,7 +45,7 @@ class GetS3Bucket:
 
 
 if __name__ == '__main__':
-    cwd = '/Users/jckail13/lit_crypto_data/alpha/data/coininfo/coininfo.csv'
-    s3 = GetS3Bucket('litcryptodata')
+    #cwd = '/Users/jckail13/lit_crypto_data/alpha/data/coininfo/coininfo.csv'
+    s3 = GetS3Bucket()
     #rg = RunGlue()
     s3.main()

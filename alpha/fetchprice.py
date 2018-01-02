@@ -126,19 +126,19 @@ if __name__ == '__main__':
 
     :return:
     """
-    exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
-
-    cwd = '/Users/jckail13/lit_crypto_data/alpha'
-    chunksize = 50
-    df = p.read_csv(cwd+'/data/coininfo/coininfo.csv')
-    ls_has = df["Symbol"].tolist()
-    ls_has = ls_has [:10]
-    ls_has = ['BTC','BCH','LTC','ETH']
-    #print len(ls_has)
-    ls_has, 200, exchanges
+    # exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
+    #
+    # cwd = '/Users/jckail13/lit_crypto_data/alpha'
+    # chunksize = 50
+    # df = p.read_csv(cwd+'/data/coininfo/coininfo.csv')
+    # ls_has = df["Symbol"].tolist()
+    # ls_has = ls_has [:10]
+    # ls_has = ['BTC','BCH','LTC','ETH']
+    # #print len(ls_has)
+    # ls_has, 200, exchanges
     #start_time = dt.datetime.now()
 
-    runner = GetDtlPrice(ls_has, exchanges, chunksize,cwd)
+    runner = GetDtlPrice()
     #runner = GetDtlPrice()
     runner.main()
     #x =  dt.datetime.now() - start_time
