@@ -22,7 +22,7 @@ class GetDtlPrice(object):
         self.cwd = cwd
 
     def get_price_details_for_symbols(self,symbol,frames,error_symbols):
-        xsymbols = [self.symbol_list[x:x+50] for x in xrange(0, len(self.symbol_list), 50 )]
+        xsymbols = [self.symbol_list[x:x+50] for x in range(0, len(self.symbol_list), 50 )]
         for symbol2 in xsymbols:
             if x in symbol2:
                 symbol2.remove(symbol)
@@ -85,7 +85,7 @@ class GetDtlPrice(object):
 
             gdl = GetDtlPrice(self.symbol_list, self.exchanges, self.chunksize, self.cwd)
 
-            xsymbols = [self.symbol_list[x:x+self.chunksize] for x in xrange(0, len(self.symbol_list), self.chunksize )]
+            xsymbols = [self.symbol_list[x:x+self.chunksize] for x in range(0, len(self.symbol_list), self.chunksize )]
             for  symbol_list in tqdm(xsymbols,desc='get_price_details_for_symbols'):
 
                 threads = [threading.Thread(target=gdl.get_price_details_for_symbols, args=(symbol,frames,error_symbols,)) for symbol in symbol_list]

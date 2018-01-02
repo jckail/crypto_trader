@@ -34,10 +34,9 @@ class GetDtlPrice(object):
             }
             try:
                 response = requests.request("GET", url, headers=headers, params=querystring)
-
                 if response.status_code == 200:
                     data = response.json()
-                    if data.keys()[0] == "RAW":
+                    if list(data.keys())[0] == "RAW":
                         df = p.DataFrame(data["RAW"][symbol])
                         df = p.DataFrame.transpose(df)
                         df = df.assign (coin = symbol, coin_units = 1, timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname())
@@ -71,10 +70,10 @@ class GetDtlPrice(object):
         error_symbols = []
         print ('BEGIN: GetDtlPrice.main')
         try:
-            
+
             gdl = GetDtlPrice(self.symbol_list, self.exchanges, self.chunksize, self.cwd)
 
-            xsymbols = [self.symbol_list[x:x+self.chunksize] for x in xrange(0, len(self.symbol_list), self.chunksize )]
+            xsymbols = [self.symbol_list[x:x+self.chunksize] for x in range(0, len(self.symbol_list), self.chunksize )]
             for  symbol_list in tqdm(xsymbols,desc='get_price_details_for_symbols'):
 
                 threads = [threading.Thread(target=gdl.get_price_details_for_symbols, args=(symbol,frames,error_symbols,)) for symbol in symbol_list]
@@ -97,19 +96,21 @@ class GetDtlPrice(object):
             if os.path.isfile(my_file):
                 df_resident = p.read_csv(my_file)
                 frames.append(df_resident)
-
             else:
                 pass
 
-            df = p.concat(frames)
+            if len(frames) > 0:
+                df = p.concat(frames)
 
-            if not df.empty:
-                df = df.drop_duplicates(['FROMSYMBOL','LASTUPDATE','LASTMARKET','MARKET'], keep='last')
-                df = df.sort_values('LASTUPDATE')
-                df = df.reset_index(drop=True)
-                df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
-                s3 = savetos3.SaveS3(my_file)
-                s3.main()
+                if not df.empty:
+                    df = df.drop_duplicates(['FROMSYMBOL','LASTUPDATE','LASTMARKET','MARKET'], keep='last')
+                    df = df.sort_values('LASTUPDATE')
+                    df = df.reset_index(drop=True)
+                    df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
+                    s3 = savetos3.SaveS3(my_file)
+                    s3.main()
+                else:
+                    pass
             else:
                 pass
             print('DONE')
@@ -119,24 +120,25 @@ class GetDtlPrice(object):
             print('Error: GetDtlPrice.main')
 
 
-
-
 if __name__ == '__main__':
     """
 
     :return:
     """
-    #exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
-    #
-    #df = p.read_csv(self.cwd+'/data/coininfo/coininfo.csv')
-    #ls_has = df["Symbol"].tolist()
-    #ls_has = ls_has
-    #ls_has = ['BTC','BCH','LTC','ETH']
+    exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
+
+    cwd = '/Users/jckail13/lit_crypto_data/alpha'
+    chunksize = 50
+    df = p.read_csv(cwd+'/data/coininfo/coininfo.csv')
+    ls_has = df["Symbol"].tolist()
+    ls_has = ls_has [:10]
+    ls_has = ['BTC','BCH','LTC','ETH']
     #print len(ls_has)
-    #ls_has, 200, exchanges
+    ls_has, 200, exchanges
     #start_time = dt.datetime.now()
 
-    runner = GetDtlPrice()
+    runner = GetDtlPrice(ls_has, exchanges, chunksize,cwd)
+    #runner = GetDtlPrice()
     runner.main()
     #x =  dt.datetime.now() - start_time
     #print 'Completion time: '+str(x)

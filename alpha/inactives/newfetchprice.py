@@ -30,7 +30,7 @@ class GetDtlPrice(object):
             xlist = self.exchange_trade_pair[exchange][symbol]
 
             #print symbol
-            xsymbols = [xlist[x:x+50] for x in xrange(0, len(xlist), 50 )]
+            xsymbols = [xlist[x:x+50] for x in range(0, len(xlist), 50 )]
 
             for xsym in xsymbols:
                 # print len(xsym)
@@ -111,7 +111,7 @@ class GetDtlPrice(object):
                 # print '------'
                 # print len(dict[key].keys())
                 # print '------'
-            xsymbols = [dict[key].keys()[x:x+self.chunksize] for x in xrange(0, len(dict[key].keys()), self.chunksize )]
+            xsymbols = [dict[key].keys()[x:x+self.chunksize] for x in range(0, len(dict[key].keys()), self.chunksize )]
 
             for symbol_list in tqdm(xsymbols,desc='get_price_details_for_symbols'):
 

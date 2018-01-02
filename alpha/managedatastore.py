@@ -36,7 +36,7 @@ class RunGlue:
 
     def create_crawler(self):
 
-        print('Creating: '+self.crawler_name)
+        print('Creating Crawler: '+self.crawler_name)
 
         response = self.client.create_crawler(
             Name=self.crawler_name,
@@ -66,7 +66,8 @@ class RunGlue:
         try:
             response = self.client.start_crawler(Name=self.crawler_name)
         except Exception as e:
-            print(e)
+            pass
+            #print(e)
 
     def validate_create_crawler(self):
 
@@ -88,6 +89,8 @@ class RunGlue:
         try:
             rg = RunGlue(self.my_file)
             rg.validate_create_crawler()
+            print(self.s3_path )
+            print(self.crawler_name)
             rg.run_crawler()
 
         except Exception as e:

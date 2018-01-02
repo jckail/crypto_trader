@@ -52,7 +52,7 @@ class HasPricingCheck(object):
 
         hpc = HasPricingCheck(self.symbol_list,self.has_pricing,self.chunksize )
 
-        xsymbols = [self.symbol_list[x:x+self.chunksize] for x in xrange(0, len(self.symbol_list), self.chunksize )]
+        xsymbols = [self.symbol_list[x:x+self.chunksize] for x in range(0, len(self.symbol_list), self.chunksize )]
 
         print 'Begin: validate_price_info'
 

@@ -20,7 +20,7 @@ class Setup(object):
         new_data_directory = '/'.join(cwd_split[:target_ibdex-1])+'/lit_crypto_data/alpha'
 
         self.cwd = new_data_directory
-        print(self.cwd)
+        #print(self.cwd)
 
         if not os.path.exists(self.cwd):
             os.makedirs(self.cwd)
@@ -64,11 +64,11 @@ class Setup(object):
 
     def main(self):
         try:
-            print(self.cwd)
+            #print(self.cwd)
             s = Setup(self.cwd)
             self.cwd = s.build_data_path()
             s.validate_directories()
-            print(self.cwd)
+            #print(self.cwd)
             return self.cwd
         except Exception as e:
             print(e)
@@ -77,6 +77,6 @@ if __name__ == '__main__':
 
     cwd = os.getcwd()
 
-    s = Setup()
+    s = Setup(cwd)
     s.main()
 

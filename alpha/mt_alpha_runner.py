@@ -70,7 +70,6 @@ class AlphaRunner(object):
         return args
 
     def alpha_runner(self):
-        print ('Chunk size: '+str(self.chunksize))
         if self.run == 'Y':
             print ("Begin alpha_runner")
             try:
@@ -91,7 +90,7 @@ class AlphaRunner(object):
 
                     #add processing queue
 
-                    self.symbol_list = self.symbol_list[:10]
+                    #self.symbol_list = self.symbol_list[:10]
                     #
                     x = len(self.symbol_list)
                     # #self.symbol_list.append('SMT')
@@ -167,10 +166,11 @@ class AlphaRunner(object):
         start_time = dt.datetime.now()
         print ('-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
         print (self.args)
-        print (self.cwd)
-        print ('---------------------------------------------------------------------------------------BEGIN---------------------------------------------------------------------------------------')
         s = setup.Setup(self.cwd)
         self.cwd = s.main()
+        print(self.cwd)
+        print(self.chunksize)
+        print ('---------------------------------------------------------------------------------------BEGIN---------------------------------------------------------------------------------------')
         self.alpha_runner()
         rg = postrunmtc.RunGlue()
         rg.main()

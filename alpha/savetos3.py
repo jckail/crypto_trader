@@ -62,12 +62,12 @@ class SaveS3(object):
             self.basename = basename(self.file)
             #print(self.file,'litcrypto',self.s3_directory+self.basename)
             s3.meta.client.upload_file(self.file,'litcrypto',self.s3_directory+self.basename )
-
             #multipart_upload_part = self.s3.MultipartUploadPart('litcrypto',self.s3_directory+self.basename,'multipart_upload_id','part_number')
             #s3.upload_fileobj(x,'litcrypto','data/coinlist_info')
 
         except Exception as e:
             print(e)
+            pass
 
     def main(self):
         try:
@@ -77,8 +77,8 @@ class SaveS3(object):
             s3.to_json()
             s3.gzip_jsons()
             s3.save_to_s3()
-            rg = managedatastore.RunGlue(self.file)
-            rg.main()
+            #rg = managedatastore.RunGlue(self.file)
+            #rg.main()
         except Exception as e:
             print(e)
 
@@ -89,10 +89,10 @@ if __name__ == '__main__':
 
     :return:
     """
-    file ='/Users/jckail13/lit_crypto_data/alpha/data/social/reddit/reddit.json'
+    file = '/Users/jckail13/lit_crypto_data/alpha/data/coininfo/coininfo.csv'
 
-    #runner = SaveS3(file)
-    runner = SaveS3()
+    runner = SaveS3(file)
+    #runner = SaveS3()
     runner.main()
 
 

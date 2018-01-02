@@ -91,7 +91,7 @@ class GetTradePair(object):
             gtp = GetTradePair(self.symbol_list,self.chunksize,self.cwd)
 
 
-            xsymbols = [self.symbol_list[x:x+self.chunksize] for x in xrange(0, len(self.symbol_list), self.chunksize )]
+            xsymbols = [self.symbol_list[x:x+self.chunksize] for x in range(0, len(self.symbol_list), self.chunksize )]
 
             for symbol_list in tqdm(xsymbols,desc='trading_partners'):
 

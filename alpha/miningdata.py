@@ -35,7 +35,7 @@ class GetMineData(object):
             source = 'cryptocompare'
 
             if data["CoinData"]:
-                keys = data['CoinData'].keys()
+                keys = list(data['CoinData'].keys())
 
                 for key in tqdm(keys,desc='coin_miner_data'):
                     frames = []
@@ -76,7 +76,7 @@ class GetMineData(object):
             
             source = 'cryptocompare'
             if data["MiningData"]:
-                keys = data['MiningData'].keys()
+                keys = list(data['MiningData'].keys())
                 frames = []
 
                 for key in tqdm(keys,desc='miner_data'):
@@ -100,13 +100,15 @@ class GetMineData(object):
 
                 df = p.concat(frames)
                 df = df.drop_duplicates(['Company','Cost','CurrenciesAvailable','HashesPerSecond','Name'],  keep='last')
-                df = df.sort_values('key')
+                df = df.sort_values('CurrenciesAvailable')
                 df = df.reset_index(drop=True)
 
                 if not df.empty:
                     df.to_csv(my_file, index = False,  encoding= 'utf-8' ) #need to add this
+
                     s3 = savetos3.SaveS3(my_file)
                     s3.main()
+
                     pass #print 'Updated: '+str(my_file)
                 else:
                     print ('No data: ')
@@ -124,7 +126,7 @@ class GetMineData(object):
         print ('BEGIN: GetMineData.main')
         try:
             gmd = GetMineData(self.cwd)
-            gmd.coin_miner_data()
+            #gmd.coin_miner_data()
             gmd.miner_data()
 
         except Exception as e:
@@ -139,6 +141,7 @@ if __name__ == '__main__':
 
     :return:
     """
+    cwd = '/Users/jckail13/lit_crypto_data/alpha'
     runner = GetMineData() #pass symbols to run test in place
     runner.main()
 

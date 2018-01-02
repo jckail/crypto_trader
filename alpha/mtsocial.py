@@ -182,7 +182,7 @@ class GetSocialData(object):
             gsd = GetSocialData(self.symbol_list,self.exchanges,self.chunksize,self.cwd,self.reddit_ls,self.coderepository_ls,self.twitter_ls,self.cryptocompare_ls,self.general_ls,self.facebook_ls)
             #gsd.get_socials()
 
-            xsymbols = [self.symbol_list[x:x+self.chunksize] for x in xrange(0, len(self.symbol_list), self.chunksize )]
+            xsymbols = [self.symbol_list[x:x+self.chunksize] for x in range(0, len(self.symbol_list), self.chunksize )]
 
 
             for symbol_list in tqdm(xsymbols,desc='get_socials'):
@@ -223,7 +223,7 @@ class GetSocialData(object):
                 thread.start()
 
             #for thread in tqdm(threads,desc='Closed Threads'):
-            for thread in tqdm(threads,desc='social_dict'):
+            for thread in threads:
                 thread.join()
 
                 if len(error_symbols) > 0:
@@ -235,7 +235,7 @@ class GetSocialData(object):
         except requests.exceptions.RequestException as e:
             print(e)
         except OverflowError:
-            print('OverflowError: '+str(symbol))
+            print('OverflowError: ')
         except Exception as e:
             print(e)
 

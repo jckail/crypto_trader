@@ -76,7 +76,7 @@ class GetHourHist(object):
         error_symbols = []
         gmt = GetHourHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd)
 
-        xsymbols = [self.symbol_list[x:x+self.chunksize] for x in xrange(0, len(self.symbol_list), self.chunksize )]
+        xsymbols = [self.symbol_list[x:x+self.chunksize] for x in range(0, len(self.symbol_list), self.chunksize )]
 
         print('Begin: get_hour_hist')
 
