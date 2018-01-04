@@ -32,6 +32,7 @@ class Setup(object):
     def validate_directories(self):
         try:
             create_list = ['/data/'\
+                ,'/data/coinmarketcap/'\
                 ,'/data/day_data/'\
                 ,'/data/hour_data/'\
                 ,'/data/mining_data/'\

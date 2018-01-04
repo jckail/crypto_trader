@@ -1,57 +1,46 @@
 import requests
 import pandas as p
 import datetime as dt
-import os
-import threading
-from tqdm import tqdm
-from time import sleep
-import boto3
-from os.path import basename
-import json
-import csv
-import gzip
-import shutil
 import socket
-import validatedatabase
-
-class RunGlue:
-    def __init__(self, catalog):
-        self.client = boto3.client('glue')
-        self.catalog = catalog
-
-        self.s3_path = 's3://%s/' % self.catalog
-        self.cron = 'cron(15 12 * * ? *)'
+import os
 
 
-        self.database = self.catalog
+    def ticker():
+    cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
+    frames = []
 
-        self.crawler_name = self.database+'crawler'
+    url = "https://api.coinmarketcap.com/v1/ticker/"
 
-    def check_running(self):
+    querystring = {"limit":"0"}
 
-        response = self.client.get_crawler_metrics(
-            CrawlerNameList=[
-                'string',
-            ],
-            MaxResults=123,
-            NextToken='string'
-        )
-        print(response)
+    headers = {
+        'cache-control': "no-cache",
+        'postman-token': "a9ed8f5a-9fa5-b77b-6d59-ab97bb499b5e"
+    }
 
-
-    def main(self):
-        try:
+    response = requests.request("GET", url, headers=headers, params=querystring)
 
 
-            rg1 = RunGlue(self.catalog)
-            rg1.check_running()
+    data = response.json()
 
-        except Exception as e:
-            pass
-            print(e)
+    df = p.DataFrame(data)
+    df = df.assign( timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname())
+    frames.append(df)
+    print(df)
 
-if __name__ == '__main__':
+    my_file = cwd+'/data/day_data/ticker.csv'
+    if os.path.isfile(my_file):
+        df_resident = p.read_csv(my_file,  encoding= 'utf-8')
+        frames.append(df_resident)
+    else:
+        pass
+    df = p.concat(frames)
+    if not df.empty:
+        df = df.drop_duplicates(['symbol','last_updated'], keep='last')
+        df = df.sort_values('time')
+        df = df.reset_index(drop=True)
+        df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
+        s3 = savetos3.SaveS3(my_file,catalog)
+        s3.main()
 
-    x = 'litcryptodata'
-    rg = RunGlue(x)
-    rg.main()
+ticker()

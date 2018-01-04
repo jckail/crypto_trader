@@ -119,7 +119,7 @@ class RunGlue:
 if __name__ == '__main__':
 
     x = 'litcryptodata'
-    rg = RunGlue()
+    rg = RunGlue(x)
     rg.main()
 
 
