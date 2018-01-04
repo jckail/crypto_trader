@@ -63,7 +63,7 @@ class SaveS3(object):
 
         if os.path.isfile(self.aws_gz_file):
             try:
-                df = p.read_json(self.aws_gz_file,compression = 'gzip')
+                df = p.read_json(self.aws_gz_file,orient = 'records',compression = 'gzip',lines = True)
                 df = df.reset_index(drop=True)
                 if not df.empty:
                     frames.append(df)
@@ -75,7 +75,6 @@ class SaveS3(object):
         if len(frames) > 0:
             df = p.concat(frames)
             df = df.reset_index(drop=True)
-            #print (df)
             df.to_json(self.local_gz_name,orient = 'records',compression = 'gzip',lines = True)
 
 
@@ -96,6 +95,38 @@ class SaveS3(object):
                 pass
             else:
                 raise
+
+    # local csv not updated only conaints local history .json contains everything
+    # def update_csv(self):
+    #     frames = []
+    #     #df.to_json(self.local_gz_name,compression = 'gzip')
+    #
+    #     if os.path.isfile(self.file):
+    #         try:
+    #             df = p.read_csv(self.file)
+    #             df = df.reset_index(drop=True)
+    #             if not df.empty:
+    #                 frames.append(df)
+    #             else:
+    #                 pass
+    #         except Exception as e:
+    #             print(e)
+    #
+    #     if os.path.isfile(self.aws_gz_file):
+    #         try:
+    #             df = p.read_json(self.aws_gz_file,orient = 'records',compression = 'gzip',lines = True)
+    #             df = df.reset_index(drop=True)
+    #             if not df.empty:
+    #                 frames.append(df)
+    #             else:
+    #                 pass
+    #         except Exception as e:
+    #             print(e)
+    #
+    #     if len(frames) > 0:
+    #         df = p.concat(frames)
+    #         df = df.reset_index(drop=True)
+    #         df.to_json(self.local_gz_name,orient = 'records',compression = 'gzip',lines = True)
 
     def main(self):
         try:

@@ -43,26 +43,6 @@ class GetMinuteHist(object):
                         df = p.DataFrame(data["Data"])
                         df = df.assign(symbol = symbol, coin_units = 1, timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),exchange = exchange )
                         frames.append(df)
-                        my_file = self.cwd+'/data/minute_data/'+symbol+'_minute.csv'
-                        if os.path.isfile(my_file):
-                            df_resident = p.read_csv(my_file,  encoding= 'utf-8')
-                            frames.append(df_resident)
-                        else:
-                            pass
-                        df = p.concat(frames)
-                        if not df.empty:
-
-                            df = df.drop_duplicates(['symbol','time','exchange'], keep='last')
-                            df = df.sort_values('time')
-                            df = df.reset_index(drop=True)
-
-                            df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
-                            s3 = savetos3.SaveS3(my_file,self.catalog)
-
-                            s3.main()
-                        else:
-                            pass
-
                     else:
                         pass
                 else:
@@ -76,6 +56,28 @@ class GetMinuteHist(object):
                 pass
             except Exception as e:
                 pass
+        try:
+            if len(frames) > 0:
+                my_file = self.cwd+'/data/minute_data/'+symbol+'_minute.csv'
+                if os.path.isfile(my_file):
+                    df_resident = p.read_csv(my_file,  encoding= 'utf-8')
+                    frames.append(df_resident)
+                else:
+                    pass
+                df = p.concat(frames)
+                if not df.empty:
+                    df = df.drop_duplicates(['symbol','time','exchange'], keep='last')
+                    df = df.sort_values('time')
+                    df = df.reset_index(drop=True)
+                    df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
+                    s3 = savetos3.SaveS3(my_file,self.catalog)
+                    s3.main()
+                else:
+                    pass
+            else:
+                pass
+        except Exception as e:
+            print(e)
 
     def main(self):
         error_symbols = []
@@ -109,13 +111,14 @@ class GetMinuteHist(object):
 
 if __name__ == '__main__':
     # exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
-    # cwd = '/Users/jckail13/lit_crypto/alpha'
+    # cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
     # df = p.read_csv(cwd+'/data/coininfo/coininfo.csv')
-    # ls_has = df["Symbol"].tolist()
-    # ls_has = ls_has[:100]
+    # symbol_list = df["Symbol"].tolist()
+    # symbol_list = symbol_list[:100]
     # catalog = 'litcryptodata'
+    # chunksize = 50
+    # runner = GetMinuteHist(symbol_list, exchanges, chunksize, cwd, catalog)
     runner = GetMinuteHist()
-    #runner = GetMinuteHist()
     runner.main()
     #print '--------------------------------------------------------------------------'
    # x =  dt.datetime.now() - start_time

@@ -13,13 +13,12 @@ import socket
 
 class GetDayHist(object):
 
-    def __init__(self, symbol_list, exchanges, chunksize, cwd, catalog):
+    def __init__(self, symbol_list, exchanges, chunksize, cwd,catalog):
         self.catalog = catalog
         self.symbol_list = symbol_list
         self.exchanges = exchanges
         self.chunksize = chunksize
         self.cwd = cwd
-
 
     def get_day_hist(self,symbol,error_symbols):
         currentts = str(int(time.time()))
@@ -44,23 +43,6 @@ class GetDayHist(object):
                         df = p.DataFrame(data["Data"])
                         df = df.assign(symbol = symbol, coin_units = 1, timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),exchange = exchange )
                         frames.append(df)
-                        my_file = self.cwd+'/data/day_data/'+symbol+'_day.csv'
-                        if os.path.isfile(my_file):
-                            df_resident = p.read_csv(my_file,  encoding= 'utf-8')
-                            frames.append(df_resident)
-                        else:
-                            pass
-                        df = p.concat(frames)
-                        if not df.empty:
-                            df = df.drop_duplicates(['symbol','time','exchange'], keep='last')
-                            df = df.sort_values('time')
-                            df = df.reset_index(drop=True)
-                            df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
-                            s3 = savetos3.SaveS3(my_file,self.catalog)
-                            s3.main()
-                        else:
-                            pass
-
                     else:
                         pass
                 else:
@@ -74,10 +56,32 @@ class GetDayHist(object):
                 pass
             except Exception as e:
                 pass
+        try:
+            if len(frames) > 0:
+                my_file = self.cwd+'/data/day_data/'+symbol+'_day.csv'
+                if os.path.isfile(my_file):
+                    df_resident = p.read_csv(my_file,  encoding= 'utf-8')
+                    frames.append(df_resident)
+                else:
+                    pass
+                df = p.concat(frames)
+                if not df.empty:
+                    df = df.drop_duplicates(['symbol','time','exchange'], keep='last')
+                    df = df.sort_values('time')
+                    df = df.reset_index(drop=True)
+                    df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
+                    s3 = savetos3.SaveS3(my_file,self.catalog)
+                    s3.main()
+                else:
+                    pass
+            else:
+                pass
+        except Exception as e:
+            print(e)
 
     def main(self):
         error_symbols = []
-        gmt = GetDayHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd,self.catalog)
+        gmt = GetDayHist(self.symbol_list,self.exchanges,self.chunksize,self.cwd, self.catalog)
 
         xsymbols = [self.symbol_list[x:x+self.chunksize] for x in range(0, len(self.symbol_list), self.chunksize )]
 
@@ -106,14 +110,15 @@ class GetDayHist(object):
 
 
 if __name__ == '__main__':
-    #exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
-    #
-    #df = p.read_csv(self.cwd+'/data/coininfo/coininfo.csv')
-    #ls_has = df["Symbol"].tolist()
-    #ls_has = ls_has[:100]
+    # exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
+    # cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
+    # df = p.read_csv(cwd+'/data/coininfo/coininfo.csv')
+    # symbol_list = df["Symbol"].tolist()
+    # symbol_list = symbol_list[:100]
+    # catalog = 'litcryptodata'
+    # chunksize = 50
+    # runner = GetDayHist(symbol_list, exchanges, chunksize, cwd, catalog)
     runner = GetDayHist()
-    #start_time = dt.datetime.now()
-    #print '--------------------------------------------------------------------------'
     runner.main()
     #print '--------------------------------------------------------------------------'
 # x =  dt.datetime.now() - start_time
