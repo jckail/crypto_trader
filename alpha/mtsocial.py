@@ -29,7 +29,7 @@ class GetSocialData(object):
         self.cryptocompare_ls = cryptocompare_ls
         self.general_ls = general_ls
         self.facebook_ls = facebook_ls
-        
+
     def get_socials(self,symbol,error_symbols):
         symbol_list = self.symbol_list
         symbol_count = 0
@@ -69,8 +69,9 @@ class GetSocialData(object):
                                 code_repository = sub_data[key]
                                 sub = code_repository['List']
                                 df = p.DataFrame(sub)
-                                df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
-                                self.coderepository_ls.append(df)
+                                if not df.empty:
+                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+                                    self.coderepository_ls.append(df)
 
                                     ############################################################################################################################################################
 
@@ -78,26 +79,30 @@ class GetSocialData(object):
                                 sub = sub_data[key]
                                 df = p.DataFrame.from_dict(sub,orient='index', dtype=None)
                                 df = p.DataFrame.transpose(df)
-                                df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
-                                self.reddit_ls.append(df)
+                                df = df.query("Points > 0 ")
+                                if not df.empty:
+                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+                                    self.reddit_ls.append(df)
 
                                     ############################################################################################################################################################
                             elif key == 'Twitter':
                                 sub = sub_data[key]
                                 df = p.DataFrame.from_dict(sub,orient='index', dtype=None)
                                 df = p.DataFrame.transpose(df)
-                                df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
-                                self.twitter_ls.append(df)
-
-
+                                df = df.query("Points > 0 ")
+                                if not df.empty:
+                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+                                    self.twitter_ls.append(df)
 
                                     ############################################################################################################################################################
                             elif key == 'Facebook':
                                 sub = sub_data[key]
                                 df = p.DataFrame.from_dict(sub,orient='index', dtype=None)
                                 df = p.DataFrame.transpose(df)
-                                df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
-                                self.facebook_ls.append(df)
+                                df = df.query("Points > 0 ")
+                                if not df.empty:
+                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+                                    self.facebook_ls.append(df)
 
                                     ############################################################################################################################################################
 
@@ -107,21 +112,23 @@ class GetSocialData(object):
                                 a = sub.pop('SimilarItems', None)
                                 a = sub.pop('PageViewsSplit', None)
                                 del a
-                                df = p.DataFrame.from_dict(sub,orient='index', dtype=None)
-                                df = p.DataFrame.transpose(df)
-                                df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
-                                #print df
-                                self.cryptocompare_ls.append(df)
+                                if not df.empty:
+                                    df = p.DataFrame.from_dict(sub,orient='index', dtype=None)
+                                    df = p.DataFrame.transpose(df)
+                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+                                    #print df
+                                    self.cryptocompare_ls.append(df)
 
                                     ############################################################################################################################################################
                             elif key == 'General':
                                 sub = sub_data[key]
                                 df = p.DataFrame.from_dict(sub,orient='index', dtype=None)
-                                df = p.DataFrame.transpose(df)
-                                df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
-                                #print self.general_ls
-                                self.general_ls.append(df)
-                                #print self.general_ls
+                                if not df.empty:
+                                    df = p.DataFrame.transpose(df)
+                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+                                    #print self.general_ls
+                                    self.general_ls.append(df)
+                                    #print self.general_ls
 
                     else:
                         print('No Social Data'+str(symbol)+' '+str(symbol_count)+'/'+str(len_symbol_list))
@@ -139,7 +146,9 @@ class GetSocialData(object):
                 pass
 
     def create_social_files(self,social_dict,drop_dupe_dict,key):
+
         try:
+
             #print key
             my_file = self.cwd+'/data/social/'+key+'/'+key+'.csv'
             #print(my_file)
@@ -153,27 +162,28 @@ class GetSocialData(object):
             else:
                 pass
             df = p.concat(workinglist)
-
-
-            #print (drop_dupe_dict)
-            if key in list(drop_dupe_dict.keys()):
-                #print(key)
-                #print(drop_dupe_dict[key])
-                #df = df.drop_duplicates(drop_dupe_dict[key], keep='last')
-                pass
-
-            else:
-                print('drop dupe no key')
-                #df = df
-
-            df = df.sort_values('symbol')
-            df = df.reset_index(drop=True)
             if not df.empty:
-                df.to_csv(my_file, index = False,  encoding= 'utf-8')
-                s3 = savetos3.SaveS3(my_file,self.catalog)
-                s3.main()
-            else:
-                pass
+                if key in list(drop_dupe_dict.keys()):
+                    #print(key)
+                    #print(drop_dupe_dict[key])
+                    df = df.drop_duplicates(drop_dupe_dict[key], keep='last')
+                    pass
+
+                else:
+                    print('drop dupe no key')
+                    #df = df
+                if key in ['reddit','twitter','facebook']:
+                    df = df.query("Points > 0 ")
+
+                df = df.sort_values('symbol')
+                df = df.reset_index(drop=True)
+                if not df.empty:
+                    df.to_csv(my_file, index = False,  encoding= 'utf-8')
+                    #print(self.catalog)
+                    s3 = savetos3.SaveS3(my_file,self.catalog)
+                    s3.main()
+                else:
+                    pass
         except Exception as e:
             print(e)
             print(key)
@@ -185,6 +195,7 @@ class GetSocialData(object):
 
         :return:
         """
+
         print('begin: GetSocialData.main')
         try:
             error_symbols = []
@@ -233,7 +244,8 @@ class GetSocialData(object):
             #print(keys)
             #gsd.create_social_files(key)
 
-            threads = [threading.Thread(target=gsd.create_social_files, args=(social_dict,drop_dupe_dict,key,)) for key in keys]
+
+            threads = [threading.Thread(target=gsd.create_social_files, args=(social_dict,drop_dupe_dict,key,)) for key in tqdm(keys,desc='save_socials')]
 
             for thread in threads:
                 thread.start()
@@ -282,29 +294,30 @@ if __name__ == '__main__':
     :return:
     """
 
-    # cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
-    # catalog = 'litcryptodata'
-    # reddit_ls = []
-    # coderepository_ls = []
-    # twitter_ls = []
-    # cryptocompare_ls = []
-    # general_ls = []
-    # facebook_ls = []
-    # df = p.read_csv(cwd+'/data/coininfo/coininfo.csv')
-    # symbol_list = df["Symbol"].tolist()
-    # symbol_list = symbol_list [:10]
-    # exchanges = ['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
-    # chunksize = 50
-    #
-    #
-    # runner = GetSocialData(symbol_list,exchanges,chunksize,cwd,catalog, \
-    #                        reddit_ls, \
-    #                        coderepository_ls, \
-    #                        twitter_ls, \
-    #                        cryptocompare_ls, \
-    #                        general_ls, \
-    #                        facebook_ls)
-    runner = GetSocialData()
+    cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
+    catalog = 'litcryptodata'
+    reddit_ls = []
+    coderepository_ls = []
+    twitter_ls = []
+    cryptocompare_ls = []
+    general_ls = []
+    facebook_ls = []
+    df = p.read_csv(cwd+'/data/coininfo/coininfo.csv')
+    symbol_list = df["Symbol"].tolist()
+    #symbol_list = symbol_list [:1000]
+    #symbol_list = ['BRIT']
+    exchanges = ['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
+    chunksize = 200
+
+
+    runner = GetSocialData(symbol_list,exchanges,chunksize,cwd,catalog, \
+                           reddit_ls, \
+                           coderepository_ls, \
+                           twitter_ls, \
+                           cryptocompare_ls, \
+                           general_ls, \
+                           facebook_ls)
+    #runner = GetSocialData()
     runner.main()
 
 """
