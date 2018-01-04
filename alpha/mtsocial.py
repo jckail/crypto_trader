@@ -294,30 +294,30 @@ if __name__ == '__main__':
     :return:
     """
 
-    cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
-    catalog = 'litcryptodata'
-    reddit_ls = []
-    coderepository_ls = []
-    twitter_ls = []
-    cryptocompare_ls = []
-    general_ls = []
-    facebook_ls = []
-    df = p.read_csv(cwd+'/data/coininfo/coininfo.csv')
-    symbol_list = df["Symbol"].tolist()
-    #symbol_list = symbol_list [:1000]
-    #symbol_list = ['BRIT']
-    exchanges = ['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
-    chunksize = 200
-
-
-    runner = GetSocialData(symbol_list,exchanges,chunksize,cwd,catalog, \
-                           reddit_ls, \
-                           coderepository_ls, \
-                           twitter_ls, \
-                           cryptocompare_ls, \
-                           general_ls, \
-                           facebook_ls)
-    #runner = GetSocialData()
+    # cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
+    # catalog = 'litcryptodata'
+    # reddit_ls = []
+    # coderepository_ls = []
+    # twitter_ls = []
+    # cryptocompare_ls = []
+    # general_ls = []
+    # facebook_ls = []
+    # df = p.read_csv(cwd+'/data/coininfo/coininfo.csv')
+    # symbol_list = df["Symbol"].tolist()
+    # #symbol_list = symbol_list [:1000]
+    # #symbol_list = ['BRIT']
+    # exchanges = ['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
+    # chunksize = 200
+    #
+    #
+    # runner = GetSocialData(symbol_list,exchanges,chunksize,cwd,catalog, \
+    #                        reddit_ls, \
+    #                        coderepository_ls, \
+    #                        twitter_ls, \
+    #                        cryptocompare_ls, \
+    #                        general_ls, \
+    #                        facebook_ls)
+    runner = GetSocialData()
     runner.main()
 
 """
