@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Athena - Litcrypto" uuid="eb2ff45f-2549-4c57-a165-8176cc52160b">
+      <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
+      <remarks>Uk0l3Q/wAXrldMCNhdsiO4jV3+5AMAP90EeZKRfX</remarks>
+      <jdbc-driver>com.simba.athena.jdbc42.Driver</jdbc-driver>
+      <jdbc-url>jdbc:awsathena://AwsRegion=useast-1;</jdbc-url>
+      <default-dialect>TSQL</default-dialect>
+      <driver-properties>
+        <property name="S3OutputLocation" value="s3://aws-athena-query-results-462455771080-us-east-1/" />
+      </driver-properties>
+    </data-source>
+  </component>
+</project>

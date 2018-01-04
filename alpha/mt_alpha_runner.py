@@ -29,6 +29,7 @@ import savetos3
 import gluemaintenance
 import s3maintenance
 import awscatalogcreate
+import coinmarketcaptest
 
 
 class AlphaRunner(object):
@@ -43,7 +44,7 @@ class AlphaRunner(object):
         self.runfocus_symbols_only = self.args.runfocus_symbols_only
         self.runisprice = self.args.runisprice
         self.cwd = os.getcwd()
-        self.focus_symbols = ['BTC','BCH','LTC','ETH']
+        self.focus_symbols = ['BTC','BCH','LTC','ETH','XRP']
         self.symbol_list = []
         # FULL LIST exchanges = ['Cryptsy', 'BTCChina', 'Bitstamp', 'BTER', 'OKCoin', 'Coinbase', 'Poloniex', 'Cexio', 'BTCE', 'BitTrex', 'Kraken', 'Bitfinex', 'Yacuna', 'LocalBitcoins', 'Yunbi', 'itBit', 'HitBTC', 'btcXchange', 'BTC38', 'Coinfloor', 'Huobi', 'CCCAGG', 'LakeBTC', 'ANXBTC', 'Bit2C', 'Coinsetter', 'CCEX', 'Coinse', 'MonetaGo', 'Gatecoin', 'Gemini', 'CCEDK', 'Cryptopia', 'Exmo', 'Yobit', 'Korbit', 'BitBay', 'BTCMarkets', 'Coincheck', 'QuadrigaCX', 'BitSquare', 'Vaultoro', 'MercadoBitcoin', 'Bitso', 'Unocoin', 'BTCXIndia', 'Paymium', 'TheRockTrading', 'bitFlyer', 'Quoine', 'Luno', 'EtherDelta', 'bitFlyerFX', 'TuxExchange', 'CryptoX', 'Liqui', 'MtGox', 'BitMarket', 'LiveCoin', 'Coinone', 'Tidex', 'Bleutrade', 'EthexIndia', 'Bithumb', 'CHBTC', 'ViaBTC', 'Jubi', 'Zaif', 'Novaexchange', 'WavesDEX', 'Binance', 'Lykke', 'Remitano', 'Coinroom', 'Abucoins', 'BXinth', 'Gateio', 'HuobiPro', 'OKEX']
         self.exchanges = ['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
@@ -92,7 +93,6 @@ class AlphaRunner(object):
                 try:
 
                     #add processing queue
-
                     #self.symbol_list = self.symbol_list[:10]
                     #
                     x = len(self.symbol_list)
@@ -104,6 +104,9 @@ class AlphaRunner(object):
                     #
                     md = miningdata.GetMineData(self.cwd,self.catalog)
                     md.main()
+                    # #
+                    cmc = coinmarketcaptest.CoinMarketCap(self.cwd, self.catalog)
+                    cmc.main()
                     # # #thread1 = threading.Thread(target=md.main(), args=())
                     # #
                     print('--------------------------------------------------------------------------')
@@ -180,16 +183,15 @@ class AlphaRunner(object):
         s3 = s3maintenance.GetS3Bucket(self.catalog)
         s3.main()
 
-        #glue = gluemaintenance.RunGlue(self.catalog)
-        #glue.main()
 
         print('chunksize: '+str(self.chunksize))
 
         print ('---------------------------------------------------------------------------------------BEGIN---------------------------------------------------------------------------------------')
         self.alpha_runner()
-        prm = gluemaintenance.RunGlue(self.catalog)
 
-        prm.main()
+        glue = gluemaintenance.RunGlue(self.catalog)
+        glue.main()
+
         print ('---------------------------------------------------------------------------------------END---------------------------------------------------------------------------------------')
         x = dt.datetime.now() - start_time
         print ('Completion time: '+str(x))
