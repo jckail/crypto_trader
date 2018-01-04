@@ -49,7 +49,7 @@ class AlphaRunner(object):
         # FULL LIST exchanges = ['Cryptsy', 'BTCChina', 'Bitstamp', 'BTER', 'OKCoin', 'Coinbase', 'Poloniex', 'Cexio', 'BTCE', 'BitTrex', 'Kraken', 'Bitfinex', 'Yacuna', 'LocalBitcoins', 'Yunbi', 'itBit', 'HitBTC', 'btcXchange', 'BTC38', 'Coinfloor', 'Huobi', 'CCCAGG', 'LakeBTC', 'ANXBTC', 'Bit2C', 'Coinsetter', 'CCEX', 'Coinse', 'MonetaGo', 'Gatecoin', 'Gemini', 'CCEDK', 'Cryptopia', 'Exmo', 'Yobit', 'Korbit', 'BitBay', 'BTCMarkets', 'Coincheck', 'QuadrigaCX', 'BitSquare', 'Vaultoro', 'MercadoBitcoin', 'Bitso', 'Unocoin', 'BTCXIndia', 'Paymium', 'TheRockTrading', 'bitFlyer', 'Quoine', 'Luno', 'EtherDelta', 'bitFlyerFX', 'TuxExchange', 'CryptoX', 'Liqui', 'MtGox', 'BitMarket', 'LiveCoin', 'Coinone', 'Tidex', 'Bleutrade', 'EthexIndia', 'Bithumb', 'CHBTC', 'ViaBTC', 'Jubi', 'Zaif', 'Novaexchange', 'WavesDEX', 'Binance', 'Lykke', 'Remitano', 'Coinroom', 'Abucoins', 'BXinth', 'Gateio', 'HuobiPro', 'OKEX']
         self.exchanges = ['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
         #self.exchanges = ['Coinbase']
-        self.chunksize = 100  #~~#thread limit 199
+        self.chunksize = 200  #~~#thread limit 199
         #self.org_params = json.load(open("config/cti_config.dict"))
         self.reddit_ls = []
         self.coderepository_ls = []
@@ -93,7 +93,7 @@ class AlphaRunner(object):
                 try:
 
                     #add processing queue
-                    self.symbol_list = self.symbol_list[:10]
+                    #self.symbol_list = self.symbol_list[:10]
                     #
                     x = len(self.symbol_list)
                     # #self.symbol_list.append('SMT')
