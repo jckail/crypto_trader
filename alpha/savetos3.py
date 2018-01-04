@@ -63,7 +63,7 @@ class SaveS3(object):
 
         if os.path.isfile(self.aws_gz_file):
             try:
-                df = p.read_json(self.aws_gz_file,compression = 'gzip')
+                df = p.read_json(self.aws_gz_file,orient = 'records',compression = 'gzip',lines = True)
                 df = df.reset_index(drop=True)
                 if not df.empty:
                     frames.append(df)
@@ -75,7 +75,6 @@ class SaveS3(object):
         if len(frames) > 0:
             df = p.concat(frames)
             df = df.reset_index(drop=True)
-            #print (df)
             df.to_json(self.local_gz_name,orient = 'records',compression = 'gzip',lines = True)
 
 
