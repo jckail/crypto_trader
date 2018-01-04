@@ -93,7 +93,7 @@ class AlphaRunner(object):
                 try:
 
                     #add processing queue
-                    #self.symbol_list = self.symbol_list[:10]
+                    self.symbol_list = self.symbol_list[:10]
                     #
                     x = len(self.symbol_list)
                     # #self.symbol_list.append('SMT')
