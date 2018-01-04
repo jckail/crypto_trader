@@ -113,6 +113,7 @@ if __name__ == '__main__':
     # df = p.read_csv(cwd+'/data/coininfo/coininfo.csv')
     # ls_has = df["Symbol"].tolist()
     # ls_has = ls_has[:100]
+    # catalog = 'litcryptodata'
     runner = GetMinuteHist()
     #runner = GetMinuteHist()
     runner.main()

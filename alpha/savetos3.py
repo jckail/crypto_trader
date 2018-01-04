@@ -16,7 +16,7 @@ import csv
 import gzip
 import shutil
 import socket
-
+import botocore
 
 
 
@@ -28,55 +28,80 @@ class SaveS3(object):
         self.file = file
         self.s3_client = boto3.client('s3')
         self.directory = file.replace(basename(file),'')
-        self.s3 = boto3.resource('s3')
+        self.s3_resource = boto3.resource('s3')
 
-        cwd_split = self.directory.split('/')
-        target_ibdex = cwd_split.index('alpha') # project name
 
-        self.s3_directory = '/'.join(cwd_split[target_ibdex:])
         self.basename = basename(file)
         self.filename, self.file_extension = os.path.splitext(self.basename)
 
 
-    def to_json(self):
-        try:
-            df = p.read_csv(self.file)
-            df.to_json(self.directory+self.filename+'.json')
-            self.basename = self.filename+'.json'
-        except Exception as e:
-            print(e)
 
-    def gzip_jsons(self):
-        try:
-            zipped_file = self.directory +"gzip_files/"+self.basename+'.gz'
-            with open(self.file, 'rb') as f_in, gzip.open(zipped_file, 'wb') as f_out:
-                shutil.copyfileobj(f_in, f_out)
-            self.file = zipped_file
-            #print (self.file)
-        except Exception as e:
-            print(e)
+        self.local_gz_name = self.directory+"gzip_files/"+self.filename+'.json'+'.gz'
+        self.aws_gz_file = self.directory+"gzip_files/"+'aws_'+self.filename+'.json'+'.gz'
+
+        self.s3_basename = basename(self.local_gz_name)
+        cwd_split = self.directory.split('/')
+        target_ibdex = cwd_split.index('alpha') # project name
+
+        self.s3_directory = '/'.join(cwd_split[target_ibdex:])
+        self.s3_file = self.s3_directory+self.s3_basename
+
+
+    def to_json(self):
+        frames = []
+        #df.to_json(self.local_gz_name,compression = 'gzip')
+        if os.path.isfile(self.file):
+            try:
+                df = p.read_csv(self.file)
+                df = df.reset_index(drop=True)
+                if not df.empty:
+                    frames.append(df)
+                else:
+                    pass
+            except Exception as e:
+                print(e)
+
+        if os.path.isfile(self.aws_gz_file):
+            try:
+                df = p.read_json(self.aws_gz_file,compression = 'gzip')
+                df = df.reset_index(drop=True)
+                if not df.empty:
+                    frames.append(df)
+                else:
+                    pass
+            except Exception as e:
+                print(e)
+
+        if len(frames) > 0:
+            df = p.concat(frames)
+            df = df.reset_index(drop=True)
+            #print (df)
+            df.to_json(self.local_gz_name,orient = 'records',compression = 'gzip',lines = True)
 
 
     def save_to_s3(self):
         try:
-            s3 = boto3.resource('s3')
-            self.basename = basename(self.file)
-            #print(self.file,'litcrypto',self.s3_directory+self.basename)
-            s3.meta.client.upload_file(self.file,self.catalog,self.s3_directory+self.basename ) # bucket
-            #multipart_upload_part = self.s3.MultipartUploadPart('litcrypto',self.s3_directory+self.basename,'multipart_upload_id','part_number')
-            #s3.upload_fileobj(x,'litcrypto','data/coinlist_info')
+
+            self.s3_resource.meta.client.upload_file(self.local_gz_name,self.catalog,self.s3_file )
 
         except Exception as e:
             print(e)
             pass
 
+    def get_s3_file(self):
+        try:
+            self.s3_resource.Bucket(self.catalog).download_file(self.s3_file, self.aws_gz_file)
+        except botocore.exceptions.ClientError as e:
+            if e.response['Error']['Code'] == "404":
+                pass
+            else:
+                raise
+
     def main(self):
         try:
             s3 = SaveS3(self.file,self.catalog)
-            #create a csv to hive datastore command
-            #run athena query to validate datastore was created successfully
+            s3.get_s3_file()
             s3.to_json()
-            s3.gzip_jsons()
             s3.save_to_s3()
 
         except Exception as e:
@@ -89,9 +114,11 @@ if __name__ == '__main__':
 
     :return:
     """
-    file = '/Users/jckail13/lit_crypto_data/alpha/data/coininfo/coininfo.csv'
+    '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
+    file = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha/data/coininfo/coininfo.csv'
+    catalog = 'litcryptodata'
 
-    #runner = SaveS3(file)
+    #runner = SaveS3(file,catalog)
     runner = SaveS3()
     runner.main()
 
