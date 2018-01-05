@@ -1,3 +1,7 @@
+import traceback
+import logging
+
+
 class CreateAwsCatalog:
 
     def __init__(self,cwd):
@@ -16,10 +20,18 @@ class CreateAwsCatalog:
         return self.catalog
 
     def main(self):
-        cat = CreateAwsCatalog(self.cwd)
-        self.catalog = cat.create_catalog()
-        print('Working AWS Catalog:'+self.catalog)
-        return self.catalog
+        try:
+            cat = CreateAwsCatalog(self.cwd)
+            self.catalog = cat.create_catalog()
+            print('Working AWS Catalog:'+self.catalog)
+            return self.catalog
+        except Exception as e:
+            print(e)
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
 
 
 if __name__ == '__main__':

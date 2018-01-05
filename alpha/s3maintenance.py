@@ -1,5 +1,6 @@
 import boto3
-
+import traceback
+import logging
 
 class GetS3Bucket:
     def __init__(self,bucket):
@@ -11,6 +12,11 @@ class GetS3Bucket:
             self.s3_client.create_bucket(Bucket=self.s3_bucket)
 
         except Exception as e:
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             print(e)
 
     def validate_s3(self):
@@ -28,6 +34,11 @@ class GetS3Bucket:
                 s3.validate_s3()
 
         except Exception as e:
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             print(e)
 
     def main(self):
@@ -38,6 +49,11 @@ class GetS3Bucket:
             return self.s3_bucket
 
         except Exception as e:
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             pass
                 #print(e)
 

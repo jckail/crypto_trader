@@ -9,6 +9,8 @@ from time import sleep
 from tqdm import tqdm
 import savetos3
 import socket
+import traceback
+import logging
 
 
 class GetHourHist(object):
@@ -41,20 +43,35 @@ class GetHourHist(object):
 
                     if data["Data"] != [] and data["Response"] == "Success":
                         df = p.DataFrame(data["Data"])
-                        df = df.assign(symbol = symbol, coin_units = 1, timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),exchange = exchange )
+                        df = df.assign(symbol = symbol,  timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),exchange = exchange,souce = 'cryptocompare' )
                         frames.append(df)
                     else:
                         pass
                 else:
                     pass
             except requests.exceptions.RequestException as e:
+                logging.info('------')
+                logging.error(traceback.format_exc())
+                logging.info('------')
+                logging.exception(traceback.format_exc())
+                logging.info('------')
                 error_symbols.append(symbol)
                 sleep(0.2)
                 pass
             except OverflowError:
                 print('OverflowError: '+str(symbol))
+                logging.info('------')
+                logging.error(traceback.format_exc())
+                logging.info('------')
+                logging.exception(traceback.format_exc())
+                logging.info('------')
                 pass
             except Exception as e:
+                logging.info('------')
+                logging.error(traceback.format_exc())
+                logging.info('------')
+                logging.exception(traceback.format_exc())
+                logging.info('------')
                 pass
         try:
             if len(frames) > 0:
@@ -77,6 +94,11 @@ class GetHourHist(object):
             else:
                 pass
         except Exception as e:
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             print(e)
 
     def main(self):

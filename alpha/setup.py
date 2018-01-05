@@ -5,6 +5,8 @@ from tqdm import tqdm
 import socket
 import boto3
 import awscatalogcreate
+import traceback
+import logging
 
 
 class Setup(object):
@@ -19,10 +21,7 @@ class Setup(object):
         cwd_split = self.cwd.split('/')
 
         target_ibdex = cwd_split.index('alpha') # project name
-        new_data_directory = '/'.join(cwd_split[:target_ibdex-1])+'/lit_crypto_data/alpha'
-
-        self.cwd = new_data_directory
-        #print(self.cwd)
+        self.cwd = '/'.join(cwd_split[:target_ibdex-1])+'/lit_crypto_data/alpha'
 
         if not os.path.exists(self.cwd):
             os.makedirs(self.cwd)
@@ -62,6 +61,11 @@ class Setup(object):
                     os.makedirs(gdirectory)
                     print ('Created: '+gdirectory)
         except Exception as e:
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             print(e)
 
 
@@ -77,12 +81,17 @@ class Setup(object):
             #print(self.cwd)
             return self.cwd
         except Exception as e:
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             print(e)
 
 if __name__ == '__main__':
 
     cwd = os.getcwd()
 
-    s = Setup(cwd)
+    s = Setup()
     s.main()
 

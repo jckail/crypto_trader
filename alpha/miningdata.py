@@ -11,6 +11,8 @@ from tqdm import tqdm
 from time import sleep
 import savetos3
 import socket
+import traceback
+import logging
 
 
 class GetMineData(object):
@@ -45,7 +47,7 @@ class GetMineData(object):
 
                     df = p.DataFrame.from_dict(sub,orient='Index', dtype=None)
                     df = p.DataFrame.transpose(df)
-                    df = df.assign (timestamp_api_call = dt.datetime.now(),source = source,key = key )
+                    df = df.assign (timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),source = source,symbol = key )
                     frames.append(df)
 
                     my_file = self.cwd+'/data/mining_data/coin_miner_data/%s_mining.csv' % key
@@ -57,7 +59,7 @@ class GetMineData(object):
                         pass
                     df = p.concat(frames)
                     df = df.drop_duplicates(['Symbol','TotalCoinsMined','BlockReward','DifficultyAdjustment','BlockRewardReduction','BlockNumber','PreviousTotalCoinsMined'],  keep='last')
-                    df = df.sort_values('key')
+                    df = df.sort_values('symbol')
                     df = df.reset_index(drop=True)
                     if not df.empty:
                         df.to_csv(my_file, index = False,  encoding= 'utf-8')
@@ -65,10 +67,17 @@ class GetMineData(object):
                         s3.main()
                     else:
                         print ('No '+str(key)+' data: '+key)
+
             else:
                 print ('No coin_miner_data')
         except Exception as e:
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             print (e)
+        #print('x')
 
 
     def miner_data(self):
@@ -87,9 +96,10 @@ class GetMineData(object):
                     sub =  data['MiningData'][key]
                     #print '----------'
 
+
                     df = p.DataFrame.from_dict(sub,orient='Index', dtype=None)
                     df = p.DataFrame.transpose(df)
-                    df = df.assign (timestamp_api_call = dt.datetime.now(),source = source,key = key )
+                    df = df.assign (timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),source = source,symbol = key )
                     frames.append(df)
 
                 my_file = self.cwd+'/data/mining_data/miner_data/mining_equipment.csv'
@@ -114,10 +124,17 @@ class GetMineData(object):
                     pass #print 'Updated: '+str(my_file)
                 else:
                     print ('No data: ')
+
             else:
                 print ('no miner_data')
         except Exception as e:
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             print(e)
+        #print('y')
 
     def main(self):
         """
@@ -132,7 +149,13 @@ class GetMineData(object):
             print ('DONE')
 
         except Exception as e:
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             print(e)
+        print('DONE')
 
         #print 'end: GetMineData.main'
 
@@ -143,8 +166,9 @@ if __name__ == '__main__':
 
     :return:
     """
-    cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
-    runner = GetMineData(cwd,'litcryptodata') #pass symbols to run test in place
+    # cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
+    # runner = GetMineData(cwd,'litcryptodata') #pass symbols to run test in place
+    runner = GetMineData()
     runner.main()
 
 

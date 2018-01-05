@@ -1,5 +1,7 @@
 import boto3
 import datetime as dt
+import traceback
+import logging
 
 
 class CheckDatabase:
@@ -40,6 +42,11 @@ class CheckDatabase:
                 cd.create_database()
                 cd.validate_database()
         except Exception as e:
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             print(e)
 
     def create_database(self):
@@ -53,6 +60,11 @@ class CheckDatabase:
                 }
             )
         except Exception as e:
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             print(e)
 
     def main(self):

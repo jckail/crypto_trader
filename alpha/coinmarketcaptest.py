@@ -13,6 +13,8 @@ import boto3
 from os.path import basename
 import socket
 import savetos3
+import traceback
+import logging
 
 class CoinMarketCap(object):
 
@@ -38,7 +40,7 @@ class CoinMarketCap(object):
             if response.status_code == 200:
                 data = response.json()
                 df = p.DataFrame(data)
-                df = df.assign( timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname())
+                df = df.assign( timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),source = 'coinmarketcap')
                 frames.append(df)
 
                 my_file = self.cwd+'/data/coinmarketcap/ticker.csv'
@@ -62,11 +64,26 @@ class CoinMarketCap(object):
                 pass
         except requests.exceptions.RequestException as e:
             sleep(0.2)
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             pass
         except OverflowError:
             print('OverflowError: ')
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             pass
         except Exception as e:
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             pass
 
     def main(self):
@@ -77,6 +94,11 @@ class CoinMarketCap(object):
             gcl.ticker()
 
         except Exception as e:
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             print (e)
 
 
