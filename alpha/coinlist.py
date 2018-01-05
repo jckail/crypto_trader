@@ -11,8 +11,10 @@ from time import sleep
 from io import StringIO
 import boto3
 from os.path import basename
-
+import traceback
+import logging
 import savetos3
+import socket
 
 class GetCoinLists(object):
 
@@ -38,7 +40,7 @@ class GetCoinLists(object):
 
             df = p.DataFrame.from_dict(data["Data"],orient='index', dtype=None)
 
-            df = df.assign (timestamp_api_call = dt.datetime.now(),source = source )
+            df = df.assign (timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),source = source )
             df = df.reset_index(drop=True)
             df = df.sort_values('Id')
             frames.append(df)
@@ -64,9 +66,18 @@ class GetCoinLists(object):
                 pass
 
         except requests.exceptions.RequestException as e:
+
             print (e)
         except Exception as e:
+
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
+
             print (e)
+            exit(1)
 
     def main(self):
         print ('begin: GetCoinLists.main')
@@ -76,6 +87,7 @@ class GetCoinLists(object):
             gcl.func_get_coin_list()
 
         except Exception as e:
+            logging.error(traceback.format_exc())
             print (e)
 
 

@@ -13,6 +13,8 @@ import gzip
 import shutil
 import socket
 import validatedatabase
+import traceback
+import logging
 
 class RunGlue:
     def __init__(self, catalog):
@@ -62,6 +64,11 @@ class RunGlue:
             print('Triggred: '+self.crawler_name)
         except Exception as e:
             print(e)
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
 
     def check_running(self):
         rg = RunGlue(self.catalog)
@@ -83,6 +90,11 @@ class RunGlue:
                 else:
                     pass
         except Exception as e:
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             pass
             #print(e)
 
@@ -100,6 +112,11 @@ class RunGlue:
                 rg.validate_create_crawler()
 
         except Exception as e:
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             pass
             #print(e)
 
@@ -113,13 +130,18 @@ class RunGlue:
             rg1.validate_create_crawler()
 
         except Exception as e:
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             pass
             print(e)
 
 if __name__ == '__main__':
 
     x = 'litcryptodata'
-    rg = RunGlue(x)
+    rg = RunGlue()
     rg.main()
 
 

@@ -11,6 +11,8 @@ from tqdm import tqdm
 from time import sleep
 import savetos3
 import socket
+import traceback
+import logging
 
 
 class GetDtlPrice(object):
@@ -40,7 +42,7 @@ class GetDtlPrice(object):
                     if list(data.keys())[0] == "RAW":
                         df = p.DataFrame(data["RAW"][symbol])
                         df = p.DataFrame.transpose(df)
-                        df = df.assign (coin = symbol, coin_units = 1, timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname())
+                        df = df.assign (coin = symbol, timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(), exchange = exchange)
                         frames.append(df)
                     else:
                         pass
@@ -48,6 +50,11 @@ class GetDtlPrice(object):
                     pass
             except requests.exceptions.RequestException as e:
                 #print(e)
+                logging.info('------')
+                logging.error(traceback.format_exc())
+                logging.info('------')
+                logging.exception(traceback.format_exc())
+                logging.info('------')
                 error_symbols.append(symbol)
                 #.append(symbol)
                 sleep(0.2)
@@ -55,8 +62,18 @@ class GetDtlPrice(object):
                 pass
             except OverflowError:
                 print('OverflowError: '+str(symbol))
+                logging.info('------')
+                logging.error(traceback.format_exc())
+                logging.info('------')
+                logging.exception(traceback.format_exc())
+                logging.info('------')
                 pass
             except Exception as e:
+                logging.info('------')
+                logging.error(traceback.format_exc())
+                logging.info('------')
+                logging.exception(traceback.format_exc())
+                logging.info('------')
                 #print(e)
                 #print 'exception'
                 pass
@@ -95,7 +112,7 @@ class GetDtlPrice(object):
 
             my_file = self.cwd+'/data/pricedetails/price.csv'
             if os.path.isfile(my_file):
-                df_resident = p.read_csv(my_file)
+                df_resident = p.read_csv(my_file,  encoding= 'utf-8')
                 frames.append(df_resident)
             else:
                 pass
@@ -118,6 +135,11 @@ class GetDtlPrice(object):
 
         except Exception as e:
             print(e)
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             print('Error: GetDtlPrice.main')
 
 
@@ -127,19 +149,16 @@ if __name__ == '__main__':
     :return:
     """
     # exchanges =['Bitfinex','Bitstamp','coinone','Coinbase','CCCAGG']
-    #
-    # cwd = '/Users/jckail13/lit_crypto_data/alpha'
+    # cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha/'
+    # #df = p.read_csv(cwd+'/data/coininfo/coininfo.csv')
+    # #ls_has = df["Symbol"].tolist()
+    # #ls_has = ls_has[:100]
+    # symbol_list = ['BTC','BCH','LTC','ETH','XRP']
     # chunksize = 50
-    # df = p.read_csv(cwd+'/data/coininfo/coininfo.csv')
-    # ls_has = df["Symbol"].tolist()
-    # ls_has = ls_has [:10]
-    # ls_has = ['BTC','BCH','LTC','ETH']
-    # #print len(ls_has)
-    # ls_has, 200, exchanges
-    #start_time = dt.datetime.now()
-
+    # catalog = 'litcryptodata'
+    #
+    # runner = GetDtlPrice(symbol_list, exchanges, chunksize, cwd, catalog)
     runner = GetDtlPrice()
-    #runner = GetDtlPrice()
     runner.main()
     #x =  dt.datetime.now() - start_time
     #print 'Completion time: '+str(x)
