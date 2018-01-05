@@ -51,6 +51,8 @@ class AlphaRunner(object):
         self.run = self.args.run
         self.runfocus_symbols_only = self.args.runfocus_symbols_only
         self.runcrawler = self.args.runcrawler
+        self.minute_run_param = self.args.minute_run_param
+
         self.cwd = os.getcwd()
         self.focus_symbols = ['BTC','BCH','LTC','ETH','XRP']
         self.symbol_list = []
@@ -89,12 +91,12 @@ class AlphaRunner(object):
         :return:
         """
         try:
-            parser = argparse.ArgumentParser(usage='alpha_runner.py --run <run> --runfocus_symbols_only <runfocus_symbols_only> --runcrawler <runcrawler>')
-            parser.add_argument('--run', required=True, dest='run', choices=['Y', 'N'], help='want to run this y')
-            parser.add_argument('--runfocus_symbols_only', required=True, dest='runfocus_symbols_only', choices=['Y', 'N'], help='runfocus_symbols_only run')
+            parser = argparse.ArgumentParser(usage='alpha_runner.py --run <run> --runfocus_symbols_only <runfocus_symbols_only> --runcrawler <runcrawler> --minute_run_param <minute_run_param>')
+            parser.add_argument('--run', required=False, default= 'Y', dest='run', choices=['Y', 'N'], help='want to run this y')
+            parser.add_argument('--runfocus_symbols_only', required=False, default= 'N', dest='runfocus_symbols_only', choices=['Y', 'N'], help='runfocus_symbols_only run')
             parser.add_argument('--runcrawler', required= False, default= 'N',dest='runcrawler', choices=['Y', 'N'], help='runfocus_symbols_only run')
+            parser.add_argument('--minute_run_param', required= False, default= 'N',dest='minute_run_param', choices=['Y', 'N'], help='minute_run_param run')
             args = parser.parse_args()
-
             return args
         except Exception as e:
             print(e)
@@ -234,6 +236,17 @@ class AlphaRunner(object):
         else:
             print ('invalid args')
 
+    def minute_run(self,l):
+
+        logging.info ('Minute_run')
+        logging.info ('fetchprice.GetDtlPrice')
+        mfp = fetchprice.GetDtlPrice(self.focus_symbols, self.exchanges, self.chunksize,self.cwd,self.catalog) #chunk size not used here just broken up into 50 strings due to api list constraint
+        mfp.main()
+        logging.info ('minute_hist.GetMinuteHist')
+        mh = minute_hist.GetMinuteHist(self.focus_symbols,self.exchanges,self.chunksize,self.cwd,self.catalog)
+        mh.main()
+
+
 
 
     def main(self):
@@ -252,6 +265,7 @@ class AlphaRunner(object):
             print ('-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
             print('')
             print ('-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
+
             print (self.args)
             s = setup.Setup(self.cwd)
             self.cwd = s.main()
@@ -267,7 +281,14 @@ class AlphaRunner(object):
             print('chunksize: '+str(self.chunksize))
 
             print ('---------------------------------------------------------------------------------------BEGIN---------------------------------------------------------------------------------------')
-            self.alpha_runner(self.logging)
+
+
+            if self.minute_run_param == 'N':
+                self.alpha_runner(self.logging)
+            elif self.minute_run_param == 'Y':
+                self.minute_run(self.logging)
+
+
             if self.runcrawler == 'Y':
                 print ('---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
                 glue = gluemaintenance.RunGlue(self.catalog)
