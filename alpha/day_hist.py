@@ -11,6 +11,7 @@ import savetos3
 import socket
 import traceback
 import logging
+import time
 
 
 class GetDayHist(object):
@@ -43,7 +44,7 @@ class GetDayHist(object):
 
                     if data["Data"] != [] and data["Response"] == "Success":
                         df = p.DataFrame(data["Data"])
-                        df = df.assign(symbol = symbol,  timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),exchange = exchange,souce = 'cryptocompare' )
+                        df = df.assign(symbol = symbol,  utc = time.time(),hostname = socket.gethostname(),exchange = exchange,souce = 'cryptocompare' )
                         frames.append(df)
                     else:
                         pass

@@ -13,6 +13,7 @@ import savetos3
 import socket
 import traceback
 import logging
+import time
 
 
 class GetMineData(object):
@@ -47,7 +48,7 @@ class GetMineData(object):
 
                     df = p.DataFrame.from_dict(sub,orient='Index', dtype=None)
                     df = p.DataFrame.transpose(df)
-                    df = df.assign (timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),source = source,symbol = key )
+                    df = df.assign (utc = time.time(),hostname = socket.gethostname(),source = source,symbol = key )
                     frames.append(df)
 
                     my_file = self.cwd+'/data/mining_data/coin_miner_data/%s_mining.csv' % key
@@ -99,7 +100,7 @@ class GetMineData(object):
 
                     df = p.DataFrame.from_dict(sub,orient='Index', dtype=None)
                     df = p.DataFrame.transpose(df)
-                    df = df.assign (timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),source = source,symbol = key )
+                    df = df.assign (utc = time.time(),hostname = socket.gethostname(),source = source,symbol = key )
                     frames.append(df)
 
                 my_file = self.cwd+'/data/mining_data/miner_data/mining_equipment.csv'

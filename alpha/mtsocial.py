@@ -14,6 +14,7 @@ import savetos3
 import socket
 import traceback
 import logging
+import time
 
 
 class GetSocialData(object):
@@ -72,7 +73,7 @@ class GetSocialData(object):
                                 sub = code_repository['List']
                                 df = p.DataFrame(sub)
                                 if not df.empty:
-                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+                                    df = df.assign (socialsource = key,utc = time.time(),hostname = socket.gethostname(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
                                     self.coderepository_ls.append(df)
 
                                     ############################################################################################################################################################
@@ -83,7 +84,7 @@ class GetSocialData(object):
                                 df = p.DataFrame.transpose(df)
                                 df = df.query("Points > 0 ")
                                 if not df.empty:
-                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+                                    df = df.assign (socialsource = key,utc = time.time(),hostname = socket.gethostname(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
                                     self.reddit_ls.append(df)
 
                                     ############################################################################################################################################################
@@ -93,7 +94,7 @@ class GetSocialData(object):
                                 df = p.DataFrame.transpose(df)
                                 df = df.query("Points > 0 ")
                                 if not df.empty:
-                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+                                    df = df.assign (socialsource = key,utc = time.time(),hostname = socket.gethostname(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
                                     self.twitter_ls.append(df)
 
                                     ############################################################################################################################################################
@@ -103,7 +104,7 @@ class GetSocialData(object):
                                 df = p.DataFrame.transpose(df)
                                 df = df.query("Points > 0 ")
                                 if not df.empty:
-                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+                                    df = df.assign (socialsource = key,utc = time.time(),hostname = socket.gethostname(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
                                     self.facebook_ls.append(df)
 
                                     ############################################################################################################################################################
@@ -117,7 +118,7 @@ class GetSocialData(object):
                                 if not df.empty:
                                     df = p.DataFrame.from_dict(sub,orient='index', dtype=None)
                                     df = p.DataFrame.transpose(df)
-                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+                                    df = df.assign (socialsource = key,utc = time.time(),hostname = socket.gethostname(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
                                     #print df
                                     self.cryptocompare_ls.append(df)
 
@@ -127,7 +128,7 @@ class GetSocialData(object):
                                 df = p.DataFrame.from_dict(sub,orient='index', dtype=None)
                                 if not df.empty:
                                     df = p.DataFrame.transpose(df)
-                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+                                    df = df.assign (socialsource = key,utc = time.time(),hostname = socket.gethostname(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
                                     #print self.general_ls
                                     self.general_ls.append(df)
                                     #print self.general_ls

@@ -15,6 +15,7 @@ import traceback
 import logging
 import savetos3
 import socket
+import time
 
 class GetCoinLists(object):
 
@@ -40,7 +41,7 @@ class GetCoinLists(object):
 
             df = p.DataFrame.from_dict(data["Data"],orient='index', dtype=None)
 
-            df = df.assign (timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),source = source )
+            df = df.assign (utc = time.time(),hostname = socket.gethostname(),source = source )
             df = df.reset_index(drop=True)
             df = df.sort_values('Id')
             frames.append(df)

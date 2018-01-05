@@ -15,6 +15,7 @@ import socket
 import savetos3
 import traceback
 import logging
+import time
 
 class CoinMarketCap(object):
 
@@ -40,7 +41,7 @@ class CoinMarketCap(object):
             if response.status_code == 200:
                 data = response.json()
                 df = p.DataFrame(data)
-                df = df.assign( timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),source = 'coinmarketcap')
+                df = df.assign( utc = time.time(),hostname = socket.gethostname(),source = 'coinmarketcap')
                 frames.append(df)
 
                 my_file = self.cwd+'/data/coinmarketcap/ticker.csv'
