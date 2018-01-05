@@ -1,4 +1,7 @@
 
 *.pyc
 *.pyc
+<<<<<<< HEAD
 .DS_Store
+=======
+>>>>>>> jordan_dev
