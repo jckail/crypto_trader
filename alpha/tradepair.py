@@ -45,7 +45,7 @@ class GetTradePair(object):
 
                 if data["Data"] != [] and data["Response"] == "Success":
                     df = p.DataFrame(data["Data"])
-                    df = df.assign(symbol = symbol, timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),source = source )
+                    df = df.assign(symbol = symbol, utc = time.time(),hostname = socket.gethostname(),source = source )
                     frames.append(df)
 
                     if os.path.isfile(my_file):

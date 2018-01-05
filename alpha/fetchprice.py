@@ -13,6 +13,7 @@ import savetos3
 import socket
 import traceback
 import logging
+import time
 
 
 class GetDtlPrice(object):
@@ -42,7 +43,7 @@ class GetDtlPrice(object):
                     if list(data.keys())[0] == "RAW":
                         df = p.DataFrame(data["RAW"][symbol])
                         df = p.DataFrame.transpose(df)
-                        df = df.assign (coin = symbol, timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(), exchange = exchange)
+                        df = df.assign (symbol = symbol, utc = time.time(),hostname = socket.gethostname(), exchange = exchange)
                         frames.append(df)
                     else:
                         pass

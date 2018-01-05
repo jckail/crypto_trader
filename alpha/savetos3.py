@@ -90,7 +90,7 @@ class SaveS3(object):
             df = df.reset_index(drop=True)
 
             h = list(df)
-            y = ['timestamp_api_call', 'hostname']
+            y = ['utc', 'hostname']
 
             for z in y:
                 if z in h:
