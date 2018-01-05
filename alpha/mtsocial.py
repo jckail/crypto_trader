@@ -12,6 +12,8 @@ from tqdm import tqdm
 import coinlist
 import savetos3
 import socket
+import traceback
+import logging
 
 
 class GetSocialData(object):
@@ -70,7 +72,7 @@ class GetSocialData(object):
                                 sub = code_repository['List']
                                 df = p.DataFrame(sub)
                                 if not df.empty:
-                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
                                     self.coderepository_ls.append(df)
 
                                     ############################################################################################################################################################
@@ -81,7 +83,7 @@ class GetSocialData(object):
                                 df = p.DataFrame.transpose(df)
                                 df = df.query("Points > 0 ")
                                 if not df.empty:
-                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
                                     self.reddit_ls.append(df)
 
                                     ############################################################################################################################################################
@@ -91,7 +93,7 @@ class GetSocialData(object):
                                 df = p.DataFrame.transpose(df)
                                 df = df.query("Points > 0 ")
                                 if not df.empty:
-                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
                                     self.twitter_ls.append(df)
 
                                     ############################################################################################################################################################
@@ -101,7 +103,7 @@ class GetSocialData(object):
                                 df = p.DataFrame.transpose(df)
                                 df = df.query("Points > 0 ")
                                 if not df.empty:
-                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
                                     self.facebook_ls.append(df)
 
                                     ############################################################################################################################################################
@@ -115,7 +117,7 @@ class GetSocialData(object):
                                 if not df.empty:
                                     df = p.DataFrame.from_dict(sub,orient='index', dtype=None)
                                     df = p.DataFrame.transpose(df)
-                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
                                     #print df
                                     self.cryptocompare_ls.append(df)
 
@@ -125,7 +127,7 @@ class GetSocialData(object):
                                 df = p.DataFrame.from_dict(sub,orient='index', dtype=None)
                                 if not df.empty:
                                     df = p.DataFrame.transpose(df)
-                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
+                                    df = df.assign (socialsource = key,timestamp_api_call = dt.datetime.now(),hostname = socket.gethostname(),source = source,symbol = raw_symbol,symbol_id = symbol_id )
                                     #print self.general_ls
                                     self.general_ls.append(df)
                                     #print self.general_ls
@@ -136,13 +138,28 @@ class GetSocialData(object):
                     print('Invald coin'+str(symbol)+' '+str(symbol_count)+'/'+str(len_symbol_list))
 
             except requests.exceptions.RequestException as e:
+                logging.info('------')
+                logging.error(traceback.format_exc())
+                logging.info('------')
+                logging.exception(traceback.format_exc())
+                logging.info('------')
                 error_symbols.append(symbol)
                 sleep(0.2)
                 pass
             except OverflowError:
+                logging.info('------')
+                logging.error(traceback.format_exc())
+                logging.info('------')
+                logging.exception(traceback.format_exc())
+                logging.info('------')
                 print('OverflowError: '+str(symbol))
                 pass
             except Exception as e:
+                logging.info('------')
+                logging.error(traceback.format_exc())
+                logging.info('------')
+                logging.exception(traceback.format_exc())
+                logging.info('------')
                 pass
 
     def create_social_files(self,social_dict,drop_dupe_dict,key):
@@ -185,6 +202,11 @@ class GetSocialData(object):
                 else:
                     pass
         except Exception as e:
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             print(e)
             print(key)
 
@@ -262,9 +284,24 @@ class GetSocialData(object):
 
         except requests.exceptions.RequestException as e:
             print(e)
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
         except OverflowError:
             print('OverflowError: ')
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
         except Exception as e:
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             print(e)
 
         #print 'end: GetSocialData.main'

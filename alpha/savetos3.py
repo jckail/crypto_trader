@@ -17,6 +17,8 @@ import gzip
 import shutil
 import socket
 import botocore
+import traceback
+import logging
 
 
 
@@ -59,6 +61,11 @@ class SaveS3(object):
                 else:
                     pass
             except Exception as e:
+                logging.info('------')
+                logging.error(traceback.format_exc())
+                logging.info('------')
+                logging.exception(traceback.format_exc())
+                logging.info('------')
                 print(e)
 
         if os.path.isfile(self.aws_gz_file):
@@ -70,20 +77,41 @@ class SaveS3(object):
                 else:
                     pass
             except Exception as e:
+                logging.info('------')
+                logging.error(traceback.format_exc())
+                logging.info('------')
+                logging.exception(traceback.format_exc())
+                logging.info('------')
                 print(e)
 
         if len(frames) > 0:
+
             df = p.concat(frames)
             df = df.reset_index(drop=True)
+
+            h = list(df)
+            y = ['timestamp_api_call', 'hostname']
+
+            for z in y:
+                if z in h:
+                    h.remove(z)
+                else:
+                    pass
+
+            df = df.drop_duplicates(h, keep='last')
             df.to_json(self.local_gz_name,orient = 'records',compression = 'gzip',lines = True)
 
 
     def save_to_s3(self):
         try:
-
             self.s3_resource.meta.client.upload_file(self.local_gz_name,self.catalog,self.s3_file )
 
         except Exception as e:
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             print(e)
             pass
 
@@ -136,6 +164,11 @@ class SaveS3(object):
             s3.save_to_s3()
 
         except Exception as e:
+            logging.info('------')
+            logging.error(traceback.format_exc())
+            logging.info('------')
+            logging.exception(traceback.format_exc())
+            logging.info('------')
             print(e)
 
 
@@ -146,10 +179,10 @@ if __name__ == '__main__':
     :return:
     """
     '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
-    file = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha/data/coininfo/coininfo.csv'
+    file = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha/data/minute_data/bch_minute.csv'
     catalog = 'litcryptodata'
 
-    #runner = SaveS3(file,catalog)
+    #runner = SaveS3(file, catalog)
     runner = SaveS3()
     runner.main()
 
