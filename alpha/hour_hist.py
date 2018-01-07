@@ -44,7 +44,7 @@ class GetHourHist(object):
 
                     if data["Data"] != [] and data["Response"] == "Success":
                         df = p.DataFrame(data["Data"])
-                        df = df.assign(symbol = symbol,  utc = time.time(),hostname = socket.gethostname(),exchange = exchange,souce = 'cryptocompare' )
+                        df = df.assign(symbol = symbol,  utc = time.time(),hostname = socket.gethostname(),exchange = exchange,source = 'cryptocompare' )
                         frames.append(df)
                     else:
                         pass

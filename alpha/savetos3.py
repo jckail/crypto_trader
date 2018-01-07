@@ -21,37 +21,31 @@ import traceback
 import logging
 
 
-
-
 class SaveS3(object):
 
-    def __init__(self, file,catalog):
+    def __init__(self, file, catalog):
         self.catalog = catalog
         self.file = file
         self.s3_client = boto3.client('s3')
-        self.directory = file.replace(basename(file),'')
+        self.directory = file.replace(basename(file), '')
         self.s3_resource = boto3.resource('s3')
-
 
         self.basename = basename(file)
         self.filename, self.file_extension = os.path.splitext(self.basename)
 
-
-
-        self.local_gz_name = self.directory+"gzip_files/"+self.filename+'.json'+'.gz'
-        self.aws_gz_file = self.directory+"gzip_files/"+'aws_'+self.filename+'.json'+'.gz'
+        self.local_gz_name = self.directory + "gzip_files/" + self.filename + '.json' + '.gz'
+        self.aws_gz_file = self.directory + "gzip_files/" + 'aws_' + self.filename + '.json' + '.gz'
 
         self.s3_basename = basename(self.local_gz_name)
         cwd_split = self.directory.split('/')
-        target_ibdex = cwd_split.index('alpha') # project name
+        target_ibdex = cwd_split.index('alpha')  # project name
 
         self.s3_directory = '/'.join(cwd_split[target_ibdex:])
-        self.s3_file = self.s3_directory+self.s3_basename
-
+        self.s3_file = self.s3_directory + self.s3_basename
 
     def to_json(self):
         frames = []
-        #df.to_json(self.local_gz_name,compression = 'gzip')
+        # df.to_json(self.local_gz_name,compression = 'gzip')
         if os.path.isfile(self.file):
             try:
                 df = p.read_csv(self.file)
@@ -70,7 +64,7 @@ class SaveS3(object):
 
         if os.path.isfile(self.aws_gz_file):
             try:
-                df = p.read_json(self.aws_gz_file,orient = 'records',compression = 'gzip',lines = True)
+                df = p.read_json(self.aws_gz_file, orient='records', compression='gzip', lines=True)
                 df = df.reset_index(drop=True)
                 if not df.empty:
                     frames.append(df)
@@ -99,12 +93,11 @@ class SaveS3(object):
                     pass
 
             df = df.drop_duplicates(h, keep='last')
-            df.to_json(self.local_gz_name,orient = 'records',compression = 'gzip',lines = True)
-
+            df.to_json(self.local_gz_name, orient='records', compression='gzip', lines=True)
 
     def save_to_s3(self):
         try:
-            self.s3_resource.meta.client.upload_file(self.local_gz_name,self.catalog,self.s3_file )
+            self.s3_resource.meta.client.upload_file(self.local_gz_name, self.catalog, self.s3_file)
 
         except Exception as e:
             logging.info('------')
@@ -158,7 +151,7 @@ class SaveS3(object):
 
     def main(self):
         try:
-            s3 = SaveS3(self.file,self.catalog)
+            s3 = SaveS3(self.file, self.catalog)
             s3.get_s3_file()
             s3.to_json()
             s3.save_to_s3()
@@ -172,7 +165,6 @@ class SaveS3(object):
             print(e)
 
 
-
 if __name__ == '__main__':
     """
 
@@ -182,10 +174,8 @@ if __name__ == '__main__':
     file = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha/data/minute_data/bch_minute.csv'
     catalog = 'litcryptodata'
 
-    #runner = SaveS3(file, catalog)
+    # runner = SaveS3(file, catalog)
     runner = SaveS3()
     runner.main()
-
-
 
     # 42 seconds 100 records
