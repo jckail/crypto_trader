@@ -16,37 +16,41 @@ import logging
 import savetos3
 import socket
 import time
+import csv
 
-class GetCoinLists(object):
+class GetAVCurrencyList(object):
 
     def __init__(self, cwd,catalog):
 
         self.cwd = cwd
         self.catalog = catalog
+        self.avcurs = []
 
 
-    def func_get_coin_list(self):
+    def getcurrencylist(self):
+
         try:
             frames = []
-            source = "cryptocompare"
-            url = "https://min-api.cryptocompare.com/data/all/coinlist"
+            url = "https://www.alphavantage.co/physical_currency_list/"
 
             headers = {
                 'cache-control': "no-cache",
-                'postman-token': "a1299df4-9db1-44cc-376e-0357176b776f"
+                'postman-token': "f7f0c0c6-c707-e39e-76ed-f61d9046b7f8"
             }
 
             response = requests.request("GET", url, headers=headers)
-            data = response.json()
 
-            df = p.DataFrame.from_dict(data["Data"],orient='index', dtype=None)
+            data = response.content.decode('utf-8')
+            cr = csv.reader(data.splitlines(), delimiter=',')
+            my_list = list(cr)
+            df = p.DataFrame(my_list[1:],columns=my_list[0])
 
-            df = df.assign (utc = time.time(),hostname = socket.gethostname(),source = source )
+            df = df.assign (utc = time.time(),hostname = socket.gethostname(),source = 'alphavantage' )
             df = df.reset_index(drop=True)
-            df = df.sort_values('Id')
             frames.append(df)
 
-            my_file = self.cwd+'/data/coininfo/coininfo.csv'
+
+            my_file = self.cwd+'/data/avinfo/avcurrencies.csv'
             if os.path.isfile(my_file):
                 df_resident = p.read_csv(my_file,  encoding= 'utf-8')
                 frames.append(df_resident)
@@ -57,41 +61,40 @@ class GetCoinLists(object):
             df = p.concat(frames)
 
             if not df.empty:
-                df = df.drop_duplicates(['Symbol','source'], keep='last')
+                df = df.drop_duplicates(['currency code','currency name'], keep='last')
                 df = df.reset_index(drop=True)
                 df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
                 s3 = savetos3.SaveS3(my_file,self.catalog)
                 s3.main()
-
-            else:
-                pass
+                self.avcurs = df["currency code"].tolist()
+                return self.avcurs
 
         except requests.exceptions.RequestException as e:
-
             print (e)
         except Exception as e:
-
             logging.info('------')
             logging.error(traceback.format_exc())
             logging.info('------')
             logging.exception(traceback.format_exc())
             logging.info('------')
 
-            print (e)
+            print(e)
 
     def main(self):
-        print ('begin: GetCoinLists.main')
+        print('begin: GetCurrencyList.main')
 
         try:
-            gcl = GetCoinLists(self.cwd,self.catalog)
-            gcl.func_get_coin_list()
+            gcl = GetAVCurrencyList(self.cwd,self.catalog)
+            self.avcurs = gcl.getcurrencylist()
+            print ('DONE')
+            return self.avcurs
 
         except Exception as e:
             logging.error(traceback.format_exc())
             print (e)
 
 
-        print ('DONE')
+
 
 
 if __name__ == '__main__':
@@ -99,9 +102,12 @@ if __name__ == '__main__':
 
     :return:
     """
-    #cwd = os.getcwd()
-    runner = GetCoinLists()
+    # cwd = os.getcwd()
+    # cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
+    # catalog = 'litcryptodata'
+    # runner = GetAVCurrencyList(cwd,catalog)
 
+    runner = GetAVCurrencyList()
     runner.main()
 
 
