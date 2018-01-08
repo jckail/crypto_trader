@@ -48,6 +48,7 @@ class Setup(object):
                 , '/data/mining_data/coin_miner_data/' \
                 , '/data/mining_data/miner_data/'
                 , '/data/avinfo/'
+                , '/data/currency_exchange_rates/'
                            ]
 
             # for y in tqdm(create_list,desc='validate_directories'): #progressbar

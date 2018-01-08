@@ -38,6 +38,7 @@ import coinmarketcaptest
 import logtos3
 import avcurrencylist
 import avcoinlist
+import avcurexchangerate
 
 
 
@@ -76,6 +77,7 @@ class AlphaRunner(object):
         self.avkey = '6258AGUENRIIG1MH'
         self.avcurs = []
         self.avcoins = []
+        self.top_currencies = ['USD','EUR','JPY','GBP','KRW','CNY','CAD','HKD','INR']
 
 
         machine = str(socket.gethostname())
@@ -250,6 +252,10 @@ class AlphaRunner(object):
         self.avcurs = acur.main()
         acui = avcoinlist.GetAVCoinList(self.cwd,self.catalog)
         self.avcoins = acui.main()
+
+        aver = avcurexchangerate.AvCurExRate(self.top_currencies, self.catalog, self.chunksize, self.cwd, self.top_currencies)
+        aver.main()
+        #av get market list broken
 
 
     def minute_run(self,l):
