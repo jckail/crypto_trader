@@ -36,6 +36,8 @@ import s3maintenance
 import awscatalogcreate
 import coinmarketcaptest
 import logtos3
+import avcurrencylist
+import avcoinlist
 
 
 
@@ -47,6 +49,7 @@ class AlphaRunner(object):
     """
 
     def __init__(self):
+        self.start_time = dt.datetime.now()
         self.args = self.get_args()
         self.run = self.args.run
         self.runfocus_symbols_only = self.args.runfocus_symbols_only
@@ -70,6 +73,9 @@ class AlphaRunner(object):
         self.trade_pair = {}
         self.exchange_trade_pair = {}
         self.catalog = ''
+        self.avkey = '6258AGUENRIIG1MH'
+        self.avcurs = []
+        self.avcoins = []
 
 
         machine = str(socket.gethostname())
@@ -116,9 +122,9 @@ class AlphaRunner(object):
         except Exception as e:
             print(e)
 
-    def alpha_runner(self,l):
+    def cryptocompare(self,l):
         if self.run == 'Y':
-            print ("Begin alpha_runner")
+            print ("Begin cryptocompare")
             try:
                 try:
                     if self.runfocus_symbols_only == 'N':
@@ -153,11 +159,6 @@ class AlphaRunner(object):
                     logging.info ('miningdata.GetMineData')
                     md = miningdata.GetMineData(self.cwd,self.catalog)
                     md.main()
-                    # #
-                    print('--------------------------------------------------------------------------')
-                    logging.info ('coinmarketcaptest.CoinMarketCap')
-                    cmc = coinmarketcaptest.CoinMarketCap(self.cwd, self.catalog)
-                    cmc.main()
                     # # #thread1 = threading.Thread(target=md.main(), args=())
                     # #
                     print('--------------------------------------------------------------------------')
@@ -231,10 +232,25 @@ class AlphaRunner(object):
                 logging.exception(traceback.format_exc())
                 logging.info('------')
                 print(e)
-                print ("ERROR: alpha_runner")
+                print ("ERROR: cryptocompare")
 
         else:
             print ('invalid args')
+    def coinmarketcap(self):
+        # #
+        print('--------------------------------------------------------------------------')
+        logging.info ('coinmarketcaptest.CoinMarketCap')
+        cmc = coinmarketcaptest.CoinMarketCap(self.cwd, self.catalog)
+        cmc.main()
+
+    def alphavangate(self):
+        print ('---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
+        logging.info ('alphavangate')
+        acur = avcurrencylist.GetAVCurrencyList(self.cwd,self.catalog)
+        self.avcurs = acur.main()
+        acui = avcoinlist.GetAVCoinList(self.cwd,self.catalog)
+        self.avcoins = acui.main()
+
 
     def minute_run(self,l):
 
@@ -246,9 +262,6 @@ class AlphaRunner(object):
         mh = minute_hist.GetMinuteHist(self.focus_symbols,self.exchanges,self.chunksize,self.cwd,self.catalog)
         mh.main()
 
-
-
-
     def main(self):
         try:
 
@@ -257,7 +270,7 @@ class AlphaRunner(object):
             logging.info ('')
             logging.info ('')
             self.logging.info(socket.gethostname())
-            start_time = dt.datetime.now()
+
             #logging.basicConfig(filename='myapp.log', level=logging.INFO)
             self.logging.info('Started')
 
@@ -284,7 +297,20 @@ class AlphaRunner(object):
 
 
             if self.minute_run_param == 'N':
-                self.alpha_runner(self.logging)
+                self.cryptocompare(self.logging)
+                self.runtime = dt.datetime.now() - self.start_time
+                print ('------------------Run time: '+str(self.runtime)+' ------------------')
+                ##
+                self.coinmarketcap()
+                self.runtime = dt.datetime.now() - self.start_time
+                print ('------------------Run time: '+str(self.runtime)+' ------------------')
+                ##
+                self.alphavangate()
+                # self.runtime = dt.datetime.now() - self.start_time
+                # print ('------------------Run time: '+str(self.runtime)+' ------------------')
+
+
+
             elif self.minute_run_param == 'Y':
                 self.minute_run(self.logging)
 
@@ -295,13 +321,14 @@ class AlphaRunner(object):
                 glue.main()
 
             print ('---------------------------------------------------------------------------------------END---------------------------------------------------------------------------------------')
-            x = dt.datetime.now() - start_time
-            print ('Completion time: '+str(x))
+            self.runtime = dt.datetime.now() - self.start_time
+            print ('------------------Completion time: '+str(self.runtime)+' ------------------')
             lts = logtos3.LogToS3(self.catalog,self.logfile, self.s3_log_file)
             lts.main()
             print ('---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
             self.logging.info('Finished')
-            self.logging.info('Completion time: '+str(x))
+            self.runtime = dt.datetime.now() - self.start_time
+            self.logging.info('------------------Completion time: '+str(self.runtime)+' ------------------')
             print('')
             self.logging.info(socket.gethostname())
 

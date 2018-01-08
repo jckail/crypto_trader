@@ -47,6 +47,7 @@ class Setup(object):
                 , '/data/pricedetails/' \
                 , '/data/mining_data/coin_miner_data/' \
                 , '/data/mining_data/miner_data/'
+                , '/data/avinfo/'
                            ]
 
             # for y in tqdm(create_list,desc='validate_directories'): #progressbar
@@ -76,7 +77,9 @@ class Setup(object):
             self.cwd = s.build_data_path()
             s.validate_directories()
             # print(self.cwd)
+            print ('---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
             return self.cwd
+
         except Exception as e:
             logging.info('------')
             logging.error(traceback.format_exc())
@@ -87,7 +90,7 @@ class Setup(object):
 
 
 if __name__ == '__main__':
-    cwd = os.getcwd()
+    # cwd = os.getcwd()
 
     s = Setup()
     s.main()
