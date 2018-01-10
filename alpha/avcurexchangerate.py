@@ -128,9 +128,9 @@ class AvCurExRate(object):
 
         xsymbols = [self.avcurs[x:x+self.chunksize] for x in range(0, len(self.avcurs), self.chunksize )]
 
-        print('Begin: get_rate')
+        print('Begin: AvCurExRate')
 
-        for symbol_list in tqdm(xsymbols,desc='get_rate'):
+        for symbol_list in tqdm(xsymbols,desc='AvCurExRate'):
 
             threads = [threading.Thread(target=aver.get_rate, args=(symbol,error_symbols,)) for symbol in symbol_list]
 

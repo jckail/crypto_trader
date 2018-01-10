@@ -138,7 +138,8 @@ class GetLMEData(object):
 
         except LimitExceededError as e:
             error_symbols.append(metal)
-            sleep(.5)
+            #sleep(1)
+            logging.exception(traceback.format_exc())
             # logging.info('------')
             # logging.error(traceback.format_exc())
             # logging.info('------')
@@ -164,7 +165,7 @@ class GetLMEData(object):
                 threads = [threading.Thread(target=gcl.get_metals, args=(metal,error_symbols,)) for metal in metallist]
 
                 for thread in threads:
-                    sleep(.1)
+                    sleep(.75)
                     thread.start()
 
                 for thread in threads:
@@ -196,9 +197,9 @@ if __name__ == '__main__':
     cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
     catalog = 'litcryptodata'
     chunksize = 200
-    runner = GetLMEData()
+    #runner = GetLMEData(cwd,catalog,chunksize)
 
-    #runner = GetAVCurrencyList()
+    runner = GetLMEData()
     runner.main()
 
 
