@@ -136,10 +136,9 @@ class GetLMEData(object):
                 pass
 
 
-        except Exception as e:
+        except LimitExceededError as e:
             error_symbols.append(metal)
-            sleep(.2)
-            #print(e)
+            sleep(.5)
             # logging.info('------')
             # logging.error(traceback.format_exc())
             # logging.info('------')
@@ -147,8 +146,8 @@ class GetLMEData(object):
             # logging.info('------')
             pass
 
-        # except LimitExceededError:
-        #     pass
+        except Exception:
+             pass
 
     def main(self):
         print('begin: GetLMEData.main')
@@ -165,7 +164,7 @@ class GetLMEData(object):
                 threads = [threading.Thread(target=gcl.get_metals, args=(metal,error_symbols,)) for metal in metallist]
 
                 for thread in threads:
-                    sleep(.1)
+                    sleep(.5)
                     thread.start()
 
                 for thread in threads:
