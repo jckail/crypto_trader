@@ -165,7 +165,7 @@ class GetLMEData(object):
                 threads = [threading.Thread(target=gcl.get_metals, args=(metal,error_symbols,)) for metal in metallist]
 
                 for thread in threads:
-                    sleep(.75)
+                    sleep(.3)
                     thread.start()
 
                 for thread in threads:
@@ -197,9 +197,9 @@ if __name__ == '__main__':
     cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
     catalog = 'litcryptodata'
     chunksize = 200
-    #runner = GetLMEData(cwd,catalog,chunksize)
+    runner = GetLMEData(cwd,catalog,chunksize)
 
-    runner = GetLMEData()
+    #runner = GetLMEData()
     runner.main()
 
 
