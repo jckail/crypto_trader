@@ -50,7 +50,18 @@ class Setup(object):
                 , '/data/avinfo/'
                 , '/data/currency_exchange_rates/'
                 , '/data/londonmetalexchange/'
+                , '/data/londonmetalexchange/dim_londonmetalexchange/'
                 , '/data/londonmetalexchange/metals/'
+                , '/data/lbma/'
+                , '/data/lbma/dim_lbma/'
+                , '/data/lbma/metals/'
+                , '/data/lbma/metals/lbma_DAILY/'
+                , '/data/lbma/metals/lbma_GOFO/'
+                , '/data/lbma/metals/lbma_SILVER/'
+                , '/data/lbma/metals/lbma_GOLD/'
+                , '/data/quandlstocks/'
+                , '/data/quandlstocks/dim_stocks/'
+                , '/data/quandlstocks/fact_stocks/'
                            ]
 
             # for y in tqdm(create_list,desc='validate_directories'): #progressbar
@@ -93,7 +104,8 @@ class Setup(object):
 
 
 if __name__ == '__main__':
-    # cwd = os.getcwd()
+    cwd = os.getcwd()
 
-    s = Setup()
+    s = Setup(cwd)
+    #s = Setup()
     s.main()

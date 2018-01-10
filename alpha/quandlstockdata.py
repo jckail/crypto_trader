@@ -24,29 +24,29 @@ import threading
 from quandl.errors.quandl_error import LimitExceededError
 
 
-class GetLMEData(object):
+class GetStockData(object):
 
     def __init__(self, cwd,catalog,chunksize):
 
         self.cwd = cwd
         self.catalog = catalog
-        self.chunksize = 25
-        self.metallist = []
+        self.chunksize =  chunksize
+        self.stocklist = []
         self.og_chunk = chunksize
 
 
-    def getmetallist(self):
+    def getstocklist(self):
 
         try:
             frames = []
-            my_file = self.cwd+'/data/londonmetalexchange/dim_londonmetalexchange/'+'LME-datasets-codes.csv'
-            if os.path.isfile(my_file):
-                df_resident = p.read_csv(my_file,  encoding= 'utf-8')
-                frames.append(df_resident)
-            else:
-                pass
+            # my_file = self.cwd+'/data/quandlstocks/dim_stocks/'+'LME-datasets-codes.csv'
+            # if os.path.isfile(my_file):
+            #     df_resident = p.read_csv(my_file,  encoding= 'utf-8')
+            #     frames.append(df_resident)
+            # else:
+            #     pass
 
-            url = "https://www.quandl.com/api/v3/databases/LME/codes?api_key=kzmH8ENEsNUc5GkS9bum"
+            url = "https://www.quandl.com/api/v3/databases/WIKI/codes?api_key=kzmH8ENEsNUc5GkS9bum"
 
             request = requests.get(url)
             data = zipfile.ZipFile(BytesIO(request.content))
@@ -54,7 +54,7 @@ class GetLMEData(object):
             x = data.namelist()
             for y in x:
                 #print(y)
-                my_file = data.extract(y,self.cwd+'/data/londonmetalexchange/dim_londonmetalexchange/')
+                my_file = data.extract(y,self.cwd+'/data/quandlstocks/dim_stocks/')
 
             column_names = ['pattern','description']
             df = p.read_csv(my_file, header = None, names = column_names)
@@ -93,11 +93,11 @@ class GetLMEData(object):
                 s3 = savetos3.SaveS3(my_file,self.catalog)
                 s3.main()
                 x = df.query("(location != location ) or (location == 'All Areas')")
-                self.metallist =x["pattern"].tolist()
-                return self.metallist
+                self.stocklist =x["pattern"].tolist()
+                return self.stocklist
 
 
-                #return metallist
+                #return stocklist
         except requests.exceptions.RequestException as e:
             print (e)
         except Exception as e:
@@ -109,15 +109,18 @@ class GetLMEData(object):
 
             print(e)
 
-    def get_metals(self,metal,error_symbols):
+    def get_stocks(self,stock,error_symbols):
         try:
-            df = quandl.get(metal, authtoken="kzmH8ENEsNUc5GkS9bum")
-            pattern = metal
-            metal = metal.replace('LME/','')
-            df = df.assign (utc = time.time(),hostname = socket.gethostname(),source = 'quandl',pattern = pattern, metal = metal, Date = ''  )
+            df = quandl.get(stock, authtoken="kzmH8ENEsNUc5GkS9bum")
+            pattern = stock
+            stock = stock.replace('WIKI/','')
+            df = df.assign (utc = time.time(),hostname = socket.gethostname(),source = 'quandl',pattern = pattern, stock = stock, Date = ''  )
+
             df['Date'] = df.index
 
-            my_file = self.cwd+'/data/londonmetalexchange/metals/'+metal+'.csv'
+
+
+            my_file = self.cwd+'/data/quandlstocks/fact_stocks/'+stock+'.csv'
             frames = []
             frames.append(df)
 
@@ -129,7 +132,7 @@ class GetLMEData(object):
             df = p.concat(frames)
 
             if not df.empty:
-                df = df.drop_duplicates(['pattern','description','Date'], keep='last')
+                df = df.drop_duplicates(['pattern','Date'], keep='last')
                 df = df.reset_index(drop=True)
                 df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
                 s3 = savetos3.SaveS3(my_file,self.catalog)
@@ -140,7 +143,7 @@ class GetLMEData(object):
 
 
         except LimitExceededError as e:
-            error_symbols.append(metal)
+            error_symbols.append(stock)
             #sleep(1)
             #logging.exception(traceback.format_exc())
             # logging.info('------')
@@ -151,30 +154,30 @@ class GetLMEData(object):
             pass
 
         except Exception:
-             pass
+            pass
 
     def main(self):
-        print('begin: GetLMEData.main')
+        print('begin: GetStockData.main')
 
         try:
-            gcl = GetLMEData(self.cwd,self.catalog,self.chunksize)
-            self.metallist = gcl.getmetallist()
+            gcl = GetStockData(self.cwd,self.catalog,self.chunksize)
+            self.stocklist = gcl.getstocklist()
             error_symbols = []
-            xmetalist = [self.metallist[x:x+self.chunksize] for x in range(0, len(self.metallist), self.chunksize )]
+            xstockist = [self.stocklist[x:x+self.chunksize] for x in range(0, len(self.stocklist), self.chunksize )]
 
-            for metallist in tqdm(xmetalist,desc='Get Metal Info'):
+            for stocklist in tqdm(xstockist,desc='Get Metal Info'):
 
-                threads = [threading.Thread(target=gcl.get_metals, args=(metal,error_symbols,)) for metal in metallist]
+                threads = [threading.Thread(target=gcl.get_stocks, args=(stock,error_symbols,)) for stock in stocklist]
 
                 for thread in threads:
-                    sleep(.3)
+                    #sleep(.3)
                     thread.start()
 
                 for thread in threads:
                     thread.join()
 
                     if len(error_symbols) > 0:
-                        xmetalist.append(error_symbols)
+                        xstockist.append(error_symbols)
                         error_symbols = []
                     else:
                         pass
@@ -194,9 +197,9 @@ if __name__ == '__main__':
     # cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
     # catalog = 'litcryptodata'
     # chunksize = 500
-    # runner = GetLMEData(cwd,catalog,chunksize)
+    # runner = GetStockData(cwd,catalog,chunksize)
 
-    runner = GetLMEData()
+    runner = GetStockData()
     runner.main()
 
 

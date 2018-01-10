@@ -60,13 +60,13 @@ class AvCurExRate(object):
                     else:
                         local.append(to_currency)
                         #error_symbols.append(symbol)
-                        sleep(5)
+                        sleep(2)
                         pass
                 else:
                     pass
             except requests.exceptions.RequestException as e:
                 error_symbols.append(symbol)
-                sleep(0.2)
+                #sleep(0.2)
                 logging.info('------')
                 logging.error(traceback.format_exc())
                 logging.info('------')

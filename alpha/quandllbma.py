@@ -24,7 +24,7 @@ import threading
 from quandl.errors.quandl_error import LimitExceededError
 
 
-class GetLMEData(object):
+class GetLBMAData(object):
 
     def __init__(self, cwd,catalog,chunksize):
 
@@ -39,14 +39,14 @@ class GetLMEData(object):
 
         try:
             frames = []
-            my_file = self.cwd+'/data/londonmetalexchange/dim_londonmetalexchange/'+'LME-datasets-codes.csv'
+            my_file = self.cwd+'/data/lbma/dim_lbma/'+'LBMA-datasets-codes.csv'
             if os.path.isfile(my_file):
                 df_resident = p.read_csv(my_file,  encoding= 'utf-8')
                 frames.append(df_resident)
             else:
                 pass
 
-            url = "https://www.quandl.com/api/v3/databases/LME/codes?api_key=kzmH8ENEsNUc5GkS9bum"
+            url = "https://www.quandl.com/api/v3/databases/lbma/codes?api_key=kzmH8ENEsNUc5GkS9bum"
 
             request = requests.get(url)
             data = zipfile.ZipFile(BytesIO(request.content))
@@ -54,7 +54,7 @@ class GetLMEData(object):
             x = data.namelist()
             for y in x:
                 #print(y)
-                my_file = data.extract(y,self.cwd+'/data/londonmetalexchange/dim_londonmetalexchange/')
+                my_file = data.extract(y,self.cwd+'/data/lbma/dim_lbma/')
 
             column_names = ['pattern','description']
             df = p.read_csv(my_file, header = None, names = column_names)
@@ -92,12 +92,10 @@ class GetLMEData(object):
                 df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
                 s3 = savetos3.SaveS3(my_file,self.catalog)
                 s3.main()
-                x = df.query("(location != location ) or (location == 'All Areas')")
-                self.metallist =x["pattern"].tolist()
+                #x = df.query("(location != location ) or (location == 'All Areas')") # not used here keep for standarization
+                self.metallist =df["pattern"].tolist()
                 return self.metallist
 
-
-                #return metallist
         except requests.exceptions.RequestException as e:
             print (e)
         except Exception as e:
@@ -113,11 +111,13 @@ class GetLMEData(object):
         try:
             df = quandl.get(metal, authtoken="kzmH8ENEsNUc5GkS9bum")
             pattern = metal
-            metal = metal.replace('LME/','')
+            metal = metal.replace('LBMA/','')
+
             df = df.assign (utc = time.time(),hostname = socket.gethostname(),source = 'quandl',pattern = pattern, metal = metal, Date = ''  )
             df['Date'] = df.index
+            #print(df)
 
-            my_file = self.cwd+'/data/londonmetalexchange/metals/'+metal+'.csv'
+            my_file = self.cwd+'/data/lbma/metals/lbma_'+metal+'/'+metal+'.csv'
             frames = []
             frames.append(df)
 
@@ -129,7 +129,7 @@ class GetLMEData(object):
             df = p.concat(frames)
 
             if not df.empty:
-                df = df.drop_duplicates(['pattern','description','Date'], keep='last')
+                df = df.drop_duplicates(['pattern','Date'], keep='last')
                 df = df.reset_index(drop=True)
                 df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
                 s3 = savetos3.SaveS3(my_file,self.catalog)
@@ -151,13 +151,13 @@ class GetLMEData(object):
             pass
 
         except Exception:
-             pass
+            pass
 
     def main(self):
-        print('begin: GetLMEData.main')
+        print('begin: GetLBMAData.main')
 
         try:
-            gcl = GetLMEData(self.cwd,self.catalog,self.chunksize)
+            gcl = GetLBMAData(self.cwd,self.catalog,self.chunksize)
             self.metallist = gcl.getmetallist()
             error_symbols = []
             xmetalist = [self.metallist[x:x+self.chunksize] for x in range(0, len(self.metallist), self.chunksize )]
@@ -194,9 +194,9 @@ if __name__ == '__main__':
     # cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
     # catalog = 'litcryptodata'
     # chunksize = 500
-    # runner = GetLMEData(cwd,catalog,chunksize)
+    # runner = GetLBMAData(cwd,catalog,chunksize)
 
-    runner = GetLMEData()
+    runner = GetLBMAData()
     runner.main()
 
 

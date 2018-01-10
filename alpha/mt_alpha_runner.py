@@ -40,6 +40,8 @@ import avcurrencylist
 import avcoinlist
 import avcurexchangerate
 import quandlgetlmedata
+import quandllbma
+import quandlstockdata
 
 
 
@@ -267,7 +269,10 @@ class AlphaRunner(object):
         logging.info ('alphavangate')
         quand = quandlgetlmedata.GetLMEData(self.cwd,self.catalog,self.chunksize)
         quand.main()
-
+        quand2 = quandllbma.GetLBMAData(self.cwd,self.catalog,self.chunksize)
+        quand2.main()
+        quand3 = quandlstockdata.GetStockData(self.cwd,self.catalog,self.chunksize)
+        quand3.main()
 
 
     def minute_run(self,l):
