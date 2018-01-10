@@ -82,7 +82,11 @@ class AlphaRunner(object):
 
 
         machine = str(socket.gethostname())
-        self.logfile = 'litcrypto_'+machine+'.log'
+        if self.minute_run_param == 'N':
+            self.logfile = 'hour'+'litcrypto_'+machine+'.log'
+        elif self.minute_run_param == 'Y':
+            self.logfile = 'min'+'litcrypto_'+machine+'.log'
+
         cwd_split = self.cwd.split('/')
         target_ibdex = cwd_split.index('alpha') # project name
         self.logger_path = '/'.join(cwd_split[:target_ibdex-1])+'/lit_crypto_data/alpha/logs/'
