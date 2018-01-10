@@ -241,7 +241,6 @@ class GetSocialData(object):
                 for thread in threads:
                     thread.start()
 
-                #for thread in tqdm(threads,desc='Closed Threads'):
                 for thread in threads:
                     thread.join()
 

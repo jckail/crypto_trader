@@ -29,7 +29,7 @@ class AvCurExRate(object):
         for x in self.top_currencies:
             local.append(x)
         for to_currency in local:
-            print(local)
+            #print(local)
             sleep(2)
             url = "https://www.alphavantage.co/query"
 

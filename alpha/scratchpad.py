@@ -1,7 +1,5 @@
-#!/usr/bin/env python
+import quandl
+quandl.ApiConfig.api_key = "kzmH8ENEsNUc5GkS9bum"
+data = quandl.get_table('LME/ST', paginate=True)
 
-__author__ = 'jkail'
-
-import time
-
-print(time.time())
+print (data)

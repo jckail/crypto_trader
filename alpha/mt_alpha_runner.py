@@ -39,6 +39,7 @@ import logtos3
 import avcurrencylist
 import avcoinlist
 import avcurexchangerate
+import quandlgetlmedata
 
 
 
@@ -257,6 +258,13 @@ class AlphaRunner(object):
         aver.main()
         #av get market list broken
 
+    def quandl(self):
+        print ('---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
+        logging.info ('alphavangate')
+        quand = quandlgetlmedata.GetLMEData(self.cwd,self.catalog,self.chunksize)
+        quand.main()
+
+
 
     def minute_run(self,l):
 
@@ -312,8 +320,9 @@ class AlphaRunner(object):
                 print ('------------------Run time: '+str(self.runtime)+' ------------------')
                 ##
                 self.alphavangate()
-                # self.runtime = dt.datetime.now() - self.start_time
-                # print ('------------------Run time: '+str(self.runtime)+' ------------------')
+                self.runtime = dt.datetime.now() - self.start_time
+                print ('------------------Run time: '+str(self.runtime)+' ------------------')
+                self.quandl()
 
 
 
