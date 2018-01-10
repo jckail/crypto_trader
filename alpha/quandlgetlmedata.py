@@ -164,7 +164,7 @@ class GetLMEData(object):
                 threads = [threading.Thread(target=gcl.get_metals, args=(metal,error_symbols,)) for metal in metallist]
 
                 for thread in threads:
-                    sleep(.5)
+                    sleep(.1)
                     thread.start()
 
                 for thread in threads:
