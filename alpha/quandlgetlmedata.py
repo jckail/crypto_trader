@@ -30,8 +30,9 @@ class GetLMEData(object):
 
         self.cwd = cwd
         self.catalog = catalog
-        self.chunksize = chunksize
+        self.chunksize = 25
         self.metallist = []
+        self.og_chunk = chunksize
 
 
     def getmetallist(self):
@@ -87,12 +88,14 @@ class GetLMEData(object):
             if not df.empty:
                 df = df.drop_duplicates(['patern','description'], keep='last')
                 df = df.reset_index(drop=True)
-                self.metallist =df["patern"].tolist()
+
                 df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
                 s3 = savetos3.SaveS3(my_file,self.catalog)
                 s3.main()
-
+                x = df.query("(location != location ) or (location == 'All Areas')")
+                self.metallist =x["patern"].tolist()
                 return self.metallist
+
 
                 #return metallist
         except requests.exceptions.RequestException as e:
@@ -139,7 +142,7 @@ class GetLMEData(object):
         except LimitExceededError as e:
             error_symbols.append(metal)
             #sleep(1)
-            logging.exception(traceback.format_exc())
+            #logging.exception(traceback.format_exc())
             # logging.info('------')
             # logging.error(traceback.format_exc())
             # logging.info('------')
@@ -159,7 +162,6 @@ class GetLMEData(object):
             error_symbols = []
             xmetalist = [self.metallist[x:x+self.chunksize] for x in range(0, len(self.metallist), self.chunksize )]
 
-
             for metallist in tqdm(xmetalist,desc='Get Metal Info'):
 
                 threads = [threading.Thread(target=gcl.get_metals, args=(metal,error_symbols,)) for metal in metallist]
@@ -177,29 +179,24 @@ class GetLMEData(object):
                     else:
                         pass
 
-
             print ('DONE')
 
         except Exception as e:
             logging.error(traceback.format_exc())
             print (e)
 
-
-
-
-
 if __name__ == '__main__':
     """
 
     :return:
     """
-    cwd = os.getcwd()
-    cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
-    catalog = 'litcryptodata'
-    chunksize = 200
-    runner = GetLMEData(cwd,catalog,chunksize)
+    # cwd = os.getcwd()
+    # cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
+    # catalog = 'litcryptodata'
+    # chunksize = 500
+    # runner = GetLMEData(cwd,catalog,chunksize)
 
-    #runner = GetLMEData()
+    runner = GetLMEData()
     runner.main()
 
 
