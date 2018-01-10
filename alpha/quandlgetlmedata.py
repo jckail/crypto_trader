@@ -196,7 +196,7 @@ if __name__ == '__main__':
     cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
     catalog = 'litcryptodata'
     chunksize = 200
-    runner = GetLMEData(cwd,catalog,chunksize)
+    runner = GetLMEData()
 
     #runner = GetAVCurrencyList()
     runner.main()
