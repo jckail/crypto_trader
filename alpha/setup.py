@@ -62,6 +62,8 @@ class Setup(object):
                 , '/data/quandlstocks/'
                 , '/data/quandlstocks/dim_stocks/'
                 , '/data/quandlstocks/fact_stocks/'
+                , '/data/cme/'
+                , '/data/cme/dim_cme/'
                            ]
 
             # for y in tqdm(create_list,desc='validate_directories'): #progressbar
@@ -106,6 +108,6 @@ class Setup(object):
 if __name__ == '__main__':
     cwd = os.getcwd()
 
-    s = Setup(cwd)
-    #s = Setup()
+    #s = Setup(cwd)
+    s = Setup()
     s.main()

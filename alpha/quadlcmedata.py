@@ -24,7 +24,7 @@ import threading
 from quandl.errors.quandl_error import LimitExceededError
 
 
-class GetStockData(object):
+class GetCMEData(object):
 
     def __init__(self, cwd,catalog,chunksize):
 
@@ -35,18 +35,18 @@ class GetStockData(object):
         self.og_chunk = chunksize
 
 
-    def getstocklist(self):
+    def cmelist(self):
 
         try:
             frames = []
-            my_file = self.cwd+'/data/quandlstocks/dim_stocks/'+'WIKI-datasets-codes.csv'
+            my_file = self.cwd+'/data/cme/dim_cme/'+'CME-datasets-codes.csv'
             if os.path.isfile(my_file):
                 df_resident = p.read_csv(my_file,  encoding= 'utf-8')
                 frames.append(df_resident)
             else:
                 pass
 
-            url = "https://www.quandl.com/api/v3/databases/WIKI/codes?api_key=kzmH8ENEsNUc5GkS9bum"
+            url = "https://www.quandl.com/api/v3/databases/CME/codes?api_key=kzmH8ENEsNUc5GkS9bum"
 
             request = requests.get(url)
             data = zipfile.ZipFile(BytesIO(request.content))
@@ -54,60 +54,75 @@ class GetStockData(object):
             x = data.namelist()
             for y in x:
                 #print(y)
-                my_file = data.extract(y,self.cwd+'/data/quandlstocks/dim_stocks/')
+                my_file = data.extract(y,self.cwd+'/data/cme/dim_cme/')
 
             column_names = ['pattern','description']
             df = p.read_csv(my_file, header = None, names = column_names)
-            df = df.reset_index(drop=True)
-            descriptionlist =df["description"].tolist()
+            #df = df.reset_index(drop=True)
 
-            mitem = []
-            mlocation = []
+            yearlist =df["pattern"].tolist()
 
-            for z in descriptionlist:
+            year = []
+
+            for z in yearlist:
                 #d = z
-                z = z.replace('- All T', 'All T')
-                x = z.split(" - ")
-                mitem.append(x[0])
-                if len(x) == 2:
-                    mlocation.append(x[1])
+                a = len(z)
+                #print(a)
+                n = a - 4
+                z = z[n:]
+                #print(z)
+                numz = ['2010','2011','2012','2012','2013','2013','2014','2015','2016','2017','2018','2019','2020']
+                if z in numz:
+                    print(z)
+                    year.append(int(z))
                 else:
-                    mlocation.append(None)
+                    year.append(int(9999))
 
+
+            print(year[:100])
             dl = []
-            dl.append(['item',mitem])
-            dl.append(['location',mlocation])
+            dl.append(['year',year])
             df_desc = p.DataFrame.from_items(dl)
 
             df = p.concat([df, df_desc], axis=1, join_axes=[df.index])
             df = df.assign (utc = time.time(),hostname = socket.gethostname(),source = 'quandl' )
             frames.append(df)
-
+            now = dt.datetime.now()
+            x = now.year
             df = p.concat(frames)
-
+            df = df.query("(year == %s )and (year != 9999)"  % x)
+            print(df)
             if not df.empty:
                 df = df.drop_duplicates(['pattern','description'], keep='last')
                 df = df.reset_index(drop=True)
 
                 df.to_csv(my_file, index = False,  encoding= 'utf-8') #need to add this
-                s3 = savetos3.SaveS3(my_file,self.catalog)
-                s3.main()
-                x = df.query("(location != location ) or (location == 'All Areas')")
-                self.stocklist =x["pattern"].tolist()
+                #s3 = savetos3.SaveS3(my_file,self.catalog)
+                #s3.main()
+
+
+                self.stocklist =df["pattern"].tolist()
                 return self.stocklist
 
 
                 #return stocklist
         except requests.exceptions.RequestException as e:
             print (e)
+            print('request error')
+        except zipfile.BadZipFile as e:
+            print(e)
+            print('zip error')
+            gcl = GetCMEData(self.cwd,self.catalog,self.chunksize)
+            gcl.cmelist()
+            pass
         except Exception as e:
+            print('global error')
             logging.info('------')
             logging.error(traceback.format_exc())
             logging.info('------')
             logging.exception(traceback.format_exc())
             logging.info('------')
 
-            print(e)
 
     def get_stocks(self,stock,error_symbols):
         try:
@@ -157,30 +172,30 @@ class GetStockData(object):
             pass
 
     def main(self):
-        print('begin: GetStockData.main')
+        print('begin: GetCMEData.main')
 
         try:
-            gcl = GetStockData(self.cwd,self.catalog,self.chunksize)
-            self.stocklist = gcl.getstocklist()
-            error_symbols = []
-            xstockist = [self.stocklist[x:x+self.chunksize] for x in range(0, len(self.stocklist), self.chunksize )]
-
-            for stocklist in tqdm(xstockist,desc='Get Metal Info'):
-
-                threads = [threading.Thread(target=gcl.get_stocks, args=(stock,error_symbols,)) for stock in stocklist]
-
-                for thread in threads:
-                    #sleep(.3)
-                    thread.start()
-
-                for thread in threads:
-                    thread.join()
-
-                    if len(error_symbols) > 0:
-                        xstockist.append(error_symbols)
-                        error_symbols = []
-                    else:
-                        pass
+            gcl = GetCMEData(self.cwd,self.catalog,self.chunksize)
+            self.stocklist = gcl.cmelist()
+            # error_symbols = []
+            # xstockist = [self.stocklist[x:x+self.chunksize] for x in range(0, len(self.stocklist), self.chunksize )]
+            #
+            # for stocklist in tqdm(xstockist,desc='Get Metal Info'):
+            #
+            #     threads = [threading.Thread(target=gcl.get_stocks, args=(stock,error_symbols,)) for stock in stocklist]
+            #
+            #     for thread in threads:
+            #         #sleep(.3)
+            #         thread.start()
+            #
+            #     for thread in threads:
+            #         thread.join()
+            #
+            #         if len(error_symbols) > 0:
+            #             xstockist.append(error_symbols)
+            #             error_symbols = []
+            #         else:
+            #             pass
 
             print ('DONE')
 
@@ -197,9 +212,9 @@ if __name__ == '__main__':
     cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
     catalog = 'litcryptodata'
     chunksize = 500
-    runner = GetStockData(cwd,catalog,chunksize)
+    runner = GetCMEData(cwd,catalog,chunksize)
 
-    #runner = GetStockData()
+    #runner = GetCMEData()
     runner.main()
 
 

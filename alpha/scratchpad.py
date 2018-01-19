@@ -1,5 +1,9 @@
 import quandl
-quandl.ApiConfig.api_key = "kzmH8ENEsNUc5GkS9bum"
-data = quandl.get_table('LME/ST', paginate=True)
+import pandas
+stock = 'CME/KWZ1991'
 
-print (data)
+
+
+df = quandl.get(stock, authtoken="kzmH8ENEsNUc5GkS9bum")
+
+print(df)
