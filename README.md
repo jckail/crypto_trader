@@ -18,7 +18,9 @@ Omega:
 Automation of reporting/ machine learning components to detect trends amongst data sets. 
 Unfortunately I haven't had enough time in the past few months to work on this component as much as I hoped and cut out all of the "half baked" step wise regression and k means clustering python it had been working but I didn't have the time to correct some noise in the data models. So to save you the hassle of working with crappy models I took it out. If you would like these anyways please feel free to hit me up via my contact information below. 
 
-I recommend using dbt to manage data models if you decide to warehouse the data sadly it does not currently support Athena. Luckily AWS glue does a great job of categorizing data in combination with using the "data models " directory attached to this repo and just saving as standard sql Queries. 
+I recommend using dbt to manage data models if you decide to warehouse i.e. Redshift/Postgres the data, sadly it does not currently support Athena. 
+
+Luckily AWS glue does a great job of categorizing data in combination with using the "data models " directory attached to this repo and just saving as standard sql Queries. 
 
 PLEASE NOTE: 
 Do what ever with my code, its public on github for a reason.
@@ -33,14 +35,24 @@ Dependencies:
 
 -- Example Workflow --
 Configure AWS (Check Connection)
+
 Run Setup (check for and/or create directories)
+
 Call API to mine data 
+
 Store data on local 
+
 Transform to JSON and Zip 
+
 Save to S3
+
 Run Glue Crawler
 
-Run Query via athena / Visualize data via Tableau(athena driver) / Athena Query --> Pandas data frame --> Scikit learn ML 
+Run Query via athena / 
+
+Visualize data via Tableau(athena driver) / 
+
+Athena Query --> Pandas data frame --> Scikit learn ML 
 
 
 -Jordan Kail
