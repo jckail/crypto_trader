@@ -1,7 +1,17 @@
 # jordan_kail_crypto_project 
-Hey! Thanks for chekcing out my github jordan_kail_crypto_project  repo!
+Hey! Thanks for checking out my github jordan_kail_crypto_project repo!
 
-Lots of fun examples of using Pandas and BOTO3 to call web apis and generate good usable data. 
+Lots of fun examples of using Pandas and BOTO3 to call web apis and generate good usable data via multi threaded python.
+
+Alpha: 
+
+(80% Completion)
+Data Ingestion acquisition and storage
+
+Omega: 
+
+(50% Completion Not Published to Public Repo)
+Automation of reporting/ machine learning components to detect trends amongst data sets. 
 
 This is just a fun side project to better understand crypto currency and its correlations to other data sources such as social mentions, prices of rare materials in foreign countries, or even us stock prices. 
 
@@ -9,13 +19,7 @@ All that is needed at this time is to download awscli to your local and running 
 
 If you'd like to setup cron jobs and deploy on ec2 its fully compatible to run hourly or even minute runner due to the fact most of the python is multithreaded.
 
-Alpha: (80% Completion)
 
-Data Ingestion aquistion and storage
-
-Omega: (50% Completion Not Published to Public Repo)
-
-Automation of reporting/ machine learning components to detect trends amongst data sets. 
 *Unfortunately I haven't had enough time in the past few months to work on this component as much as I hoped and cut out all of the "half baked" step wise regression and k means clustering python to save the time and frustration. (I currently do this for a living)
 Just Plug and Play with your favorite ML After you get the data. 
 
@@ -57,7 +61,7 @@ Visualize data via Tableau(athena driver) /
 Athena Query --> Pandas data frame --> Scikit learn ML 
 
 Should Log and save data to off repo directory so you don't have to worry about size on commits
-
+-- END --
 
 Questions? Comments? Want to Just talk tech? Reachout!
 

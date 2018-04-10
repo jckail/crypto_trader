@@ -122,4 +122,9 @@ docs/_build/
 
 # PyBuilder
 target/
+
+.idea
+.idea/
+.DS_STORE
+.DS_STORE/
 >>>>>>> jordan_dev
