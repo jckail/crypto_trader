@@ -1,0 +1,9 @@
+Omega is the machine learning runner executable by shell script.
+
+This has been removed from github because it contained AWS keys upon development/ testing in January.
+This is temporary until I have more time to create new variables and calls to boto3 cli.
+
+* BUGS *
+
+
+*Release notes*

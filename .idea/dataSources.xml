@@ -7,10 +7,11 @@
       <configured-by-url>true</configured-by-url>
       <remarks>Uk0l3Q/wAXrldMCNhdsiO4jV3+5AMAP90EeZKRfX</remarks>
       <jdbc-driver>com.simba.athena.jdbc42.Driver</jdbc-driver>
-      <jdbc-url>jdbc:awsathena://AwsRegion=useast-1;</jdbc-url>
+      <jdbc-url>jdbc:awsathena://AwsRegion=us-east-1.amazonaws.com:443;</jdbc-url>
       <default-dialect>TSQL</default-dialect>
       <driver-properties>
         <property name="S3OutputLocation" value="s3://litcryptodataquery/queries/" />
+        <property name="s3_staging_dir" value="s3://litcryptodataquery/queries/" />
       </driver-properties>
     </data-source>
   </component>

@@ -37,7 +37,6 @@ class GetAVCoinList(object):
                 'cache-control': "no-cache",
                 'postman-token': "f7f0c0c6-c707-e39e-76ed-f61d9046b7f8"
             }
-
             response = requests.request("GET", url, headers=headers)
 
             data = response.content.decode('utf-8')
