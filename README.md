@@ -1,5 +1,5 @@
-# lit_crypto
-Hey! Thanks for chekcing out my github lit_Crypto repo!
+# jordan_kail_crypto_project 
+Hey! Thanks for chekcing out my github jordan_kail_crypto_project  repo!
 
 Lots of fun examples of using Pandas and BOTO3 to call web apis and generate good usable data. 
 
