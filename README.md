@@ -3,6 +3,38 @@ Hey! Thanks for checking out my github jordan_kail_crypto_project repo!
 
 Lots of fun examples of using Pandas and BOTO3 to call web apis and generate good usable data via multi threaded python.
 
+
+Instructions: 
+Clone this Repo to Your local/ ec2!
+
+Download Anaconda https://www.anaconda.com/download/#macos (Python 3.6)
+***INSTALL TO /Users/YOURUSERNAME/ *** In Anaconda install instructions ***
+
+On Terminal:
+
+cd ~/Github/lit_crypto/requirements.txt
+
+conda create --name lit_crypto --file requirements.txt (this requirements file is located at Github/lit_crypto/)
+(conda create --name lit_crypto --file ~/Documents/Github/lit_crypto/requirements.txt)
+
+cd ~/Github/lit_crypto/
+
+
+Create AWS User with admin level permissions or (GLUE, S3)
+Download install awscli (pip3 install awscli)
+
+aws configure
+(input key)
+(input secret)
+(default region)
+(json)
+
+Run the alpha runner
+./runner.sh
+
+
+
+
 Alpha: 
 
 (80% Completion)
