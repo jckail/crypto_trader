@@ -5,7 +5,7 @@ from time import sleep
 from tqdm import tqdm
 import socket
 import boto3
-import awscatalogcreate
+#import awscatalogcreate
 import traceback
 import logging
 
@@ -108,6 +108,7 @@ class Setup(object):
 if __name__ == '__main__':
     cwd = os.getcwd()
 
-    #s = Setup(cwd)
-    s = Setup()
+    s = Setup(cwd)
+
+    #s = Setup()
     s.main()

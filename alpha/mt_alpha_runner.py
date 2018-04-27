@@ -12,7 +12,7 @@ import datetime as dt
 import multiprocessing
 import socket
 import traceback
-from common import *
+#from common import *
 import logging
 logging.getLogger('botocore').setLevel(logging.CRITICAL)
 logging.getLogger('boto3').setLevel(logging.CRITICAL)
