@@ -64,6 +64,7 @@ class Setup(object):
                 , '/data/quandlstocks/fact_stocks/'
                 , '/data/cme/'
                 , '/data/cme/dim_cme/'
+                , '/data/omega/'
                            ]
 
             # for y in tqdm(create_list,desc='validate_directories'): #progressbar

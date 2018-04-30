@@ -32,6 +32,12 @@ aws configure
 Run the alpha runner
 ./runner.sh
 
+You've now refreshed the litcrypto s3 data bucket, now create an AWS Glue Crawler ontop of s3://litcryptodata/
+(There is python code within this repo to auto run crawlers with each run, just difficult/ unecessary to retrive roles at this time)
+
+With your newly created Crawler you have access to query the data via Athena! Take a view at this data set here: 
+
+
 
 
 

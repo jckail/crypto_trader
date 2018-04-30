@@ -130,6 +130,7 @@ class RunGlue:
             rg1.validate_create_crawler()
 
         except Exception as e:
+            print('Please Reconfigure your glue role located in gluemaintenance.py, yes this is hard coded for now.')
             logging.info('------')
             logging.error(traceback.format_exc())
             logging.info('------')

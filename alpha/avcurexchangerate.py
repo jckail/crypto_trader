@@ -136,7 +136,6 @@ class AvCurExRate(object):
             threads = [threading.Thread(target=aver.get_rate, args=(symbol,error_symbols,)) for symbol in symbol_list]
 
             for thread in threads:
-                sleep(3)
                 thread.start()
 
             #for thread in tqdm(threads,desc='Closed Threads'):

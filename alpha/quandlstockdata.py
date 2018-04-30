@@ -165,7 +165,7 @@ class GetStockData(object):
             error_symbols = []
             xstockist = [self.stocklist[x:x+self.chunksize] for x in range(0, len(self.stocklist), self.chunksize )]
 
-            for stocklist in tqdm(xstockist,desc='Get Metal Info'):
+            for stocklist in tqdm(xstockist,desc='Get Stock Info'):
 
                 threads = [threading.Thread(target=gcl.get_stocks, args=(stock,error_symbols,)) for stock in stocklist]
 
@@ -182,6 +182,7 @@ class GetStockData(object):
                     else:
                         pass
 
+
             print ('DONE')
 
         except Exception as e:
@@ -197,9 +198,9 @@ if __name__ == '__main__':
     cwd = '/Users/jkail/Documents/GitHub/lit_crypto_data/alpha'
     catalog = 'litcryptodata'
     chunksize = 500
-    runner = GetStockData(cwd,catalog,chunksize)
+    #runner = GetStockData(cwd,catalog,chunksize)
 
-    #runner = GetStockData()
+    runner = GetStockData()
     runner.main()
 
 
