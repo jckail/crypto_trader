@@ -35,9 +35,22 @@ Run the alpha runner
 You've now refreshed the litcrypto s3 data bucket, now create an AWS Glue Crawler ontop of s3://litcryptodata/
 (There is python code within this repo to auto run crawlers with each run, just difficult/ unecessary to retrive roles at this time)
 
-With your newly created Crawler you have access to query the data via Athena! Take a view at this data set here: 
+With your newly created Crawler you have access to query the data via Athena! 
+
+Questions? Comments? Want to Just talk tech? Reachout!
 
 
+-Jordan
+jckail13@gmail.com
+
+-----------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------
+Notes
+
+-----------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -101,8 +114,3 @@ Athena Query --> Pandas data frame --> Scikit learn ML
 Should Log and save data to off repo directory so you don't have to worry about size on commits
 -- END --
 
-Questions? Comments? Want to Just talk tech? Reachout!
-
-
--Jordan
-jckail13@gmail.com
