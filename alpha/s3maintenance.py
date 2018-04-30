@@ -7,25 +7,16 @@ class GetS3Bucket:
         self.tests3 = boto3.resource('s3')
         self.s3_client = boto3.client('s3')
         self.s3_bucket = bucket
-    def create_s3_bucket(self):
-        try:
-            s3 = boto3.resource('s3')
-            #self.s3_client.create_bucket(Bucket=self.s3_bucket)
-            s3.create_bucket(Bucket=self.s3_bucket)
-
-        except Exception as e:
-            logging.info('------')
-            logging.error(traceback.format_exc())
-            logging.info('------')
-            logging.exception(traceback.format_exc())
-            logging.info('------')
-            print(e)
+        self.loops = 0
 
     def validate_s3(self):
         sa3 = boto3.resource('s3')
         #s3 = GetS3Bucket(self.s3_bucket)
         import botocore
         exists = True
+
+
+
         try:
             a = sa3.meta.client.head_bucket(Bucket=(self.s3_bucket))
             print('Validated: '+self.s3_bucket)
@@ -35,6 +26,10 @@ class GetS3Bucket:
             # If a client error is thrown, then check that it was a 404 error.
             # If it was a 404 error, then the bucket does not exist.
             error_code = int(e.response['Error']['Code'])
+            #print(error_code)
+
+            #print(self.loops)
+            print(e)
             if error_code == 404:
                 exists = False
 
@@ -45,7 +40,12 @@ class GetS3Bucket:
                 logging.info('------')
                 logging.exception(traceback.format_exc())
                 logging.info('------')
-                s3.validate_s3()
+
+                if self.loops <= 2:
+                    self.loops += 1
+                    #print(self.loops)
+                    s3.validate_s3()
+
 
 
 
@@ -71,6 +71,6 @@ if __name__ == '__main__':
     #cwd = '/Users/jckail13/lit_crypto_data/alpha/data/coininfo/coininfo.csv'
     #b = 'litcryptodata'
     #print(b)
-    s3 = GetS3Bucket()
+    s3 = GetS3Bucket('litcryptodata')
     #rg = RunGlue()
     s3.main()
