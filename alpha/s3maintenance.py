@@ -71,6 +71,6 @@ if __name__ == '__main__':
     #cwd = '/Users/jckail13/lit_crypto_data/alpha/data/coininfo/coininfo.csv'
     #b = 'litcryptodata'
     #print(b)
-    s3 = GetS3Bucket('litcryptodata')
+    s3 = GetS3Bucket()
     #rg = RunGlue()
     s3.main()
