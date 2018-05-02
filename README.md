@@ -39,6 +39,7 @@ With your newly created Crawler you have access to query the data via Athena!
 
 Questions? Comments? Want to Just talk tech? Reachout!
 
+Output Data Avalible at https://s3.console.aws.amazon.com/s3/buckets/litcryptodata/?region=us-east-1
 
 -Jordan
 jckail13@gmail.com
