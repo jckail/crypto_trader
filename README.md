@@ -2,6 +2,8 @@
 
 A historical Python learning project for cryptocurrency and market-data ingestion. The committed implementation contains an `alpha` ingestion runner and `omega` query/regression experiments. No frontend, trading order execution or production deployment is established by this documentation.
 
+**Status:** legacy learning project (2017–2018), unmaintained and not runnable as-is. Kept for reference only.
+
 - [Architecture](docs/architecture.mdx): runner, provider, file and AWS boundaries.
 - [Developer guide](docs/developer-guide.mdx): inert inspection and runtime prerequisites.
 
