@@ -128,3 +128,6 @@ target/
 .DS_STORE
 .DS_STORE/
 >>>>>>> jordan_dev
+
+# Agent worktrees (shared engineering standards)
+.worktrees/
